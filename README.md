@@ -19,8 +19,12 @@ Insert certificate here when completed
 ## Data Structures and Algorithms with Visualizations 
 
 - [x] [Introduction 00](#) - Data Structures and Algorithms with Visualizations
-- [x] [Introduction 01](#) - Introduction to Data Structures
-- [x] [Introduction 02](#) -
-- [x] [Introduction 03](#) -
+- [x] [Introduction 01](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/01%20Introduction%20to%20Data%20Structures) - Introduction to Data Structures
+- [x] [Introduction 02](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/02%20Introduction%20to%20Algorithms) - Introduction to Algorithms
+- [x] [Introduction 03](#) - Introduction to Algorithm Analysis
+- [x] [Introduction 04](#) - 
+- [x] [Introduction 05](#) -
+- [x] [Introduction 06](#) -
+- [x] [Introduction 07](#) -
 
 

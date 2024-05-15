@@ -1,3 +1,20 @@
 ## 02 Introduction to Algorithms
 
-<img src="dataStructures.JPG" alt="dataStructures" width="600"/>
+- Steps for Algorithm
+
+<img src="introductionToAlgorithms.JPG" alt="dataStructures" width="600"/>
+
+1. **Algorithm** is Set of steps to solve problem!
+
+<img src="priting.JPG" alt="dataStructures" width="600"/>
+
+
+### Printing average of 3 numbers
+
+```
+public void final(int a, int b, int c) {
+    int sum = a + b + c;
+    int avg = sum / 3;
+    System.out.println(avg);
+}
+```
