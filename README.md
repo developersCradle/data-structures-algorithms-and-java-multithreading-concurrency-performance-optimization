@@ -20,14 +20,14 @@ Insert certificate here when completed
 
 ## Data Structures and Algorithms with Visualizations 
 
-- [x] [Introduction 00](#) - Data Structures and Algorithms with Visualizations.
-- [x] [Introduction 01](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/01%20Introduction%20to%20Data%20Structures) - Introduction to Data Structures.
-- [x] [Introduction 02](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/02%20Introduction%20to%20Algorithms) - Introduction to Algorithms.
-- [x] [Introduction 03](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/03%20Introduction%20to%20Algorithm%20Analysis) - Introduction to Algorithm Analysis.
-- [x] [Introduction 04](#) - Time Complexity of an Algorithm.
-- [ ] [Introduction 05](#) - Space Complexity of an Algorithm. 
-- [ ] [Introduction 06](#) - Asymptotic Analysis of an Algorithm.
-- [ ] [Introduction 07](#) -
+- [x] [Introduction 00](#) - Data Structures and Algorithms with Visualizations. ✅
+- [x] [Introduction 01](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/01%20Introduction%20to%20Data%20Structures) - Introduction to Data Structures. ✅
+- [x] [Introduction 02](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/02%20Introduction%20to%20Algorithms) - Introduction to Algorithms. ✅
+- [x] [Introduction 03](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/03%20Introduction%20to%20Algorithm%20Analysis) - Introduction to Algorithm Analysis. ✅
+- [x] [Introduction 04](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/04%20Time%20Complexity%20of%20an%20Algorithm) - Time Complexity of an Algorithm. ✅
+- [x] [Introduction 05](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/05%20Space%20Complexity%20of%20an%20Algorithm) - Space Complexity of an Algorithm. ✅
+- [x] [Introduction 06](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/06%20Asymptotic%20Analysis%20of%20an%20Algorithm) - Asymptotic Analysis of an Algorithm. ✅
+- [ ] [Introduction 07](#) - Asymptotic Notations | Omega, Theta and Big O Notations ✅
 - [ ] [Introduction 08](#) -
 - [ ] [Introduction 09](#) -
 - [ ] [Introduction 10](#) -
