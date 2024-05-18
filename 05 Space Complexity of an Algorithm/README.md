@@ -3,4 +3,4 @@
 <img src="spaceComplexity.JPG" alt="Space Complexity" width="600"/>
 
 - Memory or space taken by algorithm to run. **Space Complexity**
-    - No exact number
+    - Not exact number.

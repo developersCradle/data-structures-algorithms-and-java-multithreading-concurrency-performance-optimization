@@ -27,9 +27,9 @@ Insert certificate here when completed
 - [x] [Introduction 04](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/04%20Time%20Complexity%20of%20an%20Algorithm) - Time Complexity of an Algorithm. ✅
 - [x] [Introduction 05](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/05%20Space%20Complexity%20of%20an%20Algorithm) - Space Complexity of an Algorithm. ✅
 - [x] [Introduction 06](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/06%20Asymptotic%20Analysis%20of%20an%20Algorithm) - Asymptotic Analysis of an Algorithm. ✅
-- [ ] [Introduction 07](#) - Asymptotic Notations | Omega, Theta and Big O Notations ✅
-- [ ] [Introduction 08](#) -
-- [ ] [Introduction 09](#) -
+- [x] [Introduction 07](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/07%20Aymptotic%20Notations%2C%20Omega%2C%20Theta%20and%20Big%20O%20Notation) - Asymptotic Notations | Omega, Theta and Big O Notations ✅
+- [x] [Introduction 08](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/08%20Types%20of%20Asymptotic%20Notations) - Types of Asymptotic Notations ✅
+- [x] [Introduction 09](#) - Calculating Time complexity of Constant Algorithm (Big O) ✅
 - [ ] [Introduction 10](#) -
 - [ ] [Introduction 11](#) -
 
