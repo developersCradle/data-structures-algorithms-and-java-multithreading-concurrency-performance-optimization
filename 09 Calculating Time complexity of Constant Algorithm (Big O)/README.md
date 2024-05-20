@@ -11,3 +11,8 @@
 - We assume following takes one unit of time. Arithmetical operation. `x + y; -> 1 unit of time`.
 - We assume following takes one unit of time. Logical operation. `x&&y -> 1 unit of time`.
 - Other small operations take 1 unit of time.
+
+<img src="polynomial.JPG" alt="polynomial" width="400"/>
+
+1. Drop the constant.
+2. Drop lower order terms.
