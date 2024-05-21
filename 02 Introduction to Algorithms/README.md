@@ -1,4 +1,4 @@
-## 02 Introduction to Algorithms
+## Introduction to Algorithms
 
 - Steps for Algorithm
 

@@ -1,4 +1,4 @@
-## 01 Introduction to Data Structures
+## Introduction to Data Structures
 
 
 <img src="dataStructures.JPG" alt="dataStructures" width="600"/>

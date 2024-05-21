@@ -1,4 +1,4 @@
-## 03 Introduction to Algorithm Analysis
+## Introduction to Algorithm Analysis
 
 <img src="analysis.JPG" alt="dataStructures" width="600"/>
 

@@ -5,8 +5,8 @@ public class TimeComplexityDemo {
 		double now = System.currentTimeMillis();
 		
 		TimeComplexityDemo demo = new TimeComplexityDemo();
-		System.out.println(demo.findSumMoreComplex(9999999));
-		
+//		System.out.println(demo.findSumMoreComplex(9999999));
+		System.out.println(demo.findSumMoreComplex(5));
 		System.out.println("Time taken - " + (System.currentTimeMillis() - now) + " millisecond.");
 		
 	}
@@ -20,6 +20,7 @@ public class TimeComplexityDemo {
 	public int findSumMoreComplex(int n) {
 		int sum = 0;
 		for (int i = 1; i <= n; i++) {
+			System.out.println("Looping" + i);
 			sum = sum +1;
 		}
 		return sum;
