@@ -2,7 +2,7 @@
 
 <img src="calculatingLinear.JPG" alt="calculating linear" width="600"/>
 
-1. We calculate Time Complexity of thi Algorithm. This one finds sum of natural numbers.
+1. We calculate Time Complexity of this Algorithm. This one finds sum of natural numbers.
 
 2. To calculate **For** loop time complexity, we do as following:
 
@@ -20,13 +20,13 @@
 
 - Totally **line 3** takes `6n + 4` operations.
 
-- **Line 3** operations under here as table.
+- **Lines** operations under here as table.
 
 | Line number | The code       | Unit of time | Needed operations                                           |
 |-------------|----------------|--------------|-------------------------------------------------------------|
 | 2           | int sum = 0;   | 1            | Assigment operation                                         |
 | 3           | int i = 1;     | 1            | Assigment operation                                         |
-| 3           | i &lt;=n       | 3(n + 1)     | 2 Access operations, Comparing operation                    |
+| 3           | i &lt;=n       | 3(n + 1)     | 2 Access operations, Other small operation                   |
 | 3           | i++            | 3n           | Access operation, Logical operation, Assigment operation    |
 | 4           | sum = sum + 1; | 4n           | 2 Access operations, Logical operation, Assigment operation |
 | 6           | return sum;    | 2            | Access operation, Return operation                          |

@@ -32,7 +32,31 @@ Insert certificate here when completed
 - [x] [Introduction 09](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/09%20Calculating%20Time%20complexity%20of%20Constant%20Algorithm%20(Big%20O)) - Analysis and Rules to calculate Big O notation ✅
 - [x] [Introduction 10](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/10%20Calculating%20Time%20complexity%20of%20Constant%20Algorithm%20(Big%20O)) - Calculating Time complexity of Constant Algorithm (Big O) ✅
 - [x] [Introduction 11](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/11%20Calculating%20Time%20complexity%20of%20a%20Linear%20Algorithm%20(Big%20O)) - Calculating Time complexity of a Linear Algorithm (Big O) ✅
-- [ ] [Introduction 12](#) - Calculating Time complexity of a Polynomial Algorithm (Big O)
+- [x] [Introduction 12](#) - Calculating Time complexity of a Polynomial Algorithm (Big O) ✅
+- [ ] [Introduction 13](#) - Introduction to One-Dimensional Array ✅
+- [ ] [Introduction 14](#) - Declaration and Initialization of a One-Dimensional Array
+- [ ] [Introduction 15](#) - Adding or Updating elements in a One-Dimensional Array | Implementation
+
+- [ ] [Introduction 16](#) -
+- [ ] [Introduction 17](#) -
+- [ ] [Introduction 18](#) -
+- [ ] [Introduction 19](#) -
+- [ ] [Introduction 20](#) -
+- [ ] [Introduction 21](#) -
+- [ ] [Introduction 22](#) -
+- [ ] [Introduction 23](#) -
+- [ ] [Introduction 24](#) -
+- [ ] [Introduction 25](#) -
+- [ ] [Introduction 26](#) -
+- [ ] [Introduction 27](#) -
+- [ ] [Introduction 28](#) -
+- [ ] [Introduction 29](#) -
+- [ ] [Introduction 30](#) -
+
+
+
+
+
 
 
 
