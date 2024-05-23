@@ -2,7 +2,7 @@
 
 Data Structures and Algorithms with Visualizations.
 
-<img src="courseIntro.JPG" alt="course intros" width="300"/>
+<img src="courseIntro.JPG" alt="course intros" width="400"/>
 
 All course material from **Data Structures and Algorithms with Visualizations with Java** by from Dinesh Varyani.
 
@@ -32,15 +32,14 @@ Insert certificate here when completed
 - [x] [Introduction 09](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/09%20Calculating%20Time%20complexity%20of%20Constant%20Algorithm%20(Big%20O)) - Analysis and Rules to calculate Big O notation ✅
 - [x] [Introduction 10](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/10%20Calculating%20Time%20complexity%20of%20Constant%20Algorithm%20(Big%20O)) - Calculating Time complexity of Constant Algorithm (Big O) ✅
 - [x] [Introduction 11](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/11%20Calculating%20Time%20complexity%20of%20a%20Linear%20Algorithm%20(Big%20O)) - Calculating Time complexity of a Linear Algorithm (Big O) ✅
-- [x] [Introduction 12](#) - Calculating Time complexity of a Polynomial Algorithm (Big O) ✅
-- [ ] [Introduction 13](#) - Introduction to One-Dimensional Array ✅
-- [ ] [Introduction 14](#) - Declaration and Initialization of a One-Dimensional Array
-- [ ] [Introduction 15](#) - Adding or Updating elements in a One-Dimensional Array | Implementation
-
-- [ ] [Introduction 16](#) -
-- [ ] [Introduction 17](#) -
-- [ ] [Introduction 18](#) -
-- [ ] [Introduction 19](#) -
+- [x] [Introduction 12](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/12%20Calculating%20Time%20complexity%20of%20a%20Polynomial%20Algorithm%20(Big%20O)) - Calculating Time complexity of a Polynomial Algorithm (Big O) ✅
+- [x] [Introduction 13](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/13%20Introduction%20to%20One-Dimensional%20Array) - Introduction to One-Dimensional Array ✅
+- [x] [Introduction 14](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/14%20Declaration%20and%20Initialization%20of%20a%20One-Dimensional%20Array) - Declaration and Initialization of a One-Dimensional Array ✅
+- [x] [Introduction 15](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/15%20Adding%20or%20Updating%20elements%20in%20a%20One-Dimensional%20Array%20and%20Implementatio) - Adding or Updating elements in a One-Dimensional Array | Implementation ✅
+- [x] [Introduction 16](#) - How to print elements of an Array in Java? | Animation ✅
+- [x] [Introduction 17](#) - How to print elements of an Array in Java? | Implementation ✅
+- [x] [Introduction 18](#) - **Remove Even Integers** from an Array | Animation | Coding Interview Question ✅
+- [x] [Introduction 19](#) - **Remove Even Integers** from an Array | Implementation | Coding Interview Question ✅
 - [ ] [Introduction 20](#) -
 - [ ] [Introduction 21](#) -
 - [ ] [Introduction 22](#) -
@@ -52,6 +51,80 @@ Insert certificate here when completed
 - [ ] [Introduction 28](#) -
 - [ ] [Introduction 29](#) -
 - [ ] [Introduction 30](#) -
+- [ ] [Introduction 31](#) -
+- [ ] [Introduction 32](#) -
+- [ ] [Introduction 33](#) -
+- [ ] [Introduction 34](#) -
+- [ ] [Introduction 35](#) -
+- [ ] [Introduction 36](#) -
+- [ ] [Introduction 37](#) -
+- [ ] [Introduction 38](#) -
+- [ ] [Introduction 39](#) -
+- [ ] [Introduction 40](#) -
+- [ ] [Introduction 41](#) -
+- [ ] [Introduction 42](#) -
+- [ ] [Introduction 43](#) -
+- [ ] [Introduction 44](#) -
+- [ ] [Introduction 45](#) -
+- [ ] [Introduction 46](#) -
+- [ ] [Introduction 47](#) -
+- [ ] [Introduction 48](#) -
+- [ ] [Introduction 49](#) -
+- [ ] [Introduction 50](#) -
+- [ ] [Introduction 51](#) -
+- [ ] [Introduction 52](#) -
+- [ ] [Introduction 53](#) -
+- [ ] [Introduction 54](#) -
+- [ ] [Introduction 55](#) -
+- [ ] [Introduction 56](#) -
+- [ ] [Introduction 57](#) -
+- [ ] [Introduction 58](#) -
+- [ ] [Introduction 59](#) -
+- [ ] [Introduction 60](#) -
+- [ ] [Introduction 61](#) -
+- [ ] [Introduction 62](#) -
+- [ ] [Introduction 63](#) -
+- [ ] [Introduction 64](#) -
+- [ ] [Introduction 65](#) -
+- [ ] [Introduction 66](#) -
+- [ ] [Introduction 67](#) -
+- [ ] [Introduction 68](#) -
+- [ ] [Introduction 69](#) -
+- [ ] [Introduction 70](#) -
+- [ ] [Introduction 71](#) -
+- [ ] [Introduction 72](#) -
+- [ ] [Introduction 73](#) -
+- [ ] [Introduction 74](#) -
+- [ ] [Introduction 75](#) -
+- [ ] [Introduction 76](#) -
+- [ ] [Introduction 77](#) -
+- [ ] [Introduction 78](#) -
+- [ ] [Introduction 79](#) -
+- [ ] [Introduction 80](#) -
+- [ ] [Introduction 81](#) -
+- [ ] [Introduction 82](#) -
+- [ ] [Introduction 83](#) -
+- [ ] [Introduction 84](#) -
+- [ ] [Introduction 85](#) -
+- [ ] [Introduction 86](#) -
+- [ ] [Introduction 87](#) -
+- [ ] [Introduction 88](#) -
+- [ ] [Introduction 89](#) -
+- [ ] [Introduction 90](#) -
+- [ ] [Introduction 91](#) -
+- [ ] [Introduction 92](#) -
+- [ ] [Introduction 93](#) -
+- [ ] [Introduction 94](#) -
+- [ ] [Introduction 95](#) -
+- [ ] [Introduction 96](#) -
+- [ ] [Introduction 97](#) -
+- [ ] [Introduction 98](#) -
+- [ ] [Introduction 99](#) -
+- [ ] [Introduction 100](#) -
+
+
+
+
 
 
 

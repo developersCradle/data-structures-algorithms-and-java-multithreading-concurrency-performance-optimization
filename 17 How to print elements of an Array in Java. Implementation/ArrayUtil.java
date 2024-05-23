@@ -1,15 +1,8 @@
-## Adding or Updating elements in a One-Dimensional Array | Implementation
-
-- Just normal updating array and accessing array.
-
-```
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-
 public class ArrayUtil {
-
 
 	   public void printArray(int[] arr) {
 	      int n = arr.length;
@@ -31,5 +24,3 @@ public class ArrayUtil {
 		   }
 
 }
-
-```

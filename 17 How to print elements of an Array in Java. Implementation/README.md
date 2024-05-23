@@ -1,15 +1,9 @@
-## Adding or Updating elements in a One-Dimensional Array | Implementation
+## How to print elements of an Array in Java? | Implementation
 
-- Just normal updating array and accessing array.
+- Implementation in code.
 
 ```
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
-
-
 public class ArrayUtil {
-
 
 	   public void printArray(int[] arr) {
 	      int n = arr.length;
