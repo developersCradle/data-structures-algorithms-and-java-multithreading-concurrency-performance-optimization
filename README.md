@@ -1,6 +1,6 @@
 ## Data Structures and Algorithms with Visualizations 
 
-Data Structures and Algorithms with Visualizations.
+Data Structures and Algorithms with Visualizations. With own visual notes. ✍️
 
 <img src="courseIntro.JPG" alt="course intros" width="400"/>
 
@@ -36,15 +36,15 @@ Insert certificate here when completed
 - [x] [Introduction 13](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/13%20Introduction%20to%20One-Dimensional%20Array) - Introduction to One-Dimensional Array ✅
 - [x] [Introduction 14](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/14%20Declaration%20and%20Initialization%20of%20a%20One-Dimensional%20Array) - Declaration and Initialization of a One-Dimensional Array ✅
 - [x] [Introduction 15](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/15%20Adding%20or%20Updating%20elements%20in%20a%20One-Dimensional%20Array%20and%20Implementatio) - Adding or Updating elements in a One-Dimensional Array | Implementation ✅
-- [x] [Introduction 16](#) - How to print elements of an Array in Java? | Animation ✅
-- [x] [Introduction 17](#) - How to print elements of an Array in Java? | Implementation ✅
-- [x] [Introduction 18](#) - **Remove Even Integers** from an Array | Animation | Coding Interview Question ✅
-- [x] [Introduction 19](#) - **Remove Even Integers** from an Array | Implementation | Coding Interview Question ✅
-- [ ] [Introduction 20](#) -
-- [ ] [Introduction 21](#) -
-- [ ] [Introduction 22](#) -
-- [ ] [Introduction 23](#) -
-- [ ] [Introduction 24](#) -
+- [x] [Introduction 16](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/16%20How%20to%20print%20elements%20of%20an%20Array%20in%20Java.%20Animation) - How to print elements of an Array in Java? | Animation ✅
+- [x] [Introduction 17](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/17%20How%20to%20print%20elements%20of%20an%20Array%20in%20Java.%20Implementation) - How to print elements of an Array in Java? | Implementation ✅
+- [x] [Introduction 18](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/18%20Remove%20Even%20Integers%20from%20an%20Array.%20Animation.%20Coding%20Interview%20Question) - **Remove Even Integers** from an Array | Animation | Coding Interview Question ✅
+- [x] [Introduction 19](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/19%20Remove%20Even%20Integers%20from%20an%20Array.%20Implementation%20Coding.%20Interview%20Question) - **Remove Even Integers** from an Array | Implementation | Coding Interview Question ✅
+- [x] [Introduction 20](#) - How to **Reverse an Array** in Java - Animation ✅
+- [x] [Introduction 21](#) - How to **Reverse an Array** in Java ? | Implementation ✅
+- [ ] [Introduction 22](#) - How to find Minimum value in an Array ? | Animation ✅
+- [ ] [Introduction 23](#) - How to find Minimum value in an Array ? | Implementation
+- [ ] [Introduction 24](#) - 
 - [ ] [Introduction 25](#) -
 - [ ] [Introduction 26](#) -
 - [ ] [Introduction 27](#) -
@@ -56,7 +56,7 @@ Insert certificate here when completed
 - [ ] [Introduction 33](#) -
 - [ ] [Introduction 34](#) -
 - [ ] [Introduction 35](#) -
-- [ ] [Introduction 36](#) -
+- [x] [Introduction 36](#) - Represent a **Singly Linked List** in Java ✅
 - [ ] [Introduction 37](#) -
 - [ ] [Introduction 38](#) -
 - [ ] [Introduction 39](#) -
