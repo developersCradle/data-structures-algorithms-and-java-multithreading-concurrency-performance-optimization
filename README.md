@@ -40,10 +40,10 @@ Insert certificate here when completed
 - [x] [Introduction 17](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/17%20How%20to%20print%20elements%20of%20an%20Array%20in%20Java.%20Implementation) - How to print elements of an Array in Java? | Implementation ✅
 - [x] [Introduction 18](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/18%20Remove%20Even%20Integers%20from%20an%20Array.%20Animation.%20Coding%20Interview%20Question) - **Remove Even Integers** from an Array | Animation | Coding Interview Question ✅
 - [x] [Introduction 19](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/19%20Remove%20Even%20Integers%20from%20an%20Array.%20Implementation%20Coding.%20Interview%20Question) - **Remove Even Integers** from an Array | Implementation | Coding Interview Question ✅
-- [x] [Introduction 20](#) - How to **Reverse an Array** in Java - Animation ✅
-- [x] [Introduction 21](#) - How to **Reverse an Array** in Java ? | Implementation ✅
-- [ ] [Introduction 22](#) - How to find Minimum value in an Array ? | Animation ✅
-- [ ] [Introduction 23](#) - How to find Minimum value in an Array ? | Implementation
+- [x] [Introduction 20](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/20%20How%20to%20Reverse%20an%20Array%20in%20Java%20-%20Animation) - How to **Reverse an Array** in Java - Animation ✅
+- [x] [Introduction 21](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/21%20How%20to%20reverse%20an%20array%20in%20Java.%20Implementation) - How to **Reverse an Array** in Java ? | Implementation ✅
+- [ ] [Introduction 22](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/22%20How%20to%20find%20Minimum%20value%20in%20an%20Array.%20Animation) - How to find Minimum value in an Array ? | Animation ✅
+- [ ] [Introduction 23](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/23%20How%20to%20find%20Minimum%20value%20in%20an%20Array.%20%20Implementation) - How to find Minimum value in an Array ? | Implementation
 - [ ] [Introduction 24](#) - 
 - [ ] [Introduction 25](#) -
 - [ ] [Introduction 26](#) -
@@ -56,14 +56,14 @@ Insert certificate here when completed
 - [ ] [Introduction 33](#) -
 - [ ] [Introduction 34](#) -
 - [ ] [Introduction 35](#) -
-- [x] [Introduction 36](#) - Represent a **Singly Linked List** in Java ✅
-- [ ] [Introduction 37](#) -
-- [ ] [Introduction 38](#) -
-- [ ] [Introduction 39](#) -
-- [ ] [Introduction 40](#) -
-- [ ] [Introduction 41](#) -
-- [ ] [Introduction 42](#) -
-- [ ] [Introduction 43](#) -
+- [x] [Introduction 36](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/36%20Represent%20a%20Singly%20Linked%20List) - Represent a **Singly Linked List** in Java ✅
+- [x] [Introduction 37](#) - How to Implement a **Singly Linked List** in Java | **Data Structures** and Algorithms ✅
+- [x] [Introduction 38](#) - Create a **Singly Linked List** in Java (Animation) ✅
+- [x] [Introduction 39](#) - Create a **Singly Linked List** in Java (Implementation) ✅
+- [x] [Introduction 40](#) - Print elements of a **Singly Linked List** in Java (Animation) ✅
+- [x] [Introduction 41](#) - Print elements of a Singly Linked List in Java (Implementation)
+- [x] [Introduction 42](#) - Find length of a Singly Linked List in Java (Animation) ✅
+- [ ] [Introduction 43](#) - Find length of a Singly Linked List in Java (Implementation)
 - [ ] [Introduction 44](#) -
 - [ ] [Introduction 45](#) -
 - [ ] [Introduction 46](#) -

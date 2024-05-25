@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="04 Time Complexity of an Algorithm"/>
+	<classpathentry kind="src" path="41 Print elements of a Singly Linked List in Java (Implementation)"/>
+	<classpathentry kind="src" path="39 Create a Singly Linked List in Java (Implementation)"/>
 	<classpathentry kind="src" path="21 How to reverse an array in Java. Implementation"/>
 	<classpathentry kind="src" path="19 Remove Even Integers from an Array. Implementation Coding. Interview Question"/>
 	<classpathentry kind="src" path="17 How to print elements of an Array in Java. Implementation"/>
