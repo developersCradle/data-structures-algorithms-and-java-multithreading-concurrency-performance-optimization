@@ -61,13 +61,13 @@ Insert certificate here when completed
 - [x] [Introduction 38](#) - Create a **Singly Linked List** in Java (Animation) ✅
 - [x] [Introduction 39](#) - Create a **Singly Linked List** in Java (Implementation) ✅
 - [x] [Introduction 40](#) - Print elements of a **Singly Linked List** in Java (Animation) ✅
-- [x] [Introduction 41](#) - Print elements of a Singly Linked List in Java (Implementation)
-- [x] [Introduction 42](#) - Find length of a Singly Linked List in Java (Animation) ✅
-- [ ] [Introduction 43](#) - Find length of a Singly Linked List in Java (Implementation)
-- [ ] [Introduction 44](#) -
-- [ ] [Introduction 45](#) -
-- [ ] [Introduction 46](#) -
-- [ ] [Introduction 47](#) -
+- [x] [Introduction 41](#) - Print elements of a **Singly Linked List** in Java (Implementation)
+- [x] [Introduction 42](#) - Find length of a **Singly Linked List** in Java (Animation) ✅
+- [x] [Introduction 43](#) - Find length of a **Singly Linked List** in Java (Implementation)
+- [x] [Introduction 44](#) - Insert node at the beginning of a **Singly Linked List** in Java (Animation)
+- [x] [Introduction 45](#) - Insert node at the beginning of a **Singly Linked List** in Java (Implementation)
+- [x] [Introduction 46](#) - Insert node at the end of a **Singly Linked List** in Java (Animation)
+- [ ] [Introduction 47](#) - Insert node at the end of a **Singly Linked List** in Java (Implementation)
 - [ ] [Introduction 48](#) -
 - [ ] [Introduction 49](#) -
 - [ ] [Introduction 50](#) -

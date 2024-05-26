@@ -1,5 +1,3 @@
-import SinglyLinkedList.ListNode;
-
 public class SinglyLinkedList {
 	
 	private ListNode head;
