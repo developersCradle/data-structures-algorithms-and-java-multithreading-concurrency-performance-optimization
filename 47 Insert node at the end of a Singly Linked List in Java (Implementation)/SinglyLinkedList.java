@@ -1,8 +1,3 @@
-## Insert node at the end of a Singly Linked List in Java (Implementation)
-
-- My implementations.
-
-```
 
 public class SinglyLinkedList {
 	
@@ -32,6 +27,27 @@ public class SinglyLinkedList {
 		ListNode newNode = new ListNode(value);
 		newNode.next = head;
 		head = newNode;
+	}
+	
+	public void insert(int position, int value)
+	{
+		ListNode node = new ListNode(value);
+		
+		if (position == 1) {
+			node.next = head;
+			head = node;
+		} else {
+			ListNode previous = head;
+			int count = 1;
+		while (count < position - 1) {
+			previous = previous.next;
+			count++;
+		}
+		
+		ListNode current = previous.next;
+		previous.next = node;
+		node.next = current;
+		}
 	}
 	
 	public int length() {
@@ -78,13 +94,11 @@ public class SinglyLinkedList {
 //		second.next = third; // 10 --> 1 --> 8
 //		third.next = fourth; // 10 --> 1 --> 8 --> 11 --> null
 		
-		sll.insertLast(11);
-		sll.insertLast(8);
-		sll.insertLast(1);
-		
+//		sll.insertLast(11);
+//		sll.insertLast(8);
+//		sll.insertLast(1);
+
 		sll.display();
 		System.out.println("Length is . " + sll.length());
 	}
 }
-
-```

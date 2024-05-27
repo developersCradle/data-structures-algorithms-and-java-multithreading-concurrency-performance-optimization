@@ -1,6 +1,6 @@
-## Insert node at the end of a Singly Linked List in Java (Implementation)
+## Insert a node in a Singly Linked List at a given position (Implementation)
 
-- My implementations.
+- How to insert node middle of list.
 
 ```
 
@@ -32,6 +32,28 @@ public class SinglyLinkedList {
 		ListNode newNode = new ListNode(value);
 		newNode.next = head;
 		head = newNode;
+	}
+	
+	public void insert(int position, int value)
+	{
+		ListNode node = new ListNode(value);
+		
+		if (position == 1) {
+			node.next = head; // new node points head
+			head = node;
+		} else {
+			ListNode previous = head;
+			int count = 1;
+			
+		while (count < position - 1) {
+			previous = previous.next;
+			count++;
+		}
+		
+		ListNode current = previous.next;
+		previous.next = node;
+		node.next = current;
+		}
 	}
 	
 	public int length() {
@@ -78,9 +100,16 @@ public class SinglyLinkedList {
 //		second.next = third; // 10 --> 1 --> 8
 //		third.next = fourth; // 10 --> 1 --> 8 --> 11 --> null
 		
-		sll.insertLast(11);
-		sll.insertLast(8);
-		sll.insertLast(1);
+//		sll.insertLast(11);
+//		sll.insertLast(8);
+//		sll.insertLast(1);
+
+		sll.insert(1, 3);
+		sll.insert(2, 5);
+		sll.insert(2, 2);
+		sll.insert(2, 4);
+		sll.insert(5, 7);
+		
 		
 		sll.display();
 		System.out.println("Length is . " + sll.length());

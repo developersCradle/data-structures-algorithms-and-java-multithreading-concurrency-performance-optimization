@@ -57,20 +57,20 @@ Insert certificate here when completed
 - [ ] [Introduction 34](#) -
 - [ ] [Introduction 35](#) -
 - [x] [Introduction 36](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/36%20Represent%20a%20Singly%20Linked%20List) - Represent a **Singly Linked List** in Java ✅
-- [x] [Introduction 37](#) - How to Implement a **Singly Linked List** in Java | **Data Structures** and Algorithms ✅
-- [x] [Introduction 38](#) - Create a **Singly Linked List** in Java (Animation) ✅
-- [x] [Introduction 39](#) - Create a **Singly Linked List** in Java (Implementation) ✅
-- [x] [Introduction 40](#) - Print elements of a **Singly Linked List** in Java (Animation) ✅
-- [x] [Introduction 41](#) - Print elements of a **Singly Linked List** in Java (Implementation)
-- [x] [Introduction 42](#) - Find length of a **Singly Linked List** in Java (Animation) ✅
-- [x] [Introduction 43](#) - Find length of a **Singly Linked List** in Java (Implementation)
-- [x] [Introduction 44](#) - Insert node at the beginning of a **Singly Linked List** in Java (Animation)
-- [x] [Introduction 45](#) - Insert node at the beginning of a **Singly Linked List** in Java (Implementation)
-- [x] [Introduction 46](#) - Insert node at the end of a **Singly Linked List** in Java (Animation)
-- [ ] [Introduction 47](#) - Insert node at the end of a **Singly Linked List** in Java (Implementation)
-- [ ] [Introduction 48](#) -
-- [ ] [Introduction 49](#) -
-- [ ] [Introduction 50](#) -
+- [x] [Introduction 37](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/37%20How%20to%20Implement%20a%20Singly%20Linked%20List%20in%20Java.%20Data%20Structures%20and%20Algorithms) - How to Implement a **Singly Linked List** in Java | **Data Structures** and Algorithms ✅
+- [x] [Introduction 38](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/38%20Create%20a%20Singly%20Linked%20List%20in%20Java%20(Animation)) - Create a **Singly Linked List** in Java (Animation) ✅
+- [x] [Introduction 39](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/39%20Create%20a%20Singly%20Linked%20List%20in%20Java%20(Implementation)) - Create a **Singly Linked List** in Java (Implementation) ✅
+- [x] [Introduction 40](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/40%20Print%20elements%20of%20a%20Singly%20Linked%20List%20in%20Java%20(Animation)) - Print elements of a **Singly Linked List** in Java (Animation) ✅
+- [x] [Introduction 41](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/41%20Print%20elements%20of%20a%20Singly%20Linked%20List%20in%20Java%20(Implementation)) - Print elements of a **Singly Linked List** in Java (Implementation)
+- [x] [Introduction 42](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/42%20Find%20length%20of%20a%20Singly%20Linked%20List%20in%20Java%20(Animation)) - Find length of a **Singly Linked List** in Java (Animation) ✅
+- [x] [Introduction 43](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/42%20Find%20length%20of%20a%20Singly%20Linked%20List%20in%20Java%20(Animation)) - Find length of a **Singly Linked List** in Java (Implementation) ✅
+- [x] [Introduction 44](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/44%20Insert%20node%20at%20the%20beginning%20of%20a%20Singly%20Linked%20List%20in%20Java%20(Animation)) - Insert node at the beginning of a **Singly Linked List** in Java (Animation) ✅
+- [x] [Introduction 45](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/45%20Insert%20node%20at%20the%20beginning%20of%20a%20Singly%20Linked%20List%20in%20Java%20(Implementation)) - Insert node at the beginning of a **Singly Linked List** in Java (Implementation) ✅
+- [x] [Introduction 46](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/46%20Insert%20node%20at%20the%20end%20of%20a%20Singly%20Linked%20List%20in%20Java%20(Animation)) - Insert node at the end of a **Singly Linked List** in Java (Animation) ✅
+- [x] [Introduction 47](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/47%20Insert%20node%20at%20the%20end%20of%20a%20Singly%20Linked%20List%20in%20Java%20(Implementation)) - Insert node at the end of a **Singly Linked List** in Java (Implementation) ✅
+- [x] [Introduction 48](#) - Insert a node in a **Singly Linked List** at a given position (Animation) ✅
+- [x] [Introduction 49](#) - Insert a node in a **Singly Linked List** at a given position (Implementation) ✅
+- [ ] [Introduction 50](#) - Delete first node of a **Singly Linked List** in Java (Animation)
 - [ ] [Introduction 51](#) -
 - [ ] [Introduction 52](#) -
 - [ ] [Introduction 53](#) -

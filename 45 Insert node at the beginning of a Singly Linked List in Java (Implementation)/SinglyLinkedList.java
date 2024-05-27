@@ -54,7 +54,6 @@ public class SinglyLinkedList {
 //		sll.head.next = second; // 10 --> 1
 //		second.next = third; // 10 --> 1 --> 8
 //		third.next = fourth; // 10 --> 1 --> 8 --> 11 --> null
-//	
 		
 		sll.insertFirst(11);
 		sll.insertFirst(8);
