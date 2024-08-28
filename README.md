@@ -18,7 +18,7 @@ Insert certificate here when completed
 
 **Note: The material provided in this repository is only for helping those who may get stuck at any point of time in the course. It is very advised that no one should just copy the solutions(violation of Honor Code) presented here.**
 
-## Data Structures and Algorithms with Visualizations 
+## Progress/Curriculum
 
 - [x] Introduction 00 - Data Structures and Algorithms with Visualizations. ✅
 - [x] [Introduction 01](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/01%20Introduction%20to%20Data%20Structures) - Introduction to Data Structures. ✅
@@ -122,15 +122,82 @@ Insert certificate here when completed
 - [ ] [Introduction 99](#) -
 - [ ] [Introduction 100](#) -
 
+# Data Structures and Algorithms: Deep Dive Using Java
 
+![Data Structures and Algorithms: Deep Dive Using Java](Data%20Structures%20and%20Algorithms.PNG)
 
+All course material from Data Structures and Algorithms: Deep Dive Using Java by **Goran Lochert**, **Tim Buchalka** and **Tim Buchalka's Learn Programming Academy**.
 
+Contains my own notes with some course material to enforce learning experience.
 
+If the content sparked :fire: your interest, please consider buying the course and start learning :book:.
 
+This repository is made with **Eclipse**, therefore it will include configuration files which are related to this IDE this approach will be favored for now. ⚙️
 
+[The course at Udemy](https://www.udemy.com/course/data-structures-and-algorithms-deep-dive-using-java). 
 
+[Website of maker](https://www.timbuchalka.com/).
+[Website of maker](https://jojoguruacademy.blogspot.com/).
+[Website of maker](https://learnprogramming.academy/).
 
+<!-- 
+Linkedin puts this shit front, when clicking from private mode x(. Need to put this to make jump working every case
+?trk=public_profile_see-credential 
+-->
 
+Insert certificate here when completed
 
+**Note: The material provided in this repository is only for helping those who may get stuck at any point of time in the course. It is very advised that no one should just copy the solutions(violation of Honor Code) presented here.**
+
+## Progress/Curriculum
+
+- [ ] [Introduction 01](#) -
+- [ ] [Introduction 02](#) -
+- [ ] [Introduction 03](#) -
+- [ ] [Introduction 04](#) -
+- [ ] [Introduction 05](#) -
+- [ ] [Introduction 06](#) -
+- [ ] [Introduction 07](#) -
+- [ ] [Introduction 08](#) -
+- [ ] [Introduction 09](#) -
+- [ ] [Introduction 10](#) -
+
+## Java Multithreading, Concurrency & Performance Optimization
+
+![Performance Optimization](performanceOptimization.PNG)
+
+All course material from Java Multithreading, Concurrency & Performance Optimization by **Michael Pogrebinsky** and **Top Developer Academy LLC**.
+
+Contains my own notes with some course material to enforce learning experience.
+
+If the content sparked :fire: your interest, please consider buying the course and start learning :book:.
+
+This repository is made with **Eclipse**, therefore it will include configuration files which are related to this IDE this approach will be favored for now. ⚙️
+
+[The course at Udemy](https://www.udemy.com/course/java-multithreading-concurrency-performance-optimization/). 
+
+[Website of maker](https://topdeveloperacademy.com/).
+
+<!-- 
+Linkedin puts this shit front, when clicking from private mode x(. Need to put this to make jump working every case
+?trk=public_profile_see-credential 
+-->
+
+Insert certificate here when completed
+
+**Note: The material provided in this repository is only for helping those who may get stuck at any point of time in the course. It is very advised that no one should just copy the solutions(violation of Honor Code) presented here.**
+
+## Progress/Curriculum
+
+- [ ] [Introduction 01](#) -
+- [ ] [Introduction 02](#) -
+- [ ] [Introduction 03](#) -
+- [ ] [Introduction 04](#) -
+- [ ] [Introduction 05](#) -
+- [ ] [Introduction 06](#) -
+- [ ] [Introduction 07](#) -
+- [ ] [Introduction 08](#) -
+- [ ] [Introduction 09](#) -
+- [ ] [Introduction 10](#) -
 
 
