@@ -1,4 +1,4 @@
-## Data Structures and Algorithms with Visualizations 
+## Data Structures and Algorithms with Visualizations.
 
 Data Structures and Algorithms with Visualizations. With own visual notes. ✍️
 
@@ -18,7 +18,7 @@ Insert certificate here when completed
 
 **Note: The material provided in this repository is only for helping those who may get stuck at any point of time in the course. It is very advised that no one should just copy the solutions(violation of Honor Code) presented here.**
 
-## Progress/Curriculum
+## Progress/Curriculum.
 
 - [x] Introduction 00 - Data Structures and Algorithms with Visualizations. ✅
 - [x] [Introduction 01](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/01%20Introduction%20to%20Data%20Structures) - Introduction to Data Structures. ✅
@@ -27,23 +27,23 @@ Insert certificate here when completed
 - [x] [Introduction 04](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/04%20Time%20Complexity%20of%20an%20Algorithm) - Time Complexity of an Algorithm. ✅
 - [x] [Introduction 05](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/05%20Space%20Complexity%20of%20an%20Algorithm) - Space Complexity of an Algorithm. ✅
 - [x] [Introduction 06](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/06%20Asymptotic%20Analysis%20of%20an%20Algorithm) - Asymptotic Analysis of an Algorithm. ✅
-- [x] [Introduction 07](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/07%20Aymptotic%20Notations%2C%20Omega%2C%20Theta%20and%20Big%20O%20Notation) - Asymptotic Notations | Omega, Theta and Big O Notations ✅
-- [x] [Introduction 08](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/08%20Types%20of%20Asymptotic%20Notations) - Types of Asymptotic Notations ✅
-- [x] [Introduction 09](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/09%20Calculating%20Time%20complexity%20of%20Constant%20Algorithm%20(Big%20O)) - Analysis and Rules to calculate Big O notation ✅
-- [x] [Introduction 10](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/10%20Calculating%20Time%20complexity%20of%20Constant%20Algorithm%20(Big%20O)) - Calculating Time complexity of Constant Algorithm (Big O) ✅
-- [x] [Introduction 11](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/11%20Calculating%20Time%20complexity%20of%20a%20Linear%20Algorithm%20(Big%20O)) - Calculating Time complexity of a Linear Algorithm (Big O) ✅
-- [x] [Introduction 12](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/12%20Calculating%20Time%20complexity%20of%20a%20Polynomial%20Algorithm%20(Big%20O)) - Calculating Time complexity of a Polynomial Algorithm (Big O) ✅
-- [x] [Introduction 13](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/13%20Introduction%20to%20One-Dimensional%20Array) - Introduction to One-Dimensional Array ✅
-- [x] [Introduction 14](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/14%20Declaration%20and%20Initialization%20of%20a%20One-Dimensional%20Array) - Declaration and Initialization of a One-Dimensional Array ✅
-- [x] [Introduction 15](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/15%20Adding%20or%20Updating%20elements%20in%20a%20One-Dimensional%20Array%20and%20Implementatio) - Adding or Updating elements in a One-Dimensional Array | Implementation ✅
-- [x] [Introduction 16](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/16%20How%20to%20print%20elements%20of%20an%20Array%20in%20Java.%20Animation) - How to print elements of an Array in Java? | Animation ✅
+- [x] [Introduction 07](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/07%20Aymptotic%20Notations%2C%20Omega%2C%20Theta%20and%20Big%20O%20Notation) - Asymptotic Notations | Omega, Theta and Big O Notations. ✅
+- [x] [Introduction 08](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/08%20Types%20of%20Asymptotic%20Notations) - Types of Asymptotic Notations. ✅
+- [x] [Introduction 09](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/09%20Calculating%20Time%20complexity%20of%20Constant%20Algorithm%20(Big%20O)) - Analysis and Rules to calculate Big O notation. ✅
+- [x] [Introduction 10](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/10%20Calculating%20Time%20complexity%20of%20Constant%20Algorithm%20(Big%20O)) - Calculating Time complexity of Constant Algorithm (Big O). ✅
+- [x] [Introduction 11](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/11%20Calculating%20Time%20complexity%20of%20a%20Linear%20Algorithm%20(Big%20O)) - Calculating Time complexity of a Linear Algorithm (Big O). ✅
+- [x] [Introduction 12](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/12%20Calculating%20Time%20complexity%20of%20a%20Polynomial%20Algorithm%20(Big%20O)) - Calculating Time complexity of a Polynomial Algorithm (Big O). ✅
+- [x] [Introduction 13](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/13%20Introduction%20to%20One-Dimensional%20Array) - Introduction to One-Dimensional Array. ✅
+- [x] [Introduction 14](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/14%20Declaration%20and%20Initialization%20of%20a%20One-Dimensional%20Array) - Declaration and Initialization of a One-Dimensional Array. ✅
+- [x] [Introduction 15](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/15%20Adding%20or%20Updating%20elements%20in%20a%20One-Dimensional%20Array%20and%20Implementatio) - Adding or Updating elements in a One-Dimensional Array | Implementation. ✅
+- [x] [Introduction 16](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/16%20How%20to%20print%20elements%20of%20an%20Array%20in%20Java.%20Animation) - How to print elements of an Array in Java? | Animation. ✅
 - [x] [Introduction 17](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/17%20How%20to%20print%20elements%20of%20an%20Array%20in%20Java.%20Implementation) - How to print elements of an Array in Java? | Implementation ✅
-- [x] [Introduction 18](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/18%20Remove%20Even%20Integers%20from%20an%20Array.%20Animation.%20Coding%20Interview%20Question) - **Remove Even Integers** from an Array | Animation | Coding Interview Question ✅
-- [x] [Introduction 19](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/19%20Remove%20Even%20Integers%20from%20an%20Array.%20Implementation%20Coding.%20Interview%20Question) - **Remove Even Integers** from an Array | Implementation | Coding Interview Question ✅
-- [x] [Introduction 20](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/20%20How%20to%20Reverse%20an%20Array%20in%20Java%20-%20Animation) - How to **Reverse an Array** in Java - Animation ✅
-- [x] [Introduction 21](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/21%20How%20to%20reverse%20an%20array%20in%20Java.%20Implementation) - How to **Reverse an Array** in Java ? | Implementation ✅
-- [ ] [Introduction 22](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/22%20How%20to%20find%20Minimum%20value%20in%20an%20Array.%20Animation) - How to find Minimum value in an Array ? | Animation ✅
-- [ ] [Introduction 23](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/23%20How%20to%20find%20Minimum%20value%20in%20an%20Array.%20%20Implementation) - How to find Minimum value in an Array ? | Implementation
+- [x] [Introduction 18](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/18%20Remove%20Even%20Integers%20from%20an%20Array.%20Animation.%20Coding%20Interview%20Question) - **Remove Even Integers** from an Array | Animation | Coding Interview Question. ✅
+- [x] [Introduction 19](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/19%20Remove%20Even%20Integers%20from%20an%20Array.%20Implementation%20Coding.%20Interview%20Question) - **Remove Even Integers** from an Array | Implementation | Coding Interview Question. ✅
+- [x] [Introduction 20](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/20%20How%20to%20Reverse%20an%20Array%20in%20Java%20-%20Animation) - How to **Reverse an Array** in Java - Animation. ✅
+- [x] [Introduction 21](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/21%20How%20to%20reverse%20an%20array%20in%20Java.%20Implementation) - How to **Reverse an Array** in Java? | Implementation. ✅
+- [ ] [Introduction 22](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/22%20How%20to%20find%20Minimum%20value%20in%20an%20Array.%20Animation) - How to find Minimum value in an Array? | Animation. ✅
+- [ ] [Introduction 23](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/23%20How%20to%20find%20Minimum%20value%20in%20an%20Array.%20%20Implementation) - How to find Minimum value in an Array? | Implementation.
 - [ ] [Introduction 24](#) - 
 - [ ] [Introduction 25](#) -
 - [ ] [Introduction 26](#) -
@@ -56,21 +56,21 @@ Insert certificate here when completed
 - [ ] [Introduction 33](#) -
 - [ ] [Introduction 34](#) -
 - [ ] [Introduction 35](#) -
-- [x] [Introduction 36](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/36%20Represent%20a%20Singly%20Linked%20List) - Represent a **Singly Linked List** in Java ✅
-- [x] [Introduction 37](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/37%20How%20to%20Implement%20a%20Singly%20Linked%20List%20in%20Java.%20Data%20Structures%20and%20Algorithms) - How to Implement a **Singly Linked List** in Java | **Data Structures** and Algorithms ✅
-- [x] [Introduction 38](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/38%20Create%20a%20Singly%20Linked%20List%20in%20Java%20(Animation)) - Create a **Singly Linked List** in Java (Animation) ✅
-- [x] [Introduction 39](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/39%20Create%20a%20Singly%20Linked%20List%20in%20Java%20(Implementation)) - Create a **Singly Linked List** in Java (Implementation) ✅
-- [x] [Introduction 40](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/40%20Print%20elements%20of%20a%20Singly%20Linked%20List%20in%20Java%20(Animation)) - Print elements of a **Singly Linked List** in Java (Animation) ✅
-- [x] [Introduction 41](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/41%20Print%20elements%20of%20a%20Singly%20Linked%20List%20in%20Java%20(Implementation)) - Print elements of a **Singly Linked List** in Java (Implementation)
-- [x] [Introduction 42](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/42%20Find%20length%20of%20a%20Singly%20Linked%20List%20in%20Java%20(Animation)) - Find length of a **Singly Linked List** in Java (Animation) ✅
-- [x] [Introduction 43](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/42%20Find%20length%20of%20a%20Singly%20Linked%20List%20in%20Java%20(Animation)) - Find length of a **Singly Linked List** in Java (Implementation) ✅
-- [x] [Introduction 44](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/44%20Insert%20node%20at%20the%20beginning%20of%20a%20Singly%20Linked%20List%20in%20Java%20(Animation)) - Insert node at the beginning of a **Singly Linked List** in Java (Animation) ✅
-- [x] [Introduction 45](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/45%20Insert%20node%20at%20the%20beginning%20of%20a%20Singly%20Linked%20List%20in%20Java%20(Implementation)) - Insert node at the beginning of a **Singly Linked List** in Java (Implementation) ✅
-- [x] [Introduction 46](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/46%20Insert%20node%20at%20the%20end%20of%20a%20Singly%20Linked%20List%20in%20Java%20(Animation)) - Insert node at the end of a **Singly Linked List** in Java (Animation) ✅
-- [x] [Introduction 47](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/47%20Insert%20node%20at%20the%20end%20of%20a%20Singly%20Linked%20List%20in%20Java%20(Implementation)) - Insert node at the end of a **Singly Linked List** in Java (Implementation) ✅
-- [x] [Introduction 48](#) - Insert a node in a **Singly Linked List** at a given position (Animation) ✅
-- [x] [Introduction 49](#) - Insert a node in a **Singly Linked List** at a given position (Implementation) ✅
-- [ ] [Introduction 50](#) - Delete first node of a **Singly Linked List** in Java (Animation)
+- [x] [Introduction 36](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/36%20Represent%20a%20Singly%20Linked%20List) - Represent a **Singly Linked List** in Java. ✅
+- [x] [Introduction 37](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/37%20How%20to%20Implement%20a%20Singly%20Linked%20List%20in%20Java.%20Data%20Structures%20and%20Algorithms) - How to Implement a **Singly Linked List** in Java | **Data Structures** and Algorithms. ✅
+- [x] [Introduction 38](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/38%20Create%20a%20Singly%20Linked%20List%20in%20Java%20(Animation)) - Create a **Singly Linked List** in Java (Animation). ✅
+- [x] [Introduction 39](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/39%20Create%20a%20Singly%20Linked%20List%20in%20Java%20(Implementation)) - Create a **Singly Linked List** in Java (Implementation). ✅
+- [x] [Introduction 40](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/40%20Print%20elements%20of%20a%20Singly%20Linked%20List%20in%20Java%20(Animation)) - Print elements of a **Singly Linked List** in Java (Animation). ✅
+- [x] [Introduction 41](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/41%20Print%20elements%20of%20a%20Singly%20Linked%20List%20in%20Java%20(Implementation)) - Print elements of a **Singly Linked List** in Java (Implementation).
+- [x] [Introduction 42](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/42%20Find%20length%20of%20a%20Singly%20Linked%20List%20in%20Java%20(Animation)) - Find length of a **Singly Linked List** in Java (Animation). ✅
+- [x] [Introduction 43](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/42%20Find%20length%20of%20a%20Singly%20Linked%20List%20in%20Java%20(Animation)) - Find length of a **Singly Linked List** in Java (Implementation). ✅
+- [x] [Introduction 44](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/44%20Insert%20node%20at%20the%20beginning%20of%20a%20Singly%20Linked%20List%20in%20Java%20(Animation)) - Insert node at the beginning of a **Singly Linked List** in Java (Animation). ✅
+- [x] [Introduction 45](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/45%20Insert%20node%20at%20the%20beginning%20of%20a%20Singly%20Linked%20List%20in%20Java%20(Implementation)) - Insert node at the beginning of a **Singly Linked List** in Java (Implementation). ✅
+- [x] [Introduction 46](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/46%20Insert%20node%20at%20the%20end%20of%20a%20Singly%20Linked%20List%20in%20Java%20(Animation)) - Insert node at the end of a **Singly Linked List** in Java (Animation). ✅
+- [x] [Introduction 47](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/47%20Insert%20node%20at%20the%20end%20of%20a%20Singly%20Linked%20List%20in%20Java%20(Implementation)) - Insert node at the end of a **Singly Linked List** in Java (Implementation). ✅
+- [x] [Introduction 48](#) - Insert a node in a **Singly Linked List** at a given position (Animation). ✅
+- [x] [Introduction 49](#) - Insert a node in a **Singly Linked List** at a given position (Implementation). ✅
+- [ ] [Introduction 50](#) - Delete first node of a **Singly Linked List** in Java (Animation).
 - [ ] [Introduction 51](#) -
 - [ ] [Introduction 52](#) -
 - [ ] [Introduction 53](#) -
@@ -122,7 +122,7 @@ Insert certificate here when completed
 - [ ] [Introduction 99](#) -
 - [ ] [Introduction 100](#) -
 
-# Data Structures and Algorithms: Deep Dive Using Java
+# Data Structures and Algorithms: Deep Dive Using Java.
 
 ![Data Structures and Algorithms: Deep Dive Using Java](Data%20Structures%20and%20Algorithms.PNG)
 
@@ -149,7 +149,7 @@ Insert certificate here when completed
 
 **Note: The material provided in this repository is only for helping those who may get stuck at any point of time in the course. It is very advised that no one should just copy the solutions(violation of Honor Code) presented here.**
 
-## Progress/Curriculum
+## Progress/Curriculum.
 
 - [ ] [Introduction 01](#) -
 - [ ] [Introduction 02](#) -
@@ -162,7 +162,7 @@ Insert certificate here when completed
 - [ ] [Introduction 09](#) -
 - [ ] [Introduction 10](#) -
 
-## Java Multithreading, Concurrency & Performance Optimization
+## Java Multithreading, Concurrency & Performance Optimization.
 
 ![Performance Optimization](performanceOptimization.PNG)
 
@@ -187,7 +187,7 @@ Insert certificate here when completed
 
 **Note: The material provided in this repository is only for helping those who may get stuck at any point of time in the course. It is very advised that no one should just copy the solutions(violation of Honor Code) presented here.**
 
-## Progress/Curriculum
+## Progress/Curriculum.
 
 - [ ] [Introduction 01](#) -
 - [ ] [Introduction 02](#) -
@@ -200,4 +200,31 @@ Insert certificate here when completed
 - [ ] [Introduction 09](#) -
 - [ ] [Introduction 10](#) -
 
+## Java Application Performance Tuning and Memory Management.
 
+Java Application Performance Tuning and Memory Management. With own visual notes. ✍️
+
+<img src="javaPerformance.PNG" alt="course intros" width="700"/>
+
+All course material from **Java Application Performance Tuning and Memory Management** by from **Matt Greencroft** and **Virtual Pair Programmers**.
+
+This repository is made with **Eclipse**, therefore it will include configuration files which are related to this IDE this approach will be favored for now. ⚙️
+
+If the content sparked :fire: your interest, please consider starting the course and start learning :book:.
+
+[Udemy](https://www.udemy.com/course/java-application-performance-and-memory-management).
+[Homepage of maker](https://www.virtualpairprogrammers.com/).
+
+Insert certificate here when completed
+
+**Note: The material provided in this repository is only for helping those who may get stuck at any point of time in the course. It is very advised that no one should just copy the solutions(violation of Honor Code) presented here.**
+
+## Progress/Curriculum.
+
+- [ ] -
+- [ ] -
+- [ ] -
+- [ ] -
+- [ ] -
+- [ ] -
+- [ ] -
