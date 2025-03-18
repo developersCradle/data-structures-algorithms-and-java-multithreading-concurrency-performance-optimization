@@ -1,5 +1,9 @@
 ## Data Structures and Algorithms with Visualizations.
 
+- For these courses one should configure **GIT** for handle projects.
+    - `git config --global http.postBuffer 524288000`.
+    - `git config --global core.longpaths true`.
+
 Data Structures and Algorithms with Visualizations. With own visual notes. ✍️
 
 <img src="courseIntro.JPG" alt="course intros" width="400"/>
@@ -221,6 +225,7 @@ Insert certificate here when completed
 
 ## Progress/Curriculum.
 
+- [ ] - Chapter 1 - Introduction.
 - [ ] -
 - [ ] -
 - [ ] -
@@ -228,3 +233,9 @@ Insert certificate here when completed
 - [ ] -
 - [ ] -
 - [ ] -
+- [ ] -
+- [ ] -
+- [ ] -
+- [ ] -
+- [ ] -
+- [ ] - Chapter 21 - How Maps Work.
