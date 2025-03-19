@@ -8,15 +8,15 @@ Data Structures and Algorithms with Visualizations. With own visual notes. ✍�
 
 <img src="courseIntro.JPG" alt="course intros" width="400"/>
 
-All course material from **Data Structures and Algorithms with Visualizations with Java** by from Dinesh Varyani.
+All course material from **Data Structures and Algorithms with Visualizations with Java** by from **Dinesh Varyani**.
 
 This repository is made with **Eclipse**, therefore it will include configuration files which are related to this IDE this approach will be favored for now. ⚙️
 
 If the content sparked :fire: your interest, please consider starting the course and start learning :book:.
 
-[Youtube source](https://www.youtube.com/playlist?list=PLe8LZCtW06l-WqVgtvL2Y_4BRrxcEbsg_)
+[YouTube Source](https://www.youtube.com/playlist?list=PLe8LZCtW06l-WqVgtvL2Y_4BRrxcEbsg_)
 
-[Source codes](https://github.com/dinesh-varyani/ds-algos)
+[Source Codes](https://github.com/dinesh-varyani/ds-algos)
 
 Insert certificate here when completed
 
@@ -126,6 +126,10 @@ Insert certificate here when completed
 - [ ] [Introduction 99](#) -
 - [ ] [Introduction 100](#) -
 
+### Additional stuff.
+
+- [ ] Add first captions for all the chapters, like `#someThing`, so can be linked.
+
 # Data Structures and Algorithms: Deep Dive Using Java.
 
 ![Data Structures and Algorithms: Deep Dive Using Java](Data%20Structures%20and%20Algorithms.PNG)
@@ -225,7 +229,7 @@ Insert certificate here when completed
 
 ## Progress/Curriculum.
 
-- [ ] - Chapter 1 - Introduction.
+- [ ] - [Chapter 1](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Application%20Performance%20Tuning%20and%20Memory%20Management/Section%2001#chapter-1---introduction) - Introduction.
 - [ ] -
 - [ ] -
 - [ ] -
@@ -238,4 +242,8 @@ Insert certificate here when completed
 - [ ] -
 - [ ] -
 - [ ] -
-- [ ] - Chapter 21 - How Maps Work.
+- [ ] - [Chapter 21](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Application%20Performance%20Tuning%20and%20Memory%20Management/Section%2021#section-21-chapter-21---how-maps-work) - How Maps Work.
+
+### Additional stuff.
+
+- [x] Check the content from other student [Link](https://github.com/tommic81/udemy-java-memory-management/tree/master). ✅

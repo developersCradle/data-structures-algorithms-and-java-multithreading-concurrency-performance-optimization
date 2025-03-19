@@ -6,7 +6,7 @@ Section 21: Chapter 21 - How Maps Work
 
 # 109. The role of the Hashcode.
 
-<img src="hashMap.PNG" alt="picture of the course" width="600"/>
+<img src="hashMapDesc.PNG" alt="picture of the course" width="600"/>
 
 - **Hash Code**, will be connected to `HashCode`.
 
@@ -48,4 +48,33 @@ Section 21: Chapter 21 - How Maps Work
 
 # 110. How Hashmaps Work - part 2.
 
+<img src="hashMap.JPG" alt="picture of the course" width="500"/>
 
+1. There is **chance** that all **Objects** will be stored inside bucket **4**. Even thought, the **hash codes** are different, the operation yield same **bucket**.
+    - So there can be multiple **objects** inside one bucket!
+
+<img src="hashMapArray.JPG" alt="picture of the course" width="500"/>
+
+1. Bucket contains **Linked List**(Not the Java, but similar).
+
+- Hash has concept called **Load Factor**.
+    - Default load factor is **75%** of the capacity.
+
+- [Example of Load Factor](https://www.baeldung.com/java-hashmap-load-factor).
+> The **Load factor** is the measure that decides when to increase the capacity of the Map. The default load factor is **75%** of the capacity.
+
+<img src="loadFactor.JPG" alt="picture of the course" width="500">
+
+1. If the **HashMap** have occupied 75% of the size, it is reconsidered to be **full!**.
+
+<img src="hashCodeGrowing.JPG" alt="picture of the course" width="500">
+
+1. It will **HashMap** will grow **double** its size.
+    - For perspective **ArrayList** will grow **half of the column size**. 
+
+2. When **HashMap** grows, the positions **need** to be **re-evaluated**.
+    - This means, the **modulus** gives different answer, since `size` is now **double**.
+
+# 111. Specifying the initial size and factor of a HashMap.
+
+<img src="hashMapExample.JPG" alt="picture of the course" width="500">
