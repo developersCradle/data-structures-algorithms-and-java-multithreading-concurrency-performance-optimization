@@ -1,8 +1,8 @@
 package hashMapExample;
 
 import java.util.Date;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Main {
 
@@ -11,14 +11,12 @@ public class Main {
 
 	        Date start = new Date();
 
-	        List<Book> books = new LinkedList<Book>();
-	        for (int i = 0; i < 10000000; i++) {
-	            books.add(new Book(i, "Jane Eyre", "Charlotte Bronte", 14.99));
+	        Map<Integer, Book> books = new HashMap<Integer, Book>(500000, 0.9f);
+	        for (int i = 0; i < 1000000; i++) {
+	            books.put(i, new Book(i, "Jane Eyre", "Charlotte Bronte", 14.99));
 	        }
 
-	        Book book = books.get(4967421);
 
-	        System.out.println(book);
 	        Date end = new Date();
 	        System.out.println("Elapsed time was " + (end.getTime() - start.getTime()) + " ms.");
 	    }

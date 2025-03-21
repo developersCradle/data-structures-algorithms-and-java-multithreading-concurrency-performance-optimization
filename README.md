@@ -14,9 +14,9 @@ This repository is made with **Eclipse**, therefore it will include configuratio
 
 If the content sparked :fire: your interest, please consider starting the course and start learning :book:.
 
-[YouTube Source](https://www.youtube.com/playlist?list=PLe8LZCtW06l-WqVgtvL2Y_4BRrxcEbsg_)
+[YouTube Source](https://www.youtube.com/playlist?list=PLe8LZCtW06l-WqVgtvL2Y_4BRrxcEbsg_).
 
-[Source Codes](https://github.com/dinesh-varyani/ds-algos)
+[Source Codes](https://github.com/dinesh-varyani/ds-algos).
 
 Insert certificate here when completed
 
@@ -145,7 +145,9 @@ This repository is made with **Eclipse**, therefore it will include configuratio
 [The course at Udemy](https://www.udemy.com/course/data-structures-and-algorithms-deep-dive-using-java). 
 
 [Website of maker](https://www.timbuchalka.com/).
+
 [Website of maker](https://jojoguruacademy.blogspot.com/).
+
 [Website of maker](https://learnprogramming.academy/).
 
 <!-- 
@@ -210,17 +212,16 @@ Insert certificate here when completed
 
 ## Java Application Performance Tuning and Memory Management.
 
-Java Application Performance Tuning and Memory Management. With own visual notes. ✍️
-
 <img src="javaPerformance.PNG" alt="course intros" width="700"/>
 
-All course material from **Java Application Performance Tuning and Memory Management** by from **Matt Greencroft** and **Virtual Pair Programmers**.
+All course material from **Java Application Performance Tuning and Memory Management** by from **Matt Greencroft** and **Virtual Pair Programmers** with my own visual notes. ✍️
 
 This repository is made with **Eclipse**, therefore it will include configuration files which are related to this IDE this approach will be favored for now. ⚙️
 
 If the content sparked :fire: your interest, please consider starting the course and start learning :book:.
 
 [Udemy](https://www.udemy.com/course/java-application-performance-and-memory-management).
+
 [Homepage of maker](https://www.virtualpairprogrammers.com/).
 
 Insert certificate here when completed
@@ -229,20 +230,18 @@ Insert certificate here when completed
 
 ## Progress/Curriculum.
 
-- [ ] - [Chapter 1](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Application%20Performance%20Tuning%20and%20Memory%20Management/Section%2001#chapter-1---introduction) - Introduction.
-- [ ] -
-- [ ] -
-- [ ] -
-- [ ] -
-- [ ] -
-- [ ] -
-- [ ] -
-- [ ] -
-- [ ] -
-- [ ] -
-- [ ] -
-- [ ] -
-- [ ] - [Chapter 21](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Application%20Performance%20Tuning%20and%20Memory%20Management/Section%2021#section-21-chapter-21---how-maps-work) - How Maps Work.
+- [ ] [Chapter 1](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Application%20Performance%20Tuning%20and%20Memory%20Management/Section%2001#chapter-1---introduction) - Introduction.
+- [ ] [Chapter 11](#) - 
+- [ ] [Chapter 12](#) - 
+- [ ] [Chapter 13](#) - 
+- [ ] [Chapter 14](#) - 
+- [ ] [Chapter 15](#) -  
+- [ ] [Chapter 16](#) -  
+- [ ] [Chapter 17](#) -  
+- [ ] [Chapter 18](#) - 
+- [ ] [Chapter 19](#) - 
+- [ ] [Chapter 20](#) - 
+- [ ] [Chapter 21](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Application%20Performance%20Tuning%20and%20Memory%20Management/Section%2021#section-21-chapter-21---how-maps-work) - How Maps Work.
 
 ### Additional stuff.
 

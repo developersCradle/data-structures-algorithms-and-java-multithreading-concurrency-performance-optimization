@@ -78,3 +78,126 @@ Section 21: Chapter 21 - How Maps Work
 # 111. Specifying the initial size and factor of a HashMap.
 
 <img src="hashMapExample.JPG" alt="picture of the course" width="500">
+
+1. How big it is from begging.
+    - **Size** of array is always power of **two**, so size of array will be `2^19 = 524288`. So array of is at least `500000`, in this case it will be `524288`!
+2. Load Factor, how full it's should get, until it resizes.
+
+<img src="loadFactorInDebug.JPG" alt="picture of the course" width="500"/>
+
+1. We can see the load factor in **debug** mode.
+
+- In general, getting and setting stuff to `HashMap` pretty fast! 
+
+> **HashMap** stores and retrieves entries in constant time **O(1)**.
+- Test program for `1000 000` of items.
+
+```
+package hashMapExample;
+
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
+
+public class Main {
+
+
+	    public static void main(String[] args) {
+
+	        Date start = new Date();
+
+	        Map<Integer, Book> books = new HashMap<Integer, Book>();
+	        for (int i = 0; i < 1000000; i++) {
+	            books.put(i, new Book(i, "Jane Eyre", "Charlotte Bronte", 14.99));
+	        }
+
+
+	        Date end = new Date();
+	        System.out.println("Elapsed time was " + (end.getTime() - start.getTime()) + " ms.");
+	    }
+	}
+
+
+```
+
+- For me this took `Elapsed time was 707 ms.`
+
+- We experiment the same with **initial size** with **500000**, this reduces need for **re-sizing**.
+    - Example below:
+
+```
+
+package hashMapExample;
+
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
+
+public class Main {
+
+
+	    public static void main(String[] args) {
+
+	        Date start = new Date();
+
+	        Map<Integer, Book> books = new HashMap<Integer, Book>(500000);
+	        for (int i = 0; i < 1000000; i++) {
+	            books.put(i, new Book(i, "Jane Eyre", "Charlotte Bronte", 14.99));
+	        }
+
+
+	        Date end = new Date();
+	        System.out.println("Elapsed time was " + (end.getTime() - start.getTime()) + " ms.");
+	    }
+	}
+
+
+```
+
+- This time it took `Elapsed time was 515 ms.`.
+
+- Let's try inputting **Load factor** to `0.9f`.
+    - Example code below:
+
+```
+package hashMapExample;
+
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
+
+public class Main {
+
+
+	    public static void main(String[] args) {
+
+	        Date start = new Date();
+
+	        Map<Integer, Book> books = new HashMap<Integer, Book>(500000, 0.9f);
+	        for (int i = 0; i < 1000000; i++) {
+	            books.put(i, new Book(i, "Jane Eyre", "Charlotte Bronte", 14.99));
+	        }
+
+
+	        Date end = new Date();
+	        System.out.println("Elapsed time was " + (end.getTime() - start.getTime()) + " ms.");
+	    }
+	}
+
+
+```
+
+- This time it took `Elapsed time was 507 ms.`.
+
+> [!IMPORTANT]
+> To find the best portion for performance, one can experiment with **initial size** and the **Load Factor**.
+
+- Don't put too big number for **HashMap**. It will take too much **memory** and one would never use the full size of **HashMap**.
+
+# 112. HashMap Performance.
+
+<img src="hashMapFirstAndLast.JPG" alt="picture of the course" width="500">
+
+- Case wants to `retrieve` Book from its `key`.
+
+1. **Java** wants to calculate of the key for 
