@@ -4,11 +4,11 @@ Section 21: Chapter 21 - How Maps Work
 
 # What I learned.
 
-# 109. The role of the Hashcode.
+# 108. How Hashmaps Work - part 1.
 
 <img src="hashMapDesc.PNG" alt="picture of the course" width="600"/>
 
-- **Hash Code**, will be connected to `HashCode`.
+- **HashMap**, will be working internally with `HashCode`.
 
 - `MAP` each **Key** is pointing to the **Value**.
     - These are **Unique**.
@@ -16,8 +16,8 @@ Section 21: Chapter 21 - How Maps Work
 - In **HashMap** retrieving value with the **Key**, will be irrelevant regardless of the **Size** of the **HashMap**
     - Example of `retrieving value with the key`:
         - **HashMap** size of **10** items.
-        - **HashMap** size of **10** items.
-    - Will be the **SAME!**.
+        - **HashMap** size of **100** items.
+    - Retrieving time will be the **SAME!**.
 
 <img src="hashMapWorking.PNG" alt="picture of the course" width="500"/>
 
@@ -30,9 +30,14 @@ Section 21: Chapter 21 - How Maps Work
     - If we are using **Integer** for keys, that **fine**.
         - With **String** or **other type**, this needs to be **converted** to **Integer**. 
 5. Java will do **Calculation** with the **Integer**. Calculation:
-    - **Modulus** of the **key** number and with **size** of the **HashMap**.
+    - **Modulus** of the **key** number and with **Size** of a **HashMap**.
+        - ❌ Not the size of the **internal array** ❌.
         - This **example** will be `12`.
             - This means, this will be stored in **bucket** number `12`.
+
+- Remember **HashMap** is having **Internal Array Size** and the **Bucket Size**.
+    - This internal size of is handled by **Java** and the size of the **HashMap** can be accessed by `map.size()`.
+    - [Some place to check the HashMap](https://en.wikipedia.org/wiki/Hash_table).
 
 # 109. The role of the Hashcode.
 
@@ -55,7 +60,7 @@ Section 21: Chapter 21 - How Maps Work
 
 <img src="hashMapArray.JPG" alt="picture of the course" width="500"/>
 
-1. Bucket contains **Linked List**(Not the Java, but similar).
+1. Bucket contains **Linked List** of objects (Not the Java **Linked List**, but similar).
 
 - Hash has concept called **Load Factor**.
     - Default load factor is **75%** of the capacity.
@@ -69,7 +74,7 @@ Section 21: Chapter 21 - How Maps Work
 
 <img src="hashCodeGrowing.JPG" alt="picture of the course" width="500">
 
-1. It will **HashMap** will grow **double** its size.
+1. This will **HashMap** will grow **double** its size.
     - For perspective **ArrayList** will grow **half of the column size**. 
 
 2. When **HashMap** grows, the positions **need** to be **re-evaluated**.
@@ -190,14 +195,40 @@ public class Main {
 - This time it took `Elapsed time was 507 ms.`.
 
 > [!IMPORTANT]
-> To find the best portion for performance, one can experiment with **initial size** and the **Load Factor**.
+> To find the best portion for performance, one can experiment with **Initial Size** and the **Load Factor**.
 
-- Don't put too big number for **HashMap**. It will take too much **memory** and one would never use the full size of **HashMap**.
+- Don't put too big number for **HashMap**. It will take too much **memory** and, one would never use the full size of **HashMap**.
 
 # 112. HashMap Performance.
 
+- **Case:** we want to `retrieve` Book from its `key`.
+
 <img src="hashMapFirstAndLast.JPG" alt="picture of the course" width="500">
 
-- Case wants to `retrieve` Book from its `key`.
+1. **Java** wants to calculate `hashCode` for that **key**. Take **modulus** of that **key** with **size** of **underlying array**.
+Find entry in the array, at that point.
 
-1. **Java** wants to calculate of the key for 
+2. Then its needs to **navigate** thought the **LinkedList** for the item with the **matching** key!
+
+> [!TIP]
+> Map small, Large **Linked List**?
+> Map large, Small **Linked List**?
+
+- Big question is for the **performance**, should this be:
+    - Map with **Small array**, and Large amount of items in **Linked List**.
+    - Map with **Big array** with a less item in the **Linked List**. 
+
+
+> [!CAUTION]
+> TODO, return here when get clarify for size operation!
+
+- Large is faster to navigate inside **array** or inside the **Linked List**.
+
+- TODO do this later.
+
+# 113. The rules for Hashcodes.
+
+
+- All this works fine, when the `Objects` or `Strings` has their own **hash codes**. 
+<img src="goodRangeHashCode.JPG" alt="picture of the course" width="500">
+
