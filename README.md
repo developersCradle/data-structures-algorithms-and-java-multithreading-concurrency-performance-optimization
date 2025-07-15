@@ -130,7 +130,10 @@ Insert certificate here when completed
 
 - [ ] Add first captions for all the chapters, like `#someThing`, so can be linked.
 
-# Data Structures and Algorithms: Deep Dive Using Java.
+<p align="center">
+    <img id="studying" src="Data Structures and Algorithms Deep Dive Using Java caption.gif" height=120 width=900>
+</p>
+
 
 ![Data Structures and Algorithms: Deep Dive Using Java](Data%20Structures%20and%20Algorithms.PNG)
 
@@ -146,9 +149,9 @@ This repository is made with **Eclipse**, therefore it will include configuratio
 
 [Website of maker](https://www.timbuchalka.com/).
 
-[Website of maker](https://jojoguruacademy.blogspot.com/).
+[Website of maker 2](https://jojoguruacademy.blogspot.com/).
 
-[Website of maker](https://learnprogramming.academy/).
+[Website of maker 3](https://learnprogramming.academy/).
 
 <!-- 
 Linkedin puts this shit front, when clicking from private mode x(. Need to put this to make jump working every case
