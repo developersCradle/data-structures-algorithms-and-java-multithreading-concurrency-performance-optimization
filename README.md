@@ -164,16 +164,18 @@ Insert certificate here when completed
 
 ## Progress/Curriculum.
 
-- [ ] [Introduction 01](#) -
-- [ ] [Introduction 02](#) -
-- [ ] [Introduction 03](#) -
-- [ ] [Introduction 04](#) -
-- [ ] [Introduction 05](#) -
-- [ ] [Introduction 06](#) -
-- [ ] [Introduction 07](#) -
-- [ ] [Introduction 08](#) -
-- [ ] [Introduction 09](#) -
-- [ ] [Introduction 10](#) -
+- [ ] [Section 1](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Data%20Structures%20and%20Algorithms%20Deep%20Dive%20Using%20Java/Section%2002/Section%2001#section-1---introduction) - Introduction.
+- [ ] [Section 2](#) - Arrays and Big-O Notation.
+- [ ] [Section 3](#) - Sort Algorithms Deep Dive.
+- [ ] [Section 4](#) - Mastering Lists in Java: Implementations and Applications.
+- [ ] [Section 5](#) - Stack Data Structures: Implementation and Use Cases.
+- [ ] [Section 6](#) - Mastering Queue Data Structures: Implementation and Applications in Java.
+- [ ] [Section 7](#) - Hash Tables: Mastering Key-Value Data Structures for Efficient Data Retrieval.
+- [ ] [Section 8](#) - Optimized Search Algorithms in Java: Linear and Binary Search.
+- [ ] [Section 9](#) - Mastering Tree Data Structures: Implementation and Optimization in Java.
+- [ ] [Section 10](#) - Mastering Heaps: Priority Queues and Heapsort Algorithm in Java.
+- [ ] [Section 11](#) - Final Section: Concluding the Course with Key Takeaways and Sets.
+- [ ] [Section 12](#) - Extra Information - Source code, and other stuff.
 
 ## Java Multithreading, Concurrency & Performance Optimization.
 
