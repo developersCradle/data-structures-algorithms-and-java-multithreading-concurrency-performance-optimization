@@ -1,12 +1,18 @@
-## Data Structures and Algorithms with Visualizations.
+
+<p align="center">
+    <img id="studying" src="Algorithms and Data Structures, with some Optimization courses caption.png" height=120 width=900>
+    <text>Attempt to study <b>Data Structures</b> and <b>Algorithms</b> related topics!</text>
+</p>
 
 - For these courses one should configure **GIT** for handle projects.
     - `git config --global http.postBuffer 524288000`.
     - `git config --global core.longpaths true`.
 
-Data Structures and Algorithms with Visualizations. With own visual notes. ✍️
+## Data Structures and Algorithms with Visualizations.
 
-<img src="courseIntro.JPG" alt="course intros" width="400"/>
+<p align="center">
+    <img src="courseIntro.JPG" alt="course intros" width="400"/>
+</p>
 
 All course material from **Data Structures and Algorithms with Visualizations with Java** by from **Dinesh Varyani**.
 
@@ -14,11 +20,20 @@ This repository is made with **Eclipse**, therefore it will include configuratio
 
 If the content sparked :fire: your interest, please consider starting the course and start learning :book:.
 
-[YouTube Source](https://www.youtube.com/playlist?list=PLe8LZCtW06l-WqVgtvL2Y_4BRrxcEbsg_).
+ **Main**: [YouTube Source](https://www.youtube.com/playlist?list=PLe8LZCtW06l-WqVgtvL2Y_4BRrxcEbsg_).
+    - **Optional**: [freeCodeCamp](https://www.freecodecamp.org/news/learn-data-structures-and-algorithms-2/).
+    - **Optional**: [YouTube Source](https://www.youtube.com/playlist?list=PLe8LZCtW06l-WqVgtvL2Y_4BRrxcEbsg_).
 
 [Source Codes](https://github.com/dinesh-varyani/ds-algos).
 
-Insert certificate here when completed
+<!-- 
+Linkedin puts this shit front, when clicking from private mode x(. Need to put this to make jump working every case
+?trk=public_profile_see-credential 
+-->
+
+<div align="center">
+    Insert certificate here when completed
+</div>
 
 **Note: The material provided in this repository is only for helping those who may get stuck at any point of time in the course. It is very advised that no one should just copy the solutions(violation of Honor Code) presented here.**
 
@@ -131,6 +146,38 @@ Insert certificate here when completed
 - [ ] Add first captions for all the chapters, like `#someThing`, so can be linked.
 
 <p align="center">
+    <img id="studying" src="Data Structures Easy to Advanced Course caption.png" height=120 width=900>
+</p>
+
+![Data Structures Easy to Advanced Course](Learn%20Data%20Structures%20from%20a%20Google%20Engineer%20caption%20desc.jpg)
+
+todo this desc.
+
+Contains my own notes with some course material to enforce learning experience.
+
+If the content sparked :fire: your interest, please consider buying the course and start learning :book:.
+
+This repository is made with **Eclipse**, therefore it will include configuration files which are related to this IDE this approach will be favored for now. ⚙️
+
+[freeCodeCamp](https://www.freecodecamp.org/news/learn-data-structures-from-a-google-engineer/).
+[GitHub repo](https://github.com/williamfiset/DEPRECATED-data-structures).
+
+<!-- 
+Linkedin puts this shit front, when clicking from private mode x(. Need to put this to make jump working every case
+?trk=public_profile_see-credential 
+-->
+
+<div align="center">
+    Insert certificate here when completed
+</div>
+
+**Note: The material provided in this repository is only for helping those who may get stuck at any point of time in the course. It is very advised that no one should just copy the solutions(violation of Honor Code) presented here.**
+
+## Progress/Curriculum.
+
+- [ ] [Section 01](#) - Add here.
+
+<p align="center">
     <img id="studying" src="Data Structures and Algorithms Deep Dive Using Java caption.gif" height=120 width=900>
 </p>
 
@@ -158,21 +205,24 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 ?trk=public_profile_see-credential 
 -->
 
-Insert certificate here when completed
+<div align="center">
+    Insert certificate here when completed
+</div>
+
 
 **Note: The material provided in this repository is only for helping those who may get stuck at any point of time in the course. It is very advised that no one should just copy the solutions(violation of Honor Code) presented here.**
 
 ## Progress/Curriculum.
 
-- [ ] [Section 1](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Data%20Structures%20and%20Algorithms%20Deep%20Dive%20Using%20Java/Section%2002/Section%2001#section-1---introduction) - Introduction.
-- [ ] [Section 2](#) - Arrays and Big-O Notation.
-- [ ] [Section 3](#) - Sort Algorithms Deep Dive.
-- [ ] [Section 4](#) - Mastering Lists in Java: Implementations and Applications.
-- [ ] [Section 5](#) - Stack Data Structures: Implementation and Use Cases.
-- [ ] [Section 6](#) - Mastering Queue Data Structures: Implementation and Applications in Java.
-- [ ] [Section 7](#) - Hash Tables: Mastering Key-Value Data Structures for Efficient Data Retrieval.
-- [ ] [Section 8](#) - Optimized Search Algorithms in Java: Linear and Binary Search.
-- [ ] [Section 9](#) - Mastering Tree Data Structures: Implementation and Optimization in Java.
+- [ ] [Section 01](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Data%20Structures%20and%20Algorithms%20Deep%20Dive%20Using%20Java/Section%2002/Section%2001#section-1---introduction) - Introduction.
+- [ ] [Section 02](#) - Arrays and Big-O Notation.
+- [ ] [Section 03](#) - Sort Algorithms Deep Dive.
+- [ ] [Section 04](#) - Mastering Lists in Java: Implementations and Applications.
+- [ ] [Section 05](#) - Stack Data Structures: Implementation and Use Cases.
+- [ ] [Section 06](#) - Mastering Queue Data Structures: Implementation and Applications in Java.
+- [ ] [Section 07](#) - Hash Tables: Mastering Key-Value Data Structures for Efficient Data Retrieval.
+- [ ] [Section 08](#) - Optimized Search Algorithms in Java: Linear and Binary Search.
+- [ ] [Section 09](#) - Mastering Tree Data Structures: Implementation and Optimization in Java.
 - [ ] [Section 10](#) - Mastering Heaps: Priority Queues and Heapsort Algorithm in Java.
 - [ ] [Section 11](#) - Final Section: Concluding the Course with Key Takeaways and Sets.
 - [ ] [Section 12](#) - Extra Information - Source code, and other stuff.
@@ -198,7 +248,9 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 ?trk=public_profile_see-credential 
 -->
 
-Insert certificate here when completed
+<div align="center">
+    Insert certificate here when completed
+</div>
 
 **Note: The material provided in this repository is only for helping those who may get stuck at any point of time in the course. It is very advised that no one should just copy the solutions(violation of Honor Code) presented here.**
 
