@@ -1,6 +1,6 @@
 
 <p align="center">
-    <img id="studying" src="Algorithms and Data Structures, with some Optimization courses caption.png" height=120 width=900>
+    <img id="studying" src="Algorithms and Data Structures, with some Optimization courses caption.png" height=150 width=900>
     <text>Attempt to study <b>Data Structures</b> and <b>Algorithms</b> related topics!</text>
 </p>
 
@@ -8,7 +8,10 @@
     - `git config --global http.postBuffer 524288000`.
     - `git config --global core.longpaths true`.
 
-## Data Structures and Algorithms with Visualizations.
+<p align="center">
+    <img id="studying" src="data structures and algorithms with visualizations caption.png" height=100 width=900>
+</p>
+
 
 <p align="center">
     <img src="courseIntro.JPG" alt="course intros" width="400"/>
@@ -16,13 +19,13 @@
 
 All course material from **Data Structures and Algorithms with Visualizations with Java** by from **Dinesh Varyani**.
 
-This repository is made with **Eclipse**, therefore it will include configuration files which are related to this IDE this approach will be favored for now. ⚙️
+This repository is made with [![Eclipse](https://img.shields.io/badge/Eclipse-FE7A16.svg?logo=Eclipse&logoColor=white)](#), therefore it will include configuration files which are related to this IDE this approach will be favored for now. ⚙️
 
 If the content sparked :fire: your interest, please consider starting the course and start learning :book:.
 
- **Main**: [YouTube Source](https://www.youtube.com/playlist?list=PLe8LZCtW06l-WqVgtvL2Y_4BRrxcEbsg_).
-    - **Optional**: [freeCodeCamp](https://www.freecodecamp.org/news/learn-data-structures-and-algorithms-2/).
-    - **Optional**: [YouTube Source](https://www.youtube.com/playlist?list=PLe8LZCtW06l-WqVgtvL2Y_4BRrxcEbsg_).
+**Main**: [YouTube Source](https://www.youtube.com/playlist?list=PLe8LZCtW06l-WqVgtvL2Y_4BRrxcEbsg_).
+**Optional**: [freeCodeCamp](https://www.freecodecamp.org/news/learn-data-structures-and-algorithms-2/).
+**Optional**: [YouTube Source](https://www.youtube.com/playlist?list=PLe8LZCtW06l-WqVgtvL2Y_4BRrxcEbsg_).
 
 [Source Codes](https://github.com/dinesh-varyani/ds-algos).
 
@@ -178,7 +181,7 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 - [ ] [Section 01](#) - Add here.
 
 <p align="center">
-    <img id="studying" src="Data Structures and Algorithms Deep Dive Using Java caption.gif" height=120 width=900>
+    <img id="studying" src="Data Structures and Algorithms Deep Dive Using Java caption.gif" height=130 width=900>
 </p>
 
 
@@ -190,11 +193,11 @@ Contains my own notes with some course material to enforce learning experience.
 
 If the content sparked :fire: your interest, please consider buying the course and start learning :book:.
 
-This repository is made with **Eclipse**, therefore it will include configuration files which are related to this IDE this approach will be favored for now. ⚙️
+This repository is made with [![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?logo=intellij-idea&logoColor=white)](#) with **Eclipse** hotkeys. This is why it will include configuration files which are related to this IDE this approach will be favored for now. ⚙️
 
 [The course at Udemy](https://www.udemy.com/course/data-structures-and-algorithms-deep-dive-using-java). 
 
-[Website of maker](https://www.timbuchalka.com/).
+[Website of maker 1](https://www.timbuchalka.com/).
 
 [Website of maker 2](https://jojoguruacademy.blogspot.com/).
 
@@ -214,8 +217,8 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 ## Progress/Curriculum.
 
-- [ ] [Section 01](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Data%20Structures%20and%20Algorithms%20Deep%20Dive%20Using%20Java/Section%2002/Section%2001#section-1---introduction) - Introduction.
-- [ ] [Section 02](#) - Arrays and Big-O Notation.
+- [x] [Section 01](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Data%20Structures%20and%20Algorithms%20Deep%20Dive%20Using%20Java/Section%2001#section-1---introduction) - Introduction. ✅
+- [ ] [Section 02](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Data%20Structures%20and%20Algorithms%20Deep%20Dive%20Using%20Java/Section%2002#section-2---arrays-and-big-o-notation) - Arrays and Big-O Notation.
 - [ ] [Section 03](#) - Sort Algorithms Deep Dive.
 - [ ] [Section 04](#) - Mastering Lists in Java: Implementations and Applications.
 - [ ] [Section 05](#) - Stack Data Structures: Implementation and Use Cases.
@@ -287,7 +290,7 @@ Insert certificate here when completed
 
 ## Progress/Curriculum.
 
-- [ ] [Chapter 1](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Application%20Performance%20Tuning%20and%20Memory%20Management/Section%2001#chapter-1---introduction) - Introduction.
+- [ ] [Chapter 01](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Application%20Performance%20Tuning%20and%20Memory%20Management/Section%2001#chapter-1---introduction) - Introduction.
 - [ ] [Chapter 11](#) - 
 - [ ] [Chapter 12](#) - 
 - [ ] [Chapter 13](#) - 
