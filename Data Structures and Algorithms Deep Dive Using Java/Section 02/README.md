@@ -15,7 +15,7 @@ Arrays and Big-O Notation.
     - I used **Java 21**.
 
 - **Arrays** are not dynamically resized. Once you have defined it, you cannot **increase** or **decrease** the size!
-    - `int[] intArray = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };`
+    - `int[] intArray = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };`.
 
 - Example of using the **Array**, for refreshment!
 

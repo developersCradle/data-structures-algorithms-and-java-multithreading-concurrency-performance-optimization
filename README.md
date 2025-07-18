@@ -8,9 +8,7 @@
     - `git config --global http.postBuffer 524288000`.
     - `git config --global core.longpaths true`.
 
-<p align="center">
-    <img id="studying" src="data structures and algorithms with visualizations caption.png" height=100 width=900>
-</p>
+<img id="studying" src="data structures and algorithms with visualizations caption.png" height=100 width=900>
 
 
 <p align="center">
@@ -24,7 +22,9 @@ This repository is made with [![Eclipse](https://img.shields.io/badge/Eclipse-FE
 If the content sparked :fire: your interest, please consider starting the course and start learning :book:.
 
 **Main**: [YouTube Source](https://www.youtube.com/playlist?list=PLe8LZCtW06l-WqVgtvL2Y_4BRrxcEbsg_).
+
 **Optional**: [freeCodeCamp](https://www.freecodecamp.org/news/learn-data-structures-and-algorithms-2/).
+
 **Optional**: [YouTube Source](https://www.youtube.com/playlist?list=PLe8LZCtW06l-WqVgtvL2Y_4BRrxcEbsg_).
 
 [Source Codes](https://github.com/dinesh-varyani/ds-algos).
