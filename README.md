@@ -1,25 +1,22 @@
 
 <p align="center">
-    <img id="studying" src="Algorithms and Data Structures, with some Optimization courses caption.png" height=150 width=900>
+    <img id="studying" src="Algorithms and Data Structures, with some Optimization courses caption.png" style="width:900px;height:140px;">
     <text>Attempt to study <b>Data Structures</b> and <b>Algorithms</b> related topics!</text>
 </p>
 
 - For these courses one should configure **GIT** for handle projects.
-    - `git config --global http.postBuffer 524288000`.
+    - `git config --global http.postBuffer 524288000`
     - `git config --global core.longpaths true`.
 
-<img id="studying" src="data structures and algorithms with visualizations caption.png" height=100 width=900>
-
+<img id="studying" src="data structures and algorithms with visualizations caption.png" style="width:900px;height:70px;">
 
 <p align="center">
-    <img src="courseIntro.JPG" alt="course intros" width="400"/>
+    <img src="courseIntro.JPG" alt="course intros" width="500"/>
 </p>
 
 All course material from **Data Structures and Algorithms with Visualizations with Java** by from **Dinesh Varyani**.
 
 This repository is made with [![Eclipse](https://img.shields.io/badge/Eclipse-FE7A16.svg?logo=Eclipse&logoColor=white)](#), therefore it will include configuration files which are related to this IDE this approach will be favored for now. ⚙️
-
-If the content sparked :fire: your interest, please consider starting the course and start learning :book:.
 
 **Main**: [YouTube Source](https://www.youtube.com/playlist?list=PLe8LZCtW06l-WqVgtvL2Y_4BRrxcEbsg_).
 
@@ -28,6 +25,8 @@ If the content sparked :fire: your interest, please consider starting the course
 **Optional**: [YouTube Source](https://www.youtube.com/playlist?list=PLe8LZCtW06l-WqVgtvL2Y_4BRrxcEbsg_).
 
 [Source Codes](https://github.com/dinesh-varyani/ds-algos).
+
+If the content sparked :fire: your interest, please consider starting the course and start learning :book:.
 
 <!-- 
 Linkedin puts this shit front, when clicking from private mode x(. Need to put this to make jump working every case
@@ -158,12 +157,12 @@ todo this desc.
 
 Contains my own notes with some course material to enforce learning experience.
 
-If the content sparked :fire: your interest, please consider buying the course and start learning :book:.
-
-This repository is made with **Eclipse**, therefore it will include configuration files which are related to this IDE this approach will be favored for now. ⚙️
+This repository is made with [![Eclipse](https://img.shields.io/badge/Eclipse-FE7A16.svg?logo=Eclipse&logoColor=white)](#), therefore it will include configuration files which are related to this IDE this approach will be favored for now. ⚙️
 
 [freeCodeCamp](https://www.freecodecamp.org/news/learn-data-structures-from-a-google-engineer/).
 [GitHub repo](https://github.com/williamfiset/DEPRECATED-data-structures).
+
+If the content sparked :fire: your interest, please consider buying the course and start learning :book:.
 
 <!-- 
 Linkedin puts this shit front, when clicking from private mode x(. Need to put this to make jump working every case
@@ -191,8 +190,6 @@ All course material from Data Structures and Algorithms: Deep Dive Using Java by
 
 Contains my own notes with some course material to enforce learning experience.
 
-If the content sparked :fire: your interest, please consider buying the course and start learning :book:.
-
 This repository is made with [![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?logo=intellij-idea&logoColor=white)](#) with **Eclipse** hotkeys. This is why it will include configuration files which are related to this IDE this approach will be favored for now. ⚙️
 
 [The course at Udemy](https://www.udemy.com/course/data-structures-and-algorithms-deep-dive-using-java). 
@@ -203,6 +200,8 @@ This repository is made with [![IntelliJ IDEA](https://img.shields.io/badge/Inte
 
 [Website of maker 3](https://learnprogramming.academy/).
 
+If the content sparked :fire: your interest, please consider buying the course and start learning :book:.
+
 <!-- 
 Linkedin puts this shit front, when clicking from private mode x(. Need to put this to make jump working every case
 ?trk=public_profile_see-credential 
@@ -211,7 +210,6 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 <div align="center">
     Insert certificate here when completed
 </div>
-
 
 **Note: The material provided in this repository is only for helping those who may get stuck at any point of time in the course. It is very advised that no one should just copy the solutions(violation of Honor Code) presented here.**
 
@@ -238,13 +236,13 @@ All course material from Java Multithreading, Concurrency & Performance Optimiza
 
 Contains my own notes with some course material to enforce learning experience.
 
-If the content sparked :fire: your interest, please consider buying the course and start learning :book:.
-
-This repository is made with **Eclipse**, therefore it will include configuration files which are related to this IDE this approach will be favored for now. ⚙️
+This repository is made with [![Eclipse](https://img.shields.io/badge/Eclipse-FE7A16.svg?logo=Eclipse&logoColor=white)](#), therefore it will include configuration files which are related to this IDE this approach will be favored for now. ⚙️
 
 [The course at Udemy](https://www.udemy.com/course/java-multithreading-concurrency-performance-optimization/). 
 
 [Website of maker](https://topdeveloperacademy.com/).
+
+If the content sparked :fire: your interest, please consider buying the course and start learning :book:.
 
 <!-- 
 Linkedin puts this shit front, when clicking from private mode x(. Need to put this to make jump working every case
@@ -270,21 +268,69 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 - [ ] [Introduction 09](#) -
 - [ ] [Introduction 10](#) -
 
+---
+
+## Multithreading, Parallel & Asynchronous Coding in Modern Java.
+
+![Performance Optimization](Multithreading,Parallel%20&%20Asynchronous%20Coding%20in%20Modern%20Java%20desc.PNG)
+
+
+- Todo tee tämä loppuun
+
+
+
+All course material from Java Multithreading, Concurrency & Performance Optimization by **Michael Pogrebinsky** and **Top Developer Academy LLC**.
+
+Contains my own notes with some course material to enforce learning experience.
+
+This repository is made with [![Eclipse](https://img.shields.io/badge/Eclipse-FE7A16.svg?logo=Eclipse&logoColor=white)](#), therefore it will include configuration files which are related to this IDE this approach will be favored for now. ⚙️
+
+[The course at Udemy](https://www.udemy.com/course/java-multithreading-concurrency-performance-optimization/). 
+
+[Website of maker](https://topdeveloperacademy.com/).
+
+If the content sparked :fire: your interest, please consider buying the course and start learning :book:.
+
+<!-- 
+Linkedin puts this shit front, when clicking from private mode x(. Need to put this to make jump working every case
+?trk=public_profile_see-credential 
+-->
+
+<div align="center">
+    Insert certificate here when completed
+</div>
+
+**Note: The material provided in this repository is only for helping those who may get stuck at any point of time in the course. It is very advised that no one should just copy the solutions(violation of Honor Code) presented here.**
+
+## Progress/Curriculum.
+
+- [ ] [Introduction 01](#) -
+
+
+---
+
 ## Java Application Performance Tuning and Memory Management.
 
 <img src="javaPerformance.PNG" alt="course intros" width="700"/>
 
 All course material from **Java Application Performance Tuning and Memory Management** by from **Matt Greencroft** and **Virtual Pair Programmers** with my own visual notes. ✍️
 
-This repository is made with **Eclipse**, therefore it will include configuration files which are related to this IDE this approach will be favored for now. ⚙️
-
-If the content sparked :fire: your interest, please consider starting the course and start learning :book:.
+This repository is made with [![Eclipse](https://img.shields.io/badge/Eclipse-FE7A16.svg?logo=Eclipse&logoColor=white)](#), therefore it will include configuration files which are related to this IDE this approach will be favored for now. ⚙️
 
 [Udemy](https://www.udemy.com/course/java-application-performance-and-memory-management).
 
 [Homepage of maker](https://www.virtualpairprogrammers.com/).
 
-Insert certificate here when completed
+If the content sparked :fire: your interest, please consider starting the course and start learning :book:.
+
+<!-- 
+Linkedin puts this shit front, when clicking from private mode x(. Need to put this to make jump working every case
+?trk=public_profile_see-credential 
+-->
+
+<div align="center">
+    Insert certificate here when completed
+</div>
 
 **Note: The material provided in this repository is only for helping those who may get stuck at any point of time in the course. It is very advised that no one should just copy the solutions(violation of Honor Code) presented here.**
 
