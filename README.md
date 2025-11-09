@@ -1,7 +1,11 @@
 
 <p align="center">
     <img id="studying" src="Algorithms and Data Structures, with some Optimization courses caption.png" style="width:900px;height:140px;">
-    <text>Attempt to study <b>Data Structures</b> and <b>Algorithms</b> related topics!</text>
+    <text>Attempt to study <b>Data Structures</b>, <b>Optimization</b> and <b>Algorithms</b> related topics!</text>
+</p>
+
+<p align="center">
+   <img src="https://i.sstatic.net/BawfO.gif" alt="optimization" width="400" height="250"/>
 </p>
 
 - For these courses one should configure **GIT** for handle projects.
@@ -11,7 +15,7 @@
 <img id="studying" src="data structures and algorithms with visualizations caption.png" style="width:900px;height:70px;">
 
 <p align="center">
-    <img src="courseIntro.JPG" alt="course intros" width="500"/>
+    <img src="courseIntro.JPG" alt="Free data Structures and Algorithm" style="width:500px;"/>
 </p>
 
 All course material from **Data Structures and Algorithms with Visualizations with Java** by from **Dinesh Varyani**.
@@ -143,7 +147,7 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 - [ ] [Introduction 99](#) -
 - [ ] [Introduction 100](#) -
 
-### Additional stuff.
+#### Additional stuff.
 
 - [ ] Add first captions for all the chapters, like `#someThing`, so can be linked.
 
@@ -175,7 +179,7 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 **Note: The material provided in this repository is only for helping those who may get stuck at any point of time in the course. It is very advised that no one should just copy the solutions(violation of Honor Code) presented here.**
 
-## Progress/Curriculum.
+#### Progress/Curriculum.
 
 - [ ] [Section 01](#) - Add here.
 
@@ -213,7 +217,7 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 **Note: The material provided in this repository is only for helping those who may get stuck at any point of time in the course. It is very advised that no one should just copy the solutions(violation of Honor Code) presented here.**
 
-## Progress/Curriculum.
+#### Progress/Curriculum.
 
 - [x] [Section 01](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Data%20Structures%20and%20Algorithms%20Deep%20Dive%20Using%20Java/Section%2001#section-1---introduction) - Introduction. ✅
 - [ ] [Section 02](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Data%20Structures%20and%20Algorithms%20Deep%20Dive%20Using%20Java/Section%2002#section-2---arrays-and-big-o-notation) - Arrays and Big-O Notation.
@@ -273,12 +277,11 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 - [ ] [Section 11](#) - Virtual Threads and High-Performance IO.
 - [ ] [Section 12](#) - Beyond Multithreading - Final Lecture.
 
----
-
-## Multithreading, Parallel & Asynchronous Coding in Modern Java.
+<p align="center">
+    <img src="Multithreading, Parallel & Asynchronous Coding in Modern Java caption.png" alt="course intros" style="width:900px;height:110px;"/>
+</p>
 
 ![Performance Optimization](Multithreading,Parallel%20&%20Asynchronous%20Coding%20in%20Modern%20Java%20desc.PNG)
-
 
 - [ ] [Section 01](#) - Getting Started With the Course.
 - [ ] [Section 02](#) - Course Slides.
@@ -324,16 +327,16 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 **Note: The material provided in this repository is only for helping those who may get stuck at any point of time in the course. It is very advised that no one should just copy the solutions(violation of Honor Code) presented here.**
 
-## Progress/Curriculum.
+#### Progress/Curriculum.
 
 - [ ] [Introduction 01](#) -
 
+<p align="center">
+    <img src="Java Application Performance Tuning and Memory Management caption.png" alt="course intros" style="width:1000px;height:110px;"/>
+</p>
 
----
+![Java Application Performance Tuning and Memory Management](Java%20Application%20Performance%20Tuning%20and%20Memory%20Management%20desc.PNG)
 
-## Java Application Performance Tuning and Memory Management.
-
-<img src="javaPerformance.PNG" alt="course intros" width="700"/>
 
 All course material from **Java Application Performance Tuning and Memory Management** by from **Matt Greencroft** and **Virtual Pair Programmers** with my own visual notes. ✍️
 
@@ -356,7 +359,7 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 **Note: The material provided in this repository is only for helping those who may get stuck at any point of time in the course. It is very advised that no one should just copy the solutions(violation of Honor Code) presented here.**
 
-## Progress/Curriculum.
+#### Progress/Curriculum.
 
 - [ ] [Chapter 01](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Application%20Performance%20Tuning%20and%20Memory%20Management/Section%2001#chapter-1---introduction) - Introduction.
 - [ ] [Chapter 11](#) - 
@@ -371,6 +374,6 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 - [ ] [Chapter 20](#) - 
 - [ ] [Chapter 21](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Application%20Performance%20Tuning%20and%20Memory%20Management/Section%2021#section-21-chapter-21---how-maps-work) - How Maps Work.
 
-### Additional stuff.
+#### Additional stuff.
 
 - [x] Check the content from other student [Link](https://github.com/tommic81/udemy-java-memory-management/tree/master). ✅
