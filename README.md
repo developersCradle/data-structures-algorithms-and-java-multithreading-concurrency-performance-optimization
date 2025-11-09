@@ -148,7 +148,7 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 - [ ] Add first captions for all the chapters, like `#someThing`, so can be linked.
 
 <p align="center">
-    <img id="studying" src="Data Structures Easy to Advanced Course caption.png" height=120 width=900>
+    <img id="studying" src="Data Structures Easy to Advanced Course caption.png" style="width:900px;height:140px;">
 </p>
 
 ![Data Structures Easy to Advanced Course](Learn%20Data%20Structures%20from%20a%20Google%20Engineer%20caption%20desc.jpg)
@@ -180,7 +180,7 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 - [ ] [Section 01](#) - Add here.
 
 <p align="center">
-    <img id="studying" src="Data Structures and Algorithms Deep Dive Using Java caption.gif" height=130 width=900>
+    <img id="studying" src="Data Structures and Algorithms Deep Dive Using Java caption.gif" style="width:900px;height:140px;">
 </p>
 
 
@@ -228,7 +228,10 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 - [ ] [Section 11](#) - Final Section: Concluding the Course with Key Takeaways and Sets.
 - [ ] [Section 12](#) - Extra Information - Source code, and other stuff.
 
-## Java Multithreading, Concurrency & Performance Optimization.
+<p align="center">
+    <img src="Java Multithreading, Concurrency & Performance Optimization caption.png" alt="course intros" style="width:900px;height:90px;"/>
+</p>
+
 
 ![Performance Optimization](performanceOptimization.PNG)
 
@@ -257,16 +260,18 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 ## Progress/Curriculum.
 
-- [ ] [Introduction 01](#) -
-- [ ] [Introduction 02](#) -
-- [ ] [Introduction 03](#) -
-- [ ] [Introduction 04](#) -
-- [ ] [Introduction 05](#) -
-- [ ] [Introduction 06](#) -
-- [ ] [Introduction 07](#) -
-- [ ] [Introduction 08](#) -
-- [ ] [Introduction 09](#) -
-- [ ] [Introduction 10](#) -
+- [ ] [Section 01](#) - Introduction.
+- [ ] [Section 02](#) - Threading Fundamentals - Thread Creation.
+- [ ] [Section 03](#) - Threading Fundamentals - Thread Coordination.
+- [ ] [Section 04](#) - Performance Optimization.
+- [ ] [Section 05](#) - Data Sharing Between Threads.
+- [ ] [Section 06](#) - The Concurrency Challenges & Solutions.
+- [ ] [Section 07](#) - Advanced Locking.
+- [ ] [Section 08](#) - Inter-Thread Communication.
+- [ ] [Section 09](#) - Lock-Free Algorithms, Data-Structures & Techniques.
+- [ ] [Section 10](#) - Threading Models for High Performance IO.
+- [ ] [Section 11](#) - Virtual Threads and High-Performance IO.
+- [ ] [Section 12](#) - Beyond Multithreading - Final Lecture.
 
 ---
 
@@ -275,9 +280,26 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 ![Performance Optimization](Multithreading,Parallel%20&%20Asynchronous%20Coding%20in%20Modern%20Java%20desc.PNG)
 
 
-- Todo tee tämä loppuun
-
-
+- [ ] [Section 01](#) - Getting Started With the Course.
+- [ ] [Section 02](#) - Course Slides.
+- [ ] [Section 03](#) - Getting Started with Parallel and Asynchronous Programming.
+- [ ] [Section 04](#) - Course Project Setup.
+- [ ] [Section 05](#) - Threads, Future, ForkJoin and its Limitations.
+- [ ] [Section 06](#) - Getting Started with Parallel Streams.
+- [ ] [Section 07](#) - Build Retail Checkout Application using Parallel Streams.
+- [ ] [Section 08](#) - Parallel Streams - Under the Hood.
+- [ ] [Section 09](#) - Parallel Streams - Threading Model & Common ForkJoin Pool.
+- [ ] [Section 10](#) - Parallel Streams - Summary.
+- [ ] [Section 11](#) - CompletableFuture.
+- [ ] [Section 12](#) - Exploring CompletableFuture Functions.
+- [ ] [Section 13](#) - Build ProductService Application using CompletableFuture.
+- [ ] [Section 14](#) - Combining Streams and CompletableFuture. 
+- [ ] [Section 15](#) - Exception Handling/Recovery in CompletableFuture.
+- [ ] [Section 16](#) - Implement Exception Handling/Recovery in ProductService.
+- [ ] [Section 17](#) - CompletableFuture & Threadpool.
+- [ ] [Section 18](#) - Threads and Async Overloaded Methods in CompletableFuture.
+- [ ] [Section 19](#) - Build Restful API Client using Spring WebClient and CompletableFuture.
+- [ ] [Section 20](#) - Handle Multiple CompletableFutures - anyOf(), allOf().
 
 All course material from Java Multithreading, Concurrency & Performance Optimization by **Michael Pogrebinsky** and **Top Developer Academy LLC**.
 
