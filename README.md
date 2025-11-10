@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-   <img src="https://i.sstatic.net/BawfO.gif" alt="optimization" width="400" height="250"/>
+   <img src="JavaMonolithOptimization.gif" alt="optimization" width="400" height="250"/>
 </p>
 
 - For these courses one should configure **GIT** for handle projects.
@@ -264,9 +264,9 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 ## Progress/Curriculum.
 
-- [ ] [Section 01](#) - Introduction.
-- [ ] [Section 02](#) - Threading Fundamentals - Thread Creation.
-- [ ] [Section 03](#) - Threading Fundamentals - Thread Coordination.
+- [ ] [Section 01](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Multithreading%2C%20Concurrency%20%26%20Performance%20Optimization/Section%2001/README.md#what-i-learned) - Introduction.
+- [ ] [Section 02](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Multithreading%2C%20Concurrency%20%26%20Performance%20Optimization/Section%2002/README.md#chapter-02---threading-fundamentals---thread-creation) - Threading Fundamentals - Thread Creation.
+- [ ] [Section 03](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading%2C%20Concurrency%20%26%20Performance%20Optimization/Section%2003#chapter-03---threading-fundamentals---thread-coordination) - Threading Fundamentals - Thread Coordination.
 - [ ] [Section 04](#) - Performance Optimization.
 - [ ] [Section 05](#) - Data Sharing Between Threads.
 - [ ] [Section 06](#) - The Concurrency Challenges & Solutions.
