@@ -116,3 +116,79 @@ Introduction.
 <div align="center">
     <img src="summary.PNG"  alt="Java threads" width="500"/>
 </div>
+
+# Operating Systems Fundamentals - Part 2.
+
+<div align="center">
+    <img src="topic.PNG"  alt="Java threads" width="500"/>
+</div>
+
+<div align="center">
+    <img src="differentTopicsInThisSwitch.PNG"  alt="Java threads" width="500"/>
+</div>
+
+- We need to clarify, when to use:
+    - **Process**.
+    - **Threads**.
+
+<div align="center">
+    <img src="ChangeTheThreadInTheCPU.gif"  alt="Java threads" width="500"/>
+</div>
+
+- There will be multiple **Threads** in different processes.
+    - **CPU** will have to stop thread and resume to the different processes in **consecutive** times!
+
+<div align="center">
+    <img src="ContextSwitching.gif"  alt="Java threads" width="500"/>
+</div>
+
+- Act of:
+    - `Stop thread 1`. **Stopping one thread**.
+    - `Schedule thread 1 out`. **Scheduling one thread out**.
+    - `Schedule thread 2 in`. **Scheduling one thread in**.
+    - `Start Thread 2`. **Starting one tread**.
+        - This is **Context Switching**.
+
+<div align="center">
+    <img src="ContextSwitchingCost.PNG"  alt="Java threads" width="500"/>
+</div>
+
+1. **Context Switch** is not cheap!
+2. Every **Context Switch**, we need to **load** or **store** data of one tread and restore the another!
+
+<div align="center">
+    <img src="thrashingConcept.PNG"  alt="Java threads" width="500"/>
+</div>
+
+1. **Thrashing**, when time is spent more on the **switching the context** rather than actual work in the CPU!
+2. **Threads** consumes less resources than the **Process**
+    - **Context Switching** is cheaper in general if the switch is happening inside **same** process.
+
+<div align="center">
+    <img src="ThreadScheduling.PNG"  alt="Java threads" width="500"/>
+</div>
+
+- In this example:
+
+<div align="center">
+    <img src="ThreadSchedulingInPics.PNG"  alt="Java threads" width="500"/>
+</div>
+
+1. There **two** threads in **Music Player**.
+2. There **two** threads in **Text Editor**.
+
+<div align="center">
+    <img src="ThreadSchedulingWithOneCpuExample.PNG"  alt="Java threads" width="500"/>
+</div>
+
+1. There will be **4** different threads from the **Music Player** and **Text Editor** app, in which **One CPU**, needs to prioritize with the **executing**.
+
+
+
+
+
+
+
+- [Fair Scheduler](https://developer.ibm.com/tutorials/l-completely-fair-scheduler/)
+
+- [Tread State](https://docs.oracle.com/javase/8/docs/api/java/lang/Thread.State.html)

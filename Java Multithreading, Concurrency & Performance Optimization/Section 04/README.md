@@ -1,5 +1,5 @@
-# Chapter 01 - Introduction.
+# Chapter 04 - Performance Optimization.
 
-Introduction.
+Performance Optimization.
 
 # What I learned.

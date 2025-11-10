@@ -155,7 +155,9 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
     <img id="studying" src="Data Structures Easy to Advanced Course caption.png" style="width:900px;height:140px;">
 </p>
 
-![Data Structures Easy to Advanced Course](Learn%20Data%20Structures%20from%20a%20Google%20Engineer%20caption%20desc.jpg)
+<p align="center">
+    <img src="Learn Data Structures from a Google Engineer caption desc.jpg" alt="Free data Structures and Algorithm" style="width:500px;"/>
+</p>
 
 todo this desc.
 
@@ -236,8 +238,7 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
     <img src="Java Multithreading, Concurrency & Performance Optimization caption.png" alt="course intros" style="width:900px;height:90px;"/>
 </p>
 
-
-![Performance Optimization](performanceOptimization.PNG)
+![Performance Optimization](Java%20Multithreading,%20Concurrency%20&%20Performance%20Optimization%20desc.PNG)
 
 All course material from Java Multithreading, Concurrency & Performance Optimization by **Michael Pogrebinsky** and **Top Developer Academy LLC**.
 
@@ -264,7 +265,7 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 ## Progress/Curriculum.
 
-- [ ] [Section 01](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Multithreading%2C%20Concurrency%20%26%20Performance%20Optimization/Section%2001/README.md#what-i-learned) - Introduction.
+- [x] [Section 01](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Multithreading%2C%20Concurrency%20%26%20Performance%20Optimization/Section%2001/README.md#what-i-learned) - Introduction. ✅
 - [ ] [Section 02](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Multithreading%2C%20Concurrency%20%26%20Performance%20Optimization/Section%2002/README.md#chapter-02---threading-fundamentals---thread-creation) - Threading Fundamentals - Thread Creation.
 - [ ] [Section 03](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading%2C%20Concurrency%20%26%20Performance%20Optimization/Section%2003#chapter-03---threading-fundamentals---thread-coordination) - Threading Fundamentals - Thread Coordination.
 - [ ] [Section 04](#) - Performance Optimization.
@@ -281,7 +282,9 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
     <img src="Multithreading, Parallel & Asynchronous Coding in Modern Java caption.png" alt="course intros" style="width:900px;height:110px;"/>
 </p>
 
-![Performance Optimization](Multithreading,Parallel%20&%20Asynchronous%20Coding%20in%20Modern%20Java%20desc.PNG)
+<p align="center">
+    <img src="Multithreading,Parallel & Asynchronous Coding in Modern Java desc.PNG" alt="course intros"/>
+</p>
 
 - [ ] [Section 01](#) - Getting Started With the Course.
 - [ ] [Section 02](#) - Course Slides.
@@ -332,10 +335,12 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 - [ ] [Introduction 01](#) -
 
 <p align="center">
-    <img src="Java Application Performance Tuning and Memory Management caption.png" alt="course intros" style="width:1000px;height:110px;"/>
+    <img src="Java Application Performance Tuning and Memory Management caption.png" alt="Java Application Performance Tuning and Memory Management" style="width:1000px;height:110px;"/>
 </p>
 
-![Java Application Performance Tuning and Memory Management](Java%20Application%20Performance%20Tuning%20and%20Memory%20Management%20desc.PNG)
+<p align="center">
+    <img src="Java Application Performance Tuning and Memory Management desc.PNG" alt="Java Application Performance Tuning and Memory Management description here"/>
+</p>
 
 
 All course material from **Java Application Performance Tuning and Memory Management** by from **Matt Greencroft** and **Virtual Pair Programmers** with my own visual notes. ✍️
