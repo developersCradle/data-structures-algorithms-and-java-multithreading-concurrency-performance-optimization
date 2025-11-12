@@ -147,13 +147,13 @@ Introduction.
     - `Schedule thread 1 out`. **Scheduling one thread out**.
     - `Schedule thread 2 in`. **Scheduling one thread in**.
     - `Start Thread 2`. **Starting one tread**.
-        - This is **Context Switching**.
+        - This is called **Context Switching**.
 
 <div align="center">
     <img src="ContextSwitchingCost.PNG"  alt="Java threads" width="500"/>
 </div>
 
-1. **Context Switch** is not cheap!
+1. **Context Switch** is not cheap, when dealing with many threads.
 2. Every **Context Switch**, we need to **load** or **store** data of one tread and restore the another!
 
 <div align="center">
@@ -183,12 +183,99 @@ Introduction.
 
 1. There will be **4** different threads from the **Music Player** and **Text Editor** app, in which **One CPU**, needs to prioritize with the **executing**.
 
+<div align="center">
+    <img src="whoRunsFirst.PNG"  alt="Java threads" width="500"/>
+</div>
 
+1. Which gets time to run first in **CPU**?
 
+- If we decide the **First Cone First Serve** strategy, below is the example: 
 
+<div align="center">
+    <img src="FirstComeFirstServe.gif"  alt="Java threads" width="500"/>
+</div>
 
+- We can use **First Come First Serve**.
 
+<div align="center">
+    <img src="FirstComesFirstServesThreadStarvation.PNG"  alt="Java threads" width="500"/>
+</div>
 
-- [Fair Scheduler](https://developer.ibm.com/tutorials/l-completely-fair-scheduler/)
+1. If there is **Thread** that takes much of time, this will cause **starvation** for other **Threads**.
+    - UI threads can have big problem.
 
-- [Tread State](https://docs.oracle.com/javase/8/docs/api/java/lang/Thread.State.html)
+<div align="center">
+    <img src="UIjobPrioritized.PNG"  alt="Java threads" width="500"/>
+</div>
+
+1. **UI** threads usually have shorter.
+    - They usually responses to the input of the user. 
+
+<div align="center">
+    <img src="problemWithPrioritizingWithTheShortestJobFirst.PNG"  alt="Java threads" width="500"/>
+</div>
+
+1. If the **shorter jobs** get into the **scheduling** all the time, other **Threads** will never be executed.
+
+<div align="center">
+    <img src="ThreadSchedulingThreding.PNG"  alt="Java threads" width="500"/>
+</div>
+
+- **OS scheduler** organizes time **slices** into **epochs** for fairness. 
+
+> An is **epoch** is full round during which every runnable thread (or process) gets a fair share of CPU time.
+
+<div align="center">
+    <img src="Epochs.gif"  alt="Java threads" width="500"/>
+</div>
+
+- We will try to fit processing time into **Epocsh**.
+
+<div align="center">
+    <img src="ThreadSchedulingDynamicPriority.PNG"  alt="Java threads" width="500"/>
+</div>
+
+- `Dynamic Priority` = `Static Priority` + `Bonus`.
+    - **Static Priority** is set by the **developer** programmatically.
+    - **Bonus** is adjusted by the **Operating System** in every epoch, for each thread.
+
+<div align="center">
+    <img src="ThreadSchedulingDynamicPrioritySecond.PNG"  alt="Java threads" width="500"/>
+</div>
+
+<div align="center">
+    <img src="threadsVsScheduling.PNG"  alt="Java threads" width="500"/>
+</div>
+
+<div align="center">
+    <img src="multipleThreadsApproach.PNG"  alt="Java threads" width="500"/>
+</div>
+
+1. Should we have **Multiple threads** approach.
+
+<div align="center">
+    <img src="mentalImageOfTheProcessOfTheMultiProcess.PNG"  alt="Java threads" width="500"/>
+</div>
+
+1. Should we have **Multiple Processes** approach.
+
+<div align="center">
+    <img src="WhenToPreferMultiThreadedApproach.PNG"  alt="Java threads" width="500"/>
+</div>
+
+1. If there are **tasks** that **share** lot of data, then its preferred to use **Multithreaded architecture** approach!
+2. Threads are much faster to **create** and **destroy**. Also, **switching** between threads of the same process is faster (shorter context switches), than switching between **processes**.
+
+<div align="center">
+    <img src="WhenToPreferMultiProcessApproach.PNG"  alt="Java threads" width="500"/>
+</div>
+
+1. If the tasks **are unrelated**, its better use different process!
+
+<div align="center">
+    <img src="summaryend.PNG"  alt="Java threads" width="500"/>
+</div>
+
+- Some additional links:
+    - [Fair Scheduler](https://developer.ibm.com/tutorials/l-completely-fair-scheduler/).
+    - [Tread State](https://docs.oracle.com/javase/8/docs/api/java/lang/Thread.State.html).

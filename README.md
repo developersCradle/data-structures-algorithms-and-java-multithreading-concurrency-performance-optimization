@@ -1,4 +1,3 @@
-
 <p align="center">
     <img id="studying" src="Algorithms and Data Structures, with some Optimization courses caption.png" style="width:900px;height:140px;">
     <text>Attempt to study <b>Data Structures</b>, <b>Optimization</b> and <b>Algorithms</b> related topics!</text>
@@ -166,6 +165,7 @@ Contains my own notes with some course material to enforce learning experience.
 This repository is made with [![Eclipse](https://img.shields.io/badge/Eclipse-FE7A16.svg?logo=Eclipse&logoColor=white)](#), therefore it will include configuration files which are related to this IDE this approach will be favored for now. ⚙️
 
 [freeCodeCamp](https://www.freecodecamp.org/news/learn-data-structures-from-a-google-engineer/).
+
 [GitHub repo](https://github.com/williamfiset/DEPRECATED-data-structures).
 
 If the content sparked :fire: your interest, please consider buying the course and start learning :book:.
@@ -189,8 +189,9 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
     <img id="studying" src="Data Structures and Algorithms Deep Dive Using Java caption.gif" style="width:900px;height:140px;">
 </p>
 
-
-![Data Structures and Algorithms: Deep Dive Using Java](Data%20Structures%20and%20Algorithms.PNG)
+<p align="center">
+    <img id="studying" src="Data Structures and Algorithms description.PNG">
+</p>
 
 All course material from Data Structures and Algorithms: Deep Dive Using Java by **Goran Lochert**, **Tim Buchalka** and **Tim Buchalka's Learn Programming Academy**.
 
