@@ -269,15 +269,15 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 - [x] [Section 01](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Multithreading%2C%20Concurrency%20%26%20Performance%20Optimization/Section%2001/README.md#what-i-learned) - Introduction. ✅
 - [ ] [Section 02](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Multithreading%2C%20Concurrency%20%26%20Performance%20Optimization/Section%2002/README.md#chapter-02---threading-fundamentals---thread-creation) - Threading Fundamentals - Thread Creation.
 - [ ] [Section 03](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading%2C%20Concurrency%20%26%20Performance%20Optimization/Section%2003#chapter-03---threading-fundamentals---thread-coordination) - Threading Fundamentals - Thread Coordination.
-- [ ] [Section 04](#) - Performance Optimization.
-- [ ] [Section 05](#) - Data Sharing Between Threads.
-- [ ] [Section 06](#) - The Concurrency Challenges & Solutions.
-- [ ] [Section 07](#) - Advanced Locking.
-- [ ] [Section 08](#) - Inter-Thread Communication.
-- [ ] [Section 09](#) - Lock-Free Algorithms, Data-Structures & Techniques.
-- [ ] [Section 10](#) - Threading Models for High Performance IO.
-- [ ] [Section 11](#) - Virtual Threads and High-Performance IO.
-- [ ] [Section 12](#) - Beyond Multithreading - Final Lecture.
+- [ ] [Section 04](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading%2C%20Concurrency%20%26%20Performance%20Optimization/Section%2004#chapter-04---performance-optimization) - Performance Optimization.
+- [ ] [Section 05](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading%2C%20Concurrency%20%26%20Performance%20Optimization/Section%2005#chapter-05---data-sharing-between-threads) - Data Sharing Between Threads.
+- [ ] [Section 06](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading%2C%20Concurrency%20%26%20Performance%20Optimization/Section%2006#chapter-06---the-concurrency-challenges--solutions) - The Concurrency Challenges & Solutions.
+- [ ] [Section 07](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading%2C%20Concurrency%20%26%20Performance%20Optimization/Section%2007#chapter-07---advanced-locking) - Advanced Locking.
+- [ ] [Section 08](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading%2C%20Concurrency%20%26%20Performance%20Optimization/Section%2008#chapter-08---inter-thread-communication) - Inter-Thread Communication.
+- [ ] [Section 09](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading%2C%20Concurrency%20%26%20Performance%20Optimization/Section%2009#chapter-09---lock-free-algorithms-data-structures--techniques) - Lock-Free Algorithms, Data-Structures & Techniques.
+- [ ] [Section 10](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading%2C%20Concurrency%20%26%20Performance%20Optimization/Section%2010#chapter-10---threading-models-for-high-performance-io) - Threading Models for High Performance IO.
+- [ ] [Section 11](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Multithreading%2C%20Concurrency%20%26%20Performance%20Optimization/Section%2011/README.md#chapter-11---virtual-threads-and-high-performance-io) - Virtual Threads and High-Performance IO.
+- [ ] [Section 12](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading%2C%20Concurrency%20%26%20Performance%20Optimization/Section%2012#chapter-12---extra-information---source-code-and-other-stuff) - Beyond Multithreading - Final Lecture.
 
 <p align="center">
     <img src="Multithreading, Parallel & Asynchronous Coding in Modern Java caption.png" alt="course intros" style="width:900px;height:110px;"/>
@@ -368,16 +368,25 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 #### Progress/Curriculum.
 
 - [ ] [Chapter 01](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Application%20Performance%20Tuning%20and%20Memory%20Management/Section%2001#chapter-1---introduction) - Introduction.
-- [ ] [Chapter 11](#) - 
-- [ ] [Chapter 12](#) - 
-- [ ] [Chapter 13](#) - 
-- [ ] [Chapter 14](#) - 
-- [ ] [Chapter 15](#) -  
-- [ ] [Chapter 16](#) -  
-- [ ] [Chapter 17](#) -  
-- [ ] [Chapter 18](#) - 
-- [ ] [Chapter 19](#) - 
-- [ ] [Chapter 20](#) - 
+- [ ] [Section 2](#) - Just In Time Compilation and the Code Cache.
+- [ ] [Section 3](#) - Selecting the JVM.
+- [ ] [Section 4](#) - How memory works: the stack and the heap.
+- [ ] [Section 5](#) - Passing objects between methods.
+- [ ] [Section 6](#) - Memory exercise.
+- [ ] [Section 7](#) - Escaping References.
+- [ ] [Section 8](#) - Memory Exercise.
+- [ ] [Section 9](#) - The Metaspace and internal JVM memory optimisations.
+- [ ] [Section 10](#) - Tuning the JVM’s Memory Settings.
+- [ ] [Section 11](#) - Introducing Garbage Collection.
+- [ ] [Section 12](#) - Monitoring the Heap.
+- [ ] [Section 13](#) - Analyzing a heap dump.
+- [ ] [Section 14](#) - Generational Garbage Collection.
+- [ ] [Section 15](#) - Garbage Collector tuning & selection.
+- [ ] [Section 16](#) - Using a profiler to analyse application performance.
+- [ ] [Section 17](#) - Assessing Performance.
+- [ ] [Section 18](#) - Benchmarking with JMH.
+- [ ] [Section 19](#) - Performance and Benchmarking Exercise.
+- [ ] [Section 20](#) - How Lists Work.
 - [ ] [Chapter 21](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Application%20Performance%20Tuning%20and%20Memory%20Management/Section%2021#section-21-chapter-21---how-maps-work) - How Maps Work.
 
 #### Additional stuff.

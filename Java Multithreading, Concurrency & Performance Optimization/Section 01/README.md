@@ -229,7 +229,7 @@ Introduction.
     <img src="Epochs.gif"  alt="Java threads" width="500"/>
 </div>
 
-- We will try to fit processing time into **Epocsh**.
+- We will try to fit processing time into **Epochs**.
 
 <div align="center">
     <img src="ThreadSchedulingDynamicPriority.PNG"  alt="Java threads" width="500"/>
