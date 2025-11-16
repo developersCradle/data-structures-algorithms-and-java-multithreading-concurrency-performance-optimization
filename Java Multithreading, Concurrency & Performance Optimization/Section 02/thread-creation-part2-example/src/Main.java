@@ -13,11 +13,18 @@ import java.util.List;
 import java.util.Random;
 
 public class Main {
+
     public static final int MAX_PASSWORD = 9999;
 
     public static void main(String[] args) {
-        Random random = new Random();
 
+//         Test with normal Thread.
+         Thread thread2 = new NewThread();
+         thread2.start();
+
+
+        /*
+        Random random = new Random();
         Vault vault = new Vault(random.nextInt(MAX_PASSWORD));
 
         List<Thread> threads = new ArrayList<>();
@@ -29,8 +36,9 @@ public class Main {
         for (Thread thread : threads) {
             thread.start();
         }
+         */
     }
-
+/*
     private static class Vault {
         private int password;
 
@@ -46,7 +54,17 @@ public class Main {
             return this.password == guess;
         }
     }
+*/
+    private static class NewThread extends Thread {
 
+        @Override
+        public void run() {
+            // Code that will run in  a new thread.
+            System.out.println("Hello from " + Thread.currentThread().getName());
+            super.run();
+        }
+    }
+/*
     private static abstract class HackerThread extends Thread {
         protected Vault vault;
 
@@ -112,4 +130,5 @@ public class Main {
             System.exit(0);
         }
     }
+ */
 }

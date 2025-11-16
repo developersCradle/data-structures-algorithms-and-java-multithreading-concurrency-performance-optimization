@@ -1,12 +1,14 @@
 # Section 21: Chapter 21 - How Maps Work.
 
-Section 21: Chapter 21 - How Maps Work
+Section 21: Chapter 21 - How Maps Work.
 
 # What I learned.
 
-# 108. How Hashmaps Work - part 1.
+# How Hashmaps Work - part 1.
 
-<img src="hashMapDesc.PNG" alt="picture of the course" width="600"/>
+<div align="center">
+	<img src="hashMapDesc.PNG" alt="picture of the course" width="600"/>
+</div>
 
 - **HashMap**, will be working internally with `HashCode`.
 
@@ -19,7 +21,10 @@ Section 21: Chapter 21 - How Maps Work
         - **HashMap** size of **100** items.
     - Retrieving time will be the **SAME!**.
 
-<img src="hashMapWorking.PNG" alt="picture of the course" width="500"/>
+<div align="center">
+	<img src="hashMapWorking.PNG" alt="picture of the course" width="500"/>
+</div>
+
 
 1. Will represents of the **Book**.
 2. The `id` will be `key`. This could be any Object, not just **Integer**.
@@ -39,11 +44,14 @@ Section 21: Chapter 21 - How Maps Work
     - This internal size of is handled by **Java** and the size of the **HashMap** can be accessed by `map.size()`.
     - [Some place to check the HashMap](https://en.wikipedia.org/wiki/Hash_table).
 
-# 109. The role of the Hashcode.
+# The role of the Hashcode.
 
 - Every **Java Object** has the `hashCode()`.
 
-<img src="hashMapWithTheString.GIF" alt="picture of the course" width="500"/>
+<div align="center">
+	<img src="hashMapWithTheString.GIF" alt="picture of the course" width="500"/>
+</div>
+
 
 1. Now the **Key** will be **String**.
     - In this case this we want to the **Integer** representation of the **String**. Now we can just call the **Strings** `hashCode()`.
@@ -51,14 +59,18 @@ Section 21: Chapter 21 - How Maps Work
 3. `HashCode` of this Object is. In this case its **String**. 
 4. Bucket number `4` is chosen for the `Little Women`.
 
-# 110. How Hashmaps Work - part 2.
+# How Hashmaps Work - part 2.
 
-<img src="hashMap.JPG" alt="picture of the course" width="500"/>
+<div align="center">
+	<img src="hashMap.JPG" alt="picture of the course" width="500"/>
+</div>
 
 1. There is **chance** that all **Objects** will be stored inside bucket **4**. Even thought, the **hash codes** are different, the operation yield same **bucket**.
     - So there can be multiple **objects** inside one bucket!
 
-<img src="hashMapArray.JPG" alt="picture of the course" width="500"/>
+<div align="center">
+	<img src="hashMapArray.JPG" alt="picture of the course" width="500"/>
+</div>
 
 1. Bucket contains **Linked List** of objects (Not the Java **Linked List**, but similar).
 
@@ -68,11 +80,15 @@ Section 21: Chapter 21 - How Maps Work
 - [Example of Load Factor](https://www.baeldung.com/java-hashmap-load-factor).
 > The **Load factor** is the measure that decides when to increase the capacity of the Map. The default load factor is **75%** of the capacity.
 
-<img src="loadFactor.JPG" alt="picture of the course" width="500">
+<div align="center">
+	<img src="loadFactor.JPG" alt="picture of the course" width="500">
+</div>
 
 1. If the **HashMap** have occupied 75% of the size, it is reconsidered to be **full!**.
 
-<img src="hashCodeGrowing.JPG" alt="picture of the course" width="500">
+<div align="center">
+	<img src="hashCodeGrowing.JPG" alt="picture of the course" width="500">
+</div>
 
 1. This will **HashMap** will grow **double** its size.
     - For perspective **ArrayList** will grow **half of the column size**. 
@@ -80,17 +96,21 @@ Section 21: Chapter 21 - How Maps Work
 2. When **HashMap** grows, the positions **need** to be **re-evaluated**.
     - This means, the **modulus** gives different answer, since `size` is now **double**.
 
-# 111. Specifying the initial size and factor of a HashMap.
+# Specifying the initial size and factor of a HashMap.
 
-<img src="hashMapExample.JPG" alt="picture of the course" width="500">
+<div align="center">
+	<img src="hashMapExample.JPG" alt="picture of the course" width="500">
+</div>
 
 1. How big it is from begging.
     - **Size** of array is always power of **two**, so size of array will be `2^19 = 524288`. So array of is at least `500000`, in this case it will be `524288`!
 2. Load Factor, how full it's should get, until it resizes.
 
-<img src="loadFactorInDebug.JPG" alt="picture of the course" width="500"/>
+<div align="center">
+	<img src="loadFactorInDebug.JPG" alt="picture of the course" width="500"/>
+</div>
 
-1. We can see the load factor in **debug** mode.
+1. We can see the `load factor` in **debug** mode.
 
 - In general, getting and setting stuff to `HashMap` pretty fast! 
 
@@ -199,11 +219,13 @@ public class Main {
 
 - Don't put too big number for **HashMap**. It will take too much **memory** and, one would never use the full size of **HashMap**.
 
-# 112. HashMap Performance.
+# HashMap Performance.
 
 - **Case:** we want to `retrieve` Book from its `key`.
 
-<img src="hashMapFirstAndLast.JPG" alt="picture of the course" width="500">
+<div align="center">
+	<img src="hashMapFirstAndLast.JPG" alt="picture of the course" width="500">
+</div>
 
 1. **Java** wants to calculate `hashCode` for that **key**. Take **modulus** of that **key** with **size** of **underlying array**.
 Find entry in the array, at that point.
@@ -226,9 +248,12 @@ Find entry in the array, at that point.
 
 - TODO do this later.
 
-# 113. The rules for Hashcodes.
-
+# The rules for Hashcodes.
 
 - All this works fine, when the `Objects` or `Strings` has their own **hash codes**. 
-<img src="goodRangeHashCode.JPG" alt="picture of the course" width="500">
+
+<div align="center">
+	<img src="goodRangeHashCode.JPG" alt="picture of the course" width="500">
+</div>
+
 

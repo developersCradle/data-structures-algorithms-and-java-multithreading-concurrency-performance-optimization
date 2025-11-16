@@ -42,7 +42,7 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 **Note: The material provided in this repository is only for helping those who may get stuck at any point of time in the course. It is very advised that no one should just copy the solutions(violation of Honor Code) presented here.**
 
-## Progress/Curriculum.
+#### Progress/Curriculum.
 
 - [x] Introduction 00 - Data Structures and Algorithms with Visualizations. ✅
 - [x] [Introduction 01](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/01%20Introduction%20to%20Data%20Structures) - Introduction to Data Structures. ✅
@@ -264,7 +264,7 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 **Note: The material provided in this repository is only for helping those who may get stuck at any point of time in the course. It is very advised that no one should just copy the solutions(violation of Honor Code) presented here.**
 
-## Progress/Curriculum.
+#### Progress/Curriculum.
 
 - [x] [Section 01](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Multithreading%2C%20Concurrency%20%26%20Performance%20Optimization/Section%2001/README.md#what-i-learned) - Introduction. ✅
 - [ ] [Section 02](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Multithreading%2C%20Concurrency%20%26%20Performance%20Optimization/Section%2002/README.md#chapter-02---threading-fundamentals---thread-creation) - Threading Fundamentals - Thread Creation.
@@ -286,27 +286,6 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 <p align="center">
     <img src="Multithreading,Parallel & Asynchronous Coding in Modern Java desc.PNG" alt="course intros"/>
 </p>
-
-- [ ] [Section 01](#) - Getting Started With the Course.
-- [ ] [Section 02](#) - Course Slides.
-- [ ] [Section 03](#) - Getting Started with Parallel and Asynchronous Programming.
-- [ ] [Section 04](#) - Course Project Setup.
-- [ ] [Section 05](#) - Threads, Future, ForkJoin and its Limitations.
-- [ ] [Section 06](#) - Getting Started with Parallel Streams.
-- [ ] [Section 07](#) - Build Retail Checkout Application using Parallel Streams.
-- [ ] [Section 08](#) - Parallel Streams - Under the Hood.
-- [ ] [Section 09](#) - Parallel Streams - Threading Model & Common ForkJoin Pool.
-- [ ] [Section 10](#) - Parallel Streams - Summary.
-- [ ] [Section 11](#) - CompletableFuture.
-- [ ] [Section 12](#) - Exploring CompletableFuture Functions.
-- [ ] [Section 13](#) - Build ProductService Application using CompletableFuture.
-- [ ] [Section 14](#) - Combining Streams and CompletableFuture. 
-- [ ] [Section 15](#) - Exception Handling/Recovery in CompletableFuture.
-- [ ] [Section 16](#) - Implement Exception Handling/Recovery in ProductService.
-- [ ] [Section 17](#) - CompletableFuture & Threadpool.
-- [ ] [Section 18](#) - Threads and Async Overloaded Methods in CompletableFuture.
-- [ ] [Section 19](#) - Build Restful API Client using Spring WebClient and CompletableFuture.
-- [ ] [Section 20](#) - Handle Multiple CompletableFutures - anyOf(), allOf().
 
 All course material from Java Multithreading, Concurrency & Performance Optimization by **Michael Pogrebinsky** and **Top Developer Academy LLC**.
 
@@ -333,7 +312,26 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 #### Progress/Curriculum.
 
-- [ ] [Introduction 01](#) -
+- [ ] [Section 01](#) - Getting Started With the Course.
+- [ ] [Section 02](#) - Course Slides.
+- [ ] [Section 03](#) - Getting Started with Parallel and Asynchronous Programming.
+- [ ] [Section 04](#) - Course Project Setup.
+- [ ] [Section 05](#) - Threads, Future, ForkJoin and its Limitations.
+- [ ] [Section 06](#) - Getting Started with Parallel Streams.
+- [ ] [Section 07](#) - Build Retail Checkout Application using Parallel Streams.
+- [ ] [Section 08](#) - Parallel Streams - Under the Hood.
+- [ ] [Section 09](#) - Parallel Streams - Threading Model & Common ForkJoin Pool.
+- [ ] [Section 10](#) - Parallel Streams - Summary.
+- [ ] [Section 11](#) - CompletableFuture.
+- [ ] [Section 12](#) - Exploring CompletableFuture Functions.
+- [ ] [Section 13](#) - Build ProductService Application using CompletableFuture.
+- [ ] [Section 14](#) - Combining Streams and CompletableFuture. 
+- [ ] [Section 15](#) - Exception Handling/Recovery in CompletableFuture.
+- [ ] [Section 16](#) - Implement Exception Handling/Recovery in ProductService.
+- [ ] [Section 17](#) - CompletableFuture & Threadpool.
+- [ ] [Section 18](#) - Threads and Async Overloaded Methods in CompletableFuture.
+- [ ] [Section 19](#) - Build Restful API Client using Spring WebClient and CompletableFuture.
+- [ ] [Section 20](#) - Handle Multiple CompletableFutures - anyOf(), allOf().
 
 <p align="center">
     <img src="Java Application Performance Tuning and Memory Management caption.png" alt="Java Application Performance Tuning and Memory Management" style="width:1000px;height:110px;"/>
@@ -368,25 +366,25 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 #### Progress/Curriculum.
 
 - [ ] [Chapter 01](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Application%20Performance%20Tuning%20and%20Memory%20Management/Section%2001#chapter-1---introduction) - Introduction.
-- [ ] [Section 2](#) - Just In Time Compilation and the Code Cache.
-- [ ] [Section 3](#) - Selecting the JVM.
-- [ ] [Section 4](#) - How memory works: the stack and the heap.
-- [ ] [Section 5](#) - Passing objects between methods.
-- [ ] [Section 6](#) - Memory exercise.
-- [ ] [Section 7](#) - Escaping References.
-- [ ] [Section 8](#) - Memory Exercise.
-- [ ] [Section 9](#) - The Metaspace and internal JVM memory optimisations.
-- [ ] [Section 10](#) - Tuning the JVM’s Memory Settings.
-- [ ] [Section 11](#) - Introducing Garbage Collection.
-- [ ] [Section 12](#) - Monitoring the Heap.
-- [ ] [Section 13](#) - Analyzing a heap dump.
-- [ ] [Section 14](#) - Generational Garbage Collection.
-- [ ] [Section 15](#) - Garbage Collector tuning & selection.
-- [ ] [Section 16](#) - Using a profiler to analyse application performance.
-- [ ] [Section 17](#) - Assessing Performance.
-- [ ] [Section 18](#) - Benchmarking with JMH.
-- [ ] [Section 19](#) - Performance and Benchmarking Exercise.
-- [ ] [Section 20](#) - How Lists Work.
+- [ ] [Chapter 02](#) - Just In Time Compilation and the Code Cache.
+- [ ] [Chapter 03](#) - Selecting the JVM.
+- [ ] [Chapter 04](#) - How memory works: the stack and the heap.
+- [ ] [Chapter 05](#) - Passing objects between methods.
+- [ ] [Chapter 06](#) - Memory exercise.
+- [ ] [Chapter 07](#) - Escaping References.
+- [ ] [Chapter 08](#) - Memory Exercise.
+- [ ] [Chapter 09](#) - The Metaspace and internal JVM memory optimisations.
+- [ ] [Chapter 10](#) - Tuning the JVM’s Memory Settings.
+- [ ] [Chapter 11](#) - Introducing Garbage Collection.
+- [ ] [Chapter 12](#) - Monitoring the Heap.
+- [ ] [Chapter 13](#) - Analyzing a heap dump.
+- [ ] [Chapter 14](#) - Generational Garbage Collection.
+- [ ] [Chapter 15](#) - Garbage Collector tuning & selection.
+- [ ] [Chapter 16](#) - Using a profiler to analyse application performance.
+- [ ] [Chapter 17](#) - Assessing Performance.
+- [ ] [Chapter 18](#) - Benchmarking with JMH.
+- [ ] [Chapter 19](#) - Performance and Benchmarking Exercise.
+- [ ] [Chapter 20](#) - How Lists Work.
 - [ ] [Chapter 21](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Application%20Performance%20Tuning%20and%20Memory%20Management/Section%2021#section-21-chapter-21---how-maps-work) - How Maps Work.
 
 #### Additional stuff.

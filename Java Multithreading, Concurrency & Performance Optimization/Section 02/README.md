@@ -37,7 +37,9 @@ Threading Fundamentals - Thread Creation.
 ````
 
 - We need to start the **Thread**, with `thread.start();`.
-    - Lets the **JVM** create the **Thread** and pass it to the **OS**.
+    - Lets the **JVM** create the new **Thread**.
+        - **JVM** then requests the **OS** to create **OS thread**!
+            - **Scheduler** decides the actual execution time!
 
 - `Thread.currentThread()` get the **current** thread object!
 
@@ -142,7 +144,7 @@ we are now in thread Thread-0
         Thread thread = new Thread(new Runnable() {
             @Override
             public void run() {
-                //Code that will run in  a new thread
+                //Code that will run in  a new thread.
                 System.out.println("we are now in thread " + Thread.currentThread().getName());
                 System.out.println("Current thread priority is " + Thread.currentThread().getPriority());
             }
@@ -203,17 +205,193 @@ A critical error handler in tread Thread-0 the error is Internal Exception
 
 # Threads Creation - Part 2, Thread Inheritance.
 
-- 
-
 <div align="center">
     <img src="threadCreationOtherWay.PNG"  alt="Java threads" width="500"/>
-</di
+</div>
+
+- The other way to create **Thread** is to extend the **class**.
+
+````
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Thread thread = new NewThread();
+        thread.start();
+
+    }
+
+    private static class NewThread extends Thread {
+
+        @Override
+        public void run() {
+            // Code that will run in  a new thread.
+            System.out.println("Hello from " + Thread.currentThread().getName());
+            super.run();
+        }
+    }
+
+}
+````
+
+<div align="center">
+    <img src="runningTheThreadClass.gif"  alt="Java threads" width="700"/>
+</div>
+
+<div align="center">
+    <img src="caseStudyThread.PNG"  alt="Java threads" width="500"/>
+</div>
+
+1. We will have case study where there will be **security vault**.
+2. These are **Hacker Threads**, and they will be trying to hack the vault in the `.1`.
+3. This will be **police Thread**, and it will be trying to catch the hacker in **10 secs**. 
+
+<div align="center">
+    <img src="umlDiagramForTheCaseStudy.PNG"  alt="Java threads" width="500"/>
+</div>
+
+- We will be implementing the **UML** classes, with following implementations:
 
 
 
+````
+/*
+ * Copyright (c) 2019-2023. Michael Pogrebinsky - Top Developer Academy
+ * https://topdeveloperacademy.com
+ * All rights reserved
+ */
 
+/**
+ * Threads Creation - Part 2. Thread Inheritance
+ * https://www.udemy.com/java-multithreading-concurrency-performance-optimization
+ */
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+
+public class Main {
+
+    public static final int MAX_PASSWORD = 9999;
+
+    public static void main(String[] args) {
+
+        Random random = new Random();
+        Vault vault = new Vault(random.nextInt(MAX_PASSWORD));
+
+        List<Thread> threads = new ArrayList<>();
+
+        threads.add(new AscendingHackerThread(vault));
+        threads.add(new DescendingHackerThread(vault));
+        threads.add(new PoliceThread());
+
+        for (Thread thread : threads) {
+            thread.start();
+        }
+    }
+
+    private static class Vault {
+        private int password;
+
+        public Vault(int password) {
+            this.password = password;
+        }
+
+        public boolean isCorrectPassword(int guess) {
+            try {
+                Thread.sleep(5);
+            } catch (InterruptedException e) {
+            }
+            return this.password == guess;
+        }
+    }
+
+    private static abstract class HackerThread extends Thread {
+        protected Vault vault;
+
+        public HackerThread(Vault vault) {
+            this.vault = vault;
+            this.setName(this.getClass().getSimpleName());
+            this.setPriority(Thread.MAX_PRIORITY);
+        }
+
+        @Override
+        public void start() {
+            System.out.println("Starting thread " + this.getName());
+            super.start();
+        }
+    }
+
+    private static class AscendingHackerThread extends HackerThread {
+
+        public AscendingHackerThread(Vault vault) {
+            super(vault);
+        }
+
+        @Override
+        public void run() {
+            for (int guess = 0; guess < MAX_PASSWORD; guess++) {
+                if (vault.isCorrectPassword(guess)) {
+                    System.out.println(this.getName() + " guessed the password " + guess);
+                    System.exit(0);
+                }
+            }
+        }
+    }
+
+    private static class DescendingHackerThread extends HackerThread {
+
+        public DescendingHackerThread(Vault vault) {
+            super(vault);
+        }
+
+        @Override
+        public void run() {
+            for (int guess = MAX_PASSWORD; guess >= 0; guess--) {
+                if (vault.isCorrectPassword(guess)) {
+                    System.out.println(this.getName() + " guessed the password " + guess);
+                    System.exit(0);
+                }
+            }
+        }
+    }
+
+    private static class PoliceThread extends Thread {
+        @Override
+        public void run() {
+            for (int i = 10; i > 0; i--) {
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                }
+                System.out.println(i);
+            }
+
+            System.out.println("Game over for you hackers");
+            System.exit(0);
+        }
+    }
+}
+
+````
+
+- Police wins!
+
+<div align="center">
+    <img src="policeWin.gif"  alt="Java threads" width="500"/>
+</div>
+
+- Hacker win!
+
+<div align="center">
+    <img src="hackerWin.gif"  alt="Java threads" width="500"/>
+</div>
 
 
 # Coding Exercise 1: Thread Creation - MultiExecutor.
+
 
 # Thread Creation - MultiExecutor Solution.
