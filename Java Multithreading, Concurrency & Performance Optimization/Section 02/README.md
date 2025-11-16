@@ -43,14 +43,14 @@ Threading Fundamentals - Thread Creation.
 
 - `Thread.currentThread()` get the **current** thread object!
 
-- `Thread.sleep(1000);` instructs **OS not** to **schedule** time for this **Thread** will give time!   
+- `Thread.sleep(1000);` instructs **JVM/OS** scheduler that the current thread is temporarily inactive.
     -  This always affects the **Thread** that calls it — the current thread.
 
 <div align="center">
     <img src="thread.PNG"  alt="Java threads" width="800"/>
 </div>
 
-1. Notice when we call the `thread.start()` the new thread have not been scheduled yet.
+1. Notice when we call the `thread.start()`, the new thread has not been scheduled yet.
     - We will get `1.` messages **first**! You can see the `main`, since it was started from the main **Thread**.
 2. **OS scheduler** decides when it actually starts running.
     - It just happened to be run as last (**not always!**).
@@ -393,5 +393,101 @@ public class Main {
 
 # Coding Exercise 1: Thread Creation - MultiExecutor.
 
+<div align="center">
+    <img src="ThreadCreationExercise.PNG"  alt="Java threads" width="500"/>
+</div>
+
+```
+The Question: 
+Thread Creation - MultiExecutor
+In this exercise, we are going to implement a  MultiExecutor .
+
+The client of this class will create a list of Runnable tasks and provide that list into MultiExecutor's constructor.
+
+When the client runs the  executeAll(),  the MultiExecutor,  will execute all the given tasks.
+
+To take full advantage of our multicore CPU, we would like the MultiExecutor to execute all the tasks in parallel by passing each task to a different thread.
+
+Please implement the MultiExecutor below:
+```
+
+- **Question 1:** Please implement the `MultiExecutor`.
+    - **Answer:** Below:
+
+````
+import java.util.List;
+/*
+The task:
+Thread Creation - MultiExecutor
+In this exercise, we are going to implement a  MultiExecutor .
+
+The client of this class will create a list of Runnable tasks and provide that list into MultiExecutor's constructor.
+When the client runs the  executeAll(),  the MultiExecutor,  will execute all the given tasks.
+To take full advantage of our multicore CPU, we would like the MultiExecutor to execute all the tasks in parallel by passing each task to a different thread.
+
+
+Please implement the MultiExecutor below
+*/
+
+
+public class MultiExecutor {
+
+    // Add any necessary member variables here
+
+    List<Thread> listOfThreadsToExecute;
+    /*
+     * @param tasks to executed concurrently
+     */
+    public MultiExecutor(List<Runnable> tasks) {
+
+        tasks.forEach((runnableTask) -> {
+            listOfThreadsToExecute.add(new Thread(runnableTask));
+        });
+    }
+
+    /**
+     * Starts and executes all the tasks concurrently
+     */
+    public void executeAll() {
+        for (Thread t : listOfThreadsToExecute) {
+            t.start();
+        }
+    }
+}
+````
 
 # Thread Creation - MultiExecutor Solution.
+
+
+````
+import java.util.ArrayList;
+import java.util.List;
+ 
+public class MultiExecutor {
+    
+    private final List<Runnable> tasks;
+ 
+    /*
+     * @param tasks to executed concurrently
+     */
+    public MultiExecutor(List<Runnable> tasks) {
+        this.tasks = tasks;
+    }
+ 
+    /**
+     * Executes all the tasks concurrently
+     */
+    public void executeAll() {
+        List<Thread> threads = new ArrayList<>(tasks.size());
+        
+        for (Runnable task : tasks) {
+            Thread thread = new Thread(task);
+            threads.add(thread);
+        }
+        
+        for(Thread thread : threads) {
+            thread.start();
+        }
+    }
+}
+````
