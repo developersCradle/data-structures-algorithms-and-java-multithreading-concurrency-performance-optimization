@@ -11,6 +11,105 @@
     - `git config --global http.postBuffer 524288000`
     - `git config --global core.longpaths true`.
 
+
+<p align="center">
+    <img src="Java Multithreading, Concurrency & Performance Optimization caption.png" alt="course intros" style="width:900px;height:90px;"/>
+</p>
+
+![Performance Optimization](Java%20Multithreading,%20Concurrency%20&%20Performance%20Optimization%20desc.PNG)
+
+All course material from Java Multithreading, Concurrency & Performance Optimization by **Michael Pogrebinsky** and **Top Developer Academy LLC**.
+
+Contains my own notes with some course material to enforce learning experience.
+
+This repository is made with [![Eclipse](https://img.shields.io/badge/Eclipse-FE7A16.svg?logo=Eclipse&logoColor=white)](#), therefore it will include configuration files which are related to this IDE this approach will be favored for now. ⚙️
+
+[The course at Udemy](https://www.udemy.com/course/java-multithreading-concurrency-performance-optimization/). 
+
+[Website of maker](https://topdeveloperacademy.com/).
+
+If the content sparked :fire: your interest, please consider buying the course and start learning :book:.
+
+<!-- 
+Linkedin puts this shit front, when clicking from private mode x(. Need to put this to make jump working every case
+?trk=public_profile_see-credential 
+-->
+
+<div align="center">
+    Insert certificate here when completed
+</div>
+
+**Note: The material provided in this repository is only for helping those who may get stuck at any point of time in the course. It is very advised that no one should just copy the solutions(violation of Honor Code) presented here.**
+
+#### Progress/Curriculum.
+
+- [x] [Section 01](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Multithreading%2C%20Concurrency%20%26%20Performance%20Optimization/Section%2001/README.md#what-i-learned) - Introduction. ✅
+- [x] [Section 02](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Multithreading%2C%20Concurrency%20%26%20Performance%20Optimization/Section%2002/README.md#chapter-02---threading-fundamentals---thread-creation) - Threading Fundamentals - Thread Creation. ✅
+- [ ] [Section 03](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading%2C%20Concurrency%20%26%20Performance%20Optimization/Section%2003#chapter-03---threading-fundamentals---thread-coordination) - Threading Fundamentals - Thread Coordination.
+- [ ] [Section 04](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading%2C%20Concurrency%20%26%20Performance%20Optimization/Section%2004#chapter-04---performance-optimization) - Performance Optimization.
+- [ ] [Section 05](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading%2C%20Concurrency%20%26%20Performance%20Optimization/Section%2005#chapter-05---data-sharing-between-threads) - Data Sharing Between Threads.
+- [ ] [Section 06](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading%2C%20Concurrency%20%26%20Performance%20Optimization/Section%2006#chapter-06---the-concurrency-challenges--solutions) - The Concurrency Challenges & Solutions.
+- [ ] [Section 07](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading%2C%20Concurrency%20%26%20Performance%20Optimization/Section%2007#chapter-07---advanced-locking) - Advanced Locking.
+- [ ] [Section 08](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading%2C%20Concurrency%20%26%20Performance%20Optimization/Section%2008#chapter-08---inter-thread-communication) - Inter-Thread Communication.
+- [ ] [Section 09](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading%2C%20Concurrency%20%26%20Performance%20Optimization/Section%2009#chapter-09---lock-free-algorithms-data-structures--techniques) - Lock-Free Algorithms, Data-Structures & Techniques.
+- [ ] [Section 10](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading%2C%20Concurrency%20%26%20Performance%20Optimization/Section%2010#chapter-10---threading-models-for-high-performance-io) - Threading Models for High Performance IO.
+- [ ] [Section 11](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Multithreading%2C%20Concurrency%20%26%20Performance%20Optimization/Section%2011/README.md#chapter-11---virtual-threads-and-high-performance-io) - Virtual Threads and High-Performance IO.
+- [ ] [Section 12](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading%2C%20Concurrency%20%26%20Performance%20Optimization/Section%2012#chapter-12---extra-information---source-code-and-other-stuff) - Beyond Multithreading - Final Lecture.
+
+<p align="center">
+    <img src="Multithreading, Parallel & Asynchronous Coding in Modern Java caption.png" alt="course intros" style="width:900px;height:110px;"/>
+</p>
+
+<p align="center">
+    <img src="Multithreading,Parallel & Asynchronous Coding in Modern Java desc.PNG" alt="course intros"/>
+</p>
+
+All course material from Java Multithreading, Concurrency & Performance Optimization by **Michael Pogrebinsky** and **Top Developer Academy LLC**.
+
+Contains my own notes with some course material to enforce learning experience.
+
+This repository is made with [![Eclipse](https://img.shields.io/badge/Eclipse-FE7A16.svg?logo=Eclipse&logoColor=white)](#), therefore it will include configuration files which are related to this IDE this approach will be favored for now. ⚙️
+
+[The course at Udemy](https://www.udemy.com/course/java-multithreading-concurrency-performance-optimization/). 
+
+[Website of maker](https://topdeveloperacademy.com/).
+
+If the content sparked :fire: your interest, please consider buying the course and start learning :book:.
+
+<!-- 
+Linkedin puts this shit front, when clicking from private mode x(. Need to put this to make jump working every case
+?trk=public_profile_see-credential 
+-->
+
+<div align="center">
+    Insert certificate here when completed
+</div>
+
+**Note: The material provided in this repository is only for helping those who may get stuck at any point of time in the course. It is very advised that no one should just copy the solutions(violation of Honor Code) presented here.**
+
+#### Progress/Curriculum.
+
+- [ ] [Section 01](#) - Getting Started With the Course.
+- [ ] [Section 02](#) - Course Slides.
+- [ ] [Section 03](#) - Getting Started with Parallel and Asynchronous Programming.
+- [ ] [Section 04](#) - Course Project Setup.
+- [ ] [Section 05](#) - Threads, Future, ForkJoin and its Limitations.
+- [ ] [Section 06](#) - Getting Started with Parallel Streams.
+- [ ] [Section 07](#) - Build Retail Checkout Application using Parallel Streams.
+- [ ] [Section 08](#) - Parallel Streams - Under the Hood.
+- [ ] [Section 09](#) - Parallel Streams - Threading Model & Common ForkJoin Pool.
+- [ ] [Section 10](#) - Parallel Streams - Summary.
+- [ ] [Section 11](#) - CompletableFuture.
+- [ ] [Section 12](#) - Exploring CompletableFuture Functions.
+- [ ] [Section 13](#) - Build ProductService Application using CompletableFuture.
+- [ ] [Section 14](#) - Combining Streams and CompletableFuture. 
+- [ ] [Section 15](#) - Exception Handling/Recovery in CompletableFuture.
+- [ ] [Section 16](#) - Implement Exception Handling/Recovery in ProductService.
+- [ ] [Section 17](#) - CompletableFuture & Threadpool.
+- [ ] [Section 18](#) - Threads and Async Overloaded Methods in CompletableFuture.
+- [ ] [Section 19](#) - Build Restful API Client using Spring WebClient and CompletableFuture.
+- [ ] [Section 20](#) - Handle Multiple CompletableFutures - anyOf(), allOf().
+
 <img id="studying" src="data structures and algorithms with visualizations caption.png" style="width:900px;height:70px;">
 
 <p align="center">
@@ -234,104 +333,6 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 - [ ] [Section 10](#) - Mastering Heaps: Priority Queues and Heapsort Algorithm in Java.
 - [ ] [Section 11](#) - Final Section: Concluding the Course with Key Takeaways and Sets.
 - [ ] [Section 12](#) - Extra Information - Source code, and other stuff.
-
-<p align="center">
-    <img src="Java Multithreading, Concurrency & Performance Optimization caption.png" alt="course intros" style="width:900px;height:90px;"/>
-</p>
-
-![Performance Optimization](Java%20Multithreading,%20Concurrency%20&%20Performance%20Optimization%20desc.PNG)
-
-All course material from Java Multithreading, Concurrency & Performance Optimization by **Michael Pogrebinsky** and **Top Developer Academy LLC**.
-
-Contains my own notes with some course material to enforce learning experience.
-
-This repository is made with [![Eclipse](https://img.shields.io/badge/Eclipse-FE7A16.svg?logo=Eclipse&logoColor=white)](#), therefore it will include configuration files which are related to this IDE this approach will be favored for now. ⚙️
-
-[The course at Udemy](https://www.udemy.com/course/java-multithreading-concurrency-performance-optimization/). 
-
-[Website of maker](https://topdeveloperacademy.com/).
-
-If the content sparked :fire: your interest, please consider buying the course and start learning :book:.
-
-<!-- 
-Linkedin puts this shit front, when clicking from private mode x(. Need to put this to make jump working every case
-?trk=public_profile_see-credential 
--->
-
-<div align="center">
-    Insert certificate here when completed
-</div>
-
-**Note: The material provided in this repository is only for helping those who may get stuck at any point of time in the course. It is very advised that no one should just copy the solutions(violation of Honor Code) presented here.**
-
-#### Progress/Curriculum.
-
-- [x] [Section 01](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Multithreading%2C%20Concurrency%20%26%20Performance%20Optimization/Section%2001/README.md#what-i-learned) - Introduction. ✅
-- [x] [Section 02](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Multithreading%2C%20Concurrency%20%26%20Performance%20Optimization/Section%2002/README.md#chapter-02---threading-fundamentals---thread-creation) - Threading Fundamentals - Thread Creation. ✅
-- [ ] [Section 03](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading%2C%20Concurrency%20%26%20Performance%20Optimization/Section%2003#chapter-03---threading-fundamentals---thread-coordination) - Threading Fundamentals - Thread Coordination.
-- [ ] [Section 04](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading%2C%20Concurrency%20%26%20Performance%20Optimization/Section%2004#chapter-04---performance-optimization) - Performance Optimization.
-- [ ] [Section 05](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading%2C%20Concurrency%20%26%20Performance%20Optimization/Section%2005#chapter-05---data-sharing-between-threads) - Data Sharing Between Threads.
-- [ ] [Section 06](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading%2C%20Concurrency%20%26%20Performance%20Optimization/Section%2006#chapter-06---the-concurrency-challenges--solutions) - The Concurrency Challenges & Solutions.
-- [ ] [Section 07](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading%2C%20Concurrency%20%26%20Performance%20Optimization/Section%2007#chapter-07---advanced-locking) - Advanced Locking.
-- [ ] [Section 08](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading%2C%20Concurrency%20%26%20Performance%20Optimization/Section%2008#chapter-08---inter-thread-communication) - Inter-Thread Communication.
-- [ ] [Section 09](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading%2C%20Concurrency%20%26%20Performance%20Optimization/Section%2009#chapter-09---lock-free-algorithms-data-structures--techniques) - Lock-Free Algorithms, Data-Structures & Techniques.
-- [ ] [Section 10](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading%2C%20Concurrency%20%26%20Performance%20Optimization/Section%2010#chapter-10---threading-models-for-high-performance-io) - Threading Models for High Performance IO.
-- [ ] [Section 11](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Multithreading%2C%20Concurrency%20%26%20Performance%20Optimization/Section%2011/README.md#chapter-11---virtual-threads-and-high-performance-io) - Virtual Threads and High-Performance IO.
-- [ ] [Section 12](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading%2C%20Concurrency%20%26%20Performance%20Optimization/Section%2012#chapter-12---extra-information---source-code-and-other-stuff) - Beyond Multithreading - Final Lecture.
-
-<p align="center">
-    <img src="Multithreading, Parallel & Asynchronous Coding in Modern Java caption.png" alt="course intros" style="width:900px;height:110px;"/>
-</p>
-
-<p align="center">
-    <img src="Multithreading,Parallel & Asynchronous Coding in Modern Java desc.PNG" alt="course intros"/>
-</p>
-
-All course material from Java Multithreading, Concurrency & Performance Optimization by **Michael Pogrebinsky** and **Top Developer Academy LLC**.
-
-Contains my own notes with some course material to enforce learning experience.
-
-This repository is made with [![Eclipse](https://img.shields.io/badge/Eclipse-FE7A16.svg?logo=Eclipse&logoColor=white)](#), therefore it will include configuration files which are related to this IDE this approach will be favored for now. ⚙️
-
-[The course at Udemy](https://www.udemy.com/course/java-multithreading-concurrency-performance-optimization/). 
-
-[Website of maker](https://topdeveloperacademy.com/).
-
-If the content sparked :fire: your interest, please consider buying the course and start learning :book:.
-
-<!-- 
-Linkedin puts this shit front, when clicking from private mode x(. Need to put this to make jump working every case
-?trk=public_profile_see-credential 
--->
-
-<div align="center">
-    Insert certificate here when completed
-</div>
-
-**Note: The material provided in this repository is only for helping those who may get stuck at any point of time in the course. It is very advised that no one should just copy the solutions(violation of Honor Code) presented here.**
-
-#### Progress/Curriculum.
-
-- [ ] [Section 01](#) - Getting Started With the Course.
-- [ ] [Section 02](#) - Course Slides.
-- [ ] [Section 03](#) - Getting Started with Parallel and Asynchronous Programming.
-- [ ] [Section 04](#) - Course Project Setup.
-- [ ] [Section 05](#) - Threads, Future, ForkJoin and its Limitations.
-- [ ] [Section 06](#) - Getting Started with Parallel Streams.
-- [ ] [Section 07](#) - Build Retail Checkout Application using Parallel Streams.
-- [ ] [Section 08](#) - Parallel Streams - Under the Hood.
-- [ ] [Section 09](#) - Parallel Streams - Threading Model & Common ForkJoin Pool.
-- [ ] [Section 10](#) - Parallel Streams - Summary.
-- [ ] [Section 11](#) - CompletableFuture.
-- [ ] [Section 12](#) - Exploring CompletableFuture Functions.
-- [ ] [Section 13](#) - Build ProductService Application using CompletableFuture.
-- [ ] [Section 14](#) - Combining Streams and CompletableFuture. 
-- [ ] [Section 15](#) - Exception Handling/Recovery in CompletableFuture.
-- [ ] [Section 16](#) - Implement Exception Handling/Recovery in ProductService.
-- [ ] [Section 17](#) - CompletableFuture & Threadpool.
-- [ ] [Section 18](#) - Threads and Async Overloaded Methods in CompletableFuture.
-- [ ] [Section 19](#) - Build Restful API Client using Spring WebClient and CompletableFuture.
-- [ ] [Section 20](#) - Handle Multiple CompletableFutures - anyOf(), allOf().
 
 <p align="center">
     <img src="Java Application Performance Tuning and Memory Management caption.png" alt="Java Application Performance Tuning and Memory Management" style="width:1000px;height:110px;"/>
