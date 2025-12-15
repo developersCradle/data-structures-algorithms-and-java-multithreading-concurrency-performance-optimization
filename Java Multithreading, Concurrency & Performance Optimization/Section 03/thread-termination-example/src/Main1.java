@@ -18,9 +18,7 @@ public class Main1 {
         // We start the blocking task!
         thread.start();
 
-
-
-//        thread.interrupt();
+        thread.interrupt();
     }
 
     private static class BlockingTask implements Runnable {

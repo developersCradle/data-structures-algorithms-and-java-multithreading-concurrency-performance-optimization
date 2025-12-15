@@ -16,7 +16,7 @@
 </p>
 
 <p align="center">
-    <img id="Performance Optimization" src="Java Multithreading, Concurrency & Performance Optimization desc.PNG" style=" width: 850px;">
+    <img id="Performance Optimization" src="Java Multithreading, Concurrency & Performance Optimization desc.PNG" style=" width: 650px;">
 </p>
 
 All course material from Java Multithreading, Concurrency & Performance Optimization by **Michael Pogrebinsky** and **Top Developer Academy LLC**.
