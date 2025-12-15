@@ -8,14 +8,19 @@
  * Thread Termination & Daemon Threads
  * https://www.udemy.com/java-multithreading-concurrency-performance-optimization
  */
+
 public class Main1 {
     public static void main(String [] args) {
+
         Thread thread = new Thread(new BlockingTask());
         thread.setName("Blocking Thread");
 
+        // We start the blocking task!
         thread.start();
 
-        thread.interrupt();
+
+
+//        thread.interrupt();
     }
 
     private static class BlockingTask implements Runnable {

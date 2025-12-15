@@ -1,28 +1,35 @@
 <p align="center">
-    <img id="studying" src="Algorithms and Data Structures, with some Optimization courses caption.png" style="width:900px;height:140px;">
+    <img id="studying" src="Algorithms_and_Data_Structures,_with_some_Optimization_courses_caption.png" style="width:900px;height:140px;">
     <text>Attempt to study <b>Data Structures</b>, <b>Optimization</b> and <b>Algorithms</b> related topics!</text>
 </p>
 
 <p align="center">
-   <img src="JavaMonolithOptimization.gif" alt="optimization" width="400" height="250"/>
+   <img src="JavaMonolithOptimization.gif" alt="optimization" width="500" height="350"/>
 </p>
 
 - For these courses one should configure **GIT** for handle projects.
     - `git config --global http.postBuffer 524288000`
     - `git config --global core.longpaths true`.
 
-
 <p align="center">
-    <img src="Java Multithreading, Concurrency & Performance Optimization caption.png" alt="course intros" style="width:900px;height:90px;"/>
+    <img src="Java_Multithreading,_Concurrency_&_Performance_Optimization_caption.png" alt="course intros" style="width:1600px;height:120px;"/>
 </p>
 
-![Performance Optimization](Java%20Multithreading,%20Concurrency%20&%20Performance%20Optimization%20desc.PNG)
+<p align="center">
+    <img id="Performance Optimization" src="Java Multithreading, Concurrency & Performance Optimization desc.PNG" style=" width: 850px;">
+</p>
 
 All course material from Java Multithreading, Concurrency & Performance Optimization by **Michael Pogrebinsky** and **Top Developer Academy LLC**.
 
+>We were working with an old legacy system that was making two concurrent calls to a shared resource, causing inconsistent results that only appeared under load. The issue was subtle and difficult to reproduce, making it even harder to diagnose.
+>
+>A recent course I had taken on Java Multithreading and Concurrency proved invaluable. It helped me identify the race condition and apply the synchronized keyword correctly to control access to the critical section. With proper thread coordination in place, the system stabilized without requiring a major rewrite of the legacy code.<br><br>
+~ DevelopersCradle
+
 Contains my own notes with some course material to enforce learning experience.
 
-This repository is made with [![Eclipse](https://img.shields.io/badge/Eclipse-FE7A16.svg?logo=Eclipse&logoColor=white)](#), therefore it will include configuration files which are related to this IDE this approach will be favored for now. ⚙️
+This repository is made with [![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?logo=intellij-idea&logoColor=white)](#) with [![Eclipse](https://img.shields.io/badge/Eclipse-FE7A16.svg?logo=Eclipse&logoColor=white)](#) hotkeys, therefore it will include configuration files which are related to this IDE this approach will be favored for now. ⚙️
+
 
 [The course at Udemy](https://www.udemy.com/course/java-multithreading-concurrency-performance-optimization/). 
 

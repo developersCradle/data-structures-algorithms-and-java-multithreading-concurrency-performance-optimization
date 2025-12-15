@@ -10,26 +10,28 @@ Threading Fundamentals - Thread Coordination.
     <img src="WeStartFromTheThreadTermination.PNG"  alt="Java threads" width="500"/>
 </div>
 
-1. Why need to **start** and **stop** the **thread**.
+1. We will start from this chapter.
+    - This will be about the **starting** and **stopping** the **thread**!
 
 <div align="center">
-    <img src="ThreadTerminationWhenAndWhy.PNG"  alt="Java threads" width="500"/>
+    <img src="ThreadTerminationWhenAndWhy.PNG"  alt="Java threads" width="700"/>
 </div>
 
-1. Thread consumer **resources**, such as:
-    - Memory and kernel resources.
-    - CPU cycles and cache memory.
-- Also, if the **Thread** has finished its job, we would want to **clean up** its resources. 
-2. One reason to **terminate** **thread** is if its:
-    - It's not **responding**!
-    - The query is **running too long**!
-3. We cannot **end** the **Application** if there is threads running.
+- Why we would need to **terminate** a **Thread**.
+    - `1.` **Threads** consumes **resources**, such as:
+        - Memory and kernel resources.
+        - CPU cycles and cache memory.
+    - `1.` There is case, if the **Thread** has **finished its job**, we would want to **clean up** its **resources**. 
+    - `2.` One reason to **terminate** **thread** is if its:
+        - It's not **responding**!
+        - The query is **running too long**!
+    - `3.` We cannot **end** the **Application** if there is threads running.
 
 <div align="center">
-    <img src="WeStartFromTheThreadTermination.PNG"  alt="Java threads" width="500"/>
+    <img src="NextIsThreadInterupt.PNG"  alt="Java threads" width="500"/>
 </div>
 
-1. `Thread.interupt()`.
+1. Next we will be dealing `Thread.interupt()`.
 
 <div align="center">
     <img src="threadInterupts.PNG"  alt="Java threads" width="500"/>
@@ -45,16 +47,26 @@ Threading Fundamentals - Thread Coordination.
 2. If this handled **explicitly**.
 
 - When using the following `Thread.sleep(500000);`.
-    - Is forcing to handle the `InterruptedException` in the thread. 
+    - We are waiting for the **thread** to **finish**!
+        - We can solve this by throwing the `InterruptedException` with the usage of the `thread.interrupt();`! 
 
 <div align="center">
-    <img src="threadSleeping.PNG"  alt="Java threads" width="500"/>
+    <img src="threadSleeping.PNG"  alt="Java threads" width="700"/>
 </div>
 
 1. One can see the `SLEEPING` status at the **Thread** debugger tab. 
 
 - We can raise the **interrupt**, with following: `thread.interrupt();`.
     - The **main thread** interrupts the Blocking Thread.
+
+
+
+
+
+<details>
+
+<summary id="Thread progress
+" open="true"> <b>The thread code!</b> </summary>
 
 ````
 /*
@@ -91,8 +103,10 @@ public class Main1 {
         }
     }
 }
-
 ````
+</details>
+
+
 
 - We will be getting followings logs: 
 
