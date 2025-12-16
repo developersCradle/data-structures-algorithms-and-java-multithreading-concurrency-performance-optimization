@@ -118,9 +118,9 @@ public class Main1 {
 > We can **solve** this by throwing the `InterruptedException` with the usage of the `thread.interrupt();`⭐
 
 - We can raise the **interrupt**, with following: `thread.interrupt();`.
-    - The **main thread** interrupts the Blocking Thread.
+    - The **main thread** interrupts the **blocked thread**.
 
-- Example `.GIF` below of the **interupted task**:
+- Example `.GIF` below of the **interrupted task**:
 
 <div align="center">
     <img src="ThreadBeingInterupted.gif"  alt="Java threads" width="700"/>
@@ -140,7 +140,7 @@ Process finished with exit code 0
 <details>
 
 <summary id="Thread progress
-" open="true"> <b>The thread code, which will not be waiting!</b> </summary>
+" open="true"> <b>The thread code, that will throw interrupted task!</b> </summary>
 
 ````
 /*
@@ -183,12 +183,15 @@ public class Main1 {
 ````
 </details>
 
-- The below **Thread** there is some **complex** computation happening:
+- The below **thread** there is some **complex** computation happening:
+
+\[
+\text{result} = \text{base}^{\text{power}}
+\]
 
 <details>
-
 <summary id="Thread progress
-" open="true"> <b>Thread that takes lot of time when computing!</b> </summary>
+" open="true"> <b>The thread that takes lot of time when computing!</b> </summary>
 
 ````
 /*
@@ -246,8 +249,172 @@ public class Main2 {
     <img src="ThreadLongCalculationTakingPlace.gif"  alt="Java threads" width="700"/>
 </div>
 
+- Even with the **interrupt**, the thread will not be stopped.
 
-# Quiz 3: Thread Termination & Daemon Threads.
+<div align="center">
+    <img src="ThreadLongCalculationTakingPlaceEvenWithInterrupt.gif"  alt="Java threads" width="700"/>
+</div>
+
+- We cannot **throw** `InterruptedException` since its thrown automatically when a thread is **interrupted**.
+    - It is thrown only by specific **blocking methods**, such as:
+        - `Thread.sleep(...)`.
+
+- To check **current thread** if it was **interrupted**, we can use `Thread.currentThread().isInterrupted()`.
+
+- We need to find sweet stop to make the **interrupted** check!
+
+<div align="center">
+    <img src="sweetSpotForTheInterrupt.PNG"  alt="Java threads" width="700"/>
+</div>
+
+1. Here is the **sweet spot** to add the check!
+
+<details>
+<summary id="Thread progress
+" open="true"> <b>The thread that takes lot of time when computing and with the interrupt!</b> </summary>
+
+````
+/*
+ * Copyright (c) 2019-2023. Michael Pogrebinsky - Top Developer Academy
+ * https://topdeveloperacademy.com
+ * All rights reserved
+ */
+
+import java.math.BigInteger;
+
+/**
+ * Thread Termination & Daemon Threads
+ * https://www.udemy.com/java-multithreading-concurrency-performance-optimization
+ */
+public class Main2 {
+
+    public static void main(String[] args) {
+        Thread thread = new Thread(new LongComputationTask(new BigInteger("200000"), new BigInteger("1000000")));
+
+        thread.start();
+        thread.interrupt();
+    }
+
+    private static class LongComputationTask implements Runnable {
+        private BigInteger base;
+        private BigInteger power;
+
+        public LongComputationTask(BigInteger base, BigInteger power) {
+            this.base = base;
+            this.power = power;
+        }
+
+        @Override
+        public void run() {
+            System.out.println(base + "^" + power + " = " + pow(base, power));
+        }
+
+        private BigInteger pow(BigInteger base, BigInteger power) {
+            BigInteger result = BigInteger.ONE;
+
+            for (BigInteger i = BigInteger.ZERO; i.compareTo(power) != 0; i = i.add(BigInteger.ONE)) {
+
+                result = result.multiply(base);
+            }
+
+            return result;
+        }
+    }
+}
+````
+</details>
+
+<div align="center">
+    <img src="NextIsDeamonThread.PNG"  alt="Java threads" width="700"/>
+</div>
+
+1. Next we will be dealing with **Deamon thread**.
+
+<div align="center">
+    <img src="deamonThreads.PNG"  alt="Java threads" width="700"/>
+</div>
+
+1. **Deamon Threads** run in background. 
+    - They are ideal for are background helpers. 
+
+- **Normal** threads prevent the **JVM** from exiting.
+
+<div align="center">
+    <img src="deamonThreadsScenario01.PNG"  alt="Java threads" width="700"/>
+</div>
+
+<div align="center">
+    <img src="deamonThreadsScenario02.PNG"  alt="Java threads" width="700"/>
+</div>
+
+- We can even set `thread.setDaemon(true);` to old **tread**, which takes time. This thread will **end gracefully**!
+
+<div align="center">
+    <img src="endingLongThreadGrasefully.gif"  alt="Java threads" width="700"/>
+</div>
+
+<details>
+<summary id="Thread progress
+" open="true"> <b>The thread that takes lot of time, exiting grasefully with .setDaemon(true)!</b> </summary>
+
+````
+/*
+ * Copyright (c) 2019-2023. Michael Pogrebinsky - Top Developer Academy
+ * https://topdeveloperacademy.com
+ * All rights reserved
+ */
+
+import java.math.BigInteger;
+
+/**
+ * Thread Termination & Daemon Threads
+ * https://www.udemy.com/java-multithreading-concurrency-performance-optimization
+ */
+public class Main2 {
+
+    public static void main(String[] args) {
+        Thread thread = new Thread(new LongComputationTask(new BigInteger("200000"), new BigInteger("1000000")));
+
+        thread.setDaemon(true);
+        thread.start();
+        thread.interrupt();
+    }
+
+    private static class LongComputationTask implements Runnable {
+        private BigInteger base;
+        private BigInteger power;
+
+        public LongComputationTask(BigInteger base, BigInteger power) {
+            this.base = base;
+            this.power = power;
+        }
+
+        @Override
+        public void run() {
+            System.out.println(base + "^" + power + " = " + pow(base, power));
+        }
+
+        private BigInteger pow(BigInteger base, BigInteger power) {
+            BigInteger result = BigInteger.ONE;
+
+            for (BigInteger i = BigInteger.ZERO; i.compareTo(power) != 0; i = i.add(BigInteger.ONE)) {
+                if (Thread.currentThread().isInterrupted()) {
+                    System.out.println("Prematurely interrupted computation");
+                    return BigInteger.ZERO;
+                }
+                result = result.multiply(base);
+            }
+
+            return result;
+        }
+    }
+}
+````
+</details>
+
+<div align="center">
+    <img src="summary.PNG"  alt="Java threads" width="700"/>
+</div>
 
 # Joining Threads.
 

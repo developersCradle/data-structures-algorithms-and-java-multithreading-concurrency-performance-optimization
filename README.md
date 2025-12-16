@@ -16,7 +16,7 @@
 </p>
 
 <p align="center">
-    <img id="Performance Optimization" src="Java Multithreading, Concurrency & Performance Optimization desc.PNG" style=" width: 650px;">
+    <img id="Performance Optimization" src="Java Multithreading, Concurrency & Performance Optimization desc.PNG" style=" width: 680px;">
 </p>
 
 All course material from Java Multithreading, Concurrency & Performance Optimization by **Michael Pogrebinsky** and **Top Developer Academy LLC**.
@@ -73,6 +73,9 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 All course material from Java Multithreading, Concurrency & Performance Optimization by **Michael Pogrebinsky** and **Top Developer Academy LLC**.
 
+> Add here some <br><br>
+~ DevelopersCradle
+
 Contains my own notes with some course material to enforce learning experience.
 
 This repository is made with [![Eclipse](https://img.shields.io/badge/Eclipse-FE7A16.svg?logo=Eclipse&logoColor=white)](#), therefore it will include configuration files which are related to this IDE this approach will be favored for now. ⚙️
@@ -124,6 +127,9 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 </p>
 
 All course material from **Data Structures and Algorithms with Visualizations with Java** by from **Dinesh Varyani**.
+
+> Add here some <br><br>
+~ DevelopersCradle
 
 This repository is made with [![Eclipse](https://img.shields.io/badge/Eclipse-FE7A16.svg?logo=Eclipse&logoColor=white)](#), therefore it will include configuration files which are related to this IDE this approach will be favored for now. ⚙️
 
@@ -301,6 +307,9 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 All course material from Data Structures and Algorithms: Deep Dive Using Java by **Goran Lochert**, **Tim Buchalka** and **Tim Buchalka's Learn Programming Academy**.
 
+> Add here some <br><br>
+~ DevelopersCradle
+
 Contains my own notes with some course material to enforce learning experience.
 
 This repository is made with [![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?logo=intellij-idea&logoColor=white)](#) with **Eclipse** hotkeys. This is why it will include configuration files which are related to this IDE this approach will be favored for now. ⚙️
@@ -351,6 +360,9 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 
 All course material from **Java Application Performance Tuning and Memory Management** by from **Matt Greencroft** and **Virtual Pair Programmers** with my own visual notes. ✍️
+
+> Add here some <br><br>
+~ DevelopersCradle
 
 This repository is made with [![Eclipse](https://img.shields.io/badge/Eclipse-FE7A16.svg?logo=Eclipse&logoColor=white)](#), therefore it will include configuration files which are related to this IDE this approach will be favored for now. ⚙️
 
