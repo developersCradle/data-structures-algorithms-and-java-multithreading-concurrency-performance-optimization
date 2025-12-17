@@ -418,6 +418,87 @@ public class Main2 {
 
 # Joining Threads.
 
+<div align="center">
+    <img src="whatWeWillLearn.PNG"  alt="Java threads" width="700"/>
+</div>
+
+1. We need to know that when the **thread** has **completed**, and it should be done when we are **expecting it** to finish!
+    - We can take advantage of the **threads** when they are run in **parallel** and **aggregate** result at the end.
+
+> **Aggregate** mean to combine the results in one point. **Wait** → then **combine** (manually).
+
+<div align="center">
+    <img src="parallel.png"  alt="Java threads" width="400"/>
+</div>
+ 
+<div align="center">
+    <img src="whyWeNeedThreadCoordination.PNG"  alt="Java threads" width="700"/>
+</div>
+
+1. Remember, **threads** runs independently of each others!
+2. Like we saw, the order is out of our control! See the [example]()!
+
+- TODO Add this to link: `thread_finishing_when_they_are_ready`.
+
+- Different scenarios of the **thread** execution order:
+
+<div align="center">
+    <img src="ThreadCoordinationScenario01.PNG"  alt="Java threads" width="700"/>
+</div>
+
+1. The scenario **Thread A** finishes before the **Thread B**. `2.`.
+
+<div align="center">
+    <img src="ThreadCoordinationScenario02.PNG"  alt="Java threads" width="700"/>
+</div>
+
+1. The scenario **Thread B** finishes before the **Thread A**. `2.`.
+
+<div align="center">
+    <img src="concurrency.PNG"  alt="Java threads" width="700"/>
+</div>
+
+1. **Concurrency** is when the tasks are run **after each other**!
+
+<div align="center">
+    <img src="ThreadCoordinationScenario03.PNG"  alt="Java threads" width="700"/>
+</div>
+
+1. We may have them be run **concurrently**!
+
+<div align="center">
+    <img src="ThreadCoordinationScenario04.PNG"  alt="Java threads" width="700"/>
+</div>
+
+1. We may have them be run **parallel**.
+2. Furthermore, we will have no idea, if **Thread A** or **Thread B** finishes first!
+
+<div align="center">
+    <img src="ThreadCoordinationDependency.PNG"  alt="Java threads" width="700"/>
+</div>
+
+1. If there **Thread A** depends on the **Thread B**. Example if **Thread A** is having calculation result, which are needed in **Thread B**.
+
+<div align="center">
+    <img src="ThreadCoordintionNaiveSolution.PNG"  alt="Java threads" width="700"/>
+</div>
+
+1. Here the **Thread B** will be checking following **checking loop**. This is called `busy waiting` or `spin-waiting`.
+
+<div align="center">
+    <img src="ThreadCoordintionNaiveSolutionSecond.PNG"  alt="Java threads" width="700"/>
+</div>
+
+1. While **Thread A** is doing the work, the **Thread B** needs to **waste** CPU time for checking if the **A** has finished.
+
+<div align="center">
+    <img src="ThreadCoordinationDesiredSolution.PNG"  alt="Java threads" width="700"/>
+</div>
+
+1. What we would want to **Thread B** to go sleep, when **Thread A** does the work.
+
+2. **Thread B** wakes up when the **Thread A** is finished.
+
 # Coding Exercise 2: Multithreaded Calculation.
 
 # Multithreaded Calculation - Solution.

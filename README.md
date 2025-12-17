@@ -24,7 +24,7 @@ All course material from Java Multithreading, Concurrency & Performance Optimiza
 >We were working with an old legacy system that was making two concurrent calls to a shared resource, causing inconsistent results that only appeared under load. The issue was subtle and difficult to reproduce, making it even harder to diagnose.
 >
 >A recent course I had taken on Java Multithreading and Concurrency proved invaluable. It helped me identify the race condition and apply the synchronized keyword correctly to control access to the critical section. With proper thread coordination in place, the system stabilized without requiring a major rewrite of the legacy code.<br><br>
-~ DevelopersCradle
+~ *DevelopersCradle*
 
 Contains my own notes with some course material to enforce learning experience.
 
@@ -64,7 +64,7 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 - [ ] [Section 12](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading%2C%20Concurrency%20%26%20Performance%20Optimization/Section%2012#chapter-12---extra-information---source-code-and-other-stuff) - Beyond Multithreading - Final Lecture.
 
 <p align="center">
-    <img src="Multithreading, Parallel & Asynchronous Coding in Modern Java caption.png" alt="course intros" style="width:900px;height:110px;"/>
+    <img src="Multithreading, Parallel & Asynchronous Coding in Modern Java caption.png" alt="course intros" style="width:990px;height:110px;"/>
 </p>
 
 <p align="center">
@@ -73,8 +73,9 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 All course material from Java Multithreading, Concurrency & Performance Optimization by **Michael Pogrebinsky** and **Top Developer Academy LLC**.
 
-> Add here some <br><br>
+> Story about vicotry!.<br><br>
 ~ DevelopersCradle
+
 
 Contains my own notes with some course material to enforce learning experience.
 
@@ -119,6 +120,72 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 - [ ] [Section 18](#) - Threads and Async Overloaded Methods in CompletableFuture.
 - [ ] [Section 19](#) - Build Restful API Client using Spring WebClient and CompletableFuture.
 - [ ] [Section 20](#) - Handle Multiple CompletableFutures - anyOf(), allOf().
+
+
+<p align="center">
+    <img src="Java Application Performance Tuning and Memory Management caption.png" alt="Java Application Performance Tuning and Memory Management" style="width:1000px;height:110px;"/>
+</p>
+
+<p align="center">
+    <img src="Java Application Performance Tuning and Memory Management desc.PNG" alt="Java Application Performance Tuning and Memory Management description here"/>
+</p>
+
+
+All course material from **Java Application Performance Tuning and Memory Management** by from **Matt Greencroft** and **Virtual Pair Programmers** with my own visual notes. ✍️
+
+>I interviewed with **Polar** for an Advanced Java role, and the technical discussion immediately dove into multithreading, concurrency, and performance optimization. They asked about thread pools, synchronization strategies, deadlocks, optimizing CPU-bound versus IO-bound operations, and even Virtual Threads in Java. The questions were challenging and required more than just textbook knowledge — they wanted practical understanding of real-world thread behavior.
+>
+>Thanks to a recent course on `Java Multithreading, Concurrency & Performance Optimization`, I could confidently discuss thread-safe collections, locks, executor frameworks, and the advantages of **Virtual Threads** for scalable, lightweight concurrency. Even though I was **not chosen** for the position, the interview **drove me** to deeply pursue these concepts, strengthening my skills and confidence for future challenges.<br><br>
+~ DevelopersCradle
+
+
+This repository is made with [![Eclipse](https://img.shields.io/badge/Eclipse-FE7A16.svg?logo=Eclipse&logoColor=white)](#), therefore it will include configuration files which are related to this IDE this approach will be favored for now. ⚙️
+
+[Udemy](https://www.udemy.com/course/java-application-performance-and-memory-management).
+
+[Homepage of maker](https://www.virtualpairprogrammers.com/).
+
+If the content sparked :fire: your interest, please consider starting the course and start learning :book:.
+
+<!-- 
+Linkedin puts this shit front, when clicking from private mode x(. Need to put this to make jump working every case
+?trk=public_profile_see-credential 
+-->
+
+<div align="center">
+    Insert certificate here when completed
+</div>
+
+**Note: The material provided in this repository is only for helping those who may get stuck at any point of time in the course. It is very advised that no one should just copy the solutions(violation of Honor Code) presented here.**
+
+#### Progress/Curriculum.
+
+- [ ] [Chapter 01](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Application%20Performance%20Tuning%20and%20Memory%20Management/Section%2001#chapter-1---introduction) - Introduction.
+- [ ] [Chapter 02](#) - Just In Time Compilation and the Code Cache.
+- [ ] [Chapter 03](#) - Selecting the JVM.
+- [ ] [Chapter 04](#) - How memory works: the stack and the heap.
+- [ ] [Chapter 05](#) - Passing objects between methods.
+- [ ] [Chapter 06](#) - Memory exercise.
+- [ ] [Chapter 07](#) - Escaping References.
+- [ ] [Chapter 08](#) - Memory Exercise.
+- [ ] [Chapter 09](#) - The Metaspace and internal JVM memory optimisations.
+- [ ] [Chapter 10](#) - Tuning the JVM’s Memory Settings.
+- [ ] [Chapter 11](#) - Introducing Garbage Collection.
+- [ ] [Chapter 12](#) - Monitoring the Heap.
+- [ ] [Chapter 13](#) - Analyzing a heap dump.
+- [ ] [Chapter 14](#) - Generational Garbage Collection.
+- [ ] [Chapter 15](#) - Garbage Collector tuning & selection.
+- [ ] [Chapter 16](#) - Using a profiler to analyse application performance.
+- [ ] [Chapter 17](#) - Assessing Performance.
+- [ ] [Chapter 18](#) - Benchmarking with JMH.
+- [ ] [Chapter 19](#) - Performance and Benchmarking Exercise.
+- [ ] [Chapter 20](#) - How Lists Work.
+- [ ] [Chapter 21](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Application%20Performance%20Tuning%20and%20Memory%20Management/Section%2021#section-21-chapter-21---how-maps-work) - How Maps Work.
+
+#### Additional stuff.
+
+- [x] Check the content from other student [Link](https://github.com/tommic81/udemy-java-memory-management/tree/master). ✅
+
 
 <img id="studying" src="data structures and algorithms with visualizations caption.png" style="width:900px;height:70px;">
 
@@ -298,17 +365,21 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 - [ ] [Section 01](#) - Add here.
 
 <p align="center">
-    <img id="studying" src="Data Structures and Algorithms Deep Dive Using Java caption.gif" style="width:900px;height:140px;">
+    <img id="studying" src="Data_Structures_And_Algorithms_Deep_Dive_Using_Java_Caption.png" style="width:1200px;height:150px;">
 </p>
 
 <p align="center">
-    <img id="studying" src="Data Structures and Algorithms description.PNG">
+    <img id="studying" src="Data Structures and Algorithms description.PNG"
+    style="width:600px;height:210px;">
 </p>
 
 All course material from Data Structures and Algorithms: Deep Dive Using Java by **Goran Lochert**, **Tim Buchalka** and **Tim Buchalka's Learn Programming Academy**.
 
-> Add here some <br><br>
-~ DevelopersCradle
+>I once interviewed with **Vaisala** for the *Observation Network Manager NM10* role, where the technical discussion went deep into data structures and their operations. The interview challenged my understanding of trees, graphs, and time–space trade-offs in ways I hadn’t fully experienced before. [Project](https://www.vaisala.com/en/products/weather-environmental-sensors/observation-network-manager-nm10).
+>
+> Although I wasn’t selected for the position, the experience became a turning point. It drove me to truly internalize the concepts through a deep dive into `Data Structures and Algorithms using Java`, strengthening both my problem-solving approach and technical confidence for future challenges.
+<br><br>
+~ *DevelopersCradle*
 
 Contains my own notes with some course material to enforce learning experience.
 
@@ -349,64 +420,3 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 - [ ] [Section 10](#) - Mastering Heaps: Priority Queues and Heapsort Algorithm in Java.
 - [ ] [Section 11](#) - Final Section: Concluding the Course with Key Takeaways and Sets.
 - [ ] [Section 12](#) - Extra Information - Source code, and other stuff.
-
-<p align="center">
-    <img src="Java Application Performance Tuning and Memory Management caption.png" alt="Java Application Performance Tuning and Memory Management" style="width:1000px;height:110px;"/>
-</p>
-
-<p align="center">
-    <img src="Java Application Performance Tuning and Memory Management desc.PNG" alt="Java Application Performance Tuning and Memory Management description here"/>
-</p>
-
-
-All course material from **Java Application Performance Tuning and Memory Management** by from **Matt Greencroft** and **Virtual Pair Programmers** with my own visual notes. ✍️
-
-> Add here some <br><br>
-~ DevelopersCradle
-
-This repository is made with [![Eclipse](https://img.shields.io/badge/Eclipse-FE7A16.svg?logo=Eclipse&logoColor=white)](#), therefore it will include configuration files which are related to this IDE this approach will be favored for now. ⚙️
-
-[Udemy](https://www.udemy.com/course/java-application-performance-and-memory-management).
-
-[Homepage of maker](https://www.virtualpairprogrammers.com/).
-
-If the content sparked :fire: your interest, please consider starting the course and start learning :book:.
-
-<!-- 
-Linkedin puts this shit front, when clicking from private mode x(. Need to put this to make jump working every case
-?trk=public_profile_see-credential 
--->
-
-<div align="center">
-    Insert certificate here when completed
-</div>
-
-**Note: The material provided in this repository is only for helping those who may get stuck at any point of time in the course. It is very advised that no one should just copy the solutions(violation of Honor Code) presented here.**
-
-#### Progress/Curriculum.
-
-- [ ] [Chapter 01](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Application%20Performance%20Tuning%20and%20Memory%20Management/Section%2001#chapter-1---introduction) - Introduction.
-- [ ] [Chapter 02](#) - Just In Time Compilation and the Code Cache.
-- [ ] [Chapter 03](#) - Selecting the JVM.
-- [ ] [Chapter 04](#) - How memory works: the stack and the heap.
-- [ ] [Chapter 05](#) - Passing objects between methods.
-- [ ] [Chapter 06](#) - Memory exercise.
-- [ ] [Chapter 07](#) - Escaping References.
-- [ ] [Chapter 08](#) - Memory Exercise.
-- [ ] [Chapter 09](#) - The Metaspace and internal JVM memory optimisations.
-- [ ] [Chapter 10](#) - Tuning the JVM’s Memory Settings.
-- [ ] [Chapter 11](#) - Introducing Garbage Collection.
-- [ ] [Chapter 12](#) - Monitoring the Heap.
-- [ ] [Chapter 13](#) - Analyzing a heap dump.
-- [ ] [Chapter 14](#) - Generational Garbage Collection.
-- [ ] [Chapter 15](#) - Garbage Collector tuning & selection.
-- [ ] [Chapter 16](#) - Using a profiler to analyse application performance.
-- [ ] [Chapter 17](#) - Assessing Performance.
-- [ ] [Chapter 18](#) - Benchmarking with JMH.
-- [ ] [Chapter 19](#) - Performance and Benchmarking Exercise.
-- [ ] [Chapter 20](#) - How Lists Work.
-- [ ] [Chapter 21](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Application%20Performance%20Tuning%20and%20Memory%20Management/Section%2021#section-21-chapter-21---how-maps-work) - How Maps Work.
-
-#### Additional stuff.
-
-- [x] Check the content from other student [Link](https://github.com/tommic81/udemy-java-memory-management/tree/master). ✅

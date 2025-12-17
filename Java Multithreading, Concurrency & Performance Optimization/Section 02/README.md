@@ -47,7 +47,7 @@ Threading Fundamentals - Thread Creation.
     -  This always affects the **Thread** that calls it — the current thread.
 
 <div align="center">
-    <img src="thread.PNG"  alt="Java threads" width="800"/>
+    <img src="thread.PNG" id="thread_finishing_when_they_are_ready" alt="Java threads" width="800"/>
 </div>
 
 1. Notice when we call the `thread.start()`, the new thread has not been scheduled yet.
