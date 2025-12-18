@@ -185,9 +185,9 @@ public class Main1 {
 
 - The below **thread** there is some **complex** computation happening:
 
-\[
+$$
 \text{result} = \text{base}^{\text{power}}
-\]
+$$
 
 <details>
 <summary id="Thread progress
@@ -497,7 +497,24 @@ public class Main2 {
 
 1. What we would want to **Thread B** to go sleep, when **Thread A** does the work.
 
-2. **Thread B** wakes up when the **Thread A** is finished.
+2. **Thread B** wakes up when **Thread A** is finished.
+
+<div align="center">
+    <img src="ThreadDotJoin.PNG"  alt="Java threads" width="700"/>
+</div>
+
+1. Signatures below:
+``` 
+public final void join().
+public final void join(long millis, int nanos).
+public final void join(long millis).
+```
+
+- We will have **Factorial Calculation** and since this is CPU heavy operation, we would want to have it in own **thread**.
+    - We have the following factorials: `List<Long> inputNumbers = Arrays.asList(100000000L, 3435L, 35435L, 2324L, 4656L, 23L, 5556L);`.
+
+
+
 
 # Coding Exercise 2: Multithreaded Calculation.
 

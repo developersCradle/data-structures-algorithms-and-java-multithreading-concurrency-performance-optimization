@@ -30,7 +30,6 @@ Contains my own notes with some course material to enforce learning experience.
 
 This repository is made with [![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?logo=intellij-idea&logoColor=white)](#) with [![Eclipse](https://img.shields.io/badge/Eclipse-FE7A16.svg?logo=Eclipse&logoColor=white)](#) hotkeys, therefore it will include configuration files which are related to this IDE this approach will be favored for now. ⚙️
 
-
 [The course at Udemy](https://www.udemy.com/course/java-multithreading-concurrency-performance-optimization/). 
 
 [Website of maker](https://topdeveloperacademy.com/).
@@ -121,9 +120,8 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 - [ ] [Section 19](#) - Build Restful API Client using Spring WebClient and CompletableFuture.
 - [ ] [Section 20](#) - Handle Multiple CompletableFutures - anyOf(), allOf().
 
-
 <p align="center">
-    <img src="Java Application Performance Tuning and Memory Management caption.png" alt="Java Application Performance Tuning and Memory Management" style="width:1000px;height:110px;"/>
+    <img src="Java_Application_Performance_Tuning_And_Memory_Management.gif" alt="Java Application Performance Tuning and Memory Management" style="width:1000px;height:90px;"/>
 </p>
 
 <p align="center">
