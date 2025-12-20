@@ -7,7 +7,7 @@ Threading Fundamentals - Thread Coordination.
 # Thread Termination & Daemon Threads.
 
 <div align="center">
-    <img src="WeStartFromTheThreadTermination.PNG"  alt="Java threads" width="500"/>
+    <img src="We_Start_From_The_Thread_Termination_Chapter.PNG"  alt="Java threads" width="500"/>
 </div>
 
 1. We will start from this chapter.
@@ -183,7 +183,7 @@ public class Main1 {
 ````
 </details>
 
-- The below **thread** there is some **complex** computation happening:
+- Next we will be using following formula for the **thread**:
 
 $$
 \text{result} = \text{base}^{\text{power}}
@@ -422,13 +422,13 @@ public class Main2 {
     <img src="whatWeWillLearn.PNG"  alt="Java threads" width="700"/>
 </div>
 
-1. We need to know that when the **thread** has **completed**, and it should be done when we are **expecting it** to finish!
+1. We need to know that when the **thread** has **completed**, and we need to know when we can **expect it** to be finish!
     - We can take advantage of the **threads** when they are run in **parallel** and **aggregate** result at the end.
 
 > **Aggregate** mean to combine the results in one point. **Wait** → then **combine** (manually).
 
 <div align="center">
-    <img src="parallel.png"  alt="Java threads" width="400"/>
+    <img src="Parallel_And_Join_Concept_Overview.png"  alt="Java threads" width="500"/>
 </div>
  
 <div align="center">
@@ -505,14 +505,198 @@ public class Main2 {
 
 1. Signatures below:
 ``` 
-public final void join().
-public final void join(long millis, int nanos).
-public final void join(long millis).
+public final void join()
+public final void join(long millis, int nanos)
+public final void join(long millis)
 ```
 
-- We will have **Factorial Calculation** and since this is CPU heavy operation, we would want to have it in own **thread**.
-    - We have the following factorials: `List<Long> inputNumbers = Arrays.asList(100000000L, 3435L, 35435L, 2324L, 4656L, 23L, 5556L);`.
 
+> **Factorial** - *“In how many different ways can things be arranged or ordered?”*
+
+$$
+n! = \prod_{i=1}^{n} i
+$$
+
+<details>
+<summary id="The factorial formula" open="true"> <b>Factorial diagram!</b> </summary>
+
+<div align="center">
+    <img src="Factorial_Formula.png"  alt="Java threads" width="500"/>
+</div>
+</details>
+
+<br>
+
+- We will have **Factorial Calculation** and since this is **CPU heavy operation**.
+    - We would want to have its in own **thread**.
+
+<br>
+
+- We have the following factorials: `List<Long> inputNumbers = Arrays.asList(100000000L, 3435L, 35435L, 2324L, 4656L, 23L, 5556L);`.
+
+- Calculating **thread** for given **factorial** number: 
+
+````
+        public BigInteger factorial(long n) {
+            BigInteger tempResult = BigInteger.ONE;
+
+            for (long i = n; i > 0; i--) {
+                tempResult = tempResult.multiply(new BigInteger((Long.toString(i))));
+            }
+            return tempResult;
+        }
+````
+
+- We will be holding the **value** in `BigInteger` since the **factorial** number can be long! 
+    - `isFinished` is used to check if the calculation has **finished**!
+
+````
+public static class FactorialThread extends Thread {
+        private long inputNumber;
+        private BigInteger result = BigInteger.ZERO;
+        private boolean isFinished = false;
+
+        public FactorialThread(long inputNumber) {
+            this.inputNumber = inputNumber;
+        }
+
+        @Override
+        public void run() {
+            this.result = factorial(inputNumber);
+            this.isFinished = true;
+        }
+
+     ... code here ...
+
+        public BigInteger getResult() {
+            return result;
+        }
+
+        public boolean isFinished() {
+            return isFinished;
+        }
+    }
+````
+
+- We will be executing this **thread** as following:
+
+- Todo jatka tästä.
+
+````
+public static void main(String[] args) throws InterruptedException {
+        List<Long> inputNumbers = Arrays.asList(100000000L, 3435L, 35435L, 2324L, 4656L, 23L, 5556L);
+
+        List<FactorialThread> threads = new ArrayList<>();
+
+        for (long inputNumber : inputNumbers) {
+            threads.add(new FactorialThread(inputNumber));
+        }
+
+        for (Thread thread : threads) {
+            thread.setDaemon(true);
+            thread.start();
+        }
+
+        for (Thread thread : threads) {
+            thread.join(2000);
+        }
+
+        for (int i = 0; i < inputNumbers.size(); i++) {
+            FactorialThread factorialThread = threads.get(i);
+            if (factorialThread.isFinished()) {
+                System.out.println("Factorial of " + inputNumbers.get(i) + " is " + factorialThread.getResult());
+            } else {
+                System.out.println("The calculation for " + inputNumbers.get(i) + " is still in progress");
+            }
+        }
+    }
+````
+
+
+
+<details>
+<summary id="The factorial thread" open="true"> <b>Factorial Thread Java code!</b> </summary>
+
+````
+    /*
+ * Copyright (c) 2019-2023. Michael Pogrebinsky - Top Developer Academy
+ * https://topdeveloperacademy.com
+ * All rights reserved
+ */
+
+import java.math.BigInteger;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+/**
+ * Joining Threads
+ * https://www.udemy.com/java-multithreading-concurrency-performance-optimization
+ */
+public class Main {
+    public static void main(String[] args) throws InterruptedException {
+        List<Long> inputNumbers = Arrays.asList(100000000L, 3435L, 35435L, 2324L, 4656L, 23L, 5556L);
+
+        List<FactorialThread> threads = new ArrayList<>();
+
+        for (long inputNumber : inputNumbers) {
+            threads.add(new FactorialThread(inputNumber));
+        }
+
+        for (Thread thread : threads) {
+            thread.setDaemon(true);
+            thread.start();
+        }
+
+        for (Thread thread : threads) {
+            thread.join(2000);
+        }
+
+        for (int i = 0; i < inputNumbers.size(); i++) {
+            FactorialThread factorialThread = threads.get(i);
+            if (factorialThread.isFinished()) {
+                System.out.println("Factorial of " + inputNumbers.get(i) + " is " + factorialThread.getResult());
+            } else {
+                System.out.println("The calculation for " + inputNumbers.get(i) + " is still in progress");
+            }
+        }
+    }
+
+    public static class FactorialThread extends Thread {
+        private long inputNumber;
+        private BigInteger result = BigInteger.ZERO;
+        private boolean isFinished = false;
+
+        public FactorialThread(long inputNumber) {
+            this.inputNumber = inputNumber;
+        }
+
+        @Override
+        public void run() {
+            this.result = factorial(inputNumber);
+            this.isFinished = true;
+        }
+
+        public BigInteger factorial(long n) {
+            BigInteger tempResult = BigInteger.ONE;
+
+            for (long i = n; i > 0; i--) {
+                tempResult = tempResult.multiply(new BigInteger((Long.toString(i))));
+            }
+            return tempResult;
+        }
+
+        public BigInteger getResult() {
+            return result;
+        }
+
+        public boolean isFinished() {
+            return isFinished;
+        }
+    }
+}
+````
+</details>
 
 
 
