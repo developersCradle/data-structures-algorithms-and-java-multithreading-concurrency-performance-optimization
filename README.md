@@ -1,5 +1,5 @@
 <p align="center">
-    <img id="studying" src="Algorithms_and_Data_Structures,_with_some_Optimization_courses_caption.png" style="width:900px;height:140px;">
+    <img id="studying" src="Algorithms_And_Data_Structures_With_Some_Optimization_Courses_Caption.png" style="width:900px;height:140px;">
     <text>Attempt to study <b>Data Structures</b>, <b>Optimization</b> and <b>Algorithms</b> related topics!</text>
 </p>
 
@@ -12,11 +12,11 @@
     - `git config --global core.longpaths true`.
 
 <p align="center">
-    <img src="Java_Multithreading,_Concurrency_&_Performance_Optimization_Caption.png" alt="Java Multithreading, Concurrency & Performance Optimization Caption" style="width:1600px;height:120px;"/>
+    <img src="Java_Multithreading_Concurrency_And_Performance_Optimization_Caption.png" alt="Java_Multithreading_Concurrency_And_Performance_Optimization_Caption" style="width:1600px;height:120px;"/>
 </p>
 
 <p align="center">
-    <img id="Performance Optimization" src="Java_Multithreading,_Concurrency_&_Performance_Optimization_Description.PNG" style=" width: 680px;">
+    <img id="Performance Optimization" src="Java_Multithreading_Concurrency_And_Performance_Optimization_Description.PNG" style=" width: 680px;">
 </p>
 
 All course material from Java Multithreading, Concurrency & Performance Optimization by **Michael Pogrebinsky** and **Top Developer Academy LLC**.
@@ -41,11 +41,12 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 ?trk=public_profile_see-credential 
 -->
 
-<div align="center">
+
+
+<p id="logos" align="center">
     <img src="I_Have_Same_Smile_Finish.gif" alt="course intros" style="width:490px;height:210px;"/>
-    <br>
-    Insert certificate here when completed
-</div>
+    <img src="Dummy_Cert.png" alt="course intros" style="width:490px;height:210px;"/>
+</p>
 
 
 **Note: The material provided in this repository is only for helping those who may get stuck at any point of time in the course. It is very advised that no one should just copy the solutions(violation of Honor Code) presented here.**
