@@ -15,7 +15,9 @@ import java.util.List;
  */
 public class Main {
     public static void main(String[] args) throws InterruptedException {
-        List<Long> inputNumbers = Arrays.asList(100000000L, 3435L, 35435L, 2324L, 4656L, 23L, 5556L);
+//        List<Long> inputNumbers = Arrays.asList(100000000L, 3435L, 35435L, 2324L, 4656L, 23L, 5556L); One number is very large!
+
+        List<Long> inputNumbers = Arrays.asList(10L, 3435L, 35435L, 2324L, 4656L, 23L, 5556L);
 
         List<FactorialThread> threads = new ArrayList<>();
 
@@ -24,12 +26,13 @@ public class Main {
         }
 
         for (Thread thread : threads) {
-            thread.setDaemon(true);
+//            thread.setDaemon(true);
             thread.start();
         }
 
         for (Thread thread : threads) {
-            thread.join(2000);
+            thread.join();
+//            thread.join(2000);
         }
 
         for (int i = 0; i < inputNumbers.size(); i++) {

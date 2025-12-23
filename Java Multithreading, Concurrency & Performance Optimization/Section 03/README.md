@@ -14,7 +14,7 @@ Threading Fundamentals - Thread Coordination.
     - This will be about the **starting** and **stopping** the **thread**!
 
 <div align="center">
-    <img src="ThreadTerminationWhenAndWhy.PNG"  alt="Java threads" width="700"/>
+    <img src="Thread_Termination_When_And_Why.PNG"  alt="Java threads" width="700"/>
 </div>
 
 - Why we would need to **terminate** a **thread**.
@@ -532,7 +532,7 @@ $$
 
 <br>
 
-- We have the following factorials: `List<Long> inputNumbers = Arrays.asList(100000000L, 3435L, 35435L, 2324L, 4656L, 23L, 5556L);`.
+- Furthermore, we have the following factorials: `List<Long> inputNumbers = Arrays.asList(100000000L, 3435L, 35435L, 2324L, 4656L, 23L, 5556L);`.
 
 - Calculating **thread** for given **factorial** number: 
 
@@ -579,11 +579,38 @@ public static class FactorialThread extends Thread {
 ````
 
 - We will be executing this **thread** as following:
-
-- Todo jatka tästä.
+    - They will be running **concurrently**. This will be inside `main`.
 
 ````
-public static void main(String[] args) throws InterruptedException {
+List<FactorialThread> threads = new ArrayList<>();
+
+        for (long inputNumber : inputNumbers) {
+            threads.add(new FactorialThread(inputNumber));
+        }
+
+        for (Thread thread : threads) {
+            thread.start();
+        }
+````
+
+- Next, we will be checking if the **thread** or **threads** have been finished:
+
+````
+for (int i = 0; i < inputNumbers.size(); i++) {
+            FactorialThread factorialThread = threads.get(i);
+            if (factorialThread.isFinished()) {
+                System.out.println("Factorial of " + inputNumbers.get(i) + " is " + factorialThread.getResult());
+            } else {
+                System.out.println("The calculation for " + inputNumbers.get(i) + " is still in progress");
+            }
+        }
+    }
+````
+
+- When we will be executing following code, we will have **one** problem. It will be when the `main` thread has finished checking the **FactorialThread**'s. The **FactorialThread**'s might have **not be** finished its calculations, hence we call this **Race Conditioning**!
+
+````
+    public static void main(String[] args) throws InterruptedException {
         List<Long> inputNumbers = Arrays.asList(100000000L, 3435L, 35435L, 2324L, 4656L, 23L, 5556L);
 
         List<FactorialThread> threads = new ArrayList<>();
@@ -593,12 +620,7 @@ public static void main(String[] args) throws InterruptedException {
         }
 
         for (Thread thread : threads) {
-            thread.setDaemon(true);
             thread.start();
-        }
-
-        for (Thread thread : threads) {
-            thread.join(2000);
         }
 
         for (int i = 0; i < inputNumbers.size(); i++) {
@@ -612,10 +634,35 @@ public static void main(String[] args) throws InterruptedException {
     }
 ````
 
+- Illustration of the **race condition** below:
+
+<div align="center">
+    <img src="Thread_Running_And_Having_Race_Codition.gif"  alt="Java threads" width="700"/>
+</div>
+
+1. Only one `FactorialThread` thread have been finished, by the time when the `main` **thread** has been finished.
+
+> [!IMPORTANT]
+> We are having **Race Condition**.
+
+<div align="center">
+    <img src="These_Two_Lines_Will_Have_Race_Condition.PNG"  alt="Java threads" width="700"/>
+</div>
+
+1. These two line `thread.start()` and `if (factorialThread.isFinished()) {` will have **race condition**!
+
+- These will be racing towards their goals **independently**.
+    - We will not know the state of the **thread**, when the `main` **thread** is checking the results!
+
+<div align="center">
+    <img src="Race_Condition_Thread_Illustration.PNG"  alt="Java threads" width="700"/>
+</div>
+
+1. Both **threads** will be racing towards their goals **independently**!
 
 
 <details>
-<summary id="The factorial thread" open="true"> <b>Factorial Thread Java code!</b> </summary>
+<summary id="The factorial thread" open="true"> <b>Factorial Thread Full Java code!</b> </summary>
 
 ````
     /*
@@ -697,8 +744,6 @@ public class Main {
 }
 ````
 </details>
-
-
 
 # Coding Exercise 2: Multithreaded Calculation.
 

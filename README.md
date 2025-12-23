@@ -4,26 +4,26 @@
 </p>
 
 <p align="center">
-   <img src="JavaMonolithOptimization.gif" alt="optimization" width="500" height="350"/>
+   <img src="Java_Monolith_Optimization_Repostiory_Graphic.gif" alt="Java Monolith Optimization Repostiory Graphic" width="500" height="350"/>
 </p>
 
 - For these courses one should configure **GIT** for handle projects.
-    - `git config --global http.postBuffer 524288000`
+    - `git config --global http.postBuffer 524288000`.
     - `git config --global core.longpaths true`.
 
 <p align="center">
-    <img src="Java_Multithreading,_Concurrency_&_Performance_Optimization_caption.png" alt="course intros" style="width:1600px;height:120px;"/>
+    <img src="Java_Multithreading,_Concurrency_&_Performance_Optimization_Caption.png" alt="Java Multithreading, Concurrency & Performance Optimization Caption" style="width:1600px;height:120px;"/>
 </p>
 
 <p align="center">
-    <img id="Performance Optimization" src="Java Multithreading, Concurrency & Performance Optimization desc.PNG" style=" width: 680px;">
+    <img id="Performance Optimization" src="Java_Multithreading,_Concurrency_&_Performance_Optimization_Description.PNG" style=" width: 680px;">
 </p>
 
 All course material from Java Multithreading, Concurrency & Performance Optimization by **Michael Pogrebinsky** and **Top Developer Academy LLC**.
 
 >We were working with an old legacy system that was making two concurrent calls to a shared resource, causing inconsistent results that only appeared under load. The issue was subtle and difficult to reproduce, making it even harder to diagnose.
 >
->A recent course I had taken on Java Multithreading and Concurrency proved invaluable. It helped me identify the race condition and apply the synchronized keyword correctly to control access to the critical section. With proper thread coordination in place, the system stabilized without requiring a major rewrite of the legacy code.<br><br>
+>A recent course I had taken on `Java Multithreading and Concurrency` proved invaluable. It helped me identify the race condition and apply the synchronized keyword correctly to control access to the critical section. With proper thread coordination in place, the system stabilized without requiring a major rewrite of the legacy code.<br><br>
 ~ *DevelopersCradle*
 
 Contains my own notes with some course material to enforce learning experience.
@@ -42,8 +42,11 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 -->
 
 <div align="center">
+    <img src="I_Have_Same_Smile_Finish.gif" alt="course intros" style="width:490px;height:210px;"/>
+    <br>
     Insert certificate here when completed
 </div>
+
 
 **Note: The material provided in this repository is only for helping those who may get stuck at any point of time in the course. It is very advised that no one should just copy the solutions(violation of Honor Code) presented here.**
 
@@ -121,7 +124,7 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 - [ ] [Section 20](#) - Handle Multiple CompletableFutures - anyOf(), allOf().
 
 <p align="center">
-    <img src="Java_Application_Performance_Tuning_And_Memory_Management.gif" alt="Java Application Performance Tuning and Memory Management" style="width:1000px;height:90px;"/>
+    <img src="Java_Application_Performance_Tuning_And_Memory_Management.gif" alt="Java Application Performance Tuning and Memory Management" style="width:1200px;height:60px;"/>
 </p>
 
 <p align="center">
