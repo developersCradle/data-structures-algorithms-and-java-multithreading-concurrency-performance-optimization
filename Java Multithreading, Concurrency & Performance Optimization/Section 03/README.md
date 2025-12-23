@@ -660,6 +660,37 @@ for (int i = 0; i < inputNumbers.size(); i++) {
 
 1. Both **threads** will be racing towards their goals **independently**!
 
+- We will `.join` the **threads** to make them **wait**.s
+    - At the end, `join()` makes the calling thread wait!
+    - Execution only continues after all threads have finished.
+
+````
+        for (Thread thread : threads) {
+            thread.join();
+        }
+````
+
+- Only the **restriction** is that the **threads** are needed to be waited until all are ready!
+    - If there is long number like, which is needed to be waited like: `100000L`!
+
+<div align="center">
+    <img src="Running_The_Join_Threads.gif"  alt="Java threads" width="900"/>
+</div>
+
+- We can give max seconds to the `.join()` to be waited. 
+
+````
+        for (Thread thread : threads) {
+            thread.join(2000); // This makes the thread wait for the two second, if its not finished it will exclude it out!
+        }
+````
+
+<div align="center">
+    <img src="Running_The_Join_Threads_Illustration.gif"  alt="Java threads" width="900"/>
+</div>
+
+
+- You can see the **two** seconds being waited by the `.join`. There will be still one **thread** `The calculation for 100000 is still in progress`.
 
 <details>
 <summary id="The factorial thread" open="true"> <b>Factorial Thread Full Java code!</b> </summary>
