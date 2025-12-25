@@ -17,7 +17,7 @@ public class Main {
     public static void main(String[] args) throws InterruptedException {
 //        List<Long> inputNumbers = Arrays.asList(100000000L, 3435L, 35435L, 2324L, 4656L, 23L, 5556L); One number is very large!
 
-        List<Long> inputNumbers = Arrays.asList(100L, 3435L, 35435L, 2324L, 4656L, 23L, 100000L);
+        List<Long> inputNumbers = Arrays.asList(100L, 3435L, 35435L, 2324L, 4656L, 23L, 1000000L);
 
         List<FactorialThread> threads = new ArrayList<>();
 

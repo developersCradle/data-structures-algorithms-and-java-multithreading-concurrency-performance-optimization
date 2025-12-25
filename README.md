@@ -41,8 +41,6 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 ?trk=public_profile_see-credential 
 -->
 
-
-
 <p id="logos" align="center">
     <img src="I_Have_Same_Smile_Finish.gif" alt="course intros" style="width:490px;height:210px;"/>
     <img src="Dummy_Cert.png" alt="course intros" style="width:490px;height:210px;"/>
@@ -55,7 +53,7 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 - [x] [Section 01](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Multithreading%2C%20Concurrency%20%26%20Performance%20Optimization/Section%2001/README.md#what-i-learned) - Introduction. ✅
 - [x] [Section 02](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Multithreading%2C%20Concurrency%20%26%20Performance%20Optimization/Section%2002/README.md#chapter-02---threading-fundamentals---thread-creation) - Threading Fundamentals - Thread Creation. ✅
-- [ ] [Section 03](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading%2C%20Concurrency%20%26%20Performance%20Optimization/Section%2003#chapter-03---threading-fundamentals---thread-coordination) - Threading Fundamentals - Thread Coordination.
+- [x] [Section 03](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading%2C%20Concurrency%20%26%20Performance%20Optimization/Section%2003#chapter-03---threading-fundamentals---thread-coordination) - Threading Fundamentals - Thread Coordination. ✅
 - [ ] [Section 04](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading%2C%20Concurrency%20%26%20Performance%20Optimization/Section%2004#chapter-04---performance-optimization) - Performance Optimization.
 - [ ] [Section 05](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading%2C%20Concurrency%20%26%20Performance%20Optimization/Section%2005#chapter-05---data-sharing-between-threads) - Data Sharing Between Threads.
 - [ ] [Section 06](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading%2C%20Concurrency%20%26%20Performance%20Optimization/Section%2006#chapter-06---the-concurrency-challenges--solutions) - The Concurrency Challenges & Solutions.
@@ -66,25 +64,49 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 - [ ] [Section 11](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Multithreading%2C%20Concurrency%20%26%20Performance%20Optimization/Section%2011/README.md#chapter-11---virtual-threads-and-high-performance-io) - Virtual Threads and High-Performance IO.
 - [ ] [Section 12](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading%2C%20Concurrency%20%26%20Performance%20Optimization/Section%2012#chapter-12---extra-information---source-code-and-other-stuff) - Beyond Multithreading - Final Lecture.
 
+#### Additional stuff.
+
+- [ ] Add some.
+
+<details>
+
+<summary id="Kafka the progress" open="true"> <b> course map!</b> </summary>
+
+<br>
+
+<p align="center">
+    <img src="courseMap.png" alt="reactive programming" width="400"/>
+</p>
+
+Course roadmap to enroll in the Modern Java Courses.
+
+1. Modern Java - Learn Java 8 features by coding it
+
+2. Multithreading, Parallel & Asynchronous Coding in Modern Java 
+
+</details>
+
+
+
+
 <p align="center">
     <img src="Multithreading, Parallel & Asynchronous Coding in Modern Java caption.png" alt="course intros" style="width:990px;height:110px;"/>
 </p>
 
 <p align="center">
-    <img src="Multithreading,Parallel & Asynchronous Coding in Modern Java desc.PNG" alt="course intros"/>
+    <img src="Multithreading,Parallel & Asynchronous Coding in Modern Java desc.PNG" alt="course intros" style="width:690px" />
 </p>
 
-All course material from Java Multithreading, Concurrency & Performance Optimization by **Michael Pogrebinsky** and **Top Developer Academy LLC**.
+All course material from Multithreading, Parallel & Asynchronous Coding in Modern Java by **Pragmatic Code School**.
 
-> Story about vicotry!.<br><br>
+> Story about victory! <br><br>
 ~ DevelopersCradle
-
 
 Contains my own notes with some course material to enforce learning experience.
 
-This repository is made with [![Eclipse](https://img.shields.io/badge/Eclipse-FE7A16.svg?logo=Eclipse&logoColor=white)](#), therefore it will include configuration files which are related to this IDE this approach will be favored for now. ⚙️
+This repository is made with [![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?logo=intellij-idea&logoColor=white)](#) with [![Eclipse](https://img.shields.io/badge/Eclipse-FE7A16.svg?logo=Eclipse&logoColor=white)](#) hotkeys, therefore it will include configuration files which are related to this IDE this approach will be favored for now. ⚙️
 
-[The course at Udemy](https://www.udemy.com/course/java-multithreading-concurrency-performance-optimization/). 
+[The course at Udemy](https://www.udemy.com/course/parallel-and-asynchronous-programming-in-modern-java). 
 
 [Website of maker](https://topdeveloperacademy.com/).
 
@@ -123,6 +145,10 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 - [ ] [Section 18](#) - Threads and Async Overloaded Methods in CompletableFuture.
 - [ ] [Section 19](#) - Build Restful API Client using Spring WebClient and CompletableFuture.
 - [ ] [Section 20](#) - Handle Multiple CompletableFutures - anyOf(), allOf().
+
+#### Additional stuff.
+
+- [ ] Add some.
 
 <p align="center">
     <img src="Java_Application_Performance_Tuning_And_Memory_Management.gif" alt="Java Application Performance Tuning and Memory Management" style="width:1200px;height:60px;"/>
@@ -379,13 +405,13 @@ All course material from Data Structures and Algorithms: Deep Dive Using Java by
 
 >I once interviewed with **Vaisala** for the *Observation Network Manager NM10* role, where the technical discussion went deep into data structures and their operations. The interview challenged my understanding of trees, graphs, and time–space trade-offs in ways I hadn’t fully experienced before. [Project](https://www.vaisala.com/en/products/weather-environmental-sensors/observation-network-manager-nm10).
 >
-> Although I wasn’t selected for the position, the experience became a turning point. It drove me to truly internalize the concepts through a deep dive into `Data Structures and Algorithms using Java`, strengthening both my problem-solving approach and technical confidence for future challenges.
+> Although I **wasn’t** selected for the position, the experience became a turning point. It drove me to truly internalize the concepts through a deep dive into `Data Structures and Algorithms using Java`, strengthening both my problem-solving approach and technical confidence for future challenges.
 <br><br>
 ~ *DevelopersCradle*
 
 Contains my own notes with some course material to enforce learning experience.
 
-This repository is made with [![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?logo=intellij-idea&logoColor=white)](#) with **Eclipse** hotkeys. This is why it will include configuration files which are related to this IDE this approach will be favored for now. ⚙️
+This repository is made with [![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?logo=intellij-idea&logoColor=white)](#) with [![Eclipse](https://img.shields.io/badge/Eclipse-FE7A16.svg?logo=Eclipse&logoColor=white)](#) hotkeys. This is why it will include configuration files which are related to this IDE this approach will be favored for now. ⚙️
 
 [The course at Udemy](https://www.udemy.com/course/data-structures-and-algorithms-deep-dive-using-java). 
 
@@ -422,3 +448,55 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 - [ ] [Section 10](#) - Mastering Heaps: Priority Queues and Heapsort Algorithm in Java.
 - [ ] [Section 11](#) - Final Section: Concluding the Course with Key Takeaways and Sets.
 - [ ] [Section 12](#) - Extra Information - Source code, and other stuff.
+
+
+<hr>
+<!-- 
+<p align="center">
+    <img src="Multithreading, Parallel & Asynchronous Coding in Modern Java caption.png" alt="course intros" style="width:990px;height:110px;"/>
+</p> -->
+
+<p align="center">
+    <img src="Java_Data_Structures_And_Algorithms_Plus_LEETCODE_Excervice_Description.PNG" alt="Course Intros" style="width:690px" />
+</p>
+<!-- 
+All course material from Multithreading, Parallel & Asynchronous Coding in Modern Java by **Pragmatic Code School**. -->
+
+> Story about victory! <br><br>
+~ DevelopersCradle
+
+Contains my own notes with some course material to enforce learning experience.
+
+This repository is made with [![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?logo=intellij-idea&logoColor=white)](#) with [![Eclipse](https://img.shields.io/badge/Eclipse-FE7A16.svg?logo=Eclipse&logoColor=white)](#) hotkeys, therefore it will include configuration files which are related to this IDE this approach will be favored for now. ⚙️
+
+<!-- [The course at Udemy](https://www.udemy.com/course/parallel-and-asynchronous-programming-in-modern-java). 
+
+[Website of maker](https://topdeveloperacademy.com/). -->
+
+If the content sparked :fire: your interest, please consider buying the course and start learning :book:.
+
+<!-- 
+Linkedin puts this shit front, when clicking from private mode x(. Need to put this to make jump working every case
+?trk=public_profile_see-credential 
+-->
+
+<div align="center">
+    Insert certificate here when completed
+</div>
+
+**Note: The material provided in this repository is only for helping those who may get stuck at any point of time in the course. It is very advised that no one should just copy the solutions(violation of Honor Code) presented here.**
+
+#### Progress/Curriculum.
+
+- [ ] [Section 01](#) - Add here.
+
+#### Additional stuff.
+
+- [ ] Add some.
+
+
+
+
+<hr>
+
+- Add here the journey of l33tcode 

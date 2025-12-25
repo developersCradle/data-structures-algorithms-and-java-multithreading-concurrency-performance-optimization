@@ -28,7 +28,7 @@ Threading Fundamentals - Thread Coordination.
     - `3.` We cannot **end** the **application** if there is threads running.
 
 <div align="center">
-    <img src="NextIsThreadInterupt.PNG"  alt="Java threads" width="500"/>
+    <img src="Next_Is_Thread_Interupt.PNG"  alt="Java threads" width="500"/>
 </div>
 
 1. Next we will be dealing with `Thread.interupt()`.
@@ -65,10 +65,8 @@ Threading Fundamentals - Thread Coordination.
 
 - We can see that there are no logs until the waiting time is over: 
 
-````
-
+````Java
 - No logs here man! No patient to wait!
-
 ````
 
 <details>
@@ -76,7 +74,7 @@ Threading Fundamentals - Thread Coordination.
 <summary id="Thread progress
 " open="true"> <b>The thread code, which will be waiting!</b> </summary>
 
-````
+````Java
 /*
  * Copyright (c) 2019-2023. Michael Pogrebinsky - Top Developer Academy
  * https://topdeveloperacademy.com
@@ -129,7 +127,7 @@ public class Main1 {
 - We will be getting followings logs: 
     - See the: `Existing blocking thread` in the logs.
 
-````
+````Java
 Connected to the target VM, address: '127.0.0.1:63604', transport: 'socket'
 Existing blocking thread
 Disconnected from the target VM, address: '127.0.0.1:63604', transport: 'socket'
@@ -142,7 +140,7 @@ Process finished with exit code 0
 <summary id="Thread progress
 " open="true"> <b>The thread code, that will throw interrupted task!</b> </summary>
 
-````
+````Java
 /*
  * Copyright (c) 2019-2023. Michael Pogrebinsky - Top Developer Academy
  * https://topdeveloperacademy.com
@@ -193,7 +191,7 @@ $$
 <summary id="Thread progress
 " open="true"> <b>The thread that takes lot of time when computing!</b> </summary>
 
-````
+````Java
 /*
  * Copyright (c) 2019-2023. Michael Pogrebinsky - Top Developer Academy
  * https://topdeveloperacademy.com
@@ -273,7 +271,7 @@ public class Main2 {
 <summary id="Thread progress
 " open="true"> <b>The thread that takes lot of time when computing and with the interrupt!</b> </summary>
 
-````
+````Java
 /*
  * Copyright (c) 2019-2023. Michael Pogrebinsky - Top Developer Academy
  * https://topdeveloperacademy.com
@@ -347,7 +345,7 @@ public class Main2 {
     <img src="deamonThreadsScenario02.PNG"  alt="Java threads" width="700"/>
 </div>
 
-- We can even set `thread.setDaemon(true);` to old **tread**, which takes time. This thread will **end gracefully**!
+- We can even set `thread.setDaemon(true);` to the **thread**, which takes time. This **thread** will now **end gracefully**!
 
 <div align="center">
     <img src="endingLongThreadGrasefully.gif"  alt="Java threads" width="700"/>
@@ -357,7 +355,7 @@ public class Main2 {
 <summary id="Thread progress
 " open="true"> <b>The thread that takes lot of time, exiting grasefully with .setDaemon(true)!</b> </summary>
 
-````
+````Java
 /*
  * Copyright (c) 2019-2023. Michael Pogrebinsky - Top Developer Academy
  * https://topdeveloperacademy.com
@@ -431,6 +429,16 @@ public class Main2 {
     <img src="Parallel_And_Join_Concept_Overview.png"  alt="Java threads" width="500"/>
 </div>
  
+ 1. We make the **threads** wait. This can be done by making the calling thread to be **blocked**!
+
+````Java
+worker.join();
+````
+
+- In this example the `Main` thread calls `join()`.
+    - ✅ Main thread gets **blocked** and **waits**.
+    - ❌ `Worker` thread does not wait, it will be start executing.
+
 <div align="center">
     <img src="whyWeNeedThreadCoordination.PNG"  alt="Java threads" width="700"/>
 </div>
@@ -455,7 +463,7 @@ public class Main2 {
 1. The scenario **Thread B** finishes before the **Thread A**. `2.`.
 
 <div align="center">
-    <img src="concurrency.PNG"  alt="Java threads" width="700"/>
+    <img src="Concurrency_Illustration.PNG"  alt="Java threads" width="700"/>
 </div>
 
 1. **Concurrency** is when the tasks are run **after each other**!
@@ -504,7 +512,7 @@ public class Main2 {
 </div>
 
 1. Signatures below:
-``` 
+```Java
 public final void join()
 public final void join(long millis, int nanos)
 public final void join(long millis)
@@ -550,7 +558,7 @@ $$
 - We will be holding the **value** in `BigInteger` since the **factorial** number can be long! 
     - `isFinished` is used to check if the calculation has **finished**!
 
-````
+````Java
 public static class FactorialThread extends Thread {
         private long inputNumber;
         private BigInteger result = BigInteger.ZERO;
@@ -581,7 +589,7 @@ public static class FactorialThread extends Thread {
 - We will be executing this **thread** as following:
     - They will be running **concurrently**. This will be inside `main`.
 
-````
+````Java
 List<FactorialThread> threads = new ArrayList<>();
 
         for (long inputNumber : inputNumbers) {
@@ -595,7 +603,7 @@ List<FactorialThread> threads = new ArrayList<>();
 
 - Next, we will be checking if the **thread** or **threads** have been finished:
 
-````
+````Java
 for (int i = 0; i < inputNumbers.size(); i++) {
             FactorialThread factorialThread = threads.get(i);
             if (factorialThread.isFinished()) {
@@ -609,7 +617,7 @@ for (int i = 0; i < inputNumbers.size(); i++) {
 
 - When we will be executing following code, we will have **one** problem. It will be when the `main` thread has finished checking the **FactorialThread**'s. The **FactorialThread**'s might have **not be** finished its calculations, hence we call this **Race Conditioning**!
 
-````
+````Java
     public static void main(String[] args) throws InterruptedException {
         List<Long> inputNumbers = Arrays.asList(100000000L, 3435L, 35435L, 2324L, 4656L, 23L, 5556L);
 
@@ -660,9 +668,11 @@ for (int i = 0; i < inputNumbers.size(); i++) {
 
 1. Both **threads** will be racing towards their goals **independently**!
 
-- We will `.join` the **threads** to make them **wait**.s
-    - At the end, `join()` makes the calling thread wait!
-    - Execution only continues after all threads have finished.
+> We use `.join()` on threads to make the calling thread **wait** before executing any further code.
+
+- We will use the`.join` to the **threads** to make them **wait** before executing any future.
+    - `join()` makes the calling thread wait!
+    - Execution only continues after **all threads** have finished.
 
 ````
         for (Thread thread : threads) {
@@ -677,7 +687,8 @@ for (int i = 0; i < inputNumbers.size(); i++) {
     <img src="Running_The_Join_Threads.gif"  alt="Java threads" width="900"/>
 </div>
 
-- We can give max seconds to the `.join()` to be waited. 
+- We can give max seconds to the `.join()` to give grace time. 
+    - `thread.join(2000);` → this makes the **two seconds** waiting! 
 
 ````
         for (Thread thread : threads) {
@@ -689,13 +700,37 @@ for (int i = 0; i < inputNumbers.size(); i++) {
     <img src="Running_The_Join_Threads_Illustration.gif"  alt="Java threads" width="900"/>
 </div>
 
+- You can see the **two** seconds being waited by the `.join()`. 
+    - There will be still **one thread** that have been left out `The calculation for 100000 is still in progress`.
 
-- You can see the **two** seconds being waited by the `.join`. There will be still one **thread** `The calculation for 100000 is still in progress`.
+<div align="center">
+    <img src="Threads_Join_Summary.PNG"  alt="Java threads" width="900"/>
+</div>
+
+1. `.join()` lets you **pause** the calling thread for the control.
+
+2. We can more easily **collect** and **aggregate** the results.
+    - `.join()` itself doesn’t return values, it just guarantees completion.
+
+3. Using thread `.join(timeout)` lets the calling thread wait only a limited time.
+
+<div align="center">
+    <img src="Joining_Threads_Summary.PNG"  alt="Java threads" width="900"/>
+</div>
+
+1. We have seen that, we cannot rely on the order of execution!
+2. Always use thread coordination, to get **trusted** results!
+    - Use synchronization tools like `synchronized` blocks, locks, semaphores, or wait/notify to safely coordinate shared resources between threads.
+3. Program like, things will **go wrong**!
+    - Example `Failing safely`.
+        - Use timeouts (`join(timeout)`, locks with time limits).
+
+
 
 <details>
 <summary id="The factorial thread" open="true"> <b>Factorial Thread Full Java code!</b> </summary>
 
-````
+````Java
     /*
  * Copyright (c) 2019-2023. Michael Pogrebinsky - Top Developer Academy
  * https://topdeveloperacademy.com
