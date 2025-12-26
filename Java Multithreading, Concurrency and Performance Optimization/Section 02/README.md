@@ -13,7 +13,7 @@ Threading Fundamentals - Thread Creation.
 - First we will be looking at the *"hello world"* of the **Threads**. 
 
 <div align="center">
-    <img src="firstThread.PNG"  alt="Java threads" width="500"/>
+    <img src="firstThread.PNG"  alt="Java threads." width="500"/>
 </div>
 
 - We can create `Thread`, where we input the `Runnable`.
@@ -47,7 +47,7 @@ Threading Fundamentals - Thread Creation.
     -  This always affects the **Thread** that calls it — the current thread.
 
 <div align="center">
-    <img src="thread.PNG" id="thread_finishing_when_they_are_ready" alt="Java threads" width="800"/>
+    <img src="thread.PNG" id="thread_finishing_when_they_are_ready" alt="Java threads." width="800"/>
 </div>
 
 1. Notice when we call the `thread.start()`, the new thread has not been scheduled yet.
@@ -105,21 +105,21 @@ we are now in thread Thread-0
 - The **second** topic the which **capabilities** the **Thread** will bring us.
 
 <div align="center">
-    <img src="firstThread.PNG"  alt="Java threads" width="500"/>
+    <img src="firstThread.PNG"  alt="Java threads." width="500"/>
 </div>
 
 - We can give the **Thread** a name:
     - With the following: `thread.setName("New Worker Thread");`
 
 <div align="center">
-    <img src="settingTheStaticPriority.PNG"  alt="Java threads" width="600"/>
+    <img src="settingTheStaticPriority.PNG"  alt="Java threads." width="600"/>
 </div>
 
 1. We can set the **Static Priority**. 
     - The **prioritization** affects the **scheduling decision**!
         - With the following: `thread.setPriority(Thread.MAX_PRIORITY);`
 <div align="center">
-    <img src="debuggingTheThreads.PNG"  alt="Java threads" width="900"/>
+    <img src="debuggingTheThreads.PNG"  alt="Java threads." width="900"/>
 </div>
 
 1. You can see the named **Thread** in the **Debugger** window.
@@ -171,7 +171,7 @@ Current thread priority is 10
 ````
 
 <div align="center">
-    <img src="thirdThread.PNG"  alt="Java threads" width="500"/>
+    <img src="thirdThread.PNG"  alt="Java threads." width="500"/>
 </div>
 
 - This **Third** version of the **Threads**, where we explored `.setUncaughtExceptionHandler()`:
@@ -206,7 +206,7 @@ A critical error handler in tread Thread-0 the error is Internal Exception
 # Threads Creation - Part 2, Thread Inheritance.
 
 <div align="center">
-    <img src="threadCreationOtherWay.PNG"  alt="Java threads" width="500"/>
+    <img src="threadCreationOtherWay.PNG"  alt="Java threads." width="500"/>
 </div>
 
 - The other way to create **Thread** is to extend the **class**.
@@ -239,11 +239,11 @@ public class Main {
 ````
 
 <div align="center">
-    <img src="runningTheThreadClass.gif"  alt="Java threads" width="700"/>
+    <img src="runningTheThreadClass.gif"  alt="Java threads." width="700"/>
 </div>
 
 <div align="center">
-    <img src="caseStudyThread.PNG"  alt="Java threads" width="500"/>
+    <img src="caseStudyThread.PNG"  alt="Java threads." width="500"/>
 </div>
 
 1. We will have case study where there will be **security vault**.
@@ -251,7 +251,7 @@ public class Main {
 3. This will be **police Thread**, and it will be trying to catch the hacker in **10 secs**. 
 
 <div align="center">
-    <img src="umlDiagramForTheCaseStudy.PNG"  alt="Java threads" width="500"/>
+    <img src="umlDiagramForTheCaseStudy.PNG"  alt="Java threads." width="500"/>
 </div>
 
 - We will be implementing the **UML** classes, with following implementations:
@@ -379,20 +379,20 @@ public class Main {
 - Police wins!
 
 <div align="center">
-    <img src="policeWin.gif"  alt="Java threads" width="500"/>
+    <img src="policeWin.gif"  alt="Java threads." width="500"/>
 </div>
 
 - Hacker win!
 
 <div align="center">
-    <img src="hackerWin.gif"  alt="Java threads" width="500"/>
+    <img src="hackerWin.gif"  alt="Java threads." width="500"/>
 </div>
 
 
 # Coding Exercise 1: Thread Creation - MultiExecutor.
 
 <div align="center">
-    <img src="ThreadCreationExercise.PNG"  alt="Java threads" width="500"/>
+    <img src="ThreadCreationExercise.PNG"  alt="Java threads." width="500"/>
 </div>
 
 ```

@@ -54,9 +54,9 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 - [x] [Section 01](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading%2C%20Concurrency%20and%20Performance%20Optimization/Section%2001#chapter-01---introduction) - Introduction. ✅
 - [x] [Section 02](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading%2C%20Concurrency%20and%20Performance%20Optimization/Section%2002#chapter-02---threading-fundamentals---thread-creation) - Threading Fundamentals - Thread Creation. ✅
 - [x] [Section 03](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading%2C%20Concurrency%20and%20Performance%20Optimization/Section%2003#chapter-03---threading-fundamentals---thread-coordination) - Threading Fundamentals - Thread Coordination. ✅
-- [ ] [Section 04](#) - Performance Optimization.
-- [ ] [Section 05](#) - Data Sharing Between Threads.
-- [ ] [Section 06](#) - The Concurrency Challenges & Solutions.
+- [ ] [Section 04](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading%2C%20Concurrency%20and%20Performance%20Optimization/Section%2004#chapter-04---performance-optimization) - Performance Optimization.
+- [ ] [Section 05](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Multithreading%2C%20Concurrency%20and%20Performance%20Optimization/Section%2005/README.md#chapter-05---data-sharing-between-threads) - Data Sharing Between Threads.
+- [ ] [Section 06](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Multithreading%2C%20Concurrency%20and%20Performance%20Optimization/Section%2006/README.md#chapter-06---the-concurrency-challenges--solutions) - The Concurrency Challenges & Solutions.
 - [ ] [Section 07](#) - Advanced Locking.
 - [ ] [Section 08](#) - Inter-Thread Communication.
 - [ ] [Section 09](#) - Lock-Free Algorithms, Data-Structures & Techniques.
@@ -82,7 +82,6 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 2. You can take this course second: [Multithreading, Parallel & Asynchronous Coding in Modern Java](https://www.udemy.com/course/parallel-and-asynchronous-programming-in-modern-java/).
 
 </details>
-
 
 <p align="center">
     <img src="Multithreading, Parallel & Asynchronous Coding in Modern Java caption.png" alt="course intros" style="width:990px;height:110px;"/>
@@ -212,16 +211,18 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 - [x] Check the content from other student [Link](https://github.com/tommic81/udemy-java-memory-management/tree/master). ✅
 
 
-<img id="studying" src="data structures and algorithms with visualizations caption.png" style="width:900px;height:70px;">
+<p align="center">
+    <img src="Data_Structures_And_Algorithms_With_Visualizations_With_Java_Caption.png" alt="Data_Structures_And_Algorithms_With_Visualizations_With_Java_Caption.png" style="width:950px;height:130px;"/>
+</p>
 
 <p align="center">
-    <img src="courseIntro.JPG" alt="Free data Structures and Algorithm" style="width:500px;"/>
+    <img src="Data_Structures_And_Algorithms_With_Visualizations_Description.JPG" alt="Free data Structures and Algorithm" style="width:550px;height:250px;"/>
 </p>
 
 All course material from **Data Structures and Algorithms with Visualizations with Java** by from **Dinesh Varyani**.
 
 > Add here some <br><br>
-~ DevelopersCradle
+~ *DevelopersCradle*
 
 This repository is made with [![Eclipse](https://img.shields.io/badge/Eclipse-FE7A16.svg?logo=Eclipse&logoColor=white)](#), therefore it will include configuration files which are related to this IDE this approach will be favored for now. ⚙️
 
@@ -447,7 +448,6 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 - [ ] [Section 12](#) - Extra Information - Source code, and other stuff.
 
 
-
 <p align="center">
     <img src="Java_Data_Structures_And_Algorithms_Plus_LEETCODE_Excervice_Caption.png" alt="course intros" style="width:990px;height:110px;"/>
 </p>
@@ -460,7 +460,7 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 All course material from Multithreading, Parallel & Asynchronous Coding in Modern Java by **Pragmatic Code School**. -->
 
 > Story about victory! <br><br>
-~ DevelopersCradle
+~ *DevelopersCradle*
 
 Contains my own notes with some course material to enforce learning experience.
 

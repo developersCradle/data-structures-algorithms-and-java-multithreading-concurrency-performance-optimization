@@ -7,14 +7,14 @@ Threading Fundamentals - Thread Coordination.
 # Thread Termination & Daemon Threads.
 
 <div align="center">
-    <img src="We_Start_From_The_Thread_Termination_Chapter.PNG"  alt="Java threads" width="500"/>
+    <img src="We_Start_From_The_Thread_Termination_Chapter.PNG"  alt="Java threads." width="500"/>
 </div>
 
 1. We will start from this chapter.
     - This will be about the **starting** and **stopping** the **thread**!
 
 <div align="center">
-    <img src="Thread_Termination_When_And_Why.PNG"  alt="Java threads" width="700"/>
+    <img src="Thread_Termination_When_And_Why.PNG"  alt="Java threads." width="700"/>
 </div>
 
 - Why we would need to **terminate** a **thread**.
@@ -28,19 +28,19 @@ Threading Fundamentals - Thread Coordination.
     - `3.` We cannot **end** the **application** if there is threads running.
 
 <div align="center">
-    <img src="Next_Is_Thread_Interupt.PNG"  alt="Java threads" width="500"/>
+    <img src="Next_Is_Thread_Interupt.PNG"  alt="Java threads." width="500"/>
 </div>
 
 1. Next we will be dealing with `Thread.interupt()`.
 
 <div align="center">
-    <img src="threadInterupts.PNG"  alt="Java threads" width="500"/>
+    <img src="threadInterupts.PNG"  alt="Java threads." width="500"/>
 </div>
 
 1. We can send interrupt from the **Thread A** to **Thread B** using `Thread.interrupt()`!
 
 <div align="center">
-    <img src="whenTheInteruptIsFine.PNG"  alt="Java threads" width="500"/>
+    <img src="whenTheInteruptIsFine.PNG"  alt="Java threads." width="500"/>
 </div>
 
 1. If the **thread** which we are trying to **interrupt** is running method that has throws `InterruptedException`. [InterruptedException](https://docs.oracle.com/javase/8/docs/api/java/lang/InterruptedException.html).
@@ -52,13 +52,13 @@ Threading Fundamentals - Thread Coordination.
 - Example `.GIF` below of the **blocking task**:
 
 <div align="center">
-    <img src="ThreadBlockingWaitingExample.gif"  alt="Java threads" width="700"/>
+    <img src="ThreadBlockingWaitingExample.gif"  alt="Java threads." width="700"/>
 </div>
 
 - Also, you can see what happens when you have running thread `SLEEPING`.
 
 <div align="center">
-    <img src="threadSleeping.PNG"  alt="Java threads" width="700"/>
+    <img src="threadSleeping.PNG"  alt="Java threads." width="700"/>
 </div>
 
 1. One can see the `SLEEPING` status at the **Thread** debugger tab. 
@@ -121,7 +121,7 @@ public class Main1 {
 - Example `.GIF` below of the **interrupted task**:
 
 <div align="center">
-    <img src="ThreadBeingInterupted.gif"  alt="Java threads" width="700"/>
+    <img src="ThreadBeingInterupted.gif"  alt="Java threads." width="700"/>
 </div>
 
 - We will be getting followings logs: 
@@ -244,13 +244,13 @@ public class Main2 {
 - The long calculation taking place below:
 
 <div align="center">
-    <img src="ThreadLongCalculationTakingPlace.gif"  alt="Java threads" width="700"/>
+    <img src="ThreadLongCalculationTakingPlace.gif"  alt="Java threads." width="700"/>
 </div>
 
 - Even with the **interrupt**, the thread will not be stopped.
 
 <div align="center">
-    <img src="ThreadLongCalculationTakingPlaceEvenWithInterrupt.gif"  alt="Java threads" width="700"/>
+    <img src="ThreadLongCalculationTakingPlaceEvenWithInterrupt.gif"  alt="Java threads." width="700"/>
 </div>
 
 - We cannot **throw** `InterruptedException` since its thrown automatically when a thread is **interrupted**.
@@ -262,7 +262,7 @@ public class Main2 {
 - We need to find sweet stop to make the **interrupted** check!
 
 <div align="center">
-    <img src="sweetSpotForTheInterrupt.PNG"  alt="Java threads" width="700"/>
+    <img src="sweetSpotForTheInterrupt.PNG"  alt="Java threads." width="700"/>
 </div>
 
 1. Here is the **sweet spot** to add the check!
@@ -323,13 +323,13 @@ public class Main2 {
 </details>
 
 <div align="center">
-    <img src="NextIsDeamonThread.PNG"  alt="Java threads" width="700"/>
+    <img src="NextIsDeamonThread.PNG"  alt="Java threads." width="700"/>
 </div>
 
 1. Next we will be dealing with **Deamon thread**.
 
 <div align="center">
-    <img src="deamonThreads.PNG"  alt="Java threads" width="700"/>
+    <img src="deamonThreads.PNG"  alt="Java threads." width="700"/>
 </div>
 
 1. **Deamon Threads** run in background. 
@@ -338,17 +338,17 @@ public class Main2 {
 - **Normal** threads prevent the **JVM** from exiting.
 
 <div align="center">
-    <img src="deamonThreadsScenario01.PNG"  alt="Java threads" width="700"/>
+    <img src="deamonThreadsScenario01.PNG"  alt="Java threads." width="700"/>
 </div>
 
 <div align="center">
-    <img src="deamonThreadsScenario02.PNG"  alt="Java threads" width="700"/>
+    <img src="deamonThreadsScenario02.PNG"  alt="Java threads." width="700"/>
 </div>
 
 - We can even set `thread.setDaemon(true);` to the **thread**, which takes time. This **thread** will now **end gracefully**!
 
 <div align="center">
-    <img src="endingLongThreadGrasefully.gif"  alt="Java threads" width="700"/>
+    <img src="endingLongThreadGrasefully.gif"  alt="Java threads." width="700"/>
 </div>
 
 <details>
@@ -411,13 +411,13 @@ public class Main2 {
 </details>
 
 <div align="center">
-    <img src="summary.PNG"  alt="Java threads" width="700"/>
+    <img src="summary.PNG"  alt="Java threads." width="700"/>
 </div>
 
 # Joining Threads.
 
 <div align="center">
-    <img src="whatWeWillLearn.PNG"  alt="Java threads" width="700"/>
+    <img src="whatWeWillLearn.PNG"  alt="Java threads." width="700"/>
 </div>
 
 1. We need to know that when the **thread** has **completed**, and we need to know when we can **expect it** to be finish!
@@ -426,7 +426,7 @@ public class Main2 {
 > **Aggregate** mean to combine the results in one point. **Wait** → then **combine** (manually).
 
 <div align="center">
-    <img src="Parallel_And_Join_Concept_Overview.png"  alt="Java threads" width="500"/>
+    <img src="Parallel_And_Join_Concept_Overview.png"  alt="Java threads." width="500"/>
 </div>
  
  1. We make the **threads** wait. This can be done by making the calling thread to be **blocked**!
@@ -440,7 +440,7 @@ worker.join();
     - ❌ `Worker` thread does not wait, it will be start executing.
 
 <div align="center">
-    <img src="whyWeNeedThreadCoordination.PNG"  alt="Java threads" width="700"/>
+    <img src="whyWeNeedThreadCoordination.PNG"  alt="Java threads." width="700"/>
 </div>
 
 1. Remember, **threads** runs independently of each others!
@@ -451,56 +451,56 @@ worker.join();
 - Different scenarios of the **thread** execution order:
 
 <div align="center">
-    <img src="ThreadCoordinationScenario01.PNG"  alt="Java threads" width="700"/>
+    <img src="ThreadCoordinationScenario01.PNG"  alt="Java threads." width="700"/>
 </div>
 
 1. The scenario **Thread A** finishes before the **Thread B**. `2.`.
 
 <div align="center">
-    <img src="ThreadCoordinationScenario02.PNG"  alt="Java threads" width="700"/>
+    <img src="ThreadCoordinationScenario02.PNG"  alt="Java threads." width="700"/>
 </div>
 
 1. The scenario **Thread B** finishes before the **Thread A**. `2.`.
 
 <div align="center">
-    <img src="Concurrency_Illustration.PNG"  alt="Java threads" width="700"/>
+    <img src="Concurrency_Illustration.PNG"  alt="Java threads." width="700"/>
 </div>
 
 1. **Concurrency** is when the tasks are run **after each other**!
 
 <div align="center">
-    <img src="ThreadCoordinationScenario03.PNG"  alt="Java threads" width="700"/>
+    <img src="ThreadCoordinationScenario03.PNG"  alt="Java threads." width="700"/>
 </div>
 
 1. We may have them be run **concurrently**!
 
 <div align="center">
-    <img src="ThreadCoordinationScenario04.PNG"  alt="Java threads" width="700"/>
+    <img src="ThreadCoordinationScenario04.PNG"  alt="Java threads." width="700"/>
 </div>
 
 1. We may have them be run **parallel**.
 2. Furthermore, we will have no idea, if **Thread A** or **Thread B** finishes first!
 
 <div align="center">
-    <img src="ThreadCoordinationDependency.PNG"  alt="Java threads" width="700"/>
+    <img src="ThreadCoordinationDependency.PNG"  alt="Java threads." width="700"/>
 </div>
 
 1. If there **Thread A** depends on the **Thread B**. Example if **Thread A** is having calculation result, which are needed in **Thread B**.
 
 <div align="center">
-    <img src="ThreadCoordintionNaiveSolution.PNG"  alt="Java threads" width="700"/>
+    <img src="ThreadCoordintionNaiveSolution.PNG"  alt="Java threads." width="700"/>
 </div>
 
 1. Here the **Thread B** will be checking following **checking loop**. This is called `busy waiting` or `spin-waiting`.
 
 <div align="center">
-    <img src="ThreadCoordintionNaiveSolutionSecond.PNG"  alt="Java threads" width="700"/>
+    <img src="ThreadCoordintionNaiveSolutionSecond.PNG"  alt="Java threads." width="700"/>
 </div>
 
 1. While **Thread A** is doing the work, the **Thread B** needs to **waste** CPU time for checking if the **A** has finished.
 
 <div align="center">
-    <img src="ThreadCoordinationDesiredSolution.PNG"  alt="Java threads" width="700"/>
+    <img src="ThreadCoordinationDesiredSolution.PNG"  alt="Java threads." width="700"/>
 </div>
 
 1. What we would want to **Thread B** to go sleep, when **Thread A** does the work.
@@ -508,7 +508,7 @@ worker.join();
 2. **Thread B** wakes up when **Thread A** is finished.
 
 <div align="center">
-    <img src="ThreadDotJoin.PNG"  alt="Java threads" width="700"/>
+    <img src="ThreadDotJoin.PNG"  alt="Java threads." width="700"/>
 </div>
 
 1. Signatures below:
@@ -529,7 +529,7 @@ $$
 <summary id="The factorial formula" open="true"> <b>Factorial diagram!</b> </summary>
 
 <div align="center">
-    <img src="Factorial_Formula.png"  alt="Java threads" width="500"/>
+    <img src="Factorial_Formula.png"  alt="Java threads." width="500"/>
 </div>
 </details>
 
@@ -645,7 +645,7 @@ for (int i = 0; i < inputNumbers.size(); i++) {
 - Illustration of the **race condition** below:
 
 <div align="center">
-    <img src="Thread_Running_And_Having_Race_Codition.gif"  alt="Java threads" width="700"/>
+    <img src="Thread_Running_And_Having_Race_Codition.gif"  alt="Java threads." width="700"/>
 </div>
 
 1. Only one `FactorialThread` thread have been finished, by the time when the `main` **thread** has been finished.
@@ -654,7 +654,7 @@ for (int i = 0; i < inputNumbers.size(); i++) {
 > We are having **Race Condition**.
 
 <div align="center">
-    <img src="These_Two_Lines_Will_Have_Race_Condition.PNG"  alt="Java threads" width="700"/>
+    <img src="These_Two_Lines_Will_Have_Race_Condition.PNG"  alt="Java threads." width="700"/>
 </div>
 
 1. These two line `thread.start()` and `if (factorialThread.isFinished()) {` will have **race condition**!
@@ -663,7 +663,7 @@ for (int i = 0; i < inputNumbers.size(); i++) {
     - We will not know the state of the **thread**, when the `main` **thread** is checking the results!
 
 <div align="center">
-    <img src="Race_Condition_Thread_Illustration.PNG"  alt="Java threads" width="700"/>
+    <img src="Race_Condition_Thread_Illustration.PNG"  alt="Java threads." width="700"/>
 </div>
 
 1. Both **threads** will be racing towards their goals **independently**!
@@ -684,7 +684,7 @@ for (int i = 0; i < inputNumbers.size(); i++) {
     - If there is long number like, which is needed to be waited like: `100000L`!
 
 <div align="center">
-    <img src="Running_The_Join_Threads.gif"  alt="Java threads" width="900"/>
+    <img src="Running_The_Join_Threads.gif"  alt="Java threads." width="900"/>
 </div>
 
 - We can give max seconds to the `.join()` to give grace time. 
@@ -697,14 +697,14 @@ for (int i = 0; i < inputNumbers.size(); i++) {
 ````
 
 <div align="center">
-    <img src="Running_The_Join_Threads_Illustration.gif"  alt="Java threads" width="900"/>
+    <img src="Running_The_Join_Threads_Illustration.gif"  alt="Java threads." width="900"/>
 </div>
 
 - You can see the **two** seconds being waited by the `.join()`. 
     - There will be still **one thread** that have been left out `The calculation for 100000 is still in progress`.
 
 <div align="center">
-    <img src="Threads_Join_Summary.PNG"  alt="Java threads" width="900"/>
+    <img src="Threads_Join_Summary.PNG"  alt="Java threads." width="900"/>
 </div>
 
 1. `.join()` lets you **pause** the calling thread for the control.
@@ -715,7 +715,7 @@ for (int i = 0; i < inputNumbers.size(); i++) {
 3. Using thread `.join(timeout)` lets the calling thread wait only a limited time.
 
 <div align="center">
-    <img src="Joining_Threads_Summary.PNG"  alt="Java threads" width="900"/>
+    <img src="Joining_Threads_Summary.PNG"  alt="Java threads." width="900"/>
 </div>
 
 1. We have seen that, we cannot rely on the order of execution!
