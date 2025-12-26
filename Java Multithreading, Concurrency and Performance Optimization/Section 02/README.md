@@ -18,7 +18,7 @@ Threading Fundamentals - Thread Creation.
 
 - We can create `Thread`, where we input the `Runnable`.
 
-````
+````Java
  // First version of the Threads.
         Thread thread = new Thread(new Runnable() {
             @Override
@@ -58,7 +58,7 @@ Threading Fundamentals - Thread Creation.
  
 - This **First** version of the **Threads**, where we explored **Thread** itself:
 
-````
+````Java
 /*
  * Copyright (c) 2019-2023. Michael Pogrebinsky - Top Developer Academy
  * https://topdeveloperacademy.com
@@ -127,7 +127,7 @@ we are now in thread Thread-0
 - Also, you can see the **Threads** in the **IntelliJ** window:
     - These are created by the **JVM**:
 
-`````
+`````Java
 "main"
 "Attach Listener"
 "Common-Cleaner"
@@ -139,7 +139,7 @@ we are now in thread Thread-0
 
 - This **Second** version of the **Threads**, where we explored **Thread debugging**:
 
-````
+````Java
         /*
         Thread thread = new Thread(new Runnable() {
             @Override
@@ -176,7 +176,7 @@ Current thread priority is 10
 
 - This **Third** version of the **Threads**, where we explored `.setUncaughtExceptionHandler()`:
 
-````
+````Java
        // Third version of Thread.
         Thread thread = new Thread(new Runnable() {
             @Override
@@ -211,7 +211,7 @@ A critical error handler in tread Thread-0 the error is Internal Exception
 
 - The other way to create **Thread** is to extend the **class**.
 
-````
+````Java
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -256,9 +256,7 @@ public class Main {
 
 - We will be implementing the **UML** classes, with following implementations:
 
-
-
-````
+````Java
 /*
  * Copyright (c) 2019-2023. Michael Pogrebinsky - Top Developer Academy
  * https://topdeveloperacademy.com
@@ -414,7 +412,7 @@ Please implement the MultiExecutor below:
 - **Question 1:** Please implement the `MultiExecutor`.
     - **Answer:** Below:
 
-````
+````Java
 import java.util.List;
 /*
 The task:
@@ -459,7 +457,7 @@ public class MultiExecutor {
 # Thread Creation - MultiExecutor Solution.
 
 
-````
+````Java
 import java.util.ArrayList;
 import java.util.List;
  
