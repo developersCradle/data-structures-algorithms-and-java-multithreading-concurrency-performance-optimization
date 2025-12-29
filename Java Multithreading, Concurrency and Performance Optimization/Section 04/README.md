@@ -67,6 +67,68 @@ Performance Optimization.
     <img src="Latency.PNG"  alt="Java threads." width="700"/>
 </div>
 
+1. We can say that $\text{Latency} = \frac{T}{N}$
+    - What is the level to which **gradual level** the tasks needs to be broken down, to be effect as possible?
+
+<div align="center">
+    <img src="Latency_Braking_The_Down_Into_Smaller_Pieces.PNG"  alt="Java threads." width="700"/>
+</div>
+
+1. We are trying to achieve a **theoretical reduction**, we need to answer following questions?
+    1. **First** question is:
+        - `N = ?`.
+            - How many **subtasks**/**threads** should the original task be broken into?
+                - What is the granularity level.
+    2. **Second** question is:
+        - Does **breaking** the original task and **aggregating results** come for free?
+    3. **Third** question is:
+        - Can we break any task into subtasks?
+
+<div align="center">
+    <img src="Braking_Down_Into_Smaller_Pieces.PNG"  alt="Java threads." width="700"/>
+</div>
+
+1. In **general**, the computer tries to assign the **one** task per **core** for optimal efficiently.
+    - We are trying to reduce the **latency**, by having the **one** task per **core**.
+
+$$
+\text{Number of tasks running in parallel} = \text{Number of cores } (N)
+$$
+
+<div align="center">
+    <img src="The_Task_Getting_Pre_Optimized.gif"  alt="Java threads." width="700"/>
+</div>
+
+- Just adding **one** extra **thread**, can be counterproductive.
+    - **Extra thread** will be **pushing** the threads out of the **Cores**, which in regards will be affecting:
+        - *Context switches*.
+        - *Extra memory consumptions*.
+        - *Bad cache performance*.
+
+<div align="center">
+    <img src="Number_Of_The_Point_To_Be_Able_Run_Tasks_Efficiently.PNG"  alt="Java threads." width="700"/>
+</div>
+
+1. The **rule** where, *CPU cores* = *number tasks*, only apply when all the **threads** are **runnable** and can run **without interruption**.
+    - It means the threads are from **start** to **finish**, in runnable state!
+
+$$
+\text{In reality it will be never the case, but we can be close to that}
+$$
+
+2. This also **assumes** the **CPU**, is not having **big consuming** tasks on hand!
+
+<div align="center">
+    <img src="HyperThreading.PNG"  alt="Java threads." width="700"/>
+</div>
+
+1. **Hyperthreading** brakes down the **one** physical core into two **virtual** cores. 
+
+<div align="center">
+    <img src="Cost_Of_Aggrigation.PNG"  alt="Java threads." width="700"/>
+</div>
+
+
 # Optimizing for Latency Part 2 - Image Processing.
 
 # Additional Resource - Image Processing, Color Spaces, Extraction & Manipulation.

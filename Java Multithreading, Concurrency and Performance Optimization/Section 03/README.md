@@ -7,7 +7,7 @@ Threading Fundamentals - Thread Coordination.
 # Thread Termination & Daemon Threads.
 
 <div align="center">
-    <img src="We_Start_From_The_Thread_Termination_Chapter.PNG"  alt="Java threads." width="500"/>
+    <img src="We_Start_From_The_Thread_Termination_Chapter.PNG"  alt="Java threads." width="600"/>
 </div>
 
 1. We will start from this chapter.
@@ -429,7 +429,7 @@ public class Main2 {
     <img src="Parallel_And_Join_Concept_Overview.png"  alt="Java threads." width="500"/>
 </div>
  
- 1. We make the **threads** wait. This can be done by making the calling thread to be **blocked**!
+ 1. We make the **threads** wait. This can be done by making the calling thread to be **blocked**! Example below:
 
 ````Java
 worker.join();
@@ -437,7 +437,7 @@ worker.join();
 
 - In this example the `Main` thread calls `join()`.
     - ✅ Main thread gets **blocked** and **waits**.
-    - ❌ `Worker` thread does not wait, it will be start executing.
+    - ✅ `Worker` thread: Keeps running normally, doing its work!
 
 <div align="center">
     <img src="whyWeNeedThreadCoordination.PNG"  alt="Java threads." width="700"/>
