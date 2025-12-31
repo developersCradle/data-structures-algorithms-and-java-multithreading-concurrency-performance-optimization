@@ -123,13 +123,87 @@ $$
 </div>
 
 1. **Hyperthreading** brakes down the **one** physical core into two **virtual** cores. 
+    - In **practice,** we cannot run *100%* in parallel with **one core**, even thought there are **two virtual cores**!
+        - **2 hyperthreads** ≠ **2 cores**.
+
+| Setup                     | Can execute simultaneously? | Share execution units? | Typical scaling |
+|---------------------------|-----------------------------|------------------------|-----------------|
+| 1 core, no HT             | ❌ No                       | N/A                    | 1×              |
+| 1 core, HT (2 threads)    | ⚠️ Partially                | Yes                    | ~1.1–1.3×       |
+| 2 physical cores          | ✅ Yes                      | No                     | ~2× (ideal)     |
 
 <div align="center">
-    <img src="Cost_Of_Aggrigation.PNG"  alt="Java threads." width="700"/>
+    <img src="Cost_Of_Braking_Down_The_Task.PNG"  alt="Java threads." width="700"/>
+</div>
+
+1. Parallelization costs:
+    - Breaking task into **multiple tasks** or into **smaller segments**.
+    - Thread **creation**, **passing tasks** to threads and **starting them**.
+    - Time between `thread.start()` and the **thread getting scheduled**.
+    - Time until the last thread **finishes** and **signals** the **aggregating thread** that **it's done**.
+
+2. Aggregation costs:
+    - Time until the aggregating thread **runs**.
+    - Aggregation of the subresults into a **single artifact**.
+
+<div align="center">
+    <img src="The_Golden_Axis_When_Its_Feasable_To_Have_Multithreading.PNG"  alt="Java threads." width="700"/>
+</div>
+
+1. There is no point to make simple tasks in making the **job multithreaded** solution.
+2. There comes the **golden axis**, when the is worth of braking the task into multiple smaller tasks. 
+
+<div align="center">
+    <img src="Can_We_Brake_Any_Task_Into_Samller_Tasks.PNG"  alt="Java threads." width="700"/>
+</div>
+
+1. **No**, we sadly cannot brake any job into **smaller tasks**! We can have three types of tasks:
+    - *Parallelizable Tasks*.
+    - *Unbreakable Tasks*.
+    - *Partially Parallelizable, Partially Sequential*.
+
+<div align="center">
+    <img src="Type_1_Parallelizable_Tasks.PNG"  alt="Java threads." width="700"/>
+</div>
+
+1. The tasks that are easily broken into smaller tasks.
+
+<div align="center">
+    <img src="Type_2_Unbreakable_Tasks.PNG" width="700"/>
+</div>
+
+1. The **tasks** that are forced to run in their own **thread**.
+
+<div align="center">
+    <img src="Type_3_Partial_And_Partial_Not.PNG" width="700"/>
+</div>
+
+1. Task that **cannot** be braked down into own tasks.
+2. Tasks can be **parallelized** in their own **jobs**
+
+<div align="center">
+    <img src="Summary_Of_The_Performance_Optimization.PNG" width="700"/>
+</div>
+
+- Add these ones.
+
+# Optimizing for Latency Part 2 - Image Processing.
+
+<div align="center">
+    <img src="What_We_Will_Be_Learning_In_This_Chapter.PNG" width="700"/>
+</div>
+
+<div align="center">
+    <img src="Introduction_To_The_Digital_Pictures.PNG" width="700"/>
+</div>
+
+1. This is around **12 million pixels**.
+
+<div align="center">
+    <img src="Pixels_Argb.PNG" width="700"/>
 </div>
 
 
-# Optimizing for Latency Part 2 - Image Processing.
 
 # Additional Resource - Image Processing, Color Spaces, Extraction & Manipulation.
 

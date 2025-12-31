@@ -442,7 +442,6 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 - [ ] [Section 11](#) - Final Section: Concluding the Course with Key Takeaways and Sets.
 - [ ] [Section 12](#) - Extra Information - Source code, and other stuff.
 
-
 <p align="center">
     <img src="Java_Data_Structures_And_Algorithms_Plus_LEETCODE_Excervice_Caption.png" alt="course intros" style="width:990px;height:110px;"/>
 </p>
@@ -488,4 +487,11 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 <hr>
 
-- Add here the journey of l33tcode 
+- Add here Nich White, learning path suggestion.l33tcode
+
+https://www.youtube.com/watch?v=9-ubSA9GA3o
+
+<p align="center">
+    <img src="Solving_Leet_Code_Prerequisites.PNG" alt="First we need know" style="width:990px;height:110px;"/>
+</p>
+
