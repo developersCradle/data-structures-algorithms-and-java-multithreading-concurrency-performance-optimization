@@ -21,9 +21,9 @@
 
 All course material from Java Multithreading, Concurrency & Performance Optimization by **Michael Pogrebinsky** and **Top Developer Academy LLC**.
 
->We were working with an old legacy system that was making two concurrent calls to a shared resource, causing inconsistent results that only appeared under load. The issue was subtle and difficult to reproduce, making it even harder to diagnose.
+>We were working with an old legacy system that was making two concurrent calls to a shared resource, causing inconsistent results that only appeared sometimes. The issue was subtle and difficult to reproduce, making it even harder to diagnose.
 >
->A recent course I had taken on `Java Multithreading and Concurrency` proved invaluable. It helped me identify the race condition and apply the synchronized keyword correctly to control access to the critical section. With proper thread coordination in place, the system stabilized without requiring a major rewrite of the legacy code.<br><br>
+>A recent course I had taken on `Java Multithreading and Concurrency` proved invaluable. It helped me identify the race condition and apply the `synchronized` keyword correctly to control access to the critical section. With proper thread coordination in place, the system stabilized without requiring a major rewrite of the legacy code.<br><br>
 ~ *DevelopersCradle*
 
 Contains my own notes with some course material to enforce learning experience.
@@ -160,10 +160,9 @@ All course material from **Java Application Performance Tuning and Memory Manage
 >I interviewed with **Polar** for an Advanced Java role, and the technical discussion immediately dove into multithreading, concurrency, and performance optimization. They asked about thread pools, synchronization strategies, deadlocks, optimizing CPU-bound versus IO-bound operations, and even Virtual Threads in Java. The questions were challenging and required more than just textbook knowledge — they wanted practical understanding of real-world thread behavior.
 >
 >Thanks to a recent course on `Java Multithreading, Concurrency & Performance Optimization`, I could confidently discuss thread-safe collections, locks, executor frameworks, and the advantages of **Virtual Threads** for scalable, lightweight concurrency. Even though I was **not chosen** for the position, the interview **drove me** to deeply pursue these concepts, strengthening my skills and confidence for future challenges.<br><br>
-~ DevelopersCradle
+~ *DevelopersCradle*
 
-
-This repository is made with [![Eclipse](https://img.shields.io/badge/Eclipse-FE7A16.svg?logo=Eclipse&logoColor=white)](#), therefore it will include configuration files which are related to this IDE this approach will be favored for now. ⚙️
+This repository is made with [![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?logo=intellij-idea&logoColor=white)](#) with [![Eclipse](https://img.shields.io/badge/Eclipse-FE7A16.svg?logo=Eclipse&logoColor=white)](#). ⚙️
 
 [Udemy](https://www.udemy.com/course/java-application-performance-and-memory-management).
 
@@ -487,11 +486,31 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 <hr>
 
-- Add here Nich White, learning path suggestion.l33tcode
+<p align="center">
+    <img id="Performance Optimization" src="How_To_Get_Good_At_l33t_Code_By_Nich_White_Learning_Path.jpg" style=" width: 480px;">
+</p>
 
-https://www.youtube.com/watch?v=9-ubSA9GA3o
+<details>
+
+<summary id="Must know" open="true"> <b> Must know fundementals! </b> </summary>
+
+> [!IMPORTANT]  
+> Comfortable requirements, one can open text editor and write data structure like **Linked List**.
 
 <p align="center">
     <img src="Solving_Leet_Code_Prerequisites.PNG" alt="First we need know" style="width:990px;height:110px;"/>
 </p>
+
+</details>
+
+- Can take this one [Data Structures and Algorithms Specialization](https://www.coursera.org/specializations/data-structures-algorithms).
+    - Don't get stuck of the proofs, detail heavy.
+- Can take this one [Algorithms Specialization](https://www.coursera.org/specializations/algorithmss).
+    - Don't get stuck of the proofs, detail heavy.
+
+- Can take this one [Algorithms Specialization](https://www.youtube.com/playlist?list=PLe8LZCtW06l8z1RmbNIGA2Jg_ULeXyw46).
+    - Don't get stuck of the proofs, detail heavy.
+
+- [Source](https://www.youtube.com/watch?v=9-ubSA9GA3o).
+
 
