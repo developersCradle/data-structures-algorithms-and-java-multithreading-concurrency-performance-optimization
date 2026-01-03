@@ -83,6 +83,12 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 </details>
 
+#### The Quizzes and Labs.
+
+* Section 05 Quiz:
+    * [Quiz 06: Stack & Heap Memory Regions](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading%2C%20Concurrency%20and%20Performance%20Optimization/Section%2005#quiz-5-stack--heap-memory-regions).
+
+
 <p align="center">
     <img src="Multithreading, Parallel & Asynchronous Coding in Modern Java caption.png" alt="course intros" style="width:990px;height:110px;"/>
 </p>
@@ -490,16 +496,14 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
     <img id="Performance Optimization" src="How_To_Get_Good_At_l33t_Code_By_Nich_White_Learning_Path.jpg" style=" width: 480px;">
 </p>
 
-<details>
-
-<summary id="Must know" open="true"> <b> Must know fundementals! </b> </summary>
-
-<br>
 
 > [!IMPORTANT]  
 > Comfortable requirements, one can open text editor and write data structure like **Linked List**.
 
-<br>
+
+<details>
+
+<summary id="Must know" open="true"> <b> Must know fundementals! </b> </summary>
 
 <p align="center">
     <img src="Solving_Leet_Code_Prerequisites.PNG" alt="First we need know" style="width:990px;height:110px;"/>

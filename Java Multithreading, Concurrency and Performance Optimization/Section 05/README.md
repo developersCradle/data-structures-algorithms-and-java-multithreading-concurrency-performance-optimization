@@ -133,8 +133,71 @@ Data Sharing Between Threads.
 
 2. If, they are member of the **Object**, they are allocated in the **heap**, with their **parent Object**
 
+3. **Objects** are always allocated on the **heap**!
 
+<div align="center">
+    <img src="Two_Sides.jpg" width="500"/>
+</div>
+
+<div align="center">
+    <img src="Memory_Regions_Summary.PNG" width="500"/>
+</div>
+
+2. **Stack** includes following variables:
+    - Local Primitive types: Example `int x`
+
+
+- int add here the example codes
 
 # Quiz 5: Stack & Heap Memory Regions.
+
+
+
+
+<details>
+
+<summary id="Thread progress
+" open="true"> <b>Question 01.</b> </summary>
+
+````Java
+
+public class Example {
+    private Map<Integer, String> idToNameMap;
+
+    private static long numberOfInstances = 0;
+
+    public Example() {
+        this.idToNameMap = new HashMap<>();
+        numberOfInstances++;
+    }
+
+    public List<String> getAllNames() {
+        int count = idToNameMap.size();
+        List<String> allNames = new ArrayList<>();
+
+        allNames.addAll(idToNameMap.values());
+
+        return allNames;
+    }
+}
+
+````
+
+
+- My answer:
+
+
+<div align="center">
+    <img src="Quiz 01/q1.PNG" width="400"/>
+</div>
+
+
+1. 
+
+</details>
+
+
+
+
 
 # Resource Sharing & Introduction to Critical Sections.
