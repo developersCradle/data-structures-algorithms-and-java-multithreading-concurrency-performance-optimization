@@ -126,7 +126,7 @@ Data Sharing Between Threads.
 2. **Two** reference variables `referenceVar1` and `refrenceVar2`, which are pointing to the **Object**.
 
 <div align="center">
-    <img src="To_Where_The_Data_Is_Allocated.PNG" width="500"/>
+    <img src="To_Where_The_Data_Is_Allocated.PNG" width="700"/>
 </div>
 
 1. If, **Reference Variables** are on the method. They are on the located on the **stack**!
@@ -140,7 +140,7 @@ Data Sharing Between Threads.
 </div>
 
 <div align="center">
-    <img src="Memory_Regions_Summary.PNG" width="500"/>
+    <img src="Memory_Regions_Summary.PNG" width="700"/>
 </div>
 
 2. **Stack** includes following variables:

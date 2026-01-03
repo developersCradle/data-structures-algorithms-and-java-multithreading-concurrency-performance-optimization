@@ -85,6 +85,9 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 #### The Quizzes and Labs.
 
+* Section 01 Quiz:
+    * [Quiz 1: Threading and Operating Systems Fundamentals Quiz](#).
+
 * Section 05 Quiz:
     * [Quiz 06: Stack & Heap Memory Regions](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading%2C%20Concurrency%20and%20Performance%20Optimization/Section%2005#quiz-5-stack--heap-memory-regions).
 

@@ -281,3 +281,77 @@ Introduction.
 - Some additional links:
     - [Fair Scheduler](https://developer.ibm.com/tutorials/l-completely-fair-scheduler/).
     - [Tread State](https://docs.oracle.com/javase/8/docs/api/java/lang/Thread.State.html).
+
+# Quiz 1: Threading and Operating Systems Fundamentals Quiz.
+
+<details>
+
+<summary id="Thread progress
+" open="true"> <b>Question 01.</b> </summary>
+
+````yaml
+Question 1:
+Why do we want to use multiple threads in an application?
+````
+
+- My answer:
+
+<div align="center">
+    <img src="Quiz 01/Q01.PNG" width="400"/>
+</div>
+
+1. By using multiple threads allows an application to handle several tasks at once, enhancing responsiveness and potentially increasing performance through concurrent execution.
+
+</details>
+
+<details>
+
+<summary id="Thread progress
+" open="true"> <b>Question 02.</b> </summary>
+
+````yaml
+Question 1:
+Multiple threads in a single process share
+````
+
+- My answer:
+
+<div align="center">
+    <img src="Quiz 01/Q02.PNG" width="400"/>
+</div>
+
+1. The Code `2.` means as following, we can execute threads using the same code. 
+
+````Java
+thread1 -> add(1, 2)
+thread2 -> add(5, 6)
+````
+
+</details>
+
+<details>
+
+<summary id="Thread progress
+" open="true"> <b>Question 03.</b> </summary>
+
+````yaml
+Question 3:
+How does the Operating System decide what thread to schedule?
+````
+
+- My answer:
+
+<div align="center">
+    <img src="Quiz 01/Q03.PNG" width="400"/>
+</div>
+
+1. The Operating System decides which thread to run next using the scheduler, based on scheduling algorithms and system state.
+
+</details>
+
+
+
+
+
+
+
