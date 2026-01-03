@@ -66,7 +66,7 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 #### Additional stuff.
 
-- [ ] Add some.
+- [ ] Add the exercise and comments for the `We_Can_See_That_We_Dont_Have_The_Access_To_The_Main_Frame.PNG`, if you have patience.
 
 <details>
 
@@ -494,8 +494,12 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 <summary id="Must know" open="true"> <b> Must know fundementals! </b> </summary>
 
+<br>
+
 > [!IMPORTANT]  
 > Comfortable requirements, one can open text editor and write data structure like **Linked List**.
+
+<br>
 
 <p align="center">
     <img src="Solving_Leet_Code_Prerequisites.PNG" alt="First we need know" style="width:990px;height:110px;"/>
