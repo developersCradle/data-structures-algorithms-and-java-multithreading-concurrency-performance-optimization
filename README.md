@@ -85,11 +85,73 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 #### The Quizzes and Labs.
 
-* Section 01 Quiz:
-    * [Quiz 1: Threading and Operating Systems Fundamentals Quiz](#).
+* **Section 01**:
+    * *Quiz*:
+        * [Quiz 1: Threading and Operating Systems Fundamentals](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading%2C%20Concurrency%20and%20Performance%20Optimization/Section%2001#quiz-1-threading-and-operating-systems-fundamentals-quiz).
 
-* Section 05 Quiz:
-    * [Quiz 06: Stack & Heap Memory Regions](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading%2C%20Concurrency%20and%20Performance%20Optimization/Section%2005#quiz-5-stack--heap-memory-regions).
+* **Section 02**:
+    * *Quiz*:
+        * [Some here](#).
+
+* **Section 03**:
+    * *Quiz*:
+        * [Some here](#).
+    * *Coding Exercise*:
+        * [Coding Exercise 2: Multithreaded Calculation](#).
+
+* **Section 04**:
+    * *Quiz*:
+        * [Some here](#).
+    * *Coding Exercise*:
+        * [Some here](#).
+
+* **Section 05**:
+    * *Quiz*:
+        * [Quiz 06: Stack & Heap Memory Regions](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading%2C%20Concurrency%20and%20Performance%20Optimization/Section%2005#quiz-5-stack--heap-memory-regions).
+    * *Coding Exercise*:
+        * [Coding Exercise 2: Multithreaded Calculation](#).
+
+* **Section 06**:
+    * *Quiz*:
+        * [Some here](#).
+    * *Coding Exercise*:
+        * [Coding Exercise 2: Multithreaded Calculation](#).
+
+* **Section 07**:
+    * *Quiz*:
+        * [Some here](#).
+    * *Coding Exercise*:
+        * [Some here](#).
+
+* **Section 08**:
+    * *Quiz*:
+        * [Some here](#).
+    * *Coding Exercise*:
+        * [Some here](#).
+
+* **Section 09**:
+    * *Quiz*:
+        * [Some here](#).
+    * *Coding Exercise*:
+        * [Some here](#).
+
+* **Section 10**:
+    * *Quiz*:
+        * [Some here](#).
+    * *Coding Exercise*:
+        * [Some here](#).
+
+* **Section 11**:
+    * *Quiz*:
+        * [Some here](#).
+    * *Coding Exercise*:
+        * [Some here](#).
+
+* **Section 12**:
+    * *Quiz*:
+        * [Some here](#).
+    * *Coding Exercise*:
+        * [Some here](#).
 
 
 <p align="center">
@@ -493,10 +555,13 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 - [ ] Add some.
 
-<hr>
 
 <p align="center">
-    <img id="Performance Optimization" src="How_To_Get_Good_At_l33t_Code_By_Nich_White_Learning_Path.jpg" style=" width: 480px;">
+    <img id="Performance Optimization" src="How_I_Got_Good_At_Algorithms_And_Data_Structures_Caption.png" style=" width: 900px; height: 100px">
+</p>
+
+<p align="center">
+    <img id="Performance Optimization" src="How_To_Get_Good_At_l33t_Code_By_Nich_White_Learning_Path.jpg" style=" width: 400px;">
 </p>
 
 
@@ -524,4 +589,6 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 - [Source](https://www.youtube.com/watch?v=9-ubSA9GA3o).
 
+<hr>
 
+- [Add this](https://www.youtube.com/playlist?list=PLI1t_8YX-ApvMthLj56t1Rf-Buio5Y8KL).

@@ -16,19 +16,19 @@ Data Sharing Between Threads.
     <img src="What_Is_The_Stack.PNG" width="700"/>
 </div>
 
-1. Remember the **stack**, what we were discussing before.
+1. Remember the **Stack**, what we were discussing before.
 
 <div align="center">
     <img src="What_Is_The_Stack_Information.PNG" width="700"/>
 </div>
 
-1. *Memory Region*:
+1. **Memory Region** where:
     - Methods are called.
         - Every time a method/function is invoked, a **stack frame** is pushed onto the stack.
         - When the method returns, its stack frame is popped off.
     - When the argument is **passed into function**, It's passed into the **stack**.
     - All the **local variables** are stored in the **stack**.
-2. Instruction Pointer (Program Counter) → the exact instruction currently bewing executed. 
+2. Instruction Pointer (Program Counter) → the exact instruction currently being executed. 
 
 <div align="center">
     <img src="What_Is_The_Stack_Inside.PNG" width="700"/>
@@ -120,20 +120,36 @@ Data Sharing Between Threads.
     <img src="Objects_Versus_References.PNG" width="500"/>
 </div>
 
-- Todo this one.
+- Code below from the picture:
 
-1. Single object
-2. **Two** reference variables `referenceVar1` and `refrenceVar2`, which are pointing to the **Object**.
+````Java
+Object referenceVar1 = new Object();
+Object referenceVar2 = referenceVar1;
+````
+
+1. Single Object!
+2. **Two** reference variables `referenceVar1` and `refrenceVar2`, which are pointing to the **Object**!
 
 <div align="center">
     <img src="To_Where_The_Data_Is_Allocated.PNG" width="700"/>
 </div>
 
-1. If, **Reference Variables** are on the method. They are on the located on the **stack**!
-
-2. If, they are member of the **Object**, they are allocated in the **heap**, with their **parent Object**
-
-3. **Objects** are always allocated on the **heap**!
+1. If there is **Reference Variables** that are on the method itself. They are on the located on the **stack**! Example below:
+````Java
+void foo() {
+    Object ref = new Object(); // ref is on the stack.
+}
+````
+2. If there are variables that are members of the **Object**, they are allocated in the **heap**, with their **parent Object**. Example below:
+````Java
+class A {
+    Object ref; // this reference lives on the heap.
+}
+````
+3. **Objects** are always allocated on the **heap**! Example below:
+````Java
+Object obj = new Object();
+````
 
 <div align="center">
     <img src="Two_Sides.jpg" width="500"/>
@@ -183,9 +199,7 @@ public class Example {
 
 ````
 
-
 - My answer:
-
 
 <div align="center">
     <img src="Quiz 01/q1.PNG" width="400"/>
