@@ -194,7 +194,7 @@ Object obj = new Object();
 
 ````Yaml
 Question 01:
-
+Choose the correct statement regarding line 2.
 ````
 
 ````Java
@@ -226,7 +226,7 @@ public class Example {
 </div>
 
 
-1. 
+1. It is stored in the **heap** since it's a **Class Member**. 
 
 </details>
 
@@ -353,14 +353,33 @@ public class Example {
     <img src="Quiz 05/Q4.PNG" width="700"/>
 </div>
 
-1. The **reference variable** is on the **stack**. The **Object** which was initialized with the `new` is on the **heap**
+1. The **reference variable** is on the **stack**. The **Object** which was initialized with the `new` is on the **heap**.
 
 </details>
 
-
-
-
-
-
-
 # Resource Sharing & Introduction to Critical Sections.
+
+<div align="center">
+    <img src="What_We_Will_Learn_Start_From_Resource_Sharing_Between_Threads.PNG" width="700"/>
+</div>
+
+1. We will be starting from the **resource sharing, between threads**.
+
+<div align="center">
+    <img src="What_Is_Resource_In_Computer_Term.PNG" width="700"/>
+</div>
+
+1. Resource is that represents **data** or the **state**.
+    - Variables (integers, Strings ..).
+    - Data structure.
+    - File or connection handles.
+    - Message or work queues.
+    - Any Objects ...
+
+<div align="center">
+    <img src="Why_We_Wold_Want_To_Share_The_Data_Between_Threads.PNG" width="700"/>
+</div>
+
+1. The `UI Thread` is running in own **thread**.
+2. The `Document Saver` is running in its own **thread**.
+3. This **document** is the **shared resource**, both **threads** can access this without losing the progress, if the **thread** crashes!
