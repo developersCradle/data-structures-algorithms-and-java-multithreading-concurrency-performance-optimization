@@ -85,69 +85,58 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 #### The Quizzes and Labs.
 
-* **Section 01**:
+- **Section 01**:
     * *Quiz*:
         * [Quiz 1: Threading and Operating Systems Fundamentals](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading%2C%20Concurrency%20and%20Performance%20Optimization/Section%2001#quiz-1-threading-and-operating-systems-fundamentals-quiz).
-
-* **Section 02**:
+- **Section 02**:
     * *Quiz*:
         * [Some here](#).
 
-* **Section 03**:
+- **Section 03**:
     * *Quiz*:
         * [Some here](#).
     * *Coding Exercise*:
         * [Coding Exercise 2: Multithreaded Calculation](#).
 
-* **Section 04**:
+- **Section 04**:
     * *Quiz*:
         * [Some here](#).
     * *Coding Exercise*:
         * [Some here](#).
-
-* **Section 05**:
+- **Section 05**:
     * *Quiz*:
         * [Quiz 06: Stack & Heap Memory Regions](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading%2C%20Concurrency%20and%20Performance%20Optimization/Section%2005#quiz-5-stack--heap-memory-regions).
-    * *Coding Exercise*:
-        * [Coding Exercise 2: Multithreaded Calculation](#).
-
-* **Section 06**:
+- **Section 06**:
     * *Quiz*:
         * [Some here](#).
     * *Coding Exercise*:
         * [Coding Exercise 2: Multithreaded Calculation](#).
-
-* **Section 07**:
+- **Section 07**:
     * *Quiz*:
         * [Some here](#).
     * *Coding Exercise*:
         * [Some here](#).
-
-* **Section 08**:
+- **Section 08**:
     * *Quiz*:
         * [Some here](#).
     * *Coding Exercise*:
         * [Some here](#).
-
-* **Section 09**:
+- **Section 09**:
     * *Quiz*:
         * [Some here](#).
     * *Coding Exercise*:
         * [Some here](#).
-
-* **Section 10**:
+- **Section 10**:
     * *Quiz*:
         * [Some here](#).
     * *Coding Exercise*:
         * [Some here](#).
-
-* **Section 11**:
+- **Section 11**:
     * *Quiz*:
         * [Some here](#).
     * *Coding Exercise*:
         * [Some here](#).
-
-* **Section 12**:
+- **Section 12**:
     * *Quiz*:
         * [Some here](#).
     * *Coding Exercise*:
@@ -592,3 +581,4 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 <hr>
 
 - [Add this](https://www.youtube.com/playlist?list=PLI1t_8YX-ApvMthLj56t1Rf-Buio5Y8KL).
+

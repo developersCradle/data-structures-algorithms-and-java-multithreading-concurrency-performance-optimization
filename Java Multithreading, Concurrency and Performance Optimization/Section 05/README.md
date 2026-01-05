@@ -152,31 +152,52 @@ Object obj = new Object();
 ````
 
 <div align="center">
-    <img src="Two_Sides.jpg" width="500"/>
+    <img src="Two_Sides.jpg" width="400"/>
 </div>
 
 <div align="center">
     <img src="Memory_Regions_Summary.PNG" width="700"/>
 </div>
 
+1. **Heap** includes following variables:
+    - **Objects**. 
+        - Example `new User("John", 25)`.
+    - **Class members**.
+        - Example below:
+            ````Java
+            class User {
+                int id;          // HEAP: Part of the User object.
+                String username; // HEAP: Reference to a String object.
+            }
+            ````
+    - **Static variables**. 
+        - Example `static int count;`.
+
 2. **Stack** includes following variables:
-    - Local Primitive types: Example `int x`
-
-
-- int add here the example codes
-
+    - **Local Primitive** types:
+        -  Example `int x`, `boolean true` or `double sum`.
+    - **Local references**.
+        - Example below:
+            ````Java
+            public void processUser()
+            {
+            // The myUser is created on the STACK.
+            User myUser = new User("Alex"); 
+            }
+            ```` 
 # Quiz 5: Stack & Heap Memory Regions.
-
-
-
 
 <details>
 
 <summary id="Thread progress
 " open="true"> <b>Question 01.</b> </summary>
 
-````Java
+````Yaml
+Question 01:
 
+````
+
+````Java
 public class Example {
     private Map<Integer, String> idToNameMap;
 
@@ -196,19 +217,147 @@ public class Example {
         return allNames;
     }
 }
-
 ````
 
 - My answer:
 
 <div align="center">
-    <img src="Quiz 01/q1.PNG" width="400"/>
+    <img src="Quiz 05/Q1.PNG" width="700"/>
 </div>
 
 
 1. 
 
 </details>
+
+<details>
+
+<summary id="Thread progress
+" open="true"> <b>Question 02.</b> </summary>
+
+````Yaml
+Question 02:
+Choose the correct statement regarding line 4.
+````
+
+````Java
+public class Example {
+    private Map<Integer, String> idToNameMap;
+
+    private static long numberOfInstances = 0;
+
+    public Example() {
+        this.idToNameMap = new HashMap<>();
+        numberOfInstances++;
+    }
+
+    public List<String> getAllNames() {
+        int count = idToNameMap.size();
+        List<String> allNames = new ArrayList<>();
+
+        allNames.addAll(idToNameMap.values());
+
+        return allNames;
+    }
+}
+````
+
+- My answer:
+
+<div align="center">
+    <img src="Quiz 05/Q2.PNG" width="400"/>
+</div>
+
+1. **Static Variables**: Go to the Heap.
+
+</details>
+
+
+<details>
+
+<summary id="Thread progress
+" open="true"> <b>Question 03.</b> </summary>
+
+````Yaml
+Question 03:
+Choose the correct statement regarding line 12.
+````
+
+````Java
+public class Example {
+    private Map<Integer, String> idToNameMap;
+
+    private static long numberOfInstances = 0;
+
+    public Example() {
+        this.idToNameMap = new HashMap<>();
+        numberOfInstances++;
+    }
+
+    public List<String> getAllNames() {
+        int count = idToNameMap.size();
+        List<String> allNames = new ArrayList<>();
+
+        allNames.addAll(idToNameMap.values());
+
+        return allNames;
+    }
+}
+````
+- My answer:
+
+<div align="center">
+    <img src="Quiz 05/Q3.PNG" width="700"/>
+</div>
+
+
+1. The `count` variable is indeed a **local variable** allocated on the stack, which means each **thread** has its **own separate instance**. This ensures that if two threads are executing `getAllNames()` simultaneously, they will operate on their own versions of the count variable without any conflict.
+
+</details>
+
+
+<details>
+
+<summary id="Thread progress
+" open="true"> <b>Question 04.</b> </summary>
+
+````Yaml
+Question 04:
+Choose the correct statement regarding line 13.
+````
+
+````Java
+public class Example {
+    private Map<Integer, String> idToNameMap;
+
+    private static long numberOfInstances = 0;
+
+    public Example() {
+        this.idToNameMap = new HashMap<>();
+        numberOfInstances++;
+    }
+
+    public List<String> getAllNames() {
+        int count = idToNameMap.size();
+        List<String> allNames = new ArrayList<>();
+
+        allNames.addAll(idToNameMap.values());
+
+        return allNames;
+    }
+}
+````
+- My answer:
+
+<div align="center">
+    <img src="Quiz 05/Q4.PNG" width="700"/>
+</div>
+
+1. The **reference variable** is on the **stack**. The **Object** which was initialized with the `new` is on the **heap**
+
+</details>
+
+
 
 
 
