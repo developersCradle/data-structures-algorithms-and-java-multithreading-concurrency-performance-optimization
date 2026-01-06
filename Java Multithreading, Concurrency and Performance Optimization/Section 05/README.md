@@ -599,8 +599,6 @@ public class Main {
 > [!CAUTION]
 > We can see the inconsistency in the logs, this is du
 
-
-
 <div align="center">
     <img src="What_We_Will_Learn_Atomic_Operation.PNG" width="700"/>
 </div>
@@ -630,22 +628,55 @@ public class Main {
     <img src="Atomic_Operation.PNG" width="700"/>
 </div>
 
-1. Something similar like **transactions**!
+1. Something similar like **transactions** in database!
 
 <div align="center">
     <img src="Atomic_Operation_Example.PNG" width="700"/>
 </div>
 
-1. `items++` is not **atomic** operation at all! There are **three** operations:
+1. `items++` and `items--` is not **atomic** operation at all! There are **three** operations:
     - `First`: Get current value of items.
     - `Second`: Increment current value by `1`.
     - `Third`: Store the result into items.
-    
+
+- We will look at The **operation ++** and **operation --** will be pretty much the same, the **operation ++** explained below:
+
 <div align="center">
     <img src="Increment_Operations_Steps.gif" width="700"/>
 </div>
 
-1.
-2. 
-3.
+1. **First Operation** is to get the **current value**, which in the time was `0`.
+2. **Second Operations** is to create **new value**, which will be `1`. 
+3. **Third Operations** is to store the **new value** into the `Items` value. 
 
+<div align="center">
+    <img src="Two_Threads.PNG" width="700"/>
+</div>
+
+- Here is **concurrent** execution of **two threads**. This execution can wary, it depends on the OS scheduling the **threads**. 
+    - `1.` thread is **incrementing** by **one**.
+    - `2.` thread is **decrementing** by **one**.
+
+<div align="center">
+    <img src="Increment_And_Decrement_Operation_The_Threads.gif" width="700"/>
+</div>
+
+1. The **Incrementing Thread** executes the first command get the `currentVal`, which is `0`.
+2. The **Incrementing Thread** again executes, the **incrementation** by **one** and assigns it to `newVal` 
+3. The **Decrementing Thread** gets the `currentVal`, which at the time `0`. 
+4. The **Decrementing Thread** subtracts the `-1` from the `0`, which will be `-1`.
+5.  The **Decrementing Thread** sets the `newVal` into the `Items` variable, which will be `-1`.
+6. The **Incrementing Thread**, will come into picture and will **assign** the `newVal` into the `Items` and, now it will be `1`. This will be done **regardless** what have happened in the `DecrementingThread` and will **override** its values!
+
+<div align="center">
+    <img src="If_The_Other_Thread_Runs_First.PNG" width="700"/>
+</div>
+
+1. **Notice** if the **OS schedules** the **threads little bit differently**, the result would be **different**!
+    - Where the `DecrementingThread` would **override** the last value!
+
+<div align="center">
+    <img src="Summary_Data_Sharing.PNG" width="700"/>
+</div>
+
+1. We illustrated the **non atomic operation** effects by different threads!

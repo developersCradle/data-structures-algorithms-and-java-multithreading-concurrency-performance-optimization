@@ -55,7 +55,7 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 - [x] [Section 02](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading%2C%20Concurrency%20and%20Performance%20Optimization/Section%2002#chapter-02---threading-fundamentals---thread-creation) - Threading Fundamentals - Thread Creation. ✅
 - [x] [Section 03](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading%2C%20Concurrency%20and%20Performance%20Optimization/Section%2003#chapter-03---threading-fundamentals---thread-coordination) - Threading Fundamentals - Thread Coordination. ✅
 - [ ] [Section 04](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading%2C%20Concurrency%20and%20Performance%20Optimization/Section%2004#chapter-04---performance-optimization) - Performance Optimization.
-- [ ] [Section 05](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Multithreading%2C%20Concurrency%20and%20Performance%20Optimization/Section%2005/README.md#chapter-05---data-sharing-between-threads) - Data Sharing Between Threads.
+- [x] [Section 05](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Multithreading%2C%20Concurrency%20and%20Performance%20Optimization/Section%2005/README.md#chapter-05---data-sharing-between-threads) - Data Sharing Between Threads. ✅
 - [ ] [Section 06](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Multithreading%2C%20Concurrency%20and%20Performance%20Optimization/Section%2006/README.md#chapter-06---the-concurrency-challenges--solutions) - The Concurrency Challenges & Solutions.
 - [ ] [Section 07](#) - Advanced Locking.
 - [ ] [Section 08](#) - Inter-Thread Communication.
@@ -70,10 +70,10 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 #### The Quizzes and Labs.
 
-* **Section 01**
+* **Section 01**:
     * *Quiz*:
         * [Quiz 1: Threading and Operating Systems Fundamentals](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading%2C%20Concurrency%20and%20Performance%20Optimization/Section%2001#quiz-1-threading-and-operating-systems-fundamentals-quiz).
-* **Section 02**
+* **Section 02**:
     * *Quiz*:
         * [Some here](#).
 * **Section 03**:
@@ -88,12 +88,15 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
         * [Some here](#).
 * **Section 05**:
     * *Quiz*:
-        * [Quiz 06: Stack & Heap Memory Regions](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading,%20Concurrency%20and%20Performance%20Optimization/Section%2005#quiz-5-stack--heap-memory-regions).
+        * [Quiz 05: Stack & Heap Memory Regions](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading,%20Concurrency%20and%20Performance%20Optimization/Section%2005#quiz-5-stack--heap-memory-regions).
 * **Section 06**:
     * *Quiz*:
-        * [Some here](#).
+        * [Quiz 06: Critical Section & Synchronization](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Multithreading%2C%20Concurrency%20and%20Performance%20Optimization/Section%2006/README.md#quiz-6-critical-section--synchronization).
+        * [Quiz 07: Atomic Operations, Volatile & Metrics practical example](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Multithreading,%20Concurrency%20and%20Performance%20Optimization/Section%2006/README.md#quiz-7-atomic-operations-volatile--metrics-practical-example).
+        * [Quiz 08: Data Races](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Multithreading,%20Concurrency%20and%20Performance%20Optimization/Section%2006/README.md#quiz-8-data-races).
+        * [Quiz 09: Locking Strategies & Deadlocks](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Multithreading,%20Concurrency%20and%20Performance%20Optimization/Section%2006/README.md#quiz-9-locking-strategies--deadlocks).
     * *Coding Exercise*:
-        * [Coding Exercise 2: Multithreaded Calculation](#).
+        * [Coding Exercise 3: Min - Max Metrics](#).
 * **Section 07**:
     * *Quiz*:
         * [Some here](#).
@@ -551,9 +554,9 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 All course material from A Comprehensive Introduction to Java Virtual Machine (JVM) by **Dheeru Mundluru**.
 
 > Once I saw one <b>requirement</b> in the job posting, this lead me get more comfortable of JVM internals. 
-<br>
-*Mastery in at least one JVM programming language. We mainly use Kotlin, but we're open to Java and Scala* <br><br>
-~ *DevelopersCradle*
+> <br>
+> *Mastery in at least one JVM programming language. We mainly use Kotlin, but we're open to Java and Scala* <br><br>
+> ~ *DevelopersCradle*
 
 Contains my own notes with some course material to enforce learning experience.
 
