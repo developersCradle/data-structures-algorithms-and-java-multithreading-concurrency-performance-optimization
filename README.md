@@ -68,75 +68,58 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 - [ ] Add the exercise and comments for the `We_Can_See_That_We_Dont_Have_The_Access_To_The_Main_Frame.PNG`, if you have patience.
 
-<details>
+#### The Quizzes and Labs.
 
-<summary id="Kafka the progress" open="true"> <i>Course map for the </i><b>  Modern Java Courses!</b> </summary>
-
-<br>
-
-<p align="center">
-    <img src="courseMap.png" alt="Course roadmap to enroll in the Modern Java Courses." width="400"/>
-</p>
-
-1. You can take this course first: [Modern Java - Learn Java 8 features by coding it](https://www.udemy.com/course/modern-java-learn-java-8-features-by-coding-it/).
-2. You can take this course second: [Multithreading, Parallel & Asynchronous Coding in Modern Java](https://www.udemy.com/course/parallel-and-asynchronous-programming-in-modern-java/).
-
-</details>
-
-## The Quizzes and Labs.
-
-- **Section 01**
+* **Section 01**
     * *Quiz*:
         * [Quiz 1: Threading and Operating Systems Fundamentals](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading%2C%20Concurrency%20and%20Performance%20Optimization/Section%2001#quiz-1-threading-and-operating-systems-fundamentals-quiz).
-- **Section 02**
+* **Section 02**
     * *Quiz*:
         * [Some here](#).
-
-- **Section 03**:
-    * *Quiz*:
-        * [Some here](#).
-    * *Coding Exercise*:
-        * [Coding Exercise 2: Multithreaded Calculation](#).
-
-- **Section 04**:
-    * *Quiz*:
-        * [Some here](#).
-    * *Coding Exercise*:
-        * [Some here](#).
-- **Section 05**:
-    * *Quiz*:
-        * [Quiz 06: Stack & Heap Memory Regions](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading%2C%20Concurrency%20and%20Performance%20Optimization/Section%2005#quiz-5-stack--heap-memory-regions).
-- **Section 06**:
+* **Section 03**:
     * *Quiz*:
         * [Some here](#).
     * *Coding Exercise*:
         * [Coding Exercise 2: Multithreaded Calculation](#).
-- **Section 07**:
+* **Section 04**:
     * *Quiz*:
         * [Some here](#).
     * *Coding Exercise*:
         * [Some here](#).
-- **Section 08**:
+* **Section 05**:
+    * *Quiz*:
+        * [Quiz 06: Stack & Heap Memory Regions](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading,%20Concurrency%20and%20Performance%20Optimization/Section%2005#quiz-5-stack--heap-memory-regions).
+* **Section 06**:
+    * *Quiz*:
+        * [Some here](#).
+    * *Coding Exercise*:
+        * [Coding Exercise 2: Multithreaded Calculation](#).
+* **Section 07**:
     * *Quiz*:
         * [Some here](#).
     * *Coding Exercise*:
         * [Some here](#).
-- **Section 09**:
+* **Section 08**:
     * *Quiz*:
         * [Some here](#).
     * *Coding Exercise*:
         * [Some here](#).
-- **Section 10**:
+* **Section 09**:
     * *Quiz*:
         * [Some here](#).
     * *Coding Exercise*:
         * [Some here](#).
-- **Section 11**:
+* **Section 10**:
     * *Quiz*:
         * [Some here](#).
     * *Coding Exercise*:
         * [Some here](#).
-- **Section 12**:
+* **Section 11**:
+    * *Quiz*:
+        * [Some here](#).
+    * *Coding Exercise*:
+        * [Some here](#).
+* **Section 12**:
     * *Quiz*:
         * [Some here](#).
     * *Coding Exercise*:
@@ -205,6 +188,21 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 #### Additional stuff.
 
 - [ ] Add some.
+
+<details>
+
+<summary id="Kafka the progress" open="true"> <i>Course map for the </i><b>  Modern Java Courses!</b> </summary>
+
+<br>
+
+<p align="center">
+    <img src="courseMap.png" alt="Course roadmap to enroll in the Modern Java Courses." width="400"/>
+</p>
+
+1. You can take this course first: [Modern Java - Learn Java 8 features by coding it](https://www.udemy.com/course/modern-java-learn-java-8-features-by-coding-it/).
+2. You can take this course second: [Multithreading, Parallel & Asynchronous Coding in Modern Java](https://www.udemy.com/course/parallel-and-asynchronous-programming-in-modern-java/).
+
+</details>
 
 <p align="center">
     <img src="Java_Application_Performance_Tuning_And_Memory_Management.gif" alt="Java Application Performance Tuning and Memory Management" style="width:1200px;height:60px;"/>
@@ -544,6 +542,57 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 - [ ] Add some.
 
+# A Comprehensive Introduction to Java Virtual Machine (JVM).
+
+<p align="center">
+    <img src="A_Comprehensive_Introduction_To_Java_Virtual_Machine_(JVM)_Description.PNG" alt="Course Intros" style="width:690px" />
+</p>
+
+All course material from A Comprehensive Introduction to Java Virtual Machine (JVM) by **Dheeru Mundluru**.
+
+> Once I saw one <b>requirement</b> in the job posting, this lead me get more comfortable of JVM internals. 
+<br>
+*Mastery in at least one JVM programming language. We mainly use Kotlin, but we're open to Java and Scala* <br><br>
+~ *DevelopersCradle*
+
+Contains my own notes with some course material to enforce learning experience.
+
+This repository is made with [![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?logo=intellij-idea&logoColor=white)](#) with [![Eclipse](https://img.shields.io/badge/Eclipse-FE7A16.svg?logo=Eclipse&logoColor=white)](#) hotkeys, therefore it will include configuration files which are related to this IDE this approach will be favored for now. ⚙️
+
+[The course at Udemy](https://www.udemy.com/course/parallel-and-asynchronous-programming-in-modern-java). 
+
+<!-- [Website of maker](https://topdeveloperacademy.com/).  -->
+
+If the content sparked :fire: your interest, please consider buying the course and start learning :book:.
+
+<!-- 
+Linkedin puts this shit front, when clicking from private mode x(. Need to put this to make jump working every case
+?trk=public_profile_see-credential 
+-->
+
+<div align="center">
+    Insert certificate here when completed
+</div>
+
+**Note: The material provided in this repository is only for helping those who may get stuck at any point of time in the course. It is very advised that no one should just copy the solutions(violation of Honor Code) presented here.**
+
+#### Progress/Curriculum.
+
+- [ ] [Section 1](#) - Background ~ A High-level Overview on JVM.
+- [ ] [Section 2](#) - Lifetime of a Type.
+- [ ] [Section 3](#) - Reflection.
+- [ ] [Section 4](#) - JVM Memory, Garbage Collection, and Bytecode Instructions.
+- [ ] [Section 5](#) - Strings & JVM.
+- [ ] [Section 6](#) - Bonus Chapter.
+
+#### Additional stuff.
+
+- [ ] Add some.
+
+
+
+
+
 
 <p align="center">
     <img id="Performance Optimization" src="How_I_Got_Good_At_Algorithms_And_Data_Structures_Caption.png" style=" width: 900px; height: 100px">
@@ -568,12 +617,49 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 </details>
 
+# Introduction to Algorithms.
+
+<p align="center">
+    <img src="MIT_Introduction_To_Algorithms_Course_Description.PNG" alt="course intros" style="width:690px" />
+</p>
+
+This course provides an introduction to mathematical modeling of computational problems. It covers the common algorithms, algorithmic paradigms, and data structures used to solve these problems. The course emphasizes the relationship between algorithms and programming, and introduces basic performance measures and analysis techniques for these problems.
+
+> Add here some story <br><br>
+~ *DevelopersCradle*
+
+Contains my own notes with some course material to enforce learning experience.
+    
+This repository is made with [![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?logo=intellij-idea&logoColor=white)](#) with [![Eclipse](https://img.shields.io/badge/Eclipse-FE7A16.svg?logo=Eclipse&logoColor=white)](#) hotkeys, therefore it will include configuration files which are related to this IDE this approach will be favored for now. ⚙️
+
+[Souuce](https://www.youtube.com/playlist?list=PLe8LZCtW06l8z1RmbNIGA2Jg_ULeXyw46).
+
+If the content sparked :fire: your interest, please consider buying the course and start learning :book:.
+
+<!-- 
+Linkedin puts this shit front, when clicking from private mode x(. Need to put this to make jump working every case
+?trk=public_profile_see-credential 
+-->
+
+<div align="center">
+    Insert certificate here when completed
+</div>
+
+**Note: The material provided in this repository is only for helping those who may get stuck at any point of time in the course. It is very advised that no one should just copy the solutions(violation of Honor Code) presented here.**
+
+#### Progress/Curriculum.
+
+- [ ] [Section 01](#) - Add here.
+
+#### Additional stuff.
+
+- [ ] Don't get stuck of the proofs.
+
+<hr>
+
 - Can take this one [Data Structures and Algorithms Specialization](https://www.coursera.org/specializations/data-structures-algorithms).
     - Don't get stuck of the proofs, detail heavy.
 - Can take this one [Algorithms Specialization](https://www.coursera.org/specializations/algorithmss).
-    - Don't get stuck of the proofs, detail heavy.
-
-- Can take this one [Algorithms Specialization](https://www.youtube.com/playlist?list=PLe8LZCtW06l8z1RmbNIGA2Jg_ULeXyw46).
     - Don't get stuck of the proofs, detail heavy.
 
 - [Source](https://www.youtube.com/watch?v=9-ubSA9GA3o).
@@ -582,3 +668,6 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 - [Add this](https://www.youtube.com/playlist?list=PLI1t_8YX-ApvMthLj56t1Rf-Buio5Y8KL).
 
+<hr>
+
+- [Add this](https://www.youtube.com/watch?v=IhJGJG-9Dx8&list=PLI1t_8YX-Apv-UiRlnZwqqrRT8D1RhriX).

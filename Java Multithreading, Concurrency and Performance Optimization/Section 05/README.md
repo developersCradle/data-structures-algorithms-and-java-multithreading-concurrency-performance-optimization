@@ -383,3 +383,269 @@ public class Example {
 1. The `UI Thread` is running in own **thread**.
 2. The `Document Saver` is running in its own **thread**.
 3. This **document** is the **shared resource**, both **threads** can access this without losing the progress, if the **thread** crashes!
+
+<div align="center">
+    <img src="Why_We_Wold_Want_To_Share_The_Data_Between_Threads_Second_Example.PNG" width="700"/>
+</div>
+
+1. **Dispatcher Thread** gets work from **UI** or form **HTTP** messages, if it is a web server.
+    - **Dispatcher Thread** is common architecture design in multithreading!
+        - In this **architecture**, the **dispatcher thread** acts as a master thread or *"traffic cop"*. It prevents the main application from becoming unresponsive by offloading heavy work to a background.
+    - The work is issued into the **Work Queue**, where the **Worker Threads** are taking task from!
+        - The **Worker Threads** craps the tasks from the queue as soon as they have finished their previous task.
+2. This **Worker Queue** is **shared data structure**, meaning it's shared in the **heap** for efficient **CPU utilization** and **low latency**.
+
+<div align="center">
+    <img src="Why_We_Wold_Want_To_Share_The_Data_Between_Threads_Third_Example.PNG" width="700"/>
+</div>
+
+1. **Microservice example**, the connection to the database must be **shared resource** even thought the individual connections are on their own thread.
+
+- Next experiment will be having **two threads** and **both** have simple counting solution, as follows: 
+
+````
+InventoryCounter inventoryCounter = new InventoryCounter();
+        IncrementingThread incrementingThread = new IncrementingThread(inventoryCounter);
+        DecrementingThread decrementingThread = new DecrementingThread(inventoryCounter);
+````
+
+- We will be experimenting with the **threads** with **sequence execution**.
+    - Here the `IncrementingThread` will do the **increasing**.
+    - Here the `DecrementingThread` will do the **reducing**.
+
+
+<div align="center">
+    <img src="Two_Threads_Running_Separately.gif" width="900"/>
+</div>
+
+1. You can see that logs having `We currently have 0 items`.
+
+
+<details>
+<summary id="The factorial thread" open="true"> <b>Two different threads, with .join as working!</b> </summary>
+
+````Java
+/*
+ * Copyright (c) 2019-2023. Michael Pogrebinsky - Top Developer Academy
+ * https://topdeveloperacademy.com
+ * All rights reserved
+ */
+
+/**
+ * Resource Sharing & Introduction to Critical Sections
+ * https://www.udemy.com/java-multithreading-concurrency-performance-optimization
+ */
+public class Main {
+    public static void main(String[] args) throws InterruptedException {
+        InventoryCounter inventoryCounter = new InventoryCounter();
+        IncrementingThread incrementingThread = new IncrementingThread(inventoryCounter);
+        DecrementingThread decrementingThread = new DecrementingThread(inventoryCounter);
+
+        incrementingThread.start();
+        incrementingThread.join();
+
+        decrementingThread.start();
+        decrementingThread.join();
+
+        System.out.println("We currently have " + inventoryCounter.getItems() + " items");
+    }
+
+    public static class DecrementingThread extends Thread {
+
+        private InventoryCounter inventoryCounter;
+
+        public DecrementingThread(InventoryCounter inventoryCounter) {
+            this.inventoryCounter = inventoryCounter;
+        }
+
+        @Override
+        public void run() {
+            for (int i = 0; i < 10000; i++) {
+                inventoryCounter.decrement();
+            }
+        }
+    }
+
+    public static class IncrementingThread extends Thread {
+
+        private InventoryCounter inventoryCounter;
+
+        public IncrementingThread(InventoryCounter inventoryCounter) {
+            this.inventoryCounter = inventoryCounter;
+        }
+
+        @Override
+        public void run() {
+            for (int i = 0; i < 10000; i++) {
+                inventoryCounter.increment();
+            }
+        }
+    }
+
+    private static class InventoryCounter {
+        private int items = 0;
+
+        public void increment() {
+            items++;
+        }
+
+        public void decrement() {
+            items--;
+        }
+
+        public int getItems() {
+            return items;
+        }
+    }
+}
+````
+</details>
+
+- Next we will be experimenting with the **threads** with **non sequence execution**, with following changes:
+
+````Java 
+        incrementingThread.start();
+        decrementingThread.start();
+
+        decrementingThread.join();
+        incrementingThread.join();
+````
+<div align="center">
+    <img src="Two_Threads_Running_Separately_As_Both_Mofying_The_Values.gif" width="900"/>
+</div>
+
+1. You can see that logs having `We currently have -83 items` or the `We currently have 610 items` these changing at every execution.
+
+<details>
+<summary id="The factorial thread" open="true"> <b>Two different threads, with .join not  working!</b> </summary>
+
+````Java 
+/*
+ * Copyright (c) 2019-2023. Michael Pogrebinsky - Top Developer Academy
+ * https://topdeveloperacademy.com
+ * All rights reserved
+ */
+
+/**
+ * Resource Sharing & Introduction to Critical Sections
+ * https://www.udemy.com/java-multithreading-concurrency-performance-optimization
+ */
+public class Main {
+    public static void main(String[] args) throws InterruptedException {
+        InventoryCounter inventoryCounter = new InventoryCounter();
+        IncrementingThread incrementingThread = new IncrementingThread(inventoryCounter);
+        DecrementingThread decrementingThread = new DecrementingThread(inventoryCounter);
+
+        incrementingThread.start();
+        decrementingThread.start();
+
+        decrementingThread.join();
+        incrementingThread.join();
+
+        System.out.println("We currently have " + inventoryCounter.getItems() + " items");
+    }
+
+    public static class DecrementingThread extends Thread {
+
+        private InventoryCounter inventoryCounter;
+
+        public DecrementingThread(InventoryCounter inventoryCounter) {
+            this.inventoryCounter = inventoryCounter;
+        }
+
+        @Override
+        public void run() {
+            for (int i = 0; i < 10000; i++) {
+                inventoryCounter.decrement();
+            }
+        }
+    }
+
+    public static class IncrementingThread extends Thread {
+
+        private InventoryCounter inventoryCounter;
+
+        public IncrementingThread(InventoryCounter inventoryCounter) {
+            this.inventoryCounter = inventoryCounter;
+        }
+
+        @Override
+        public void run() {
+            for (int i = 0; i < 10000; i++) {
+                inventoryCounter.increment();
+            }
+        }
+    }
+
+    private static class InventoryCounter {
+        private int items = 0;
+
+        public void increment() {
+            items++;
+        }
+
+        public void decrement() {
+            items--;
+        }
+
+        public int getItems() {
+            return items;
+        }
+    }
+}
+````
+</details
+
+> [!CAUTION]
+> We can see the inconsistency in the logs, this is du
+
+
+
+<div align="center">
+    <img src="What_We_Will_Learn_Atomic_Operation.PNG" width="700"/>
+</div>
+
+1. We can fix this inconsistency, with the **atomic operation**! Our next topic!
+
+<div align="center">
+    <img src="The_Core_Problem.PNG" width="700"/>
+</div>
+
+1. `InventoryCounter` is **shared object**, since it used with the `new` operation is used, and this will be allocated in the **heap**! The code below:
+    ````
+    InventoryCounter inventoryCounter = new InventoryCounter();
+    IncrementingThread incrementingThread = new IncrementingThread(inventoryCounter);
+    DecrementingThread decrementingThread = new DecrementingThread(inventoryCounter);
+    ````
+2.  **IMPORTANT!** The **adding** and **reducing** the counter.
+    -  These are happing in their **same time**!
+    -  Is not **atomic** operation!
+
+> [!TIP]
+> *“Atomic”* means that these operations are performed **as a single**, **indivisible unit** 
+> they either **complete entirely** or **not at all**, with no possibility of another thread
+> seeing or modifying the variable in an intermediate state.
+
+<div align="center">
+    <img src="Atomic_Operation.PNG" width="700"/>
+</div>
+
+1. Something similar like **transactions**!
+
+<div align="center">
+    <img src="Atomic_Operation_Example.PNG" width="700"/>
+</div>
+
+1. `items++` is not **atomic** operation at all! There are **three** operations:
+    - `First`: Get current value of items.
+    - `Second`: Increment current value by `1`.
+    - `Third`: Store the result into items.
+    
+<div align="center">
+    <img src="Increment_Operations_Steps.gif" width="700"/>
+</div>
+
+1.
+2. 
+3.
+

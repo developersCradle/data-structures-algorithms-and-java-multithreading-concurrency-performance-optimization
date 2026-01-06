@@ -17,8 +17,8 @@ public class Main {
         incrementingThread.start();
         decrementingThread.start();
 
-        incrementingThread.join();
         decrementingThread.join();
+        incrementingThread.join();
 
         System.out.println("We currently have " + inventoryCounter.getItems() + " items");
     }
