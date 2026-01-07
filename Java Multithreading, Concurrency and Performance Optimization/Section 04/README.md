@@ -67,7 +67,7 @@ Performance Optimization.
     <img src="Latency.PNG"  alt="Java threads." width="700"/>
 </div>
 
-1. We can say that $\text{Latency} = \frac{T}{N}$
+1. We can say that &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{Latency} = \frac{T}{N}$
     - What is the level to which **gradual level** the tasks needs to be broken down, to be effect as possible?
 
 <div align="center">

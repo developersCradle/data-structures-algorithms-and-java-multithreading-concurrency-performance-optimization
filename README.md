@@ -56,7 +56,7 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 - [x] [Section 03](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading%2C%20Concurrency%20and%20Performance%20Optimization/Section%2003#chapter-03---threading-fundamentals---thread-coordination) - Threading Fundamentals - Thread Coordination. ✅
 - [ ] [Section 04](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading%2C%20Concurrency%20and%20Performance%20Optimization/Section%2004#chapter-04---performance-optimization) - Performance Optimization.
 - [x] [Section 05](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Multithreading%2C%20Concurrency%20and%20Performance%20Optimization/Section%2005/README.md#chapter-05---data-sharing-between-threads) - Data Sharing Between Threads. ✅
-- [ ] [Section 06](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Multithreading%2C%20Concurrency%20and%20Performance%20Optimization/Section%2006/README.md#chapter-06---the-concurrency-challenges--solutions) - The Concurrency Challenges & Solutions.
+- [ ] [Section 06](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Multithreading%2C%20Concurrency%20and%20Performance%20Optimization/Section%2006/qREADME.md#chapter-06---the-concurrency-challenges--solutions) - The Concurrency Challenges & Solutions.
 - [ ] [Section 07](#) - Advanced Locking.
 - [ ] [Section 08](#) - Inter-Thread Communication.
 - [ ] [Section 09](#) - Lock-Free Algorithms, Data-Structures & Techniques.
@@ -67,6 +67,8 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 #### Additional stuff.
 
 - [ ] Add the exercise and comments for the `We_Can_See_That_We_Dont_Have_The_Access_To_The_Main_Frame.PNG`, if you have patience.
+- [ ] Additional go thought [Future](https://www.baeldung.com/java-future).
+- [ ] Additional go thought `synchronized` [keyword](https://www.baeldung.com/java-synchronized).
 
 #### The Quizzes and Labs.
 
@@ -192,6 +194,14 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 - [ ] Add some.
 
+#### The Quizzes and Labs.
+
+* **Section 01**:
+    * *Quiz*:
+        * [Some here](#).
+    * *Coding Exercise*:
+        * [Some here](#).
+
 <details>
 
 <summary id="Kafka the progress" open="true"> <i>Course map for the </i><b>  Modern Java Courses!</b> </summary>
@@ -269,6 +279,14 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 #### Additional stuff.
 
 - [x] Check the content from other student [Link](https://github.com/tommic81/udemy-java-memory-management/tree/master). ✅
+
+#### The Quizzes and Labs.
+
+* **Section 01**:
+    * *Quiz*:
+        * [Some here](#).
+    * *Coding Exercise*:
+        * [Some here](#).
 
 
 <p align="center">
@@ -502,6 +520,18 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 - [ ] [Section 11](#) - Final Section: Concluding the Course with Key Takeaways and Sets.
 - [ ] [Section 12](#) - Extra Information - Source code, and other stuff.
 
+#### Additional stuff.
+
+- [ ] Add some.
+
+#### The Quizzes and Labs.
+
+* **Section 01**:
+    * *Quiz*:
+        * [Some here](#).
+    * *Coding Exercise*:
+        * [Some here](#).
+
 <p align="center">
     <img src="Java_Data_Structures_And_Algorithms_Plus_LEETCODE_Excervice_Caption.png" alt="course intros" style="width:990px;height:110px;"/>
 </p>
@@ -545,7 +575,9 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 - [ ] Add some.
 
-# A Comprehensive Introduction to Java Virtual Machine (JVM).
+<p align="center">
+    <img src="A_Comprehensive_Introduction_To_Java_Virtual_Machine_(JVM)_Caption.png" alt="course intros" style="width:990px;height:110px;"/>
+</p>
 
 <p align="center">
     <img src="A_Comprehensive_Introduction_To_Java_Virtual_Machine_(JVM)_Description.PNG" alt="Course Intros" style="width:690px" />
@@ -553,18 +585,21 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 All course material from A Comprehensive Introduction to Java Virtual Machine (JVM) by **Dheeru Mundluru**.
 
-> Once I saw one <b>requirement</b> in the job posting, this lead me get more comfortable of JVM internals. 
-> <br>
-> *Mastery in at least one JVM programming language. We mainly use Kotlin, but we're open to Java and Scala* <br><br>
+
+> Once I saw one <b>requirement</b> in the job posting, this lead me get more comfortable at the JVM internals.
+>
+>*"How you would tune the JVM for Garbage Collection (GC) overhead in latency-sensitive applications?"*
+>
+> Sony evaluates candidates on real-world scalability, debugging under pressure, and system performance rather than just "textbook answers".<br><br>
 > ~ *DevelopersCradle*
 
 Contains my own notes with some course material to enforce learning experience.
 
 This repository is made with [![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?logo=intellij-idea&logoColor=white)](#) with [![Eclipse](https://img.shields.io/badge/Eclipse-FE7A16.svg?logo=Eclipse&logoColor=white)](#) hotkeys, therefore it will include configuration files which are related to this IDE this approach will be favored for now. ⚙️
 
-[The course at Udemy](https://www.udemy.com/course/parallel-and-asynchronous-programming-in-modern-java). 
+[The course at Udemy](https://www.udemy.com/course/a-comprehensive-introduction-to-java-virtual-machine-jvm/?couponCode=CP250105G1). 
 
-<!-- [Website of maker](https://topdeveloperacademy.com/).  -->
+[Website of maker](https://www.semanticsquare.com/).
 
 If the content sparked :fire: your interest, please consider buying the course and start learning :book:.
 
@@ -592,7 +627,13 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 - [ ] Add some.
 
+#### The Quizzes and Labs.
 
+* **Section 01**:
+    * *Quiz*:
+        * [Some here](#).
+    * *Coding Exercise*:
+        * [Some here](#).
 
 
 

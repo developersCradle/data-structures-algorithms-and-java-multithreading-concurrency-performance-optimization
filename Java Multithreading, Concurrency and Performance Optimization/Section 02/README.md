@@ -10,13 +10,13 @@ Threading Fundamentals - Thread Creation.
 
 # Threads Creation - Part 1, Thread Capabilities & Debugging.
 
-- First we will be looking at the *"hello world"* of the **Threads**. 
-
 <div align="center">
-    <img src="firstThread.PNG"  alt="Java threads." width="500"/>
+    <img src="What_We_Will_Be_Learning_We_Will_Create_Our_First_Thread.PNG"  alt="Java threads." width="500"/>
 </div>
 
-- We can create `Thread`, where we input the `Runnable`.
+1. First we will be looking at the *"hello world"* of the **Threads**. 
+
+- We can create `Thread`, where we input the `Runnable` interface.
 
 ````Java
  // First version of the Threads.
@@ -33,7 +33,6 @@ Threading Fundamentals - Thread Creation.
         System.out.println("We are in thread: " + Thread.currentThread().getName()+ " after starting a new thread");
 
         Thread.sleep(1000);
-
 ````
 
 - We need to start the **Thread**, with `thread.start();`.
@@ -105,7 +104,7 @@ we are now in thread Thread-0
 - The **second** topic the which **capabilities** the **Thread** will bring us.
 
 <div align="center">
-    <img src="firstThread.PNG"  alt="Java threads." width="500"/>
+    <img src="What_We_Will_Be_Learning_Thread_Class_Capabilities.PNG"  alt="Java threads." width="500"/>
 </div>
 
 - We can give the **Thread** a name:
@@ -387,6 +386,51 @@ public class Main {
 <div align="center">
     <img src="hackerWin.gif"  alt="Java threads." width="500"/>
 </div>
+
+# Quiz 2: Thread Creation.
+
+<details>
+
+<summary id="Thread progress
+" open="true"> <b>Question 01.</b> </summary>
+
+````yaml
+Question 01:
+How does the Operating System decide what thread to schedule?
+````
+
+- My answer:
+
+<div align="center">
+    <img src="Quiz 01/Q03.PNG" width="500"/>
+</div>
+
+1. The Operating System decides which thread to run next using the scheduler, based on scheduling algorithms and system state.
+
+</details>
+
+<details>
+
+<summary id="Thread progress
+" open="true"> <b>Question 02.</b> </summary>
+
+````yaml
+Question 01:
+How does the Operating System decide what thread to schedule?
+````
+
+- My answer:
+
+<div align="center">
+    <img src="Quiz 01/Q03.PNG" width="500"/>
+</div>
+
+1. The Operating System decides which thread to run next using the scheduler, based on scheduling algorithms and system state.
+
+</details>
+
+
+
 
 
 # Coding Exercise 1: Thread Creation - MultiExecutor.

@@ -297,7 +297,7 @@ Why do we want to use multiple threads in an application?
 - My answer:
 
 <div align="center">
-    <img src="Quiz 01/Q01.PNG" width="400"/>
+    <img src="Quiz 01/Q01.PNG" width="500"/>
 </div>
 
 1. By using multiple threads allows an application to handle several tasks at once, enhancing responsiveness and potentially increasing performance through concurrent execution.
@@ -317,7 +317,7 @@ Multiple threads in a single process share
 - My answer:
 
 <div align="center">
-    <img src="Quiz 01/Q02.PNG" width="400"/>
+    <img src="Quiz 01/Q02.PNG" width="500"/>
 </div>
 
 1. The Code `2.` means as following, we can execute threads using the same code. 
@@ -342,7 +342,7 @@ How does the Operating System decide what thread to schedule?
 - My answer:
 
 <div align="center">
-    <img src="Quiz 01/Q03.PNG" width="400"/>
+    <img src="Quiz 01/Q03.PNG" width="500"/>
 </div>
 
 1. The Operating System decides which thread to run next using the scheduler, based on scheduling algorithms and system state.
