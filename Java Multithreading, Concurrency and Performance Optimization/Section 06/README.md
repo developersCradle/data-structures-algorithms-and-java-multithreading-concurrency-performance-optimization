@@ -12,7 +12,6 @@ The Concurrency Challenges & Solutions.
 
 1. We will be starting to explore the **Critical Section**.
 
-
 - We need to address following **problem**:
 
 <div align="center">
@@ -20,7 +19,7 @@ The Concurrency Challenges & Solutions.
 </div>
 
 - We would need to execute **set** of operation, which would need to be executed as **single atomic operation**.
-    - **Two** threads could be perform these set of codes at the same time. Example set of operations below:
+    - **Two** threads could be performing these set of codes **at the same time**. Example set of operations below:
 
 ````
 void aggregateFunction() {
@@ -67,26 +66,153 @@ void aggregateFunction() {
     <img src="Synchronized_Used_In_The_Block.PNG" width="500" alt="Threads resource"/>
 </div>
 
-1. `synchronized` ensures that only **one thread** at a time can execute any synchronized method of that particular object instance (`method1()`, `method2()`, etc.). Other threads must wait until the monitor (lock) is released.
-    - Only **one** **synchronized method** can be run at a time `ClassWithCriticalSections obj = new ClassWithCriticalSections();`.
-        - We could start `a.method1()` and `b.method1()` at the same time, since `synchronized` instance methods **locks the object**, **not the class**! Example in below:
+1. **First** the Monitor way!
+    - `synchronized` ensures that only **one thread** at a time can execute any synchronized method of that particular object instance (`method1()`, `method2()`, etc.). Other threads must wait until the monitor (lock) is released.
+    - Only *one* **synchronized method** can be run at a time:
 
-        ````
-        ClassWithCriticalSections obj1 = new ClassWithCriticalSections();
-        ClassWithCriticalSections obj2 = new ClassWithCriticalSections();
+    ````
+    ClassWithCriticalSections obj = new ClassWithCriticalSections();
 
-        Thread t1 = new Thread(() -> a.method1()); // This works.
-        Thread t2 = new Thread(() -> b.method1()); // This works.
-        t1.start(); // This works.
-        t2.start(); // This works.
-        ````
+    Thread t1 = new Thread(() -> obj.method1()); // This works.
+    Thread t2 = new Thread(() -> obj.method1()); // This wont works!
+    
+    t1.start(); // This works.
+    t2.start(); // This wont work!
+    ````
+    - We could start `a.method1()` and `b.method1()` at the same time, since `synchronized` keyword **locks the object**, **not the class**! Example in below:
+    ````
+    ClassWithCriticalSections obj1 = new ClassWithCriticalSections();
+    ClassWithCriticalSections obj2 = new ClassWithCriticalSections();
+
+    Thread t1 = new Thread(() -> obj1.method1()); // This works.
+    Thread t2 = new Thread(() -> obj2.method1()); // This works.
+    t1.start(); // This works.
+    t2.start(); // This works.
+    ````
         
 <div align="center">
-    <img src="Synchronized_Used_In_The_Block_Second.PNG" width="500" alt="Threads resource"/>
+    <img src="Synchronized_Used_In_The_Block_Second.PNG" width="600" alt="Threads resource"/>
 </div>
 
 1. If the `Thread A` is executing either `method1()` or `method2()` the `Thread B` is prevented to execute at all other methods. The locking is applied to the **object itself**, rather than **individual methods**!
-    - The term used here is **Monitor**.
+    - The term used here for this concept is **Monitor**.
+
+<p align="center">
+    <img src="Our_Critical_Section.PNG" width="500" alt="Threads resource"/>
+</p>
+
+1. We will apply our `synchronized` for our old user case!
+
+> [!IMPORTANT]
+> **Rule of Thumb (very important)**
+> One should be using `synchronize` where the **shared data is**, not **where it is used**!
+
+- We will be using `synchronized` **keyword** on the shared object.
+You can see it's now fixed.
+    - We are getting consistent results!
+
+<div align="center">
+    <img src="Using_Synchronized.gif" width="700" alt="Threads resource"/>
+</div>
+
+<details>
+<summary id="The factorial thread" open="true"> <b>Usage of synchronized key word in where data is shared! The Locking Monitor way!</b> </summary>
+
+````Java 
+/*
+ * Copyright (c) 2019-2023. Michael Pogrebinsky - Top Developer Academy
+ * https://topdeveloperacademy.com
+ * All rights reserved
+ */
+
+/**
+ * Resource Sharing & Introduction to Critical Sections
+ * https://www.udemy.com/java-multithreading-concurrency-performance-optimization
+ */
+public class Main {
+    public static void main(String[] args) throws InterruptedException {
+        InventoryCounter inventoryCounter = new InventoryCounter();
+        IncrementingThread incrementingThread = new IncrementingThread(inventoryCounter);
+        DecrementingThread decrementingThread = new DecrementingThread(inventoryCounter);
+
+        incrementingThread.start();
+        decrementingThread.start();
+
+        decrementingThread.join();
+        incrementingThread.join();
+
+        System.out.println("We currently have " + inventoryCounter.getItems() + " items");
+    }
+
+    public static class DecrementingThread extends Thread {
+
+        private InventoryCounter inventoryCounter;
+
+        public DecrementingThread(InventoryCounter inventoryCounter) {
+            this.inventoryCounter = inventoryCounter;
+        }
+
+        @Override
+        public void run() {
+            for (int i = 0; i < 10000; i++) {
+                inventoryCounter.decrement();
+            }
+        }
+    }
+
+    public static class IncrementingThread extends Thread {
+
+        private InventoryCounter inventoryCounter;
+
+        public IncrementingThread(InventoryCounter inventoryCounter) {
+            this.inventoryCounter = inventoryCounter;
+        }
+
+        @Override
+        public void run() {
+            for (int i = 0; i < 10000; i++) {
+                inventoryCounter.increment();
+            }
+        }
+    }
+
+    private static class InventoryCounter {
+        private int items = 0;
+
+        public synchronized void increment() {
+            items++;
+        }
+
+        public synchronized void decrement() {
+            items--;
+        }
+
+        public int getItems() {
+            return items;
+        }
+    }
+}
+````
+</details>
+
+- Second is the **Lock** way!
+
+<div align="center">
+    <img src="Synchronized_Used_In_The_Block_Using_Lock.PNG" width="700" alt="Threads resource"/>
+</div>
+
+1. We can use **Lock Objects** to block (synchronize) sections of code!
+    - This can be **any** Object!
+2. We lock **specified section**, from other threads to access it!
+
+<div align="center">
+    <img src="Using_Synchronized_As_Lock.gif" width="700" alt="Threads resource"/>
+</div>
+
+1. You can think as with the **Monitor** approach. This is equal to the approach in `2.`.
+2. `synchronized(this)` in the methods, which will be blocking the methods calls of other threads.
+
+- **Separate lock objects** = **better concurrency control**!
 
 # Quiz 6: Critical Section & Synchronization.
 

@@ -510,6 +510,10 @@ public class Main {
         decrementingThread.join();
         incrementingThread.join();
 ````
+
+> [!CAUTION]
+> We can see the inconsistency in the logs, this is during different executions!
+
 <div align="center">
     <img src="Two_Threads_Running_Separately_As_Both_Mofying_The_Values.gif" width="900"/>
 </div>
@@ -594,10 +598,7 @@ public class Main {
     }
 }
 ````
-</details
-
-> [!CAUTION]
-> We can see the inconsistency in the logs, this is du
+</details>
 
 <div align="center">
     <img src="What_We_Will_Learn_Atomic_Operation.PNG" width="700"/>
