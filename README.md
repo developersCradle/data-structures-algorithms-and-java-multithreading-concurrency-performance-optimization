@@ -69,6 +69,70 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 - [ ] Additional go thought [Future](https://www.baeldung.com/java-future).
 - [ ] Additional go thought `synchronized` [keyword](https://www.baeldung.com/java-synchronized).
 
+<hr>
+
+<details>
+
+<summary id="Cleaning" open="true"> <b>Cleaning process of the quizes and the exercices! </b></summary>
+<br>
+
+- Cleaning the numbering from the exercise and quizes, they should be `01` rather than `1` chapter by chapter:
+    - [ ] Chapter 01. 
+    - [ ] Chapter 02.
+    - [ ] Chapter 03.
+    - [ ] Chapter 04.
+    - [ ] Chapter 05.
+    - [ ] Chapter 06.
+    - [ ] Chapter 07.
+    - [ ] Chapter 08.
+    - [ ] Chapter 09.
+    - [ ] Chapter 10.
+    - [ ] Chapter 11.
+    - [ ] Chapter 12.
+</details>
+
+<details>
+
+<summary id="Cleaning" open="true"> <b>Cleaning process the images names! </b></summary>
+<br>
+
+- Cleaning the images in the format `Image_Next_Number`, this will be chapter by chapter:
+    - [ ] Chapter 01. 
+    - [ ] Chapter 02.
+    - [ ] Chapter 03.
+    - [ ] Chapter 04.
+    - [ ] Chapter 05.
+    - [ ] Chapter 06.
+    - [ ] Chapter 07.
+    - [ ] Chapter 08.
+    - [ ] Chapter 09.
+    - [ ] Chapter 10.
+    - [ ] Chapter 11.
+    - [ ] Chapter 12.
+</details>
+
+<details>
+
+<summary id="Cleaning" open="true"> <b>Cleaning the images with the ink! </b></summary>
+<br>
+
+- Bigger ink in the pictures, this will be chapter by chapter:
+    - [ ] Chapter 01. 
+    - [ ] Chapter 02.
+    - [ ] Chapter 03.
+    - [ ] Chapter 04.
+    - [ ] Chapter 05.
+    - [ ] Chapter 06.
+    - [ ] Chapter 07.
+    - [ ] Chapter 08.
+    - [ ] Chapter 09.
+    - [ ] Chapter 10.
+    - [ ] Chapter 11.
+    - [ ] Chapter 12.
+</details>
+
+<hr>
+
 #### The Quizzes and Labs.
 
 * **Section 01**:

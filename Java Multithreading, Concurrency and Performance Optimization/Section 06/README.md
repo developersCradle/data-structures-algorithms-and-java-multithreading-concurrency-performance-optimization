@@ -116,7 +116,7 @@ You can see it's now fixed.
 </div>
 
 <details>
-<summary id="The factorial thread" open="true"> <b>Usage of synchronized key word in where data is shared! The Locking Monitor way!</b> </summary>
+<summary id="The synchronized key word in locking monitor way!" open="true"> <b>Usage of synchronized key word in where data is shared! The Locking Monitor way!</b> </summary>
 
 ````Java 
 /*
@@ -364,12 +364,185 @@ public class Main {
 
 - Selvitä miksi tässä pitää käyttää synzhronized sanaa.
 
+> [!TIP]
+> *"Synchronized block is **Reentrant**
+**A thread cannot prevent itself from entering a critical section**"*
+
 <div align="center">
     <img src="Synchorinized_Block_Is_Reentrant.PNG" width="700" alt="Threads resource"/>
 </div>
 
+1. `Reentrant` in **Java context**: *Means that the same thread can enter a synchronized block or method it already holds the lock on*!
 
-# Quiz 6: Critical Section & Synchronization.
+<div align="center">
+    <img src="Synchronized_Threads_Are_Reentrant_In_This_Example_Accesssing_Multiple_Critical_Sections.PNG" width="700" alt="Threads resource"/>
+</div>
+
+1. In other words, the `Thread A` is able to access, both `synchronized` methods, while still proceeding on the other `synchronized` method.
+    - Thread **cannot prevent itself** to access another critical section!
+
+<div align="center">
+    <img src="Critical_Section_Summary.PNG" width="700" alt="Threads resource"/>
+</div>
+
+# Quiz 06: Critical Section & Synchronization.
+
+<details>
+<summary id="Thread progress
+" open="true"> <b>Question 01.</b> </summary>
+
+````yaml
+Question 01:
+Which statement is correct?
+````
+
+````Java
+public class Main {
+   public static void main(String [] args) {
+        SharedClass sharedObject = new SharedClass();
+ 
+        Thread thread1 = new Thread(() -> {
+            while (true) {
+                sharedObject.increment();
+            }
+        });
+ 
+        Thread thread2 = new Thread(() -> {
+            while (true) {
+                sharedObject.increment();
+            }
+        });
+ 
+        thread1.start();
+        thread2.start();
+    }
+ 
+    static class SharedClass {
+        private int counter = 0;
+ 
+        public synchronized void increment() {
+            this.counter++;
+        }
+    }
+}
+````
+
+- My answer:
+
+<div align="center">
+    <img src="Quiz 06/Q1.PNG" width="500"/>
+</div>
+
+1. The one **thread** can access **locked object** at the time. Since it was using the `synchronized` keyword in the method signature.
+
+</details>
+
+<details>
+
+<summary id="Thread progress
+" open="true"> <b>Question 02.</b> </summary>
+
+````yaml
+Question 02:
+Which one is true?
+````
+
+````Java
+public class Main {
+    public static void main(String [] args) {
+        SharedClass sharedObject = new SharedClass();
+ 
+        Thread thread1 = new Thread(() -> {
+            while (true) {
+                sharedObject.increment();
+            }
+        });
+ 
+        Thread thread2 = new Thread(() -> {
+            while (true) {
+                sharedObject.decrement();
+            }
+        });
+ 
+        thread1.start();
+        thread2.start();
+    }
+ 
+    static class SharedClass {
+        private int counter = 0;
+ 
+        public synchronized void increment() {
+            this.counter++;
+        }
+ 
+        public synchronized void decrement() {
+            this.counter--;
+        }
+    }
+}
+````
+
+- My answer:
+
+<div align="center">
+    <img src="Quiz 06/Q2.PNG" width="500"/>
+</div>
+
+1. Since the `sharedObject` is shared and the `synchronized` is behaving like the `synchronized(this)` for locking the class `SharedClass`.
+
+</details>
+
+<details>
+
+<summary id="Thread progress
+" open="true"> <b>Question 03.</b> </summary>
+
+````yaml
+Question 03:
+
+````
+
+````Java
+
+
+````
+
+- My answer:
+
+<div align="center">
+    <img src="Quiz 06/Q3.PNG" width="500"/>
+</div>
+
+1.
+</details>
+
+<details>
+
+<summary id="Thread progress
+" open="true"> <b>Question 04.</b> </summary>
+
+````yaml
+Question 04:
+
+````
+
+````Java
+
+
+````
+
+- My answer:
+
+<div align="center">
+    <img src="Quiz 06/Q4.PNG" width="500"/>
+</div>
+
+1.
+
+</details>
+
+
+
 
 # Atomic Operations, Volatile & Metrics Practical Example.
 
