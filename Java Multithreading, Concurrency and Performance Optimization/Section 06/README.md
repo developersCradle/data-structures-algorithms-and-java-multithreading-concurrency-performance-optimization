@@ -56,8 +56,8 @@ void aggregateFunction() {
     <img src="Synchorinized_Keyword.PNG" width="700" alt="Threads resource"/>
 </div>
 
-1. Simplest solution is to use `synchronized` **keyword**. This is **locking mechanism**!
-2. This is to prevent access to the **critical section** or to the **method** for the **single thread** at the time.
+1. Simplest solution is to use `synchronized` **keyword**. This is **locking mechanism**! 
+2. This is to prevent access to the **critical section** or to the **method** from the **multiple threads** at the time.
     - We have **two** ways to use this!
         - First the **Monitor** way!
         - Second the **Lock** way!
@@ -201,9 +201,12 @@ public class Main {
     <img src="Synchronized_Used_In_The_Block_Using_Lock.PNG" width="700" alt="Threads resource"/>
 </div>
 
-1. We can use **Lock Objects** to block (synchronize) sections of code!
+1. We can use **Lock Objects** to block (synchronize) **sections of code** and **not block whole method**, therefore we have better control over blocking! 
     - This can be **any** Object!
-2. We lock **specified section**, from other threads to access it!
+2. We lock **specified section**, from other threads to access it, as long the **Object locked**!
+
+> [!TIP]
+> **Separate lock objects** = **better concurrency control**!
 
 <div align="center">
     <img src="Using_Synchronized_As_Lock.gif" width="700" alt="Threads resource"/>
@@ -212,7 +215,159 @@ public class Main {
 1. You can think as with the **Monitor** approach. This is equal to the approach in `2.`.
 2. `synchronized(this)` in the methods, which will be blocking the methods calls of other threads.
 
-- **Separate lock objects** = **better concurrency control**!
+<div align="center">
+    <img src="We_Can_Have_More_Flexibility_In_Our_Code_When_Blocking.PNG" width="700" alt="Threads resource"/>
+</div>
+
+1. With this approach, we can have much more flexibility in our **blocking**.
+    - We can have **multiple critical sections**, which are `synchronize`:d into **multiple different objects** in the same class!
+
+<div align="center">
+    <img src="Using_Synchronized_As_Lock_With_Multiple_Blocking_Objects.gif" width="700" alt="Threads resource"/>
+</div>
+
+1. While `Thread A` will be accessing the `method1()`'s critical section. The `Thread B` will be accessing the `method2()`'s critical section.
+2. Once the `Thread B` tries to the access the section where the `Thread A` is currently executing. The `Thread B` will get the access **blocked** and need to wait for the `Thread  A` to finish its **execution** of the **critical section**.
+
+<div align="center">
+    <img src="We_Can_Spesify_The_Section_Of_The_Code_The_Concurrent_Execution.PNG" width="700" alt="Threads resource"/>
+</div>
+
+1. With this, we can separate the **blocked** code section to **bare minimum**. This example inside method.
+2. We should always try to **reduce** the **critical section** to be `synchorinized` rather than `synchorinize` whole method.  
+    - With this, we can execute more code **concurrently** and **less code** needs to be waited by the other threads.
+
+- Below the example where we are **blocking**, for the **specified** code section! We just modify the previous example, main changes:
+    - First we create the **Lock Object**:
+    ````
+    // The lock Object!
+    Object lock = new Object();
+    ````
+    - `public  void decrement()`:
+    ````
+    public  void decrement() {
+                synchronized (this.lock){
+                    items--;
+                }
+            }
+    ````
+    - `public void increment()`:
+    ````
+    public void increment() {
+            synchronized (this.lock){
+                items++;
+            }
+        }
+    ````
+    - `public int getItems()`:
+    ````
+        public int getItems() {
+            synchronized (this.lock){
+                return items;
+            }
+        }
+    ````
+
+<div align="center">
+    <img src="Using_Synchronized_As_Lock_With_Multiple_Blocking_Objects_Code_Example.gif" width="700" alt="Threads resource"/>
+</div>
+
+1. We can see that we are having **consistent** results with the **blocking separate codes**.
+<details>
+<summary id="The synchronized block" open="true"> <b>We are using the synchronized for blocking the some parts of critical section!</b> </summary>
+
+````Java
+/*
+ * Copyright (c) 2019-2023. Michael Pogrebinsky - Top Developer Academy
+ * https://topdeveloperacademy.com
+ * All rights reserved
+ */
+
+/**
+ * Resource Sharing & Introduction to Critical Sections
+ * https://www.udemy.com/java-multithreading-concurrency-performance-optimization
+ */
+public class Main {
+    public static void main(String[] args) throws InterruptedException {
+        InventoryCounter inventoryCounter = new InventoryCounter();
+        IncrementingThread incrementingThread = new IncrementingThread(inventoryCounter);
+        DecrementingThread decrementingThread = new DecrementingThread(inventoryCounter);
+
+        incrementingThread.start();
+        decrementingThread.start();
+
+        decrementingThread.join();
+        incrementingThread.join();
+
+        System.out.println("We currently have " + inventoryCounter.getItems() + " items");
+    }
+
+    public static class DecrementingThread extends Thread {
+
+        private InventoryCounter inventoryCounter;
+
+        public DecrementingThread(InventoryCounter inventoryCounter) {
+            this.inventoryCounter = inventoryCounter;
+        }
+
+        @Override
+        public void run() {
+            for (int i = 0; i < 10000; i++) {
+                inventoryCounter.decrement();
+            }
+        }
+    }
+
+    public static class IncrementingThread extends Thread {
+
+        private InventoryCounter inventoryCounter;
+
+        public IncrementingThread(InventoryCounter inventoryCounter) {
+            this.inventoryCounter = inventoryCounter;
+        }
+
+        @Override
+        public void run() {
+            for (int i = 0; i < 10000; i++) {
+                inventoryCounter.increment();
+            }
+        }
+    }
+
+    private static class InventoryCounter {
+        private int items = 0;
+
+        // The lock Object!
+        Object lock = new Object();
+
+        public void increment() {
+            synchronized (this.lock){
+                items++;
+            }
+        }
+
+        public  void decrement() {
+            synchronized (this.lock){
+                items--;
+            }
+        }
+
+        public int getItems() {
+            synchronized (this.lock){
+                return items;
+            }
+        }
+    }
+}
+````
+</details>
+
+- Selvitä miksi tässä pitää käyttää synzhronized sanaa.
+
+<div align="center">
+    <img src="Synchorinized_Block_Is_Reentrant.PNG" width="700" alt="Threads resource"/>
+</div>
+
 
 # Quiz 6: Critical Section & Synchronization.
 
