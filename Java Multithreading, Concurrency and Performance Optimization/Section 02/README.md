@@ -387,7 +387,7 @@ public class Main {
     <img src="hackerWin.gif"  alt="Java threads." width="500"/>
 </div>
 
-# Quiz 2: Thread Creation.
+# Quiz 02: Thread Creation.
 
 <details>
 
@@ -402,7 +402,7 @@ How does the Operating System decide what thread to schedule?
 - My answer:
 
 <div align="center">
-    <img src="Quiz 01/Q03.PNG" width="500"/>
+    <img src="Quiz 02/Q1.PNG" width="500"/>
 </div>
 
 1. The Operating System decides which thread to run next using the scheduler, based on scheduling algorithms and system state.
@@ -415,25 +415,22 @@ How does the Operating System decide what thread to schedule?
 " open="true"> <b>Question 02.</b> </summary>
 
 ````yaml
-Question 01:
+Question 02:
 How does the Operating System decide what thread to schedule?
 ````
 
 - My answer:
 
 <div align="center">
-    <img src="Quiz 01/Q03.PNG" width="500"/>
+    <img src="Quiz 02/Q2.PNG" width="500"/>
 </div>
+
 
 1. The Operating System decides which thread to run next using the scheduler, based on scheduling algorithms and system state.
 
 </details>
 
-
-
-
-
-# Coding Exercise 1: Thread Creation - MultiExecutor.
+# Coding Exercise 01: Thread Creation - MultiExecutor.
 
 <div align="center">
     <img src="ThreadCreationExercise.PNG"  alt="Java threads." width="500"/>

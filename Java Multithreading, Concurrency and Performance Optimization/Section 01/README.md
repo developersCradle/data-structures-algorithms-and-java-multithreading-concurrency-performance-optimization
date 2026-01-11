@@ -82,7 +82,7 @@ Introduction.
     <img src="multithreadingCaveat.PNG"  alt="Java threads." width="500"/>
 </div>
 
-1. **Multithreaded** programming is different than the **single threading**.
+1. **Multithreaded** programming is different from the **single threading**.
 
 <div align="center">
     <img src="whatWeWillLearnNextStep.PNG"  alt="Java threads." width="500"/>
@@ -282,7 +282,7 @@ Introduction.
     - [Fair Scheduler](https://developer.ibm.com/tutorials/l-completely-fair-scheduler/).
     - [Tread State](https://docs.oracle.com/javase/8/docs/api/java/lang/Thread.State.html).
 
-# Quiz 1: Threading and Operating Systems Fundamentals Quiz.
+# Quiz 01: Threading and Operating Systems Fundamentals Quiz.
 
 <details>
 
@@ -290,7 +290,7 @@ Introduction.
 " open="true"> <b>Question 01.</b> </summary>
 
 ````yaml
-Question 1:
+Question 01:
 Why do we want to use multiple threads in an application?
 ````
 
@@ -300,7 +300,7 @@ Why do we want to use multiple threads in an application?
     <img src="Quiz 01/Q01.PNG" width="500"/>
 </div>
 
-1. By using multiple threads allows an application to handle several tasks at once, enhancing responsiveness and potentially increasing performance through concurrent execution.
+1. By using **multiple threads** allows an application to handle several tasks at once, enhancing responsiveness and potentially increasing performance through concurrent execution.
 
 </details>
 
@@ -310,7 +310,7 @@ Why do we want to use multiple threads in an application?
 " open="true"> <b>Question 02.</b> </summary>
 
 ````yaml
-Question 1:
+Question 02:
 Multiple threads in a single process share
 ````
 
@@ -320,12 +320,13 @@ Multiple threads in a single process share
     <img src="Quiz 01/Q02.PNG" width="500"/>
 </div>
 
-1. The Code `2.` means as following, we can execute threads using the same code. 
+1. The Code `2.` means as following, we can execute threads using the same code:
 
 ````Java
 thread1 -> add(1, 2)
 thread2 -> add(5, 6)
 ````
+- The `add(...)` is being re-used!
 
 </details>
 
@@ -335,7 +336,7 @@ thread2 -> add(5, 6)
 " open="true"> <b>Question 03.</b> </summary>
 
 ````yaml
-Question 3:
+Question 03:
 How does the Operating System decide what thread to schedule?
 ````
 
@@ -345,7 +346,7 @@ How does the Operating System decide what thread to schedule?
     <img src="Quiz 01/Q03.PNG" width="500"/>
 </div>
 
-1. The Operating System decides which thread to run next using the scheduler, based on scheduling algorithms and system state.
+1. The **O**perating **S**ystem decides which thread to run next using the scheduler, based on **scheduling algorithms** and **system state**.
 
 </details>
 

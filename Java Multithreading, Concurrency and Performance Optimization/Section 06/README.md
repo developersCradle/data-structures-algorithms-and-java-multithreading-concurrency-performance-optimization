@@ -44,7 +44,7 @@ void aggregateFunction() {
 1. Once the `Thread A` finishes the **critical section**, the second **thread** `Thread B` can access the **critical section** and perform all the operations!
 
 > [!TIP]
-> **Remember** these concepts are the **same** regardless of the language. They might be in different flavor or API.
+> **Remember** these concepts are the **same** regardless of the language. They might be in some different *flavor* or *API's*.
 
 <div align="center">
     <img src="What_We_Will_Learn_Next_Synchronized.PNG" width="700" alt="Threads resource"/>
@@ -430,7 +430,7 @@ public class Main {
 - My answer:
 
 <div align="center">
-    <img src="Quiz 06/Q1.PNG" width="500"/>
+    <img src="Quiz 06/Q1.PNG" width="500" alt="Threads resource"/>
 </div>
 
 1. The one **thread** can access **locked object** at the time. Since it was using the `synchronized` keyword in the method signature.
@@ -485,11 +485,10 @@ public class Main {
 - My answer:
 
 <div align="center">
-    <img src="Quiz 06/Q2.PNG" width="500"/>
+    <img src="Quiz 06/Q3.PNG" width="500" alt="Threads resource"/>
 </div>
 
-1. Since the `sharedObject` is shared and the `synchronized` is behaving like the `synchronized(this)` for locking the class `SharedClass`.
-
+1. Since the `sharedObject` is shared and the `synchronized` is behaving like the `synchronized(this)` for locking the object `SharedClass` for only **one thread** per time!
 </details>
 
 <details>
@@ -499,21 +498,49 @@ public class Main {
 
 ````yaml
 Question 03:
-
+Which statement is correct?
 ````
 
 ````Java
-
-
+public class Main {
+    public static void main(String [] args) {
+        SharedClass sharedObject1 = new SharedClass();
+        SharedClass sharedObject2 = new SharedClass();
+ 
+        Thread thread1 = new Thread(() -> {
+            while (true) {
+                sharedObject1.increment();
+            }
+        });
+ 
+        Thread thread2 = new Thread(() -> {
+            while (true) {
+                sharedObject2.increment();
+            }
+        });
+ 
+        thread1.start();
+        thread2.start();
+    }
+ 
+    static class SharedClass {
+        private int counter = 0;
+ 
+        public synchronized void increment() {
+            this.counter++;
+        }
+    }
+}
 ````
 
 - My answer:
 
 <div align="center">
-    <img src="Quiz 06/Q3.PNG" width="500"/>
+    <img src="Quiz 06/Q3.PNG" width="500" alt="Threads resource"/>
 </div>
 
-1.
+1. When `thread1` is executing `sharedObject1.increment();`, `thread2` can execute `sharedObject2.increment();`, since synchronization happens on the **object level**, and `thread1` and `thread2` are operating on two different, independent objects. That's right!
+
 </details>
 
 <details>
@@ -523,28 +550,109 @@ Question 03:
 
 ````yaml
 Question 04:
-
+Which statement is the most correct?
 ````
 
 ````Java
-
-
+public class Main {
+    public static void main(String [] args) {
+        SharedClass sharedObject = new SharedClass();
+ 
+        Thread thread1 = new Thread(() -> {
+            while (true) {
+                sharedObject.incrementCounter1();
+            }
+        });
+ 
+        Thread thread2 = new Thread(() -> {
+            while (true) {
+                sharedObject.incrementCounter2();
+            }
+        });
+ 
+        thread1.start();
+        thread2.start();
+    }
+ 
+    static class SharedClass {
+        private int counter1 = 0;
+        private int counter2 = 0;
+ 
+        private Object lock1 = new Object();
+        private Object lock2 = new Object();
+ 
+        public void incrementCounter1() {
+            synchronized (lock1) {
+                this.counter1++;
+            }
+        }
+ 
+        public void incrementCounter2() {
+            synchronized (lock2) {
+                this.counter2++;
+            }
+        }
+    }
+}
 ````
 
 - My answer:
 
 <div align="center">
-    <img src="Quiz 06/Q4.PNG" width="500"/>
+    <img src="Quiz 06/Q4.PNG" width="500" alt="Threads resource"/>
 </div>
 
-1.
-
+1. When `thread1` is executing `sharedObject.incrementCounter1();`, `thread2` can execute `sharedObject.incrementCounter2();`. That is because the synchronized blocks inside those methods, synchronize on different lock objects.
 </details>
 
 
-
-
 # Atomic Operations, Volatile & Metrics Practical Example.
+
+<div align="center">
+    <img src="What_We_Will_Learn_Next_Atomic_Operations.PNG" width="500"alt="Threads resource"/>
+</div>
+
+1. How do we know which operations are **atomic** are which are not?!
+
+<div align="center">
+    <img src="Extremem_Defensive_Approach.PNG" width="500" alt="Threads resource"/>
+</div>
+
+1. **First** we are exploring the extreme **defensive** approach!
+    - In this one we will be making every method `synchronized`.
+
+- Next we will be illustrating the **chart** of the **synchronization**.
+    - In here we are creating **4 threads** in which we have added `synchronized` to each of them:
+        - One **thread** in **yellow**.
+        - Second **thread** one in **purple**.
+        - Third **thread** one in **cyan**.
+        - Fourth **thread** one in **green**.
+
+<div align="center">
+    <img src="Why_To_Synchronize_Illustration.PNG" width="500" alt="Threads resource"/>
+</div>
+
+- Todo check this form chatGbt.
+
+1. Currently, the **execution** chart looks like such!
+    - This scenario we have **no parallel execution**
+    - We are paying the cost of **context switching** and the **memory overhead**!
+
+- All of this, for maintaining **multiple threads**! 
+
+<div align="center">
+    <img src="Why_To_Synchronize_Illustration_What_We_Would_Prefer.PNG" width="500" alt="Threads resource"/>
+</div>
+
+- Todo this one
+
+<div align="center">
+    <img src="Atomic_Operations.PNG" width="500" alt="Threads resource"/>
+</div>
+
+1. Let's identify, which operations are **atomic**!
+2. Fact is, that the most of the operations are **NOT** atomic!
+
 
 # Quiz 7: Atomic Operations, Volatile & Metrics Practical Example.
 

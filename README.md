@@ -21,7 +21,7 @@
 
 All course material from Java Multithreading, Concurrency & Performance Optimization by **Michael Pogrebinsky** and **Top Developer Academy LLC**.
 
-> We were working with an old legacy system that was making two concurrent calls to a shared resource, causing inconsistent results that only appeared sometimes. The issue was subtle and difficult to reproduce, making it even harder to diagnose. What made it event harder was it was runnable on our local environment! 
+> We were working with an old legacy system that was making two concurrent calls to a shared resource, causing inconsistent results that only appeared sometimes. The issue was subtle and difficult to reproduce, making it even harder to diagnose. What made it even harder was not runnable on our local environment! 
 >
 > A recent course I had taken on `Java Multithreading and Concurrency` proved invaluable. It helped me identify the race condition and apply the `synchronized` keyword correctly to control access to the critical section. With proper thread coordination in place, the system stabilized without requiring a major rewrite of the legacy code.<br><br>
 ~ *DevelopersCradle*
@@ -77,7 +77,7 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 <br>
 
 - Cleaning the numbering from the exercise and quizes, they should be `01` rather than `1` chapter by chapter:
-    - [ ] Chapter 01. 
+    - [x] Chapter 01.
     - [ ] Chapter 02.
     - [ ] Chapter 03.
     - [ ] Chapter 04.
@@ -113,7 +113,7 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 <details>
 
-<summary id="Cleaning" open="true"> <b>Cleaning the images with the ink! </b></summary>
+<summary id="Cleaning" open="true"> <b>Cleaning the images with the link and right alt tag! </b></summary>
 <br>
 
 - Bigger ink in the pictures, this will be chapter by chapter:
@@ -137,10 +137,12 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 * **Section 01**:
     * *Quiz*:
-        * [Quiz 1: Threading and Operating Systems Fundamentals](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading%2C%20Concurrency%20and%20Performance%20Optimization/Section%2001#quiz-1-threading-and-operating-systems-fundamentals-quiz).
+        * [Quiz 01: Threading and Operating Systems Fundamentals](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading%2C%20Concurrency%20and%20Performance%20Optimization/Section%2001#quiz-1-threading-and-operating-systems-fundamentals-quiz).
 * **Section 02**:
     * *Quiz*:
-        * [Some here](#).
+        * [Quiz 02: Thread Creation](#).
+     * *Coding Exercise*:
+        * [Coding Exercise 01: Thread Creation - MultiExecutor](#).
 * **Section 03**:
     * *Quiz*:
         * [Some here](#).
