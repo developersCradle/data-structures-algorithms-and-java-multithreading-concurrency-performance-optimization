@@ -632,8 +632,6 @@ public class Main {
     <img src="Why_To_Synchronize_Illustration.PNG" width="500" alt="Threads resource"/>
 </div>
 
-- Todo check this form chatGbt.
-
 1. Currently, the **execution** chart looks like such!
     - This scenario we have **no parallel execution**
     - We are paying the cost of **context switching** and the **memory overhead**!
@@ -644,7 +642,11 @@ public class Main {
     <img src="Why_To_Synchronize_Illustration_What_We_Would_Prefer.PNG" width="500" alt="Threads resource"/>
 </div>
 
-- Todo this one
+- We are **preferring** this overall picture!
+
+- Todo Tsekkaa tämä
+
+- We should actually use the `synchronization` as little as possible.
 
 <div align="center">
     <img src="Atomic_Operations.PNG" width="500" alt="Threads resource"/>
@@ -652,6 +654,38 @@ public class Main {
 
 1. Let's identify, which operations are **atomic**!
 2. Fact is, that the most of the operations are **NOT** atomic!
+
+> [!TIP]
+> 💡 Whenever **multiple threads modify a shared variable**, and the operation is **non-atomic**, you risk lost updates. 💡
+
+That’s exactly why count++ often gives less than 2000 in your example.
+
+````
+int count = 0; Runnable task = () ->
+    {
+        for (int i = 0; i < 1000; i++)
+        { 
+            count++; // Not atomic!
+        } 
+    }; 
+Thread t1 = new Thread(task);
+Thread t2 = new Thread(task);
+t1.start();
+t2.start();
+t1.join();
+t2.join();
+System.out.println(count); // Often less than 2000!
+````
+
+<div align="center">
+    <img src="Atomic_Operations.PNG" width="500" alt="Threads resource"/>
+</div>
+
+<div align="center">
+    <img src="Assigment_Operation_Atomic.PNG" width="500" alt="Threads resource"/>
+</div>
+
+1.
 
 
 # Quiz 7: Atomic Operations, Volatile & Metrics Practical Example.

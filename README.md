@@ -353,7 +353,6 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
     * *Coding Exercise*:
         * [Some here](#).
 
-
 <p align="center">
     <img src="Data_Structures_And_Algorithms_With_Visualizations_With_Java_Caption.png" alt="Data_Structures_And_Algorithms_With_Visualizations_With_Java_Caption.png" style="width:950px;height:130px;"/>
 </p>
@@ -650,7 +649,6 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 All course material from A Comprehensive Introduction to Java Virtual Machine (JVM) by **Dheeru Mundluru**.
 
-
 > Once I saw one <b>requirement</b> in the job posting, this lead me get more comfortable at the JVM internals.
 >
 >*"How you would tune the JVM for Garbage Collection (GC) overhead in latency-sensitive applications?"*
@@ -690,7 +688,19 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 #### Additional stuff.
 
-- [ ] Add some.
+- [ ] After this answer, the questions from Sony!
+
+<details>
+
+<summary id="Sony interview questions" open="true"> <i>The requirements, which drove me to pursies this course, from <b>Sony!</b></summary>
+
+<br>
+
+<p align="center">
+    <img src="SonyQuestions.PNG" alt="Sony questions." width="400"/>
+</p>
+
+</details>
 
 #### The Quizzes and Labs.
 
@@ -699,9 +709,6 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
         * [Some here](#).
     * *Coding Exercise*:
         * [Some here](#).
-
-
-
 
 <p align="center">
     <img id="Performance Optimization" src="How_I_Got_Good_At_Algorithms_And_Data_Structures_Caption.png" style=" width: 900px; height: 100px">
