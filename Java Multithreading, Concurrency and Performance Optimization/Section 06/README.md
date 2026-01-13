@@ -21,7 +21,7 @@ The Concurrency Challenges & Solutions.
 - We would need to execute **set** of operation, which would need to be executed as **single atomic operation**.
     - **Two** threads could be performing these set of codes **at the same time**. Example set of operations below:
 
-````
+````Java
 void aggregateFunction() {
     operation1();
     operation2();
@@ -70,7 +70,7 @@ void aggregateFunction() {
     - `synchronized` ensures that only **one thread** at a time can execute any synchronized method of that particular object instance (`method1()`, `method2()`, etc.). Other threads must wait until the monitor (lock) is released.
     - Only *one* **synchronized method** can be run at a time:
 
-    ````
+    ````Java
     ClassWithCriticalSections obj = new ClassWithCriticalSections();
 
     Thread t1 = new Thread(() -> obj.method1()); // This works.
@@ -80,7 +80,7 @@ void aggregateFunction() {
     t2.start(); // This wont work!
     ````
     - We could start `a.method1()` and `b.method1()` at the same time, since `synchronized` keyword **locks the object**, **not the class**! Example in below:
-    ````
+    ````Java
     ClassWithCriticalSections obj1 = new ClassWithCriticalSections();
     ClassWithCriticalSections obj2 = new ClassWithCriticalSections();
 
@@ -239,12 +239,12 @@ public class Main {
 
 - Below the example where we are **blocking**, for the **specified** code section! We just modify the previous example, main changes:
     - First we create the **Lock Object**:
-    ````
+    ````Java
     // The lock Object!
     Object lock = new Object();
     ````
     - `public  void decrement()`:
-    ````
+    ````Java
     public  void decrement() {
                 synchronized (this.lock){
                     items--;
@@ -252,7 +252,7 @@ public class Main {
             }
     ````
     - `public void increment()`:
-    ````
+    ````Java
     public void increment() {
             synchronized (this.lock){
                 items++;
@@ -260,7 +260,7 @@ public class Main {
         }
     ````
     - `public int getItems()`:
-    ````
+    ````Java
         public int getItems() {
             synchronized (this.lock){
                 return items;
@@ -658,9 +658,9 @@ public class Main {
 > [!TIP]
 > 💡 Whenever **multiple threads modify a shared variable**, and the operation is **non-atomic**, you risk lost updates. 💡
 
-That’s exactly why count++ often gives less than 2000 in your example.
+- Example below of what can happen, when there is **non-atomic** variable!
 
-````
+````Java
 int count = 0; Runnable task = () ->
     {
         for (int i = 0; i < 1000; i++)
@@ -677,6 +677,8 @@ t2.join();
 System.out.println(count); // Often less than 2000!
 ````
 
+ - `count++` often gives less than *2000* in your example.
+
 <div align="center">
     <img src="Atomic_Operations.PNG" width="500" alt="Threads resource"/>
 </div>
@@ -685,8 +687,116 @@ System.out.println(count); // Often less than 2000!
     <img src="Assigment_Operation_Atomic.PNG" width="500" alt="Threads resource"/>
 </div>
 
-1.
+1. We can make **assignments** like `a = b` assignment in single operation safely! 
 
+<div align="center">
+    <img src="Assigment_Operation_Atomic.PNG" width="500" alt="Threads resource"/>
+</div>
+
+<div align="center">
+    <img src="Atomic_Operations_Assigment.PNG" width="500" alt="Threads resource"/>
+</div>
+
+1. All **reads** and **writes** of reference variables are **atomic**!
+    - So naturally getter and setter are also!
+
+- Check these ones.
+
+<div align="center">
+    <img src="Atomic_Operations_Primitives.PNG" width="500" alt="Threads resource"/>
+</div>
+
+1. All **reads** and **writes** of **primitive variables** (except **long** and **double**) are **atomic**.
+
+2. **reading** and **writing** from primitives are atomic, such as these. 
+
+<div align="center">
+    <img src="Atomic_Operation_For_The_Long_And_Double.PNG" width="500" alt="Threads resource"/>
+</div>
+
+1. Since the **long** and **double** are `64` bits long, it's **not** guaranteed for **one operation** is **atomic**! This usually takes **two operations** since:
+    - The one writes to the`lower` **32** bits and another writes to the `upper` **32** bits.
+
+- Operation as [non-atomic](https://docs.oracle.com/javase/specs/jls/se7/html/jls-17.html#jls-17.7) documentation
+
+<div align="center">
+    <img src="What_We_Will_Learn_Next_Volitile_For_Double_And_Float.PNG" width="500" alt="Threads resource"/>
+</div>
+
+1. Next we will be checking the **Volatile** for the `double` and `long`!
+
+<div align="center">
+    <img src="Atomic_Operation_Volatile_Double_Float.PNG" width="500" alt="Threads resource"/>
+</div>
+
+1. If we define with the `volatile` they will make these variables **atomic** and **thread safe**!
+
+<div align="center">
+    <img src="Atomic_Operation_Libraries.PNG" width="500" alt="Threads resource"/>
+</div>
+
+1. There are more classes that make the other **non-atomic** operations to **atomic**. 
+    - We are currently touching the base understanding of **atomic operations**.
+
+<div align="center">
+    <img src="What_We_Will_Learn_Next_Is_Metric_Use_Case.PNG" width="500" alt="Threads resource"/>
+</div>
+
+1. We will be checking the how to have **some metric units** for example the production. 
+
+<div align="center">
+    <img src="Use_Case_Of_The_Metric.PNG" width="500" alt="Threads resource"/>
+</div>
+
+1. Furthermore, we can use ways to get *how long something took?*
+    - For the **important operations**.
+
+- ChatGbt check this.
+
+- How we should make following:
+
+````Java
+    public static class Metrics {
+        private long count = 0;
+        private double average = 0.0;
+
+        public void addSample(long sample) {
+            double currentSum = average * count;
+            count++;
+            average = (currentSum + sample) / count;
+        }
+
+        public double getAverage()
+        {
+            return average;
+        }
+    }
+````
+
+- To following code, which is **thread safe**:
+
+````Java
+public static class Metrics {
+        private long count = 0;
+        private volatile double average = 0.0;
+
+        public synchronized void addSample(long sample) {
+            double currentSum = average * count;
+            count++;
+            average = (currentSum + sample) / count;
+        }
+
+        public double getAverage() {
+            return average;
+        }
+    }
+````
+
+- We are adding `volatile` to the `double`. Since it should be up-to-date with other threads.
+    - Every **read** of `average` comes from main memory.
+    - The value written inside the synchronized block is visible to all threads.
+
+- The `addSample()` should be `synchronized`, since there are of shared variables!
 
 # Quiz 7: Atomic Operations, Volatile & Metrics Practical Example.
 
