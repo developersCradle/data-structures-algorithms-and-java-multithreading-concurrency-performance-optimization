@@ -868,7 +868,9 @@ $$
 \text{result} = \text{base}_1^{\text{power}_1} + \text{base}_2^{\text{power}_2}
 $$
 
+
 - Where the **constraints**:
+
 
 $$
 \text{base}_1 \ge 0,\quad
@@ -886,11 +888,18 @@ $$
  
 - The **formula** for the **calculation**:
 
+<br>
+
+
 $$
 \text{result} = \text{base}_1^{\text{power}_1} + \text{base}_2^{\text{power}_2}
 $$
 
+<br>
+
 - Where the **constraints**:
+
+<br>
 
 $$
 \text{base}_1 \ge 0,\quad
@@ -898,6 +907,8 @@ $$
 \text{power}_1 \ge 0,\quad
 \text{power}_2 \ge 0
 $$
+
+<br>
 
 ```Java
 
