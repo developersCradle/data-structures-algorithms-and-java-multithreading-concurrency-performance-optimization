@@ -453,7 +453,7 @@ Please choose the correct statement.
 - My answer:
 
 <div align="center">
-    <img src="Quiz 03/Q1.PNG" width="600"/>
+    <img src="Quiz_03/Q1.PNG" width="600"/>
 </div>
 
 1. That's correct, the only way to programmatically stop the application is to make the thread a daemon. Unfortunately `System.in.read()` does not respond to `Thread.interrupt();`
@@ -493,7 +493,7 @@ Please choose the correct statement.
 - My answer:
 
 <div align="center">
-    <img src="Quiz 03/Q2.PNG" width="500"/>
+    <img src="Quiz_03/Q2.PNG" width="500"/>
 </div>
 
 1. That is correct. As a rule of thumb, never leave a catch block empty, and use the `InterruptedException`
