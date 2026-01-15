@@ -414,6 +414,98 @@ public class Main2 {
     <img src="summary.PNG"  alt="Java threads." width="700"/>
 </div>
 
+# Quiz 03: Thread Termination & Daemon Threads.
+
+<details>
+
+<summary id="Thread progress
+" open="true"> <b>Question 01.</b> </summary>
+
+````yaml
+Question 01:
+Please choose the correct statement.
+````
+
+````Java
+ public static void main(String [] args) {
+        Thread thread = new Thread(new WaitingForUserInput());
+        thread.setName("InputWaitingThread");
+        thread.start();
+    }
+ 
+    private static class WaitingForUserInput implements Runnable {
+        @Override
+        public void run() {
+            try {
+                while (true) {
+                    char input = (char) System.in.read();
+                    if(input == 'q') {
+                        return;
+                    }
+                }
+            } catch (IOException e) {
+                System.out.println("An exception was caught " + e);
+            };
+        }
+    }
+````
+
+- My answer:
+
+<div align="center">
+    <img src="Quiz 03/Q1.PNG" width="600"/>
+</div>
+
+1. That's correct, the only way to programmatically stop the application is to make the thread a daemon. Unfortunately `System.in.read()` does not respond to `Thread.interrupt();`
+
+</details>
+
+<details>
+
+
+<summary id="Thread progress
+" open="true"> <b>Question 02.</b> </summary>
+
+````yaml
+Question 02:
+Please choose the correct statement.
+````
+
+````Java
+    public static void main(String [] args) {
+        Thread thread = new Thread(new SleepingThread());
+        thread.start();
+        thread.interrupt();
+    }
+ 
+    private static class SleepingThread implements Runnable {
+        @Override
+        public void run() {
+            while (true) {
+                try {
+                    Thread.sleep(1000000);
+                } catch (InterruptedException e) {
+                }
+            }
+        }
+    }
+````
+
+- My answer:
+
+<div align="center">
+    <img src="Quiz 03/Q2.PNG" width="500"/>
+</div>
+
+
+1. That is correct. As a rule of thumb, never leave a catch block empty, and use the `InterruptedException`
+ catch block to gracefully stop the current thread (by adding some print or cleaning code before returning from the run method).
+
+> [!TIP]
+> As a **rule of thumb**, never leave a `catch` `block` empty, and use the `InterruptedException` `catch` `block` to gracefully stop the current thread (by adding some print or cleaning code before returning from the run method).
+
+</details>
+
 # Joining Threads.
 
 <div align="center">
@@ -771,6 +863,20 @@ public class ComplexCalculation {
 
 # Coding Exercise 02: Multithreaded Calculation.
 
+
+$$
+\text{result} = \text{base}_1^{\text{power}_1} + \text{base}_2^{\text{power}_2}
+$$
+
+- Where the **constraints**:
+
+$$
+\text{base}_1 \ge 0,\quad
+\text{base}_2 \ge 0,\quad
+\text{power}_1 \ge 0,\quad
+\text{power}_2 \ge 0
+$$
+
 <details>
 <summary id="The factorial thread" open="true"> <b>Coding Exercise 02: Multithreaded Calculation! My Answer!</b> </summary>
 
@@ -992,5 +1098,4 @@ public class ComplexCalculation {
         }
     }
 }
-
 ```

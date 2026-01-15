@@ -137,17 +137,18 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 * **Section 01**:
     * *Quiz*:
-        * [Quiz 01: Threading and Operating Systems Fundamentals](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading%2C%20Concurrency%20and%20Performance%20Optimization/Section%2001#quiz-1-threading-and-operating-systems-fundamentals-quiz).
+        * [Quiz 01: Threading and Operating Systems Fundamentals](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading%2C%20Concurrency%20and%20Performance%20Optimization/Section%2001#quiz-01-threading-and-operating-systems-fundamentals-quiz).
 * **Section 02**:
     * *Quiz*:
         * [Quiz 02: Thread Creation](#).
      * *Coding Exercise*:
-        * [Coding Exercise 01: Thread Creation - MultiExecutor](#).
+        * [Coding Exercise 02: Multithreaded Calculation](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading%2C%20Concurrency%20and%20Performance%20Optimization/Section%2003#coding-exercise-02-multithreaded-calculation).
 * **Section 03**:
     * *Quiz*:
         * [Some here](#).
     * *Coding Exercise*:
-        * [Coding Exercise 2: Multithreaded Calculation](#).
+        * [Coding Exercise 02: Multithreaded Calculation](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading,%20Concurrency%20and%20Performance%20Optimization/Section%2003#coding-exercise-02-multithreaded-calculation).
+        * [Coding Exercise 02: Multithreaded Calculation - Solution](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading,%20Concurrency%20and%20Performance%20Optimization/Section%2003#coding-exercise-02-multithreaded-calculation---solution).
 * **Section 04**:
     * *Quiz*:
         * [Some here](#).
