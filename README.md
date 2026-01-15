@@ -79,7 +79,7 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 - Cleaning the numbering from the exercise and quizes, they should be `01` rather than `1` chapter by chapter:
     - [x] Chapter 01.
     - [ ] Chapter 02.
-    - [ ] Chapter 03.
+    - [x] Chapter 03.
     - [ ] Chapter 04.
     - [ ] Chapter 05.
     - [ ] Chapter 06.
@@ -145,7 +145,7 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
         * [Coding Exercise 02: Multithreaded Calculation](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading%2C%20Concurrency%20and%20Performance%20Optimization/Section%2003#coding-exercise-02-multithreaded-calculation).
 * **Section 03**:
     * *Quiz*:
-        * [Some here](#).
+        * [Quiz 03: Thread Termination & Daemon Threads](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading,%20Concurrency%20and%20Performance%20Optimization/Section%2003#quiz-03-thread-termination--daemon-threads).
     * *Coding Exercise*:
         * [Coding Exercise 02: Multithreaded Calculation](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading,%20Concurrency%20and%20Performance%20Optimization/Section%2003#coding-exercise-02-multithreaded-calculation).
         * [Coding Exercise 02: Multithreaded Calculation - Solution](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading,%20Concurrency%20and%20Performance%20Optimization/Section%2003#coding-exercise-02-multithreaded-calculation---solution).

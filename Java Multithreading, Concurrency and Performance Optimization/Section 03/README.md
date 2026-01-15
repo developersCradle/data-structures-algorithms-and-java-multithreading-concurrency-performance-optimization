@@ -462,7 +462,6 @@ Please choose the correct statement.
 
 <details>
 
-
 <summary id="Thread progress
 " open="true"> <b>Question 02.</b> </summary>
 
@@ -496,7 +495,6 @@ Please choose the correct statement.
 <div align="center">
     <img src="Quiz 03/Q2.PNG" width="500"/>
 </div>
-
 
 1. That is correct. As a rule of thumb, never leave a catch block empty, and use the `InterruptedException`
  catch block to gracefully stop the current thread (by adding some print or cleaning code before returning from the run method).
@@ -863,14 +861,13 @@ public class ComplexCalculation {
 
 # Coding Exercise 02: Multithreaded Calculation.
 
+- The **formula** for the **calculation**:
 
 $$
 \text{result} = \text{base}_1^{\text{power}_1} + \text{base}_2^{\text{power}_2}
 $$
 
-
 - Where the **constraints**:
-
 
 $$
 \text{base}_1 \ge 0,\quad
@@ -886,30 +883,6 @@ $$
     <img src="Multithreaded_Exercise_Coding_Exercise_02.PNG"  alt="Java threads." width="500"/>
 </div>
  
-- The **formula** for the **calculation**:
-
-<br>
-
-
-$$
-\text{result} = \text{base}_1^{\text{power}_1} + \text{base}_2^{\text{power}_2}
-$$
-
-<br>
-
-- Where the **constraints**:
-
-<br>
-
-$$
-\text{base}_1 \ge 0,\quad
-\text{base}_2 \ge 0,\quad
-\text{power}_1 \ge 0,\quad
-\text{power}_2 \ge 0
-$$
-
-<br>
-
 ```Java
 
 import java.math.BigInteger;
@@ -966,8 +939,6 @@ public class Main {
 
         System.out.println(result);
     }
-
-
 }
 
 class ComplexCalculation {
@@ -1036,13 +1007,6 @@ class ComplexCalculation {
 
 # Coding Exercise 02: Multithreaded Calculation - Solution.
 
-<details>
-<summary id="The factorial thread" open="true"> <b>Coding Exercise 02: Multithreaded Calculation! The Teachers Solution!</b> </summary>
-
-<div align="center">
-    <img src="Multithreaded_Exercise_Coding_Exercise_02_Solution.PNG"  alt="Java threads." width="500"/>
-</div>
- 
 - The **formula** for the **calculation**:
 
 $$
@@ -1058,6 +1022,13 @@ $$
 \text{power}_2 \ge 0
 $$
 
+<details>
+<summary id="The factorial thread" open="true"> <b>Coding Exercise 02: Multithreaded Calculation! The Teachers Solution!</b> </summary>
+
+<div align="center">
+    <img src="Multithreaded_Exercise_Coding_Exercise_02_Solution.PNG"  alt="Java threads." width="500"/>
+</div>
+ 
 ```Java
 
 import java.math.BigInteger;
