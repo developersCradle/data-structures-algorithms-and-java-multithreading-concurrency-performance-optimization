@@ -792,11 +792,11 @@ public static class Metrics {
     }
 ````
 
-- We are adding `volatile` to the `double`. Since it should be up-to-date with other threads.
-    - Every **read** of `average` comes from main memory.
-    - The value written inside the synchronized block is visible to all threads.
-
 - The `addSample()` should be `synchronized`, since there are of shared variables!
+
+- We are adding `volatile` to the `double average`. Since it should be up-to-date with other threads.
+
+- Todo tee tämä loppuun.
 
 # Quiz 7: Atomic Operations, Volatile & Metrics Practical Example.
 
@@ -806,8 +806,36 @@ public static class Metrics {
 
 # Race Conditions & Data Races.
 
+<div align="center">
+    <img src="Atomic_Operation_Volatile_Double_Float.PNG" width="500" alt="Threads resource"/>
+</div>
+
+1. We will be checking the **Locking Strategies**.
+
 # Quiz 8: Data Races.
 
 # Locking Strategies & Deadlocks.
+
+<div align="center">
+    <img src="What_We_Will_Learn_Locking_Strategy.PNG" width="500" alt="Threads resource"/>
+</div>
+
+1. We will be checking **Locking Strategies** next!
+
+<div align="center">
+    <img src="Two_Different_Locking_Strategy.PNG" width="500" alt="Threads resource"/>
+</div>
+
+- In **multithreaded programming**, we need to make choice, which **locking strategy** we need to choose:
+    - `1.` **Fine-Grained Locking**.
+        - Should we have **multiple** locks per resource!
+    - `2.` **Coarse-Grained Locking**.
+        - Should we have **one** lock for one resource!
+
+<div align="center">
+    <img src="Coarse_Grained_Locking.PNG" width="500" alt="Threads resource"/>
+</div>
+
+
 
 # Quiz 9: Locking Strategies & Deadlocks.

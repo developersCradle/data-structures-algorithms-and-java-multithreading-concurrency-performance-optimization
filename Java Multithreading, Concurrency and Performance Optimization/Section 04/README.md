@@ -204,7 +204,6 @@ $$
 </div>
 
 
-
 # Additional Resource - Image Processing, Color Spaces, Extraction & Manipulation.
 
 # Optimizing for Throughput Part 1.

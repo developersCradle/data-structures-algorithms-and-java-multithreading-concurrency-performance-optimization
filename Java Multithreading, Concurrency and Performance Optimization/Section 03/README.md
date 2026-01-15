@@ -417,7 +417,7 @@ public class Main2 {
 # Joining Threads.
 
 <div align="center">
-    <img src="whatWeWillLearn.PNG"  alt="Java threads." width="700"/>
+    <img src="What_We_Will_Learn_Thread_Coordination_With_Join.PNG"  alt="Java threads." width="700"/>
 </div>
 
 1. We need to know that when the **thread** has **completed**, and we need to know when we can **expect it** to be finish!
@@ -668,10 +668,10 @@ for (int i = 0; i < inputNumbers.size(); i++) {
 
 1. Both **threads** will be racing towards their goals **independently**!
 
-> We use `.join()` on threads to make the calling thread **wait** before executing any further code.
+> We use `.join()` on threads to make the **calling thread wait** before executing any further code.
 
 - We will use the`.join` to the **threads** to make them **wait** before executing any future.
-    - `join()` makes the calling thread wait!
+    - `join()` makes the **calling thread wait**!
     - Execution only continues after **all threads** have finished.
 
 ````
@@ -679,6 +679,9 @@ for (int i = 0; i < inputNumbers.size(); i++) {
             thread.join();
         }
 ````
+
+> [!TIP]
+> Remember the `.join` needs be called **after** the `.start()` have been started!
 
 - Only the **restriction** is that the **threads** are needed to be waited until all are ready!
     - If there is long number like, which is needed to be waited like: `100000L`!
@@ -688,7 +691,7 @@ for (int i = 0; i < inputNumbers.size(); i++) {
 </div>
 
 - We can give max seconds to the `.join()` to give grace time. 
-    - `thread.join(2000);` → this makes the **two seconds** waiting! 
+    - `thread.join(2000);` → this makes the **two seconds** waiting! Example below of waiting:
 
 ````
         for (Thread thread : threads) {
@@ -731,86 +734,263 @@ for (int i = 0; i < inputNumbers.size(); i++) {
 <summary id="The factorial thread" open="true"> <b>Factorial Thread Full Java code!</b> </summary>
 
 ````Java
-    /*
- * Copyright (c) 2019-2023. Michael Pogrebinsky - Top Developer Academy
- * https://topdeveloperacademy.com
- * All rights reserved
- */
-
 import java.math.BigInteger;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 
-/**
- * Joining Threads
- * https://www.udemy.com/java-multithreading-concurrency-performance-optimization
- */
-public class Main {
-    public static void main(String[] args) throws InterruptedException {
-        List<Long> inputNumbers = Arrays.asList(100000000L, 3435L, 35435L, 2324L, 4656L, 23L, 5556L);
-
-        List<FactorialThread> threads = new ArrayList<>();
-
-        for (long inputNumber : inputNumbers) {
-            threads.add(new FactorialThread(inputNumber));
-        }
-
-        for (Thread thread : threads) {
-            thread.setDaemon(true);
-            thread.start();
-        }
-
-        for (Thread thread : threads) {
-            thread.join(2000);
-        }
-
-        for (int i = 0; i < inputNumbers.size(); i++) {
-            FactorialThread factorialThread = threads.get(i);
-            if (factorialThread.isFinished()) {
-                System.out.println("Factorial of " + inputNumbers.get(i) + " is " + factorialThread.getResult());
-            } else {
-                System.out.println("The calculation for " + inputNumbers.get(i) + " is still in progress");
-            }
-        }
+public class ComplexCalculation {
+    public BigInteger calculateResult(BigInteger base1, BigInteger power1, BigInteger base2, BigInteger power2) {
+        BigInteger result;
+        /*
+            Calculate result = ( base1 ^ power1 ) + (base2 ^ power2).
+            Where each calculation in (..) is calculated on a different thread
+        */
+        return result;
     }
 
-    public static class FactorialThread extends Thread {
-        private long inputNumber;
-        private BigInteger result = BigInteger.ZERO;
-        private boolean isFinished = false;
-
-        public FactorialThread(long inputNumber) {
-            this.inputNumber = inputNumber;
+    private static class PowerCalculatingThread extends Thread {
+        private BigInteger result = BigInteger.ONE;
+        private BigInteger base;
+        private BigInteger power;
+    
+        public PowerCalculatingThread(BigInteger base, BigInteger power) {
+            this.base = base;
+            this.power = power;
         }
-
+    
         @Override
         public void run() {
-            this.result = factorial(inputNumber);
-            this.isFinished = true;
+           /*
+           Implement the calculation of result = base ^ power
+           */
         }
-
-        public BigInteger factorial(long n) {
-            BigInteger tempResult = BigInteger.ONE;
-
-            for (long i = n; i > 0; i--) {
-                tempResult = tempResult.multiply(new BigInteger((Long.toString(i))));
-            }
-            return tempResult;
-        }
-
-        public BigInteger getResult() {
-            return result;
-        }
-
-        public boolean isFinished() {
-            return isFinished;
-        }
+    
+        public BigInteger getResult() { return result; }
     }
 }
 ````
 </details>
 
-# Coding Exercise 2: Multithreaded Calculation.
+# Coding Exercise 02: Multithreaded Calculation.
 
-# Multithreaded Calculation - Solution.
+<details>
+<summary id="The factorial thread" open="true"> <b>Coding Exercise 02: Multithreaded Calculation! My Answer!</b> </summary>
+
+<div align="center">
+    <img src="Multithreaded_Exercise_Coding_Exercise_02.PNG"  alt="Java threads." width="500"/>
+</div>
+ 
+- The **formula** for the **calculation**:
+
+$$
+\text{result} = \text{base}_1^{\text{power}_1} + \text{base}_2^{\text{power}_2}
+$$
+
+- Where the **constraints**:
+
+$$
+\text{base}_1 \ge 0,\quad
+\text{base}_2 \ge 0,\quad
+\text{power}_1 \ge 0,\quad
+\text{power}_2 \ge 0
+$$
+
+```Java
+
+import java.math.BigInteger;
+
+public class ComplexCalculation {
+    public BigInteger calculateResult(BigInteger base1, BigInteger power1, BigInteger base2, BigInteger power2) {
+        BigInteger result;
+        /*
+            Calculate result = ( base1 ^ power1 ) + (base2 ^ power2).
+            Where each calculation in (..) is calculated on a different thread
+        */
+        return result;
+    }
+
+    private static class PowerCalculatingThread extends Thread {
+        private BigInteger result = BigInteger.ONE;
+        private BigInteger base;
+        private BigInteger power;
+    
+        public PowerCalculatingThread(BigInteger base, BigInteger power) {
+            this.base = base;
+            this.power = power;
+        }
+    
+        @Override
+        public void run() {
+           /*
+           Implement the calculation of result = base ^ power
+           */
+        }
+    
+        public BigInteger getResult() { return result; }
+    }
+}
+
+```
+
+- **Question 1:** Please implement the `ComplexCalculation`.
+    - **Answer:** Below:
+
+````Java
+
+package org.java.helloWorld;
+
+import java.math.BigInteger;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        System.out.println("Staring the exercise 02, pow number calculation!");
+
+        BigInteger result = new ComplexCalculation().calculateResult(BigInteger.TWO, BigInteger.TEN, BigInteger.TEN, BigInteger.TEN);
+
+        System.out.println(result);
+    }
+
+
+}
+
+class ComplexCalculation {
+    public BigInteger calculateResult(BigInteger base1, BigInteger power1, BigInteger base2, BigInteger power2) {
+
+        /*
+            Calculate result = ( base1 ^ power1 ) + (base2 ^ power2).
+            Where each calculation in (..) is calculated on a different thread
+        */
+
+        PowerCalculatingThread calulation01 = new PowerCalculatingThread(base1, power1);
+        PowerCalculatingThread calulation02 = new PowerCalculatingThread(base2, power2);
+
+        calulation01.start();
+        calulation02.start();
+
+        try {
+            calulation01.join();
+            calulation02.join();
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
+
+        return calulation01.getResult().add(calulation02.getResult());
+    }
+
+    private static class PowerCalculatingThread extends Thread {
+        private BigInteger result = BigInteger.ONE;
+        private BigInteger base;
+        private BigInteger power;
+
+        public PowerCalculatingThread(BigInteger base, BigInteger power) {
+            this.base = base;
+            this.power = power;
+        }
+
+        @Override
+        public void run() {
+
+           /*
+                Implement the calculation of result = base ^ power
+           */
+            /*
+                power = 0 → ✅ allowed.
+                power > 0 → ✅ allowed.
+                power < 0 → ❌ NOT allowed.
+            */
+            if (power.compareTo(BigInteger.ZERO) < 0 || base.compareTo(BigInteger.ZERO) < 0)
+            {
+                throw new IllegalArgumentException("Base and Power needs to follow rule: base1 >= 0, base2 >= 0, power1 >= 0, power2 >= 0");
+            }
+
+            result = base.pow(power.intValue());
+        }
+
+
+        public BigInteger getResult() {
+            return result;
+        }
+    }
+}
+````
+
+</details>
+
+# Coding Exercise 02: Multithreaded Calculation - Solution.
+
+<details>
+<summary id="The factorial thread" open="true"> <b>Coding Exercise 02: Multithreaded Calculation! The Teachers Solution!</b> </summary>
+
+<div align="center">
+    <img src="Multithreaded_Exercise_Coding_Exercise_02_Solution.PNG"  alt="Java threads." width="500"/>
+</div>
+ 
+- The **formula** for the **calculation**:
+
+$$
+\text{result} = \text{base}_1^{\text{power}_1} + \text{base}_2^{\text{power}_2}
+$$
+
+- Where the **constraints**:
+
+$$
+\text{base}_1 \ge 0,\quad
+\text{base}_2 \ge 0,\quad
+\text{power}_1 \ge 0,\quad
+\text{power}_2 \ge 0
+$$
+
+```Java
+
+import java.math.BigInteger;
+ 
+public class ComplexCalculation {
+    public BigInteger calculateResult(BigInteger base1, 
+                                      BigInteger power1, 
+                                      BigInteger base2, 
+                                      BigInteger power2) {
+        BigInteger result;
+        PowerCalculatingThread thread1 = new PowerCalculatingThread(base1, power1);
+        PowerCalculatingThread thread2 = new PowerCalculatingThread(base2, power2);
+ 
+        thread1.start();
+        thread2.start();
+ 
+        try {
+            thread1.join();
+            thread2.join();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+ 
+        result = thread1.getResult().add(thread2.getResult());
+        return result;
+    }
+ 
+    private static class PowerCalculatingThread extends Thread {
+        private BigInteger result = BigInteger.ONE;
+        private BigInteger base;
+        private BigInteger power;
+ 
+        public PowerCalculatingThread(BigInteger base, BigInteger power) {
+            this.base = base;
+            this.power = power;
+        }
+ 
+        @Override
+        public void run() {
+            for(BigInteger i = BigInteger.ZERO;
+                i.compareTo(power) !=0;
+                i = i.add(BigInteger.ONE)) {
+                result = result.multiply(base);
+            }
+        }
+ 
+        public BigInteger getResult() {
+            return result;
+        }
+    }
+}
+
+```
