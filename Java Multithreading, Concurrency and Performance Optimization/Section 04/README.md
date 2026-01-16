@@ -67,7 +67,7 @@ Performance Optimization.
     <img src="Latency.PNG"  alt="Java threads." width="700"/>
 </div>
 
-1. We can say that &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{Latency} = \frac{T}{N}$
+1. We can say that &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\text{Latency} = \frac{T}{N}$
     - What is the level to which **gradual level** the tasks needs to be broken down, to be effect as possible?
 
 <div align="center">
@@ -179,7 +179,7 @@ $$
 </div>
 
 1. Task that **cannot** be braked down into own tasks.
-2. Tasks can be **parallelized** in their own **jobs**
+2. Tasks can be **parallelized** in their own **jobs**.
 
 <div align="center">
     <img src="Summary_Of_The_Performance_Optimization.PNG" width="700"/>
@@ -193,15 +193,63 @@ $$
     <img src="What_We_Will_Be_Learning_In_This_Chapter.PNG" width="700"/>
 </div>
 
+1. We will be following in this order:
+    - `1.` First we will be writing the **image processing** version, which is **sequential**.
+    - `2.` Then we will be **partition this task**
+    - `3.` Lastly we will be measuring it performance!
+
+<div align="center">
+    <img src="Picture_Took_By_The_Pro.PNG" width="700"/>
+</div>
+
+1. Picture took by Pro. There are **two colors** of the **flowers**!
+
+<div align="center">
+    <img src="Picture_Took_By_The_Pro_Closer.PNG" width="700"/>
+</div>
+
+1. We will be trying to color this white flower, with the program to the pinkish color!
+
+
 <div align="center">
     <img src="Introduction_To_The_Digital_Pictures.PNG" width="700"/>
 </div>
 
-1. This is around **12 million pixels**.
+1. This picture is `3036` **x** `4048`. This is around **12 million pixels**.
+2. In picture, there are **multiple color points**, which are called **pixels**.
 
 <div align="center">
     <img src="Pixels_Argb.PNG" width="700"/>
 </div>
+
+- **ARGB** we can represent pretty much any color! Can achieve this by **combining the colors**!
+
+<div align="center">
+    <img src="Using_The_Colors_For_Dedecting.gif" width="700"/>
+</div>
+
+1. We can get **pure colors** such as **red**, by increasing only one color value and keeping it other lowest as possible!
+2. We can get **purple** by **combine** high level of **red** and **blue**.
+3. Furthermore, we get different **shades of gray** if keep the colors **relatively the same**
+    - This can be from white, to all the way to the black.
+4. Lastly, if we look the white flower.
+    - There are **many shades of the gray** in it!
+
+<div align="center">
+    <img src="What_We_Will_Learn_At_First_The_Sequential_Processing_Module_First.PNG" width="700"/>
+</div>
+
+1. We will be writing the **processing** code first with the modular as possible!
+
+> [!TIP]
+> A `raster` = the **raw pixel** grid of the image! Example in **Java** `image.getRaster()`. Example picture repressed in pixels, below:
+> ⬛⬛⬛⬛⬜⬜⬛
+⬜⬜⬜⬛⬜⬜⬛
+⬜⬜⬜⬛⬜⬜⬛
+⬛⬛⬛⬛⬛⬛⬛
+⬛⬜⬜⬛⬜⬜⬜
+⬛⬜⬜⬛⬜⬜⬜
+⬛⬜⬜⬛⬛⬛⬛
 
 
 # Additional Resource - Image Processing, Color Spaces, Extraction & Manipulation.

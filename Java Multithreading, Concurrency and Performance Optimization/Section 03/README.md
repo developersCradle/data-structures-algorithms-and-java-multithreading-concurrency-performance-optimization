@@ -499,7 +499,6 @@ Please choose the correct statement.
 1. That is correct. As a rule of thumb, never leave a catch block empty, and use the `InterruptedException`
  catch block to gracefully stop the current thread (by adding some print or cleaning code before returning from the run method).
 
-> [!TIP]
 > As a **rule of thumb**, never leave a `catch` `block` empty, and use the `InterruptedException` `catch` `block` to gracefully stop the current thread (by adding some print or cleaning code before returning from the run method).
 
 </details>
