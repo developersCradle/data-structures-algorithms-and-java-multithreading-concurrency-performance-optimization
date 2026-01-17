@@ -10,7 +10,7 @@ Performance Optimization.
     <img src="What_We_Will_Learn_Start_At_Performance_Criteria.PNG"  alt="Java threads." width="700"/>
 </div>
 
-1. Defining **Performance** criteria.
+1. Defining **Performance** criteria. What does the **performance** criteria means?
 
 <div align="center">
     <img src="Example_Of_Throughput.PNG"  alt="Java threads." width="700"/>
@@ -42,13 +42,20 @@ Performance Optimization.
     <img src="The_Terms_For_The_Performance.PNG"  alt="Java threads." width="700"/>
 </div>
 
-1. **Latency**. The time to completion of **single** a **task**. Measured in time units.
-    - If a ping shows `40` ms, that means:
-        - `~20` ms to go.
-        - `~20` ms to come back.
-    - That `40` ms is **latency**, measured by **ping**.
+1. **Latency**:
+    - The time to completion of **single** a **task**. Measured in time units.
+        -  One common example is usage of the **ping tool**:
+            - If a ping shows `40` ms, that means:
+                - `~20` ms to go.
+                - `~20` ms to come back.
+            - That `40` ms is **latency**, measured by **ping tool**.
 
-2. **Throughput**. The amount of tasks completed in a given period. Measured in tasks per time unit.
+2. **Throughput**:
+    - The **amount of tasks completed** in a **given period**. Measured in tasks per time unit.
+        -  One common example is server processing requests.
+            - A server processes `5,000` HTTP requests per second. That means:
+                - **Throughput** = `5,000` **requests** / **second**.
+                    - *"Even if each request has high or low latency, throughput measures how many are completed per unit time."*
 
 <div align="center">
     <img src="What_We_Will_Learn_Next_Latency.PNG"  alt="Java threads." width="700"/>
@@ -240,12 +247,9 @@ $$
     <img src="What_We_Will_Learn_At_First_The_Sequential_Processing_Module_First.PNG" width="700"/>
 </div>
 
-1. We will be writing the **processing** code first with the modular as possible!
+1. We will be writing the **processing** code first to be modular as possible!
 
-
-
-
-- Reminder how to use the `&` the **AND** operation.
+- Reminder **how to use** the `&` the `AND` operation.
     - **Java** representation:
     ````Java
     int a = 12;   // 00001100
@@ -261,7 +265,23 @@ $$
     00001000  // = 8
     ````
 
+<div align="center">
+    <img alt="Some anime pic of the bitmask." src="BitMask_Operation.jpg" width="400"/>
+</div>
 
+1. Remember we are using the **bitmask** as to define, which bits will be important!
+
+- To **extract** the **green** color out of the **ARGB** we can use.
+    - It uses **bit-masking** + **bit-shifting operation** to extract the **green** color component, following code:
+
+
+- Continues this
+
+````Java
+public static int getGreen(int rgb) {
+    return (rgb & 0x0000FF00) >> 8;
+}
+````
 
 
 ````Java
@@ -269,27 +289,17 @@ $$
         return (rgb & 0x00FF0000) >> 16;
     }
 
-    public static int getGreen(int rgb) {
-        return (rgb & 0x0000FF00) >> 8;
-    }
-
     public static int getBlue(int rgb) {
         return rgb & 0x000000FF;
     }
 ````
 
-
-
 > [!TIP]
 > A `raster` = the **raw pixel** grid of the image! Example in **Java** `image.getRaster()`. Example picture repressed in pixels, below:
 
-⬛⬛⬛⬛⬜⬜⬛
-⬜⬜⬜⬛⬜⬜⬛
-⬜⬜⬜⬛⬜⬜⬛
-⬛⬛⬛⬛⬛⬛⬛
-⬛⬜⬜⬛⬜⬜⬜
-⬛⬜⬜⬛⬜⬜⬜
-⬛⬜⬜⬛⬛⬛⬛
+<div align="center">
+    <img src="Swatiska_As_Pixel_Raster_Made_From_Multiple_Pixel_Example.PNG" alt="Swatiska as example of pixels." width="250"/>
+</div>
 
 
 # Additional Resource - Image Processing, Color Spaces, Extraction & Manipulation.
@@ -358,20 +368,66 @@ We apply a bitwise AND with 0x00 (0000 0000 in binary) to get rid of a component
 
 We apply a bitwise AND with 0xFF (1111 1111 in binary) to keep the value of a component since X AND 1 = X, for any X.
 
-
-
-
-
-
-
 ````Java 
-
-
 
 ````
 
+- add this
+
+
+
+- Do this into end
+
 # Optimizing for Throughput Part 1.
+
+<div>
+    <img src="What_We_Will_Learn_The_Optimization_For_The_Throughput.PNG"  alt="Java threads." width="700"/>
+</div>
+
+1. We will be covering things covered for the **throughput**
+
+<div>
+    <img src="Throughput_Defination_As_Reminder.PNG"  alt="Java threads." width="700"/>
+</div>
+
+1. Add link to the previous throughput definition.
+
+<div>
+    <img src="When_Does_The_Throughput_Matter.PNG"  alt="Java threads." width="700"/>
+</div>
+
+1. When does this **throughput** matter?!
+
+2. If, there is such system where the flow of tasks are coming in regular basis, and we want to **perform many tasks as possible** and as **fast as possible**!
+    - In this case the **throughput** would be the best **metric** to **evaluate our system**.
+
+<div align="center">
+    <img src="What_We_Will_Learn_Next_Evaluate_The_Two_Examples_Throughput_Of_The_System.PNG"  alt="Java threads." width="700"/>
+</div>
+
+1. We will be **exploring** two examples of evaluating the **throughput**!
 
 # Optimizing for Throughput Part 2 - HTTP Server + JMeter.
 
-# Quiz 4: Performance Optimization.
+# Quiz 04: Performance Optimization.
+
+<details>
+
+<summary id="Thread progress
+" open="true"> <b>Question 01.</b> </summary>
+
+````yaml
+Question 01:
+Add here 
+````
+
+- My answer:
+
+<div align="center">
+    <!-- <img src="Quiz 02/Q1.PNG" width="500"/> -->
+</div>
+
+1. Some answer
+
+</details>
+

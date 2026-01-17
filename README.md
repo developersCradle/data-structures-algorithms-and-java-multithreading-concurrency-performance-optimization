@@ -68,6 +68,7 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 - [ ] Add the exercise and comments for the `We_Can_See_That_We_Dont_Have_The_Access_To_The_Main_Frame.PNG`, if you have patience.
 - [ ] Additional go thought [Future](https://www.baeldung.com/java-future).
 - [ ] Additional go thought `synchronized` [keyword](https://www.baeldung.com/java-synchronized).
+- [ ] go thought the definition of the `throughput` chapter.
 
 <hr>
 
