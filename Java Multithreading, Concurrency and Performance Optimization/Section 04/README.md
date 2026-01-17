@@ -222,7 +222,8 @@ $$
     <img src="Pixels_Argb.PNG" width="700"/>
 </div>
 
-- **ARGB** we can represent pretty much any color! Can achieve this by **combining the colors**!
+1. **ARGB** we can represent pretty much any color! Can achieve this by **combining the colors**!
+    - Extra reading can have [RGBA color model](https://en.wikipedia.org/wiki/RGBA_color_model).
 
 <div align="center">
     <img src="Using_The_Colors_For_Dedecting.gif" width="700"/>
@@ -241,9 +242,48 @@ $$
 
 1. We will be writing the **processing** code first with the modular as possible!
 
+
+
+
+- Reminder how to use the `&` the **AND** operation.
+    - **Java** representation:
+    ````Java
+    int a = 12;   // 00001100
+    int b = 10;   // 00001010
+
+    int c = a & b; // After the opertiaon 00001000
+    ````
+    - **Binary** representation:
+    ````yml
+    00001100
+    & 00001010
+    ----------
+    00001000  // = 8
+    ````
+
+
+
+
+````Java
+    public static int getRed(int rgb) {
+        return (rgb & 0x00FF0000) >> 16;
+    }
+
+    public static int getGreen(int rgb) {
+        return (rgb & 0x0000FF00) >> 8;
+    }
+
+    public static int getBlue(int rgb) {
+        return rgb & 0x000000FF;
+    }
+````
+
+
+
 > [!TIP]
 > A `raster` = the **raw pixel** grid of the image! Example in **Java** `image.getRaster()`. Example picture repressed in pixels, below:
-> ⬛⬛⬛⬛⬜⬜⬛
+
+⬛⬛⬛⬛⬜⬜⬛
 ⬜⬜⬜⬛⬜⬜⬛
 ⬜⬜⬜⬛⬜⬜⬛
 ⬛⬛⬛⬛⬛⬛⬛
@@ -253,6 +293,82 @@ $$
 
 
 # Additional Resource - Image Processing, Color Spaces, Extraction & Manipulation.
+
+As I'm always committed to bringing you the most relevant and real-life examples, in the previous lecture we touched upon a few other very important topics beyond Multithreading like color spaces, bit-shifting and binary algebra. Since these topics are very frequently used in the industry (as well as in job interviews), this guide will provide a more in-detail explanation of those parts of the Image Processing Example.
+
+#### Pixels and Color Space Background.
+
+In digital imaging, a Pixel represents the smallest element of a picture displayed on the screen.
+
+An image is nothing more than a 2-dimensional collection of Pixels.
+
+The color of a pixel can be encoded in different ways.
+
+A few frequently used groups of pixel color encoding are:
+
+- [Y'UV](https://en.wikipedia.org/wiki/Y%E2%80%B2UV) - Luma (brightness), and 2 chroma (color) components
+
+- [RGB]() - Red, Green, Blue
+
+- [HSL and HSV]() - Hue, Saturation, Lightness/Brightness
+
+- [CIE XYZ]()  - Device independent Red, Green and Blue
+
+#### ARGB Memory Representation.
+
+The **format used** in our Image Processing example is a version of the **RGB** family called **ARGB**, where A stands for *alpha* *(transparency)*
+
+The representation of this color in memory is as follows:
+
+<div align="center">
+    <img src="RGBA_The_Color_Sysstem.webp" width="700"/>
+</div>
+
+As we can see, each component is represented by **1 byte** (**8 bits**) so the value of each component is in the range of **0** (`0x` in **hexadecimal**) and **255** (`0xFF` in **hexadecimal**).
+
+Since we have `4 bytes`, we can store the entire color of a pixel in a variable of type `int`.
+
+#### Component Extraction Code Explanation.
+
+In the Image Processing example we have the following methods that extract individual components of a pixel:
+
+````Java
+public static int getRed(int rgb) {
+    return (rgb & 0x00FF0000) >> 16;
+}
+ 
+public static int getGreen(int rgb) {
+    return (rgb & 0x0000FF00) >> 8;
+}
+ 
+public static int getBlue(int rgb) {
+    return rgb & 0x000000FF;
+}
+````
+
+Let's explain each method, in particular the math that happens to get each color component.
+
+In order to get a particular component (red, green, or blue), we need to first get rid of all the other color components in the pixel, while keeping the desired component.
+
+To achieve this we apply a bitmask.
+
+A bitmask defines which bits we want to keep, and which bits we want to clear.
+
+We apply a bitwise AND with 0x00 (0000 0000 in binary) to get rid of a component since X AND 0 = 0, for any X.
+
+We apply a bitwise AND with 0xFF (1111 1111 in binary) to keep the value of a component since X AND 1 = X, for any X.
+
+
+
+
+
+
+
+````Java 
+
+
+
+````
 
 # Optimizing for Throughput Part 1.
 

@@ -34,13 +34,13 @@ Threading Fundamentals - Thread Coordination.
 1. Next we will be dealing with `Thread.interupt()`.
 
 <div align="center">
-    <img src="threadInterupts.PNG"  alt="Java threads." width="500"/>
+    <img src="Thread_Dot_Interrupt_Method.PNG"  alt="Java threads." width="500"/>
 </div>
 
-1. We can send interrupt from the **Thread A** to **Thread B** using `Thread.interrupt()`!
+1. We can send interrupt from the **Thread A** to **Thread B** by using `Thread.interrupt()`!
 
 <div align="center">
-    <img src="whenTheInteruptIsFine.PNG"  alt="Java threads." width="500"/>
+    <img src="When_Can_We_Interupt_The_Thread.PNG"  alt="Java threads." width="500"/>
 </div>
 
 1. If the **thread** which we are trying to **interrupt** is running method that has throws `InterruptedException`. [InterruptedException](https://docs.oracle.com/javase/8/docs/api/java/lang/InterruptedException.html).
@@ -323,13 +323,13 @@ public class Main2 {
 </details>
 
 <div align="center">
-    <img src="NextIsDeamonThread.PNG"  alt="Java threads." width="700"/>
+    <img src="Next_We_Will_Learn_Deamon_Threads.png"  alt="Java threads." width="700"/>
 </div>
 
-1. Next we will be dealing with **Deamon thread**.
+1. Next we will be dealing with **Deamon thread**!
 
 <div align="center">
-    <img src="deamonThreads.PNG"  alt="Java threads." width="700"/>
+    <img src="Deamon_Threads_Background_Information.PNG"  alt="Java threads." width="700"/>
 </div>
 
 1. **Deamon Threads** run in background. 
