@@ -276,6 +276,15 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 <br>
 
 <p align="center">
+    <img src="courseMap.png" alt="Course roadmap to enroll in the Modern Java Courses." width="400"/>
+</p>
+
+1. You can take this course first: [Modern Java - Learn Java 8 features by coding it](https://www.udemy.com/course/modern-java-learn-java-8-features-by-coding-it/).
+2. You can take this course second: [Multithreading, Parallel & Asynchronous Coding in Modern Java](https://www.udemy.com/course/parallel-and-asynchronous-programming-in-modern-java/).
+
+</details>
+
+<p align="center">
     <img src="Modern_Java_Multithreading_In_Java_Using_Virtual_Threads_Caption.PNG" alt="course intros" style="width:990px;height:110px;"/>
 </p>
 
@@ -334,16 +343,6 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
         * [Some here](#).
     * *Coding Exercise*:
         * [Some here](#).
-
-
-<p align="center">
-    <img src="courseMap.png" alt="Course roadmap to enroll in the Modern Java Courses." width="400"/>
-</p>
-
-1. You can take this course first: [Modern Java - Learn Java 8 features by coding it](https://www.udemy.com/course/modern-java-learn-java-8-features-by-coding-it/).
-2. You can take this course second: [Multithreading, Parallel & Asynchronous Coding in Modern Java](https://www.udemy.com/course/parallel-and-asynchronous-programming-in-modern-java/).
-
-</details>
 
 <p align="center">
     <img src="Java_Application_Performance_Tuning_And_Memory_Management.gif" alt="Java Application Performance Tuning and Memory Management" style="width:1200px;height:60px;"/>
