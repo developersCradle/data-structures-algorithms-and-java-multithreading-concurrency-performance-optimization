@@ -812,7 +812,7 @@ public static class Metrics {
 
 1. We will be checking the **Locking Strategies**.
 
-# Quiz 8: Data Races.
+# Quiz 08: Data Races.
 
 # Locking Strategies & Deadlocks.
 

@@ -36,10 +36,10 @@ Performance Optimization.
     <img src="What_We_Will_Learn_Next_Performnace_In_The_Multithreaded_Applications.PNG"  alt="Java threads." width="700"/>
 </div>
 
-1. Performance in the Multithreaded applications.
+1. We will be checking what performance in the multithreaded applications means.
 
 <div align="center">
-    <img src="The_Terms_For_The_Performance.PNG"  alt="Java threads." width="700"/>
+    <img id="Terms_In_Performance" src="The_Terms_For_The_Performance.PNG" alt="Java threads." width="700"/>
 </div>
 
 1. **Latency**:
@@ -217,7 +217,6 @@ $$
 
 1. We will be trying to color this white flower, with the program to the pinkish color!
 
-
 <div align="center">
     <img src="Introduction_To_The_Digital_Pictures.PNG" width="700"/>
 </div>
@@ -295,34 +294,32 @@ public static int getGreen(int rgb) {
 ````
 
 > [!TIP]
-> A `raster` = the **raw pixel** grid of the image! Example in **Java** `image.getRaster()`. Example picture repressed in pixels, below:
+> A **raster** = the **raw pixel** grid of the image! Example in **Java** `image.getRaster()`. Example picture repressed in pixels, below:
 
 <div align="center">
     <img src="Swatiska_As_Pixel_Raster_Made_From_Multiple_Pixel_Example.PNG" alt="Swatiska as example of pixels." width="250"/>
 </div>
 
-
 # Additional Resource - Image Processing, Color Spaces, Extraction & Manipulation.
+
+- Todo tee loppuun
 
 As I'm always committed to bringing you the most relevant and real-life examples, in the previous lecture we touched upon a few other very important topics beyond Multithreading like color spaces, bit-shifting and binary algebra. Since these topics are very frequently used in the industry (as well as in job interviews), this guide will provide a more in-detail explanation of those parts of the Image Processing Example.
 
 #### Pixels and Color Space Background.
 
-In digital imaging, a Pixel represents the smallest element of a picture displayed on the screen.
+In digital imaging, a **Pixel** represents the smallest element of a picture displayed on the screen.
 
 An image is nothing more than a 2-dimensional collection of Pixels.
 
-The color of a pixel can be encoded in different ways.
+The **color of a pixel** can be **encoded** in **different ways**.
 
-A few frequently used groups of pixel color encoding are:
-
-- [Y'UV](https://en.wikipedia.org/wiki/Y%E2%80%B2UV) - Luma (brightness), and 2 chroma (color) components
-
-- [RGB]() - Red, Green, Blue
-
-- [HSL and HSV]() - Hue, Saturation, Lightness/Brightness
-
-- [CIE XYZ]()  - Device independent Red, Green and Blue
+- A few frequently used groups of pixel color encoding are:
+    - [RGB](https://en.wikipedia.org/wiki/RGB_color_model) - Red, Green, Blue.
+        - The **most famous** and used **color representation**!
+    - [Y'UV](https://en.wikipedia.org/wiki/Y%E2%80%B2UV) - Luma (brightness), and 2 chroma (color) components.
+    - [HSL and HSV](https://en.wikipedia.org/wiki/HSL_and_HSV) - Hue, Saturation, Lightness/Brightness.
+    - [CIE XYZ](https://en.wikipedia.org/wiki/HSL_and_HSV) - Device independent Red, Green and Blue.
 
 #### ARGB Memory Representation.
 
@@ -360,23 +357,42 @@ Let's explain each method, in particular the math that happens to get each color
 
 In order to get a particular component (red, green, or blue), we need to first get rid of all the other color components in the pixel, while keeping the desired component.
 
-To achieve this we apply a bitmask.
+To achieve this we apply a **bitmask**.
 
-A bitmask defines which bits we want to keep, and which bits we want to clear.
+> **Bitmask** defines which bits we want to keep, and which bits we want to clear.
 
-We apply a bitwise AND with 0x00 (0000 0000 in binary) to get rid of a component since X AND 0 = 0, for any X.
+We apply a bitwise `AND` with `0x00` (**0000 0000** in binary) to get rid of a component since `X AND 0 = 0`, for any `X`.
 
-We apply a bitwise AND with 0xFF (1111 1111 in binary) to keep the value of a component since X AND 1 = X, for any X.
+We apply a bitwise `AND` with `0xFF` (**1111 1111** in binary) to keep the value of a component since `X AND 1 = X`, for any `X`.
 
-````Java 
+<div align="center">
+    <img src="getRed.webp" width="700"/>
+</div>
 
-````
+<div align="center">
+    <img src="getGreen.webp" width="700"/>
+</div>
 
-- add this
 
+<div align="center">
+    <img src="getBlue.webp" width="700"/>
+</div>
 
+However, after applying a bitmask we are not done. We still need to shift the byte representing our component to the lowest byte.
 
-- Do this into end
+For example in the `getRed(..)` method, after we apply the bitmask on `0x76543210` we end up with`0x00540000`, but what we need is `0x00000054`
+
+So we need to shift all the bits in the result of the bitmask to the right., using the `>>` operator.
+
+- For the **blue color extraction**, we don't need to perform any shifting since it's already the right-most byte.
+
+- For the **green color extraction**, we need to move all the bits 1 byte (8 bits) to the right.
+
+- For the **red color extraction**, we need to move all the bits 2 bytes (16 bits) to the right.
+
+#### Combining Color Components into a Pixel.
+
+When building a pixel's color from individual red, green and blue components we had the following method:
 
 # Optimizing for Throughput Part 1.
 

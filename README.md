@@ -19,7 +19,7 @@
     <img id="Performance Optimization" src="Java_Multithreading_Concurrency_And_Performance_Optimization_Description.PNG" style=" width: 680px;">
 </p>
 
-All course material from Java Multithreading, Concurrency & Performance Optimization by **Michael Pogrebinsky** and **Top Developer Academy LLC**.
+All course material from *Java Multithreading, Concurrency & Performance Optimization* by **Michael Pogrebinsky** and **Top Developer Academy LLC**.
 
 > We were working with an old legacy system that was making two concurrent calls to a shared resource, causing inconsistent results that only appeared sometimes. The issue was subtle and difficult to reproduce, making it even harder to diagnose. What made it even harder was not runnable on our local environment! 
 >
@@ -56,12 +56,12 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 - [ ] [Section 04](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading%2C%20Concurrency%20and%20Performance%20Optimization/Section%2004#chapter-04---performance-optimization) - Performance Optimization.
 - [x] [Section 05](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Multithreading%2C%20Concurrency%20and%20Performance%20Optimization/Section%2005/README.md#chapter-05---data-sharing-between-threads) - Data Sharing Between Threads. ✅
 - [ ] [Section 06](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Multithreading%2C%20Concurrency%20and%20Performance%20Optimization/Section%2006/README.md#chapter-06---the-concurrency-challenges--solutions) - The Concurrency Challenges & Solutions.
-- [ ] [Section 07](#) - Advanced Locking.
-- [ ] [Section 08](#) - Inter-Thread Communication.
-- [ ] [Section 09](#) - Lock-Free Algorithms, Data-Structures & Techniques.
-- [ ] [Section 10](#) - Threading Models for High Performance IO.
-- [ ] [Section 11](#) - Virtual Threads and High-Performance IO.
-- [ ] [Section 12](#) - Beyond Multithreading - Final Lecture.
+- [ ] [Section 07](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading%2C%20Concurrency%20and%20Performance%20Optimization/Section%2007#chapter-07---advanced-locking) - Advanced Locking.
+- [ ] [Section 08](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading%2C%20Concurrency%20and%20Performance%20Optimization/Section%2008#chapter-08---inter-thread-communication) - Inter-Thread Communication.
+- [ ] [Section 09](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading%2C%20Concurrency%20and%20Performance%20Optimization/Section%2009#chapter-09---lock-free-algorithms-data-structures--techniques) - Lock-Free Algorithms, Data-Structures & Techniques.
+- [ ] [Section 10](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Multithreading%2C%20Concurrency%20and%20Performance%20Optimization/Section%2010/README.md#chapter-10---threading-models-for-high-performance-io) - Threading Models for High Performance IO.
+- [ ] [Section 11](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Multithreading%2C%20Concurrency%20and%20Performance%20Optimization/Section%2010/README.md#chapter-10---threading-models-for-high-performance-io) - Virtual Threads and High-Performance IO.
+- [ ] [Section 12](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading%2C%20Concurrency%20and%20Performance%20Optimization/Section%2012#chapter-12---extra-information---source-code-and-other-stuff) - Beyond Multithreading - Final Lecture.
 
 #### Additional stuff.
 
@@ -206,7 +206,7 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
     <img src="Multithreading,Parallel & Asynchronous Coding in Modern Java desc.PNG" alt="course intros" style="width:690px" />
 </p>
 
-All course material from Multithreading, Parallel & Asynchronous Coding in Modern Java by **Pragmatic Code School**.
+All course material from *Multithreading, Parallel & Asynchronous Coding in Modern Java* by **Pragmatic Code School**.
 
 > During a live technical demonstration at **Evitec Solutions**, I was asked to solve a puzzle involving a Java problem that required clean data processing logic. Under normal circumstances, it was a problem perfectly suited for **Java Streams**, but the pressure of the live session caused me to overlook that approach.
 >
@@ -276,6 +276,67 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 <br>
 
 <p align="center">
+    <img src="Modern_Java_Multithreading_In_Java_Using_Virtual_Threads_Caption.PNG" alt="course intros" style="width:990px;height:110px;"/>
+</p>
+
+<p align="center">
+    <img src="Modern_Java_Multithreading_In_Java_Using_Virtual_Threads_Description.PNG" alt="course intros" style="width:690px" />
+</p> 
+
+
+All course material from *Modern Java - Multithreading in Java using Virtual Threads* by **Pragmatic Code School**.
+
+> Add here some cool story.<br><br>
+~ *DevelopersCradle*
+
+Contains my own notes with some course material to enforce learning experience.
+
+This repository is made with [![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?logo=intellij-idea&logoColor=white)](#) with [![Eclipse](https://img.shields.io/badge/Eclipse-FE7A16.svg?logo=Eclipse&logoColor=white)](#) hotkeys, therefore it will include configuration files which are related to this IDE this approach will be favored for now. ⚙️
+
+[The course at Udemy](https://www.udemy.com/course/parallel-and-asynchronous-programming-in-modern-java). 
+
+[Website of maker](https://topdeveloperacademy.com/).
+
+If the content sparked :fire: your interest, please consider buying the course and start learning :book:.
+
+<!-- 
+Linkedin puts this shit front, when clicking from private mode x(. Need to put this to make jump working every case
+?trk=public_profile_see-credential 
+-->
+
+<div align="center">
+    Insert certificate here when completed
+</div>
+
+**Note: The material provided in this repository is only for helping those who may get stuck at any point of time in the course. It is very advised that no one should just copy the solutions(violation of Honor Code) presented here.**
+
+#### Progress/Curriculum.
+
+- [ ] [Section 1](#) - Getting Started With the Course.
+- [ ] [Section 2](#) - Course Slides and Source Code.
+- [ ] [Section 3](#) - Getting Started with Java Threads (Platform Threads).
+- [ ] [Section 4](#) - Getting Started with Virtual Threads.
+- [ ] [Section 5](#) - Future and CompletableFuture.
+- [ ] [Section 6](#) - Structured Concurrency using Virtual Threads (Preview Feature).
+- [ ] [Section 7](#) - HTTP calls using Virtual Threads.
+- [ ] [Section 8](#) - Using Futures with Virtual Threads.
+- [ ] [Section 9](#) - Build a Spring Boot Application using Virtual Threads.
+- [ ] [Section 10](#) - Load Test using `ab` – Apache HTTP server benchmarking tool.
+
+#### Additional stuff.
+
+- [ ] Add some.
+
+#### The Quizzes and Labs.
+
+* **Section 01**:
+    * *Quiz*:
+        * [Some here](#).
+    * *Coding Exercise*:
+        * [Some here](#).
+
+
+<p align="center">
     <img src="courseMap.png" alt="Course roadmap to enroll in the Modern Java Courses." width="400"/>
 </p>
 
@@ -293,7 +354,7 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 </p>
 
 
-All course material from **Java Application Performance Tuning and Memory Management** by from **Matt Greencroft** and **Virtual Pair Programmers** with my own visual notes. ✍️
+All course material from *Java Application Performance Tuning and Memory Management* by from **Matt Greencroft** and **Virtual Pair Programmers** with my own visual notes. ✍️
 
 >I interviewed with **Polar** for an Advanced Java role, and the technical discussion immediately dove into multithreading, concurrency, and performance optimization. They asked about thread pools, synchronization strategies, deadlocks, optimizing CPU-bound versus IO-bound operations, and even Virtual Threads in Java. The questions were challenging and required more than just textbook knowledge — they wanted practical understanding of real-world thread behavior.
 >
@@ -363,7 +424,7 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
     <img src="Data_Structures_And_Algorithms_With_Visualizations_Description.JPG" alt="Free data Structures and Algorithm" style="width:550px;height:250px;"/>
 </p>
 
-All course material from **Data Structures and Algorithms with Visualizations with Java** by from **Dinesh Varyani**.
+All course material from *Data Structures and Algorithms with Visualizations with Java* by from **Dinesh Varyani**.
 
 > Add here some <br><br>
 ~ *DevelopersCradle*
@@ -538,7 +599,7 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
     style="width:600px;height:210px;">
 </p>
 
-All course material from Data Structures and Algorithms: Deep Dive Using Java by **Goran Lochert**, **Tim Buchalka** and **Tim Buchalka's Learn Programming Academy**.
+All course material from *Data Structures and Algorithms: Deep Dive Using Java* by **Goran Lochert**, **Tim Buchalka** and **Tim Buchalka's Learn Programming Academy**.
 
 >I once interviewed with **Vaisala** for the *Observation Network Manager NM10* role, where the technical discussion went deep into data structures and their operations. The interview challenged my understanding of trees, graphs, and time–space trade-offs in ways I hadn’t fully experienced before. [Project](https://www.vaisala.com/en/products/weather-environmental-sensors/observation-network-manager-nm10).
 >
@@ -606,8 +667,7 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
     <img src="Java_Data_Structures_And_Algorithms_Plus_LEETCODE_Excervice_Description.PNG" alt="Course Intros" style="width:690px" />
 </p>
 
-<!-- 
-All course material from Multithreading, Parallel & Asynchronous Coding in Modern Java by **Pragmatic Code School**. -->
+All course material from *Java Data Structures & Algorithms + LEETCODE Exercises* by **Scott Barrett**.
 
 > Story about victory! <br><br>
 ~ *DevelopersCradle*
@@ -616,9 +676,9 @@ Contains my own notes with some course material to enforce learning experience.
 
 This repository is made with [![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?logo=intellij-idea&logoColor=white)](#) with [![Eclipse](https://img.shields.io/badge/Eclipse-FE7A16.svg?logo=Eclipse&logoColor=white)](#) hotkeys, therefore it will include configuration files which are related to this IDE this approach will be favored for now. ⚙️
 
-<!-- [The course at Udemy](https://www.udemy.com/course/parallel-and-asynchronous-programming-in-modern-java). 
+[The course at Udemy](https://www.udemy.com/course/data-structures-and-algorithms-java). 
 
-[Website of maker](https://topdeveloperacademy.com/). -->
+[Website of maker](https://scottbarrett.com/).
 
 If the content sparked :fire: your interest, please consider buying the course and start learning :book:.
 
