@@ -233,8 +233,8 @@ Find entry in the array, at that point.
 2. Then its needs to **navigate** thought the **LinkedList** for the item with the **matching** key!
 
 > [!TIP]
-> Map small, Large **Linked List**?
-> Map large, Small **Linked List**?
+> 💡 Map small, Large **Linked List**?
+> Map large, Small **Linked List**? 💡
 
 - Big question is for the **performance**, should this be:
     - Map with **Small array**, and Large amount of items in **Linked List**.

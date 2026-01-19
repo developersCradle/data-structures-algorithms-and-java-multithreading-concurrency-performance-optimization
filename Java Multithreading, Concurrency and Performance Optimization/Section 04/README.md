@@ -294,7 +294,7 @@ public static int getGreen(int rgb) {
 ````
 
 > [!TIP]
-> A **raster** = the **raw pixel** grid of the image! Example in **Java** `image.getRaster()`. Example picture repressed in pixels, below:
+> 💡 A **raster** = the **raw pixel** grid of the image! Example in **Java** `image.getRaster()`. Example picture repressed in pixels, below:
 
 <div align="center">
     <img src="Swatiska_As_Pixel_Raster_Made_From_Multiple_Pixel_Example.PNG" alt="Swatiska as example of pixels." width="250"/>
@@ -422,6 +422,27 @@ When building a pixel's color from individual red, green and blue components we 
 </div>
 
 1. We will be **exploring** two examples of evaluating the **throughput**!
+
+<div align="center">
+    <img src="First_Approach_For_Throughput.PNG"  alt="Java threads." width="700"/>
+</div>
+
+1. If **one task** takes **T** time, you can only finish one task every T time units, hence:
+
+$$
+\text{Throughput} = \frac{1}{T}
+$$
+
+<div align="center">
+    <img src="First_Approach_For_Breaking_Task_In_Multiple_Tasks.PNG"  alt="Java threads." width="700"/>
+</div>
+
+1. If there are multiple tasks, it can be broken down in &nbsp;&nbsp; $\text{Latency} = \frac{T}{N}$.
+**n** = *Number of subtasks*,
+ **T** = *Time* 
+
+
+- Continue this
 
 # Optimizing for Throughput Part 2 - HTTP Server + JMeter.
 

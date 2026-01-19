@@ -44,7 +44,7 @@ void aggregateFunction() {
 1. Once the `Thread A` finishes the **critical section**, the second **thread** `Thread B` can access the **critical section** and perform all the operations!
 
 > [!TIP]
-> **Remember** these concepts are the **same** regardless of the language. They might be in some different *flavor* or *API's*.
+> 💡 **Remember** these concepts are the **same** regardless of the language. They might be in some different *flavor* or *API's*. 💡
 
 <div align="center">
     <img src="What_We_Will_Learn_Next_Synchronized.PNG" width="700" alt="Threads resource"/>
@@ -206,7 +206,7 @@ public class Main {
 2. We lock **specified section**, from other threads to access it, as long the **Object locked**!
 
 > [!TIP]
-> **Separate lock objects** = **better concurrency control**!
+> 💡 **Separate lock objects** = **better concurrency control**! 💡
 
 <div align="center">
     <img src="Using_Synchronized_As_Lock.gif" width="700" alt="Threads resource"/>
@@ -365,8 +365,8 @@ public class Main {
 - Selvitä miksi tässä pitää käyttää synzhronized sanaa.
 
 > [!TIP]
-> *"Synchronized block is **Reentrant**
-**A thread cannot prevent itself from entering a critical section**"*
+> 💡 *"Synchronized block is **Reentrant**
+**A thread cannot prevent itself from entering a critical section**"* 💡
 
 <div align="center">
     <img src="Synchorinized_Block_Is_Reentrant.PNG" width="700" alt="Threads resource"/>

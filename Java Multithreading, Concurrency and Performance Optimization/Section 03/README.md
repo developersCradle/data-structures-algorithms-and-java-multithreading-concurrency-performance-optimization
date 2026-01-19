@@ -113,7 +113,7 @@ public class Main1 {
 </details>
 
 > [!TIP]
-> We can **solve** this by throwing the `InterruptedException` with the usage of the `thread.interrupt();`⭐
+> 💡 We can **solve** this by throwing the `InterruptedException` with the usage of the `thread.interrupt();` 💡
 
 - We can raise the **interrupt**, with following: `thread.interrupt();`.
     - The **main thread** interrupts the **blocked thread**.
@@ -770,7 +770,7 @@ for (int i = 0; i < inputNumbers.size(); i++) {
 ````
 
 > [!TIP]
-> Remember the `.join` needs be called **after** the `.start()` have been started!
+> 💡 Remember the `.join` needs be called **after** the `.start()` have been started! 💡
 
 - Only the **restriction** is that the **threads** are needed to be waited until all are ready!
     - If there is long number like, which is needed to be waited like: `100000L`!

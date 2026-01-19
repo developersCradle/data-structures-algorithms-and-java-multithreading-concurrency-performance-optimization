@@ -84,7 +84,7 @@ Data Sharing Between Threads.
     - This is **second** memory region.
 
 > [!TIP]
-> We prefer **threads** over **processes** when we want to share data easily. The sharing can be done using **Heap** memory region.
+> 💡 We prefer **threads** over **processes** when we want to share data easily. The sharing can be done using **Heap** memory region. 💡
 
 <div align="center">
     <img src="Heap_Memory_Region.PNG" width="700"/>
@@ -621,9 +621,9 @@ public class Main {
     -  Is not **atomic** operation!
 
 > [!TIP]
-> *“Atomic”* means that these operations are performed **as a single**, **indivisible unit** 
+> 💡 *“Atomic”* means that these operations are performed **as a single**, **indivisible unit** 
 > they either **complete entirely** or **not at all**, with no possibility of another thread
-> seeing or modifying the variable in an intermediate state.
+> seeing or modifying the variable in an intermediate state. 💡
 
 <div align="center">
     <img src="Atomic_Operation.PNG" width="700"/>
