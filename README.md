@@ -380,8 +380,8 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 #### Progress/Curriculum.
 
-- [x] [Chapter 01](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Application%20Performance%20Tuning%20and%20Memory%20Management/Section%2001#chapter-1---introduction) - Introduction. ✅
-- [ ] [Chapter 02](#) - Just In Time Compilation and the Code Cache. ⚠️ In progress! ⚠️
+- [x] [Chapter 01](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Application%20Performance%20Tuning%20and%20Memory%20Management/Section%2001#chapter-01---introduction) - Introduction. ✅
+- [ ] [Chapter 02](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Application%20Performance%20Tuning%20and%20Memory%20Management/Section%2002/README.md#section-02-just-in-time-compilation-and-the-code-cache) - Just In Time Compilation and the Code Cache. ⚠️ In progress! ⚠️
 - [ ] [Chapter 03](#) - Selecting the JVM.
 - [ ] [Chapter 04](#) - How memory works: the stack and the heap.
 - [ ] [Chapter 05](#) - Passing objects between methods.
