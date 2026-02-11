@@ -1,9 +1,11 @@
-# Section 02: Course Slides.
+# Section 02: Just In Time Compilation and the Code Cache.
 
-Course Slides.
+Just In Time Compilation and the Code Cache.
 
 # What I learned.
 
+
 <div align="center">
-    <img src="#.PNG"  alt="java advanced" width="500"/>
+    <img src="First_Approach_For_Throughput.PNG"  alt="Java threads." width="700"/>
 </div>
+
