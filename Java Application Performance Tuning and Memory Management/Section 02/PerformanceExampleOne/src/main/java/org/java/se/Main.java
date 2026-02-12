@@ -1,5 +1,4 @@
-package main;
-import java.util.Date;
+package org.java.se;
 
 public class Main {
 

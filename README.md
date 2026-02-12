@@ -344,12 +344,12 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
         * [Some here](#).
 
 <p align="center">
-    <img src="Java_Application_Performance_Tuning_And_Memory_Management.gif" alt="Java Application Performance Tuning and Memory Management" style="width:1200px;height:60px;"/>
+    <img src="Java_Application_Performance_Tuning_And_Memory_Management.gif" alt="Java Application Performance Tuning and Memory Management" style="width:1000px;height:120px;"/>
 </p>
 
 <p align="center">
-    <img src="Java Application Performance Tuning and Memory Management desc.PNG" alt="Java Application Performance Tuning and Memory Management description here"/>
-</p>
+    <img src="Java Application Performance Tuning and Memory Management desc.PNG" alt="Java Application Performance Tuning and Memory Management description here" style="width:660px" />
+</p> 
 
 
 All course material from *Java Application Performance Tuning and Memory Management* by from **Matt Greencroft** ... Sir **Matt Greencroft** and **Virtual Pair Programmers** with my own visual notes. ✍️
@@ -360,6 +360,8 @@ All course material from *Java Application Performance Tuning and Memory Managem
 ~ *DevelopersCradle*
 
 This repository is made with [![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?logo=intellij-idea&logoColor=white)](#) with [![Eclipse](https://img.shields.io/badge/Eclipse-FE7A16.svg?logo=Eclipse&logoColor=white)](#) hotkeys, therefore it will include configuration files which are related to this IDE this approach will be favored for now. ⚙️
+
+We are using [![Java 21](https://img.shields.io/badge/Java%2021-%23ED8B00.svg?logo=openjdk&logoColor=white)](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Application%20Performance%20Tuning%20and%20Memory%20Management/Section%2001#example-code-provided-with-this-course). Instead, the which are recommended!
 
 [Udemy course](https://www.udemy.com/course/java-application-performance-and-memory-management).
 
@@ -400,7 +402,7 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 - [ ] [Chapter 18](#) - Benchmarking with JMH.
 - [ ] [Chapter 19](#) - Performance and Benchmarking Exercise.
 - [ ] [Chapter 20](#) - How Lists Work.
-- [ ] [Chapter 21](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Application%20Performance%20Tuning%20and%20Memory%20Management/Section%2021#section-21-chapter-21---how-maps-work) - How Maps Work.
+- [ ] [Chapter 21](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Application%20Performance%20Tuning%20and%20Memory%20Management/Section%2021#section-21-chapter-21---how-maps-work) - How Maps Work. ⚠️ In progress! ⚠️
 
 #### Additional stuff.
 
@@ -413,7 +415,7 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 * **Section 01**:
     * *Quiz*:
         * [Some here](#).
-    * *Coding Exercise*:
+    * *Performance Example*:
         * [Some here](#).
 
 <p align="center">

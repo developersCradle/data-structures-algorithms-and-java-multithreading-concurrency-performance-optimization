@@ -1,4 +1,4 @@
-# Section 21: Chapter 21 - How Maps Work.
+# Chapter 21: Chapter 21 - How Maps Work.
 
 Section 21: Chapter 21 - How Maps Work.
 
