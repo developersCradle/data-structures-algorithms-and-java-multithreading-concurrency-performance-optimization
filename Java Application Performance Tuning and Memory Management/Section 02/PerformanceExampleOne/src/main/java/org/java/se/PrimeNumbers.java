@@ -20,8 +20,8 @@ public class PrimeNumbers {
 		}
 		return testNumber;
 	}
-	
-	public void generateNumbers (Integer max) {
+
+	synchronized public void  generateNumbers (Integer max) {
 		primes = new ArrayList<Integer>();
 		primes.add(2);
 

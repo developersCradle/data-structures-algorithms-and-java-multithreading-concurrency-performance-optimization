@@ -508,6 +508,7 @@ public class Main {
 125  221       3       java.lang.StringLatin1::newString (24 bytes)
 [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31]
 126  223       1       java.lang.Integer::intValue (5 bytes)
+127 2230 s 3 java.lang.StringBuffer::append
 ````
 </details>
 
@@ -520,11 +521,87 @@ public class Main {
     <img src="Understanding_The_JIT_Interpreter_Method_Profiling_Log.PNG"  alt="Java threads." width="600"/>
 </div>
 
-1. **First column**, the timing after the **JVM** have been started, in **milliseconds**!
+1. **First Column**: the timing after the **JVM** have been started, in **milliseconds**!
 	- Example the **51 ms** have been passed since the **JVM** have been started.
-		- `51    1       3       jdk.internal.util.ArraysSupport::signedHashCode (37 bytes)`
+		- `51    1       3       jdk.internal.util.ArraysSupport::signedHashCode (37 bytes)`.
+
+2. **Second Column**: shows the in **which order** the **JVM** **compiled** the method or **observed**!
+	- Example using previous, where the **1** is indicated. This means the method got compiled/order observed by **JVM**
+		-  `51    1       3       jdk.internal.util.ArraysSupport::signedHashCode (37 bytes)`.
+	- ⚠️ Second column’s **order** isn’t always strictly sequential, since the threads and complexity of methods. ⚠️
+
+3. **Third Column**: **compilation tier** or **profiling metric** — depends on **JVM** version: 
+	- JIT compilation level (1–4)
+	- Or call depth / number of calls seen from caller
+		-  `51    1       3       jdk.internal.util.ArraysSupport::signedHashCode (37 bytes)`. -->
 
 
+
+
+<details>
+<summary id="Thread progress
+" open="true"> <b>🔎How to interpret the JIT logs!🔎</b> </summary>
+
+````Java
+public void test() {
+    try {
+        int x = 10 / 0;
+    } catch (Exception e) {
+        System.out.println("Error");
+    }
+}
+````
+
+- It will be showing as such in the **JIT** logs.
+	- `120  45   !  3   MyClass::test (40 bytes)`
+		- It just means this method contains **exception handling**.
+</details>
+
+| Letter | Meaning                    | Explanation                                                              |
+| ------ | -------------------------- | ------------------------------------------------------------------------ |
+| **n**  | Native method              | The method is **implemented in C/C++** inside the JVM (not Java bytecode).   |
+| **s**  | Synchronized method        | The method has the `synchronized` modifier (uses monitor/locking).       |
+| **%**  | OSR (On-Stack Replacement) | The method was compiled while already running (typically inside a loop). |
+| **!**  | Exception handler present  | The method contains exception handling logic.                            |
+| **b**  | Blocking method            | The method may block (less common in newer logs).                        |
+
+- `n` **Native method**!
+	- Written in **C/C++**.
+	- Compiled when the JVM (HotSpot) was built.
+	- Already machine code.
+	- Not stored in Code Cache as JIT output.
+		- Example of this would be: `142  167     n 0       java.lang.Module::addReads0 (native)   (static)`.
+
+- `s` **Method have been synchronized**!
+	- The method was already declared synchronized in the Java source (or bytecode).
+		- Example of this could be: `s 3 java.lang.StringBuffer::append`.
+
+- `!` **Exception handler present**!
+	- `!` means the method has exception handling, such as:
+		- `try`
+		- `catch`
+		- `finally`
+		- or exception throwing logic.
+	- Example log: `136  145   !   3       java.util.concurrent.ConcurrentHashMap::putVal (432 bytes)`.
+
+- `%` **Means OSR compilation** (On-Stack Replacement).
+	- This method was compiled while it was already executing.
+		- Example log `123  45  %  3  OSRExample::main @ 5 (35 bytes)`.
+
+	- The method is hot (executed many times).
+	- The **JVM** wants to **optimize** it without waiting for the method to finish.
+	- OSR usually happens for loops, not the whole method.
+
+
+
+- Todo this later!
+
+
+- **JIT** compilation levels:
+	- **1**	C1 (simple compilation).
+	- **2**	C1 limited profiling.
+	- **3**	C1 full profiling.
+	- **4**	C2 (fully optimized).
 
 # The C1 and C2 Compilers and logging the compilation activity
 

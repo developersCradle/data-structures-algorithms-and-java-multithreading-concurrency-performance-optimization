@@ -402,13 +402,15 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 - [ ] [Chapter 18](#) - Benchmarking with JMH.
 - [ ] [Chapter 19](#) - Performance and Benchmarking Exercise.
 - [ ] [Chapter 20](#) - How Lists Work.
-- [ ] [Chapter 21](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Application%20Performance%20Tuning%20and%20Memory%20Management/Section%2021#section-21-chapter-21---how-maps-work) - How Maps Work. ⚠️ In progress! ⚠️
+- [ ] [Chapter 21](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Application%20Performance%20Tuning%20and%20Memory%20Management/Section%2021#chapter-21---how-maps-work) - How Maps Work. ⚠️ In progress! ⚠️
 
 #### Additional stuff.
 
 - [x] Check the content from other student, if there is missing or broken material. [Link](https://github.com/tommic81/udemy-java-memory-management/tree/master).
 
 - Do the chapters `The structure of this course`.
+- Add this to curriculum from Turun yliopisto [säikeet](https://staff.cs.utu.fi/opinnot/kurssit/HOJ-2012/kalvot/kalvot2-3.pdf).
+    - Brake this down to different pages!
 
 #### The Quizzes and Labs.
 
