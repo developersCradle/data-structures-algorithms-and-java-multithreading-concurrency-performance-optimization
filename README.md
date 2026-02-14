@@ -340,7 +340,7 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 * **Section 01**:
     * *Quiz*:
         * [Some here](#).
-    * *Coding Exercise*:
+    * *Exercise*:
         * [Some here](#).
 
 <p align="center">
@@ -415,10 +415,13 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 #### The Quizzes and Labs.
 
 * **Section 01**:
-    * *Quiz*:
-        * [Some here](#).
-    * *Performance Example*:
-        * [Some here](#).
+    - check this one.
+* **Section 02**:
+    * *Example*:
+        * [Performance example second codes](#).
+        * [Performance example first codes](#).
+    * *Logs*:
+        * [logs here](#).
 
 <p align="center">
     <img src="Data_Structures_And_Algorithms_With_Visualizations_With_Java_Caption.png" alt="Data_Structures_And_Algorithms_With_Visualizations_With_Java_Caption.png" style="width:950px;height:130px;"/>

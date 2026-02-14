@@ -30,7 +30,11 @@ public class PrimeNumbers {
 			next = getNextPrimeAbove(next);
 			primes.add(next);
 		}
-		System.out.println(primes);
+
+		// We are supposed to ask 10 numbers:
+		// System.out.println(primes);
+
+		// We will be asking 5000 items
 	}
 
 }

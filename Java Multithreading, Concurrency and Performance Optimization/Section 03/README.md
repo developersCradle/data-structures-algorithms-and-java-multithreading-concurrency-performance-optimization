@@ -518,7 +518,7 @@ Please choose the correct statement.
     <img src="Parallel_And_Join_Concept_Overview.png"  alt="Java threads." width="500"/>
 </div>
  
- 1. We make the **threads** wait. This can be done by making the calling thread to be **blocked**! Example below:
+ 1. We make the calling **thread** wait, until the **thread**/**threads** are finished. This can be done by making the **calling thread** to be **blocked**! Example below:
 
 ````Java
 worker.join();
