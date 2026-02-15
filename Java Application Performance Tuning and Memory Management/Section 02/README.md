@@ -1069,18 +1069,39 @@ public class Main {
 
 1. We can see that the logs are generated to the separate file! 
 
-
+- One can see the on **log file** generate here [hotspot_pid11876.log](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Application%20Performance%20Tuning%20and%20Memory%20Management/Section%2002/PerformanceExampleOne/hotspot_pid11876.log).
 
 - We can see here from the file, of the process how is the `isPrime(...)` getting compiled, with the **C2** compiler! 
 
+<br>
 
-- The log file generate is linked here [hotspot_pid11876.log](#).
+- **Firstly**, its being placed on the **queued**:
 
+````xml
+<task_queued compile_id='207' method='org.java.se.PrimeNumbers isPrime (Ljava/lang/Integer;)Ljava/lang/Boolean;' bytes='35' count='171' backedge_count='3072' iicount='171' level='3' stamp='0.238' comment='tiered' hot_count='171'/>
+````
 
+- **Secondly**, the method was successfully compiled and installed into the **code cache**:
 
+````xml
+<task_queued compile_id='207' method='org.java.se.PrimeNumbers isPrime (Ljava/lang/Integer;)Ljava/lang/Boolean;' bytes='35' count='171' backedge_count='3072' iicount='171' level='3' stamp='0.238' comment='tiered' hot_count='171'/>
+````
 
+- Todo tee loppuunn
 
 # Tuning the code cache size
+
+- There will be problem ahead, the **code cache** has its limitation in **size**!
+	- In larger application, some **methods** can be removed from the **code cache**, for other to fit in!
+
+<div align="center">
+    <img src="Tuning_The_Code_Cache.PNG"  alt="Java threads." width="600"/>
+</div>
+
+
+> [!WARNING]
+> We can see the following error: VM warning: CodeCache is full. Compiler has been disabled.
+
 
 # Remotely monitoring the code cache with
 

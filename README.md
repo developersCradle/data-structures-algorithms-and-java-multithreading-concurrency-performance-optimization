@@ -69,6 +69,9 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 - [ ] Additional go thought [Future](https://www.baeldung.com/java-future).
 - [ ] Additional go thought `synchronized` [keyword](https://www.baeldung.com/java-synchronized).
 - [ ] go thought the definition of the `throughput` chapter.
+- Add this to curriculum from Turun yliopisto [säikeet](https://staff.cs.utu.fi/opinnot/kurssit/HOJ-2012/kalvot/kalvot2-3.pdf).
+    - Brake this down to different pages!
+
 
 <hr>
 
@@ -409,8 +412,6 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 - [x] Check the content from other student, if there is missing or broken material. [Link](https://github.com/tommic81/udemy-java-memory-management/tree/master).
 
 - Do the chapters `The structure of this course`.
-- Add this to curriculum from Turun yliopisto [säikeet](https://staff.cs.utu.fi/opinnot/kurssit/HOJ-2012/kalvot/kalvot2-3.pdf).
-    - Brake this down to different pages!
 
 #### The Quizzes and Labs.
 
@@ -805,22 +806,27 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 </details>
 
-# Introduction to Algorithms.
-
 <p align="center">
-    <img src="MIT_Introduction_To_Algorithms_Course_Description.PNG" alt="course intros" style="width:690px" />
+    <img src="Introduction_To_Algorithms_Caption.png" alt="introduction to algorithms caption" style="width:1600px;height:120px;"/>
 </p>
 
-This course provides an introduction to mathematical modeling of computational problems. It covers the common algorithms, algorithmic paradigms, and data structures used to solve these problems. The course emphasizes the relationship between algorithms and programming, and introduces basic performance measures and analysis techniques for these problems.
+<p align="center">
+    <img src="MIT_Introduction_To_Algorithms_Course_Description.PNG" alt="introduction to algorithms caption" style="width:690px" />
+</p>
+
+All course material from *Introduction to Algorithms* by **Prof. Srini Devadas** and **Prof. Erik Demaine**.
 
 > Add here some story <br><br>
 ~ *DevelopersCradle*
 
-Contains my own notes with some course material to enforce learning experience.
-    
+Contains my own with my own visual notes ✍️ with some course material to enforce learning experience.
+
 This repository is made with [![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?logo=intellij-idea&logoColor=white)](#) with [![Eclipse](https://img.shields.io/badge/Eclipse-FE7A16.svg?logo=Eclipse&logoColor=white)](#) hotkeys, therefore it will include configuration files which are related to this IDE this approach will be favored for now. ⚙️
 
-[Souuce](https://www.youtube.com/playlist?list=PLe8LZCtW06l8z1RmbNIGA2Jg_ULeXyw46).
+[Video playlist](https://www.youtube.com/playlist?list=PLe8LZCtW06l8z1RmbNIGA2Jg_ULeXyw46).
+
+[Source page](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/).
+
 
 If the content sparked :fire: your interest, please consider buying the course and start learning :book:.
 
@@ -845,8 +851,55 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 <hr>
 
-- Can take this one [Data Structures and Algorithms Specialization](https://www.coursera.org/specializations/data-structures-algorithms).
-    - Don't get stuck of the proofs, detail heavy.
+# Data Structures and Algorithms Specialization.
+
+<!-- <p align="center">
+    <img src="Introduction_To_Algorithms_Caption.png" alt="introduction to algorithms caption" style="width:1600px;height:120px;"/>
+</p> -->
+
+<p align="center">
+    <img src="Data_Structures_And_Algorithms_Specialization_Description.PNG" alt="introduction to algorithms caption" style="width:690px" />
+</p>
+
+<!-- All course material from *Introduction to Algorithms* by **Prof. Srini Devadas** and **Prof. Erik Demaine**. -->
+
+> Add here some story <br><br>
+~ *DevelopersCradle*
+
+Contains my own with my own visual notes ✍️ with some course material to enforce learning experience.
+
+This repository is made with [![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?logo=intellij-idea&logoColor=white)](#) with [![Eclipse](https://img.shields.io/badge/Eclipse-FE7A16.svg?logo=Eclipse&logoColor=white)](#) hotkeys, therefore it will include configuration files which are related to this IDE this approach will be favored for now. ⚙️
+
+<!-- [Video playlist](https://www.youtube.com/playlist?list=PLe8LZCtW06l8z1RmbNIGA2Jg_ULeXyw46).
+
+[Source page](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/). -->
+
+
+If the content sparked :fire: your interest, please consider buying the course and start learning :book:.
+
+<!-- 
+Linkedin puts this shit front, when clicking from private mode x(. Need to put this to make jump working every case
+?trk=public_profile_see-credential 
+-->
+
+<div align="center">
+    Insert certificate here when completed
+</div>
+
+**Note: The material provided in this repository is only for helping those who may get stuck at any point of time in the course. It is very advised that no one should just copy the solutions(violation of Honor Code) presented here.**
+
+#### Progress/Curriculum.
+
+- [ ] [Section 01](#) - Add here.
+
+#### Additional stuff.
+
+- [ ] Don't get stuck of the proofs.
+
+- check this later https://www.youtube.com/watch?v=qcKn3PZT20I
+
+<hr>
+
 - Can take this one [Algorithms Specialization](https://www.coursera.org/specializations/algorithmss).
     - Don't get stuck of the proofs, detail heavy.
 
