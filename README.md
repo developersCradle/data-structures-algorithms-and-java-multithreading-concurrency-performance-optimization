@@ -418,10 +418,11 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
     - check this one.
 * **Section 02**:
     * *Example*:
-        * [Performance example one codes](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Application%20Performance%20Tuning%20and%20Memory%20Management/Section%2002/README.md#JIT%20logs%20example%20one%20codes)!
-        * [Performance example second codes](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Application%20Performance%20Tuning%20and%20Memory%20Management/Section%2002/README.md#JIT%20logs%20example%20second%20codes)!
+        * [Performance example one codes](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Application%20Performance%20Tuning%20and%20Memory%20Management/Section%2002/README.md#JIT%20logs%20example%20one%20codes).
+        * [Performance example second codes](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Application%20Performance%20Tuning%20and%20Memory%20Management/Section%2002/README.md#JIT%20logs%20example%20second%20codes).
     * *Logs*:
-        * [Performance example second logs](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Application%20Performance%20Tuning%20and%20Memory%20Management/Section%2002/README.md#JIT%20logs%20example%20second%20logs)!
+        * [Performance example second logs](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Application%20Performance%20Tuning%20and%20Memory%20Management/Section%2002/README.md#JIT%20logs%20example%20second%20logs).
+        * [Performance logs from the logCompilation](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Application%20Performance%20Tuning%20and%20Memory%20Management/Section%2002/hotspot_pid11876.log).
 
 <p align="center">
     <img src="Data_Structures_And_Algorithms_With_Visualizations_With_Java_Caption.png" alt="Data_Structures_And_Algorithms_With_Visualizations_With_Java_Caption.png" style="width:950px;height:130px;"/>
