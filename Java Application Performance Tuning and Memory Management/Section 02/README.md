@@ -536,15 +536,16 @@ public class Main {
 4. **Last part of the log**: The line of code, which is going to be compiled!
 	- So far all the compilation has been done on the **Java library codes**, not in our own code!
 <details>
-<summary id="JIT compilation levels" open="true"> <b>👀 JIT Compilation levels, with the types! 👀</b> </summary>
+<summary id="JIT compilation levels" open="true"> <b>👀 JIT compilation levels, with the types! 👀</b> </summary>
 
-	| Level | JIT Compilation Type            | Description                     |
-	|-------|----------------------------------|---------------------------------|
-	| 1     | C1                               | Simple compilation              |
-	| 2     | C1 (limited profiling)           | Limited profiling enabled       |
-	| 3     | C1 (full profiling)              | Full profiling enabled          |
-	| 4     | C2                               | Fully optimized compilation     |
+| Level | Compiler              | Optimization / Purpose                                       | When Used                             |
+| ----- | --------------------- | ------------------------------------------------------------ | ------------------------------------- |
+| 1     | C1 simple compilation | Quick, low-overhead compilation; minimal optimization        | Small methods, first-time hot methods |
+| 2     | C1 limited profiling  | Adds some profiling data to guide optimizations              | Methods that run a few times          |
+| 3     | C1 full profiling     | Full profiling information; better inlining and optimization | Hot methods detected by the JVM       |
+| 4     | C2 fully optimized    | Aggressive optimization; best performance                    | Very hot methods and loops            |
 
+	
 </details>
 
 <details>
@@ -607,17 +608,86 @@ public void test() {
 
 <br>
 
-- Next we will be **experiencing**, what are the logs when there is **complex calculation** going on.
+- Next we will be **experiencing**, what are the logs when there is **complex calculation** going on. Implementation below:
 
 ````Java
-the code, which got changed here
+package org.java.se;
+import java.util.ArrayList;
+import java.util.List;
+
+public class PrimeNumbers {
+
+	private List<Integer> primes;
+	
+	private Boolean isPrime(Integer testNumber) {
+		for (int i = 2; i < testNumber; i++) {
+			if (testNumber % i == 0) return false;
+		}
+		return true;
+	}
+	
+	private Integer getNextPrimeAbove(Integer previous) {
+		Integer testNumber = previous + 1;
+		while (!isPrime(testNumber)) {
+			testNumber++;
+		}
+		return testNumber;
+	}
+
+	synchronized public void  generateNumbers (Integer max) {
+		primes = new ArrayList<Integer>();
+		primes.add(2);
+
+		Integer next = 2;
+		while (primes.size() <= max) {
+			next = getNextPrimeAbove(next);
+			primes.add(next);
+		}
+
+		// We are supposed to ask 10 numbers:
+		// System.out.println(primes);
+
+		// We will be asking 5000 items
+	}
+
+}
+````
+
+````Java
+package org.java.se;
+
+public class Main {
+
+	public static void main(String[] args) {
+		PrimeNumbers primeNumbers = new PrimeNumbers();
+		Integer max = Integer.parseInt(args[0]);
+
+		 primeNumbers.generateNumbers(max);
+
+
+	}
+
+}
 ````
 
 <div align="center">
     <img src="Java_HotSpot_JIT_Compiler_Method_Profiling_Log_With_More_Results.gif"  alt="Java threads." width="600"/>
 </div>
 
-1. This example was done with the **5000** results.
+1. This example was done with the **5000** results is with **prime numbers**.
+
+<div align="center">
+    <img src="Understanding_The_JIT_Interpreter_Method_Profiling_Log_More_Complex_Version.PNG"  alt="Java threads." width="600"/>
+</div>
+
+1. Now, we can see **our methods**, which exists in our code!
+2. You can see the :`326  238 %  4  org.java.se.PrimeNumbers::isPrime @ 2 (35 bytes)`.
+	- **Highest optimization tier** (*4*): The **JIT** used **C2**, so this version of the method is fully optimized, it means:
+	- JVM compiles bytecode of `isPrime` into **x86_64** instructions (or ARM if on that CPU).
+	- These instructions live in the **Code Cache**.
+	- Future calls run at CPU speed, not interpreted bytecode speed!
+	- You can also see the `%` flag there!
+
 
 <details>
 <summary id="JIT logs example second logs" open="true"> <b>Performance example second logs!</b> </summary>
@@ -961,10 +1031,56 @@ public class Main {
 ````
 </details>
 
-
-
 # The C1 and C2 Compilers and logging the compilation activity
+
+<div align="center">
+    <img src="JVM_JIT_Compilers.PNG"  alt="Java threads." width="600"/>
+</div>
+
+- There are two **compilers** in the **JVM** called `c1` and `c2`.
+	- **1.** `c1` is doing the level *1*-*3* **compilations**!
+	- **2.** `c2` is doing the level *4* **compilation**!
+3. **JVM** decides what kind of **compilation** is being done for the method. There are criteria for these:
+	- This is based on the profiling, which have been done.
+
+- From previous examples, we can see there are **two** compilations being done for the method `isPrime(...)`. They both have different code compilation level:
+	- **First**: `324  233       3       org.java.se.PrimeNumbers::isPrime (35 bytes)`
+	- **Second**: `326  238 %     4       org.java.se.PrimeNumbers::isPrime @ 2 (35 bytes)`
+		- The **JVM** has decided that this method have been run, very much and **decided**, that it needs to be complied to the **fastest level** of execution as possible!
+			- This was done with the **C2** compiler, since it was tier 4 compilation.
+
+<div align="center">
+    <img src="Different_Compilation_Levels_Being_Run_For_The_Most_Common_Methods.PNG"  alt="Java threads." width="600"/>
+</div>
+
+1. We can see here the, two different level of compilations ran for the `PrimeNumber:isPrime(...)` method!
+2. We can see that later the same method `PrimeNumber:isPrime(...)` got compiled again, because it was profiled to be so important!
+
+
+> [!TIP]
+> We can enable advanced *internal* **JVM** *diagnostic options*:
+>	`java -XX:+UnlockDiagnosticVMOptions`.
+> Produce a detailed **XML** *log file of all* **JIT** *compilation activity*:
+>	`java -XX:+LogCompilation`.
+
+<div align="center">
+    <img src="Java_HotSpot_JIT_Compiler_Method_Profiling_Log_With_Log_File_From_The_LogCompilation_Flag.gif" alt="java performance boost." width="600"/>
+</div>
+
+1. We can see that the logs are generated to the separate file! 
+
+
+
+- We can see here from the file, of the process how is the `isPrime(...)` getting compiled, with the **C2** compiler! 
+
+
+- The log file generate is linked here [hotspot_pid11876.log](#).
+
+
+
+
 
 # Tuning the code cache size
 
 # Remotely monitoring the code cache with
+
