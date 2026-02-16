@@ -45,7 +45,7 @@ Just In Time Compilation and the Code Cache.
 > [!NOTE]
 > We will be comparing different **byte code** from different languages!
 
-# The concept of "Just In Time Compilation"
+# The concept of "Just In Time Compilation".
 
 <div align="center">
     <img src="JVM_Bytecode_Running.gif"  alt="Java threads." width="700"/>
@@ -79,7 +79,7 @@ Just In Time Compilation and the Code Cache.
 
 - From perspective of programmer, we can compile any method or loop into **native machine code**!
 
-# Introducing the first example project
+# Introducing the first example project.
 
 > [!NOTE]
 > There is **JVM flag** to inspect, which parts are going to be compiled to **machine code**!
@@ -225,7 +225,7 @@ public class Main {
 ````
 </details>
 
-# Finding out which methods are being compiled in our applications
+# Finding out which methods are being compiled in our applications.
 
 <div align="center">
     <img src="Compiler_Flags.PNG"  alt="Java threads." width="800"/>
@@ -514,7 +514,7 @@ public class Main {
 > [!TIP]
 > Remember, every time we run our program, compilation is happening in the background!
 
-- We will look at the logs, which the **JIT** interprentender method profiling tool has created for us:
+- We will look at the logs, which the **JIT** interpretender method profiling tool has created for us:
 
 <div align="center">
     <img src="Understanding_The_JIT_Interpreter_Method_Profiling_Log.PNG"  alt="Java threads." width="600"/>
@@ -524,7 +524,7 @@ public class Main {
 	- Example the **51 ms** have been passed since the **JVM** have been started.
 		- `51    1       3       jdk.internal.util.ArraysSupport::signedHashCode (37 bytes)`.
 
-2. **Second Column**: shows the in **which order** the **JVM** **compiled** the method or **observed**!
+2. **Second Column**: shows the in **which order** the **JVM** **compiled** the **method** or **observed**!
 	- Example using previous, where the **1** is indicated. This means the method got compiled/order observed by **JVM**.
 		-  `51    1       3       jdk.internal.util.ArraysSupport::signedHashCode (37 bytes)`.
 	- ⚠️ Second column’s **order** isn’t always strictly sequential, since the threads and complexity of methods. ⚠️
@@ -544,7 +544,6 @@ public class Main {
 | 2     | C1 limited profiling  | Adds some profiling data to guide optimizations              | Methods that run a few times          |
 | 3     | C1 full profiling     | Full profiling information; better inlining and optimization | Hot methods detected by the JVM       |
 | 4     | C2 fully optimized    | Aggressive optimization; best performance                    | Very hot methods and loops            |
-
 	
 </details>
 
@@ -684,7 +683,7 @@ public class Main {
 2. You can see the :`326  238 %  4  org.java.se.PrimeNumbers::isPrime @ 2 (35 bytes)`.
 	- **Highest optimization tier** (*4*): The **JIT** used **C2**, so this version of the method is fully optimized, it means:
 	- JVM compiles bytecode of `isPrime` into **x86_64** instructions (or ARM if on that CPU).
-	- These instructions live in the **Code Cache**.
+	- These instructions live in the **code cache**.
 	- Future calls run at CPU speed, not interpreted bytecode speed!
 	- You can also see the `%` flag there!
 
@@ -965,7 +964,6 @@ Process finished with exit code 0
 ````
 </details>
 
-
 <details>
 <summary id="JIT logs example second codes" open="true"> <b>Performance example second codes!</b> </summary>
 
@@ -1040,8 +1038,12 @@ public class Main {
 - There are two **compilers** in the **JVM** called `c1` and `c2`.
 	- **1.** `c1` is doing the level *1*-*3* **compilations**!
 	- **2.** `c2` is doing the level *4* **compilation**!
+		- Only most **hotplates** gets compiled with `c2` compiler, since there is price to pay when doing this.
 3. **JVM** decides what kind of **compilation** is being done for the method. There are criteria for these:
 	- This is based on the profiling, which have been done.
+
+> [!IMPORTANT]  
+> Every method compiled by **C1**, **C2**, or via **OSR** is stored as **native machine code** inside the **code cache**.
 
 - From previous examples, we can see there are **two** compilations being done for the method `isPrime(...)`. They both have different code compilation level:
 	- **First**: `324  233       3       org.java.se.PrimeNumbers::isPrime (35 bytes)`
@@ -1053,9 +1055,8 @@ public class Main {
     <img src="Different_Compilation_Levels_Being_Run_For_The_Most_Common_Methods.PNG"  alt="Java threads." width="600"/>
 </div>
 
-1. We can see here the, two different level of compilations ran for the `PrimeNumber:isPrime(...)` method!
-2. We can see that later the same method `PrimeNumber:isPrime(...)` got compiled again, because it was profiled to be so important!
-
+1. We can see here the two different level of compilations ran for the `PrimeNumber:isPrime(...)` method!
+2. We can see that later the same method `PrimeNumber:isPrime(...)` got compiled again, because it was profiled to be so **important**!
 
 > [!TIP]
 > We can enable advanced *internal* **JVM** *diagnostic options*:
@@ -1071,25 +1072,21 @@ public class Main {
 
 - One can see the on **log file** generate here [hotspot_pid11876.log](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Application%20Performance%20Tuning%20and%20Memory%20Management/Section%2002/PerformanceExampleOne/hotspot_pid11876.log).
 
-- We can see here from the file, of the process how is the `isPrime(...)` getting compiled, with the **C2** compiler! 
+- We can see here from the file, of the process how is the `isPrime(...)` getting compiled, with the `c2` compiler! 
+	- **Firstly** we can see `task_queued`, its being placed on the **queued**:
+	````xml
+	<task_queued compile_id='207' method='org.java.se.PrimeNumbers isPrime (Ljava/lang/Integer;)Ljava/lang/Boolean;' bytes='35' count='171' backedge_count='3072' iicount='171' level='3' stamp='0.238' comment='tiered' hot_count='171'/>
+	````
+	- **Secondly**, the method `isPrime(...)` was **compiled** by `c1` at tier **level 3**:
+	````xml
+	<method id='1411' holder='1394' name='isPrime' return='1335' arguments='1342' flags='2' bytes='35' compile_id='207' compiler='c1' level='3' iicount='1787'/>
+	````
+	- **Thirdly**, later the method was successfully **compiled** and installed into the **code cache** and usage of compiler `c2`:
+	````xml
+	<nmethod compile_id='212' compile_kind='osr' compiler='c2' level='4' entry='0x000001a3496b59a0' size='1440' address='0x000001a3496b5810' relocation_offset='352' insts_offset='400' stub_offset='1208' scopes_data_offset='1256' scopes_pcs_offset='1320' dependencies_offset='1416' nul_chk_table_offset='1424' oops_offset='1232' metadata_offset='1240' method='org.java.se.PrimeNumbers isPrime (Ljava/lang/Integer;)Ljava/lang/Boolean;' bytes='35' count='2801' backedge_count='535393' iicount='2801' stamp='0.248'/>
+	````
 
-<br>
-
-- **Firstly**, its being placed on the **queued**:
-
-````xml
-<task_queued compile_id='207' method='org.java.se.PrimeNumbers isPrime (Ljava/lang/Integer;)Ljava/lang/Boolean;' bytes='35' count='171' backedge_count='3072' iicount='171' level='3' stamp='0.238' comment='tiered' hot_count='171'/>
-````
-
-- **Secondly**, the method was successfully compiled and installed into the **code cache**:
-
-````xml
-<task_queued compile_id='207' method='org.java.se.PrimeNumbers isPrime (Ljava/lang/Integer;)Ljava/lang/Boolean;' bytes='35' count='171' backedge_count='3072' iicount='171' level='3' stamp='0.238' comment='tiered' hot_count='171'/>
-````
-
-- Todo tee loppuunn
-
-# Tuning the code cache size
+# Tuning the code cache size.
 
 - There will be problem ahead, the **code cache** has its limitation in **size**!
 	- In larger application, some **methods** can be removed from the **code cache**, for other to fit in!
@@ -1098,10 +1095,41 @@ public class Main {
     <img src="Tuning_The_Code_Cache.PNG"  alt="Java threads." width="600"/>
 </div>
 
+1. If the code cache is getting full, one will get following message! This is **warning** message, not **error**!
+2. Flags for the **code cache** size!
 
 > [!WARNING]
-> We can see the following error: VM warning: CodeCache is full. Compiler has been disabled.
+> We can see the following error: VM warning: **CodeCache** is full. Compiler has been disabled.
 
+````Bash
+CodeHeap 'non-profiled nmethods': size=120000Kb used=96Kb max_used=96Kb free=119903Kb
+ bounds [0x00000163ad910000, 0x00000163adb80000, 0x00000163b4e40000]
+CodeHeap 'profiled nmethods': size=120000Kb used=266Kb max_used=266Kb free=119733Kb
+ bounds [0x00000163a5e40000, 0x00000163a60b0000, 0x00000163ad370000]
+CodeHeap 'non-nmethods': size=5760Kb used=1296Kb max_used=1313Kb free=4464Kb
+ bounds [0x00000163ad370000, 0x00000163ad5e0000, 0x00000163ad910000]
+ total_blobs=670 nmethods=259 adapters=316
+ compilation: enabled
+              stopped_count=0, restarted_count=0
+ full_count=0
+````
 
-# Remotely monitoring the code cache with
+- You can see the `size=120000Kb` and the **used** portion `used=266Kb`.
 
+- When `used` size is getting close the maximum size, it can be beneficial to rise the **code cache maximum size**!
+	- This is connected to what **Java version** one is using!
+
+- `-XX:InitialCodeCacheSize` → The **initial size** of the **code cache** when the **JVM** starts.
+	- Example of usage: `-XX:InitialCodeCacheSize=32m`.
+
+- `-XX:ReservedCodeCacheSize` → The **maximum size** the **code cache** is allowed to grow to.
+	- Example of usage: `-XX:ReservedCodeCacheSize=256m`.
+
+- `-XX:CodeCacheExpansionSize` → How much the **code cache** grows when it needs more space.
+	- Example of usage: `-XX:CodeCacheExpansionSize=8m`.
+
+- Todo the example of code cache size if not sleepy.
+
+# Remotely monitoring the code cache with.
+
+- TOdo if uselfull.

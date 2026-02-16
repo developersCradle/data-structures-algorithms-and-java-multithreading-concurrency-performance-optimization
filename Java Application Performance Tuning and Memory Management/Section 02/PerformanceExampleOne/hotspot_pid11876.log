@@ -604,7 +604,7 @@ sun.java.launcher=SUN_STANDARD
 <writer thread='2440'/>
 <task_queued compile_id='210' method='java.lang.Integer valueOf (I)Ljava/lang/Integer;' bytes='32' count='384' iicount='384' level='3' stamp='0.239' comment='tiered' hot_count='384'/>
 <writer thread='17960'/>
-<nmethod compile_id='207' compiler='c1' level='3' entry='0x000001a341bff9e0' size='1600' address='0x000001a341bff810' relocation_offset='352' insts_offset='464' stub_offset='1264' scopes_data_offset='1344' scopes_pcs_offset='1424' dependencies_offset='1568' nul_chk_table_offset='1576' oops_offset='1320' metadata_offset='1328' method='org.java.se.PrimeNumbers isPrime (Ljava/lang/Integer;)Ljava/lang/Boolean;' bytes='35' count='387' backedge_count='13378' iicount='387' stamp='0.240'/>
+<nmethod compile_id='207' compiler='c1' level='3' entry='0x000001a341bff9e0' size='1600' address='0x000001a341bff810' relocation_offset='352' insts_offset='464' stub_offset='1264' scopes_data_offset='1344' scopes_pcs_offset='1424' dependencies_offset='1568' nul_chk_table_offset='1576' oops_offset='1320' metadata_offset='1328' method='org.java.se.PrimeNumbers  (Ljava/lang/Integer;)Ljava/lang/Boolean;' bytes='35' count='387' backedge_count='13378' iicount='387' stamp='0.240'/>
 <writer thread='2440'/>
 <task_queued compile_id='211' method='java.util.ArrayList size ()I' bytes='5' count='128' iicount='128' level='1' stamp='0.240' comment='tiered' hot_count='128'/>
 <writer thread='17960'/>

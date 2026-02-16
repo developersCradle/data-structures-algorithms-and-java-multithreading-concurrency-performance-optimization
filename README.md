@@ -463,8 +463,6 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 #### Progress/Curriculum.
 
-#### Progress/Curriculum.
-
 - [x] Section 00 - Data Structures and Algorithms with Visualizations. ✅
 - [x] [Section 01](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/01%20Introduction%20to%20Data%20Structures) - Introduction to Data Structures. ✅
 - [x] [Section 02](https://github.com/developersCradle/data-structures-and-algorithms/tree/main/02%20Introduction%20to%20Algorithms) - Introduction to Algorithms. ✅
