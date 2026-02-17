@@ -297,7 +297,7 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 All course material from *Modern Java - Multithreading in Java using Virtual Threads* by **Pragmatic Code School**.
 
-> Add here some cool story.<br><br>
+> During a backend performance review, I was asked why our service struggled under high concurrency despite having a well-configured thread pool. On paper, everything looked correct — fixed thread pools, optimized queries, proper synchronization. Yet under load, the system slowed, threads piled up, and latency spiked. This initiated me to start asking about virtual threads!<br><br>
 ~ *DevelopersCradle*
 
 Contains my own notes with some course material to enforce learning experience.
@@ -387,8 +387,8 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 - [x] [Chapter 01](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Application%20Performance%20Tuning%20and%20Memory%20Management/Section%2001#chapter-01---introduction) - Introduction. ✅
 - [ ] [Chapter 02](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Application%20Performance%20Tuning%20and%20Memory%20Management/Section%2002/README.md#section-02-just-in-time-compilation-and-the-code-cache) - Just In Time Compilation and the Code Cache. ⚠️ In progress! ⚠️
-- [ ] [Chapter 03](#) - Selecting the JVM.
-- [ ] [Chapter 04](#) - How memory works: the stack and the heap.
+- [ ] [Chapter 03](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Application%20Performance%20Tuning%20and%20Memory%20Management/Section%2003#chapter-03-selecting-the-jvm) - Selecting the JVM.
+- [ ] [Chapter 04](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Application%20Performance%20Tuning%20and%20Memory%20Management/Section%2004/README.md#chapter-04-how-memory-works-the-stack-and-the-heap) - How memory works: the stack and the heap.
 - [ ] [Chapter 05](#) - Passing objects between methods.
 - [ ] [Chapter 06](#) - Memory exercise.
 - [ ] [Chapter 07](#) - Escaping References.
