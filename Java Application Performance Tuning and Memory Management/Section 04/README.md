@@ -61,4 +61,7 @@ Add example here
 1. Application starts at the Main method. `args` is pushed firstly to stack!
 2. Next the `value` is pushed to the **stack** and `args` is pushed down!
 
+- TOdo jäin tuohon gif animaaatio teko ohjeisiin.
+
+
 # The heap and the stack together - an example.

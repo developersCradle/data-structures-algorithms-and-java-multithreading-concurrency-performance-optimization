@@ -702,7 +702,22 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 #### Progress/Curriculum.
 
-- [ ] [Section 01](#) - Add here.
+- [ ] [Section 01](#): Introduction.
+- [ ] [Section 02](#): Big O.
+- [ ] [Section 03](#): Classes & References.
+- [ ] [Section 04](#): Linked Lists.
+- [ ] [Section 05](#): LL: Coding Exercises.
+- [ ] [Section 06](#): LL: Interview / LeetCode Exercises.
+- [ ] [Section 07](#): Doubly Linked Lists.
+- [ ] [Section 08](#): DLL: Coding Exercises.
+- [ ] [Section 09](#): DLL: Interview / LeetCode Exercises.
+- [ ] [Section 10](#): Stacks & Queues.
+- [ ] [Section 11](#): S&Q: Coding Exercises.
+- [ ] [Section 12](#): S&Q: Interview / LeetCode Exercises.
+- [ ] [Section 13](#): Trees.
+- [ ] [Section 14](#): BST: Coding Exercises.
+- [ ] [Section 15](#): BST: Interview / LeetCode Exercises.
+- [ ] [Section 16](#): Hash Tables.
 
 #### Additional stuff.
 
