@@ -97,8 +97,24 @@ Hash Tables.
     <img src="Hash_Table_Is_Array_Of_References.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="500"/>
 </div>
 
-1. Notice that these are **array** of **references** to the **Nodes**!
+1. Notice that these are **array** of **references** to the **Node**'s!
 2. This is size `7`.
+3. These **Nodes** are similar to Hash Map.
+
+<div align="center">
+    <img src="Hash_Map_Looks_Like.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="400"/>
+</div>
+
+1. It would like this:
+    - **Key** = **value**.
+    - **Value** = **integer**.
+    - **Next** = **points to the node**.
+
+- This **Node** concept as code:
+
+<div align="center">
+    <img src="Node_In_A_Code.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="400"/>
+</div>
 
 
 # HT: Hash Method.
