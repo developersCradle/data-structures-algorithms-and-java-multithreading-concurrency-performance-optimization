@@ -26,7 +26,7 @@ Big O.
 
 # 08 : Big O: O(1)
 
-# 09 : Big O: O(log n)
+# 09 : Big O: O(log n).
 # 10 : Big O: Different Terms for Input
 # 11 : Big O: Array Lists
 # 12 : Big O: Wrap Up

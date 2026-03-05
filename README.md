@@ -21,7 +21,7 @@
 
 All course material from *Java Multithreading, Concurrency & Performance Optimization* by **Michael Pogrebinsky** and **Top Developer Academy LLC**.
 
-> We were working with an old legacy system that was making two concurrent calls to a shared resource, causing inconsistent results that only appeared sometimes. The issue was subtle and difficult to reproduce, making it even harder to diagnose. What made it even harder was not runnable on our local environment! 
+> While working in the 🏛️Nordea🏛️, we were working with an old legacy system that was making **two concurrent** calls to a shared resource, causing inconsistent results that only appeared sometimes. The issue was subtle and difficult to reproduce, making it even harder to diagnose. What made it even harder was not runnable on our local environment! 
 >
 > A recent course I had taken on `Java Multithreading and Concurrency` proved invaluable. It helped me identify the race condition and apply the `synchronized` keyword correctly to control access to the critical section. With proper thread coordination in place, the system stabilized without requiring a major rewrite of the legacy code.<br><br>
 ~ *DevelopersCradle*
@@ -608,7 +608,7 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 All course material from *Data Structures and Algorithms: Deep Dive Using Java* by **Goran Lochert**, **Tim Buchalka** and **Tim Buchalka's Learn Programming Academy**.
 
->I once interviewed with **Vaisala** for the *Observation Network Manager NM10* role, where the technical discussion went deep into data structures and their operations. The interview challenged my understanding of trees, graphs, and time–space trade-offs in ways I hadn’t fully experienced before. [Project](https://www.vaisala.com/en/products/weather-environmental-sensors/observation-network-manager-nm10).
+> I once interviewed with **Vaisala** for the *Observation Network Manager NM10* role, where the technical discussion went deep into data structures and their operations. The interview challenged my understanding of trees, graphs, and time–space trade-offs in ways I hadn’t fully experienced before. [Project](https://www.vaisala.com/en/products/weather-environmental-sensors/observation-network-manager-nm10).
 >
 > Although I **wasn’t** selected for the position, the experience became a turning point. It drove me to truly internalize the concepts through a deep dive into `Data Structures and Algorithms using Java`, strengthening both my problem-solving approach and technical confidence for future challenges.
 <br><br>
@@ -676,8 +676,13 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 All course material from *Java Data Structures & Algorithms + LEETCODE Exercises* by **Scott Barrett**.
 
-> Story about victory! <br><br>
-~ *DevelopersCradle*
+
+> Once I saw one <b>requirement</b> in the job posting, I realized that my LeetCode practice wasn’t just for fun—it directly built the skills the role demanded.
+>
+>*"Can you design a system that efficiently handles millions of inserts, deletes, and queries per second?"*
+>
+> Companies like Facebook evaluate candidates on their ability to apply data structures in both coding challenges and real-world system design—showing that mastering arrays, trees, and hash maps isn’t just academic, it’s practical. <br><br>
+~ DevelopersCradle
 
 Contains my own notes with some course material to enforce learning experience.
 
@@ -702,9 +707,9 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 #### Progress/Curriculum.
 
-- [ ] [Section 01](#): Introduction.
-- [ ] [Section 02](#): Big O.
-- [ ] [Section 03](#): Classes & References.
+- [ ] [Section 01](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Data%20Structures%20and%20Algorithms%20plus%20LEETCODE%20Exercises/Section%2001#chapter-01-big-o): Introduction. ⚠️ In progress! ⚠️
+- [ ] [Section 02](#): Big O. ⚠️ In progress! ⚠️
+- [ ] [Section 03](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Data%20Structures%20and%20Algorithms%20plus%20LEETCODE%20Exercises/Section%2003#section-03---classes--references): Classes & References. ⚠️ In progress! ⚠️
 - [ ] [Section 04](#): Linked Lists.
 - [ ] [Section 05](#): LL: Coding Exercises.
 - [ ] [Section 06](#): LL: Interview / LeetCode Exercises.
@@ -717,7 +722,15 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 - [ ] [Section 13](#): Trees.
 - [ ] [Section 14](#): BST: Coding Exercises.
 - [ ] [Section 15](#): BST: Interview / LeetCode Exercises.
-- [ ] [Section 16](#): Hash Tables.
+- [ ] [Section 16](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Data%20Structures%20and%20Algorithms%20plus%20LEETCODE%20Exercises/Section%2016#section-16-hash-tables): Hash Tables. ⚠️ In progress! ⚠️
+
+
+* **Section 15**:
+    * *Quiz 00*:
+        * [...](#).
+* **Section 16**:
+    * *Quiz 05*:
+        * [Hash Table Big O](#).
 
 #### Additional stuff.
 
@@ -737,7 +750,7 @@ All course material from A Comprehensive Introduction to Java Virtual Machine (J
 >
 >*"How you would tune the JVM for Garbage Collection (GC) overhead in latency-sensitive applications?"*
 >
-> Sony evaluates candidates on real-world scalability, debugging under pressure, and system performance rather than just "textbook answers".<br><br>
+> Sony evaluates candidates on real-world scalability, debugging under pressure, and system performance rather than just "textbook answers". <br><br>
 > ~ *DevelopersCradle*
 
 Contains my own notes with some course material to enforce learning experience.
@@ -763,7 +776,7 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 #### Progress/Curriculum.
 
-- [ ] [Section 1](#) - Background ~ A High-level Overview on JVM.
+- [ ] [Section 1](#) - Background ~ A High-level Overview on JVM. ⚠️ In progress! ⚠️
 - [ ] [Section 2](#) - Lifetime of a Type.
 - [ ] [Section 3](#) - Reflection.
 - [ ] [Section 4](#) - JVM Memory, Garbage Collection, and Bytecode Instructions.
