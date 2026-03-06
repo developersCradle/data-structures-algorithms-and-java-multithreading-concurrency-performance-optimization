@@ -3,7 +3,8 @@ package datastructures.hashtable;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
-    }
 
+        HashTable myHashTable = new HashTable();
+        myHashTable.printTable();
+    }
 }

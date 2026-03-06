@@ -116,8 +116,229 @@ Hash Tables.
     <img src="Node_In_A_Code.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="400"/>
 </div>
 
+1. In this case the **Node** is accepting `key` and `value`.
+
+<div align="center">
+    <img src="Node_In_Adresses.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="400"/>
+</div>
+
+1. Now, we can initialize the addresses, with following **Nodes**'s.
+
+- The `HashTable` implementation in code:
+    - The `printTable(...)` for printing what is inside the `Hashtable`.
+
+````Java
+public class HashTable {
+    private int size = 7;
+    private Node[] dataMap;
+
+    class Node {
+        String key;
+        int value;
+        Node next;
+
+        Node(String key, int value) {
+            this.key = key;
+            this.value = value;
+        }
+    }
+
+    public void printTable() {
+        for (int i = 0; i < dataMap.length; i++) {
+            System.out.println(i + ":");
+            Node temp = dataMap[i];
+            while (temp != null) {
+                System.out.println("   {" + temp.key + "= " + temp.value + "}");
+                temp = temp.next;
+            }
+        }
+    }
+}
+````
+
+- We are inspecting that our **HashTable** is working!
+
+````Java
+package datastructures.hashtable;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        HashTable myHashTable = new HashTable();
+        myHashTable.printTable();
+    }
+}
+````
+
+- This seems to be working:
+
+<div align="center">
+    <img src="HashTable_Working.gif"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="500"/>
+</div>
+
+1. We can see there are **6** addresses on **empty** Hash Table!
+
+<details>
+<summary id="hashTable first" open="true"> <b>HashTable implementation, after this chapter.</b> </summary>
+
+### HashTable.java
+
+````Java
+package datastructures.hashtable;
+
+import java.util.ArrayList;
+
+public class HashTable {
+    private int size = 7;
+    private Node[] dataMap;
+
+    class Node {
+        String key;
+        int value;
+        Node next;
+
+        Node(String key, int value) {
+            this.key = key;
+            this.value = value;
+        }
+    }
+    
+    public HashTable()
+    {
+        dataMap = new Node[size];
+    }
+
+    /**
+     * For printing the Node.
+     */
+    public void printTable() {
+        for (int i = 0; i < dataMap.length; i++) {
+            System.out.println(i + ":");
+            Node temp = dataMap[i];
+            while (temp != null) {
+                System.out.println("   {" + temp.key + "= " + temp.value + "}");
+                temp = temp.next;
+            }
+        }
+    }
+}
+````
+### Main.java
+
+````Java
+package datastructures.hashtable;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        HashTable myHashTable = new HashTable();
+        myHashTable.printTable();
+    }
+}
+````
+</details>
 
 # HT: Hash Method.
+
+<div align="center">
+    <img src="We_Will_Be_Making_Our_Own_Hash_Method.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="500"/>
+</div>
+
+1. We will be making our own, **hash** method.
+
+<div align="center">
+    <img src="Hash_Method_Implementation.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="500"/>
+</div>
+
+- The `key.toCharArray()` will work as in following:
+
+<div align="center">
+    <img src="toCharArray_Working.gif"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="500"/>
+</div>
+
+1. String `"paint"` will be.
+2. Chars `'p'`, `'a'`, `'i'`, `'n'`, `'t'` and we will loop thought this with *ASCII* extraction.
+
+<div align="center">
+    <img src="Hashing_Algorithm.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="500"/>
+</div>
+
+1. `23` is prime number! It can be any prime numbers!
+    - It makes this more random!
+
+<details>
+<summary id="hashTable second" open="true"> <b>HashTable implementation, after this chapter.</b> </summary>
+
+### HashTable.java
+
+````Java
+package datastructures.hashtable;
+
+import java.util.ArrayList;
+
+public class HashTable {
+    private int size = 7;
+    private Node[] dataMap;
+
+    class Node {
+        String key;
+        int value;
+        Node next;
+
+        Node(String key, int value) {
+            this.key = key;
+            this.value = value;
+        }
+    }
+
+    public HashTable()
+    {
+        dataMap = new Node[size];
+    }
+
+    /**
+     * For printing the Node.
+     */
+    public void printTable() {
+        for (int i = 0; i < dataMap.length; i++) {
+            System.out.println(i + ":");
+            Node temp = dataMap[i];
+            while (temp != null) {
+                System.out.println("   {" + temp.key + "= " + temp.value + "}");
+                temp = temp.next;
+            }
+        }
+    }
+
+    private int hash(String key) {
+        int hash = 0;
+        char[] keyChars = key.toCharArray();
+        for (int i = 0; i < keyChars.length; i++) {
+            int asciiValue = keyChars[i];
+            hash = (hash + asciiValue * 23) % dataMap.length;
+        }
+        return hash;
+    }
+}
+````
+### Main.java
+
+````Java
+package datastructures.hashtable;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        HashTable myHashTable = new HashTable();
+        myHashTable.printTable();
+    }
+}
+````
+</details>
+
 
 # HT: Set.
 

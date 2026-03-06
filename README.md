@@ -511,7 +511,7 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 - [ ] Add first captions for all the chapters, like `#someThing`, so can be linked.
 
 <p align="center">
-    <img id="studying" src="Data Structures Easy to Advanced Course caption.png" style="width:900px;height:140px;">
+    <img id="studying" src="Data_Structures_Easy_To_Advanced_Course_Caption.png" style="width:900px;height:140px;">
 </p>
 
 <p align="center">
@@ -597,6 +597,18 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 - [ ] [Section 51](#) - Indexed Priority Queue | Data Structure.
 - [ ] [Section 52](#) - Indexed Priority Queue | Data Structure | Source Code.
 
+#### Additional stuff.
+
+- [ ] Add some.
+
+#### The Quizzes and Labs.
+
+* **Section 01**:
+    * *Quiz*:
+        * [Some here](#).
+    * *Coding Exercise*:
+        * [Some here](#).
+
 <p align="center">
     <img id="studying" src="Data_Structures_And_Algorithms_Deep_Dive_Using_Java_Caption.png" style="width:1200px;height:130px;">
 </p>
@@ -608,7 +620,7 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 All course material from *Data Structures and Algorithms: Deep Dive Using Java* by **Goran Lochert**, **Tim Buchalka** and **Tim Buchalka's Learn Programming Academy**.
 
-> I once interviewed with **Vaisala** for the *Observation Network Manager NM10* role, where the technical discussion went deep into data structures and their operations. The interview challenged my understanding of trees, graphs, and time–space trade-offs in ways I hadn’t fully experienced before. [Project](https://www.vaisala.com/en/products/weather-environmental-sensors/observation-network-manager-nm10).
+> I once interviewed with 🌤️**Vaisala**🌤️ for the *Observation Network Manager NM10* role, where the technical discussion went deep into data structures and their operations. The interview challenged my understanding of trees, graphs, and time–space trade-offs in ways I hadn’t fully experienced before. [Project](https://www.vaisala.com/en/products/weather-environmental-sensors/observation-network-manager-nm10).
 >
 > Although I **wasn’t** selected for the position, the experience became a turning point. It drove me to truly internalize the concepts through a deep dive into `Data Structures and Algorithms using Java`, strengthening both my problem-solving approach and technical confidence for future challenges.
 <br><br>
@@ -677,7 +689,7 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 All course material from *Java Data Structures & Algorithms + LEETCODE Exercises* by **Scott Barrett**.
 
 
-> Once I saw one <b>requirement</b> in the job posting, I realized that my LeetCode practice wasn’t just for fun—it directly built the skills the role demanded.
+> Once I saw one 👀<b>requirement</b>👀 in the job posting, I realized that my *LeetCode* practice wasn’t just for fun—it directly built the skills the role demanded.
 >
 >*"Can you design a system that efficiently handles millions of inserts, deletes, and queries per second?"*
 >
@@ -724,13 +736,23 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 - [ ] [Section 15](#): BST: Interview / LeetCode Exercises.
 - [ ] [Section 16](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Data%20Structures%20and%20Algorithms%20plus%20LEETCODE%20Exercises/Section%2016#section-16-hash-tables): Hash Tables. ⚠️ In progress! ⚠️
 
+#### The Quizzes and Labs.
 
+* **Section 02**:
+    * *Quiz*:
+        * [Quiz 01: Big O](#).
+    * *Coding Exercise*:
+        * [Coding Exercise 01: Big O: O(n)](#).
 * **Section 15**:
-    * *Quiz 00*:
+    * *Quiz*:
+        * [...](#).
+    * *Coding Exercise*:
         * [...](#).
 * **Section 16**:
-    * *Quiz 05*:
-        * [Hash Table Big O](#).
+    * *Quiz*:
+        * [Quiz 05: Hash Table Big O](#).
+    * *Coding Exercise*:
+        * [...](#).
 
 #### Additional stuff.
 
@@ -746,7 +768,7 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 All course material from A Comprehensive Introduction to Java Virtual Machine (JVM) by **Dheeru Mundluru**.
 
-> Once I saw one <b>requirement</b> in the job posting, this lead me get more comfortable at the JVM internals.
+> Once I saw one 👓<b>requirement</b>👓 in the job posting, this lead me get more comfortable at the JVM internals.
 >
 >*"How you would tune the JVM for Garbage Collection (GC) overhead in latency-sensitive applications?"*
 >

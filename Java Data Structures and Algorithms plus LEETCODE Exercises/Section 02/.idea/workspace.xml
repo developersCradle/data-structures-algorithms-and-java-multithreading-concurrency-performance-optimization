@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f82b22a2-4d40-4c06-b4cd-dfb82f3e32fe" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Section 01/Big_O_Intro.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Section 01/DSA/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Section 01/DSA/.idea/DSA.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Section 01/DSA/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Section 01/DSA/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Section 01/DSA/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Section 01/DSA/datastructures/hashtable/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Section 01/DSA/out/production/DSA/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Section 01/DSA/out/production/DSA/.idea/DSA.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Section 01/DSA/out/production/DSA/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Section 01/DSA/out/production/DSA/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Section 01/DSA/out/production/DSA/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Section 01/DSA/out/production/DSA/datastructures/hashtable/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Section 01/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../Section 01/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Section 16/Node_In_A_Code.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/../Section 16/Node_In_A_Code.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Section 16/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../Section 16/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="3AZW0MWDUVrJA78HzIIqJ4EOP8F" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/ScoopiDoo/Desktop/git projektit/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/Java Data Structures and Algorithms plus LEETCODE Exercises/Section 02/DSA"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f82b22a2-4d40-4c06-b4cd-dfb82f3e32fe" name="Changes" comment="" />
+      <created>1772800349198</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1772800349198</updated>
+    </task>
+    <servers />
+  </component>
+</project>
