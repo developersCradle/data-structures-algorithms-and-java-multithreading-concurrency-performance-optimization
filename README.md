@@ -354,12 +354,11 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
     <img src="Java Application Performance Tuning and Memory Management desc.PNG" alt="Java Application Performance Tuning and Memory Management description here" style="width:660px" />
 </p> 
 
-
 All course material from *Java Application Performance Tuning and Memory Management* by from **Matt Greencroft** ... Sir **Matt Greencroft** and **Virtual Pair Programmers** with my own visual notes. ✍️
 
-> I interviewed with **Polar** for an Advanced Java role, and the technical discussion immediately dove into multithreading, concurrency, and performance optimization. They asked about thread pools, synchronization strategies, deadlocks, optimizing CPU-bound versus IO-bound operations, and even Virtual Threads in Java. The questions were challenging and required more than just textbook knowledge — they wanted practical understanding of real-world thread behavior.
+> I interviewed with 🔴**Polar**🔴 for an Advanced Java role, and the technical discussion immediately dove into multithreading, concurrency, and performance optimization. They asked about thread pools, synchronization strategies, deadlocks, optimizing CPU-bound versus IO-bound operations, and even Virtual Threads in Java. The questions were challenging and required more than just textbook knowledge — they wanted practical understanding of real-world thread behavior.
 >
->Thanks to a recent course on `Java Multithreading, Concurrency & Performance Optimization`, I could confidently discuss thread-safe collections, locks, executor frameworks, and the advantages of Virtual Threads for scalable, lightweight concurrency. Even though I was **not chosen** for the position, the interview **drove me** to deeply pursue these concepts, strengthening my skills and confidence for future challenges.<br><br>
+> Thanks to a recent course on `Java Multithreading, Concurrency & Performance Optimization`, I could confidently discuss thread-safe collections, locks, executor frameworks, and the advantages of Virtual Threads for scalable, lightweight concurrency. Even though I was **not chosen** for the position, the interview **drove me** to deeply pursue these concepts, strengthening my skills and confidence for future challenges.<br><br>
 ~ *DevelopersCradle*
 
 This repository is made with [![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?logo=intellij-idea&logoColor=white)](#) with [![Eclipse](https://img.shields.io/badge/Eclipse-FE7A16.svg?logo=Eclipse&logoColor=white)](#) hotkeys, therefore it will include configuration files which are related to this IDE this approach will be favored for now. ⚙️
@@ -515,7 +514,7 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 </p>
 
 <p align="center">
-    <img src="Learn Data Structures from a Google Engineer caption desc.jpg" alt="Free data Structures and Algorithm" style="width:500px;"/>
+    <img src="Learn_Data_Structures_From_A_Google_Engineer_Description.jpg" alt="Learn Data Structures From A Google Engineer Description" style="width:500px;"/>
 </p>
 
 todo this desc.
@@ -719,7 +718,7 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 #### Progress/Curriculum.
 
-- [ ] [Section 01](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Data%20Structures%20and%20Algorithms%20plus%20LEETCODE%20Exercises/Section%2001#chapter-01-big-o): Introduction. ⚠️ In progress! ⚠️
+- [x] [Section 01](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Data%20Structures%20and%20Algorithms%20plus%20LEETCODE%20Exercises/Section%2001#chapter-01-big-o): Introduction. ✅
 - [ ] [Section 02](#): Big O. ⚠️ In progress! ⚠️
 - [ ] [Section 03](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Data%20Structures%20and%20Algorithms%20plus%20LEETCODE%20Exercises/Section%2003#section-03---classes--references): Classes & References. ⚠️ In progress! ⚠️
 - [ ] [Section 04](#): Linked Lists.
