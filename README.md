@@ -687,7 +687,6 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 All course material from *Java Data Structures & Algorithms + LEETCODE Exercises* by **Scott Barrett**.
 
-
 > Once I saw one 👀<b>requirement</b>👀 in the job posting, I realized that my *LeetCode* practice wasn’t just for fun—it directly built the skills the role demanded.
 >
 >*"Can you design a system that efficiently handles millions of inserts, deletes, and queries per second?"*
@@ -718,10 +717,10 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 #### Progress/Curriculum.
 
-- [x] [Section 01](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Data%20Structures%20and%20Algorithms%20plus%20LEETCODE%20Exercises/Section%2001#chapter-01-big-o): Introduction. ✅
-- [ ] [Section 02](#): Big O. ⚠️ In progress! ⚠️
-- [ ] [Section 03](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Data%20Structures%20and%20Algorithms%20plus%20LEETCODE%20Exercises/Section%2003#section-03---classes--references): Classes & References. ⚠️ In progress! ⚠️
-- [ ] [Section 04](#): Linked Lists.
+- [x] [Section 01](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Data%20Structures%20and%20Algorithms%20plus%20LEETCODE%20Exercises/Section%2001#chapter-01---introduction): Introduction. ✅
+- [x] [Section 02](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Data%20Structures%20and%20Algorithms%20plus%20LEETCODE%20Exercises/Section%2002#chapter-02-big-o): Big O. ✅
+- [x] [Section 03](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Data%20Structures%20and%20Algorithms%20plus%20LEETCODE%20Exercises/Section%2003#section-03---classes--references): Classes & References. ✅
+- [ ] [Section 04](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Data%20Structures%20and%20Algorithms%20plus%20LEETCODE%20Exercises/Section%2004/README.md#chapter-04-linked-lists): Linked Lists. ⚠️ In progress! ⚠️
 - [ ] [Section 05](#): LL: Coding Exercises.
 - [ ] [Section 06](#): LL: Interview / LeetCode Exercises.
 - [ ] [Section 07](#): Doubly Linked Lists.
@@ -739,9 +738,9 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 * **Section 02**:
     * *Quiz*:
-        * [Quiz 01: Big O](#).
+        * [...](#).
     * *Coding Exercise*:
-        * [Coding Exercise 01: Big O: O(n)](#).
+        * [Coding Exercise 01: Big O: O(n)](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Data%20Structures%20and%20Algorithms%20plus%20LEETCODE%20Exercises/Section%2002/README.md#coding-exercise-01--big-o-on).
 * **Section 15**:
     * *Quiz*:
         * [...](#).
@@ -815,7 +814,7 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 <br>
 
 <p align="center">
-    <img src="SonyQuestions.PNG" alt="Sony questions." width="400"/>
+    <img src="Sony_Interview_Questions.PNG" alt="Sony questions." width="400"/>
 </p>
 
 </details>
@@ -836,10 +835,8 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
     <img id="Performance Optimization" src="How_To_Get_Good_At_l33t_Code_By_Nich_White_Learning_Path.jpg" style=" width: 400px;">
 </p>
 
-
 > [!IMPORTANT]  
 > Comfortable requirements, one can open text editor and write data structure like **Linked List**.
-
 
 <details>
 
