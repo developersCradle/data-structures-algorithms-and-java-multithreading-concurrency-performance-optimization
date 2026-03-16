@@ -7,13 +7,13 @@ Big O.
 # Big O: Intro.
 
 <div align="center">
-    <img src="Big_O_Intro.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="600"/>
+    <img src="Big_O_Intro.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="700"/>
 </div>
 
 1. What is Big O? We will answer this question.
 
 <div align="center">
-    <img src="Comparing_Codes.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="500"/>
+    <img src="Comparing_Codes.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="700"/>
 </div>
 
 1. Both have the same **code**, but the implementation is different.
@@ -23,7 +23,7 @@ Big O.
 - **Big O** is how compare two codes mathematically!
 
 <div align="center">
-    <img src="Comparing_Codes.gif"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="500"/>
+    <img src="Comparing_Codes.gif"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="700"/>
 </div>
 
 1. Code 1 runs 15 secs!
@@ -37,29 +37,29 @@ Big O.
 - **Space Complexity** is how much memory it consumes, here example of those **two** algorithms. The first here:
 
 <div align="center">
-    <img src="Space_Complexity_First_Algorithm.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="400"/>
+    <img src="Space_Complexity_First_Algorithm.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="700"/>
 </div>
 
 - The second:
 
 <div align="center">
-    <img src="Space_Complexity_Second_Algorithm.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="400"/>
+    <img src="Space_Complexity_Second_Algorithm.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="700"/>
 </div>
 
 # Big O: Worst Case.
 
 <div align="center">
-    <img src="Big_O_Worst_Case.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="600"/>
+    <img src="Big_O_Worst_Case.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="700"/>
 </div>
 
-1.  We will be coming thought the **Time Complexity**  for this project!
+1.  We will be coming thought the **Time Complexity** for this project!
 2. We usually illustrate this, with the three letters:
     - **Omega**.
     - **Theta**.
     - **Omegran** or **O**.
 
 <div align="center">
-    <img src="Array_With_For_Loop.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="600"/>
+    <img src="Array_With_For_Loop.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="700"/>
 </div>
 
 0. Represents **array**, which we are looking when we are looping in for loop!
@@ -71,7 +71,7 @@ Big O.
 # Big O: O(n).
 
 <div align="center">
-    <img src="O_Of_N.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="600"/>
+    <img src="O_Of_N.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="700"/>
 </div>
 
 1. `O(n)` it might be the easiest to get head around!
@@ -103,7 +103,7 @@ public class Main {
 - We are running the code:
 
 <div align="center">
-    <img src="10_items.gif"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="600"/>
+    <img src="10_items.gif"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="700"/>
 </div>
 
 1. We get 10 **items** from **n** times.
@@ -111,13 +111,13 @@ public class Main {
 - Analysis of the code.
 
 <div align="center">
-    <img src="This_Code_Is_O_Of_N.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="500"/>
+    <img src="This_Code_Is_O_Of_N.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="700"/>
 </div>
 
 1. This code is `O(n)`. It is `O(n)` since we passed **n=10** and it printed **10 times**!  
 
 <div align="center">
-    <img src="O_Of_N_Graph.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="500"/>
+    <img src="O_Of_N_Graph.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="700"/>
 </div>
 
 1. `n` passed to function!
@@ -131,7 +131,7 @@ public class Main {
 # Coding Exercise 01 ↔ Big O: O(n).
 
 <div align="center">
-    <img src="Coding_Exercise_01_Big_O.PNG"  alt="Coding Exercise 01 Big O Exercise" width="400"/>
+    <img src="Coding_Exercise_01_Big_O.PNG"  alt="Coding Exercise 01 Big O Exercise" width="700"/>
 </div>
 
 
@@ -204,7 +204,7 @@ Task 1: Write a method called printItems in Java.
 # Big O: Drop Constants.
 
 <div align="center">
-    <img src="Drop_Constants_Intro.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="600"/>
+    <img src="Drop_Constants_Intro.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="700"/>
 </div>
 
 1. We are experimenting of dropping the **constants**!
@@ -238,13 +238,13 @@ public class Main {
 - We are running the code:
 
 <div align="center">
-    <img src="N_Plus_N.gif"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="600"/>
+    <img src="N_Plus_N.gif"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="700"/>
 </div>
 
 1. We can see that **10** items have replayed **two times**! That's like `n+n`!
 
 <div align="center">
-    <img src="Analysing_The_Algorithm.gif"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="600"/>
+    <img src="Analysing_The_Algorithm.gif"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="700"/>
 </div>
 
 1. We had `n + n` operations. We passed **10** + **10** items we got **20** times.
@@ -258,7 +258,7 @@ public class Main {
 # Big O: O(n^2).
 
 <div align="center">
-    <img src="O_Of_N_Pow_Two.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="600"/>
+    <img src="O_Of_N_Pow_Two.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="700"/>
 </div>
 
 1. We will be exploring the `O(n^2)`.
@@ -294,13 +294,13 @@ public class Main {
 - We are running the code:
 
 <div align="center">
-    <img src="N_Pow_Two.gif"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="600"/>
+    <img src="N_Pow_Two.gif"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="700"/>
 </div>
 
 1. It goes to **99**.
 
 <div align="center">
-    <img src="Analysing_The_Algorithm_N_Pow_Two.gif"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="600"/>
+    <img src="Analysing_The_Algorithm_N_Pow_Two.gif"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="700"/>
 </div>
 
 1. This was run `n * n`.
@@ -308,7 +308,7 @@ public class Main {
 3. This is `O(n^2)`.
 
 > [!IMPORTANT]  
->  We are calling this as `O(n2)` **Quadratic Time**!
+>  We are calling this as `O(n^2)` **Quadratic Time**!
 
 <div align="center">
     <img src="O_Of_N_Pow_Two_Graph.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="700"/>
@@ -356,7 +356,7 @@ public static void printItems(int n) {
     - `2.1` is `n` times since it was **linear time**!
 
 <div align="center">
-    <img src="Worst_Case_Operation_Is_Taking_Place.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="400"/>
+    <img src="Worst_Case_Operation_Is_Taking_Place.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="700"/>
 </div>
 
 1. The **worst** case is the `n^2`.
@@ -364,7 +364,7 @@ public static void printItems(int n) {
 2. The **less bad** case is the `n`.
 
 <div align="center">
-    <img src="Dropping_The_N.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="500"/>
+    <img src="Dropping_The_N.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="700"/>
 </div>
 
 1. We just drop the `n` and the `O(...)` case will be `n^2`!
@@ -375,40 +375,143 @@ public static void printItems(int n) {
 # Big O: O(1).
 
 <div align="center">
-    <img src="O_Of_One_Intro.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="500"/>
+    <img src="O_Of_One_Intro.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="700"/>
 </div>
 
-1. We will be going thought, the **most efficient** t
+1. We will be going thought, the **most efficient** 
 
 <div align="center">
-    <img src="N_Pow_Two_Example_Analysis.gif"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="500"/>
+    <img src="N_Pow_Two_Example_Analysis.gif"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="700"/>
 </div>
 
 1. In this example if the `n` **grows** the **operations** execution time status stays at the `O(1)`, since there is one `+` operation!
-2. Now if we add **new** `+` **operation** we could say this `O(2)`,
+2. Now if we add **new** `+` **operation** we could say this `O(2)`.
 3. We will be simplifying this into the `O(1)`. This is called **Constant Time**
     - If the `n` grows, the number of operation **does not** grow! 
 
-
-
 <div align="center">
-    <img src="O_Of_One.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="500"/>
+    <img src="O_Of_One.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="700"/>
 </div>
 
 1. `n` passed to the function! 
 2. Number of operation.
 3. `O(1)` is most **efficient**!
 
+> [!IMPORTANT]  
+>  We are calling this as `O(1)` **Constant Time**!
+
 # Big O: O(log n).
 
+> [!IMPORTANT]  
+> In **Logarithmic Form**, we can tell how many times you divide something by `2`!
+
 <div align="center">
-    <img src="O_Of_N_Pow_Two.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="600"/>
+    <img src="O_Of_Log_N.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="700"/>
 </div>
 
-1. `O(log n)`.
+- Add to all pics, graph and the intro like, which was upper.
 
+<div align="center">
+    <img src="Task_For_The_Log_Of_N.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="700"/>
+</div>
+
+1. We will be looking at the `O(log n)`. In this example this is **sorted array**!
+2. Our task is to find this **number** from this array, what is the **fastest way** to find this?
+
+<div align="center">
+    <img src="Finding_Number_In_Array_For_The_Log_Of_N.gif"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="700"/>
+</div>
+
+1. Quickest way is to narrow array and get to `1`? It is, **Cut the array to half**!
+2. Then, in which part the `1` is not. Not this one!
+3. We do this again!
+4. We do this again!
+
+<div align="center">
+    <img src="Counting_The_Array_Division.gif"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="700"/>
+</div>
+
+- We can see that, it takes **3** division to take place to have the number `1`.
+
+- We will be turning this to **Exponential Form**:
+
+<div align="center">
+    <img src="Exponential_Form.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="700"/>
+</div>
+
+- We will transfer this to **Logarithmic Format**:
+
+1. We are 
+
+
+
+
+<div align="center">
+    <img src="Logarithmic_Form.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="700"/>
+</div>
+
+1. *How many times do we multiply by a number to reach a certain value?*
+    - This is **3** times!
+
+<div align="center">
+    <img src="Logarithmic_Of_Large_Number.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="700"/>
+</div>
+
+1. This comes **super useful**, when there is huge number. For this case it is **31**!
+
+<div align="center">
+    <img src="Log_Of_N_Graph.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="700"/>
+</div>
+
+1. `n` passed to the function!
+2. Number of operation.
+3. Very flat `O(log n)`, not the best. `O(1)` is still the best!
+
+> [!IMPORTANT]  
+>  We are calling this as`O(log n)`**Logarithmic Time**! 
+
+<div align="center">
+    <img src="Linearithmic_Time_Graph.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="700"/>
+</div>
+
+1. We are using `O(n log n)` usually for the **Sorting**, example **Merge Sort** or example **Heap Sort**!
+
+> [!IMPORTANT]  
+>  We are calling this as`O(n log n)` — **Linearithmic Time**! 
 
 # Big O: Different Terms for Input.
+
+> [!IMPORTANT]  
+>  This is very common **interview** question! 
+
+<div align="center">
+    <img src="Different_Terms_For_Inputs.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="700"/>
+</div>
+
+1.
+
+
+````Java
+package misc.big_o;
+
+public class BigO_Sixth {
+        public static void printItems(int a, int b) {
+            for (int i = 0; i < a; i++) {
+                System.out.println(i);
+            }
+
+            for (int j = 0; j < b; j++) {
+                System.out.println(j);
+            }
+        }
+}
+````
+
+<div align="center">
+    <img src="Analysing_The_Algorithm_Where_Is_Two_Arguments.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="700"/>
+</div>
+
+1. This needs to have separate **algebra variables**, since they are **different parameters**! 
 
 # Big O: Array Lists.
 
