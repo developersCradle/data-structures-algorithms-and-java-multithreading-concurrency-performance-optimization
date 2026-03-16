@@ -71,7 +71,7 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 - [ ] go thought the definition of the `throughput` chapter.
 - Add this to curriculum from Turun yliopisto [säikeet](https://staff.cs.utu.fi/opinnot/kurssit/HOJ-2012/kalvot/kalvot2-3.pdf).
     - Brake this down to different pages!
-
+- Remove the files archive files when course is finished!
 
 <hr>
 
@@ -323,15 +323,15 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 #### Progress/Curriculum.
 
-- [ ] [Section 1](#) - Getting Started With the Course.
-- [ ] [Section 2](#) - Course Slides and Source Code.
-- [ ] [Section 3](#) - Getting Started with Java Threads (Platform Threads).
-- [ ] [Section 4](#) - Getting Started with Virtual Threads.
-- [ ] [Section 5](#) - Future and CompletableFuture.
-- [ ] [Section 6](#) - Structured Concurrency using Virtual Threads (Preview Feature).
-- [ ] [Section 7](#) - HTTP calls using Virtual Threads.
-- [ ] [Section 8](#) - Using Futures with Virtual Threads.
-- [ ] [Section 9](#) - Build a Spring Boot Application using Virtual Threads.
+- [ ] [Section 01](#) - Getting Started With the Course.
+- [ ] [Section 02](#) - Course Slides and Source Code.
+- [ ] [Section 03](#) - Getting Started with Java Threads (Platform Threads).
+- [ ] [Section 04](#) - Getting Started with Virtual Threads.
+- [ ] [Section 05](#) - Future and CompletableFuture.
+- [ ] [Section 06](#) - Structured Concurrency using Virtual Threads (Preview Feature).
+- [ ] [Section 07](#) - HTTP calls using Virtual Threads.
+- [ ] [Section 08](#) - Using Futures with Virtual Threads.
+- [ ] [Section 09](#) - Build a Spring Boot Application using Virtual Threads.
 - [ ] [Section 10](#) - Load Test using `ab` – Apache HTTP server benchmarking tool.
 
 #### Additional stuff.
@@ -543,15 +543,15 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 #### Progress/Curriculum.
 
-- [ ] [Section 1](#) - Abstract data types.
-- [ ] [Section 2](#) - Introduction to Big-O.
-- [ ] [Section 3](#) - Dynamic and Static Arrays.
-- [ ] [Section 4](#) - Dynamic Array Code.
-- [ ] [Section 5](#) - Linked Lists Introduction.
-- [ ] [Section 6](#) - Doubly Linked List Code.
-- [ ] [Section 7](#) - Stack Introduction.
-- [ ] [Section 8](#) - Stack Implementation.
-- [ ] [Section 9](#) - Stack Code.
+- [ ] [Section 01](#) - Abstract data types.
+- [ ] [Section 02](#) - Introduction to Big-O.
+- [ ] [Section 03](#) - Dynamic and Static Arrays.
+- [ ] [Section 04](#) - Dynamic Array Code.
+- [ ] [Section 05](#) - Linked Lists Introduction.
+- [ ] [Section 06](#) - Doubly Linked List Code.
+- [ ] [Section 07](#) - Stack Introduction.
+- [ ] [Section 08](#) - Stack Implementation.
+- [ ] [Section 09](#) - Stack Code.
 - [ ] [Section 10](#) - Queue Introduction.
 - [ ] [Section 11](#) - Queue Implementation.
 - [ ] [Section 12](#) - Queue Code.
@@ -631,11 +631,11 @@ This repository is made with [![IntelliJ IDEA](https://img.shields.io/badge/Inte
 
 [The course at Udemy](https://www.udemy.com/course/data-structures-and-algorithms-deep-dive-using-java). 
 
-[Website of maker 1](https://www.timbuchalka.com/).
+[Website of maker 01](https://www.timbuchalka.com/).
 
-[Website of maker 2](https://jojoguruacademy.blogspot.com/).
+[Website of maker 02](https://jojoguruacademy.blogspot.com/).
 
-[Website of maker 3](https://learnprogramming.academy/).
+[Website of maker 03](https://learnprogramming.academy/).
 
 If the content sparked :fire: your interest, please consider buying the course and start learning :book:.
 
@@ -678,11 +678,11 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
         * [Some here](#).
 
 <p align="center">
-    <img src="Java_Data_Structures_And_Algorithms_Plus_LEETCODE_Excervice_Caption.png" alt="course intros" style="width:990px;height:110px;"/>
+    <img src="Java_Data_Structures_And_Algorithms_Plus_LEETCODE_Excervice_Caption.png" alt="Java Data Structures And Algorithms Plus LEETCODE Excervice Caption" style="width:990px;height:110px;"/>
 </p>
 
 <p align="center">
-    <img src="Java_Data_Structures_And_Algorithms_Plus_LEETCODE_Excervice_Description.PNG" alt="Course Intros" style="width:690px" />
+    <img src="Java_Data_Structures_And_Algorithms_Plus_LEETCODE_Excervice_Description.PNG" alt="Java Data Structures And Algorithms Plus LEETCODE Excervice Description" style="width:690px" />
 </p>
 
 All course material from *Java Data Structures & Algorithms + LEETCODE Exercises* by **Scott Barrett**.
@@ -741,6 +741,30 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
         * [...](#).
     * *Coding Exercise*:
         * [Coding Exercise 01: Big O: O(n)](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Data%20Structures%20and%20Algorithms%20plus%20LEETCODE%20Exercises/Section%2002/README.md#coding-exercise-01--big-o-on).
+
+* **Section 05**:
+    * *Coding Exercise*:
+        * [Coding Exercise 02: LL: Constructor](#).
+        * [Coding Exercise 03: LL: Append](#).
+        * [Coding Exercise 04: LL: Remove Last](#).
+        * [Coding Exercise 05: LL: Prepend](#).
+        * [Coding Exercise 06: LL: Remove First](#).
+        * [Coding Exercise 07: LL: Get](#).
+        * [Coding Exercise 08: LL: Set](#).
+        * [Coding Exercise 09: LL: Insert](#).
+        * [Coding Exercise 10: LL: Remove](#).
+        * [Coding Exercise 11: LL: Reverse](#).
+
+* **Section 12**:
+    * *Coding Exercise*:
+        * [Coding Exercise 40: Stack: Push for a Stack That Uses an ArrayList (** Interview Question)](#).
+        * [Coding Exercise 41: Stack: Pop for a Stack That Uses an ArrayList (** Interview Question)](#).
+        * [Coding Exercise 42: Stack: Reverse String (** Interview Question)](#).
+        * [Coding Exercise 43: Stack: Parentheses Balanced (** Interview Question)](#).
+        * [Coding Exercise 44: Stack: Sort Stack (** Interview Question)](#).
+        * [Coding Exercise 45: Queue Using Stacks: Enqueue (** Interview Question)](#).
+        * [Coding Exercise 46: Queue Using Stacks: Dequeue (** Interview Question)](#).
+
 * **Section 15**:
     * *Quiz*:
         * [...](#).
@@ -754,7 +778,7 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 #### Additional stuff.
 
-- [ ] Add some.
+- [ ] Check the cheat sheet!
 
 <p align="center">
     <img src="A_Comprehensive_Introduction_To_Java_Virtual_Machine_(JVM)_Caption.png" alt="course intros" style="width:990px;height:110px;"/>
@@ -796,12 +820,12 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 #### Progress/Curriculum.
 
-- [ ] [Section 1](#) - Background ~ A High-level Overview on JVM. ⚠️ In progress! ⚠️
-- [ ] [Section 2](#) - Lifetime of a Type.
-- [ ] [Section 3](#) - Reflection.
-- [ ] [Section 4](#) - JVM Memory, Garbage Collection, and Bytecode Instructions.
-- [ ] [Section 5](#) - Strings & JVM.
-- [ ] [Section 6](#) - Bonus Chapter.
+- [ ] [Section 01](#) - Background ~ A High-level Overview on JVM. ⚠️ In progress! ⚠️
+- [ ] [Section 02](#) - Lifetime of a Type.
+- [ ] [Section 03](#) - Reflection.
+- [ ] [Section 04](#) - JVM Memory, Garbage Collection, and Bytecode Instructions.
+- [ ] [Section 05](#) - Strings & JVM.
+- [ ] [Section 06](#) - Bonus Chapter.
 
 #### Additional stuff.
 

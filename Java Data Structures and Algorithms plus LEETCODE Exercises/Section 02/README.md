@@ -321,6 +321,12 @@ public class Main {
 
 # Big O: Drop Non-Dominants.
 
+<div align="center">
+    <img src="Drop_Non_Dominants_Intro.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="700"/>
+</div>
+
+1. Here we are exploring non-dominant terms!
+
 - Code that we are going to analyze:
     - Here is the two `for` loops inside each other and another `for` next to it.
 
@@ -390,7 +396,7 @@ public static void printItems(int n) {
     - If the `n` grows, the number of operation **does not** grow! 
 
 <div align="center">
-    <img src="O_Of_One.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="700"/>
+    <img src="O_Of_One_Graph.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="700"/>
 </div>
 
 1. `n` passed to the function! 
@@ -408,8 +414,6 @@ public static void printItems(int n) {
 <div align="center">
     <img src="O_Of_Log_N.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="700"/>
 </div>
-
-- Add to all pics, graph and the intro like, which was upper.
 
 <div align="center">
     <img src="Task_For_The_Log_Of_N.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="700"/>
@@ -440,11 +444,6 @@ public static void printItems(int n) {
 </div>
 
 - We will transfer this to **Logarithmic Format**:
-
-1. We are 
-
-
-
 
 <div align="center">
     <img src="Logarithmic_Form.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="700"/>
@@ -488,8 +487,9 @@ public static void printItems(int n) {
     <img src="Different_Terms_For_Inputs.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="700"/>
 </div>
 
-1.
+1. We are exploring when we are inputting different **terms**.
 
+- Example code, we will be analyzing!
 
 ````Java
 package misc.big_o;
@@ -507,14 +507,133 @@ public class BigO_Sixth {
 }
 ````
 
+- Analyzing:
+
 <div align="center">
     <img src="Analysing_The_Algorithm_Where_Is_Two_Arguments.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="700"/>
 </div>
 
-1. This needs to have separate **algebra variables**, since they are **different parameters**! 
+1. This needs to have separate **algebra variables**, since they are **different parameters**! We need to use different terms for inputs!
+
+- This is the simplest solution as we can go!
+    - Now we need to understand **both loops** to analyze this deeper!
+
+- Next example code, we will be analyzing!
+
+````Java
+public static void printItems(int a, int b) {
+    for (int i = 0; i < a; i++) {
+        for (int j = 0; j < b; j++) {
+            System.out.println(i + " " + j);
+        }
+    }
+}
+````
+
+- Analyzing:
+
+<div align="center">
+    <img src="Analysing_The_Algorithm_Where_Is_Two_Arguments_Where_Loops_Inside_Each_Other.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="700"/>
+</div>
+
+1. This is the same case, but the **loop's** inside each other.
+2. We just use `*` for this case.
 
 # Big O: Array Lists.
 
+<div align="center">
+    <img src="Big_O_Array_Lists_Intro.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="700"/>
+</div>
+
+1. Big O of **Array List**!
+
+<div align="center">
+    <img src="Operations_On_The_Array_List.gif"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="700"/>
+</div>
+
+1. When `.add(17)` to this side of list, it is **simple** operation!
+2. There is no need for **re-indexing**!
+3. When `.remove(4)` to this side of list, it is also **simple** operation!
+4. There is no need for **re-indexing**!
+5. These operations for this side of **array list**, is `O(1)`!
+
+- Now we will be looking, if we are doing the operations to the **other end**!
+
+<div align="center">
+    <img src="Operations_On_The_Array_List_To_The_Other_Side.gif"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="700"/>
+</div>
+
+1. Removing `.remove(...)` from this side is simple, **BUT**.
+2. This makes the list need to be **re-indexed**, the now order needs to start form index of `0`, and we need to touch **every item** in array!
+3. These same steps need to be done, when we are `.add(...)`
+4. Operations on this side of the array will be `O(1)`.
+
+<div align="center">
+    <img src="O_One_Half.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="700"/>
+</div>
+
+1. One would think, since one **average** insert time is `O(1/2 n)`, but need pay attention to:
+    - Big O measures worst case!
+    - We drop constants!
+
+- Removing is `0(n)`.
+
+<div align="center">
+    <img src="Array_List_Search_By_Content.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="700"/>
+</div>
+
+1. **Search** by content, is `0(n)` in **Array List**.
+    - We need to loop every element!
+
+<div align="center">
+    <img src="Array_List_Get_By_Index.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="700"/>
+</div>
+
+1. **Get** by index, is `0(1)` in **Array List**.
+
 # Big O: Wrap Up.
+
+<div align="center">
+    <img src="Wrap_up_Intro.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="700"/>
+</div>
+
+1. Wrapping Up, **Big O**! 
+
+- Let's look when `N = 100`.
+
+<div align="center">
+    <img src="Graph_When_N_Is_100.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="700"/>
+</div>
+
+1. `O(1) = 1`.
+2. `O(log n) ~ 7`.
+3. `O(n) = 100`.
+4. `O(n^2) = 10,000`, where **spread** comes even more apparent, when `O(^2)` grows!
+
+- Now, let's look when `N = 1000`.
+
+<div align="center">
+    <img src="Graph_When_N_Is_1000.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="700"/>
+</div>
+
+1. `O(1) = 1`.
+2. `O(log n) ~ 10`. This went from `7` → `10`
+3. `O(n) = 1,000`.
+4. `O(n^2) = 1, 000,000`, where **spread** comes even more apparent, when `O(^2)` grows! This grew **very fast**!
+
+> [!IMPORTANT]  
+> If one can write function from `O(n^2)` to `O(n)`, it is big gain!
+
+<div align="center">
+    <img src="Terms_For_These_Time_Complexities.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="700"/>
+</div>
+
+1.
+2.
+3.
+4.
+5.
+
+- Continue this
 
 # Quiz 01: Big O.
