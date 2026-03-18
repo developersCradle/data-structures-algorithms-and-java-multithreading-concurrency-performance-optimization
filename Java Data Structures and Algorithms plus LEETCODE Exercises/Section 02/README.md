@@ -628,12 +628,63 @@ public static void printItems(int a, int b) {
     <img src="Terms_For_These_Time_Complexities.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="700"/>
 </div>
 
-1.
-2.
-3.
-4.
-5.
+1. Is called **Loop within a Loop**.
+````Java
+          for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                System.out.println(i + ", " + j);
+            }
+        }
+````
+2. Is called **Proportional**.
+````Java
+    for (int i = 0; i < n; i++) {
+            System.out.println(i);
+        }
+````
+3. Is called **Divide and Conquer**.
+````Java
+public class LogarithmicExample {
+    public static int binarySearch(int[] arr, int target) {
+        int left = 0, right = arr.length - 1;
 
-- Continue this
+        while (left <= right) {
+            int mid = (left + right) / 2;
+
+            if (arr[mid] == target)
+                return mid;
+            else if (arr[mid] < target)
+                left = mid + 1;
+            else
+                right = mid - 1;
+        }
+        return -1;
+    }
+
+    public static void main(String[] args) {
+        int[] arr = {1, 3, 5, 7, 9, 11};
+        System.out.println(binarySearch(arr, 7));
+    }
+}
+````
+4. Is called **Constant**.
+````Java
+    public static void main(String[] args) {
+        int[] arr = {10, 20, 30};
+
+        System.out.println(arr[1]); // Always one step
+    }
+````
+
+<div align="center">
+    <img src="Big_O_Complexity_Chart.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="700"/>
+</div>
+
+1. `O(n1)` and `O(2^n)` will be very rare to see from functions!
+2. We want to be to **stay here!**
+
+- Check the [link](https://www.bigocheatsheet.com/)!
 
 # Quiz 01: Big O.
+
+- Todo

@@ -778,7 +778,7 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 #### Additional stuff.
 
-- [ ] Check the cheat sheet!
+- Whenever there is new **data structure** learned → Check the cheat sheet!
 
 <p align="center">
     <img src="A_Comprehensive_Introduction_To_Java_Virtual_Machine_(JVM)_Caption.png" alt="course intros" style="width:990px;height:110px;"/>
