@@ -738,7 +738,7 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 * **Section 02**:
     * *Quiz*:
-        * [...](#).
+        * [Quiz 01: Big O](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Data%20Structures%20and%20Algorithms%20plus%20LEETCODE%20Exercises/Section%2002/README.md#quiz-01-big-o).
     * *Coding Exercise*:
         * [Coding Exercise 01: Big O: O(n)](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Data%20Structures%20and%20Algorithms%20plus%20LEETCODE%20Exercises/Section%2002/README.md#coding-exercise-01--big-o-on).
 
@@ -778,8 +778,9 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 #### Additional stuff.
 
-- Whenever there is new **data structure** learned → Check the cheat sheet!
-
+- Whenever there is new **data structure** learned → Check the cheat sheet, in reflection!
+    - [Check the cheat sheet](https://www.bigocheatsheet.com/).
+    
 <p align="center">
     <img src="A_Comprehensive_Introduction_To_Java_Virtual_Machine_(JVM)_Caption.png" alt="course intros" style="width:990px;height:110px;"/>
 </p>

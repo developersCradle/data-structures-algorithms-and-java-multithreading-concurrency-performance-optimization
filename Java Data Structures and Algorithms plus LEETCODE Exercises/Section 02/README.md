@@ -108,13 +108,14 @@ public class Main {
 
 1. We get 10 **items** from **n** times.
 
-- Analysis of the code.
+- Analysis of the code, as in below:
 
 <div align="center">
     <img src="This_Code_Is_O_Of_N.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="700"/>
 </div>
 
 1. This code is `O(n)`. It is `O(n)` since we passed **n=10** and it printed **10 times**!  
+2. The number of times it will be **iterated** from the **argument**!
 
 <div align="center">
     <img src="O_Of_N_Graph.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="700"/>
@@ -680,11 +681,105 @@ public class LogarithmicExample {
     <img src="Big_O_Complexity_Chart.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="700"/>
 </div>
 
-1. `O(n1)` and `O(2^n)` will be very rare to see from functions!
-2. We want to be to **stay here!**
+1. Drop the constants, it will do
 
 - Check the [link](https://www.bigocheatsheet.com/)!
 
 # Quiz 01: Big O.
 
-- Todo
+<details>
+
+<summary id="Q1" open="true"> <b>Question 01.</b> </summary>
+
+````yaml
+Question 01:
+What is the Big O time complexity when you have a loop within a loop (assuming each loop runs n times)?
+````
+
+- My answer:
+
+<div align="center">
+    <img src="Quiz_01/Q1.PNG" width="600"/>
+</div>
+
+1. `n x n = n^2`, since two loops!
+
+</details>
+
+<details>
+
+<summary id="Q2" open="true"> <b>Question 02.</b> </summary>
+
+````yaml
+Question 02:
+How would the following be written:  O(100n^2)?
+````
+
+- My answer:
+
+<div align="center">
+    <img src="Quiz_01/Q02.PNG" width="600"/>
+</div>
+
+1. Drop the constants!
+
+</details>
+
+<details>
+
+<summary id="Q3"  open="true"> <b>Question 03.</b> </summary>
+
+````yaml
+Question 03:
+What Big O is associated with Divide and Conquer?
+````
+
+- My answer:
+
+<div align="center">
+    <img src="Quiz_01/Q3.PNG" width="600"/>
+</div>
+
+1. Example **Binary Search**!
+
+</details>
+
+
+<details>
+
+<summary id="Q4" open="true"> <b>Question 04.</b> </summary>
+
+````yaml
+Question 04:
+What is the correct way to write:  O(n^2 + n) ?
+````
+
+- My answer:
+
+<div align="center">
+    <img src="Quiz_01/Q4.PNG" width="600"/>
+</div>
+
+1. Example **Binary Search**!
+
+</details>
+
+
+<details>
+
+<summary id="Q5" open="true"> <b>Question 05.</b> </summary>
+
+````yaml
+Question 05:
+The most efficient Big O is:
+````
+
+- My answer:
+
+<div align="center">
+    <img src="Quiz_01/Q5.PNG" width="600"/>
+</div>
+
+1. **Constant Time**!
+
+</details>
