@@ -350,7 +350,7 @@ public class Main {
 
 # HT: Interview Question.
 
-# Quiz 5: Hash Table Big O.
+# Quiz 05: Hash Table Big O.
 
 
 

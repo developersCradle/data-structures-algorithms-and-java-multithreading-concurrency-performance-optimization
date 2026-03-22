@@ -185,7 +185,7 @@ Object obj = new Object();
             User myUser = new User("Alex"); 
             }
             ```` 
-# Quiz 5: Stack & Heap Memory Regions.
+# Quiz 05: Stack & Heap Memory Regions.
 
 <details>
 

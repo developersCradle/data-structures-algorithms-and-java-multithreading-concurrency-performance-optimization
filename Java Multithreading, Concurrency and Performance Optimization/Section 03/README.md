@@ -876,7 +876,7 @@ $$
 $$
 
 <details>
-<summary id="The factorial thread" open="true"> <b>Coding Exercise 02: Multithreaded Calculation! My Answer!</b> </summary>
+<summary id="coding_exercise_02_multithreaded_calculation" open="true"> <b>Coding Exercise 02: Multithreaded Calculation! My Answer!</b> </summary>
 
 <div align="center">
     <img src="Multithreaded_Exercise_Coding_Exercise_02.PNG"  alt="Java threads." width="500"/>
@@ -1022,13 +1022,13 @@ $$
 $$
 
 <details>
-<summary id="The factorial thread" open="true"> <b>Coding Exercise 02: Multithreaded Calculation! The Teachers Solution!</b> </summary>
+<summary id="coding_exercise_02_multithreaded_calculation_solution" open="true"> <b>Coding Exercise 02: Multithreaded Calculation! The Teachers Solution!</b> </summary>
 
 <div align="center">
     <img src="Multithreaded_Exercise_Coding_Exercise_02_Solution.PNG"  alt="Java threads." width="500"/>
 </div>
  
-```Java
+````Java
 
 import java.math.BigInteger;
  
@@ -1079,4 +1079,4 @@ public class ComplexCalculation {
         }
     }
 }
-```
+````

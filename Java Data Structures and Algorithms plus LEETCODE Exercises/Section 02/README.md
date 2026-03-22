@@ -131,76 +131,45 @@ public class Main {
 
 # Coding Exercise 01 ↔ Big O: O(n).
 
-<div align="center">
-    <img src="Coding_Exercise_01_Big_O.PNG"  alt="Coding Exercise 01 Big O Exercise" width="700"/>
-</div>
-
-
 <details>
-<summary id="The factorial thread" open="true"> <b>Coding Exercise 01: Big O Question!</b> </summary>
+<summary id="coding_exercise_01_big" open="true"> <b>Coding Exercise 01: Big O: O(n)!</b> </summary>
 
-````yml
-<> Big O: O(n)
-Write a method called printItems in Java.
-
-The purpose of this method is to print out a series of integer numbers, starting from 0 up to (but not including) a specified number.
-
-Code that is provided:
-    1. The method is defined as public and static, meaning it can be accessed from any class without needing to create an instance of the class it belongs to.
-
-    2. The method  returns void, meaning it will not return any value.
-
-    3. The method accepts a single parameter, an integer n. The method will use this value to determine the number of items to be printed.
-
-
-Code that you are tasked with writing:
-
-    1. The method should include a for loop. The loop should start with a counter i initialized at 0, continue as long as i is less than n, and increment i by 1 with each iteration.
-
-    2. Inside the loop, the method should print the current value of i to the console followed by a new line.
-
-
-The final result of this task should be a method that, when called with an argument n, prints the integer numbers from 0 to n-1 (inclusive) on separate lines.
-
-For instance, if called with n = 10, the output should be:
-
-0
-1
-2
-3
-4
-5
-6
-7
-8
-9
-
+<div align="center">
+    <img src="Coding_Exercise_01_Big_O.PNG"  alt="Coding Exercise 01 Big O Exercise." width="500"/>
+</div>
+ 
+````Java
+public class Main {
+    public static void printItems(int n) {
+        // WRITE THE FOR LOOP TO COMPLETE PRINTITEMS HERE //
+        //                                                //
+        //                                                //
+        ////////////////////////////////////////////////////
+    }
+    // DO NOT CHANGE THE MAIN METHOD BELOW
+    public static void main(String[] args) {
+        printItems(10);
+    }
+}
 ````
 
+1. **Task 01:** Write a method called `printItems` in Java.
+	- **Answer:** Below:
 
-</details>
-
-```yaml
-Task 1: Write a method called printItems in Java.
-```
-
-1. **Task 1:**
-	- **Answer:** 
-    ````Java
-    public class Main {
-        public static void printItems(int n) {
-        
-            for (int i = 0; i < n; i++) {
-                System.out.println(i);
-            }
-        }
-
-        // DO NOT CHANGE THE MAIN METHOD BELOW
-        public static void main(String[] args) {
-            printItems(10);
+````Java
+public class Main {
+    public static void printItems(int n) {
+        for (int i = 0; i < n; i++) {
+            System.out.println(i);
         }
     }
-    ````
+    // DO NOT CHANGE THE MAIN METHOD BELOW
+    public static void main(String[] args) {
+        printItems(10);
+    }
+}
+````
+</details>
 
 # Big O: Drop Constants.
 
@@ -669,6 +638,7 @@ public class LogarithmicExample {
 }
 ````
 4. Is called **Constant**.
+
 ````Java
     public static void main(String[] args) {
         int[] arr = {10, 20, 30};
@@ -682,8 +652,7 @@ public class LogarithmicExample {
 </div>
 
 1. Drop the constants, it will do
-
-- Check the [link](https://www.bigocheatsheet.com/)!
+    - Check the [link](https://www.bigocheatsheet.com/)!
 
 # Quiz 01: Big O.
 

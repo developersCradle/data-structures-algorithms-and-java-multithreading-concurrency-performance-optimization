@@ -16,7 +16,7 @@
 </p>
 
 <p align="center">
-    <img id="Performance Optimization" src="Java_Multithreading_Concurrency_And_Performance_Optimization_Description.PNG" style=" width: 680px;">
+    <img id="performance_optimization" src="Java_Multithreading_Concurrency_And_Performance_Optimization_Description.PNG" style=" width: 680px;">
 </p>
 
 All course material from *Java Multithreading, Concurrency & Performance Optimization* by **Michael Pogrebinsky** and **Top Developer Academy LLC**.
@@ -77,7 +77,7 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 <details>
 
-<summary id="Cleaning" open="true"> <b>Cleaning process of the quizes and the exercices! </b></summary>
+<summary id="cleaning" open="true"> <b>Cleaning process of the quizes and the exercices! </b></summary>
 <br>
 
 - Cleaning the numbering from the exercise and quizes, they should be `01` rather than `1` chapter by chapter:
@@ -97,7 +97,7 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 <details>
 
-<summary id="Cleaning" open="true"> <b>Cleaning process the images names! </b></summary>
+<summary id="cleaning" open="true"> <b>Cleaning process the images names! </b></summary>
 <br>
 
 - Cleaning the images in the format `Image_Next_Number`, this will be chapter by chapter:
@@ -117,7 +117,7 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 <details>
 
-<summary id="Cleaning" open="true"> <b>Cleaning the images with the link and right alt tag! </b></summary>
+<summary id="cleaning" open="true"> <b>Cleaning the images with the link and right alt tag! </b></summary>
 <br>
 
 - Bigger ink in the pictures, this will be chapter by chapter:
@@ -273,7 +273,7 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 <details>
 
-<summary id="Kafka the progress" open="true"> <i>Course map for the </i><b>  Modern Java Courses!</b> </summary>
+<summary id="kafka_the_progress" open="true"> <i>Course map for the </i><b>  Modern Java Courses!</b> </summary>
 
 <br>
 
@@ -510,7 +510,7 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 - [ ] Add first captions for all the chapters, like `#someThing`, so can be linked.
 
 <p align="center">
-    <img id="studying" src="Data_Structures_Easy_To_Advanced_Course_Caption.png" style="width:900px;height:140px;">
+    <img id="data_structures_easy_to_advanced_course" src="Data_Structures_Easy_To_Advanced_Course_Caption.png" style="width:900px;height:140px;">
 </p>
 
 <p align="center">
@@ -609,11 +609,11 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
         * [Some here](#).
 
 <p align="center">
-    <img id="studying" src="Data_Structures_And_Algorithms_Deep_Dive_Using_Java_Caption.png" style="width:1200px;height:130px;">
+    <img id="data_structures_nd_algorithms_deep_dive_using_java" src="Data_Structures_And_Algorithms_Deep_Dive_Using_Java_Caption.png" style="width:1200px;height:130px;">
 </p>
 
 <p align="center">
-    <img id="studying" src="Data Structures and Algorithms description.PNG"
+    <img id="data_structures_nd_algorithms_deep_dive_using_java" src="Data Structures and Algorithms description.PNG"
     style="width:600px;height:210px;">
 </p>
 
@@ -678,7 +678,9 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
         * [Some here](#).
 
 <p align="center">
-    <img src="Java_Data_Structures_And_Algorithms_Plus_LEETCODE_Excervice_Caption.png" alt="Java Data Structures And Algorithms Plus LEETCODE Excervice Caption" style="width:990px;height:110px;"/>
+    <img 
+    id="java_data_structures_and_algorithms_plus_leetcode_excervice"
+    src="Java_Data_Structures_And_Algorithms_Plus_LEETCODE_Excervice_Caption.png" alt="Java Data Structures And Algorithms Plus LEETCODE Excervice Caption" style="width:990px;height:110px;"/>
 </p>
 
 <p align="center">
@@ -834,7 +836,7 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 <details>
 
-<summary id="Sony interview questions" open="true"> <i>The requirements, which drove me to pursies this course, from <b>Sony!</b></summary>
+<summary id="sony_interview_questions" open="true"> <i>The requirements, which drove me to pursies this course, from <b>Sony!</b></summary>
 
 <br>
 
@@ -853,11 +855,11 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
         * [Some here](#).
 
 <p align="center">
-    <img id="Performance Optimization" src="How_I_Got_Good_At_Algorithms_And_Data_Structures_Caption.png" style=" width: 900px; height: 100px">
+    <img id="performance_optimization" src="How_I_Got_Good_At_Algorithms_And_Data_Structures_Caption.png" style=" width: 900px; height: 100px">
 </p>
 
 <p align="center">
-    <img id="Performance Optimization" src="How_To_Get_Good_At_l33t_Code_By_Nich_White_Learning_Path.jpg" style=" width: 400px;">
+    <img id="performance_optimization" src="How_To_Get_Good_At_l33t_Code_By_Nich_White_Learning_Path.jpg" style=" width: 400px;">
 </p>
 
 > [!IMPORTANT]  
@@ -865,7 +867,7 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 <details>
 
-<summary id="Must know" open="true"> <b> Must know fundementals! </b> </summary>
+<summary id="must_know" open="true"> <b> Must know fundementals! </b> </summary>
 
 <p align="center">
     <br>

@@ -798,9 +798,9 @@ public static class Metrics {
 
 - Todo tee tämä loppuun.
 
-# Quiz 7: Atomic Operations, Volatile & Metrics Practical Example.
+# Quiz 07: Atomic Operations, Volatile & Metrics Practical Example.
 
-# Coding Exercise 3: Min - Max Metrics.
+# Coding Exercise 03: Min - Max Metrics.
 
 # Min - Max Metrics - Solution.
 
@@ -838,4 +838,4 @@ public static class Metrics {
 
 
 
-# Quiz 9: Locking Strategies & Deadlocks.
+# Quiz 09: Locking Strategies & Deadlocks.

@@ -257,13 +257,54 @@ Linked Lists.
     <img src="Node_Class_Will_Be_Following.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="300"/>
 </div>
 
-
 - Todo this if one see meaning full! Pretty simple.
-
 
 # Coding Exercises (Important).
 
+<div align="center">
+    <img src="Coding_Instruction.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="300"/>
+</div>
+
 # LL: Print List.
+
+<div align="center">
+    <img src="Print_List_Intro.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="300"/>
+</div>
+
+1. We will be making printing of the **list**.
+
+<div align="center">
+    <img src="Pringing_The_Values.gif"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="300"/>
+</div>
+
+1. We will be printing our **Node** values!
+
+- The printing:
+
+````Java
+    public void printList() {
+        Node temp = head;
+        while (temp != null) {
+            System.out.println(temp.value);
+            temp = temp.next;
+        }
+    }
+````
+- The getting:
+
+````Java
+    public Node getHead() {
+        return head;
+    }
+
+    public Node getTail() {
+        return tail;
+    }
+
+    public int getLength() {
+        return length;
+    }
+````
 
 # LL: Append.
 
@@ -284,3 +325,4 @@ Linked Lists.
 # LL: Remove.
 
 # LL: Reverse.
+
