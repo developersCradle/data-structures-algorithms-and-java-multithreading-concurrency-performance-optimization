@@ -1,4 +1,4 @@
-package datastructures.hashtable;
+package datastructures.linkedlist.coding_exercise_08_set;
 
 public class LinkedList {
 

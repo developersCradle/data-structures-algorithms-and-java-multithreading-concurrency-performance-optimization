@@ -268,13 +268,13 @@ Linked Lists.
 # LL: Print List.
 
 <div align="center">
-    <img src="Print_List_Intro.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="300"/>
+    <img src="Print_List_Intro.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="600"/>
 </div>
 
 1. We will be making printing of the **list**.
 
 <div align="center">
-    <img src="Pringing_The_Values.gif"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="300"/>
+    <img src="Pringing_The_Values.gif"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="600"/>
 </div>
 
 1. We will be printing our **Node** values!
@@ -290,7 +290,7 @@ Linked Lists.
         }
     }
 ````
-- The getting:
+- The getting the information:
 
 ````Java
     public Node getHead() {
@@ -306,7 +306,81 @@ Linked Lists.
     }
 ````
 
+- And the function for printing:
+
+````Java
+public void printList() {
+        Node temp = head;
+        while (temp != null) {
+            System.out.println(temp.value);
+            temp = temp.next;
+        }
+    }
+
+    public void printAll() {
+        if (length == 0) {
+            System.out.println("Head: null");
+            System.out.println("Tail: null");
+        } else {
+            System.out.println("Head: " + head.value);
+            System.out.println("Tail: " + tail.value);
+        }
+        System.out.println("Length:" + length);
+        System.out.println("\nLinked List:");
+        if (length == 0) {
+            System.out.println("empty");
+        } else {
+            printList();
+        }
+    }
+````
+
+- We will be printing the `printList()`.
+
+````Java
+import datastructures.linkedlist.LinkedList;
+
+public class Main {
+    public static void main(String[] args) {
+        LinkedList myList = new LinkedList(4);
+
+        myList.printAll();
+        myList.printList();
+    }
+}
+````
+
+- Example of printing:
+
+<div align="center">
+    <img src="Pringing_The_Values_In_Linked_List.gif"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="600"/>
+</div>
+
+1. One can see the `head` and the `tail` being `4`.
+
 # LL: Append.
+
+<div align="center">
+    <img src="Append_Intro.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="600"/>
+</div>
+
+1. We will be making `.append(...)` for our **Linked List**.
+    - This will be adding element to the **end of the list**!
+
+- There are **two** scenarios:
+    - `1.` When Linked List **is empty**, hence `null`.
+<div align="center">
+        <img src="Linked_List_When_There_Is_No_Elements_In_It.gif"  alt="Java DataStructures and Algorithms plus LEETCODE Exercises" width="300"/>
+</div>
+
+1. **Scenario**, when there is `null`, no elements, we need to initialize it!
+    - `2.` When we **add** to **end** of the Linked List.
+<div align="center">
+        <img src="Linked_List_Adding_To_The_End.gif"  alt="Java DataStructures and Algorithms plus LEETCODE Exercises" width="400"/>
+</div>
+
+1. **Scenario**, we need to add to the end of the **Linked List** and then change the `tail` to the last **Node**.
+
 
 # LL: Remove Last (Intro).
 

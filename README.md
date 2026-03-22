@@ -677,6 +677,10 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
     * *Coding Exercise*:
         * [Some here](#).
 
+
+
+<!-- Todo fix this, font wrong when pationce! -->
+
 <p align="center">
     <img 
     id="java_data_structures_and_algorithms_plus_leetcode_excervice"
@@ -723,7 +727,7 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 - [x] [Section 02](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Data%20Structures%20and%20Algorithms%20plus%20LEETCODE%20Exercises/Section%2002#chapter-02-big-o): Big O. ✅
 - [x] [Section 03](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Data%20Structures%20and%20Algorithms%20plus%20LEETCODE%20Exercises/Section%2003#section-03---classes--references): Classes & References. ✅
 - [ ] [Section 04](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Data%20Structures%20and%20Algorithms%20plus%20LEETCODE%20Exercises/Section%2004/README.md#chapter-04-linked-lists): Linked Lists. ⚠️ In progress! ⚠️
-- [ ] [Section 05](#): LL: Coding Exercises.
+- [ ] [Section 05](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Data%20Structures%20and%20Algorithms%20plus%20LEETCODE%20Exercises/Section%2005#section-05-ll-coding-exercises): LL: Coding Exercises.
 - [ ] [Section 06](#): LL: Interview / LeetCode Exercises.
 - [ ] [Section 07](#): Doubly Linked Lists.
 - [ ] [Section 08](#): DLL: Coding Exercises.
@@ -746,7 +750,7 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 * **Section 05**:
     * *Coding Exercise*:
-        * [Coding Exercise 02: LL: Constructor](#).
+        * [Coding Exercise 02: LL: Constructor](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Data%20Structures%20and%20Algorithms%20plus%20LEETCODE%20Exercises/Section%2005#coding-exercise-02-ll-constructor).
         * [Coding Exercise 03: LL: Append](#).
         * [Coding Exercise 04: LL: Remove Last](#).
         * [Coding Exercise 05: LL: Prepend](#).

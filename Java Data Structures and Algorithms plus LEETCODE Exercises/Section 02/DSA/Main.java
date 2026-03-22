@@ -1,12 +1,10 @@
-import misc.big_o.BigO_Fourth;
-import misc.big_o.BigO_Second;
-import misc.big_o.BigO_Third;
+import datastructures.linkedlist.LinkedList;
 
 public class Main {
     public static void main(String[] args) {
+        LinkedList myList = new LinkedList(4);
 
-
-        LinkedList list = new LinkedList();
-        BigO_Fourth.printItems(10);
+        myList.printAll();
+        myList.printList();
     }
 }
