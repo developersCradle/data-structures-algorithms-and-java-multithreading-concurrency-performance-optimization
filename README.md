@@ -415,7 +415,7 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 - [ ] [Chapter 09](#) - The Metaspace and internal JVM memory optimisations.
 - [ ] [Chapter 10](#) - Tuning the JVM’s Memory Settings.
 - [ ] [Chapter 11](#) - Introducing Garbage Collection.
-- [x] [Chapter 12](#) - Monitoring the Heap. ✅
+- [x] [Chapter 12](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Application%20Performance%20Tuning%20and%20Memory%20Management/Section%2012#chapter-12---monitoring-the-heap) - Monitoring the Heap. ✅
 - [x] [Chapter 13](#) - Analyzing a heap dump. ✅
 - [ ] [Chapter 14](#) - Generational Garbage Collection.
 - [ ] [Chapter 15](#) - Garbage Collector tuning & selection.

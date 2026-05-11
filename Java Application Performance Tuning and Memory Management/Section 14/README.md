@@ -1,5 +1,5 @@
-# Chapter 05 - Passing objects between methods.
+# Chapter 14 - Generational Garbage Collection.
 
-Passing objects between methods.
+Generational Garbage Collection.
 
 # What I learned.

@@ -1,5 +1,5 @@
-# Chapter 05 - Passing objects between methods.
+# Chapter 13 - Analyzing a heap dump.
 
-Passing objects between methods.
+Analyzing a heap dump.
 
 # What I learned.

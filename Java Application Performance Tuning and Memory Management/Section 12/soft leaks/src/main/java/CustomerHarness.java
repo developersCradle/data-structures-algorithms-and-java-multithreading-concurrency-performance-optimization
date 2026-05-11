@@ -22,7 +22,6 @@ public class CustomerHarness {
 			}
 			cm.howManyCustomers();
 			System.out.println("Available memory: " + Runtime.getRuntime().freeMemory() / 1024 + "k");
-			
 		}
 	}
 
