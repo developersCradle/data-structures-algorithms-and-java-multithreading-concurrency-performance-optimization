@@ -1,5 +1,25 @@
+<!-- 
+
+We are using following structure:
+
 <p align="center">
-    <img id="studying" src="Algorithms_And_Data_Structures_With_Some_Optimization_Courses_Caption.png" style="width:900px;height:140px;">
+    <img
+     src="Jackson_Quick_Start_JSON_Serialization_With_Java_Made_Easy_Caption.png"
+    alt="Jackson quick start json serialization with java made easy caption!"
+    style="width:1600px;height:120px;"/>
+</p> 
+<p align="center">
+    <img
+    id="Jackson_Quick_Start_JSON_Serialization_With_Java_Made_Easy_Description?trk=public_profile_see-credential" src="Jackson_Quick_Start_JSON_Serialization_With_Java_Made_Easy_Description.png"
+    alt="Jackson quick start json serialization with java made easy description!"
+    style="width:590px; height:160px;" />
+</p>
+
+-->
+
+
+<p align="center">
+    <img id="Algorithms_And_Data_Structures_With_Some_Optimization_Courses_Caption" src="Algorithms_And_Data_Structures_With_Some_Optimization_Courses_Caption.png" style="width:900px;height:140px;">
     <text>Attempt to study <b>Data Structures</b>, <b>Optimization</b> and <b>Algorithms</b> related topics!</text>
 </p>
 
@@ -16,14 +36,14 @@
 </p>
 
 <p align="center">
-    <img id="performance_optimization" src="Java_Multithreading_Concurrency_And_Performance_Optimization_Description.PNG" style=" width: 680px;">
+    <img id="Java_Multithreading_Concurrency_And_Performance_Optimization_Description" src="Java_Multithreading_Concurrency_And_Performance_Optimization_Description.PNG" style=" width: 680px;">
 </p>
 
 All course material from *Java Multithreading, Concurrency & Performance Optimization* by **Michael Pogrebinsky** and **Top Developer Academy LLC**.
 
-> While working in the 🏛️Nordea🏛️, we were working with an old legacy system that was making **two concurrent** calls to a shared resource, causing inconsistent results that only appeared sometimes. The issue was subtle and difficult to reproduce, making it even harder to diagnose. What made it even harder was not runnable on our local environment! 
+> While working in the 🏛️**Nordea**🏛️, we were working with an old legacy system that was making **two concurrent** calls to a shared resource, causing inconsistent results that only appeared sometimes. The issue was subtle and difficult to reproduce, making it even harder to diagnose. What made it even harder was not runnable on our local environment! 
 >
-> A recent course I had taken on `Java Multithreading and Concurrency` proved invaluable. It helped me identify the race condition and apply the `synchronized` keyword correctly to control access to the critical section. With proper thread coordination in place, the system stabilized without requiring a major rewrite of the legacy code.<br><br>
+> A recent course I had taken on `Java Multithreading and Concurrency` proved invaluable. It helped me identify the race condition and apply the `synchronized` keyword correctly to control access to the critical section. With proper thread coordination in place, the system stabilized without requiring a major rewrite of the legacy code. <br><br>
 ~ *DevelopersCradle*
 
 Contains my own notes with some course material to enforce learning experience.
@@ -41,7 +61,7 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 ?trk=public_profile_see-credential 
 -->
 
-<p id="logos" align="center">
+<p id="Logo_Combination" align="center">
     <img src="I_Have_Same_Smile_Finish.gif" alt="course intros" style="width:490px;height:210px;"/>
     <img src="Dummy_Cert.png" alt="course intros" style="width:490px;height:210px;"/>
 </p>
@@ -77,7 +97,7 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 <details>
 
-<summary id="cleaning" open="true"> <b>Cleaning process of the quizes and the exercices! </b></summary>
+<summary id="Cleaning_Quiz" open="true"> <b>Cleaning process of the quizes and the exercices! </b></summary>
 <br>
 
 - Cleaning the numbering from the exercise and quizes, they should be `01` rather than `1` chapter by chapter:
@@ -97,7 +117,7 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 <details>
 
-<summary id="cleaning" open="true"> <b>Cleaning process the images names! </b></summary>
+<summary id="Cleaning_Images" open="true"> <b>Cleaning process the images names! </b></summary>
 <br>
 
 - Cleaning the images in the format `Image_Next_Number`, this will be chapter by chapter:
@@ -117,7 +137,7 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 <details>
 
-<summary id="cleaning" open="true"> <b>Cleaning the images with the link and right alt tag! </b></summary>
+<summary id="Cleaning_Images_Links" open="true"> <b>Cleaning the images with the link and right alt tag! </b></summary>
 <br>
 
 - Bigger ink in the pictures, this will be chapter by chapter:
@@ -212,7 +232,7 @@ All course material from *Multithreading, Parallel & Asynchronous Coding in Mode
 
 > During a live technical demonstration at **Evitec Solutions**, I was asked to solve a puzzle involving a Java problem that required clean data processing logic. Under normal circumstances, it was a problem perfectly suited for **Java Streams**, but the pressure of the live session caused me to overlook that approach.
 >
->That moment became a turning point. It pushed me to deeply pursue a course on `Modern Java`, where I strengthened my understanding of streams, functional patterns, and expressive problem-solving techniques. The experience helped me regain confidence and sharpen my ability to apply the right abstractions even in high-pressure situations.<br><br>
+>That moment became a turning point. It pushed me to deeply pursue a course on `Modern Java`, where I strengthened my understanding of streams, functional patterns, and expressive problem-solving techniques. The experience helped me regain confidence and sharpen my ability to apply the right abstractions even in high-pressure situations. <br><br>
 ~ *DevelopersCradle*
 
 Contains my own notes with some course material to enforce learning experience.
@@ -273,7 +293,7 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 <details>
 
-<summary id="kafka_the_progress" open="true"> <i>Course map for the </i><b>  Modern Java Courses!</b> </summary>
+<summary id="Modern_Java_The_Progress" open="true"> <i>Course map for the </i><b> Modern Java Courses!</b> </summary>
 
 <br>
 
@@ -358,7 +378,7 @@ All course material from *Java Application Performance Tuning and Memory Managem
 
 > I interviewed with 🔴**Polar**🔴 for an Advanced Java role, and the technical discussion immediately dove into multithreading, concurrency, and performance optimization. They asked about thread pools, synchronization strategies, deadlocks, optimizing CPU-bound versus IO-bound operations, and even Virtual Threads in Java. The questions were challenging and required more than just textbook knowledge — they wanted practical understanding of real-world thread behavior.
 >
-> Thanks to a recent course on `Java Multithreading, Concurrency & Performance Optimization`, I could confidently discuss thread-safe collections, locks, executor frameworks, and the advantages of Virtual Threads for scalable, lightweight concurrency. Even though I was **not chosen** for the position, the interview **drove me** to deeply pursue these concepts, strengthening my skills and confidence for future challenges.<br><br>
+> Thanks to a recent course on *Java Multithreading, Concurrency & Performance Optimization*, I could confidently discuss thread-safe collections, locks, executor frameworks, and the advantages of Virtual Threads for scalable, lightweight concurrency. Even though I was **not chosen** for the position, the interview **drove me** to deeply pursue these concepts, strengthening my skills and confidence for future challenges. <br><br>
 ~ *DevelopersCradle*
 
 This repository is made with [![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?logo=intellij-idea&logoColor=white)](#) with [![Eclipse](https://img.shields.io/badge/Eclipse-FE7A16.svg?logo=Eclipse&logoColor=white)](#) hotkeys, therefore it will include configuration files which are related to this IDE this approach will be favored for now. ⚙️
@@ -395,8 +415,8 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 - [ ] [Chapter 09](#) - The Metaspace and internal JVM memory optimisations.
 - [ ] [Chapter 10](#) - Tuning the JVM’s Memory Settings.
 - [ ] [Chapter 11](#) - Introducing Garbage Collection.
-- [ ] [Chapter 12](#) - Monitoring the Heap.
-- [ ] [Chapter 13](#) - Analyzing a heap dump.
+- [x] [Chapter 12](#) - Monitoring the Heap. ✅
+- [x] [Chapter 13](#) - Analyzing a heap dump. ✅
 - [ ] [Chapter 14](#) - Generational Garbage Collection.
 - [ ] [Chapter 15](#) - Garbage Collector tuning & selection.
 - [ ] [Chapter 16](#) - Using a profiler to analyse application performance.
@@ -408,9 +428,24 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 #### Additional stuff.
 
-- [x] Check the content from other student, if there is missing or broken material. [Link](https://github.com/tommic81/udemy-java-memory-management/tree/master).
+- Remove the `Codes` folder after course is finished!
+
+- [ ] Check the content from other student, if there is missing or broken material. [Link](https://github.com/tommic81/udemy-java-memory-management/tree/master).
 
 - Do the chapters `The structure of this course`.
+
+- Finish this after this course is finished `Solving Memory Leaks in the JVM`. (add here the link)
+
+- [ ] Check this memory leak course after this course. [Link](https://www.linkedin.com/learning/java-memory-management-garbage-collection-jvm-tuning-and-spotting-memory-leaks).
+
+- [ ] Check second this memory leak course after this course. [Link](https://www.oreilly.com/live-events/memory-efficient-java/0636920457060/).
+
+- [ ] Check third this memory leak course after this course. [Link](https://www.pluralsight.com/courses/java-understanding-solving-memory-problems?utm_source=chatgpt.com).
+
+- [ ] Check Java Memory Leaks by Victor Rentea. [Link](https://www.youtube.com/watch?v=-0vkHxlGlOU).
+
+- [ ] Check. [Link](https://www.youtube.com/watch?v=W4SvLYU9H1I&list=PLQh1c87p_Wlp7GgRQEf3907LnxxsrbX3R).
+
 
 #### The Quizzes and Labs.
 
@@ -423,6 +458,129 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
     * *Logs*:
         * [Performance example second logs](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Application%20Performance%20Tuning%20and%20Memory%20Management/Section%2002/README.md#JIT%20logs%20example%20second%20logs).
         * [Performance logs from the logCompilation](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Application%20Performance%20Tuning%20and%20Memory%20Management/Section%2002/hotspot_pid11876.log).
+
+
+# Solving Memory Leaks in the JVM.
+
+<!-- 
+<p align="center">
+    <img
+     src="Java_Collections_From_Basics_To_Advanced_Caption.png"
+    alt=" Java Collections From Basics To Advanced Caption"
+    style="width:1600px;height:110px;"/>
+</p> -->
+
+<p align="center">
+    <img src="Java_Memory_Leak_Description.PNG"
+    alt="Java Memory Leak Description"
+    style="width:690px" />
+</p>
+
+All course material from *Solving Memory Leaks in the JVM* by **Kirk Pepperdine**!
+
+> Add story here <br><br>
+~ *DevelopersCradle*
+
+Contains my own with my own visual notes ✍️ with some course material to enforce learning experience.
+
+<!-- add this comment later 
+This repository is made with [![Eclipse](https://img.shields.io/badge/Eclipse-FE7A16.svg?logo=Eclipse&logoColor=white)](#), therefore it will include configuration files which are related to this IDE this approach will be favored for now. ⚙️ -->
+
+[The series at YouTube](https://www.youtube.com/watch?v=_gineh_HcoQ). 
+
+If the content sparked :fire: your interest, please consider buying the course and start learning :book:.
+
+<!-- 
+Linkedin puts this shit front, when clicking from private mode x(. Need to put this to make jump working every case
+?trk=public_profile_see-credential 
+-->
+
+<div align="center">
+    Insert certificate here when completed
+</div>
+
+**Note: The material provided in this repository is only for helping those who may get stuck at any point of time in the course. It is very advised that no one should just copy the solutions(violation of Honor Code) presented here.**
+
+#### Progress/Curriculum.
+
+- [x] [Section 01](#) - . ⚠️ In progress! ⚠️
+
+#### Additional stuff.
+
+- [ ] Todo.
+    
+<p align="center">
+    <img src="A_Comprehensive_Introduction_To_Java_Virtual_Machine_(JVM)_Caption.png" alt="course intros" style="width:990px;height:110px;"/>
+</p>
+
+<p align="center">
+    <img src="A_Comprehensive_Introduction_To_Java_Virtual_Machine_(JVM)_Description.PNG" alt="Course Intros" style="width:690px" />
+</p>
+
+All course material from A Comprehensive Introduction to Java Virtual Machine (JVM) by **Dheeru Mundluru**.
+
+> Once I saw one 👓<b>requirement</b>👓 in the job posting, this lead me get more comfortable at the JVM internals.
+>
+>*"How you would tune the JVM for Garbage Collection (GC) overhead in latency-sensitive applications?"*
+>
+> Sony evaluates candidates on real-world scalability, debugging under pressure, and system performance rather than just "textbook answers". <br><br>
+> ~ *DevelopersCradle*
+
+Contains my own notes with some course material to enforce learning experience.
+
+This repository is made with [![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?logo=intellij-idea&logoColor=white)](#) with [![Eclipse](https://img.shields.io/badge/Eclipse-FE7A16.svg?logo=Eclipse&logoColor=white)](#) hotkeys, therefore it will include configuration files which are related to this IDE this approach will be favored for now. ⚙️
+
+[The course at Udemy](https://www.udemy.com/course/a-comprehensive-introduction-to-java-virtual-machine-jvm/?couponCode=CP250105G1). 
+
+[Website of maker](https://www.semanticsquare.com/).
+
+If the content sparked :fire: your interest, please consider buying the course and start learning :book:.
+
+<!-- 
+Linkedin puts this shit front, when clicking from private mode x(. Need to put this to make jump working every case
+?trk=public_profile_see-credential 
+-->
+
+<div align="center">
+    Insert certificate here when completed
+</div>
+
+**Note: The material provided in this repository is only for helping those who may get stuck at any point of time in the course. It is very advised that no one should just copy the solutions(violation of Honor Code) presented here.**
+
+#### Progress/Curriculum.
+
+- [ ] [Section 01](#) - Background ~ A High-level Overview on JVM. ⚠️ In progress! ⚠️
+- [ ] [Section 02](#) - Lifetime of a Type.
+- [ ] [Section 03](#) - Reflection.
+- [ ] [Section 04](#) - JVM Memory, Garbage Collection, and Bytecode Instructions.
+- [ ] [Section 05](#) - Strings & JVM.
+- [ ] [Section 06](#) - Bonus Chapter.
+
+#### Additional stuff.
+
+- [ ] After this answer, the questions from Sony!
+- [ ] After this check the blog [JVM Anatomy Quarks](https://shipilev.net/jvm/anatomy-quarks/)!
+
+
+<details>
+
+<summary id="Sony_Interview_Questions" open="true"> <i>The requirements, which drove me to pursies this course, from <b>Sony!</b></summary>
+
+<br>
+
+<p align="center">
+    <img src="Sony_Interview_Questions.PNG" alt="Sony questions." width="400"/>
+</p>
+
+</details>
+
+#### The Quizzes and Labs.
+
+* **Section 01**:
+    * *Quiz*:
+        * [Some here](#).
+    * *Coding Exercise*:
+        * [Some here](#).
 
 <p align="center">
     <img src="Data_Structures_And_Algorithms_With_Visualizations_With_Java_Caption.png" alt="Data_Structures_And_Algorithms_With_Visualizations_With_Java_Caption.png" style="width:950px;height:130px;"/>
@@ -510,7 +668,7 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 - [ ] Add first captions for all the chapters, like `#someThing`, so can be linked.
 
 <p align="center">
-    <img id="data_structures_easy_to_advanced_course" src="Data_Structures_Easy_To_Advanced_Course_Caption.png" style="width:900px;height:140px;">
+    <img id="Data_Structures_Easy_To_Advanced_Course_Caption" src="Data_Structures_Easy_To_Advanced_Course_Caption.png" style="width:900px;height:140px;">
 </p>
 
 <p align="center">
@@ -609,11 +767,11 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
         * [Some here](#).
 
 <p align="center">
-    <img id="data_structures_nd_algorithms_deep_dive_using_java" src="Data_Structures_And_Algorithms_Deep_Dive_Using_Java_Caption.png" style="width:1200px;height:130px;">
+    <img id="Data_Structures_And_Algorithms_Deep_Dive_Using_Java_Caption" src="Data_Structures_And_Algorithms_Deep_Dive_Using_Java_Caption.png" style="width:1200px;height:130px;">
 </p>
 
 <p align="center">
-    <img id="data_structures_nd_algorithms_deep_dive_using_java" src="Data Structures and Algorithms description.PNG"
+    <img id="Data_Structures_And_Algorithms_Deep_Dive_Using_Java_Description" src="Data_Structures_And_Algorithms_Deep_Dive_Using_Java_Description.png"
     style="width:600px;height:210px;">
 </p>
 
@@ -678,13 +836,12 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
         * [Some here](#).
 
 
-
 <!-- Todo fix this, font wrong when pationce! -->
 
 <p align="center">
     <img 
-    id="java_data_structures_and_algorithms_plus_leetcode_excervice"
-    src="Java_Data_Structures_And_Algorithms_Plus_LEETCODE_Excervice_Caption.png" alt="Java Data Structures And Algorithms Plus LEETCODE Excervice Caption" style="width:990px;height:110px;"/>
+    id="Java_Data_Structures_And_Algorithms_Plus_Leetcode_Exercises"
+    src="Java_Data_Structures_And_Algorithms_Plus_LEETCODE_Exercises_Caption.png" alt="Java Data Structures And Algorithms Plus LEETCODE Exercises Caption" style="width:990px;height:110px;"/>
 </p>
 
 <p align="center">
@@ -786,84 +943,13 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 - Whenever there is new **data structure** learned → Check the cheat sheet, in reflection!
     - [Check the cheat sheet](https://www.bigocheatsheet.com/).
-    
+
 <p align="center">
-    <img src="A_Comprehensive_Introduction_To_Java_Virtual_Machine_(JVM)_Caption.png" alt="course intros" style="width:990px;height:110px;"/>
+    <img id="Performance_Optimization" src="How_I_Got_Good_At_Algorithms_And_Data_Structures_Caption.png" style=" width: 900px; height: 100px">
 </p>
 
 <p align="center">
-    <img src="A_Comprehensive_Introduction_To_Java_Virtual_Machine_(JVM)_Description.PNG" alt="Course Intros" style="width:690px" />
-</p>
-
-All course material from A Comprehensive Introduction to Java Virtual Machine (JVM) by **Dheeru Mundluru**.
-
-> Once I saw one 👓<b>requirement</b>👓 in the job posting, this lead me get more comfortable at the JVM internals.
->
->*"How you would tune the JVM for Garbage Collection (GC) overhead in latency-sensitive applications?"*
->
-> Sony evaluates candidates on real-world scalability, debugging under pressure, and system performance rather than just "textbook answers". <br><br>
-> ~ *DevelopersCradle*
-
-Contains my own notes with some course material to enforce learning experience.
-
-This repository is made with [![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?logo=intellij-idea&logoColor=white)](#) with [![Eclipse](https://img.shields.io/badge/Eclipse-FE7A16.svg?logo=Eclipse&logoColor=white)](#) hotkeys, therefore it will include configuration files which are related to this IDE this approach will be favored for now. ⚙️
-
-[The course at Udemy](https://www.udemy.com/course/a-comprehensive-introduction-to-java-virtual-machine-jvm/?couponCode=CP250105G1). 
-
-[Website of maker](https://www.semanticsquare.com/).
-
-If the content sparked :fire: your interest, please consider buying the course and start learning :book:.
-
-<!-- 
-Linkedin puts this shit front, when clicking from private mode x(. Need to put this to make jump working every case
-?trk=public_profile_see-credential 
--->
-
-<div align="center">
-    Insert certificate here when completed
-</div>
-
-**Note: The material provided in this repository is only for helping those who may get stuck at any point of time in the course. It is very advised that no one should just copy the solutions(violation of Honor Code) presented here.**
-
-#### Progress/Curriculum.
-
-- [ ] [Section 01](#) - Background ~ A High-level Overview on JVM. ⚠️ In progress! ⚠️
-- [ ] [Section 02](#) - Lifetime of a Type.
-- [ ] [Section 03](#) - Reflection.
-- [ ] [Section 04](#) - JVM Memory, Garbage Collection, and Bytecode Instructions.
-- [ ] [Section 05](#) - Strings & JVM.
-- [ ] [Section 06](#) - Bonus Chapter.
-
-#### Additional stuff.
-
-- [ ] After this answer, the questions from Sony!
-
-<details>
-
-<summary id="sony_interview_questions" open="true"> <i>The requirements, which drove me to pursies this course, from <b>Sony!</b></summary>
-
-<br>
-
-<p align="center">
-    <img src="Sony_Interview_Questions.PNG" alt="Sony questions." width="400"/>
-</p>
-
-</details>
-
-#### The Quizzes and Labs.
-
-* **Section 01**:
-    * *Quiz*:
-        * [Some here](#).
-    * *Coding Exercise*:
-        * [Some here](#).
-
-<p align="center">
-    <img id="performance_optimization" src="How_I_Got_Good_At_Algorithms_And_Data_Structures_Caption.png" style=" width: 900px; height: 100px">
-</p>
-
-<p align="center">
-    <img id="performance_optimization" src="How_To_Get_Good_At_l33t_Code_By_Nich_White_Learning_Path.jpg" style=" width: 400px;">
+    <img id="How_To_Get_Good_At_l33t_Code_By_Nich_White_Learning_Path_Description" src="How_To_Get_Good_At_l33t_Code_By_Nich_White_Learning_Path_Description.jpg" style=" width: 400px;">
 </p>
 
 > [!IMPORTANT]  
@@ -871,7 +957,7 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 <details>
 
-<summary id="must_know" open="true"> <b> Must know fundementals! </b> </summary>
+<summary id="Must_Know_Fundementals_For_Algorithms" open="true"> <b> Must know fundementals! </b> </summary>
 
 <p align="center">
     <br>
@@ -970,9 +1056,8 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 #### Additional stuff.
 
 - [ ] Don't get stuck of the proofs.
-
-- check this later https://www.youtube.com/watch?v=qcKn3PZT20I
-
+- [ ] [Data Structures and Algorithms Specialization Review]( https://www.youtube.com/watch?v=qcKn3PZT20I
+), is this worth it.
 <hr>
 
 - Can take this one [Algorithms Specialization](https://www.coursera.org/specializations/algorithmss).
@@ -987,3 +1072,8 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 <hr>
 
 - [Add this](https://www.youtube.com/watch?v=IhJGJG-9Dx8&list=PLI1t_8YX-Apv-UiRlnZwqqrRT8D1RhriX).
+
+<hr>
+
+- [Add this](https://www.coursera.org/learn/data-structures-optimizing-performance?utm_source=chatgpt.com#outcomes).
+

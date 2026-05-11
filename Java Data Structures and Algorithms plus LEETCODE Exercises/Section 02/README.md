@@ -651,8 +651,9 @@ public class LogarithmicExample {
     <img src="Big_O_Complexity_Chart.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="700"/>
 </div>
 
-1. Drop the constants, it will do
+1. We will never see these and don't want to see these!
     - Check the [link](https://www.bigocheatsheet.com/)!
+2. Want see these **mostly**!
 
 # Quiz 01: Big O.
 

@@ -15,10 +15,10 @@ Introduction.
 </div>
 
 <div align="center">
-    <img src="motivationWhyWeNeedThreads.PNG"  alt="Java threads." width="500"/>
+    <img src="Motivation_Why_We_Need_Threads.PNG"  alt="Java threads." width="500"/>
 </div>
 
-1. Let's explain **Responsiveness**.
+1. Let's start from explain the **Responsiveness**.
 
 <div align="center">
     <img src="examplesOfPoorResponsiveness.PNG"  alt="Java threads." width="500"/>

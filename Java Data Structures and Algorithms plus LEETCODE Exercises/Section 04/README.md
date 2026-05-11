@@ -116,8 +116,6 @@ Linked Lists.
     - Then we need to change the **pointers** to next nodes!
 2. Inserting to node is `O(n)`!
 
-
-
 - Next we will be **searching by value**, with **value**, meaning **lookup by value** and also **lookup by index**, with **index** meaning **lookup by index**. 
 
 <div align="center">
@@ -231,7 +229,7 @@ Linked Lists.
     <img src="Illustrating_The_Head_And_Tail_In_Linked_List.gif"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="700"/>
 </div>
 
-1. **Notice**, this is more representation picture, of the **text** representation!
+1. **Notice**. This is more representation picture of the nodes, but in the **text** representation!
     - We usually happen to handle the **text** format of the **Linked List**!
 
 # LL: Constructor.
