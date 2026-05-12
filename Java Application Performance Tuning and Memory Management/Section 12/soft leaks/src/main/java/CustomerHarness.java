@@ -2,8 +2,8 @@ public class CustomerHarness {
 	
 	public static void main(String[] args)  {
 		CustomerManager cm = new CustomerManager();
-		GenerateCustomerTask generateTask = new GenerateCustomerTask(cm);
-		ProcessCustomerTask processTask = new ProcessCustomerTask(cm);
+		GenerateCustomerTask generateTask = new GenerateCustomerTask(cm); // This is for adding!
+		ProcessCustomerTask processTask = new ProcessCustomerTask(cm); // This is for removing!
 		
 		for (int user = 0; user < 10; user++) {
 			Thread t = new Thread(generateTask);
@@ -12,7 +12,7 @@ public class CustomerHarness {
 		Thread t = new Thread(processTask);
 		t.start();
 		
-		//main thread is now acting as the monitoring thread
+		//main thread is ngiow acting as the monitoring thread
 		while (true) {
 			try {
 				Thread.sleep(5000);

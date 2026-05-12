@@ -234,17 +234,157 @@ Exception: java.lang.OutOfMemoryError thrown from the UncaughtExceptionHandler i
 Exception: java.lang.OutOfMemoryError thrown from the UncaughtExceptionHandler in thread "main"
 ````
 
+
+
+<div align="center">
+    <img src="Memory_Leak_Is_Being_Fixed.gif"  alt="Java threads." width="700"/>
+</div>
+
+1. We can see the **steady memory** release being happening!
+
+<details>
+
+<summary id="Memoryleak_Not_Fixed" open="true"> <b>Memory leak not fixed. CustomerManager!</b> </summary>
+
+````Java
+add here the code
+````
+</details>
+
+
 # Introducing (J)VisualVM.
 
 - Let's find out, why this is out of memory!
 
 - Official site to [download](https://visualvm.github.io/?utm_source=chatgpt.com)!
     - Example below of the **VisualVM**!
+
 <div align="center">
     <img src="VisualVM.PNG"  alt="Java threads." width="700"/>
 </div>
+	
+<div align="center">
+    <img src="Monitoring_Tab.PNG"  alt="Java threads." width="700"/>
+</div>
 
+1. We are interested in this **Heap Size** tab!
+
+<div align="center">
+    <img src="Heap_Size_Is_Getting_Released.PNG"  alt="Java threads." width="700"/>
+</div>
+
+1. We can see that the **GC** is releasing the memory!
 
 # Monitoring the size of the heap over time.
 
+- Lets the increase the **Heap Size**, for testing the **VisualVM**!
+
+> [!TIP]
+> `-Xmx50m` = *“Allow the Java program to use at most 50 MB of heap memory.”*
+
+- We can run experiment with this. We can see in the end application is going to crash!
+
+<div align="center">
+    <img src="Java_Leak_Hating.gif"  alt="Java threads." width="700"/>
+</div>
+
+1. Furthermore, we can see that **JVM** is releasing the memory!
+
+<details>
+
+<summary id="Thread progress
+" open="true"> <b>The thread code, that will throw interrupted task!</b> </summary>
+
+````Java
+
+
+
+````
+</details>
+
+
 # Fixing the problem and checking the heap size.
+
+- The following line will be **responsible** for **removing the customers**!
+	- `ProcessCustomerTask processTask = new ProcessCustomerTask(cm); // This is for removing!`
+
+- To fix this issue, we will be chancing the `customers.get(...)` to **delete**! 
+
+````Java
+	public Optional<Customer> getNextCustomer() {
+
+				if (lastProcessedId + 1 > nextAvalailbleId) {
+					lastProcessedId++;
+					return Optional.of(customers.get(lastProcessedId));
+				}
+				return Optional.empty();
+	}
+````
+
+- To following:
+
+````Java
+	public Optional<Customer> getNextCustomer() {
+		synchronized (customers)
+		{
+			if (!customers.isEmpty()) {
+				lastProcessedId++;
+				return Optional.of(customers.remove(lastProcessedId));
+			}
+		}
+		return Optional.empty();
+	}
+````
+
+- The `synchronized` (customers) **block guarantees** that only **one thread** at a time executes that section for the same customers object.
+
+<div align="center">
+    <img src="Memory_Leak_Is_Being_Fixed.gif"  alt="Java threads." width="700"/>
+</div>
+
+1. We can see the **steady memory** release being happening!
+
+<details>
+
+<summary id="Memoryleak_Fixed" open="true"> <b>Memory leak fixed. CustomerManager!</b> </summary>
+
+````Java
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+import java.util.Optional;
+
+
+public class CustomerManager {
+
+	private List<Customer> customers = new ArrayList<Customer>();
+	private int nextAvalailbleId = 0;
+
+	public  void addCustomer(Customer customer) {
+		synchronized (this) {
+			customer.setId(nextAvalailbleId);
+			synchronized(customers) {
+				customers.add(customer);
+			}
+			nextAvalailbleId++;
+		}
+	}
+
+	public Optional<Customer> getNextCustomer() {
+		synchronized (customers)
+		{
+			if (!customers.isEmpty()) {
+				return Optional.of(customers.remove(0));
+			}
+		}
+		return Optional.empty();
+	}
+
+	public void howManyCustomers() {
+		int size = 0;
+		size = customers.size();
+		System.out.println("" + new Date() + " Customers in queue : " + size + " of " + nextAvalailbleId);
+	}
+}
+````
+</details>

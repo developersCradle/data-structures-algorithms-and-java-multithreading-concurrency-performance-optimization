@@ -311,7 +311,7 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 </p>
 
 <p align="center">
-    <img src="Modern_Java_Multithreading_In_Java_Using_Virtual_Threads_Description.PNG" alt="course intros" style="width:690px" />
+    <img src="Modern_Java_Multithreading_In_Java_Using_Virtual_Threads_Description.PNG" alt="Course intro!" style="width:690px" />
 </p> 
 
 
@@ -460,15 +460,12 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
         * [Performance logs from the logCompilation](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Application%20Performance%20Tuning%20and%20Memory%20Management/Section%2002/hotspot_pid11876.log).
 
 
-# Solving Memory Leaks in the JVM.
-
-<!-- 
 <p align="center">
     <img
-     src="Java_Collections_From_Basics_To_Advanced_Caption.png"
-    alt=" Java Collections From Basics To Advanced Caption"
+     src="Solving_Memory_Leaks_In_The_JVM_Caption.png"
+    alt="Solving Memory Leaks In The JVM Caption"
     style="width:1600px;height:110px;"/>
-</p> -->
+</p> 
 
 <p align="center">
     <img src="Java_Memory_Leak_Description.PNG"
