@@ -247,7 +247,43 @@ Exception: java.lang.OutOfMemoryError thrown from the UncaughtExceptionHandler i
 <summary id="Memoryleak_Not_Fixed" open="true"> <b>Memory leak not fixed. CustomerManager!</b> </summary>
 
 ````Java
-add here the code
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+import java.util.Optional;
+
+
+public class CustomerManager {
+
+	private List<Customer> customers = new ArrayList<Customer>();
+	private int nextAvalailbleId = 0;
+	private int lastProcessedId = -1;
+
+	public  void addCustomer(Customer customer) {
+		synchronized (this) {
+			customer.setId(nextAvalailbleId);
+			synchronized(customers) {
+				customers.add(customer);
+			}
+			nextAvalailbleId++;
+		}
+	}
+
+	public Optional<Customer> getNextCustomer() {
+
+		if (lastProcessedId + 1 > nextAvalailbleId) {
+			lastProcessedId++;
+			return Optional.of(customers.get(lastProcessedId));
+		}
+		return Optional.empty();
+	}
+
+	public void howManyCustomers() {
+		int size = 0;
+		size = customers.size();
+		System.out.println("" + new Date() + " Customers in queue : " + size + " of " + nextAvalailbleId);
+	}
+}
 ````
 </details>
 
@@ -292,13 +328,46 @@ add here the code
 
 <details>
 
-<summary id="Thread progress
-" open="true"> <b>The thread code, that will throw interrupted task!</b> </summary>
+<summary id="Thread_Progress_
+" open="true"> <b>Memory leak. CustomerManager!</b> </summary>
 
 ````Java
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+import java.util.Optional;
 
 
+public class CustomerManager {
 
+	private List<Customer> customers = new ArrayList<Customer>();
+	private int nextAvalailbleId = 0;
+	private int lastProcessedId = -1;
+
+	public  void addCustomer(Customer customer) {
+		synchronized (this) {
+			customer.setId(nextAvalailbleId);
+			synchronized(customers) {
+				customers.add(customer);
+			}
+			nextAvalailbleId++;
+		}
+	}
+	public Optional<Customer> getNextCustomer() {
+
+		if (lastProcessedId + 1 > nextAvalailbleId) {
+			lastProcessedId++;
+			return Optional.of(customers.get(lastProcessedId));
+		}
+		return Optional.empty();
+	}
+
+	public void howManyCustomers() {
+		int size = 0;
+		size = customers.size();
+		System.out.println("" + new Date() + " Customers in queue : " + size + " of " + nextAvalailbleId);
+	}
+}
 ````
 </details>
 
@@ -346,7 +415,7 @@ add here the code
 
 <details>
 
-<summary id="Memoryleak_Fixed" open="true"> <b>Memory leak fixed. CustomerManager!</b> </summary>
+<summary id="Memory_Leak_Fixed" open="true"> <b>Memory leak fixed. CustomerManager!</b> </summary>
 
 ````Java
 import java.util.ArrayList;

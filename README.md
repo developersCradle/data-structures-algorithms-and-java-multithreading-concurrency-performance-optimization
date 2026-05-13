@@ -416,7 +416,7 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 - [ ] [Chapter 10](#) - Tuning the JVM’s Memory Settings.
 - [ ] [Chapter 11](#) - Introducing Garbage Collection.
 - [x] [Chapter 12](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Application%20Performance%20Tuning%20and%20Memory%20Management/Section%2012#chapter-12---monitoring-the-heap) - Monitoring the Heap. ✅
-- [x] [Chapter 13](#) - Analyzing a heap dump. ✅
+- [x] [Chapter 13](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Application%20Performance%20Tuning%20and%20Memory%20Management/Section%2013#chapter-13---analyzing-a-heap-dump) - Analyzing a heap dump. ✅
 - [ ] [Chapter 14](#) - Generational Garbage Collection.
 - [ ] [Chapter 15](#) - Garbage Collector tuning & selection.
 - [ ] [Chapter 16](#) - Using a profiler to analyse application performance.
@@ -429,23 +429,16 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 #### Additional stuff.
 
 - Remove the `Codes` folder after course is finished!
-
 - [ ] Check the content from other student, if there is missing or broken material. [Link](https://github.com/tommic81/udemy-java-memory-management/tree/master).
-
+- [ ] Heap Dump Analysis Using Eclipse MAT. [Link](Heap Dump Analysis Using Eclipse MAT).
 - Do the chapters `The structure of this course`.
-
 - Finish this after this course is finished `Solving Memory Leaks in the JVM`. (add here the link)
-
+- [ ] Read thought. [Link](https://www.baeldung.com/java-memory-leaks).
 - [ ] Check this memory leak course after this course. [Link](https://www.linkedin.com/learning/java-memory-management-garbage-collection-jvm-tuning-and-spotting-memory-leaks).
-
 - [ ] Check second this memory leak course after this course. [Link](https://www.oreilly.com/live-events/memory-efficient-java/0636920457060/).
-
 - [ ] Check third this memory leak course after this course. [Link](https://www.pluralsight.com/courses/java-understanding-solving-memory-problems?utm_source=chatgpt.com).
-
 - [ ] Check Java Memory Leaks by Victor Rentea. [Link](https://www.youtube.com/watch?v=-0vkHxlGlOU).
-
 - [ ] Check. [Link](https://www.youtube.com/watch?v=W4SvLYU9H1I&list=PLQh1c87p_Wlp7GgRQEf3907LnxxsrbX3R).
-
 
 #### The Quizzes and Labs.
 
