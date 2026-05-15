@@ -17,7 +17,6 @@ We are using following structure:
 
 -->
 
-
 <p align="center">
     <img id="Algorithms_And_Data_Structures_With_Some_Optimization_Courses_Caption" src="Algorithms_And_Data_Structures_With_Some_Optimization_Courses_Caption.png" style="width:900px;height:140px;">
     <text>Attempt to study <b>Data Structures</b>, <b>Optimization</b> and <b>Algorithms</b> related topics!</text>
@@ -88,10 +87,11 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 - [ ] Add the exercise and comments for the `We_Can_See_That_We_Dont_Have_The_Access_To_The_Main_Frame.PNG`, if you have patience.
 - [ ] Additional go thought [Future](https://www.baeldung.com/java-future).
 - [ ] Additional go thought `synchronized` [keyword](https://www.baeldung.com/java-synchronized).
-- [ ] go thought the definition of the `throughput` chapter.
+- [ ] Go thought the definition of the `throughput` chapter.
 - Add this to curriculum from Turun yliopisto [säikeet](https://staff.cs.utu.fi/opinnot/kurssit/HOJ-2012/kalvot/kalvot2-3.pdf).
     - Brake this down to different pages!
 - Remove the files archive files when course is finished!
+- After this course ask yourself, *how is the single treated programming different from the multithreaded programming?* 
 
 <hr>
 
@@ -121,7 +121,8 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 <br>
 
 - Cleaning the images in the format `Image_Next_Number`, this will be chapter by chapter:
-    - [ ] Chapter 01. 
+    - [ ] Chapter 01.
+        - Done `01` video.
     - [ ] Chapter 02.
     - [ ] Chapter 03.
     - [ ] Chapter 04.
@@ -232,7 +233,7 @@ All course material from *Multithreading, Parallel & Asynchronous Coding in Mode
 
 > During a live technical demonstration at **Evitec Solutions**, I was asked to solve a puzzle involving a Java problem that required clean data processing logic. Under normal circumstances, it was a problem perfectly suited for **Java Streams**, but the pressure of the live session caused me to overlook that approach.
 >
->That moment became a turning point. It pushed me to deeply pursue a course on `Modern Java`, where I strengthened my understanding of streams, functional patterns, and expressive problem-solving techniques. The experience helped me regain confidence and sharpen my ability to apply the right abstractions even in high-pressure situations. <br><br>
+>That moment became a turning point. It pushed me to deeply pursue a course on *Modern Java*, where I strengthened my understanding of streams, functional patterns, and expressive problem-solving techniques. The experience helped me regain confidence and sharpen my ability to apply the right abstractions even in high-pressure situations. <br><br>
 ~ *DevelopersCradle*
 
 Contains my own notes with some course material to enforce learning experience.
@@ -307,13 +308,12 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 </details>
 
 <p align="center">
-    <img src="Modern_Java_Multithreading_In_Java_Using_Virtual_Threads_Caption.PNG" alt="course intros" style="width:990px;height:110px;"/>
+    <img src="Modern_Java_Multithreading_In_Java_Using_Virtual_Threads_Caption.PNG" alt="Modern java multithreading in java using virtual threads caption!" style="width:990px;height:110px;"/>
 </p>
 
 <p align="center">
-    <img src="Modern_Java_Multithreading_In_Java_Using_Virtual_Threads_Description.PNG" alt="Course intro!" style="width:690px" />
+    <img src="Modern_Java_Multithreading_In_Java_Using_Virtual_Threads_Description.PNG" alt="Modern java multithreading in java using virtual threads description!" style="width:690px" />
 </p> 
-
 
 All course material from *Modern Java - Multithreading in Java using Virtual Threads* by **Pragmatic Code School**.
 
@@ -367,11 +367,11 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
         * [Some here](#).
 
 <p align="center">
-    <img src="Java_Application_Performance_Tuning_And_Memory_Management.gif" alt="Java Application Performance Tuning and Memory Management" style="width:1000px;height:120px;"/>
+    <img src="Java_Application_Performance_Tuning_And_Memory_Management_Caption.gif" alt="Java Application Performance Tuning and Memory Management!" style="width:1000px;height:120px;"/>
 </p>
 
 <p align="center">
-    <img src="Java Application Performance Tuning and Memory Management desc.PNG" alt="Java Application Performance Tuning and Memory Management description here" style="width:660px" />
+    <img src="Java_Application_Performance_Tuning_And_Memory_Management_Description.PNG" alt="Java Application Performance Tuning and Memory Management description!" style="width:660px" />
 </p> 
 
 All course material from *Java Application Performance Tuning and Memory Management* by from **Matt Greencroft** ... Sir **Matt Greencroft** and **Virtual Pair Programmers** with my own visual notes. ✍️

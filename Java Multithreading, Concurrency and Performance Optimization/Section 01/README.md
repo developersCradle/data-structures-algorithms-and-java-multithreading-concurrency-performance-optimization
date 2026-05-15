@@ -4,15 +4,20 @@ Introduction.
 
 # What I learned.
 
-# Motivation & Operating Systems fundamentals - Part 1.
+# Motivation & Operating Systems fundamentals - Part 01.
 
 <div align="center">
-    <img src="javaMultiThreading.PNG"  alt="Java threads." width="500"/>
+    <img src="Java_Multi_Threading.PNG"  alt="Java threads." width="500"/>
 </div>
 
+1. First lecture.
+
 <div align="center">
-    <img src="whatWeWillLearn.PNG"  alt="Java threads." width="500"/>
+    <img src="What_We_Will_Learn_Why_We_Need_Multiple_Threads.PNG"  alt="Java threads." width="500"/>
 </div>
+
+1. We need **threads** for **responsiveness** and for **performance**!
+2. Let's go thought, why we need multiple threads! We start from **responsiveness**!
 
 <div align="center">
     <img src="Motivation_Why_We_Need_Threads.PNG"  alt="Java threads." width="500"/>
@@ -21,105 +26,118 @@ Introduction.
 1. Let's start from explain the **Responsiveness**.
 
 <div align="center">
-    <img src="examplesOfPoorResponsiveness.PNG"  alt="Java threads." width="500"/>
+    <img src="Examples_Of_Poor_Responsiveness.PNG"  alt="Java threads." width="500"/>
 </div>
 
 1. Something does not respond soon. These are signs of poor **responsiveness**.
 
 <div align="center">
-    <img src="repsonsivenessWithASingleThread.PNG"  alt="Java threads." width="500"/>
+    <img src="Repsonsiveness_With__Single_Thread.PNG"  alt="Java threads." width="500"/>
 </div>
 
 1. If there is one user, with **HUGE** order, which makes the database query long, the second user `2.` needs to wait for the answer!
 
 <div align="center">
-    <img src="repsonsivenessWithMultipleThread.PNG"  alt="Java threads." width="500"/>
+    <img src="Repsonsiveness_With_Multiple_Threads.PNG"  alt="Java threads." width="500"/>
 </div>
 
 1. We can achieve multiple units working, in their **own** thread.
 
 <div align="center">
-    <img src="responsivenessOfTheUserFace.PNG"  alt="Java threads." width="500"/>
+    <img src="Responsiveness_Of_The_Userinterface_Example.PNG"  alt="Java threads." width="500"/>
 </div>
 
-1. Once the **click** is happened, we would want to have action on the screen!
-    - This can be achieved by using the **Multiple threads**.
+1. Responsiveness is important in **UX**, example: Once the **click** is happened, we would want to **have action** on the screen!
+    - This can be achieved by using the **Multiple threads**!
 
 <div align="center">
-    <img src="concurrencyMultitasking.PNG"  alt="Java threads." width="500"/>
+    <img src="Concurrency_Multitasking.PNG"  alt="Java threads." width="500"/>
 </div>
 
-1. We can achieve this by using the **multiple threads**
+1. We can achieve this **responsiveness** by using the **multiple threads**
 
 <div align="center">
-    <img src="concurrencyMultiTaskingInIllustration.PNG"  alt="Java threads." width="500"/>
+    <img src="Concurrency_Multi_Tasking_Illustration.PNG"  alt="Java threads." width="500"/>
 </div>
 
-1. We achieve this making task run next to each other.
+1. We achieve illusion of **concurrency** making task run next to each other. Makes it so that they **appear** to be run in **same time**!
+    - Even with **one core**!
 
 <div align="center">
-    <img src="concurrencyMultiTaskingInIllustrationWeCanAchieveUsingOneCore.PNG"  alt="Java threads." width="500"/>
+    <img src="Concurrency_Can_Be_Achieved_With_One_Core.PNG"  alt="Java threads." width="500"/>
 </div>
 
 1. Furthermore, we can **achieve** this even using with **one core**.
 
 <div align="center">
-    <img src="performanceMultipleCores.PNG"  alt="Java threads." width="500"/>
+    <img src="Motivation_Why_We_Need_Threads_Second_Reason.PNG"  alt="Java threads." width="500"/>
+</div>
+
+1. Second reason, why we need **threads** is **performance**!
+
+<div align="center">
+    <img src="Performance_With_Multiple_Cores.PNG"  alt="Java threads." width="500"/>
 </div>
 
 1. The performance is improved, with **multiple cores**!
 2. We can achieve this **parallelism**, with multiple cores.
 
 <div align="center">
-    <img src="performanceImpact.PNG"  alt="Java threads." width="500"/>
+    <img src="Performance_Impact.PNG"  alt="Java threads." width="500"/>
 </div>
 
 <div align="center">
-    <img src="weAreAchievingThisUsingMultipleThreads.PNG"  alt="Java threads." width="500"/>
+    <img src="We_Are_Achieving_This_Using_Multiple_Threads.PNG"  alt="Java threads." width="500"/>
 </div>
 
 <div align="center">
-    <img src="multithreadingCaveat.PNG"  alt="Java threads." width="500"/>
+    <img src="Multithreading_Caveat.PNG"  alt="Java threads." width="500"/>
 </div>
 
 1. **Multithreaded** programming is different from the **single threading**.
 
 <div align="center">
-    <img src="whatWeWillLearnNextStep.PNG"  alt="Java threads." width="500"/>
+    <img src="What_We_Will_Learn_Next_Step_OS_Basics.PNG"  alt="Java threads." width="500"/>
 </div>
 
 <div align="center">
-    <img src="operatingSystemIsBeingLoadedFromTheHardDrive.PNG"  alt="Java threads." width="500"/>
+    <img src="Operating_System_Is_Being_Loaded_From_The_Hard_Drive.PNG"  alt="Java threads." width="500"/>
 </div>
 
-1. Os is loaded from the hard disk to memory on the startup.
+1. **OS** is loaded from the hard disk to memory on the **startup**!
 
 <div align="center">
-    <img src="applicationAreLoadedFromTheHardDisk.PNG"  alt="Java threads." width="500"/>
+    <img src="Applications_Are_Loaded_From_The_Hard_Disk.PNG"  alt="Java threads." width="500"/>
 </div>
 
-
-1. The **OS** will take the program from the disk and makes instance to the memory. 
+1. Applications are residing in **hard drive**!
+2. The **OS** will take the program from the **disk** and makes instance to the **memory**. 
 
 <div align="center">
-    <img src="SingleThreadedApplicationProcess.PNG"  alt="Java threads." width="500"/>
+    <img src="Single_Threaded_Application_Process.PNG"  alt="Java threads." width="500"/>
 </div>
 
-1. The instance of the program, which is loaded from the **Hard Drive** is called **Process** or the **Context of the application**.
+1. Instance of application in the memory is created! The instance of the program, which is loaded from the **Hard Drive** is called **Process** or the **Context of the application**.
 2. **Thread** contains the **Stack** and the **Instruction Pointer**.
 
 <div align="center">
-    <img src="whatThreadContains.PNG"  alt="Java threads." width="500"/>
+    <img src="Multiple_Threaded_Application_Process.PNG"  alt="Java threads." width="500"/>
 </div>
 
-1. Region in memory, where **local variables** are stored, and passed into functions.
-2. Address of the **next instruction** to **execute**.
+1. In Multithreaded application, they have their **own stack** and **instruction pointers**!
 
 <div align="center">
-    <img src="summary.PNG"  alt="Java threads." width="500"/>
+    <img src="What_Thread_Contains.PNG"  alt="Java threads." width="500"/>
 </div>
 
-# Operating Systems Fundamentals - Part 2.
+1. **Stack**:Region in memory, where **local variables** are stored, and passed into functions.
+2. **Instruction Pointer**: Address of the **next instruction** to be **executed**.
+
+<div align="center">
+    <img src="Summar.PNG"  alt="Java threads." width="500"/>
+</div>
+
+# Operating Systems Fundamentals - Part 02.
 
 <div align="center">
     <img src="topic.PNG"  alt="Java threads." width="500"/>
