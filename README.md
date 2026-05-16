@@ -121,8 +121,7 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 <br>
 
 - Cleaning the images in the format `Image_Next_Number`, this will be chapter by chapter:
-    - [ ] Chapter 01.
-        - Done `01` video.
+    - [x] Chapter 01.
     - [ ] Chapter 02.
     - [ ] Chapter 03.
     - [ ] Chapter 04.
@@ -142,7 +141,7 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 <br>
 
 - Bigger ink in the pictures, this will be chapter by chapter:
-    - [ ] Chapter 01. 
+    - [x] Chapter 01. 
     - [ ] Chapter 02.
     - [ ] Chapter 03.
     - [ ] Chapter 04.

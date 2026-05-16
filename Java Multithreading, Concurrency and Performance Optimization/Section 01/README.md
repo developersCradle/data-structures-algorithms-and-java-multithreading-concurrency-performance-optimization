@@ -130,36 +130,41 @@ Introduction.
     <img src="What_Thread_Contains.PNG"  alt="Java threads." width="500"/>
 </div>
 
-1. **Stack**:Region in memory, where **local variables** are stored, and passed into functions.
+1. **Stack**: Region in memory, where **local variables** are stored, and passed into functions.
 2. **Instruction Pointer**: Address of the **next instruction** to be **executed**.
 
 <div align="center">
-    <img src="Summar.PNG"  alt="Java threads." width="500"/>
+    <img src="SummarY.PNG"  alt="Java threads." width="500"/>
 </div>
 
 # Operating Systems Fundamentals - Part 02.
 
 <div align="center">
-    <img src="topic.PNG"  alt="Java threads." width="500"/>
+    <img src="Java_Multi_Threading_Second_Chapter.PNG"  alt="Java threads." width="500"/>
 </div>
+
+1. We will be finishing the chapters in the threads!
 
 <div align="center">
-    <img src="differentTopicsInThisSwitch.PNG"  alt="Java threads." width="500"/>
+    <img src="What_We_Will_Learn_We_Will_Learn_The_Context_Switches.PNG"  alt="Java threads." width="500"/>
 </div>
 
-- We need to clarify, when to use:
+
+1. What is the **Context Switches**!
+
+- In the end, we need to clarify, when to use:
     - **Process**.
     - **Threads**.
 
 <div align="center">
-    <img src="ChangeTheThreadInTheCPU.gif"  alt="Java threads." width="500"/>
+    <img src="Changing_The_Threads_In_The_CPU.gif"  alt="Java threads." width="500"/>
 </div>
 
-- There will be multiple **Threads** in different processes.
-    - **CPU** will have to stop thread and resume to the different processes in **consecutive** times!
+- There will be multiple **Threads** than the cores to be processed!
+    - **CPU** will have to run **one thread** and then **stop thread** and resume the other one!
 
 <div align="center">
-    <img src="ContextSwitching.gif"  alt="Java threads." width="500"/>
+    <img src="Context_Switching_In_Action.gif"  alt="Java threads." width="500"/>
 </div>
 
 - Act of:
@@ -170,41 +175,45 @@ Introduction.
         - This is called **Context Switching**.
 
 <div align="center">
-    <img src="ContextSwitchingCost.PNG"  alt="Java threads." width="500"/>
+    <img src="Cost_Of_The_Context_Switching.PNG"  alt="Java threads." width="500"/>
 </div>
 
-1. **Context Switch** is not cheap, when dealing with many threads.
+1. **Context Switch** is **not cheap**, when dealing with many threads!
 2. Every **Context Switch**, we need to **load** or **store** data of one tread and restore the another!
 
 <div align="center">
-    <img src="thrashingConcept.PNG"  alt="Java threads." width="500"/>
+    <img src="Thrashing_Concept.PNG"  alt="Java threads." width="500"/>
 </div>
 
-1. **Thrashing**, when time is spent more on the **switching the context** rather than actual work in the CPU!
-2. **Threads** consumes less resources than the **Process**
-    - **Context Switching** is cheaper in general if the switch is happening inside **same** process.
+1. **Thrashing**, when time is spent more on the **switching the context** rather than actual work in the **CPU**!
+2. In general **Threads** consumes less resources than the **Process**
+    - **Context Switching** is cheaper in general, if the switch is happening inside **same process**.
 
 <div align="center">
-    <img src="ThreadScheduling.PNG"  alt="Java threads." width="500"/>
+    <img src="What_We_Will_Learn_Thread_Scheduling.PNG"  alt="Java threads." width="500"/>
 </div>
+
+1. Next we will be looking when **OS** will switch **thread** and when then the **context switch** is performed!
 
 - In this example:
 
 <div align="center">
-    <img src="ThreadSchedulingInPics.PNG"  alt="Java threads." width="500"/>
+    <img src="Thread_Scheduling_In_Example.PNG"  alt="Java threads." width="500"/>
 </div>
 
-1. There **two** threads in **Music Player**.
-2. There **two** threads in **Text Editor**.
+1. There **two** threads for the **Music Player**.
+    - One for **Music Logic** and another for the **UI**!
+2. There **two** threads for the **Text Editor**.
+    - One for UI and another for **File Saver**.
 
 <div align="center">
-    <img src="ThreadSchedulingWithOneCpuExample.PNG"  alt="Java threads." width="500"/>
+    <img src="Thread_Scheduling_With_One_CPU_Example.PNG"  alt="Java threads." width="500"/>
 </div>
 
 1. There will be **4** different threads from the **Music Player** and **Text Editor** app, in which **One CPU**, needs to prioritize with the **executing**.
 
 <div align="center">
-    <img src="whoRunsFirst.PNG"  alt="Java threads." width="500"/>
+    <img src="Who_Runs_First_Question.PNG"  alt="Java threads." width="500"/>
 </div>
 
 1. Which gets time to run first in **CPU**?
@@ -212,33 +221,35 @@ Introduction.
 - If we decide the **First Cone First Serve** strategy, below is the example: 
 
 <div align="center">
-    <img src="FirstComeFirstServe.gif"  alt="Java threads." width="500"/>
+    <img src="First_Come_First_Serve_Strategy.gif"  alt="Java threads." width="500"/>
 </div>
 
-- We can use **First Come First Serve**.
+- We can use **First Come, First Served**.
 
 <div align="center">
-    <img src="FirstComesFirstServesThreadStarvation.PNG"  alt="Java threads." width="500"/>
+    <img src="First_Comes_First_Servee_Thread_Starvation.PNG"  alt="Java threads." width="500"/>
 </div>
 
 1. If there is **Thread** that takes much of time, this will cause **starvation** for other **Threads**.
-    - UI threads can have big problem.
+    - **UI threads** can have big problem, with this if they get jammed!
 
 <div align="center">
-    <img src="UIjobPrioritized.PNG"  alt="Java threads." width="500"/>
+    <img src="UI_Job_Prioritized.PNG"  alt="Java threads." width="500"/>
 </div>
 
-1. **UI** threads usually have shorter.
-    - They usually responses to the input of the user. 
+1. **UI** threads **usually** have **shorter**.
+    - They usually respond to the input of the user and update the screen!
+
+- We will see problem, with prioritizing **shorter treads**!
 
 <div align="center">
-    <img src="problemWithPrioritizingWithTheShortestJobFirst.PNG"  alt="Java threads." width="500"/>
+    <img src="Problem_With_Prioritizing_With_The_Shortest_Job_First.PNG"  alt="Java threads." width="500"/>
 </div>
 
 1. If the **shorter jobs** get into the **scheduling** all the time, other **Threads** will never be executed.
 
 <div align="center">
-    <img src="ThreadSchedulingThreding.PNG"  alt="Java threads." width="500"/>
+    <img src="Thread_Scheduling_Threading.PNG"  alt="Java threads." width="500"/>
 </div>
 
 - **OS scheduler** organizes time **slices** into **epochs** for fairness. 
@@ -252,7 +263,7 @@ Introduction.
 - We will try to fit processing time into **Epochs**.
 
 <div align="center">
-    <img src="ThreadSchedulingDynamicPriority.PNG"  alt="Java threads." width="500"/>
+    <img src="Thread_Scheduling_Dynamic_Priority.PNG"  alt="Java threads." width="500"/>
 </div>
 
 - `Dynamic Priority` = `Static Priority` + `Bonus`.
@@ -260,40 +271,42 @@ Introduction.
     - **Bonus** is adjusted by the **Operating System** in every epoch, for each thread.
 
 <div align="center">
-    <img src="ThreadSchedulingDynamicPrioritySecond.PNG"  alt="Java threads." width="500"/>
+    <img src="Thread_Scheduling_Dynamic_Priority_Second.PNG"  alt="Java threads." width="500"/>
 </div>
 
 <div align="center">
-    <img src="threadsVsScheduling.PNG"  alt="Java threads." width="500"/>
+    <img src="What_We_Will_Learn_Why_Threads_Vs_Scheduling.PNG"  alt="Java threads." width="500"/>
 </div>
 
+1. When to use **Threads** or **Process**!
+
 <div align="center">
-    <img src="multipleThreadsApproach.PNG"  alt="Java threads." width="500"/>
+    <img src="Multiple_Threads_Approach_Illustration.PNG"  alt="Java threads." width="500"/>
 </div>
 
-1. Should we have **Multiple threads** approach.
+1. Should we have **Multiple Threads** approach!
 
 <div align="center">
-    <img src="mentalImageOfTheProcessOfTheMultiProcess.PNG"  alt="Java threads." width="500"/>
+    <img src="Mental_Image_Of_The_Process_Of_The_Multiple_Process.PNG"  alt="Java threads." width="500"/>
 </div>
 
-1. Should we have **Multiple Processes** approach.
+1. Should we have **Multiple Processes** approach!
 
 <div align="center">
-    <img src="WhenToPreferMultiThreadedApproach.PNG"  alt="Java threads." width="500"/>
+    <img src="When_To_Prefer_Multi_Threaded_Approach.PNG"  alt="Java threads." width="500"/>
 </div>
 
 1. If there are **tasks** that **share** lot of data, then its preferred to use **Multithreaded architecture** approach!
 2. Threads are much faster to **create** and **destroy**. Also, **switching** between threads of the same process is faster (shorter context switches), than switching between **processes**.
 
 <div align="center">
-    <img src="WhenToPreferMultiProcessApproach.PNG"  alt="Java threads." width="500"/>
+    <img src="When_To_Prefer_Multi_Process_Approach.PNG"  alt="Java threads." width="500"/>
 </div>
 
-1. If the tasks **are unrelated**, its better use different process!
+1. If the tasks **are unrelated**, its better use **different process**!
 
 <div align="center">
-    <img src="summaryend.PNG"  alt="Java threads." width="500"/>
+    <img src="Summary_At_The_End.PNG"  alt="Java threads." width="500"/>
 </div>
 
 - Some additional links:

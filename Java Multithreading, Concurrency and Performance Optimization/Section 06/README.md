@@ -116,7 +116,7 @@ You can see it's now fixed.
 </div>
 
 <details>
-<summary id="The synchronized key word in locking monitor way!" open="true"> <b>Usage of synchronized key word in where data is shared! The Locking Monitor way!</b> </summary>
+<summary id="The_Synchronized_Keyword_In_Locking_Monitor_Way!" open="true"> <b>Usage of synchronized key word in where data is shared! The Locking Monitor way!</b> </summary>
 
 ````Java 
 /*
@@ -159,7 +159,6 @@ public class Main {
             }
         }
     }
-
     public static class IncrementingThread extends Thread {
 
         private InventoryCounter inventoryCounter;
@@ -175,7 +174,6 @@ public class Main {
             }
         }
     }
-
     private static class InventoryCounter {
         private int items = 0;
 
@@ -274,7 +272,7 @@ public class Main {
 
 1. We can see that we are having **consistent** results with the **blocking separate codes**.
 <details>
-<summary id="The synchronized block" open="true"> <b>We are using the synchronized for blocking the some parts of critical section!</b> </summary>
+<summary id="The_Synchronized_Block" open="true"> <b>We are using the synchronized for blocking the some parts of critical section!</b> </summary>
 
 ````Java
 /*
@@ -836,6 +834,52 @@ public static class Metrics {
     <img src="Coarse_Grained_Locking.PNG" width="500" alt="Threads resource"/>
 </div>
 
+1. Example for inspecting our **locking strategy**!
 
+<div align="center">
+    <img src="Coarse_Grained_Locking_Two_Resources.PNG" width="500" alt="Threads resource"/>
+</div>
+
+1. We have **two** resources to be locked. 
+
+<div align="center">
+    <img src="Coarse_Grained_Locking_Two_Locking.PNG" width="500" alt="Threads resource"/>
+</div>
+
+1. We could just add `synchronized` to method signatures to lock.
+    -  In other hand, these are operations are not interfering with operations inherently!
+        - There is no right or wrong, when deciding what strategy to use!
+
+<div align="center">
+    <img src="Prize_To_Pay_When_Using_Simple_Solution_For_Locking.PNG" width="500" alt="Threads resource"/>
+</div>
+
+1. For this simple `synchronized` locking we pay prize when running individual threads.
+    - If they are accessing these shared resources!
+
+<div align="center">
+    <img src="Prize_To_Pay_When_Using_Simple_Solution_For_Locking_Reality.PNG" width="500" alt="Threads resource"/>
+</div>
+
+1. In reality, the these are doing something else, not fully blocked, but still this is drawback!
+
+<div align="center">
+    <img src="Fine_Grained_Locking_Strategy_In_Code.PNG" width="500" alt="Threads resource"/>
+</div>
+
+1. We are locking as **fine-grained**!
+
+<div align="center">
+    <img src="Fine_Grained_Locking_Strategy.PNG" width="500" alt="Threads resource"/>
+</div>
+
+1. We get more out of cores execution, when using **fine-grained** solution!
+
+<div align="center">
+    <img src="Deadlock.PNG" width="500" alt="Threads resource"/>
+</div>
+
+1. **Fine-grained** solution, there can be **deadlock**!
+    - *"I will move, if you will move"* situation!
 
 # Quiz 09: Locking Strategies & Deadlocks.
