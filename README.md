@@ -31,7 +31,7 @@ We are using following structure:
     - `git config --global core.longpaths true`.
 
 <p align="center">
-    <img src="Java_Multithreading_Concurrency_And_Performance_Optimization_Caption.png" alt="Java_Multithreading_Concurrency_And_Performance_Optimization_Caption" style="width:1600px;height:120px;"/>
+    <img src="Java_Multithreading_Concurrency_And_Performance_Optimization_Caption.png" alt="Java multithreading concurrency and performance optimization caption" style="width:1600px;height:120px;"/>
 </p>
 
 <p align="center">
@@ -42,7 +42,7 @@ All course material from *Java Multithreading, Concurrency & Performance Optimiz
 
 > While working in the 🏛️**Nordea**🏛️, we were working with an old legacy system that was making **two concurrent** calls to a shared resource, causing inconsistent results that only appeared sometimes. The issue was subtle and difficult to reproduce, making it even harder to diagnose. What made it even harder was not runnable on our local environment! 
 >
-> A recent course I had taken on `Java Multithreading and Concurrency` proved invaluable. It helped me identify the race condition and apply the `synchronized` keyword correctly to control access to the critical section. With proper thread coordination in place, the system stabilized without requiring a major rewrite of the legacy code. <br><br>
+> A recent course I had taken on *Java Multithreading Concurrency And Performance Optimization* proved invaluable. It helped me identify the race condition and apply the `synchronized` keyword correctly to control access to the critical section. With proper thread coordination in place, the system stabilized without requiring a major rewrite of the legacy code. <br><br>
 ~ *DevelopersCradle*
 
 Contains my own notes with some course material to enforce learning experience.

@@ -6,7 +6,19 @@ Virtual Threads and High-Performance IO.
 
 # Introduction to Virtual Threads.
 
+<div align="center">
+    <img src="Java_Multi_Threading.PNG"  alt="Java threads." width="500"/>
+</div>
+
 # High Performance IO with Virtual Threads.
+
+<div align="center">
+    <img src="Java_Multi_Threading.PNG"  alt="Java threads." width="500"/>
+</div>
 
 # Virtual Threads Best Practices.
 
+
+<div align="center">
+    <img src="Java_Multi_Threading.PNG"  alt="Java threads." width="500"/>
+</div>

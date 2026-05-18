@@ -6,4 +6,13 @@ Extra Information - Source code, and other stuff.
 
 # Distributed Systems, Big Data & Performance.
 
+<div align="center">
+    <img src="Java_Multi_Threading.PNG"  alt="Java threads." width="500"/>
+</div>
+
 # Bonus Lecture - Keep Learning.
+
+
+<div align="center">
+    <img src="Java_Multi_Threading.PNG"  alt="Java threads." width="500"/>
+</div>

@@ -28,10 +28,22 @@ Inter-Thread Communication.
 
 # Condition Variables – All Purpose, Inter-Thread Communication.
 
+<div align="center">
+    <img src="Java_Multi_Threading.PNG"  alt="Java threads." width="500"/>
+</div>
+
 # Objects as Condition Variables – wait(), notify(), and notifyAll().
+
+<div align="center">
+    <img src="Java_Multi_Threading.PNG"  alt="Java threads." width="500"/>
+</div>
 
 # Quiz 13: Condition Variables.
 
 # Coding Exercise 05: Simple CountDownLatch.
 
 # Simple CountDownLatch – Solution.
+
+<div align="center">
+    <img src="Java_Multi_Threading.PNG"  alt="Java threads." width="500"/>
+</div>

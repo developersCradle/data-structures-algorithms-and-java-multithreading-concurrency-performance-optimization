@@ -11,6 +11,12 @@ Threading Fundamentals - Thread Creation.
 # Threads Creation - Part 1, Thread Capabilities & Debugging.
 
 <div align="center">
+    <img src="Java_Multi_Threading_Writing_First_Multithreaded_Program.PNG"  alt="Java threads." width="500"/>
+</div>
+
+1. We will be writing our first multithreaded program!
+
+<div align="center">
     <img src="What_We_Will_Be_Learning_We_Will_Create_Our_First_Thread.PNG"  alt="Java threads." width="500"/>
 </div>
 

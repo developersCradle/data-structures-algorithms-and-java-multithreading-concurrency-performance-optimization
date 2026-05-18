@@ -7,6 +7,12 @@ The Concurrency Challenges & Solutions.
 # Critical Section & Synchronization.
 
 <div align="center">
+    <img src="Java_Multi_Threading.PNG"  alt="Java threads." width="600"/>
+</div>
+
+1. Add here 
+
+<div align="center">
     <img src="What_We_Will_Learn_Next_Is_Critical_Sections.PNG" width="700" alt="Threads resource"/>
 </div>
 
@@ -63,7 +69,7 @@ void aggregateFunction() {
         - Second the **Lock** way!
 
 <div align="center">
-    <img src="Synchronized_Used_In_The_Block.PNG" width="500" alt="Threads resource"/>
+    <img src="Synchronized_Used_In_The_Block.PNG" width="600" alt="Threads resource"/>
 </div>
 
 1. **First** the Monitor way!
@@ -98,7 +104,7 @@ void aggregateFunction() {
     - The term used here for this concept is **Monitor**.
 
 <p align="center">
-    <img src="Our_Critical_Section.PNG" width="500" alt="Threads resource"/>
+    <img src="Our_Critical_Section.PNG" width="600" alt="Threads resource"/>
 </p>
 
 1. We will apply our `synchronized` for our old user case!
@@ -360,7 +366,7 @@ public class Main {
 ````
 </details>
 
-- Selvitä miksi tässä pitää käyttää synzhronized sanaa.
+- Selvitä miksi tässä pitää käyttää synzhronized sanaa. Todo
 
 > [!TIP]
 > 💡 *"Synchronized block is **Reentrant**
@@ -382,6 +388,8 @@ public class Main {
 <div align="center">
     <img src="Critical_Section_Summary.PNG" width="700" alt="Threads resource"/>
 </div>
+
+- Todo check this one is consistent
 
 # Quiz 06: Critical Section & Synchronization.
 
@@ -428,7 +436,7 @@ public class Main {
 - My answer:
 
 <div align="center">
-    <img src="Quiz 06/Q1.PNG" width="500" alt="Threads resource"/>
+    <img src="Quiz 06/Q1.PNG" width="600" alt="Threads resource"/>
 </div>
 
 1. The one **thread** can access **locked object** at the time. Since it was using the `synchronized` keyword in the method signature.
@@ -483,7 +491,7 @@ public class Main {
 - My answer:
 
 <div align="center">
-    <img src="Quiz 06/Q3.PNG" width="500" alt="Threads resource"/>
+    <img src="Quiz 06/Q3.PNG" width="600" alt="Threads resource"/>
 </div>
 
 1. Since the `sharedObject` is shared and the `synchronized` is behaving like the `synchronized(this)` for locking the object `SharedClass` for only **one thread** per time!
@@ -534,7 +542,7 @@ public class Main {
 - My answer:
 
 <div align="center">
-    <img src="Quiz 06/Q3.PNG" width="500" alt="Threads resource"/>
+    <img src="Quiz 06/Q3.PNG" width="600" alt="Threads resource"/>
 </div>
 
 1. When `thread1` is executing `sharedObject1.increment();`, `thread2` can execute `sharedObject2.increment();`, since synchronization happens on the **object level**, and `thread1` and `thread2` are operating on two different, independent objects. That's right!
@@ -597,7 +605,7 @@ public class Main {
 - My answer:
 
 <div align="center">
-    <img src="Quiz 06/Q4.PNG" width="500" alt="Threads resource"/>
+    <img src="Quiz 06/Q4.PNG" width="600" alt="Threads resource"/>
 </div>
 
 1. When `thread1` is executing `sharedObject.incrementCounter1();`, `thread2` can execute `sharedObject.incrementCounter2();`. That is because the synchronized blocks inside those methods, synchronize on different lock objects.
@@ -607,13 +615,19 @@ public class Main {
 # Atomic Operations, Volatile & Metrics Practical Example.
 
 <div align="center">
-    <img src="What_We_Will_Learn_Next_Atomic_Operations.PNG" width="500"alt="Threads resource"/>
+    <img src="Java_Multi_Threading.PNG"  alt="Java threads." width="600"/>
+</div>
+
+1. We will be looking how we will have **atomic** operation!
+
+<div align="center">
+    <img src="What_We_Will_Learn_Next_Atomic_Operations.PNG" width="600"alt="Threads resource"/>
 </div>
 
 1. How do we know which operations are **atomic** are which are not?!
 
 <div align="center">
-    <img src="Extremem_Defensive_Approach.PNG" width="500" alt="Threads resource"/>
+    <img src="Extremem_Defensive_Approach.PNG" width="600" alt="Threads resource"/>
 </div>
 
 1. **First** we are exploring the extreme **defensive** approach!
@@ -627,31 +641,208 @@ public class Main {
         - Fourth **thread** one in **green**.
 
 <div align="center">
-    <img src="Why_To_Synchronize_Illustration.PNG" width="500" alt="Threads resource"/>
+    <img src="Why_To_Synchronize_Illustration.PNG" width="600" alt="Threads resource"/>
 </div>
 
 1. Currently, the **execution** chart looks like such!
     - This scenario we have **no parallel execution**
     - We are paying the cost of **context switching** and the **memory overhead**!
 
-- All of this, for maintaining **multiple threads**! 
+- All of this, for maintaining **multiple threads**, with the **context switches** and maintaining the shared memory!
 
 <div align="center">
-    <img src="Why_To_Synchronize_Illustration_What_We_Would_Prefer.PNG" width="500" alt="Threads resource"/>
+    <img src="Why_To_Synchronize_Illustration_What_We_Would_Prefer.PNG" width="600" alt="Threads resource"/>
 </div>
 
-- We are **preferring** this overall picture!
+1. We are **preferring** this overall picture! Where there is much smaller amounts for the idle period for the **executing threads**
 
-- Todo Tsekkaa tämä
-
-- We should actually use the `synchronization` as little as possible.
+> [!NOTE]  
+> We should actually use the `synchronization` as little as possible!
 
 <div align="center">
-    <img src="Atomic_Operations.PNG" width="500" alt="Threads resource"/>
+    <img src="Atomic_Operations.PNG" width="600" alt="Threads resource"/>
 </div>
 
 1. Let's identify, which operations are **atomic**!
-2. Fact is, that the most of the operations are **NOT** atomic!
+2. Fact is, that the **most of the operations** are **NOT** atomic!
+
+<div align="center">
+    <img src="Assigment_Operation_Can_Be_Atomic.PNG" width="600" alt="Threads resource"/>
+</div>
+
+1. All reference assignment operations are **atomic**!
+2. Example here:
+    - We can make **assignments** like `a = b` assignment in single operation safely! 
+
+<div align="center">
+    <img src="Atomic_Operations_Assigment.PNG" width="600" alt="Threads resource"/>
+</div>
+
+1. Notice the `int []` **object** or **reference** type!
+2. All **reads** and **writes** of reference variables are **atomic**!
+    - So naturally **getter** and **setter** are also!
+
+> [!NOTE]  
+> ✅ `int` → primitive
+> ❌ `int []` → object/reference type
+
+> [!WARNING]
+> `long` and `double` are exception to the rules!
+
+<div align="center">
+    <img src="Atomic_Operations_Primitives.PNG" width="600" alt="Threads resource"/>
+</div>
+
+1. All **reads** and **writes** of **primitive variables**.
+    - ❌ Except **long** and **double** are atomic. ❌ 
+
+2. **Reading** and **writing** from primitives are atomic, such as these. 
+
+<div align="center">
+    <img src="Atomic_Operation_For_The_Long_And_Double.PNG" width="600" alt="Threads resource"/>
+</div>
+
+1. Since the **long** and **double** are `64` bits long, it's **not** guaranteed for **one operation** is **atomic**! This usually takes **two operations** since:
+    - The one writes to the`lower` **32** bits and another writes to the `upper` **32** bits.
+
+- One can check, operation as [non-atomic](https://docs.oracle.com/javase/specs/jls/se7/html/jls-17.html#jls-17.7) documentation
+
+<div align="center">
+    <img src="What_We_Will_Learn_Next_Volitile_For_Double_And_Float.PNG" width="600" alt="Threads resource"/>
+</div>
+
+1. Next we will be checking the **Volatile** keyword for the `double` and `long`!
+
+<div align="center">
+    <img src="Atomic_Operation_Volatile_Double_Float.PNG" width="600" alt="Threads resource"/>
+</div>
+
+1. If we define with the `volatile` they will make these variables **atomic** and **thread safe**!
+
+<div align="center">
+    <img src="Atomic_Operation_Libraries.PNG" width="600" alt="Threads resource"/>
+</div>
+
+1. There are more classes that make the other **non-atomic** operations to **atomic**, all this from **Java** `java.util.concurrent.atomic`!
+    - We are currently touching the base understanding of **atomic operations**.
+2. We are focusing to the **core fundamentals**!
+
+<div align="center">
+    <img src="What_We_Will_Learn_Next_Is_Metric_Use_Case.PNG" width="600" alt="Threads resource"/>
+</div>
+
+1. Furthermore, we will be checking the how to have **some metric units** for execution in the production. 
+
+<div align="center">
+    <img src="Use_Case_Of_The_Metric.PNG" width="600" alt="Threads resource"/>
+</div>
+
+1. Moreover, we can use ways to get *how long something took?*
+    - For the example **important operations**.
+
+- Example looking following code:
+
+````Java
+    public static class Metrics {
+        private long count = 0;
+        private double average = 0.0;
+
+        public void addSample(long sample) {
+            double currentSum = average * count;
+            count++;
+            average = (currentSum + sample) / count;
+        }
+
+        public double getAverage()
+        {
+            return average;
+        }
+    }
+````
+
+- We are analyzing and making this code as **atomic** as possible!
+
+<div align="center">
+    <img src="Making_Metrics_Atomic_As_Possible.PNG" width="600" alt="Threads resource"/>
+</div>
+
+1. This whole is **non-atomic**, even thought the individual **operations** are **atomic**! Since this can be **accessed** by multiple **threads** in the same time!
+    - These are performed to the shared variables `average` and `count`! We need to add there `synchronized` keyword!
+
+2. The `average` is `double`, so it is **non-atomic**! This needs to have `volatile` keyword!
+
+- To following code, which is **thread safe**:
+
+````Java
+public static class Metrics {
+        private long count = 0;
+        private volatile double average = 0.0;
+
+        public synchronized void addSample(long sample) {
+            double currentSum = average * count;
+            count++;
+            average = (currentSum + sample) / count;
+        }
+
+        public double getAverage() {
+            return average;
+        }
+    }
+````
+
+ - We're performing and illustrating these changes, first we are going to make business logic pieces `MetricsPrinter.java`:
+
+````Java
+    public static class MetricsPrinter extends Thread {
+        private Metrics metrics;
+
+        public MetricsPrinter(Metrics metrics) {
+            this.metrics = metrics;
+        }
+
+        @Override
+        public void run() {
+            while (true) {
+                try {
+                    Thread.sleep(1);
+                } catch (InterruptedException e) {
+                }
+
+                double currentAverage = metrics.getAverage();
+                System.out.println("Current Average is " + currentAverage);
+            }
+        }
+    }
+````
+
+- The **Main** class for execution:
+
+```Java
+public static void main(String[] args) {
+        Metrics metrics = new Metrics();
+
+        BusinessLogic businessLogicThread1 = new BusinessLogic(metrics);
+        BusinessLogic businessLogicThread2 = new BusinessLogic(metrics);
+
+        MetricsPrinter metricsPrinter = new MetricsPrinter(metrics);
+
+        businessLogicThread1.start();
+        businessLogicThread2.start();
+        metricsPrinter.start();
+    }
+```
+
+- We are trying to achieve following behavior:
+
+$$
+\text{average} = \frac{1}{N} \sum_{i=1}^{N} (\text{end}_i - \text{start}_i)
+$$
+
+<div align="center">
+    <img src="Atomic_Operations_Applied_And_Measured.gif" width="600" alt="Threads resource"/>
+</div>
+
+1. We can see the average around **5 seconds**.
 
 > [!TIP]
 > 💡 Whenever **multiple threads modify a shared variable**, and the operation is **non-atomic**, you risk lost updates. 💡
@@ -678,103 +869,107 @@ System.out.println(count); // Often less than 2000!
  - `count++` often gives less than *2000* in your example.
 
 <div align="center">
-    <img src="Atomic_Operations.PNG" width="500" alt="Threads resource"/>
+    <img src="Summary_Of_The_Atomic_Operation.PNG" width="600" alt="Threads resource"/>
 </div>
 
-<div align="center">
-    <img src="Assigment_Operation_Atomic.PNG" width="500" alt="Threads resource"/>
-</div>
+1. What operation we can use to have **atomic** property!
+2. Real life example, when measuring time measurement!
+3. Atomic operations when making performant operation!
 
-1. We can make **assignments** like `a = b` assignment in single operation safely! 
-
-<div align="center">
-    <img src="Assigment_Operation_Atomic.PNG" width="500" alt="Threads resource"/>
-</div>
-
-<div align="center">
-    <img src="Atomic_Operations_Assigment.PNG" width="500" alt="Threads resource"/>
-</div>
-
-1. All **reads** and **writes** of reference variables are **atomic**!
-    - So naturally getter and setter are also!
-
-- Check these ones.
-
-<div align="center">
-    <img src="Atomic_Operations_Primitives.PNG" width="500" alt="Threads resource"/>
-</div>
-
-1. All **reads** and **writes** of **primitive variables** (except **long** and **double**) are **atomic**.
-
-2. **reading** and **writing** from primitives are atomic, such as these. 
-
-<div align="center">
-    <img src="Atomic_Operation_For_The_Long_And_Double.PNG" width="500" alt="Threads resource"/>
-</div>
-
-1. Since the **long** and **double** are `64` bits long, it's **not** guaranteed for **one operation** is **atomic**! This usually takes **two operations** since:
-    - The one writes to the`lower` **32** bits and another writes to the `upper` **32** bits.
-
-- Operation as [non-atomic](https://docs.oracle.com/javase/specs/jls/se7/html/jls-17.html#jls-17.7) documentation
-
-<div align="center">
-    <img src="What_We_Will_Learn_Next_Volitile_For_Double_And_Float.PNG" width="500" alt="Threads resource"/>
-</div>
-
-1. Next we will be checking the **Volatile** for the `double` and `long`!
-
-<div align="center">
-    <img src="Atomic_Operation_Volatile_Double_Float.PNG" width="500" alt="Threads resource"/>
-</div>
-
-1. If we define with the `volatile` they will make these variables **atomic** and **thread safe**!
-
-<div align="center">
-    <img src="Atomic_Operation_Libraries.PNG" width="500" alt="Threads resource"/>
-</div>
-
-1. There are more classes that make the other **non-atomic** operations to **atomic**. 
-    - We are currently touching the base understanding of **atomic operations**.
-
-<div align="center">
-    <img src="What_We_Will_Learn_Next_Is_Metric_Use_Case.PNG" width="500" alt="Threads resource"/>
-</div>
-
-1. We will be checking the how to have **some metric units** for example the production. 
-
-<div align="center">
-    <img src="Use_Case_Of_The_Metric.PNG" width="500" alt="Threads resource"/>
-</div>
-
-1. Furthermore, we can use ways to get *how long something took?*
-    - For the **important operations**.
-
-- ChatGbt check this.
-
-- How we should make following:
+<details>
+<summary id="Atomic_Operation_Measuring
+" open="true"> <b>Atomic operation measured code!</b> </summary>
 
 ````Java
-    public static class Metrics {
-        private long count = 0;
-        private double average = 0.0;
+/*
+ * Copyright (c) 2019-2023. Michael Pogrebinsky - Top Developer Academy
+ * https://topdeveloperacademy.com
+ * All rights reserved
+ */
 
-        public void addSample(long sample) {
-            double currentSum = average * count;
-            count++;
-            average = (currentSum + sample) / count;
+import java.util.Random;
+
+/**
+ * Atomic Operations, Volatile & Metrics practical example
+ * https://www.udemy.com/java-multithreading-concurrency-performance-optimization
+ */
+public class Main {
+    public static void main(String[] args) {
+        Metrics metrics = new Metrics();
+
+        BusinessLogic businessLogicThread1 = new BusinessLogic(metrics);
+
+        BusinessLogic businessLogicThread2 = new BusinessLogic(metrics);
+
+        MetricsPrinter metricsPrinter = new MetricsPrinter(metrics);
+
+        businessLogicThread1.start();
+        businessLogicThread2.start();
+        metricsPrinter.start();
+    }
+
+    public static class MetricsPrinter extends Thread {
+        private Metrics metrics;
+
+        public MetricsPrinter(Metrics metrics) {
+            this.metrics = metrics;
         }
 
-        public double getAverage()
-        {
-            return average;
+        @Override
+        public void run() {
+            while (true) {
+                try {
+                    Thread.sleep(1);
+                } catch (InterruptedException e) {
+                }
+
+                double currentAverage = metrics.getAverage();
+
+                System.out.println("Current Average is " + currentAverage);
+            }
         }
     }
-````
 
-- To following code, which is **thread safe**:
+    public static class BusinessLogic extends Thread {
+        private Metrics metrics;
+        private Random random = new Random();
 
-````Java
-public static class Metrics {
+        public BusinessLogic(Metrics metrics) {
+            this.metrics = metrics;
+        }
+
+        @Override
+        public void run() {
+            while (true) {
+                long start = System.currentTimeMillis();
+
+                try {
+                    Thread.sleep(random.nextInt(10));
+                } catch (InterruptedException e) {
+                }
+                long end = System.currentTimeMillis();
+                metrics.addSample(end - start);
+            }
+        }
+    }
+
+//    public static class Metrics {
+//        private long count = 0;
+//        private double average = 0.0;
+//
+//        public void addSample(long sample) {
+//            double currentSum = average * count;
+//            count++;
+//            average = (currentSum + sample) / count;
+//        }
+//
+//        public double getAverage()
+//        {
+//            return average;
+//        }
+//    }
+    // After thread safe modifications!
+    public static class Metrics {
         private long count = 0;
         private volatile double average = 0.0;
 
@@ -788,40 +983,179 @@ public static class Metrics {
             return average;
         }
     }
+}
 ````
-
-- The `addSample()` should be `synchronized`, since there are of shared variables!
-
-- We are adding `volatile` to the `double average`. Since it should be up-to-date with other threads.
-
-- Todo tee tämä loppuun.
+</details>
 
 # Quiz 07: Atomic Operations, Volatile & Metrics Practical Example.
 
+- explonations for second
+
+temp = counter;
+temp = temp + 1;
+counter = temp;
+
+
+
+<details>
+
+<summary id="Question_01" open="true"> <b>Question 01.</b> </summary>
+
+````yaml
+Question 01:
+Why do we want to use multiple threads in an application?
+````
+
+- My answer:
+
+<div align="center">
+    <img src="Quiz 07/Q1.PNG" width="600"/>
+</div>
+
+1. By using **multiple threads** allows an application to handle several tasks at once, enhancing responsiveness and potentially increasing performance through concurrent execution.
+
+</details>
+
+<details>
+
+<summary id="Question_02" open="true"> <b>Question 02.</b> </summary>
+
+````yaml
+Question 02:
+Which of the following operations are atomic and free of race conditions?
+````
+
+- My answer:
+
+<div align="center">
+    <img src="Quiz 07/Q2.PNG" width="600"/>
+</div>
+1. The Code `2.` means as following, we can execute threads using the same code:
+
+````Java
+````
+- The `add(...)` is being re-used!
+
+</details>
+
+
 # Coding Exercise 03: Min - Max Metrics.
+
+todo
 
 # Min - Max Metrics - Solution.
 
 # Race Conditions & Data Races.
 
 <div align="center">
-    <img src="Atomic_Operation_Volatile_Double_Float.PNG" width="500" alt="Threads resource"/>
+    <img src="Java_Multi_Threading.PNG"  alt="Java threads." width="600"/>
 </div>
 
-1. We will be checking the **Locking Strategies**.
+1. Race conditioning and data race!
+
+<div align="center">
+    <img src="What_We_Will_Learn_Next_What_Is_Data_Race_And_Race_Conditioning.PNG" width="600" alt="Threads resource"/>
+</div>
+
+1. We will see what is **Race conditioning**!
+
+<div align="center">
+    <img src="Race_Codition.PNG" width="600" alt="Threads resource"/>
+</div>
+
+1. **Core problem**:
+    - When multiple threads are performing **non-atomic** operation on **shared resource**!
+
+- THE REST
+
+<div align="center">
+    <img src="Race_Conditioning.PNG" width="600" alt="Threads resource"/>
+</div>
+
+1. This is different that **Race condition**!
 
 # Quiz 08: Data Races.
+
+<details>
+
+<summary id="Thread progress
+ " open="true"> <b>Question 01.</b> </summary>
+
+````yaml
+Question 01:
+Why do we want to use multiple threads in an application?
+````
+
+- My answer:
+
+<div align="center">
+    <img src="Quiz 01/Q01.PNG" width="600"/>
+</div>
+
+1. By using **multiple threads** allows an application to handle several tasks at once, enhancing responsiveness and potentially increasing performance through concurrent execution.
+
+</details>
+
+<details>
+
+<summary id="Thread progress
+" open="true"> <b>Question 02.</b> </summary>
+
+````yaml
+Question 02:
+Multiple threads in a single process share
+````
+
+- My answer:
+
+<div align="center">
+    <img src="Quiz 01/Q02.PNG" width="600"/>
+</div>
+
+1. The Code `2.` means as following, we can execute threads using the same code:
+
+````Java
+thread1 -> add(1, 2)
+thread2 -> add(5, 6)
+````
+- The `add(...)` is being re-used!
+
+</details>
+
+<details>
+
+<summary id="Thread progress
+" open="true"> <b>Question 03.</b> </summary>
+
+````yaml
+Question 03:
+How does the Operating System decide what thread to schedule?
+````
+
+- My answer:
+
+<div align="center">
+    <img src="Quiz 01/Q03.PNG" width="600"/>
+</div>
+
+1. The **O**perating **S**ystem decides which thread to run next using the scheduler, based on **scheduling algorithms** and **system state**.
+
+</details>
 
 # Locking Strategies & Deadlocks.
 
 <div align="center">
-    <img src="What_We_Will_Learn_Locking_Strategy.PNG" width="500" alt="Threads resource"/>
+    <img src="Java_Multi_Threading.PNG"  alt="Java threads." width="600"/>
+</div>
+
+<div align="center">
+    <img src="What_We_Will_Learn_Locking_Strategy.PNG" width="600" alt="Threads resource"/>
 </div>
 
 1. We will be checking **Locking Strategies** next!
 
 <div align="center">
-    <img src="Two_Different_Locking_Strategy.PNG" width="500" alt="Threads resource"/>
+    <img src="Two_Different_Locking_Strategy.PNG" width="600" alt="Threads resource"/>
 </div>
 
 - In **multithreaded programming**, we need to make choice, which **locking strategy** we need to choose:
@@ -831,19 +1165,19 @@ public static class Metrics {
         - Should we have **one** lock for one resource!
 
 <div align="center">
-    <img src="Coarse_Grained_Locking.PNG" width="500" alt="Threads resource"/>
+    <img src="Coarse_Grained_Locking.PNG" width="600" alt="Threads resource"/>
 </div>
 
 1. Example for inspecting our **locking strategy**!
 
 <div align="center">
-    <img src="Coarse_Grained_Locking_Two_Resources.PNG" width="500" alt="Threads resource"/>
+    <img src="Coarse_Grained_Locking_Two_Resources.PNG" width="600" alt="Threads resource"/>
 </div>
 
 1. We have **two** resources to be locked. 
 
 <div align="center">
-    <img src="Coarse_Grained_Locking_Two_Locking.PNG" width="500" alt="Threads resource"/>
+    <img src="Coarse_Grained_Locking_Two_Locking.PNG" width="600" alt="Threads resource"/>
 </div>
 
 1. We could just add `synchronized` to method signatures to lock.
@@ -851,35 +1185,101 @@ public static class Metrics {
         - There is no right or wrong, when deciding what strategy to use!
 
 <div align="center">
-    <img src="Prize_To_Pay_When_Using_Simple_Solution_For_Locking.PNG" width="500" alt="Threads resource"/>
+    <img src="Prize_To_Pay_When_Using_Simple_Solution_For_Locking.PNG" width="600" alt="Threads resource"/>
 </div>
 
 1. For this simple `synchronized` locking we pay prize when running individual threads.
     - If they are accessing these shared resources!
 
 <div align="center">
-    <img src="Prize_To_Pay_When_Using_Simple_Solution_For_Locking_Reality.PNG" width="500" alt="Threads resource"/>
+    <img src="Prize_To_Pay_When_Using_Simple_Solution_For_Locking_Reality.PNG" width="600" alt="Threads resource"/>
 </div>
 
 1. In reality, the these are doing something else, not fully blocked, but still this is drawback!
 
 <div align="center">
-    <img src="Fine_Grained_Locking_Strategy_In_Code.PNG" width="500" alt="Threads resource"/>
+    <img src="Fine_Grained_Locking_Strategy_In_Code.PNG" width="600" alt="Threads resource"/>
 </div>
 
 1. We are locking as **fine-grained**!
 
 <div align="center">
-    <img src="Fine_Grained_Locking_Strategy.PNG" width="500" alt="Threads resource"/>
+    <img src="Fine_Grained_Locking_Strategy.PNG" width="600" alt="Threads resource"/>
 </div>
 
 1. We get more out of cores execution, when using **fine-grained** solution!
 
 <div align="center">
-    <img src="Deadlock.PNG" width="500" alt="Threads resource"/>
+    <img src="Deadlock.PNG" width="600" alt="Threads resource"/>
 </div>
 
 1. **Fine-grained** solution, there can be **deadlock**!
     - *"I will move, if you will move"* situation!
 
 # Quiz 09: Locking Strategies & Deadlocks.
+
+<details>
+
+<summary id="Thread progress
+" open="true"> <b>Question 01.</b> </summary>
+
+````yaml
+Question 01:
+Why do we want to use multiple threads in an application?
+````
+
+- My answer:
+
+<div align="center">
+    <img src="Quiz 01/Q01.PNG" width="600"/>
+</div>
+
+1. By using **multiple threads** allows an application to handle several tasks at once, enhancing responsiveness and potentially increasing performance through concurrent execution.
+
+</details>
+
+<details>
+
+<summary id="Thread progress
+" open="true"> <b>Question 02.</b> </summary>
+
+````yaml
+Question 02:
+Multiple threads in a single process share
+````
+
+- My answer:
+
+<div align="center">
+    <img src="Quiz 01/Q02.PNG" width="600"/>
+</div>
+
+1. The Code `2.` means as following, we can execute threads using the same code:
+
+````Java
+thread1 -> add(1, 2)
+thread2 -> add(5, 6)
+````
+- The `add(...)` is being re-used!
+
+</details>
+
+<details>
+
+<summary id="Thread progress
+" open="true"> <b>Question 03.</b> </summary>
+
+````yaml
+Question 03:
+How does the Operating System decide what thread to schedule?
+````
+
+- My answer:
+
+<div align="center">
+    <img src="Quiz 01/Q03.PNG" width="600"/>
+</div>
+
+1. The **O**perating **S**ystem decides which thread to run next using the scheduler, based on **scheduling algorithms** and **system state**.
+
+</details>

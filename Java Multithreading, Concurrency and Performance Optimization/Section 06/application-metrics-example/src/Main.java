@@ -61,7 +61,7 @@ public class Main {
                 long start = System.currentTimeMillis();
 
                 try {
-                    Thread.sleep(random.nextInt(2));
+                    Thread.sleep(random.nextInt(10));
                 } catch (InterruptedException e) {
                 }
 
@@ -89,7 +89,7 @@ public class Main {
 //        }
 //    }
 
-    // After thread safe modfications!
+    // After thread safe modifications!
     public static class Metrics {
         private long count = 0;
         private volatile double average = 0.0;
