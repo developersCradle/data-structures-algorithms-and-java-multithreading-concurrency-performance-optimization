@@ -11,13 +11,13 @@ Threading Fundamentals - Thread Creation.
 # Threads Creation - Part 1, Thread Capabilities & Debugging.
 
 <div align="center">
-    <img src="Java_Multi_Threading_Writing_First_Multithreaded_Program.PNG"  alt="Java threads." width="500"/>
+    <img src="Java_Multi_Threading_Writing_First_Multithreaded_Program.PNG"  alt="Java threads." width="600"/>
 </div>
 
 1. We will be writing our first multithreaded program!
 
 <div align="center">
-    <img src="What_We_Will_Be_Learning_We_Will_Create_Our_First_Thread.PNG"  alt="Java threads." width="500"/>
+    <img src="What_We_Will_Be_Learning_We_Will_Create_Our_First_Thread.PNG"  alt="Java threads." width="600"/>
 </div>
 
 1. First we will be looking at the *"hello world"* of the **Threads**. 
@@ -110,7 +110,7 @@ we are now in thread Thread-0
 - The **second** topic the which **capabilities** the **Thread** will bring us.
 
 <div align="center">
-    <img src="What_We_Will_Be_Learning_Thread_Class_Capabilities.PNG"  alt="Java threads." width="500"/>
+    <img src="What_We_Will_Be_Learning_Thread_Class_Capabilities.PNG"  alt="Java threads." width="600"/>
 </div>
 
 - We can give the **Thread** a name:
@@ -176,7 +176,7 @@ Current thread priority is 10
 ````
 
 <div align="center">
-    <img src="thirdThread.PNG"  alt="Java threads." width="500"/>
+    <img src="thirdThread.PNG"  alt="Java threads." width="600"/>
 </div>
 
 - This **Third** version of the **Threads**, where we explored `.setUncaughtExceptionHandler()`:
@@ -211,7 +211,7 @@ A critical error handler in tread Thread-0 the error is Internal Exception
 # Threads Creation - Part 2, Thread Inheritance.
 
 <div align="center">
-    <img src="threadCreationOtherWay.PNG"  alt="Java threads." width="500"/>
+    <img src="threadCreationOtherWay.PNG"  alt="Java threads." width="600"/>
 </div>
 
 - The other way to create **Thread** is to extend the **class**.
@@ -248,7 +248,7 @@ public class Main {
 </div>
 
 <div align="center">
-    <img src="caseStudyThread.PNG"  alt="Java threads." width="500"/>
+    <img src="caseStudyThread.PNG"  alt="Java threads." width="600"/>
 </div>
 
 1. We will have case study where there will be **security vault**.
@@ -256,7 +256,7 @@ public class Main {
 3. This will be **police Thread**, and it will be trying to catch the hacker in **10 secs**. 
 
 <div align="center">
-    <img src="umlDiagramForTheCaseStudy.PNG"  alt="Java threads." width="500"/>
+    <img src="umlDiagramForTheCaseStudy.PNG"  alt="Java threads." width="600"/>
 </div>
 
 - We will be implementing the **UML** classes, with following implementations:
@@ -384,13 +384,13 @@ public class Main {
 - Police wins!
 
 <div align="center">
-    <img src="policeWin.gif"  alt="Java threads." width="500"/>
+    <img src="policeWin.gif"  alt="Java threads." width="600"/>
 </div>
 
 - Hacker win!
 
 <div align="center">
-    <img src="hackerWin.gif"  alt="Java threads." width="500"/>
+    <img src="hackerWin.gif"  alt="Java threads." width="600"/>
 </div>
 
 # Quiz 02: Thread Creation.
@@ -408,7 +408,7 @@ How does the Operating System decide what thread to schedule?
 - My answer:
 
 <div align="center">
-    <img src="Quiz 02/Q1.PNG" width="500"/>
+    <img src="Quiz 02/Q1.PNG" width="600"/>
 </div>
 
 1. The Operating System decides which thread to run next using the scheduler, based on scheduling algorithms and system state.
@@ -428,7 +428,7 @@ How does the Operating System decide what thread to schedule?
 - My answer:
 
 <div align="center">
-    <img src="Quiz 02/Q2.PNG" width="500"/>
+    <img src="Quiz 02/Q2.PNG" width="600"/>
 </div>
 
 
@@ -439,7 +439,7 @@ How does the Operating System decide what thread to schedule?
 # Coding Exercise 01: Thread Creation - MultiExecutor.
 
 <div align="center">
-    <img src="ThreadCreationExercise.PNG"  alt="Java threads." width="500"/>
+    <img src="ThreadCreationExercise.PNG"  alt="Java threads." width="600"/>
 </div>
 
 ```

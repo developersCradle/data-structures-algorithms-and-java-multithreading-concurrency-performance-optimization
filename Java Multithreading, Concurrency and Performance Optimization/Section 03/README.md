@@ -28,19 +28,19 @@ Threading Fundamentals - Thread Coordination.
     - `3.` We cannot **end** the **application** if there is threads running.
 
 <div align="center">
-    <img src="Next_Is_Thread_Interupt.PNG"  alt="Java threads." width="500"/>
+    <img src="Next_Is_Thread_Interupt.PNG"  alt="Java threads." width="600"/>
 </div>
 
 1. Next we will be dealing with `Thread.interupt()`.
 
 <div align="center">
-    <img src="Thread_Dot_Interrupt_Method.PNG"  alt="Java threads." width="500"/>
+    <img src="Thread_Dot_Interrupt_Method.PNG"  alt="Java threads." width="600"/>
 </div>
 
 1. We can send interrupt from the **Thread A** to **Thread B** by using `Thread.interrupt()`!
 
 <div align="center">
-    <img src="When_Can_We_Interupt_The_Thread.PNG"  alt="Java threads." width="500"/>
+    <img src="When_Can_We_Interupt_The_Thread.PNG"  alt="Java threads." width="600"/>
 </div>
 
 1. If the **thread** which we are trying to **interrupt** is running method that has throws `InterruptedException`. [InterruptedException](https://docs.oracle.com/javase/8/docs/api/java/lang/InterruptedException.html).
@@ -493,7 +493,7 @@ Please choose the correct statement.
 - My answer:
 
 <div align="center">
-    <img src="Quiz_03/Q2.PNG" width="500"/>
+    <img src="Quiz_03/Q2.PNG" width="600"/>
 </div>
 
 1. That is correct. As a rule of thumb, never leave a catch block empty, and use the `InterruptedException`
@@ -515,7 +515,7 @@ Please choose the correct statement.
 > **Aggregate** mean to combine the results in one point. **Wait** → then **combine** (manually).
 
 <div align="center">
-    <img src="Parallel_And_Join_Concept_Overview.png"  alt="Java threads." width="500"/>
+    <img src="Parallel_And_Join_Concept_Overview.png"  alt="Java threads." width="600"/>
 </div>
  
  1. We make the calling **thread** wait, until the **thread**/**threads** are finished. This can be done by making the **calling thread** to be **blocked**! Example below:
@@ -618,7 +618,7 @@ $$
 <summary id="The factorial formula" open="true"> <b>Factorial diagram!</b> </summary>
 
 <div align="center">
-    <img src="Factorial_Formula.png"  alt="Java threads." width="500"/>
+    <img src="Factorial_Formula.png"  alt="Java threads." width="600"/>
 </div>
 </details>
 
@@ -879,7 +879,7 @@ $$
 <summary id="coding_exercise_02_multithreaded_calculation" open="true"> <b>Coding Exercise 02: Multithreaded Calculation! My Answer!</b> </summary>
 
 <div align="center">
-    <img src="Multithreaded_Exercise_Coding_Exercise_02.PNG"  alt="Java threads." width="500"/>
+    <img src="Multithreaded_Exercise_Coding_Exercise_02.PNG"  alt="Java threads." width="600"/>
 </div>
  
 ```Java
@@ -1025,7 +1025,7 @@ $$
 <summary id="coding_exercise_02_multithreaded_calculation_solution" open="true"> <b>Coding Exercise 02: Multithreaded Calculation! The Teachers Solution!</b> </summary>
 
 <div align="center">
-    <img src="Multithreaded_Exercise_Coding_Exercise_02_Solution.PNG"  alt="Java threads." width="500"/>
+    <img src="Multithreaded_Exercise_Coding_Exercise_02_Solution.PNG"  alt="Java threads." width="600"/>
 </div>
  
 ````Java

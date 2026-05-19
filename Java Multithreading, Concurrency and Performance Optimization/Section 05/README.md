@@ -113,11 +113,11 @@ Data Sharing Between Threads.
 > **References** to the Objects are **not** the same as **Objects**.
 
 <div align="center">
-    <img src="Reference_Is_Not_Object.PNG" width="500"/>
+    <img src="Reference_Is_Not_Object.PNG" width="600"/>
 </div>
 
 <div align="center">
-    <img src="Objects_Versus_References.PNG" width="500"/>
+    <img src="Objects_Versus_References.PNG" width="600"/>
 </div>
 
 - Code below from the picture:

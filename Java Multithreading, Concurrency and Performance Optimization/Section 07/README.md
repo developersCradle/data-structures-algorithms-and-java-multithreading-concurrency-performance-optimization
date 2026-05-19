@@ -8,14 +8,14 @@ Advanced Locking
 
 
 <div align="center">
-    <img src="Java_Multi_Threading.PNG"  alt="Java threads." width="500"/>
+    <img src="Java_Multi_Threading.PNG"  alt="Java threads." width="600"/>
 </div>
 
 # ReentrantLock Part 2 – User Interface Application Example.
 
 
 <div align="center">
-    <img src="Java_Multi_Threading.PNG"  alt="Java threads." width="500"/>
+    <img src="Java_Multi_Threading.PNG"  alt="Java threads." width="600"/>
 </div>
 
 # Quiz 10: ReentrantLock.
@@ -24,14 +24,14 @@ Advanced Locking
 
 
 <div align="center">
-    <img src="Java_Multi_Threading.PNG"  alt="Java threads." width="500"/>
+    <img src="Java_Multi_Threading.PNG"  alt="Java threads." width="600"/>
 </div>
 
 # Resources.
 
 
 <div align="center">
-    <img src="Java_Multi_Threading.PNG"  alt="Java threads." width="500"/>
+    <img src="Java_Multi_Threading.PNG"  alt="Java threads." width="600"/>
 </div>
 
 # Quiz 11: Read-Write Locks.
@@ -41,5 +41,5 @@ Advanced Locking
 # Product Reviews Service – Solution.
 
 <div align="center">
-    <img src="Java_Multi_Threading.PNG"  alt="Java threads." width="500"/>
+    <img src="Java_Multi_Threading.PNG"  alt="Java threads." width="600"/>
 </div>

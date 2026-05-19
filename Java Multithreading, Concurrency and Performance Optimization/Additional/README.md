@@ -1,6 +1,7 @@
-# Section caption here
+# Additional turun yliopisto threads/säikeet. 
 
-Description here
+Turun yliopisto threads/säikeet. 
+- Source: [Säikeet PDF](https://staff.cs.utu.fi/opinnot/kurssit/HOJ-2012/kalvot/kalvot2-3.pdf).
 
 # What I learned.
 
@@ -8,33 +9,23 @@ Description here
     <img src="saikeet-images-0.jpg" alt="säikeet esitys" width="700"/>
 </div>
 
-
-
 <div align="center">
     <img src="saikeet-images-0.jpg" alt="säikeet esitys" width="700"/>
 </div>
-
 
 <div align="center">
     <img src="saikeet-images-1.jpg" alt="säikeet esitys" width="700"/>
 </div>
 
-
-
 <div align="center">
     <img src="saikeet-images-2.jpg" alt="säikeet esitys" width="700"/>
 </div>
-
-
 
 <div align="center">
     <img src="saikeet-images-3.jpg" alt="säikeet esitys" width="700"/>
 </div>
 
-
 <div align="center">
     <img src="saikeet-images-4.jpg" alt="säikeet esitys" width="700"/>
 </div>
 
-
-.....

@@ -461,7 +461,7 @@ Add here
 - My answer:
 
 <div align="center">
-    <!-- <img src="Quiz 02/Q1.PNG" width="500"/> -->
+    <!-- <img src="Quiz 02/Q1.PNG" width="600"/> -->
 </div>
 
 1. Some answer

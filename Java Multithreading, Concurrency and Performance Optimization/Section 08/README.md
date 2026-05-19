@@ -7,19 +7,19 @@ Inter-Thread Communication.
 # Semaphore – Scalable Producer Consumer Implementation.
 
 <div align="center">
-    <img src="Java_Inter_Thread_Communication.PNG"  alt="Java threads." width="500"/>
+    <img src="Java_Multi_Threading.PNG"  alt="Java threads." width="600"/>
 </div>
 
 1. We will new synchronization tool **semphore**!
 
 <div align="center">
-    <img src="What_We_Will_Learn_Lock_Free_Algorithms_Data_Structures.PNG"  alt="Java threads." width="500"/>
+    <img src="What_We_Will_Learn_Lock_Free_Algorithms_Data_Structures.PNG"  alt="Java threads." width="600"/>
 </div>
 
 1. We will study lock free algorithms data structures!
 
 <div align="center">
-    <img src="What_Wrong_With_Locks.PNG"  alt="Java threads." width="500"/>
+    <img src="What_Wrong_With_Locks.PNG"  alt="Java threads." width="600"/>
 </div>
 
 1. Lock been long time around and they are great!
@@ -29,13 +29,13 @@ Inter-Thread Communication.
 # Condition Variables – All Purpose, Inter-Thread Communication.
 
 <div align="center">
-    <img src="Java_Multi_Threading.PNG"  alt="Java threads." width="500"/>
+    <img src="Java_Multi_Threading.PNG"  alt="Java threads." width="600"/>
 </div>
 
 # Objects as Condition Variables – wait(), notify(), and notifyAll().
 
 <div align="center">
-    <img src="Java_Multi_Threading.PNG"  alt="Java threads." width="500"/>
+    <img src="Java_Multi_Threading.PNG"  alt="Java threads." width="600"/>
 </div>
 
 # Quiz 13: Condition Variables.
@@ -45,5 +45,5 @@ Inter-Thread Communication.
 # Simple CountDownLatch – Solution.
 
 <div align="center">
-    <img src="Java_Multi_Threading.PNG"  alt="Java threads." width="500"/>
+    <img src="Java_Multi_Threading.PNG"  alt="Java threads." width="600"/>
 </div>

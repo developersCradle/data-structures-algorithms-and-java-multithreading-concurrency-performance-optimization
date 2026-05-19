@@ -1038,12 +1038,60 @@ Which of the following operations are atomic and free of race conditions?
 
 </details>
 
-
 # Coding Exercise 03: Min - Max Metrics.
 
-todo
+<div align="center">
+    <img src="Min_Max_Matrix_Exercise.PNG"  alt="Coding exercise 03: min - max metrics!" width="600"/>
+</div>
+
+```Java
+public class MinMaxMetrics {
+    
+    // Add all necessary member variables
+    /**
+     * Initializes all member variables
+     */
+    public MinMaxMetrics() {
+        // Add code here
+    }
+
+    /**
+     * Adds a new sample to our metrics.
+     */
+    public void addSample(long newSample) {
+        // Add code here
+    }
+
+    /**
+     * Returns the smallest sample we've seen so far.
+     */
+    public long getMin() {
+        // Add code here
+    }
+
+    /**
+     * Returns the biggest sample we've seen so far.
+     */
+    public long getMax() {
+        // Add code here
+    }
+}
+```
+
+1. **Question 1:** Please implement `MinMaxMetrics` below:
+	- **Answer:** Below.
+
+```Java
+
+
+```
 
 # Min - Max Metrics - Solution.
+
+```Java
+
+
+```
 
 # Race Conditions & Data Races.
 
@@ -1072,7 +1120,7 @@ todo
     <img src="Race_Conditioning.PNG" width="600" alt="Threads resource"/>
 </div>
 
-1. This is different that **Race condition**!
+1. **Date Race** is different that **Race condition**!
 
 # Quiz 08: Data Races.
 
