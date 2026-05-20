@@ -81,7 +81,7 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 - [ ] [Section 10](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Multithreading%2C%20Concurrency%20and%20Performance%20Optimization/Section%2010/README.md#chapter-10---threading-models-for-high-performance-io) - Threading Models for High Performance IO.
 - [ ] [Section 11](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Multithreading%2C%20Concurrency%20and%20Performance%20Optimization/Section%2010/README.md#chapter-10---threading-models-for-high-performance-io) - Virtual Threads and High-Performance IO.
 - [ ] [Section 12](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading%2C%20Concurrency%20and%20Performance%20Optimization/Section%2012#chapter-12---extra-information---source-code-and-other-stuff) - Beyond Multithreading - Final Lecture.
-- [ ] [Additional](#) - Turun yliopisto threads/säikeet. 
+- [ ] [Additional](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading%2C%20Concurrency%20and%20Performance%20Optimization/Additional#additional-turun-yliopisto-threadss%C3%A4ikeet) - Turun yliopisto threads/säikeet.
 
 #### Additional stuff.
 

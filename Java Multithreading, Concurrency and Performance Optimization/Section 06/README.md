@@ -13,7 +13,7 @@ The Concurrency Challenges & Solutions.
 1. Add here 
 
 <div align="center">
-    <img src="What_We_Will_Learn_Next_Is_Critical_Sections.PNG" width="700" alt="Threads resource"/>
+    <img src="What_We_Will_Learn_Next_Is_Critical_Sections.PNG" width="700" alt="Threads multithreading."/>
 </div>
 
 1. We will be starting to explore the **Critical Section**.
@@ -21,7 +21,7 @@ The Concurrency Challenges & Solutions.
 - We need to address following **problem**:
 
 <div align="center">
-    <img src="We_Had_Following_Problem_With_The_Concurrency.PNG" width="700" alt="Threads resource"/>
+    <img src="We_Had_Following_Problem_With_The_Concurrency.PNG" width="700" alt="Threads multithreading."/>
 </div>
 
 - We would need to execute **set** of operation, which would need to be executed as **single atomic operation**.
@@ -36,7 +36,7 @@ void aggregateFunction() {
 ````
 
 <div align="center">
-    <img src="Critical_Section.gif" width="700" alt="Threads resource"/>
+    <img src="Critical_Section.gif" width="700" alt="Threads multithreading."/>
 </div>
 
 1. We will be surrounding this **critical section** with the **tags** as following. This will prevent the concurrent execution of the code. 
@@ -44,7 +44,7 @@ void aggregateFunction() {
 3. If `Thread B` tries to access this **critical section**, while `Thread A` is still on it, the `Thread B` will be **suspended** status until the first **thread** `Thread A` is finished with the **critical section**.
 
 <p align="center">
-    <img src="Critical_Section_Second.gif" width="700" alt="Threads resource"/>
+    <img src="Critical_Section_Second.gif" width="700" alt="Threads multithreading."/>
 </p>
 
 1. Once the `Thread A` finishes the **critical section**, the second **thread** `Thread B` can access the **critical section** and perform all the operations!
@@ -53,13 +53,13 @@ void aggregateFunction() {
 > 💡 **Remember** these concepts are the **same** regardless of the language. They might be in some different *flavor* or *API's*. 💡
 
 <div align="center">
-    <img src="What_We_Will_Learn_Next_Synchronized.PNG" width="700" alt="Threads resource"/>
+    <img src="What_We_Will_Learn_Next_Synchronized.PNG" width="700" alt="Threads multithreading."/>
 </div>
 
 1. **JVM** provides us with many ways to **protect** the **critical section** against multiple threads execution!
 
 <div align="center">
-    <img src="Synchorinized_Keyword.PNG" width="700" alt="Threads resource"/>
+    <img src="Synchorinized_Keyword.PNG" width="700" alt="Threads multithreading."/>
 </div>
 
 1. Simplest solution is to use `synchronized` **keyword**. This is **locking mechanism**! 
@@ -69,7 +69,7 @@ void aggregateFunction() {
         - Second the **Lock** way!
 
 <div align="center">
-    <img src="Synchronized_Used_In_The_Block.PNG" width="600" alt="Threads resource"/>
+    <img src="Synchronized_Used_In_The_Block.PNG" width="600" alt="Threads multithreading."/>
 </div>
 
 1. **First** the Monitor way!
@@ -97,14 +97,14 @@ void aggregateFunction() {
     ````
         
 <div align="center">
-    <img src="Synchronized_Used_In_The_Block_Second.PNG" width="600" alt="Threads resource"/>
+    <img src="Synchronized_Used_In_The_Block_Second.PNG" width="600" alt="Threads multithreading."/>
 </div>
 
 1. If the `Thread A` is executing either `method1()` or `method2()` the `Thread B` is prevented to execute at all other methods. The locking is applied to the **object itself**, rather than **individual methods**!
     - The term used here for this concept is **Monitor**.
 
 <p align="center">
-    <img src="Our_Critical_Section.PNG" width="600" alt="Threads resource"/>
+    <img src="Our_Critical_Section.PNG" width="600" alt="Threads multithreading."/>
 </p>
 
 1. We will apply our `synchronized` for our old user case!
@@ -118,7 +118,7 @@ You can see it's now fixed.
     - We are getting consistent results!
 
 <div align="center">
-    <img src="Using_Synchronized.gif" width="700" alt="Threads resource"/>
+    <img src="Using_Synchronized.gif" width="700" alt="Threads multithreading."/>
 </div>
 
 <details>
@@ -202,7 +202,7 @@ public class Main {
 - Second is the **Lock** way!
 
 <div align="center">
-    <img src="Synchronized_Used_In_The_Block_Using_Lock.PNG" width="700" alt="Threads resource"/>
+    <img src="Synchronized_Used_In_The_Block_Using_Lock.PNG" width="700" alt="Threads multithreading."/>
 </div>
 
 1. We can use **Lock Objects** to block (synchronize) **sections of code** and **not block whole method**, therefore we have better control over blocking! 
@@ -213,28 +213,28 @@ public class Main {
 > 💡 **Separate lock objects** = **better concurrency control**! 💡
 
 <div align="center">
-    <img src="Using_Synchronized_As_Lock.gif" width="700" alt="Threads resource"/>
+    <img src="Using_Synchronized_As_Lock.gif" width="700" alt="Threads multithreading."/>
 </div>
 
 1. You can think as with the **Monitor** approach. This is equal to the approach in `2.`.
 2. `synchronized(this)` in the methods, which will be blocking the methods calls of other threads.
 
 <div align="center">
-    <img src="We_Can_Have_More_Flexibility_In_Our_Code_When_Blocking.PNG" width="700" alt="Threads resource"/>
+    <img src="We_Can_Have_More_Flexibility_In_Our_Code_When_Blocking.PNG" width="700" alt="Threads multithreading."/>
 </div>
 
 1. With this approach, we can have much more flexibility in our **blocking**.
     - We can have **multiple critical sections**, which are `synchronize`:d into **multiple different objects** in the same class!
 
 <div align="center">
-    <img src="Using_Synchronized_As_Lock_With_Multiple_Blocking_Objects.gif" width="700" alt="Threads resource"/>
+    <img src="Using_Synchronized_As_Lock_With_Multiple_Blocking_Objects.gif" width="700" alt="Threads multithreading."/>
 </div>
 
 1. While `Thread A` will be accessing the `method1()`'s critical section. The `Thread B` will be accessing the `method2()`'s critical section.
 2. Once the `Thread B` tries to the access the section where the `Thread A` is currently executing. The `Thread B` will get the access **blocked** and need to wait for the `Thread  A` to finish its **execution** of the **critical section**.
 
 <div align="center">
-    <img src="We_Can_Spesify_The_Section_Of_The_Code_The_Concurrent_Execution.PNG" width="700" alt="Threads resource"/>
+    <img src="We_Can_Spesify_The_Section_Of_The_Code_The_Concurrent_Execution.PNG" width="700" alt="Threads multithreading."/>
 </div>
 
 1. With this, we can separate the **blocked** code section to **bare minimum**. This example inside method.
@@ -273,7 +273,7 @@ public class Main {
     ````
 
 <div align="center">
-    <img src="Using_Synchronized_As_Lock_With_Multiple_Blocking_Objects_Code_Example.gif" width="700" alt="Threads resource"/>
+    <img src="Using_Synchronized_As_Lock_With_Multiple_Blocking_Objects_Code_Example.gif" width="700" alt="Threads multithreading."/>
 </div>
 
 1. We can see that we are having **consistent** results with the **blocking separate codes**.
@@ -373,20 +373,20 @@ public class Main {
 **A thread cannot prevent itself from entering a critical section**"* 💡
 
 <div align="center">
-    <img src="Synchorinized_Block_Is_Reentrant.PNG" width="700" alt="Threads resource"/>
+    <img src="Synchorinized_Block_Is_Reentrant.PNG" width="700" alt="Threads multithreading."/>
 </div>
 
 1. `Reentrant` in **Java context**: *Means that the same thread can enter a synchronized block or method it already holds the lock on*!
 
 <div align="center">
-    <img src="Synchronized_Threads_Are_Reentrant_In_This_Example_Accesssing_Multiple_Critical_Sections.PNG" width="700" alt="Threads resource"/>
+    <img src="Synchronized_Threads_Are_Reentrant_In_This_Example_Accesssing_Multiple_Critical_Sections.PNG" width="700" alt="Threads multithreading."/>
 </div>
 
 1. In other words, the `Thread A` is able to access, both `synchronized` methods, while still proceeding on the other `synchronized` method.
     - Thread **cannot prevent itself** to access another critical section!
 
 <div align="center">
-    <img src="Critical_Section_Summary.PNG" width="700" alt="Threads resource"/>
+    <img src="Critical_Section_Summary.PNG" width="700" alt="Threads multithreading."/>
 </div>
 
 - Todo check this one is consistent
@@ -436,7 +436,7 @@ public class Main {
 - My answer:
 
 <div align="center">
-    <img src="Quiz 06/Q1.PNG" width="600" alt="Threads resource"/>
+    <img src="Quiz 06/Q1.PNG" width="600" alt="Threads multithreading."/>
 </div>
 
 1. The one **thread** can access **locked object** at the time. Since it was using the `synchronized` keyword in the method signature.
@@ -491,7 +491,7 @@ public class Main {
 - My answer:
 
 <div align="center">
-    <img src="Quiz 06/Q3.PNG" width="600" alt="Threads resource"/>
+    <img src="Quiz 06/Q3.PNG" width="600" alt="Threads multithreading."/>
 </div>
 
 1. Since the `sharedObject` is shared and the `synchronized` is behaving like the `synchronized(this)` for locking the object `SharedClass` for only **one thread** per time!
@@ -542,7 +542,7 @@ public class Main {
 - My answer:
 
 <div align="center">
-    <img src="Quiz 06/Q3.PNG" width="600" alt="Threads resource"/>
+    <img src="Quiz 06/Q3.PNG" width="600" alt="Threads multithreading."/>
 </div>
 
 1. When `thread1` is executing `sharedObject1.increment();`, `thread2` can execute `sharedObject2.increment();`, since synchronization happens on the **object level**, and `thread1` and `thread2` are operating on two different, independent objects. That's right!
@@ -605,7 +605,7 @@ public class Main {
 - My answer:
 
 <div align="center">
-    <img src="Quiz 06/Q4.PNG" width="600" alt="Threads resource"/>
+    <img src="Quiz 06/Q4.PNG" width="600" alt="Threads multithreading."/>
 </div>
 
 1. When `thread1` is executing `sharedObject.incrementCounter1();`, `thread2` can execute `sharedObject.incrementCounter2();`. That is because the synchronized blocks inside those methods, synchronize on different lock objects.
@@ -621,13 +621,13 @@ public class Main {
 1. We will be looking how we will have **atomic** operation!
 
 <div align="center">
-    <img src="What_We_Will_Learn_Next_Atomic_Operations.PNG" width="600"alt="Threads resource"/>
+    <img src="What_We_Will_Learn_Next_Atomic_Operations.PNG" width="600"alt="Threads multithreading."/>
 </div>
 
 1. How do we know which operations are **atomic** are which are not?!
 
 <div align="center">
-    <img src="Extremem_Defensive_Approach.PNG" width="600" alt="Threads resource"/>
+    <img src="Extremem_Defensive_Approach.PNG" width="600" alt="Threads multithreading."/>
 </div>
 
 1. **First** we are exploring the extreme **defensive** approach!
@@ -641,7 +641,7 @@ public class Main {
         - Fourth **thread** one in **green**.
 
 <div align="center">
-    <img src="Why_To_Synchronize_Illustration.PNG" width="600" alt="Threads resource"/>
+    <img src="Why_To_Synchronize_Illustration.PNG" width="600" alt="Threads multithreading."/>
 </div>
 
 1. Currently, the **execution** chart looks like such!
@@ -651,7 +651,7 @@ public class Main {
 - All of this, for maintaining **multiple threads**, with the **context switches** and maintaining the shared memory!
 
 <div align="center">
-    <img src="Why_To_Synchronize_Illustration_What_We_Would_Prefer.PNG" width="600" alt="Threads resource"/>
+    <img src="Why_To_Synchronize_Illustration_What_We_Would_Prefer.PNG" width="600" alt="Threads multithreading."/>
 </div>
 
 1. We are **preferring** this overall picture! Where there is much smaller amounts for the idle period for the **executing threads**
@@ -660,14 +660,14 @@ public class Main {
 > We should actually use the `synchronization` as little as possible!
 
 <div align="center">
-    <img src="Atomic_Operations.PNG" width="600" alt="Threads resource"/>
+    <img src="Atomic_Operations.PNG" width="600" alt="Threads multithreading."/>
 </div>
 
 1. Let's identify, which operations are **atomic**!
 2. Fact is, that the **most of the operations** are **NOT** atomic!
 
 <div align="center">
-    <img src="Assigment_Operation_Can_Be_Atomic.PNG" width="600" alt="Threads resource"/>
+    <img src="Assigment_Operation_Can_Be_Atomic.PNG" width="600" alt="Threads multithreading."/>
 </div>
 
 1. All reference assignment operations are **atomic**!
@@ -675,7 +675,7 @@ public class Main {
     - We can make **assignments** like `a = b` assignment in single operation safely! 
 
 <div align="center">
-    <img src="Atomic_Operations_Assigment.PNG" width="600" alt="Threads resource"/>
+    <img src="Atomic_Operations_Assigment.PNG" width="600" alt="Threads multithreading."/>
 </div>
 
 1. Notice the `int []` **object** or **reference** type!
@@ -690,7 +690,7 @@ public class Main {
 > `long` and `double` are exception to the rules!
 
 <div align="center">
-    <img src="Atomic_Operations_Primitives.PNG" width="600" alt="Threads resource"/>
+    <img src="Atomic_Operations_Primitives.PNG" width="600" alt="Threads multithreading."/>
 </div>
 
 1. All **reads** and **writes** of **primitive variables**.
@@ -699,7 +699,7 @@ public class Main {
 2. **Reading** and **writing** from primitives are atomic, such as these. 
 
 <div align="center">
-    <img src="Atomic_Operation_For_The_Long_And_Double.PNG" width="600" alt="Threads resource"/>
+    <img src="Atomic_Operation_For_The_Long_And_Double.PNG" width="600" alt="Threads multithreading."/>
 </div>
 
 1. Since the **long** and **double** are `64` bits long, it's **not** guaranteed for **one operation** is **atomic**! This usually takes **two operations** since:
@@ -708,19 +708,19 @@ public class Main {
 - One can check, operation as [non-atomic](https://docs.oracle.com/javase/specs/jls/se7/html/jls-17.html#jls-17.7) documentation
 
 <div align="center">
-    <img src="What_We_Will_Learn_Next_Volitile_For_Double_And_Float.PNG" width="600" alt="Threads resource"/>
+    <img src="What_We_Will_Learn_Next_Volitile_For_Double_And_Float.PNG" width="600" alt="Threads multithreading."/>
 </div>
 
 1. Next we will be checking the **Volatile** keyword for the `double` and `long`!
 
 <div align="center">
-    <img src="Atomic_Operation_Volatile_Double_Float.PNG" width="600" alt="Threads resource"/>
+    <img src="Atomic_Operation_Volatile_Double_Float.PNG" width="600" alt="Threads multithreading."/>
 </div>
 
 1. If we define with the `volatile` they will make these variables **atomic** and **thread safe**!
 
 <div align="center">
-    <img src="Atomic_Operation_Libraries.PNG" width="600" alt="Threads resource"/>
+    <img src="Atomic_Operation_Libraries.PNG" width="600" alt="Threads multithreading."/>
 </div>
 
 1. There are more classes that make the other **non-atomic** operations to **atomic**, all this from **Java** `java.util.concurrent.atomic`!
@@ -728,13 +728,13 @@ public class Main {
 2. We are focusing to the **core fundamentals**!
 
 <div align="center">
-    <img src="What_We_Will_Learn_Next_Is_Metric_Use_Case.PNG" width="600" alt="Threads resource"/>
+    <img src="What_We_Will_Learn_Next_Is_Metric_Use_Case.PNG" width="600" alt="Threads multithreading."/>
 </div>
 
 1. Furthermore, we will be checking the how to have **some metric units** for execution in the production. 
 
 <div align="center">
-    <img src="Use_Case_Of_The_Metric.PNG" width="600" alt="Threads resource"/>
+    <img src="Use_Case_Of_The_Metric.PNG" width="600" alt="Threads multithreading."/>
 </div>
 
 1. Moreover, we can use ways to get *how long something took?*
@@ -763,7 +763,7 @@ public class Main {
 - We are analyzing and making this code as **atomic** as possible!
 
 <div align="center">
-    <img src="Making_Metrics_Atomic_As_Possible.PNG" width="600" alt="Threads resource"/>
+    <img src="Making_Metrics_Atomic_As_Possible.PNG" width="600" alt="Threads multithreading."/>
 </div>
 
 1. This whole is **non-atomic**, even thought the individual **operations** are **atomic**! Since this can be **accessed** by multiple **threads** in the same time!
@@ -839,7 +839,7 @@ $$
 $$
 
 <div align="center">
-    <img src="Atomic_Operations_Applied_And_Measured.gif" width="600" alt="Threads resource"/>
+    <img src="Atomic_Operations_Applied_And_Measured.gif" width="600" alt="Threads multithreading."/>
 </div>
 
 1. We can see the average around **5 seconds**.
@@ -869,7 +869,7 @@ System.out.println(count); // Often less than 2000!
  - `count++` often gives less than *2000* in your example.
 
 <div align="center">
-    <img src="Summary_Of_The_Atomic_Operation.PNG" width="600" alt="Threads resource"/>
+    <img src="Summary_Of_The_Atomic_Operation.PNG" width="600" alt="Threads multithreading."/>
 </div>
 
 1. What operation we can use to have **atomic** property!
@@ -1102,25 +1102,139 @@ public class MinMaxMetrics {
 1. Race conditioning and data race!
 
 <div align="center">
-    <img src="What_We_Will_Learn_Next_What_Is_Data_Race_And_Race_Conditioning.PNG" width="600" alt="Threads resource"/>
+    <img src="What_We_Will_Learn_Next_What_Is_Data_Race_And_Race_Conditioning.PNG" width="600" alt="Threads multithreading."/>
 </div>
 
 1. We will see what is **Race conditioning**!
 
 <div align="center">
-    <img src="Race_Codition.PNG" width="600" alt="Threads resource"/>
+    <img src="Race_Codition.PNG" width="600" alt="Threads multithreading."/>
 </div>
 
 1. **Core problem**:
     - When multiple threads are performing **non-atomic** operation on **shared resource**!
 
-- THE REST
+- THE REST. Todo the rest
 
 <div align="center">
-    <img src="Race_Conditioning.PNG" width="600" alt="Threads resource"/>
+    <img src="Race_Conditioning.PNG" width="600" alt="Threads multithreading."/>
 </div>
 
 1. **Date Race** is different that **Race condition**!
+
+<div align="center">
+    <img src="Data_Race_Example.PNG" width="600" alt="Threads multithreading."/>
+</div>
+
+1. These are executed by different thread!
+
+- Below is illustration of the data race:
+
+<div align="center">
+    <img src="Data_Race_Example_Illustration.gif" width="600" alt="Threads multithreading."/>
+</div>
+
+
+1. Logically analysis:
+    - After any operation this should hold `x ≥ y is always true`
+
+<div align="center">
+    <img src="Data_Race_Example_With_Invartiant.PNG" width="600" alt="Threads multithreading."/>
+</div>
+
+1. In variant holds!
+    - An **invariant means** a rule or condition that **must always stay true** during the execution of a program (or system).
+        - At any point in time, `x` should always be greater than or equal to `y` regardless of the scheduling order!
+
+<div align="center">
+    <img src="Data_Race_Dedected.gif" width="600" alt="Threads multithreading."/>
+</div>
+
+1. How it can be, if the **invariant** holds true, we are still seeing these logs:
+    -  `y > x - Data Race is detected`!
+
+- What happened if we just analyzed that **invariant** rule **will always apply**!?!?
+
+<div align="center">
+    <img src="Data_Race_Problem.PNG" width="600" alt="Threads multithreading."/>
+</div>
+
+- Check this.
+
+<div align="center">
+    <img src="Data_Race_Problem_Second.PNG" width="600" alt="Threads multithreading."/>
+</div>
+
+- Check this.
+
+<div align="center">
+    <img src="Data_Race_Instruction.PNG" width="600" alt="Threads multithreading."/>
+</div>
+
+1. This function won't be **optimized**, since they are **logically** correct!
+
+<div align="center">
+    <img src="Data_Race_Compiler_Optimized.PNG" width="600" alt="Threads multithreading."/>
+</div>
+
+1. From **CPU** and **compilers** perspective these are not ! 
+
+<div align="center">
+    <img src="Data_Race_Solution.PNG" width="600" alt="Threads multithreading."/>
+</div>
+
+<details>
+<summary id="Data_Race_Codes" open="true"> <b>Data Races code!</b> </summary>
+
+````Java
+/*
+ * Copyright (c) 2019-2023. Michael Pogrebinsky - Top Developer Academy
+ * https://topdeveloperacademy.com
+ * All rights reserved
+ */
+
+/**
+ * Race Conditions & Data Races
+ * https://www.udemy.com/java-multithreading-concurrency-performance-optimization
+ */
+public class Main {
+    public static void main(String[] args) {
+        SharedClass sharedClass = new SharedClass();
+        Thread thread1 = new Thread(() -> {
+            for (int i = 0; i < Integer.MAX_VALUE; i++) {
+                sharedClass.increment();
+            }
+        });
+
+        Thread thread2 = new Thread(() -> {
+            for (int i = 0; i < Integer.MAX_VALUE; i++) {
+                sharedClass.checkForDataRace();
+            }
+
+        });
+
+        thread1.start();
+        thread2.start();
+    }
+
+    public static class SharedClass {
+        private int x = 0;
+        private int y = 0;
+
+        public void increment() {
+            x++;
+            y++;
+        }
+
+        public void checkForDataRace() {
+            if (y > x) {
+                System.out.println("y > x - Data Race is detected");
+            }
+        }
+    }
+}
+````
+</details>
 
 # Quiz 08: Data Races.
 
@@ -1197,13 +1311,13 @@ How does the Operating System decide what thread to schedule?
 </div>
 
 <div align="center">
-    <img src="What_We_Will_Learn_Locking_Strategy.PNG" width="600" alt="Threads resource"/>
+    <img src="What_We_Will_Learn_Locking_Strategy.PNG" width="600" alt="Threads multithreading."/>
 </div>
 
 1. We will be checking **Locking Strategies** next!
 
 <div align="center">
-    <img src="Two_Different_Locking_Strategy.PNG" width="600" alt="Threads resource"/>
+    <img src="Two_Different_Locking_Strategy.PNG" width="600" alt="Threads multithreading."/>
 </div>
 
 - In **multithreaded programming**, we need to make choice, which **locking strategy** we need to choose:
@@ -1213,19 +1327,19 @@ How does the Operating System decide what thread to schedule?
         - Should we have **one** lock for one resource!
 
 <div align="center">
-    <img src="Coarse_Grained_Locking.PNG" width="600" alt="Threads resource"/>
+    <img src="Coarse_Grained_Locking.PNG" width="600" alt="Threads multithreading."/>
 </div>
 
 1. Example for inspecting our **locking strategy**!
 
 <div align="center">
-    <img src="Coarse_Grained_Locking_Two_Resources.PNG" width="600" alt="Threads resource"/>
+    <img src="Coarse_Grained_Locking_Two_Resources.PNG" width="600" alt="Threads multithreading."/>
 </div>
 
 1. We have **two** resources to be locked. 
 
 <div align="center">
-    <img src="Coarse_Grained_Locking_Two_Locking.PNG" width="600" alt="Threads resource"/>
+    <img src="Coarse_Grained_Locking_Two_Locking.PNG" width="600" alt="Threads multithreading."/>
 </div>
 
 1. We could just add `synchronized` to method signatures to lock.
@@ -1233,36 +1347,43 @@ How does the Operating System decide what thread to schedule?
         - There is no right or wrong, when deciding what strategy to use!
 
 <div align="center">
-    <img src="Prize_To_Pay_When_Using_Simple_Solution_For_Locking.PNG" width="600" alt="Threads resource"/>
+    <img src="Prize_To_Pay_When_Using_Simple_Solution_For_Locking.PNG" width="600" alt="Threads multithreading."/>
 </div>
 
 1. For this simple `synchronized` locking we pay prize when running individual threads.
     - If they are accessing these shared resources!
 
 <div align="center">
-    <img src="Prize_To_Pay_When_Using_Simple_Solution_For_Locking_Reality.PNG" width="600" alt="Threads resource"/>
+    <img src="Prize_To_Pay_When_Using_Simple_Solution_For_Locking_Reality.PNG" width="600" alt="Threads multithreading."/>
 </div>
 
 1. In reality, the these are doing something else, not fully blocked, but still this is drawback!
 
 <div align="center">
-    <img src="Fine_Grained_Locking_Strategy_In_Code.PNG" width="600" alt="Threads resource"/>
+    <img src="Fine_Grained_Locking_Strategy_In_Code.PNG" width="600" alt="Threads multithreading."/>
 </div>
 
 1. We are locking as **fine-grained**!
 
 <div align="center">
-    <img src="Fine_Grained_Locking_Strategy.PNG" width="600" alt="Threads resource"/>
+    <img src="Fine_Grained_Locking_Strategy.PNG" width="600" alt="Threads multithreading."/>
 </div>
 
 1. We get more out of cores execution, when using **fine-grained** solution!
 
 <div align="center">
-    <img src="Deadlock.PNG" width="600" alt="Threads resource"/>
+    <img src="Deadlock.PNG" width="600" alt="Threads multithreading."/>
 </div>
 
 1. **Fine-grained** solution, there can be **deadlock**!
     - *"I will move, if you will move"* situation!
+
+<details>
+<summary id="Atomic_Operation_Measuring
+" open="true"> <b>Add code here!</b> </summary>
+
+````Java
+````
 
 # Quiz 09: Locking Strategies & Deadlocks.
 
