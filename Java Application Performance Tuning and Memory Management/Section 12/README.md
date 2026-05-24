@@ -318,13 +318,14 @@ public class CustomerManager {
 > [!TIP]
 > `-Xmx50m` = *“Allow the Java program to use at most 50 MB of heap memory.”*
 
-- We can run experiment with this. We can see in the end application is going to crash!
+- We can run experiment with this `-Xmx50m` JVM parameters! We can see in the end application is going to crash in the end!
 
 <div align="center">
     <img src="Java_Leak_Hating.gif"  alt="Java threads." width="700"/>
 </div>
 
 1. Furthermore, we can see that **JVM** is releasing the memory!
+2. And the `OutOfTheMemoryError`!
 
 <details>
 

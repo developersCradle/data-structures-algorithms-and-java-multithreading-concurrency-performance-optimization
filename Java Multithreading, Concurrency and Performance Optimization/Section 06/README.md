@@ -1159,13 +1159,26 @@ public class MinMaxMetrics {
     <img src="Data_Race_Problem.PNG" width="600" alt="Threads multithreading."/>
 </div>
 
-- Check this.
+1. **Compiler** and **CPU** may execute the instructions out of order to optimize the flow!
+
+2. Maintaining logicality can be:
+    ````Java
+    a = 5;
+    b = 10;
+    c = a + b;
+    ````
+    - To:
+    ````Java
+    c = 15;
+    a = 5;
+    b = 10;
+    ````
+
+- Also, there is many other **compiler**/**CPU** magic:
 
 <div align="center">
     <img src="Data_Race_Problem_Second.PNG" width="600" alt="Threads multithreading."/>
 </div>
-
-- Check this.
 
 <div align="center">
     <img src="Data_Race_Instruction.PNG" width="600" alt="Threads multithreading."/>
@@ -1177,11 +1190,29 @@ public class MinMaxMetrics {
     <img src="Data_Race_Compiler_Optimized.PNG" width="600" alt="Threads multithreading."/>
 </div>
 
-1. From **CPU** and **compilers** perspective these are not ! 
+1. From **CPU** and **compilers** perspective these are **not connected**!
+    - Now in **multithreaded** programming aspect, **CPU** is not aware if other one being executed!
+
+<div align="center">
+    <img src="Data_Race_Consequences.PNG" width="600" alt="Threads multithreading."/>
+</div>
+
+1. This can bring some weird behavior!
+
+<div align="center">
+    <img src="Data_Race_Example_Illustration_Realy.PNG" width="600" alt="Threads multithreading."/>
+</div>
+
+1. Now there can be `Increment` method addlings reversed!
+    - It makes following can be true `x<y`.
 
 <div align="center">
     <img src="Data_Race_Solution.PNG" width="600" alt="Threads multithreading."/>
 </div>
+
+0. Java does not **happen before** semantics when executing things concurrently! Except couple solutions!
+1.
+2.
 
 <details>
 <summary id="Data_Race_Codes" open="true"> <b>Data Races code!</b> </summary>
@@ -1310,6 +1341,8 @@ How does the Operating System decide what thread to schedule?
     <img src="Java_Multi_Threading.PNG"  alt="Java threads." width="600"/>
 </div>
 
+1. We will be going with big locking **lock strategies**!
+
 <div align="center">
     <img src="What_We_Will_Learn_Locking_Strategy.PNG" width="600" alt="Threads multithreading."/>
 </div>
@@ -1344,7 +1377,7 @@ How does the Operating System decide what thread to schedule?
 
 1. We could just add `synchronized` to method signatures to lock.
     -  In other hand, these are operations are not interfering with operations inherently!
-        - There is no right or wrong, when deciding what strategy to use!
+        - There is **no right** or **wrong**, when deciding what strategy to use!
 
 <div align="center">
     <img src="Prize_To_Pay_When_Using_Simple_Solution_For_Locking.PNG" width="600" alt="Threads multithreading."/>
@@ -1357,7 +1390,7 @@ How does the Operating System decide what thread to schedule?
     <img src="Prize_To_Pay_When_Using_Simple_Solution_For_Locking_Reality.PNG" width="600" alt="Threads multithreading."/>
 </div>
 
-1. In reality, the these are doing something else, not fully blocked, but still this is drawback!
+1. In reality, the these are doing something else, not fully blocked, but still this is **drawback**!
 
 <div align="center">
     <img src="Fine_Grained_Locking_Strategy_In_Code.PNG" width="600" alt="Threads multithreading."/>
@@ -1378,77 +1411,410 @@ How does the Operating System decide what thread to schedule?
 1. **Fine-grained** solution, there can be **deadlock**!
     - *"I will move, if you will move"* situation!
 
+<div align="center">
+    <img src="Deadlock_Scenario.PNG" width="600" alt="Threads multithreading."/>
+</div>
+
+1. **Thread 1** want `delete(resorce A, item)` and add to it `add(resource B, item)`.
+2. **Thread 2** want `delete(resorce B, item)` and `add(resource A, item)` 
+
+<div align="center">
+    <img src="Deadlock_Example.PNG" width="600" alt="Threads multithreading."/>
+</div>
+
+1. **Thread 1** `lock(A)`!
+2. **Thread 2** `lock(B)`!
+3. **Thread 2** `lock(A)`! These **locks clashing**!
+4. **Thread 1** `lock(B)`! These **locks clashing**!
+5. This is how we get the **Deadlock** occurring!
+
+<div align="center">
+    <img src="We_Are_Implementing_The_Railwork_System.PNG" width="600" alt="Threads multithreading."/>
+</div>
+
+1. We will be make working **Railroad Traffic Control** system!
+
+<div align="center">
+    <img src="Data_Lock_Illustration_Railroad.gif" width="600" alt="Threads multithreading."/>
+</div>
+
+1. The **deadlock** example, the logs as below:
+    ````Bash
+    Road B is locked by thread Thread-1
+    Road A is locked by thread Thread-0
+    ````
+
 <details>
-<summary id="Atomic_Operation_Measuring
-" open="true"> <b>Add code here!</b> </summary>
+<summary id="Deadlock_Railroad_Traffic_Control_Example" open="true"> <b>Deadlock Railroad Traffic Control Example!</b> </summary>
 
 ````Java
+/*
+ * Copyright (c) 2019-2023. Michael Pogrebinsky - Top Developer Academy
+ * https://topdeveloperacademy.com
+ * All rights reserved
+ */
+
+import java.util.Random;
+
+/**
+ * Locking Strategies & Deadlocks
+ * https://www.udemy.com/java-multithreading-concurrency-performance-optimization
+ */
+public class Main {
+    public static void main(String[] args) {
+        Intersection intersection = new Intersection();
+        Thread trainAThread = new Thread(new TrainA(intersection));
+        Thread trainBThread = new Thread(new TrainB(intersection));
+
+        trainAThread.start();
+        trainBThread.start();
+    }
+
+    public static class TrainB implements Runnable {
+        private Intersection intersection;
+        private Random random = new Random();
+
+        public TrainB(Intersection intersection) {
+            this.intersection = intersection;
+        }
+
+        @Override
+        public void run() {
+            while (true) {
+                long sleepingTime = random.nextInt(5);
+                try {
+                    Thread.sleep(sleepingTime);
+                } catch (InterruptedException e) {
+                }
+
+                intersection.takeRoadB();
+            }
+        }
+    }
+
+    public static class TrainA implements Runnable {
+        private Intersection intersection;
+        private Random random = new Random();
+
+        public TrainA(Intersection intersection) {
+            this.intersection = intersection;
+        }
+
+        @Override
+        public void run() {
+            while (true) {
+                long sleepingTime = random.nextInt(5);
+                try {
+                    Thread.sleep(sleepingTime);
+                } catch (InterruptedException e) {
+                }
+
+                intersection.takeRoadA();
+            }
+        }
+    }
+
+    public static class Intersection {
+        private Object roadA = new Object();
+        private Object roadB = new Object();
+
+        public void takeRoadA() {
+            synchronized (roadA) {
+                System.out.println("Road A is locked by thread " + Thread.currentThread().getName());
+                synchronized (roadB) {
+                    System.out.println("Train is passing through road A");
+                    try {
+                        Thread.sleep(1);
+                    } catch (InterruptedException e) {
+                    }
+                }
+            }
+        }
+
+        public void takeRoadB() {
+            synchronized (roadB) {
+                System.out.println("Road B is locked by thread " + Thread.currentThread().getName());
+
+                synchronized (roadA) {
+                    System.out.println("Train is passing through road B");
+
+                    try {
+                        Thread.sleep(1);
+                    } catch (InterruptedException e) {
+                    }
+                }
+            }
+        }
+    }
+}
 ````
+</details>
+
+<div align="center">
+    <img src="Java_Dead_Lock_Conditions.PNG" width="600" alt="Threads multithreading."/>
+</div>
+
+1. We will be going thought **deadlock conditions**!
+    - We will be conditions, which will lead to deadlock!
+
+<div align="center">
+    <img src="Deadlock_Conditions.PNG" width="600" alt="Threads multithreading."/>
+</div>
+
+1. We will need these criteria to fulfill to satisfy **deadlock** situation!
+
+<div align="center">
+    <img src="Java_Dead_Lock_Solution.PNG" width="600" alt="Threads multithreading."/>
+</div>
+
+1. Best option is to avoid **one** condition of the deadlock! 
+
+<div align="center">
+    <img src="Solution_For_The_Deadlock.PNG" width="600" alt="Threads multithreading."/>
+</div>
+
+1. One of the easiest is to **control** the **lock acquisition**! 
+
+- In example A:
+
+<div align="center">
+    <img src="Having_Different_Lock_In_Different_Order.PNG" width="600" alt="Threads multithreading."/>
+</div>
+
+1. Remember the case where there were different ways to acquire the lock!
+
+<div align="center">
+    <img src="Change_Order_Of_Locking.gif" width="600" alt="Threads multithreading."/>
+</div>
+
+1. We are changing locking order to be the same. It will have **no circular dependencies**!
+
+- Let's change lock the principle to be the same!
+
+````Java
+
+        public void takeRoadB() {
+            synchronized (roadA) {
+                System.out.println("Road A is locked by thread " + Thread.currentThread().getName());
+
+                synchronized (roadB) {
+                    System.out.println("Train is passing through road B");
+
+                    try {
+                        Thread.sleep(1);
+                    } catch (InterruptedException e) {
+                    }
+                }
+            }
+        }
+````
+
+- As one can see the locking order is the same as in the `public void takeRoadA()`.
+
+<div align="center">
+    <img src="Locking_Changed.gif" width="600" alt="Threads multithreading."/>
+</div>
+
+1. We can see the rail work is **not** getting into deadlock situation!
+
+<div align="center">
+    <img src="Conclusion.PNG" width="600" alt="Threads multithreading."/>
+</div>
+
+1. The **simplest** one and **recommended** is to **enforce strict order** for the **locks**!
+2. For complex system cases, this can be hard to maintain. There are different strategies for this kind of scenario!
+
+<div align="center">
+    <img src="Conclusion_Second.PNG" width="600" alt="Threads multithreading."/>
+</div>
+
+- **Watchdog** for **deadlock detection**!
+    - `1.` If the watchdog is not notified after a certain number of executions, it can detect a potential deadlock.
+    - `2.` Can be made if **thread is not reposing**, it will **try to interrupt** it!
+    - `3.` `tryLock` This can be used to ask if the lock is present!
+
+<div align="center">
+    <img src="Summary_Of_Locking.PNG" width="600" alt="Threads multithreading."/>
+</div>
+
+1. Every method must acquire them in the same order.
+
+<details>
+<summary id="Deadlock_Fixed_Railroad_Traffic_Control_Example" open="true"> <b>Deadlock Fixed In Railroad Traffic Control Example!</b> </summary>
+
+````Java
+/*
+ * Copyright (c) 2019-2023. Michael Pogrebinsky - Top Developer Academy
+ * https://topdeveloperacademy.com
+ * All rights reserved
+ */
+
+import java.util.Random;
+
+/**
+ * Locking Strategies & Deadlocks
+ * https://www.udemy.com/java-multithreading-concurrency-performance-optimization
+ */
+public class Main {
+    public static void main(String[] args) {
+        Intersection intersection = new Intersection();
+        Thread trainAThread = new Thread(new TrainA(intersection));
+        Thread trainBThread = new Thread(new TrainB(intersection));
+
+        trainAThread.start();
+        trainBThread.start();
+    }
+
+    public static class TrainB implements Runnable {
+        private Intersection intersection;
+        private Random random = new Random();
+
+        public TrainB(Intersection intersection) {
+            this.intersection = intersection;
+        }
+
+        @Override
+        public void run() {
+            while (true) {
+                long sleepingTime = random.nextInt(5);
+                try {
+                    Thread.sleep(sleepingTime);
+                } catch (InterruptedException e) {
+                }
+
+                intersection.takeRoadB();
+            }
+        }
+    }
+
+    public static class TrainA implements Runnable {
+        private Intersection intersection;
+        private Random random = new Random();
+
+        public TrainA(Intersection intersection) {
+            this.intersection = intersection;
+        }
+
+        @Override
+        public void run() {
+            while (true) {
+                long sleepingTime = random.nextInt(5);
+                try {
+                    Thread.sleep(sleepingTime);
+                } catch (InterruptedException e) {
+                }
+
+                intersection.takeRoadA();
+            }
+        }
+    }
+
+    public static class Intersection {
+        private Object roadA = new Object();
+        private Object roadB = new Object();
+
+        public void takeRoadA() {
+            synchronized (roadA) {
+                System.out.println("Road A is locked by thread " + Thread.currentThread().getName());
+                synchronized (roadB) {
+                    System.out.println("Train is passing through road A");
+                    try {
+                        Thread.sleep(1);
+                    } catch (InterruptedException e) {
+                    }
+                }
+            }
+        }
+
+        public void takeRoadB() {
+            synchronized (roadA) {
+                System.out.println("Road A is locked by thread " + Thread.currentThread().getName());
+
+                synchronized (roadB) {
+                    System.out.println("Train is passing through road B");
+
+                    try {
+                        Thread.sleep(1);
+                    } catch (InterruptedException e) {
+                    }
+                }
+            }
+        }
+//  Dead lock example below:
+//        public void takeRoadB() {
+//            synchronized (roadB) {
+//                System.out.println("Road B is locked by thread " + Thread.currentThread().getName());
+//
+//                synchronized (roadA) {
+//                    System.out.println("Train is passing through road B");
+//
+//                    try {
+//                        Thread.sleep(1);
+//                    } catch (InterruptedException e) {
+//                    }
+//                }
+//            }
+//        }
+    }
+}
+````
+</details>
 
 # Quiz 09: Locking Strategies & Deadlocks.
 
 <details>
 
-<summary id="Thread progress
-" open="true"> <b>Question 01.</b> </summary>
+<summary id="Quiz_01" open="true"> <b>Question 01.</b> </summary>
 
 ````yaml
 Question 01:
-Why do we want to use multiple threads in an application?
+Is there a potential deadlock in this class?
 ````
 
 - My answer:
 
 <div align="center">
-    <img src="Quiz 01/Q01.PNG" width="600"/>
+    <img src="Quiz 09/Q1.PNG" width="600"/>
 </div>
 
-1. By using **multiple threads** allows an application to handle several tasks at once, enhancing responsiveness and potentially increasing performance through concurrent execution.
+1. **Deadlock** may happen, since the locking order is not the same in other places! Like in `addSample()` and `reset()`.
 
 </details>
 
 <details>
 
-<summary id="Thread progress
-" open="true"> <b>Question 02.</b> </summary>
+<summary id="Quiz_02" open="true"> <b>Question 02.</b> </summary>
 
 ````yaml
 Question 02:
-Multiple threads in a single process share
+What is the downside of this synchronization/locking design?
 ````
 
 - My answer:
 
 <div align="center">
-    <img src="Quiz 01/Q02.PNG" width="600"/>
+    <img src="Quiz 07/Q2.PNG" width="600"/>
 </div>
 
-1. The Code `2.` means as following, we can execute threads using the same code:
-
-````Java
-thread1 -> add(1, 2)
-thread2 -> add(5, 6)
-````
-- The `add(...)` is being re-used!
+1. Performance takes a hit due to coarse-grained locking.
 
 </details>
 
 <details>
 
-<summary id="Thread progress
-" open="true"> <b>Question 03.</b> </summary>
+<summary id="Quiz_03" open="true"> <b>Question 03.</b> </summary>
 
 ````yaml
 Question 03:
-How does the Operating System decide what thread to schedule?
+Are there any potential problems with this approach?
 ````
 
 - My answer:
 
 <div align="center">
-    <img src="Quiz 01/Q03.PNG" width="600"/>
+    <img src="Quiz 09/Q3.PNG" width="600"/>
 </div>
 
-1. The **O**perating **S**ystem decides which thread to run next using the scheduler, based on **scheduling algorithms** and **system state**.
+1. Without `synchronized` or `volatile`, there is **no happens-before relationship**.
 
 </details>

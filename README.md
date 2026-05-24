@@ -1064,5 +1064,10 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 <hr>
 
+#
+<p align="center">
+    <img src="Data_Structures_And_Performance_Course_Specialization.PNG" alt="Data structures and performance course specialization caption" style="width:690px" />
+</p>
+
 - [Add this](https://www.coursera.org/learn/data-structures-optimizing-performance?utm_source=chatgpt.com#outcomes).
 
