@@ -85,6 +85,7 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 #### Additional stuff.
 
+- Add the solution exercises to the list!
 - [ ] Add the exercise and comments for the `We_Can_See_That_We_Dont_Have_The_Access_To_The_Main_Frame.PNG`, if you have patience.
 - [ ] Additional go thought [Future](https://www.baeldung.com/java-future).
 - [ ] Additional go thought `synchronized` [keyword](https://www.baeldung.com/java-synchronized).
@@ -175,20 +176,18 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
         * [Coding Exercise 02: Multithreaded Calculation - Solution](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading,%20Concurrency%20and%20Performance%20Optimization/Section%2003#coding-exercise-02-multithreaded-calculation---solution).
 * **Section 04**:
     * *Quiz*:
-        * [Some here](#).
-    * *Coding Exercise*:
-        * [Some here](#).
+        * [Quiz 04: Performance Optimization](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading%2C%20Concurrency%20and%20Performance%20Optimization/Section%2004#quiz-04-performance-optimization).
 * **Section 05**:
     * *Quiz*:
-        * [Quiz 05: Stack & Heap Memory Regions](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading,%20Concurrency%20and%20Performance%20Optimization/Section%2005#quiz-5-stack--heap-memory-regions).
+        * [Quiz 05: Stack & Heap Memory Regions](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading,%20Concurrency%20and%20Performance%20Optimization/Section%2005#quiz-05-stack--heap-memory-regions).
 * **Section 06**:
     * *Quiz*:
-        * [Quiz 06: Critical Section & Synchronization](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Multithreading%2C%20Concurrency%20and%20Performance%20Optimization/Section%2006/README.md#quiz-6-critical-section--synchronization).
-        * [Quiz 07: Atomic Operations, Volatile & Metrics practical example](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Multithreading,%20Concurrency%20and%20Performance%20Optimization/Section%2006/README.md#quiz-7-atomic-operations-volatile--metrics-practical-example).
-        * [Quiz 08: Data Races](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Multithreading,%20Concurrency%20and%20Performance%20Optimization/Section%2006/README.md#quiz-8-data-races).
-        * [Quiz 09: Locking Strategies & Deadlocks](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Multithreading,%20Concurrency%20and%20Performance%20Optimization/Section%2006/README.md#quiz-9-locking-strategies--deadlocks).
+        * [Quiz 06: Critical Section & Synchronization](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Multithreading,%20Concurrency%20and%20Performance%20Optimization/Section%2006/README.md#quiz-06-critical-section--synchronization).
+        * [Quiz 07: Atomic Operations, Volatile & Metrics practical example](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Multithreading,%20Concurrency%20and%20Performance%20Optimization/Section%2006/README.md#quiz-07-atomic-operations-volatile--metrics-practical-example).
+        * [Quiz 08: Data Races](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Multithreading,%20Concurrency%20and%20Performance%20Optimization/Section%2006/README.md#quiz-08-data-races).
+        * [Quiz 09: Locking Strategies & Deadlocks](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Multithreading,%20Concurrency%20and%20Performance%20Optimization/Section%2006/README.md#quiz-09-locking-strategies--deadlocks).
     * *Coding Exercise*:
-        * [Coding Exercise 3: Min - Max Metrics](#).
+        * [Coding Exercise 03: Min - Max Metrics](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Multithreading,%20Concurrency%20and%20Performance%20Optimization/Section%2006/README.md#coding-exercise-03-min---max-metrics).
 * **Section 07**:
     * *Quiz*:
         * [Some here](#).
