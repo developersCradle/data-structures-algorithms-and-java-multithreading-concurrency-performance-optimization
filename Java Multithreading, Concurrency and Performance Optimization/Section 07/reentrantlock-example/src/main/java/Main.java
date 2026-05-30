@@ -63,7 +63,7 @@ public class Main extends Application {
         AnimationTimer animationTimer = new AnimationTimer() {
             @Override
             public void handle(long now) {
-                if (pricesContainer.getLockObject().tryLock()) {
+                pricesContainer.getLockObject().lock();
                     try {
                         Label bitcoinLabel = cryptoLabels.get("BTC");
                         bitcoinLabel.setText(String.valueOf(pricesContainer.getBitcoinPrice()));
@@ -83,7 +83,6 @@ public class Main extends Application {
                         pricesContainer.getLockObject().unlock();
                     }
                 }
-            }
         };
 
         addWindowResizeListener(primaryStage, background);
@@ -237,7 +236,7 @@ public class Main extends Application {
 
                 try {
                     try {
-                        Thread.sleep(1000);
+                        Thread.sleep(5000);
                     } catch (InterruptedException e) {
                     }
                     pricesContainer.setBitcoinPrice(random.nextInt(20000));

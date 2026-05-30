@@ -85,6 +85,8 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 #### Additional stuff.
 
+- Add the coding exercises to the chapters 
+- Get know to binary tree, before advancing the `ReentrantReadWriteLock`.
 - Add the solution exercises to the list!
 - [ ] Add the exercise and comments for the `We_Can_See_That_We_Dont_Have_The_Access_To_The_Main_Frame.PNG`, if you have patience.
 - [ ] Additional go thought [Future](https://www.baeldung.com/java-future).
@@ -315,7 +317,7 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 All course material from *Modern Java - Multithreading in Java using Virtual Threads* by **Pragmatic Code School**.
 
-> During a backend performance review, I was asked why our service struggled under high concurrency despite having a well-configured thread pool. On paper, everything looked correct — fixed thread pools, optimized queries, proper synchronization. Yet under load, the system slowed, threads piled up, and latency spiked. This initiated me to start asking about virtual threads!<br><br>
+> During a backend performance review, I was asked why our service struggled under high concurrency despite having a well-configured thread pool. On paper, everything looked correct — fixed thread pools, optimized queries, proper synchronization. Yet under load, the system slowed, threads piled up, and latency spiked. This initiated me to start asking about virtual threads! <br><br>
 ~ *DevelopersCradle*
 
 Contains my own notes with some course material to enforce learning experience.

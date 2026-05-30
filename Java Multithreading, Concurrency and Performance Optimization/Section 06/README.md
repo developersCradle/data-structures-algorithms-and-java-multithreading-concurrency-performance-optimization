@@ -995,8 +995,6 @@ temp = counter;
 temp = temp + 1;
 counter = temp;
 
-
-
 <details>
 
 <summary id="Question_01" open="true"> <b>Question 01.</b> </summary>
@@ -1040,6 +1038,9 @@ Which of the following operations are atomic and free of race conditions?
 
 # Coding Exercise 03: Min - Max Metrics.
 
+<details>
+<summary id="coding_exercise_03_min_max_metrics" open="true"> <b>Coding Exercise 03: Min - Max Metrics! My Answer!</b> </summary>
+
 <div align="center">
     <img src="Min_Max_Matrix_Exercise.PNG"  alt="Coding exercise 03: min - max metrics!" width="600"/>
 </div>
@@ -1078,20 +1079,71 @@ public class MinMaxMetrics {
 }
 ```
 
-1. **Question 1:** Please implement `MinMaxMetrics` below:
-	- **Answer:** Below.
+- **Question 1:** Please implement `MinMaxMetrics` below:`
+    - **Answer:** Below:
 
 ```Java
 
 
 ```
+
+</details>
 
 # Min - Max Metrics - Solution.
 
+<details>
+<summary id="coding_exercise_03_min_max_metrics_solution" open="true"> <b>Coding Exercise 03: Min - Max Metrics! My Teachers Solution!</b> </summary>
+
+<div align="center">
+    <img src="Min_Max_Matrix_Exercise.PNG"  alt="Coding exercise 03: min - max metrics!" width="600"/>
+</div>
+
+
+```Java
+public class MinMaxMetrics {
+    
+    // Add all necessary member variables
+    /**
+     * Initializes all member variables
+     */
+    public MinMaxMetrics() {
+        // Add code here
+    }
+
+    /**
+     * Adds a new sample to our metrics.
+     */
+    public void addSample(long newSample) {
+        // Add code here
+    }
+
+    /**
+     * Returns the smallest sample we've seen so far.
+     */
+    public long getMin() {
+        // Add code here
+    }
+
+    /**
+     * Returns the biggest sample we've seen so far.
+     */
+    public long getMax() {
+        // Add code here
+    }
+}
+```
+
+- **Question 1:** Please implement `MinMaxMetrics` below:`
+    - **Answer:** Below:
+
 ```Java
 
 
 ```
+
+</details>
+
+
 
 # Race Conditions & Data Races.
 
