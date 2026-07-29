@@ -611,43 +611,93 @@ Is this implementation safe?
 1. **Key** is the **price amount**!
 2. **Value** is the **number of the items**!
 
-- We will be implanting this to illustrate this! First one will be `getNumberOfItemsInPriceRange(int lowerBound, int upperBound)`!
-    - This will be t
+- This will be resented using `private TreeMap<Integer, Integer> priceToCountMap = new TreeMap<>();`!
 
 - Add here the link to the binary tree!
 
-````Java
-  public int getNumberOfItemsInPriceRange(int lowerBound, int upperBound) {
-            //lock.lock();
-            readLock.lock();
-            try {
-                Integer fromKey = priceToCountMap.ceilingKey(lowerBound);
+- We will be implanting this to illustrate this! First one will be `getNumberOfItemsInPriceRange(int lowerBound, int upperBound)`!
+    - This gives count of given **prize range**! **Upper** and **lower** range!
+    ````Java
+    public int getNumberOfItemsInPriceRange(int lowerBound, int upperBound) {
+                //lock.lock();
+                readLock.lock();
+                try {
+                    Integer fromKey = priceToCountMap.ceilingKey(lowerBound);
 
-                Integer toKey = priceToCountMap.floorKey(upperBound);
+                    Integer toKey = priceToCountMap.floorKey(upperBound);
 
-                if (fromKey == null || toKey == null) {
-                    return 0;
+                    if (fromKey == null || toKey == null) {
+                        return 0;
+                    }
+
+                    NavigableMap<Integer, Integer> rangeOfPrices = priceToCountMap.subMap(fromKey, true, toKey, true);
+
+                    int sum = 0;
+                    for (int numberOfItemsForPrice : rangeOfPrices.values()) {
+                        sum += numberOfItemsForPrice;
+                    }
+
+                    return sum;
+                } finally {
+                    readLock.unlock();
+                    //lock.unlock();
                 }
-
-                NavigableMap<Integer, Integer> rangeOfPrices = priceToCountMap.subMap(fromKey, true, toKey, true);
-
-                int sum = 0;
-                for (int numberOfItemsForPrice : rangeOfPrices.values()) {
-                    sum += numberOfItemsForPrice;
-                }
-
-                return sum;
-            } finally {
-                readLock.unlock();
-                //lock.unlock();
             }
-        }
-````
+    ````
 
 - The individual pieces:
-    - `priceToCountMap.ceilingKey(lowerBound);` Call will *Gives me the next matching key at or above this value.”*
+    - `priceToCountMap.ceilingKey(lowerBound);` Call will *Gives me the next matching key at or above this value”*.
     - `priceToCountMap.floorKey(upperBound);` *Finds the greatest key in priceToCountMap that is less than or equal to upperBound*.
+    - `NavigableMap<Integer, Integer> rangeOfPrices = priceToCountMap.subMap(fromKey, true, toKey, true);` Get **snapshot** of the given range.
+    - We will be adding the `sum`.
+    ````Java
+    int sum = 0;
+    for (int numberOfItemsForPrice : rangeOfPrices.values()) {
+        sum += numberOfItemsForPrice;
+    }
+    return sum;
+    ````
 
+- We will be implanting this to illustrate this! First one will be `public void addItem(int price)`!
+    - This for adds item that costs given prize!
+    ````Java
+            public void addItem(int price) {
+                //lock.lock();
+                writeLock.lock();
+                try {
+                    Integer numberOfItemsForPrice = priceToCountMap.get(price);
+                    if (numberOfItemsForPrice == null) {
+                        priceToCountMap.put(price, 1);
+                    } else {
+                        priceToCountMap.put(price, numberOfItemsForPrice + 1);
+                    }
+
+                } finally {
+                    writeLock.unlock();
+                    /// lock.unlock();
+                }
+            }
+    ````
+
+- We will be implanting this to illustrate this! First one will be `public void removeItem(int price)`!
+    - This for adds item that costs given prize!
+    ````Java
+            public void removeItem(int price) {
+                //lock.lock();
+                writeLock.lock();
+                try {
+                    Integer numberOfItemsForPrice = priceToCountMap.get(price);
+                    if (numberOfItemsForPrice == null || numberOfItemsForPrice == 1) {
+                        priceToCountMap.remove(price);
+                    } else {
+                        priceToCountMap.put(price, numberOfItemsForPrice - 1);
+                    }
+                } finally {
+                    writeLock.unlock();
+                    // lock.unlock();
+                }
+            }
+    ````
 
 # Resources.
 

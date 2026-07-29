@@ -9,10 +9,6 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
-/**
- * Reentrant Read Write Lock & Database Implementation
- * https://www.udemy.com/java-multithreading-concurrency-performance-optimization
- */
 public class Main {
     public static final int HIGHEST_PRICE = 1000;
 
@@ -76,8 +72,8 @@ public class Main {
         private Lock lock = new ReentrantLock();
 
         public int getNumberOfItemsInPriceRange(int lowerBound, int upperBound) {
-            //lock.lock();
-            readLock.lock();
+            lock.lock();
+//            readLock.lock();
             try {
                 Integer fromKey = priceToCountMap.ceilingKey(lowerBound);
 
@@ -102,8 +98,8 @@ public class Main {
         }
 
         public void addItem(int price) {
-            //lock.lock();
-            writeLock.lock();
+            lock.lock();
+//            writeLock.lock();
             try {
                 Integer numberOfItemsForPrice = priceToCountMap.get(price);
                 if (numberOfItemsForPrice == null) {
@@ -113,14 +109,14 @@ public class Main {
                 }
 
             } finally {
-                writeLock.unlock();
-                /// lock.unlock();
+//                writeLock.unlock();
+                lock.unlock();
             }
         }
 
         public void removeItem(int price) {
-            //lock.lock();
-            writeLock.lock();
+            lock.lock();
+//            writeLock.lock();
             try {
                 Integer numberOfItemsForPrice = priceToCountMap.get(price);
                 if (numberOfItemsForPrice == null || numberOfItemsForPrice == 1) {
@@ -129,8 +125,8 @@ public class Main {
                     priceToCountMap.put(price, numberOfItemsForPrice - 1);
                 }
             } finally {
-                writeLock.unlock();
-                // lock.unlock();
+//                writeLock.unlock();
+                 lock.unlock();
             }
         }
     }

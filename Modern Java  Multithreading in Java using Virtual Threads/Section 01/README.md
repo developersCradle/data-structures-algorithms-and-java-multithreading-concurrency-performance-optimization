@@ -1,5 +1,9 @@
-# Chapter 01 
+# Chapter 01: Getting Started With the Course. 
 
-Chapter 01
+Getting Started With the Course.
 
 # What I learned.
+
+# Course Introduction.
+
+# Pre-requestites.

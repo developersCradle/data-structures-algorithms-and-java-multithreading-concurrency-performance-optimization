@@ -17,6 +17,42 @@ We are using following structure:
 
 -->
 
+
+<!--
+Template for the questions:
+
+# Quiz 07: Atomic Operations, Volatile & Metrics Practical Example.
+
+<details>
+<summary id="Question_01" open="true"> <b>Question 01.</b> </summary>
+````yaml
+Question 01:
+The question comes here!
+
+- My answer:
+
+<div align="center">
+    <img src="Quiz 07/Q1.PNG" width="600"/>
+</div>
+
+1. Add here the answer!
+
+</details>
+-->
+
+<!-- 
+Template for the task/exercies:
+ 
+# Lab Exercise - Mapping Collections of Value Types.
+
+<div align="center">
+    <img src="add here the exercise!" alt="Hibernate Java Persistence!" width=" 500"/>
+</div>
+
+1. **Question 1:** add here the question from the test!
+	- **Answer:** **D**. here can be the examplaniton!
+ -->
+
 <p align="center">
     <img id="Algorithms_And_Data_Structures_With_Some_Optimization_Courses_Caption" src="Algorithms_And_Data_Structures_With_Some_Optimization_Courses_Caption.png" style="width:900px;height:140px;">
     <text>Attempt to study <b>Data Structures</b>, <b>Optimization</b> and <b>Algorithms</b> related topics!</text>
@@ -45,7 +81,7 @@ All course material from *Java Multithreading, Concurrency & Performance Optimiz
 > A recent course I had taken on *Java Multithreading Concurrency And Performance Optimization* proved invaluable. It helped me identify the race condition and apply the `synchronized` keyword correctly to control access to the critical section. With proper thread coordination in place, the system stabilized without requiring a major rewrite of the legacy code. <br><br>
 ~ *DevelopersCradle*
 
-Contains my own notes with some course material to enforce learning experience.
+Contains my own with my own visual notes ✍️ with some course material to enforce learning experience.
 
 This repository is made with [![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?logo=intellij-idea&logoColor=white)](#) with [![Eclipse](https://img.shields.io/badge/Eclipse-FE7A16.svg?logo=Eclipse&logoColor=white)](#) hotkeys, therefore it will include configuration files which are related to this IDE this approach will be favored for now. ⚙️
 
@@ -62,7 +98,7 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 <p id="Logo_Combination" align="center">
     <img src="I_Have_Same_Smile_Finish.gif" alt="course intros" style="width:490px;height:210px;"/>
-    <img src="Dummy_Cert.png" alt="course intros" style="width:490px;height:210px;"/>
+    <img src="Dummy_Cert.png" alt="course intros" style="width:490px;height:310px;"/>
 </p>
 
 **Note: The material provided in this repository is only for helping those who may get stuck at any point of time in the course. It is very advised that no one should just copy the solutions(violation of Honor Code) presented here.**
@@ -222,11 +258,11 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
         * [Some here](#).
 
 <p align="center">
-    <img src="Multithreading, Parallel & Asynchronous Coding in Modern Java caption.png" alt="course intros" style="width:990px;height:110px;"/>
+    <img src="Multithreading_Comma_Parallel_And_Asynchronous_Coding_In_Modern_Java_Caption.png" alt="Multithreading, Pparallel and asynchronous coding in modern java caption!" style="width:990px;height:110px;"/>
 </p>
 
 <p align="center">
-    <img src="Multithreading,Parallel & Asynchronous Coding in Modern Java desc.PNG" alt="course intros" style="width:690px" />
+    <img src="Multithreading_Comma_Parallel_And_Asynchronous_Coding_In_Modern_Java_Description.PNG" alt="Multithreading, parallel and asynchronous coding in modern java description!" style="width:690px" />
 </p>
 
 All course material from *Multithreading, Parallel & Asynchronous Coding in Modern Java* by **Pragmatic Code School**.
@@ -236,7 +272,7 @@ All course material from *Multithreading, Parallel & Asynchronous Coding in Mode
 >That moment became a turning point. It pushed me to deeply pursue a course on *Modern Java*, where I strengthened my understanding of streams, functional patterns, and expressive problem-solving techniques. The experience helped me regain confidence and sharpen my ability to apply the right abstractions even in high-pressure situations. <br><br>
 ~ *DevelopersCradle*
 
-Contains my own notes with some course material to enforce learning experience.
+Contains my own with my own visual notes ✍️ with some course material to enforce learning experience.
 
 This repository is made with [![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?logo=intellij-idea&logoColor=white)](#) with [![Eclipse](https://img.shields.io/badge/Eclipse-FE7A16.svg?logo=Eclipse&logoColor=white)](#) hotkeys, therefore it will include configuration files which are related to this IDE this approach will be favored for now. ⚙️
 
@@ -269,16 +305,16 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 - [ ] [Section 08](#) - Parallel Streams - Under the Hood.
 - [ ] [Section 09](#) - Parallel Streams - Threading Model & Common ForkJoin Pool.
 - [ ] [Section 10](#) - Parallel Streams - Summary.
-- [ ] [Section 11](#) - CompletableFuture.
-- [ ] [Section 12](#) - Exploring CompletableFuture Functions.
-- [ ] [Section 13](#) - Build ProductService Application using CompletableFuture.
-- [ ] [Section 14](#) - Combining Streams and CompletableFuture. 
-- [ ] [Section 15](#) - Exception Handling/Recovery in CompletableFuture.
+- [ ] [Section 11](#) - `CompletableFuture`.
+- [ ] [Section 12](#) - Exploring `CompletableFuture` Functions.
+- [ ] [Section 13](#) - Build ProductService Application using `CompletableFuture`.
+- [ ] [Section 14](#) - Combining Streams and `CompletableFuture`. 
+- [ ] [Section 15](#) - Exception Handling/Recovery in `CompletableFuture`.
 - [ ] [Section 16](#) - Implement Exception Handling/Recovery in ProductService.
-- [ ] [Section 17](#) - CompletableFuture & Threadpool.
-- [ ] [Section 18](#) - Threads and Async Overloaded Methods in CompletableFuture.
-- [ ] [Section 19](#) - Build Restful API Client using Spring WebClient and CompletableFuture.
-- [ ] [Section 20](#) - Handle Multiple CompletableFutures - anyOf(), allOf().
+- [ ] [Section 17](#) - `CompletableFuture` & Threadpool.
+- [ ] [Section 18](#) - Threads and Async Overloaded Methods in `CompletableFuture`.
+- [ ] [Section 19](#) - Build Restful API Client using Spring `WebClient` and `CompletableFuture`.
+- [ ] [Section 20](#) - Handle Multiple `CompletableFuture`s - `anyOf()`, `allOf()`.
 
 #### Additional stuff.
 
@@ -320,13 +356,17 @@ All course material from *Modern Java - Multithreading in Java using Virtual Thr
 > During a backend performance review, I was asked why our service struggled under high concurrency despite having a well-configured thread pool. On paper, everything looked correct — fixed thread pools, optimized queries, proper synchronization. Yet under load, the system slowed, threads piled up, and latency spiked. This initiated me to start asking about virtual threads! <br><br>
 ~ *DevelopersCradle*
 
-Contains my own notes with some course material to enforce learning experience.
+Contains my own with my own visual notes ✍️ with some course material to enforce learning experience.
 
 This repository is made with [![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?logo=intellij-idea&logoColor=white)](#) with [![Eclipse](https://img.shields.io/badge/Eclipse-FE7A16.svg?logo=Eclipse&logoColor=white)](#) hotkeys, therefore it will include configuration files which are related to this IDE this approach will be favored for now. ⚙️
 
-[The course at Udemy](https://www.udemy.com/course/parallel-and-asynchronous-programming-in-modern-java). 
+We are using [![Java 21](https://img.shields.io/badge/Java%2021-%23ED8B00.svg?logo=openjdk&logoColor=white)](#). Instead, the which are recommended!
+<!-- Add here to Java chapter -->
 
-[Website of maker](https://topdeveloperacademy.com/).
+[Udemy course](https://www.udemy.com/course/java-application-performance-and-memory-management).
+
+[Homepage of maker](https://www.virtualpairprogrammers.com/).
+
 
 If the content sparked :fire: your interest, please consider buying the course and start learning :book:.
 
@@ -356,15 +396,14 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 #### Additional stuff.
 
-- [ ] Add some.
+- Original [Repo](https://github.com/dilipsundarraj1/modern-java-concurrency/tree/main?tab=readme-ov-file)!
 
 #### The Quizzes and Labs.
 
-* **Section 01**:
+* **Section 04**:
     * *Quiz*:
-        * [Some here](#).
-    * *Exercise*:
-        * [Some here](#).
+        * [Quiz 01: Platform Threads and Virtual Threads](#).
+
 
 <p align="center">
     <img src="Java_Application_Performance_Tuning_And_Memory_Management_Caption.gif" alt="Java Application Performance Tuning and Memory Management!" style="width:1000px;height:120px;"/>
@@ -374,12 +413,14 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
     <img src="Java_Application_Performance_Tuning_And_Memory_Management_Description.PNG" alt="Java Application Performance Tuning and Memory Management description!" style="width:660px" />
 </p> 
 
-All course material from *Java Application Performance Tuning and Memory Management* by from **Matt Greencroft** ... Sir **Matt Greencroft** and **Virtual Pair Programmers** with my own visual notes. ✍️
+All course material from *Java Application Performance Tuning and Memory Management* by from **Matt Greencroft** ... Sir **Matt Greencroft** and **Virtual Pair Programmers**.
 
 > I interviewed with 🔴**Polar**🔴 for an Advanced Java role, and the technical discussion immediately dove into multithreading, concurrency, and performance optimization. They asked about thread pools, synchronization strategies, deadlocks, optimizing CPU-bound versus IO-bound operations, and even Virtual Threads in Java. The questions were challenging and required more than just textbook knowledge — they wanted practical understanding of real-world thread behavior.
 >
 > Thanks to a recent course on *Java Multithreading, Concurrency & Performance Optimization*, I could confidently discuss thread-safe collections, locks, executor frameworks, and the advantages of Virtual Threads for scalable, lightweight concurrency. Even though I was **not chosen** for the position, the interview **drove me** to deeply pursue these concepts, strengthening my skills and confidence for future challenges. <br><br>
 ~ *DevelopersCradle*
+
+Contains my own with my own visual notes ✍️ with some course material to enforce learning experience.
 
 This repository is made with [![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?logo=intellij-idea&logoColor=white)](#) with [![Eclipse](https://img.shields.io/badge/Eclipse-FE7A16.svg?logo=Eclipse&logoColor=white)](#) hotkeys, therefore it will include configuration files which are related to this IDE this approach will be favored for now. ⚙️
 
@@ -516,7 +557,7 @@ All course material from A Comprehensive Introduction to Java Virtual Machine (J
 > Sony evaluates candidates on real-world scalability, debugging under pressure, and system performance rather than just "textbook answers". <br><br>
 > ~ *DevelopersCradle*
 
-Contains my own notes with some course material to enforce learning experience.
+Contains my own with my own visual notes ✍️ with some course material to enforce learning experience.
 
 This repository is made with [![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?logo=intellij-idea&logoColor=white)](#) with [![Eclipse](https://img.shields.io/badge/Eclipse-FE7A16.svg?logo=Eclipse&logoColor=white)](#) hotkeys, therefore it will include configuration files which are related to this IDE this approach will be favored for now. ⚙️
 
@@ -584,6 +625,8 @@ All course material from *Data Structures and Algorithms with Visualizations wit
 
 > Add here some <br><br>
 ~ *DevelopersCradle*
+
+Contains my own with my own visual notes ✍️ with some course material to enforce learning experience.
 
 This repository is made with [![Eclipse](https://img.shields.io/badge/Eclipse-FE7A16.svg?logo=Eclipse&logoColor=white)](#), therefore it will include configuration files which are related to this IDE this approach will be favored for now. ⚙️
 
@@ -667,8 +710,11 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 todo this desc.
 
-Contains my own notes with some course material to enforce learning experience.
+>
+> add here the story
+>
 
+Contains my own with my own visual notes ✍️ with some course material to enforce learning experience.
 
 This repository is made with [![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?logo=intellij-idea&logoColor=white)](#) with [![Eclipse](https://img.shields.io/badge/Eclipse-FE7A16.svg?logo=Eclipse&logoColor=white)](#) hotkeys, therefore it will include configuration files which are related to this IDE this approach will be favored for now. ⚙️
 
@@ -773,7 +819,7 @@ All course material from *Data Structures and Algorithms: Deep Dive Using Java* 
 <br><br>
 ~ *DevelopersCradle*
 
-Contains my own notes with some course material to enforce learning experience.
+Contains my own with my own visual notes ✍️ with some course material to enforce learning experience.
 
 This repository is made with [![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?logo=intellij-idea&logoColor=white)](#) with [![Eclipse](https://img.shields.io/badge/Eclipse-FE7A16.svg?logo=Eclipse&logoColor=white)](#) hotkeys. This is why it will include configuration files which are related to this IDE this approach will be favored for now. ⚙️
 
@@ -847,7 +893,7 @@ All course material from *Java Data Structures & Algorithms + LEETCODE Exercises
 > Companies like Facebook evaluate candidates on their ability to apply data structures in both coding challenges and real-world system design—showing that mastering arrays, trees, and hash maps isn’t just academic, it’s practical. <br><br>
 ~ DevelopersCradle
 
-Contains my own notes with some course material to enforce learning experience.
+Contains my own with my own visual notes ✍️ with some course material to enforce learning experience.
 
 This repository is made with [![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?logo=intellij-idea&logoColor=white)](#) with [![Eclipse](https://img.shields.io/badge/Eclipse-FE7A16.svg?logo=Eclipse&logoColor=white)](#) hotkeys, therefore it will include configuration files which are related to this IDE this approach will be favored for now. ⚙️
 
