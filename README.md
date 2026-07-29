@@ -17,7 +17,6 @@ We are using following structure:
 
 -->
 
-
 <!--
 Template for the questions:
 
@@ -353,20 +352,21 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 All course material from *Modern Java - Multithreading in Java using Virtual Threads* by **Pragmatic Code School**.
 
-> During a backend performance review, I was asked why our service struggled under high concurrency despite having a well-configured thread pool. On paper, everything looked correct — fixed thread pools, optimized queries, proper synchronization. Yet under load, the system slowed, threads piled up, and latency spiked. This initiated me to start asking about virtual threads! <br><br>
-~ *DevelopersCradle*
+> Once in a lifetime, i interviewed with 🔴**Polar**🔴 for an Advanced Java role, and on part of the technical discussion immediately dove into multithreading, concurrency, and performance optimization. They asked about thread pools, synchronization strategies, deadlocks, optimizing CPU-bound versus IO-bound operations, and even Virtual Threads in Java. The questions were challenging and required more than just textbook knowledge — they wanted practical understanding of real-world thread behavior.
+>
+> Thanks to a recent course on *Modern Java - Multithreading in Java using Virtual Threads*, I could confidently discuss thread-safe collections, locks, executor frameworks, and the advantages of Virtual Threads for scalable, lightweight concurrency. Even though I was **not chosen** for the position, the interview **drove me** to deeply pursue these concepts, strengthening my skills and confidence for future challenges.
+>
+> ~ DevelopersCradle
 
 Contains my own with my own visual notes ✍️ with some course material to enforce learning experience.
 
 This repository is made with [![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?logo=intellij-idea&logoColor=white)](#) with [![Eclipse](https://img.shields.io/badge/Eclipse-FE7A16.svg?logo=Eclipse&logoColor=white)](#) hotkeys, therefore it will include configuration files which are related to this IDE this approach will be favored for now. ⚙️
 
-We are using [![Java 21](https://img.shields.io/badge/Java%2021-%23ED8B00.svg?logo=openjdk&logoColor=white)](#). Instead, the which are recommended!
-<!-- Add here to Java chapter -->
+We are using [![Java 21](https://img.shields.io/badge/Java%2021-%23ED8B00.svg?logo=openjdk&logoColor=white)](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Modern%20Java%20%20Multithreading%20in%20Java%20using%20Virtual%20Threads/Section%2003#java-installation). Instead, the which are recommended!
 
-[Udemy course](https://www.udemy.com/course/java-application-performance-and-memory-management).
+[Udemy course](https://www.udemy.com/course/modern-java-multithreading-in-java-using-virtual-threads).
 
 [Homepage of maker](https://www.virtualpairprogrammers.com/).
-
 
 If the content sparked :fire: your interest, please consider buying the course and start learning :book:.
 
@@ -376,23 +376,23 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 -->
 
 <div align="center">
-    Insert certificate here when completed
+    <img id="Modern_Java_Multithreading_In_Java_Using_Virtual_Threads_Certificate?trk=public_profile_see-credential" src="Modern_Java_Multithreading_In_Java_Using_Virtual_Threads_Certificate.jpg" alt="Modern java multithreading in java using virtual threads certificate!" width="600"/>
 </div>
 
 **Note: The material provided in this repository is only for helping those who may get stuck at any point of time in the course. It is very advised that no one should just copy the solutions(violation of Honor Code) presented here.**
 
 #### Progress/Curriculum.
 
-- [ ] [Section 01](#) - Getting Started With the Course.
-- [ ] [Section 02](#) - Course Slides and Source Code.
-- [ ] [Section 03](#) - Getting Started with Java Threads (Platform Threads).
-- [ ] [Section 04](#) - Getting Started with Virtual Threads.
-- [ ] [Section 05](#) - Future and CompletableFuture.
-- [ ] [Section 06](#) - Structured Concurrency using Virtual Threads (Preview Feature).
-- [ ] [Section 07](#) - HTTP calls using Virtual Threads.
-- [ ] [Section 08](#) - Using Futures with Virtual Threads.
-- [ ] [Section 09](#) - Build a Spring Boot Application using Virtual Threads.
-- [ ] [Section 10](#) - Load Test using `ab` – Apache HTTP server benchmarking tool.
+- [x] [Section 01](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Modern%20Java%20%20Multithreading%20in%20Java%20using%20Virtual%20Threads/Section%2001#chapter-01-getting-started-with-the-course) - Getting Started With the Course.
+- [x] [Section 02](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Modern%20Java%20%20Multithreading%20in%20Java%20using%20Virtual%20Threads/Section%2002#chapter-02-course-slides-and-source-code) - Course Slides and Source Code.
+- [x] [Section 03](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Modern%20Java%20%20Multithreading%20in%20Java%20using%20Virtual%20Threads/Section%2003#chapter-03-getting-started-with-java-threads-platform-threads) - Getting Started with Java Threads (Platform Threads).
+- [x] [Section 04](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Modern%20Java%20%20Multithreading%20in%20Java%20using%20Virtual%20Threads/Section%2004#chapter-04---getting-started-with-virtual-threads) - Getting Started with Virtual Threads.
+- [x] [Section 05](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Modern%20Java%20%20Multithreading%20in%20Java%20using%20Virtual%20Threads/Section%2005#chapter-05---future-and-completablefuture) - Future and CompletableFuture.
+- [x] [Section 06](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Modern%20Java%20%20Multithreading%20in%20Java%20using%20Virtual%20Threads/Section%2006#chapter-06---structured-concurrency-using-virtual-threads-preview-feature) - Structured Concurrency using Virtual Threads (Preview Feature).
+- [x] [Section 07](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Modern%20Java%20%20Multithreading%20in%20Java%20using%20Virtual%20Threads/Section%2007#chapter-07---http-calls-using-virtual-threads) - HTTP calls using Virtual Threads.
+- [x] [Section 08](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Modern%20Java%20%20Multithreading%20in%20Java%20using%20Virtual%20Threads/Section%2008#chapter-08---using-futures-with-virtual-threads) - Using Futures with Virtual Threads.
+- [x] [Section 09](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Modern%20Java%20%20Multithreading%20in%20Java%20using%20Virtual%20Threads/Section%2009#chapter-09---build-a-spring-boot-application-using-virtual-threads) - Build a Spring Boot Application using Virtual Threads. 
+- [x] [Section 10](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Modern%20Java%20%20Multithreading%20in%20Java%20using%20Virtual%20Threads/Section%2010#chapter-10---load-test-using-ab--apache-http-server-benchmarking-tool) - Load Test using `ab` – Apache HTTP server benchmarking tool. 
 
 #### Additional stuff.
 
