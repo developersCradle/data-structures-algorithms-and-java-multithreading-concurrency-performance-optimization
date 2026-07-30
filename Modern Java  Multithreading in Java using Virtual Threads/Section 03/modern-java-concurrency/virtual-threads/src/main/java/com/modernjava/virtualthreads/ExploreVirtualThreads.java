@@ -1,6 +1,8 @@
 package com.modernjava.virtualthreads;
 
 
+import com.modernjava.threads.ExploreThreads;
+import com.modernjava.threads.HelloWorldThreads;
 import com.modernjava.util.CommonUtil;
 
 import static com.modernjava.util.LoggerUtil.log;
@@ -15,10 +17,17 @@ public class ExploreVirtualThreads {
 
     public static void main(String[] args) {
 
+        var thread1 = Thread.ofVirtual().name("T1");
+        var thread2 = Thread.ofVirtual().name("T2");
+
+        thread1.start(() -> {
+            log("Run task 1 in the background!");
+        });
+
+        thread2.start(() -> {
+            ExploreVirtualThreads.doSomeWork();
+        });
+
         log("Program Completed!");
-
-        CommonUtil.sleep(2000);
-
-
     }
 }

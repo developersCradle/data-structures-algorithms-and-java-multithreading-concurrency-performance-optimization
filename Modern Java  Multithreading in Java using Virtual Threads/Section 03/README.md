@@ -168,6 +168,133 @@ public class HelloWorldThreads {
 
 # Thread Internals - How it works behind the scenes?
 
+<div align="center">
+    <img src="Threads_Internal.PNG"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+</div>
+
+1. There are is **Kerner Threads**!
+     - These are expensive!
+2. This is usually taken **care by the OS**, so as developers would not need to take care of these!
+3. **Java application** runs in top of this layer!
+4. Once the task is created in JVM, the time to execute gets scheduler in to the **OS** threads!
+    - Once the task is finished!
+        - The **Platform Thread** get eliminated!
+
 # Thread Scalability and Blocking nature of Java Threads - Drawbacks.
 
+- **First problem** with threads, is the maximum treads! 
+    -  Example class of the `MaxThreads`! This is illustrated below:
+ 
+````Java
+package com.modernjava.threads;
+
+
+import com.modernjava.util.CommonUtil;
+
+import java.util.concurrent.atomic.AtomicInteger;
+import java.util.stream.IntStream;
+
+import static com.modernjava.util.LoggerUtil.log;
+
+public class MaxThreads {
+
+    static AtomicInteger atomicInteger = new AtomicInteger();
+
+    public static void doSomeWork(int index) {
+        log("started doSomeWork : " + index);
+        //Any task that's started by a thread is blocked until it completes.
+        //It could be any IO call such as HTTP or File IO call.
+
+        CommonUtil.sleep(5000);
+        log("finished doSomeWork : " + index);
+
+
+    }
+
+    public static void main(String[] args) {
+
+        int MAX_THREADS = 1000;
+
+        IntStream.rangeClosed(1, MAX_THREADS)
+                .forEach(i -> {
+                    Thread.ofPlatform().start(() -> MaxThreads.doSomeWork(i));
+                });
+
+
+        log("Program Completed!");
+
+    }
+}
+````
+
+- Example of using `MAX_THREADS`!
+
+````Java
+    public static void main(String[] args) {
+
+        int MAX_THREADS = 1000;
+
+        IntStream.rangeClosed(1, MAX_THREADS)
+                .forEach(i -> {
+                    Thread.ofPlatform().start(() -> MaxThreads.doSomeWork(i));
+                });
+
+        log("Program Completed!");
+
+    }
+````
+
+- We can see that there is **HUGE** amount of threads!
+
+<div align="center">
+    <img src="Ammount_Of_Huge_Threads_Executed.gif"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+</div>
+
+- We can see that, every request is making blocking class!
+
+<div align="center">
+    <img src="Thread_Will_Throw_The_Exception.PNG"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+</div>
+
+1. When there is too much **threads** for the JVM to handle, it will throw exception!
+    - Thread is expensive resource!
+
+<div align="center">
+    <img src="Thread_Properties.PNG"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+</div>
+
+1. Thread is an expensive resource:
+    - Threads can take up to `~1 ms` to start up.
+    - It can take up to `1 MB` to `2 MB` of memory for the thread stack.
+    - Thread context switching also consumes time (`~100 µs`).
+    - Threads live in the heap memory.
+2. What are the drawbacks?
+    - We can only create a limited number of threads.
+    - If we need to support millions of transactions, we cannot create millions of threads to handle them.
+
+<div align="center">
+    <img src="Blocking_Nature_Of_The_Threads.PNG"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+</div>
+
+1. By nature **Java Threads** is **blocked** and **tied** until its completes!
+2. 99.99% is time is blocked, while waiting!
+
+- **Second problem** with threads, is the blocking nature of the threads! 
+ 
+<div align="center">
+    <img src="Thread_Being_Blocked.PNG"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+</div>
+
+1. Thread that makes a call, is being blocked, while its making call!
+    - Any task that's started by a thread is blocked until it completes.
+        - It could be any **IO call** such as **HTTP** or **File IO call**.
+
+- This is why there are **Virtual Threads**!
+
+
+- Add exercieses here
+
 # Effects of Threads in a Backend WebApplication.
+
+
+- TOdo
