@@ -1,6 +1,5 @@
 package com.modernjava.future;
 
-
 import com.modernjava.domain.Product;
 import com.modernjava.domain.ProductInfo;
 import com.modernjava.domain.Reviews;

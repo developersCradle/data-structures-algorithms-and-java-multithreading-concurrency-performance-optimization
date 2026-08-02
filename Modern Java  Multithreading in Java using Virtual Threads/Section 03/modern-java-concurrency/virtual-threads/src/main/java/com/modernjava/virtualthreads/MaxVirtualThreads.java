@@ -23,7 +23,7 @@ public class MaxVirtualThreads {
     public static void main(String[] args) {
 
         //Demo1
-        int MAX_THREADS =1000_000; //10000, 100_000, 1000_000
+        int MAX_THREADS = 10; //10000, 100_000, 1000_000
         // For 1024 MB
 
        // int MAX_THREADS = 10;
@@ -36,10 +36,7 @@ public class MaxVirtualThreads {
                     atomicInteger.incrementAndGet();
                     log("No of threads : " + atomicInteger.get());
                 });
-
         log("Program Completed!");
-
-       // CommonUtil.sleep(10000);
-
+        CommonUtil.sleep(10000);
     }
 }

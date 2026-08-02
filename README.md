@@ -6,7 +6,7 @@ We are using following structure:
     <img
      src="Jackson_Quick_Start_JSON_Serialization_With_Java_Made_Easy_Caption.png"
     alt="Jackson quick start json serialization with java made easy caption!"
-    style="width:1600px;height:120px;"/>
+    style="width:1600px;height:120px;"/>gt
 </p> 
 <p align="center">
     <img
@@ -871,12 +871,9 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
     * *Coding Exercise*:
         * [Some here](#).
 
-
-<!-- Todo fix this, font wrong when pationce! -->
-
 <p align="center">
     <img 
-    id="Java_Data_Structures_And_Algorithms_Plus_Leetcode_Exercises"
+    id="Java_Data_Structures_And_Algorithms_Plus_Leetcode_Exercises_Caption"
     src="Java_Data_Structures_And_Algorithms_Plus_LEETCODE_Exercises_Caption.png" alt="Java Data Structures And Algorithms Plus LEETCODE Exercises Caption" style="width:990px;height:110px;"/>
 </p>
 
