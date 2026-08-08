@@ -17,7 +17,7 @@ import static com.modernjava.util.CommonUtil.requestBuilder;
 
 public class ProductInfoService {
 
-    //virtual-threads/src/main/resources/deliveryDetails.json
+    // virtual-threads/src/main/resources/deliveryDetails.json
     public  static String PRODUCT_INFO_URL = "http://127.0.0.1:8000/virtual-threads/src/main/resources/productInfo.json";
 
 

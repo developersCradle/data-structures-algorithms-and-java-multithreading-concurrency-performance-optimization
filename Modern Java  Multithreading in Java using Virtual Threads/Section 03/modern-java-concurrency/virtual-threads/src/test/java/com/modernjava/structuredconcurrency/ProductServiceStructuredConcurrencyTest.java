@@ -8,6 +8,7 @@ import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
+import org.mockito.Mock;
 import org.mockito.Spy;
 import org.mockito.junit.jupiter.MockitoExtension;
 
@@ -21,6 +22,7 @@ import static org.mockito.Mockito.when;
 class ProductServiceStructuredConcurrencyTest {
 
     /*
+    Written approach!
     ProductInfoService productInfoService = Mockito.spy(ProductInfoService.class);
     ReviewService reviewService = Mockito.spy(ReviewService.class);
      DeliveryService deliveryService = Mockito.spy(DeliveryService.class);
@@ -28,6 +30,8 @@ class ProductServiceStructuredConcurrencyTest {
     ProductServiceStructuredConcurrency productServiceStructuredConcurrency
             = new ProductServiceStructuredConcurrency(productInfoService, reviewService, deliveryService);
     */
+
+    // Annotation approach!
     @Spy
     ProductInfoService productInfoService;
 
@@ -42,7 +46,10 @@ class ProductServiceStructuredConcurrencyTest {
 
     @Test
     void retrieveProductDetails() {
-
+        var product = productServiceStructuredConcurrency.retrieveProductDetails("ABCD");
+        assertNotNull(product);
+        assertNotNull(product.productInfo());
+        assertNotNull(product.reviews());
     }
 
     @Test
