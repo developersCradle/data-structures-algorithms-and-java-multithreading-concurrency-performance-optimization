@@ -32,7 +32,6 @@ public class ProductServiceStructuredConcurrency {
     public Product retrieveProductDetails(String productId) {
         // We will implement this using Structured Concurrency!
 
-
         try (var scope = new StructuredTaskScope.ShutdownOnFailure())
         {
             // Fork the task. Where we make a calls!
@@ -68,7 +67,7 @@ public class ProductServiceStructuredConcurrency {
             var reviewsInfo = reviewsSubTask.get();
 
             // We are getting DeliveryDetails.
-            var deliveryDetailsTask = scope.fork(() -> deliveryService.retrieveDeliveryInfo(productInfo))
+            var deliveryDetailsTask = scope.fork(() -> deliveryService.retrieveDeliveryInfo(productInfo));
             scope.join().throwIfFailed();
 
             return new ProductV2(productId, productInfo, reviewsInfo, deliveryDetailsTask.get());

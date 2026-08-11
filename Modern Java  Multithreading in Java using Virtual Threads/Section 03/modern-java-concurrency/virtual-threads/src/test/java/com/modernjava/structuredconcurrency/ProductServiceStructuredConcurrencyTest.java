@@ -37,8 +37,8 @@ class ProductServiceStructuredConcurrencyTest {
     @Spy
     ReviewService reviewService;
 
-//    @Spy
-//    DeliveryService deliveryService;
+    @Spy
+    DeliveryService deliveryService;
 
     @InjectMocks
     ProductServiceStructuredConcurrency productServiceStructuredConcurrency;
@@ -49,6 +49,16 @@ class ProductServiceStructuredConcurrencyTest {
         assertNotNull(product);
         assertNotNull(product.productInfo());
         assertNotNull(product.reviews());
+    }
+
+
+    @Test
+    void retrieveProductDetailsV2() {
+        var productV2 = productServiceStructuredConcurrency.retrieveProductDetailsV2("ABCD");
+        assertNotNull(productV2);
+        assertNotNull(productV2.productInfo());
+        assertNotNull(productV2.reviews());
+        assertNotNull(productV2.deliveryDetails());
     }
 
     @Test
