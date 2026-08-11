@@ -1537,129 +1537,348 @@ class ProductServiceStructuredConcurrencyTest {
 
 1. We can see logs for the service calls!
 
+# JUnit test for ShutdownOnFailure policy during Exceptions.
 
-<details>
-<summary id="Code_StructuredTaskScope_Failure" open="true"> <b>Code for StructuredTaskScope Failure!</b> </summary>
+- Lets make test for testing that an exception from **reviewService** eventually causes `retrieveProductDetails()` to throw. That's exactly a useful test for **ShutdownOnFailure**.
 
-#### ProductServiceStructuredConcurrency.java
+<br>
+
+- The test for **structured concurrency** test, when there is **non-functioning** service call:
 
 ````Java
-package com.modernjava.structuredconcurrency;
+@Test
+    void retrieveProductDetails_Exception() {
 
+        when(reviewService.retrieveReviews(anyString()))
+                .thenThrow(new RuntimeException("Exception calling review Service"));
 
-import com.modernjava.domain.Product;
-import com.modernjava.domain.ProductV2;
-import com.modernjava.service.DeliveryService;
-import com.modernjava.service.ProductInfoService;
-import com.modernjava.service.ReviewService;
+        var exception = Assertions.assertThrows(RuntimeException.class,
+                () -> productServiceStructuredConcurrency.retrieveProductDetails("ABC"));
 
-import java.util.concurrent.StructuredTaskScope;
+        assertTrue(exception.getMessage().contains("Exception calling review Service"));
+    }
+````
 
-public class ProductServiceStructuredConcurrency {
+- We are testing the expectation throwing of the service:
 
-    private final ProductInfoService productInfoService;
-    private final ReviewService reviewService;
-    //private final DeliveryService deliveryService;
+<div align="center">
+    <img src="Testing_The_Structured_Concurrency_Exception_Throwing.gif"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+</div>
 
-    public ProductServiceStructuredConcurrency(ProductInfoService productInfoService, ReviewService reviewService, DeliveryService deliveryService) {
-        this.productInfoService = productInfoService;
-        this.reviewService = reviewService;
-        //this.deliveryService = deliveryService;
+- We can see the expectation being throwing, if the service is failing!
+
+# ProductInfoService using `StructuredTaskScope.ShutdownOnSuccess()`.
+
+<div align="center">
+    <img src="Shutdown_Policy_At_Success.PNG"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+</div>
+
+1. This policy if, there **same data** pulled from different source!
+2. When there is **one success** case, the **rest is not being** used anymore.
+
+- We will have **different timeouts** for returned results, to test which returns first:
+
+````Java
+    public ProductInfo retrieveProductInfo(String productId) {
+        CommonUtil.sleep(1000);
+//        throw new RuntimeException("retrieveProductInfo");
+        List<ProductOption> productOptions = List.of(new ProductOption("64GB", "Black", 699.99),
+                new ProductOption("128GB", "Black", 749.99));
+        LoggerUtil.log("retrieveProductInfo after Delay");
+        return new ProductInfo(productId, productOptions);
     }
 
-    public ProductServiceStructuredConcurrency(ProductInfoService productInfoService, ReviewService reviewService) {
-        this.productInfoService = productInfoService;
-        this.reviewService = reviewService;
-        //this.deliveryService = null;
+
+    public ProductInfo retrieveProductInfoV2(String productId) {
+        CommonUtil.sleep(2000);
+        List<ProductOption> productOptions = List.of(new ProductOption("64GB", "Black", 699.99),
+                new ProductOption("128GB", "Black", 749.99));
+        LoggerUtil.log("retrieveProductInfo after Delay v2 ");
+        return new ProductInfo(productId, productOptions);
     }
 
-    public Product retrieveProductDetails(String productId) {
-        // We will implement this using Structured Concurrency!
+    public ProductInfo retrieveProductInfoV3(String productId) {
+        CommonUtil.sleep(8000);
+        List<ProductOption> productOptions = List.of(new ProductOption("64GB", "Black", 699.99),
+                new ProductOption("128GB", "Black", 749.99));
+        LoggerUtil.log("retrieveProductInfo after Delay v3 ");
+        return new ProductInfo(productId, productOptions);
+    }
+````
 
-        try (var scope = new StructuredTaskScope.ShutdownOnFailure())
-        {
-            // Fork the task. Where we make a calls!
-            var productsInfoSubTask = scope.fork(() -> productInfoService.retrieveProductInfo(productId));
-            var reviewsSubTask = scope.fork(() -> reviewService.retrieveReviews(productId));
-            // Join the tasks. We will wait for the task to finish!
-            scope.join().throwIfFailed();
+- We will make calling logic, with the `StructuredTaskScope.ShutdownOnSuccess<ProductInfo>`!
 
-            var productInfo = productsInfoSubTask.get();
-            var reviewsInfo = reviewsSubTask.get();
-            return  new Product(productId, productInfo, reviewsInfo);
+````Java
+ public ProductInfo retrieveProductInfo_MultipleSources(String productId) {
 
+        try (var scope = new StructuredTaskScope.ShutdownOnSuccess<ProductInfo>()) {
+            scope.fork(() -> retrieveProductInfo(productId));
+            scope.fork(() -> retrieveProductInfoV2(productId));
+            scope.fork(() -> retrieveProductInfoV3(productId));
+
+            return scope.join().result();
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
     }
-}
 ````
 
-#### ProductServiceStructuredConcurrencyTest.java
+- We will check this working!
+    - `return scope.join().result();` we will get the first result that is finished!
+
+```Java
+    @Test
+    void retrieveProductInfo() {
+        // In this case, the time it takes is close to the first task which completes in 1 second.
+        var productInfo = productInfoService.retrieveProductInfo_MultipleSources("ABC");
+        assertNotNull(productInfo);
+    }
+```
+
+<div align="center">
+    <img src="Testing_The_Structured_Concurrency_ShutdownOnSuccess.gif"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+</div>
+
+1. We can see the log from `retrieveProductInfo(...)` where the log `retrieveProductInfo after Delay`!
+
+
+- One function is the fastest:
+
+````Bash
+> Task :virtual-threads:compileJava UP-TO-DATE
+> Task :virtual-threads:processResources UP-TO-DATE
+> Task :virtual-threads:classes UP-TO-DATE
+> Task :virtual-threads:compileTestJava UP-TO-DATE
+> Task :virtual-threads:processTestResources NO-SOURCE
+> Task :virtual-threads:testClasses UP-TO-DATE
+[VirtualThread[#32]/runnable@ForkJoinPool-1-worker-2] - retrieveProductInfo after Delay
+java.lang.InterruptedException
+	at java.base/java.lang.VirtualThread.sleepNanos(VirtualThread.java:809)
+	at java.base/java.lang.Thread.sleep(Thread.java:507)
+	at com.modernjava.util.CommonUtil.sleep(CommonUtil.java:36)
+	at com.modernjava.service.ProductInfoService.retrieveProductInfoV3(ProductInfoService.java:57)
+	at com.modernjava.service.ProductInfoService$MockitoMock$1515232702.retrieveProductInfoV3$accessor$DhvO5OMg(Unknown Source)
+	at com.modernjava.service.ProductInfoService$MockitoMock$1515232702$auxiliary$BAv3s67J.call(Unknown Source)
+	at org.mockito.internal.invocation.RealMethod$FromCallable$1.call(RealMethod.java:40)
+	at org.mockito.internal.invocation.RealMethod$FromBehavior.invoke(RealMethod.java:62)
+	at org.mockito.internal.invocation.InterceptedInvocation.callRealMethod(InterceptedInvocation.java:152)
+	at org.mockito.internal.stubbing.answers.CallsRealMethods.answer(CallsRealMethods.java:44)
+	at org.mockito.Answers.answer(Answers.java:100)
+	at org.mockito.internal.handler.MockHandlerImpl.handle(MockHandlerImpl.java:103)
+	at org.mockito.internal.handler.NullResultGuardian.handle(NullResultGuardian.java:29)
+	at org.mockito.internal.handler.InvocationNotifierHandler.handle(InvocationNotifierHandler.java:35)
+	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor.doIntercept(MockMethodInterceptor.java:61)
+	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor.doIntercept(MockMethodInterceptor.java:49)
+	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor$DispatcherDefaultingToRealMethod.interceptSuperCallable(MockMethodInterceptor.java:108)
+	at com.modernjava.service.ProductInfoService$MockitoMock$1515232702.retrieveProductInfoV3(Unknown Source)
+	at com.modernjava.service.ProductInfoService.lambda$retrieveProductInfo_MultipleSources$2(ProductInfoService.java:69)
+	at java.base/java.util.concurrent.StructuredTaskScope$SubtaskImpl.run(StructuredTaskScope.java:889)
+	at java.base/java.lang.VirtualThread.run(VirtualThread.java:329)
+[VirtualThread[#36]/runnable@ForkJoinPool-1-worker-5] - Exception is :null
+java.lang.InterruptedException
+[VirtualThread[#36]/runnable@ForkJoinPool-1-worker-5] - retrieveProductInfo after Delay v3 
+	at java.base/java.lang.VirtualThread.sleepNanos(VirtualThread.java:809)
+	at java.base/java.lang.Thread.sleep(Thread.java:507)
+	at com.modernjava.util.CommonUtil.sleep(CommonUtil.java:36)
+	at com.modernjava.service.ProductInfoService.retrieveProductInfoV2(ProductInfoService.java:49)
+	at com.modernjava.service.ProductInfoService$MockitoMock$1515232702.retrieveProductInfoV2$accessor$DhvO5OMg(Unknown Source)
+	at com.modernjava.service.ProductInfoService$MockitoMock$1515232702$auxiliary$oyxNmnnp.call(Unknown Source)
+	at org.mockito.internal.invocation.RealMethod$FromCallable$1.call(RealMethod.java:40)
+	at org.mockito.internal.invocation.RealMethod$FromBehavior.invoke(RealMethod.java:62)
+	at org.mockito.internal.invocation.InterceptedInvocation.callRealMethod(InterceptedInvocation.java:152)
+	at org.mockito.internal.stubbing.answers.CallsRealMethods.answer(CallsRealMethods.java:44)
+	at org.mockito.Answers.answer(Answers.java:100)
+	at org.mockito.internal.handler.MockHandlerImpl.handle(MockHandlerImpl.java:103)
+	at org.mockito.internal.handler.NullResultGuardian.handle(NullResultGuardian.java:29)
+	at org.mockito.internal.handler.InvocationNotifierHandler.handle(InvocationNotifierHandler.java:35)
+	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor.doIntercept(MockMethodInterceptor.java:61)
+	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor.doIntercept(MockMethodInterceptor.java:49)
+	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor$DispatcherDefaultingToRealMethod.interceptSuperCallable(MockMethodInterceptor.java:108)
+	at com.modernjava.service.ProductInfoService$MockitoMock$1515232702.retrieveProductInfoV2(Unknown Source)
+	at com.modernjava.service.ProductInfoService.lambda$retrieveProductInfo_MultipleSources$1(ProductInfoService.java:68)
+	at java.base/java.util.concurrent.StructuredTaskScope$SubtaskImpl.run(StructuredTaskScope.java:889)
+	at java.base/java.lang.VirtualThread.run(VirtualThread.java:329)
+[VirtualThread[#34]/runnable@ForkJoinPool-1-worker-7] - Exception is :null
+[VirtualThread[#34]/runnable@ForkJoinPool-1-worker-7] - retrieveProductInfo after Delay v2 
+> Task :virtual-threads:test
+````
+
+- We can see that all the other service are being interrupted, **other than the fastest**!
+
+<br>
+
+- Let's simulate error case!
 
 ````Java
-package com.modernjava.structuredconcurrency;
-
-import com.modernjava.service.DeliveryService;
-import com.modernjava.service.ProductInfoService;
-import com.modernjava.service.ReviewService;
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Disabled;
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
-import org.mockito.InjectMocks;
-import org.mockito.Mock;
-import org.mockito.Spy;
-import org.mockito.junit.jupiter.MockitoExtension;
-
-import static com.modernjava.util.LoggerUtil.log;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotNull;
-import static org.mockito.ArgumentMatchers.anyString;
-import static org.mockito.Mockito.when;
-
-@ExtendWith(MockitoExtension.class)
-class ProductServiceStructuredConcurrencyTest {
-
-    /*
-    Written approach!
-    ProductInfoService productInfoService = Mockito.spy(ProductInfoService.class);
-    ReviewService reviewService = Mockito.spy(ReviewService.class);
-     DeliveryService deliveryService = Mockito.spy(DeliveryService.class);
-
-    ProductServiceStructuredConcurrency productServiceStructuredConcurrency
-            = new ProductServiceStructuredConcurrency(productInfoService, reviewService, deliveryService);
-    */
-
-    // Annotation approach!
-    @Spy
-    ProductInfoService productInfoService;
-
-    @Spy
-    ReviewService reviewService;
-
-//    @Spy
-//    DeliveryService deliveryService;
-
-    @InjectMocks
-    ProductServiceStructuredConcurrency productServiceStructuredConcurrency;
-
     @Test
-    void retrieveProductDetails() {
-        var product = productServiceStructuredConcurrency.retrieveProductDetails("ABCD");
-        assertNotNull(product);
-        assertNotNull(product.productInfo());
-        assertNotNull(product.reviews());
+    void retrieveProductInfo_simulateError() {
+        // In this case, the time it takes is close to the first task which completes in 1 second.
+        when(productInfoService.retrieveProductInfo(anyString())).thenThrow(new RuntimeException("Exception Occurred!"));
+        var productInfo = productInfoService.retrieveProductInfo_MultipleSources("ABC");
+        assertNotNull(productInfo);
     }
-    @Test
-    void retrieveProductDetails_Exception() {
-    }
-}
 ````
-</details>
 
-# JUnit test for ShutdownOnFailure policy during Exceptions.
+- We will be running test case:
 
-# ProductInfoService using `StructuredTaskScope.ShutdownOnSuccess()`.
+<div align="center">
+    <img src="Testing_The_Structured_Concurrency_ShutdownOnSuccess_RuntimeException.gif"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+</div>
+
 
 # Add DeliveryService into the ProductService - New Business Requirement.
+
+
+<div align="center">
+    <img src="Business_Case_New_Integration.PNG"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+</div>
+
+
+1. We need to return **Product**, with **delivery information**!
+
+- These POJO's are:
+    - **Old:**
+        ````Java
+        package com.modernjava.domain;
+
+        public record Product(String productId,
+                            ProductInfo productInfo,
+                            Reviews reviews) {
+        }
+
+        ````
+    - **New:**
+        ````Java
+        package com.modernjava.domain;
+
+        public record ProductV2(String productId,
+                                ProductInfo productInfo,
+                                Reviews reviews,
+                                DeliveryDetails deliveryDetails) {
+        }
+        ````
+        - Here we can see the `DeliveryDetails deliveryDetails` in additional.
+
+- We have **DeliveryService.java** class:
+    ````Java
+    package com.modernjava.service;
+
+    import com.modernjava.domain.DeliveryDetails;
+    import com.modernjava.domain.DeliveryOptionEnum;
+    import com.modernjava.domain.ProductInfo;
+    import com.modernjava.domain.Reviews;
+    import com.modernjava.util.CommonUtil;
+    import com.modernjava.util.LoggerUtil;
+
+    import java.io.IOException;
+    import java.net.http.HttpResponse;
+    import java.util.List;
+
+    import static com.modernjava.util.CommonUtil.objectMapper;
+    import static com.modernjava.util.CommonUtil.requestBuilder;
+    import static com.modernjava.util.LoggerUtil.log;
+
+    public class DeliveryService {
+
+        public  static String DELIVERY_DETAILS_URL = "http://127.0.0.1:8000/virtual-threads/src/main/resources/deliveryDetails.json";
+        public DeliveryDetails retrieveDeliveryInfo(ProductInfo productInfo){
+            log("retrieving dleivery details for productInfo : " + productInfo);
+            CommonUtil.sleep(1000);
+            log("retrieveDeliveryInfo after Delay");
+            return new DeliveryDetails(List.of(DeliveryOptionEnum.NEXT_DAY, DeliveryOptionEnum.TWO_DAY));
+
+        }
+
+        public DeliveryDetails retrieveDeliveryInfoHttp(ProductInfo productInfo) throws IOException, InterruptedException {
+            var httpClient = CommonUtil.httpClient;
+            var httpRequest = requestBuilder(DELIVERY_DETAILS_URL);
+            HttpResponse<String> response =
+                    httpClient.send(httpRequest, HttpResponse.BodyHandlers.ofString());
+            System.out.println("Status code: " + response.statusCode());
+            return objectMapper.readValue(response.body(), DeliveryDetails.class);
+
+        }
+    }
+    ````
+- We are `ProductServiceStructuredConcurrency.java` to return the `ProductV2` in the `retrieveProductDetailsV2(String productId)`:
+    
+    ````Java
+    package com.modernjava.structuredconcurrency;
+
+    import com.modernjava.domain.Product;
+    import com.modernjava.domain.ProductV2;
+    import com.modernjava.service.DeliveryService;
+    import com.modernjava.service.ProductInfoService;
+    import com.modernjava.service.ReviewService;
+
+    import java.util.concurrent.StructuredTaskScope;
+
+    public class ProductServiceStructuredConcurrency {
+
+        private final ProductInfoService productInfoService;
+        private final ReviewService reviewService;
+        private final DeliveryService deliveryService;
+
+        public ProductServiceStructuredConcurrency(ProductInfoService productInfoService, ReviewService reviewService, DeliveryService deliveryService) {
+            this.productInfoService = productInfoService;
+            this.reviewService = reviewService;
+            this.deliveryService = deliveryService;
+        }
+
+        public ProductServiceStructuredConcurrency(ProductInfoService productInfoService, ReviewService reviewService) {
+            this.productInfoService = productInfoService;
+            this.reviewService = reviewService;
+            this.deliveryService = null;
+        }
+
+        public Product retrieveProductDetails(String productId) {
+            // We will implement this using Structured Concurrency!
+
+
+            try (var scope = new StructuredTaskScope.ShutdownOnFailure())
+            {
+                // Fork the task. Where we make a calls!
+                var productsInfoSubTask = scope.fork(() -> productInfoService.retrieveProductInfo(productId));
+                var reviewsSubTask = scope.fork(() -> reviewService.retrieveReviews(productId));
+
+                // Join the tasks. We will wait for the task to finish!
+                scope.join().throwIfFailed();
+
+                var productInfo = productsInfoSubTask.get();
+                var reviewsInfo = reviewsSubTask.get();
+
+                return  new Product(productId, productInfo, reviewsInfo);
+
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        }
+        public ProductV2 retrieveProductDetailsV2(String productId) {
+
+            // We will implement this using Structured Concurrency!
+            try (var scope = new StructuredTaskScope.ShutdownOnFailure())
+            {
+                // Fork the task. Where we make a calls!
+                var productsInfoSubTask = scope.fork(() -> productInfoService.retrieveProductInfo(productId));
+                var reviewsSubTask = scope.fork(() -> reviewService.retrieveReviews(productId));
+
+                // Join the tasks. We will wait for the task to finish!
+                scope.join().throwIfFailed();
+
+                var productInfo = productsInfoSubTask.get();
+                var reviewsInfo = reviewsSubTask.get();
+
+                // We are getting DeliveryDetails.
+                var deliveryDetailsTask = scope.fork(() -> deliveryService.retrieveDeliveryInfo(productInfo))
+                scope.join().throwIfFailed();
+
+                return new ProductV2(productId, productInfo, reviewsInfo, deliveryDetailsTask.get());
+
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        }
+    }
+    ````
+
+- we are making test here:

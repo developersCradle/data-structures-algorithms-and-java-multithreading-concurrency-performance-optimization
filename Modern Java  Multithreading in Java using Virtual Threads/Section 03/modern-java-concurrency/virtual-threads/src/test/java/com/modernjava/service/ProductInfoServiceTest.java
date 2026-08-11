@@ -24,7 +24,6 @@ class ProductInfoServiceTest {
         // In this case, the time it takes is close to the first task which completes in 1 second.
         var productInfo = productInfoService.retrieveProductInfo_MultipleSources("ABC");
         assertNotNull(productInfo);
-
     }
 
     @Test
@@ -33,7 +32,6 @@ class ProductInfoServiceTest {
         when(productInfoService.retrieveProductInfo(anyString())).thenThrow(new RuntimeException("Exception Occurred!"));
         var productInfo = productInfoService.retrieveProductInfo_MultipleSources("ABC");
         assertNotNull(productInfo);
-
     }
 
     @Test

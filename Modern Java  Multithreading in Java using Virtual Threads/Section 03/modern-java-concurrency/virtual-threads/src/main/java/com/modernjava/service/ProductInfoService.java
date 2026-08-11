@@ -13,6 +13,7 @@ import java.util.concurrent.StructuredTaskScope;
 
 import static com.modernjava.util.CommonUtil.objectMapper;
 import static com.modernjava.util.CommonUtil.requestBuilder;
+import static com.modernjava.util.LoggerUtil.log;
 
 
 public class ProductInfoService {
@@ -38,7 +39,7 @@ public class ProductInfoService {
 //        throw new RuntimeException("retrieveProductInfo");
         List<ProductOption> productOptions = List.of(new ProductOption("64GB", "Black", 699.99),
                 new ProductOption("128GB", "Black", 749.99));
-        LoggerUtil.log("retrieveProductInfo after Delay");
+        log("retrieveProductInfo after Delay");
         return new ProductInfo(productId, productOptions);
     }
 
@@ -48,7 +49,7 @@ public class ProductInfoService {
         CommonUtil.sleep(2000);
         List<ProductOption> productOptions = List.of(new ProductOption("64GB", "Black", 699.99),
                 new ProductOption("128GB", "Black", 749.99));
-        LoggerUtil.log("retrieveProductInfo after Delay v2 ");
+        log("retrieveProductInfo after Delay v2 ");
         return new ProductInfo(productId, productOptions);
     }
 
@@ -56,7 +57,7 @@ public class ProductInfoService {
         CommonUtil.sleep(8000);
         List<ProductOption> productOptions = List.of(new ProductOption("64GB", "Black", 699.99),
                 new ProductOption("128GB", "Black", 749.99));
-        LoggerUtil.log("retrieveProductInfo after Delay v3 ");
+        log("retrieveProductInfo after Delay v3 ");
         return new ProductInfo(productId, productOptions);
     }
 
