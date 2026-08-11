@@ -88,7 +88,7 @@ Future and CompletableFuture.
 2. It will have two **services** behind it!
 
 > [!TIP]
-> `ExecutorService` is a Java framework for managing and executing threads. Instead of creating and managing threads manually, you submit tasks to `ExecutorService`, which handles the threads for you.
+> 💡 `ExecutorService` is a Java framework for managing and executing threads. Instead of creating and managing threads manually, you submit tasks to `ExecutorService`, which handles the threads for you. 💡
 >    - Old way, with **Thread's APIS**:
 >        ````Java
 >        Thread t = new Thread(() -> {

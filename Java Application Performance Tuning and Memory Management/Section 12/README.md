@@ -202,7 +202,7 @@ public class CustomerHarness {
 1. One can see there is **ups** and **downs** in memory usage!
 
 > [!TIP]
->`-Xmx10m` = *“Allow the Java program to use at most 10 MB of heap memory.”*
+> 💡 `-Xmx10m` = *“Allow the Java program to use at most 10 MB of heap memory.”* 💡
 
 - Let's restrict the **memory usage** and try again:
 
@@ -316,7 +316,7 @@ public class CustomerManager {
 - Lets the increase the **Heap Size**, for testing the **VisualVM**!
 
 > [!TIP]
-> `-Xmx50m` = *“Allow the Java program to use at most 50 MB of heap memory.”*
+> 💡 `-Xmx50m` = *“Allow the Java program to use at most 50 MB of heap memory.”* 💡
 
 - We can run experiment with this `-Xmx50m` JVM parameters! We can see in the end application is going to crash in the end!
 

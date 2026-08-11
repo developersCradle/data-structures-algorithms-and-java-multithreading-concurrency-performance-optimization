@@ -512,7 +512,7 @@ public class Main {
 </details>
 
 > [!TIP]
-> Remember, every time we run our program, compilation is happening in the background!
+> 💡 Remember, every time we run our program, compilation is happening in the background! 💡
 
 - We will look at the logs, which the **JIT** interpretender method profiling tool has created for us:
 
@@ -1059,10 +1059,10 @@ public class Main {
 2. We can see that later the same method `PrimeNumber:isPrime(...)` got compiled again, because it was profiled to be so **important**!
 
 > [!TIP]
-> We can enable advanced *internal* **JVM** *diagnostic options*:
+> 💡 We can enable advanced *internal* **JVM** *diagnostic options*:
 >	`java -XX:+UnlockDiagnosticVMOptions`.
 > Produce a detailed **XML** *log file of all* **JIT** *compilation activity*:
->	`java -XX:+LogCompilation`.
+>	`java -XX:+LogCompilation`. 💡
 
 <div align="center">
     <img src="Java_HotSpot_JIT_Compiler_Method_Profiling_Log_With_Log_File_From_The_LogCompilation_Flag.gif" alt="java performance boost." width="600"/>

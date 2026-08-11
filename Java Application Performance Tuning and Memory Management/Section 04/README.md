@@ -40,7 +40,7 @@ How memory works - the stack and the heap.
 3. When data is retrieved, it retrieved from the **top** of the stack.
 
 > [!TIP]
-> This called **FILO**, **F**irst **I**n **F**irst **O**ut.
+> 💡 This called **FILO**, **F**irst **I**n **F**irst **O**ut. 💡
 
 - Let's check how the **stack** works in example:
 

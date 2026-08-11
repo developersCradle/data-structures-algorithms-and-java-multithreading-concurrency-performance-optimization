@@ -73,4 +73,15 @@ class ProductServiceStructuredConcurrencyTest {
         assertTrue(exception.getMessage().contains("Exception calling review Service"));
     }
 
+
+
+    @Test
+    void retrieveProductDetailsHttp() {
+        var productV2 = productServiceStructuredConcurrency.retrieveProductDetailsHttp("ABCD");
+        assertNotNull(productV2);
+        assertNotNull(productV2.productInfo());
+        assertNotNull(productV2.reviews());
+        assertNotNull(productV2.deliveryDetails());
+    }
+
 }

@@ -14,7 +14,7 @@ HTTP calls using Virtual Threads.
     - This will be serving files from **local machine**!
 
 > [!TIP]
-> `jwebserver` is a lightweight HTTP server included with the JDK starting in Java 18. It's designed for prototyping, testing, and serving static files, not for production web applications. It only supports HTTP/1.1 and serves static content (HTML, CSS, JavaScript, images, etc.).
+> 💡 `jwebserver` is a lightweight HTTP server included with the JDK starting in Java 18. It's designed for prototyping, testing, and serving static files, not for production web applications. It only supports HTTP/1.1 and serves static content (HTML, CSS, JavaScript, images, etc.). 💡
 
 - We will be making **Simple Web Server** to return the **JSON**.
   - The project folder `modern-java-concurrency`, where we will be running the `jwebserver` in this folder.
@@ -134,7 +134,7 @@ public class CommonUtil {
 </div>
 
 <details>
-<summary id="Code_CompletableFuture" open="true"> <b>Code for the Simple WebServer , with test!</b> </summary>
+<summary id="Code_CompletableFuture" open="true"> <b>Code for the Simple WebServer, with test!</b> </summary>
  
 #### ProductInfoServiceTest.java
 
@@ -255,6 +255,258 @@ public class ProductInfoService {
 # Lets make real HTTP calls in ProductService using VirtualThreads.
 
 
-- Do the structure concurrenct
+- Test case with the HTTP calls!
+
+````Java
+    @Test
+    void retrieveProductDetailsHttp() {
+        var productV2 = productServiceStructuredConcurrency.retrieveProductDetailsHttp("ABCD");
+        assertNotNull(productV2);
+        assertNotNull(productV2.productInfo());
+        assertNotNull(productV2.reviews());
+        assertNotNull(productV2.deliveryDetails());
+    }
+````
+
+- Method for making `retrieveProductDetailsHttp` calls!
+
+````Java
+public ProductV2 retrieveProductDetailsHttp(String productId) {
+
+        // We will implement this using Structured Concurrency!
+        try (var scope = new StructuredTaskScope.ShutdownOnFailure())
+        {
+            // Fork the task. Where we make a calls!
+            var productsInfoSubTask = scope.fork(() -> productInfoService.retrieveProductInfoHttp(productId));
+            var reviewsSubTask = scope.fork(() -> reviewService.retrieveReviewsHttp(productId));
+
+            // Join the tasks. We will wait for the task to finish!
+            scope.join().throwIfFailed();
+
+            var productInfo = productsInfoSubTask.get();
+            var reviewsInfo = reviewsSubTask.get();
+
+            // We are getting DeliveryDetails.
+            var deliveryDetailsTask = scope.fork(() -> deliveryService.retrieveDeliveryInfoHttp(productInfo));
+            scope.join().throwIfFailed();
+
+            return new ProductV2(productId, productInfo, reviewsInfo, deliveryDetailsTask.get());
+
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
+````
 
 
+<div align="center">
+    <img src="Testing_The_Structured_Concurrency_Virtual_Threads_With_The_Real_HTTP_Call.gif"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+</div>
+
+- We can see the real HTTP calls is being made!
+
+
+
+<details>
+<summary id="Code_CompletableFuture" open="true"> <b>Code for the Simple WebServer, with test!</b> </summary>
+ 
+#### ProductServiceStructuredConcurrency.java
+
+````Java
+package com.modernjava.structuredconcurrency;
+
+
+import com.modernjava.domain.Product;
+import com.modernjava.domain.ProductV2;
+import com.modernjava.service.DeliveryService;
+import com.modernjava.service.ProductInfoService;
+import com.modernjava.service.ReviewService;
+
+import java.util.concurrent.StructuredTaskScope;
+
+
+public class ProductServiceStructuredConcurrency {
+
+    private final ProductInfoService productInfoService;
+    private final ReviewService reviewService;
+    private final DeliveryService deliveryService;
+
+    public ProductServiceStructuredConcurrency(ProductInfoService productInfoService, ReviewService reviewService, DeliveryService deliveryService) {
+        this.productInfoService = productInfoService;
+        this.reviewService = reviewService;
+        this.deliveryService = deliveryService;
+    }
+
+    public ProductServiceStructuredConcurrency(ProductInfoService productInfoService, ReviewService reviewService) {
+        this.productInfoService = productInfoService;
+        this.reviewService = reviewService;
+        this.deliveryService = null;
+    }
+
+
+    public Product retrieveProductDetails(String productId) {
+        // We will implement this using Structured Concurrency!
+
+        try (var scope = new StructuredTaskScope.ShutdownOnFailure())
+        {
+            // Fork the task. Where we make a calls!
+            var productsInfoSubTask = scope.fork(() -> productInfoService.retrieveProductInfo(productId));
+            var reviewsSubTask = scope.fork(() -> reviewService.retrieveReviews(productId));
+
+            // Join the tasks. We will wait for the task to finish!
+            scope.join().throwIfFailed();
+
+            var productInfo = productsInfoSubTask.get();
+            var reviewsInfo = reviewsSubTask.get();
+
+            return  new Product(productId, productInfo, reviewsInfo);
+
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public ProductV2 retrieveProductDetailsV2(String productId) {
+
+        // We will implement this using Structured Concurrency!
+        try (var scope = new StructuredTaskScope.ShutdownOnFailure())
+        {
+            // Fork the task. Where we make a calls!
+            var productsInfoSubTask = scope.fork(() -> productInfoService.retrieveProductInfo(productId));
+            var reviewsSubTask = scope.fork(() -> reviewService.retrieveReviews(productId));
+
+            // Join the tasks. We will wait for the task to finish!
+            scope.join().throwIfFailed();
+
+            var productInfo = productsInfoSubTask.get();
+            var reviewsInfo = reviewsSubTask.get();
+
+            // We are getting DeliveryDetails.
+            var deliveryDetailsTask = scope.fork(() -> deliveryService.retrieveDeliveryInfo(productInfo));
+            scope.join().throwIfFailed();
+
+            return new ProductV2(productId, productInfo, reviewsInfo, deliveryDetailsTask.get());
+
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public ProductV2 retrieveProductDetailsHttp(String productId) {
+
+        // We will implement this using Structured Concurrency!
+        try (var scope = new StructuredTaskScope.ShutdownOnFailure())
+        {
+            // Fork the task. Where we make a calls!
+            var productsInfoSubTask = scope.fork(() -> productInfoService.retrieveProductInfoHttp(productId));
+            var reviewsSubTask = scope.fork(() -> reviewService.retrieveReviewsHttp(productId));
+
+            // Join the tasks. We will wait for the task to finish!
+            scope.join().throwIfFailed();
+
+            var productInfo = productsInfoSubTask.get();
+            var reviewsInfo = reviewsSubTask.get();
+
+            // We are getting DeliveryDetails.
+            var deliveryDetailsTask = scope.fork(() -> deliveryService.retrieveDeliveryInfoHttp(productInfo));
+            scope.join().throwIfFailed();
+
+            return new ProductV2(productId, productInfo, reviewsInfo, deliveryDetailsTask.get());
+
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
+}
+````
+
+#### ProductServiceStructuredConcurrencyTest.java
+
+````Java
+package com.modernjava.structuredconcurrency;
+
+import com.modernjava.service.DeliveryService;
+import com.modernjava.service.ProductInfoService;
+import com.modernjava.service.ReviewService;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.Spy;
+import org.mockito.junit.jupiter.MockitoExtension;
+
+import static com.modernjava.util.LoggerUtil.log;
+import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.ArgumentMatchers.anyString;
+import static org.mockito.Mockito.when;
+
+@ExtendWith(MockitoExtension.class)
+class ProductServiceStructuredConcurrencyTest {
+
+    /*
+    Written approach!
+    ProductInfoService productInfoService = Mockito.spy(ProductInfoService.class);
+    ReviewService reviewService = Mockito.spy(ReviewService.class);
+     DeliveryService deliveryService = Mockito.spy(DeliveryService.class);
+
+    ProductServiceStructuredConcurrency productServiceStructuredConcurrency
+            = new ProductServiceStructuredConcurrency(productInfoService, reviewService, deliveryService);
+    */
+
+    // Annotation approach!
+    @Spy
+    ProductInfoService productInfoService;
+
+    @Spy
+    ReviewService reviewService;
+
+    @Spy
+    DeliveryService deliveryService;
+
+    @InjectMocks
+    ProductServiceStructuredConcurrency productServiceStructuredConcurrency;
+
+    @Test
+    void retrieveProductDetails() {
+        var product = productServiceStructuredConcurrency.retrieveProductDetails("ABCD");
+        assertNotNull(product);
+        assertNotNull(product.productInfo());
+        assertNotNull(product.reviews());
+    }
+
+    @Test
+    void retrieveProductDetailsV2() {
+        var productV2 = productServiceStructuredConcurrency.retrieveProductDetailsV2("ABCD");
+        assertNotNull(productV2);
+        assertNotNull(productV2.productInfo());
+        assertNotNull(productV2.reviews());
+        assertNotNull(productV2.deliveryDetails());
+    }
+
+    @Test
+    void retrieveProductDetails_Exception() {
+
+        when(reviewService.retrieveReviews(anyString()))
+                .thenThrow(new RuntimeException("Exception calling review Service"));
+
+        var exception = Assertions.assertThrows(RuntimeException.class,
+                () -> productServiceStructuredConcurrency.retrieveProductDetails("ABC"));
+
+        assertTrue(exception.getMessage().contains("Exception calling review Service"));
+    }
+
+    @Test
+    void retrieveProductDetailsHttp() {
+        var productV2 = productServiceStructuredConcurrency.retrieveProductDetailsHttp("ABCD");
+        assertNotNull(productV2);
+        assertNotNull(productV2.productInfo());
+        assertNotNull(productV2.reviews());
+        assertNotNull(productV2.deliveryDetails());
+    }
+
+}
+````
+
+</details>

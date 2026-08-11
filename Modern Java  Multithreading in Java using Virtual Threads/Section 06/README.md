@@ -1407,7 +1407,7 @@ public Product retrieveProductDetails(String productId) {
     }
 ````
 
-- `StructuredTaskScope.ShutdownOnFailure()`
+- `StructuredTaskScope.ShutdownOnFailure()`!
     - *What the scope should do when a forked task fails*!
         - If one child task fails, shut down the other unfinished child tasks.
 

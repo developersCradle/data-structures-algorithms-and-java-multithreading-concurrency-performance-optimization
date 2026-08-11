@@ -76,4 +76,30 @@ public class ProductServiceStructuredConcurrency {
             throw new RuntimeException(e);
         }
     }
+
+    public ProductV2 retrieveProductDetailsHttp(String productId) {
+
+        // We will implement this using Structured Concurrency!
+        try (var scope = new StructuredTaskScope.ShutdownOnFailure())
+        {
+            // Fork the task. Where we make a calls!
+            var productsInfoSubTask = scope.fork(() -> productInfoService.retrieveProductInfoHttp(productId));
+            var reviewsSubTask = scope.fork(() -> reviewService.retrieveReviewsHttp(productId));
+
+            // Join the tasks. We will wait for the task to finish!
+            scope.join().throwIfFailed();
+
+            var productInfo = productsInfoSubTask.get();
+            var reviewsInfo = reviewsSubTask.get();
+
+            // We are getting DeliveryDetails.
+            var deliveryDetailsTask = scope.fork(() -> deliveryService.retrieveDeliveryInfoHttp(productInfo));
+            scope.join().throwIfFailed();
+
+            return new ProductV2(productId, productInfo, reviewsInfo, deliveryDetailsTask.get());
+
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
 }
