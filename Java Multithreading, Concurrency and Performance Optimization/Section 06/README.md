@@ -110,7 +110,7 @@ void aggregateFunction() {
 1. We will apply our `synchronized` for our old user case!
 
 > [!IMPORTANT]
-> **Rule of Thumb (very important)**
+> ⚠️ **Rule of Thumb (very important)** ⚠️
 > One should be using `synchronize` where the **shared data is**, not **where it is used**!
 
 - We will be using `synchronized` **keyword** on the shared object.
@@ -657,7 +657,7 @@ public class Main {
 1. We are **preferring** this overall picture! Where there is much smaller amounts for the idle period for the **executing threads**
 
 > [!NOTE]  
-> We should actually use the `synchronization` as little as possible!
+> 📝 We should actually use the `synchronization` as little as possible! 📝
 
 <div align="center">
     <img src="Atomic_Operations.PNG" width="600" alt="Threads multithreading."/>
@@ -683,6 +683,7 @@ public class Main {
     - So naturally **getter** and **setter** are also!
 
 > [!NOTE]  
+> 📝Remember!📝
 > ✅ `int` → primitive
 > ❌ `int []` → object/reference type
 

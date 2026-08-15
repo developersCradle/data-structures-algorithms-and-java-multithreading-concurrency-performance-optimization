@@ -19,4 +19,17 @@ public class BlockingController {
         this.remoteServiceClient = remoteServiceClient;
     }
 
+    @GetMapping("/blocking/{seconds}")
+    public  ResponseEntity<String> block(@PathVariable("seconds") Integer seconds){
+        log.info("Received the request with seconds : {}", seconds);
+        return ResponseEntity.ok(remoteServiceClient.invokeBlockingService(seconds));
+
+    }
+
+    @GetMapping("/currentThread")
+    public String currentThread(){
+        return Thread.currentThread().toString();
+    }
+
+
 }

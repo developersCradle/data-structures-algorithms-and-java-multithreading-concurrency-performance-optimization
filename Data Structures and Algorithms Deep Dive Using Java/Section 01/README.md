@@ -28,7 +28,7 @@ Introduction.
 1. There will be many more, but these are some.
 
 > [!IMPORTANT]  
-> Most these data structures are coded by the **Java team**, so we won't be coding these ourselves!
+> ⚠️ Most these data structures are coded by the **Java team**, so we won't be coding these ourselves! ⚠️
 
 
 <img src="proceedingConcept.PNG" alt="types" width="300"/>

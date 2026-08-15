@@ -215,7 +215,7 @@ public class Main {
 - This time it took `Elapsed time was 507 ms.`.
 
 > [!IMPORTANT]
-> To find the best portion for performance, one can experiment with **Initial Size** and the **Load Factor**.
+> ⚠️ To find the best portion for performance, one can experiment with **Initial Size** and the **Load Factor**. ⚠️
 
 - Don't put too big number for **HashMap**. It will take too much **memory** and, one would never use the full size of **HashMap**.
 

@@ -390,8 +390,8 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 - [x] [Section 05](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Modern%20Java%20%20Multithreading%20in%20Java%20using%20Virtual%20Threads/Section%2005#chapter-05---future-and-completablefuture) - Future and CompletableFuture. ✅
 - [x] [Section 06](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Modern%20Java%20%20Multithreading%20in%20Java%20using%20Virtual%20Threads/Section%2006#chapter-06---structured-concurrency-using-virtual-threads-preview-feature) - Structured Concurrency using Virtual Threads (Preview Feature). ✅
 - [x] [Section 07](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Modern%20Java%20%20Multithreading%20in%20Java%20using%20Virtual%20Threads/Section%2007#chapter-07---http-calls-using-virtual-threads) - HTTP calls using Virtual Threads. ✅
-- [x] [Section 08](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Modern%20Java%20%20Multithreading%20in%20Java%20using%20Virtual%20Threads/Section%2008#chapter-08---using-futures-with-virtual-threads) - Using Futures with Virtual Threads.
-- [x] [Section 09](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Modern%20Java%20%20Multithreading%20in%20Java%20using%20Virtual%20Threads/Section%2009#chapter-09---build-a-spring-boot-application-using-virtual-threads) - Build a Spring Boot Application using Virtual Threads. 
+- [x] [Section 08](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Modern%20Java%20%20Multithreading%20in%20Java%20using%20Virtual%20Threads/Section%2008#chapter-08---using-futures-with-virtual-threads) - Using Futures with Virtual Threads. ✅
+- [x] [Section 09](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Modern%20Java%20%20Multithreading%20in%20Java%20using%20Virtual%20Threads/Section%2009#chapter-09---build-a-spring-boot-application-using-virtual-threads) - Build a Spring Boot Application using Virtual Threads. ✅
 - [x] [Section 10](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Modern%20Java%20%20Multithreading%20in%20Java%20using%20Virtual%20Threads/Section%2010#chapter-10---load-test-using-ab--apache-http-server-benchmarking-tool) - Load Test using `ab` – Apache HTTP server benchmarking tool. 
 
 #### Additional stuff.
@@ -815,7 +815,7 @@ All course material from *Data Structures and Algorithms: Deep Dive Using Java* 
 
 > I once interviewed with 🌤️**Vaisala**🌤️ for the *Observation Network Manager NM10* role, where the technical discussion went deep into data structures and their operations. The interview challenged my understanding of trees, graphs, and time–space trade-offs in ways I hadn’t fully experienced before. [Project](https://www.vaisala.com/en/products/weather-environmental-sensors/observation-network-manager-nm10).
 >
-> Although I **wasn’t** selected for the position, the experience became a turning point. It drove me to truly internalize the concepts through a deep dive into `Data Structures and Algorithms using Java`, strengthening both my problem-solving approach and technical confidence for future challenges.
+> Although I **wasn’t** selected for the position, the experience became a turning point. It drove me to truly internalize the concepts through a deep dive into *Data Structures and Algorithms using Java*, strengthening both my problem-solving approach and technical confidence for future challenges.
 <br><br>
 ~ *DevelopersCradle*
 
@@ -986,7 +986,7 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 </p>
 
 > [!IMPORTANT]  
-> Comfortable requirements, one can open text editor and write data structure like **Linked List**.
+> ⚠️ Comfortable requirements, one can open text editor and write data structure like **Linked List**. ⚠️
 
 <details>
 

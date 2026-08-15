@@ -43,7 +43,7 @@ Just In Time Compilation and the Code Cache.
     - They all compile to **JVM** bytecode.
 
 > [!NOTE]
-> We will be comparing different **byte code** from different languages!
+> 📝 We will be comparing different **byte code** from different languages! 📝
 
 # The concept of "Just In Time Compilation".
 
@@ -82,7 +82,7 @@ Just In Time Compilation and the Code Cache.
 # Introducing the first example project.
 
 > [!NOTE]
-> There is **JVM flag** to inspect, which parts are going to be compiled to **machine code**!
+> 📝 There is **JVM flag** to inspect, which parts are going to be compiled to **machine code**! 📝
 
 - We are exploring the example, which we are running and checking which parts the **JIT** optimized into **system native code**! Implementation below:
 
@@ -240,7 +240,7 @@ public class Main {
 - Notice these **flags** are case-sensitive!
 
 > [!NOTE]
-> This **flag** lets you see when methods are compiled, by **which compiler**, and at what **optimization level**!
+> 📝 This **flag** lets you see when methods are compiled, by **which compiler**, and at what **optimization level**! 📝
 
 - We can provide these **flags** to the **JVM** when starting the **Java** program!
 
@@ -1043,7 +1043,7 @@ public class Main {
 	- This is based on the profiling, which have been done.
 
 > [!IMPORTANT]  
-> Every method compiled by **C1**, **C2**, or via **OSR** is stored as **native machine code** inside the **code cache**.
+> ⚠️ Every method compiled by **C1**, **C2**, or via **OSR** is stored as **native machine code** inside the **code cache**. ⚠️
 
 - From previous examples, we can see there are **two** compilations being done for the method `isPrime(...)`. They both have different code compilation level:
 	- **First**: `324  233       3       org.java.se.PrimeNumbers::isPrime (35 bytes)`

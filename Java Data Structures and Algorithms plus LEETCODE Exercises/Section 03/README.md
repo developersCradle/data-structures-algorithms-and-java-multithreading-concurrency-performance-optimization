@@ -31,4 +31,4 @@ Classes & References.
 1. In **Data Structures** it's very important to know the difference, when `Node` is `null`. It means it is not **pointing** to anything! It is **not empty value**, it is just pointing to `null` value!
 
 > [!IMPORTANT]
-> These kinds of classes are holding references
+> ⚠️ These kinds of classes are holding references! ⚠️

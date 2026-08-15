@@ -46,7 +46,7 @@ Data Sharing Between Threads.
         - The variables are pushed on the **new stack**! These variables are copies of `x`, `y` and `s` is evaluated on the **new stack**.
 
 > [!IMPORTANT]
-> Each method have access to its **own frames** and its **variables**.
+> ⚠️ Each method have access to its **own frames** and its **variables**. ⚠️
 
 <div align="center">
     <img src="How_The_Stack_Behaves.gif" width="700"/>
@@ -110,7 +110,7 @@ Data Sharing Between Threads.
     4. **Static** variables will be not be touched in their lifestyle.
 
 > [!IMPORTANT]
-> **References** to the Objects are **not** the same as **Objects**.
+>  **References** to the Objects are **not** the same as **Objects**. ⚠️
 
 <div align="center">
     <img src="Reference_Is_Not_Object.PNG" width="600"/>

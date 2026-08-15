@@ -142,35 +142,35 @@ Linked Lists.
     - **Example:** `[1, 2, 3] → append(4) → [1, 2, 3, 4]`.
 
 > [!NOTE]
-> *“append”* almost always means *“**add** to the **end**.”*
+> 📝 *“append”* almost always means *“**add** to the **end**.”* 📝
 
 2. Remove Last.
     - **Meaning:** Remove the **last element**.
     - **Example:** `[1, 2, 3] → remove last → [1, 2]`.
 
 > [!NOTE]
-> *“Remove Last”* is generally understood to mean **removing** the **last** element!
+> 📝 *“Remove Last”* is generally understood to mean **removing** the **last** element! 📝
 
 3. Prepend.
     - **Meaning:** Add an element to the **beginning**.
     - **Example:** `[1, 2, 3] → prepend(0) → [0, 1, 2, 3]`.
 
 > [!NOTE]
-> *“Prepend”* generally means **adding** an element to the **beginning** of a data structure, such as an array, list, or linked list.
+> 📝 *“Prepend”* generally means **adding** an element to the **beginning** of a data structure, such as an array, list, or linked list. 📝
 
 4. Remove First.
     - **Meaning:** Remove the **first element**.
     - **Example:** `[1, 2, 3] → remove first → [2, 3]`.
 
 > [!NOTE]
-> “Remove First” generally means **removing** the **first** element of a data structure.
+> 📝 “Remove First” generally means **removing** the **first** element of a data structure. 📝
 
 5. Insert.
     - **Meaning:** Add an element at a **specific position (index)**.
     - **Example:** `[1, 2, 4] → insert(2, 3) → [1, 2, 3, 4]`.
 
 > [!NOTE]
-> “Insert” generally means **adding** an element at a **specific position** (index) in a data structure.
+> 📝“Insert” generally means **adding** an element at a **specific position** (index) in a data structure. 📝
 
 6. Remove.
     - **Meaning:** Remove an element by **index or value**
@@ -179,21 +179,21 @@ Linked Lists.
         - By value: remove 2 → `[1, 3]`.
 
 > [!NOTE]
-> “Remove” generally means **removing** an element **by index** or value from a data structure.
+> 📝 “Remove” generally means **removing** an element **by index** or value from a data structure. 📝
 
 7. Lookup by Index.
     - **Meaning:** Access an element using its **position**.
     - **Example:** `arr[2]` → gets the 3rd element.
 
 > [!NOTE]
-> “Lookup by Index” generally means **accessing** an element using **its position** in a data structure.
+> 📝“Lookup by Index” generally means **accessing** an element using **its position** in a data structure. 📝
 
 8. Lookup by Value.
     - **Meaning:** Search for a **specific value**.
     - **Example:** find `3` in `[1, 2, 3]`.
 
 > [!NOTE]
-> “Lookup by Value” generally means **searching** for a **specific value** in a data structure.
+> 📝 “Lookup by Value” generally means **searching** for a **specific value** in a data structure. 📝
 
 # LL: Under the Hood.
 

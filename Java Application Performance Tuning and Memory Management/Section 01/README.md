@@ -27,7 +27,7 @@ Introduction.
 1. Designs choices and tuning the **JVM** or runtime aspects!
 
 > [!NOTE]
-> Java is two different things in this aspect:
+> 📝 Java is two different things in this aspect: 📝
 >    - The **Java** language.
 >        - This course will tackle 20% of **Java** itself.
 >    - The **JVM** machine itself.
@@ -57,7 +57,7 @@ Introduction.
 
 
 > [!NOTE]
-> Why is it called **HotSpot** in the *JDK*?
+> 📝 Why is it called **HotSpot** in the *JDK*? 📝
 >
 > **HotSpot** is the name of the JVM implementation used in the standard Oracle/OpenJDK distribution.
 >

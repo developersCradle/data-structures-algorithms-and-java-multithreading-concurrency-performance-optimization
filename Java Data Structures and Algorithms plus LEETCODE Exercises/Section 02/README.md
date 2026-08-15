@@ -127,7 +127,7 @@ public class Main {
 - As you can see this is proportional!
 
 > [!IMPORTANT]  
-> we can see that this is `O(n)` **Linear Time**
+> ⚠️ We can see that this is `O(n)` **Linear Time**! ⚠️
 
 # Coding Exercise 01 ↔ Big O: O(n).
 
@@ -223,7 +223,7 @@ public class Main {
 4. We **simplify** this `O(n)`. 
 
 > [!NOTE]
-> **Rule of simplification**: We always **drop** the **constants**!
+> 📝 **Rule of simplification**: We always **drop** the **constants**! 📝
 
 # Big O: O(n^2).
 
@@ -278,7 +278,7 @@ public class Main {
 3. This is `O(n^2)`.
 
 > [!IMPORTANT]  
->  We are calling this as `O(n^2)` **Quadratic Time**!
+> ⚠️ We are calling this as `O(n^2)` **Quadratic Time**! ⚠️
 
 <div align="center">
     <img src="O_Of_N_Pow_Two_Graph.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="700"/>
@@ -346,7 +346,7 @@ public static void printItems(int n) {
 1. We just drop the `n` and the `O(...)` case will be `n^2`!
 
 > [!NOTE]  
-> `O` was the worst case!
+> 📝 `O` was the worst case! 📝
 
 # Big O: O(1).
 
@@ -374,12 +374,12 @@ public static void printItems(int n) {
 3. `O(1)` is most **efficient**!
 
 > [!IMPORTANT]  
->  We are calling this as `O(1)` **Constant Time**!
+> ⚠️ We are calling this as `O(1)` **Constant Time**! ⚠️
 
 # Big O: O(log n).
 
 > [!IMPORTANT]  
-> In **Logarithmic Form**, we can tell how many times you divide something by `2`!
+> ⚠️ In **Logarithmic Form**, we can tell how many times you divide something by `2`! ⚠️
 
 <div align="center">
     <img src="O_Of_Log_N.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="700"/>
@@ -437,7 +437,7 @@ public static void printItems(int n) {
 3. Very flat `O(log n)`, not the best. `O(1)` is still the best!
 
 > [!IMPORTANT]  
->  We are calling this as`O(log n)`**Logarithmic Time**! 
+>  ⚠️ We are calling this as`O(log n)`**Logarithmic Time**! ⚠️
 
 <div align="center">
     <img src="Linearithmic_Time_Graph.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="700"/>
@@ -446,12 +446,12 @@ public static void printItems(int n) {
 1. We are using `O(n log n)` usually for the **Sorting**, example **Merge Sort** or example **Heap Sort**!
 
 > [!IMPORTANT]  
->  We are calling this as`O(n log n)` — **Linearithmic Time**! 
+> ⚠️ We are calling this as`O(n log n)` — **Linearithmic Time**! ⚠️
 
 # Big O: Different Terms for Input.
 
 > [!IMPORTANT]  
->  This is very common **interview** question! 
+> ⚠️ This is very common **interview** question! ⚠️
 
 <div align="center">
     <img src="Different_Terms_For_Inputs.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="700"/>
@@ -592,7 +592,7 @@ public static void printItems(int a, int b) {
 4. `O(n^2) = 1, 000,000`, where **spread** comes even more apparent, when `O(^2)` grows! This grew **very fast**!
 
 > [!IMPORTANT]  
-> If one can write function from `O(n^2)` to `O(n)`, it is big gain!
+> ⚠️ If one can write function from `O(n^2)` to `O(n)`, it is big gain! ⚠️
 
 <div align="center">
     <img src="Terms_For_These_Time_Complexities.PNG"  alt="Java Data Structures and Algorithms plus LEETCODE Exercises" width="700"/>

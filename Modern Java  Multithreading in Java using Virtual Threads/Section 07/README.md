@@ -298,14 +298,11 @@ public ProductV2 retrieveProductDetailsHttp(String productId) {
     }
 ````
 
-
 <div align="center">
     <img src="Testing_The_Structured_Concurrency_Virtual_Threads_With_The_Real_HTTP_Call.gif"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
 </div>
 
 - We can see the real HTTP calls is being made!
-
-
 
 <details>
 <summary id="Code_CompletableFuture" open="true"> <b>Code for the Simple WebServer, with test!</b> </summary>

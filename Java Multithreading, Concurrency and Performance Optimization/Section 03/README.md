@@ -740,7 +740,7 @@ for (int i = 0; i < inputNumbers.size(); i++) {
 1. Only one `FactorialThread` thread have been finished, by the time when the `main` **thread** has been finished.
 
 > [!IMPORTANT]
-> We are having **Race Condition**.
+> ⚠️ We are having **Race Condition**. ⚠️
 
 <div align="center">
     <img src="These_Two_Lines_Will_Have_Race_Condition.PNG"  alt="Java threads." width="700"/>

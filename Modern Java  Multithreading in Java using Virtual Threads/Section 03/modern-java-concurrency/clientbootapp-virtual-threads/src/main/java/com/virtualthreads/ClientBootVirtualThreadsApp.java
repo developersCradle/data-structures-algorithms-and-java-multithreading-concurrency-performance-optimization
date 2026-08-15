@@ -18,8 +18,6 @@ public class ClientBootVirtualThreadsApp {
     public static void main(String[] args) {
         SpringApplication.run(ClientBootVirtualThreadsApp.class, args);
         log.info("availableProcessors = {} ", Runtime.getRuntime().availableProcessors());
-
-
     }
 
     @EventListener(ApplicationReadyEvent.class)
