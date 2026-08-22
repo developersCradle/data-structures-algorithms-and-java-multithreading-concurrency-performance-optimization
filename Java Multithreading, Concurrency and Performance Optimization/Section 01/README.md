@@ -320,7 +320,7 @@ Introduction.
 <summary id="Thread progress
 " open="true"> <b>Question 01.</b> </summary>
 
-````yaml
+````Yaml
 Question 01:
 Why do we want to use multiple threads in an application?
 ````
@@ -340,7 +340,7 @@ Why do we want to use multiple threads in an application?
 <summary id="Thread progress
 " open="true"> <b>Question 02.</b> </summary>
 
-````yaml
+````Yaml
 Question 02:
 Multiple threads in a single process share
 ````
@@ -366,7 +366,7 @@ thread2 -> add(5, 6)
 <summary id="Thread progress
 " open="true"> <b>Question 03.</b> </summary>
 
-````yaml
+````Yaml
 Question 03:
 How does the Operating System decide what thread to schedule?
 ````

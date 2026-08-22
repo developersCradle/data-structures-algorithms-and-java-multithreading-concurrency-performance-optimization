@@ -661,7 +661,7 @@ public class LogarithmicExample {
 
 <summary id="Q1" open="true"> <b>Question 01.</b> </summary>
 
-````yaml
+````Yaml
 Question 01:
 What is the Big O time complexity when you have a loop within a loop (assuming each loop runs n times)?
 ````
@@ -680,7 +680,7 @@ What is the Big O time complexity when you have a loop within a loop (assuming e
 
 <summary id="Q2" open="true"> <b>Question 02.</b> </summary>
 
-````yaml
+````Yaml
 Question 02:
 How would the following be written:  O(100n^2)?
 ````
@@ -699,7 +699,7 @@ How would the following be written:  O(100n^2)?
 
 <summary id="Q3"  open="true"> <b>Question 03.</b> </summary>
 
-````yaml
+````Yaml
 Question 03:
 What Big O is associated with Divide and Conquer?
 ````
@@ -719,7 +719,7 @@ What Big O is associated with Divide and Conquer?
 
 <summary id="Q4" open="true"> <b>Question 04.</b> </summary>
 
-````yaml
+````Yaml
 Question 04:
 What is the correct way to write:  O(n^2 + n) ?
 ````
@@ -739,7 +739,7 @@ What is the correct way to write:  O(n^2 + n) ?
 
 <summary id="Q5" open="true"> <b>Question 05.</b> </summary>
 
-````yaml
+````Yaml
 Question 05:
 The most efficient Big O is:
 ````

@@ -16,9 +16,14 @@ Getting Started With the Course.
     <img src="What_Covered_In_This_Course.PNG"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
 </div>
 
+- Who should enroll into this:
 
 <div align="center">
     <img src="Target_Audiance.PNG"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
 </div>
 
 # Pre-requestites.
+
+<div align="center">
+    <img src="Prerequisites.PNG"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+</div>

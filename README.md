@@ -24,7 +24,7 @@ Template for the questions:
 
 <details>
 <summary id="Question_01" open="true"> <b>Question 01.</b> </summary>
-````yaml
+````Yaml
 Question 01:
 The question comes here!
 

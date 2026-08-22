@@ -10,7 +10,7 @@ Getting Started with Java Threads (Platform Threads).
     <img src="Why_We_Need_Virtual_Threads.PNG"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
 </div>
 
-1. Threads have been existed since 1.0.
+1. Threads have been existed since **Java 1.0**.
 2. This will be executed from the *Main* **Thread**!
 
 <div align="center">
@@ -207,8 +207,6 @@ public class MaxThreads {
 
         CommonUtil.sleep(5000);
         log("finished doSomeWork : " + index);
-
-
     }
 
     public static void main(String[] args) {
@@ -219,13 +217,16 @@ public class MaxThreads {
                 .forEach(i -> {
                     Thread.ofPlatform().start(() -> MaxThreads.doSomeWork(i));
                 });
-
-
         log("Program Completed!");
-
     }
 }
 ````
+
+<div align="center">
+    <img src="Check_The_Memory_Settings_For_The_Program.PNG"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+</div>
+
+1. To check and make modifications for the JVM program! 
 
 - Example of using `MAX_THREADS`!
 
@@ -240,14 +241,13 @@ public class MaxThreads {
                 });
 
         log("Program Completed!");
-
     }
 ````
 
 - We can see that there is **HUGE** amount of threads!
 
 <div align="center">
-    <img src="Ammount_Of_Huge_Threads_Executed.gif"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+    <img src="Executing_Platform_Threads.gif"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
 </div>
 
 - We can see that, every request is making blocking class!
@@ -277,7 +277,9 @@ public class MaxThreads {
 </div>
 
 1. By nature **Java Threads** is **blocked** and **tied** until its completes!
-2. 99.99% is time is blocked, while waiting!
+2. **99.99%** is time is blocked, while waiting!
+
+- Next explore that, is the **thread** that was executed, blocked and that the **thread** that ended.  
 
 - **Second problem** with threads, is the blocking nature of the threads! 
  
@@ -285,16 +287,99 @@ public class MaxThreads {
     <img src="Thread_Being_Blocked.PNG"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
 </div>
 
-1. Thread that makes a call, is being blocked, while its making call!
-    - Any task that's started by a thread is blocked until it completes.
+1. Thread that makes a call **is being blocked**, while its making call!
+    - Any task that's started by a **thread is blocked** until it completes.
         - It could be any **IO call** such as **HTTP** or **File IO call**.
 
 - This is why there are **Virtual Threads**!
 
+<details>
+<summary id="Code_For_MaxThreads" open="true"> <b>Code for the MaxThreads!</b> </summary>
+ 
+ #### MaxThreads.java
 
-- Add exercieses here
+````Java
+package com.modernjava.threads;
+
+
+import com.modernjava.util.CommonUtil;
+
+import java.util.concurrent.atomic.AtomicInteger;
+import java.util.stream.IntStream;
+
+import static com.modernjava.util.LoggerUtil.log;
+
+public class MaxThreads {
+
+    static AtomicInteger atomicInteger = new AtomicInteger();
+
+    public static void doSomeWork(int index) {
+        log("started doSomeWork : " + index);
+        //Any task that's started by a thread is blocked until it completes.
+        //It could be any IO call such as HTTP or File IO call.
+
+        CommonUtil.sleep(5000);
+        log("finished doSomeWork : " + index);
+
+
+    }
+
+    public static void main(String[] args) {
+
+        int MAX_THREADS = 10_000;
+
+        IntStream.rangeClosed(1, MAX_THREADS)
+                .forEach(i -> {
+                    Thread.ofPlatform().start(() -> MaxThreads.doSomeWork(i));
+                });
+        log("Program Completed!");
+    }
+}
+````
+</details>
 
 # Effects of Threads in a Backend WebApplication.
 
+<div align="center">
+    <img src="Typical_Backend_Application_Architecture.gif"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+</div>
 
-- TOdo
+1. **Thread** is getting assigned from the **thread pool**! 
+    - Thread `T1`, will be responsible for managing the **threads' lifecycle**!
+2. When it returns, it will be making the database call!
+3. Response is **retuned to client**, the connection is released and **retuned to the thread pool**!
+
+
+- Let's figure the if external service gets blocked! 
+
+<div align="center">
+    <img src="Typical_Backend_Application_Architecture_When_Making_Multiple_Queries.gif"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+</div>
+
+1. We are making the call to **remove service** and this is not **responding very well**!
+    - Threads get **blocked**!
+        - The **thread pool** gets exhausted with the requests!
+            - There is no available threads from thread pool!
+
+- Details about the thread:
+
+<div align="center">
+    <img src="Typical_Backend_Application_Architecture_Second.PNG"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+</div>
+
+1. Thread is expensive request!
+
+- There is reactive programming:
+
+<div align="center">
+    <img src="Reactive_Programming.PNG"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+</div>
+
+- There is option to use **virtual threads**:
+
+<div align="center">
+    <img src="Virtaul_Threads_Possibility.PNG"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+</div>
+
+1. For this there are virtual threads!
+

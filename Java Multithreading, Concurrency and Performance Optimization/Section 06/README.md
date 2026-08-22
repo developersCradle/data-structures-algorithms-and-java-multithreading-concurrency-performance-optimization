@@ -26,14 +26,13 @@ The Concurrency Challenges & Solutions.
 
 - We would need to execute **set** of operation, which would need to be executed as **single atomic operation**.
     - **Two** threads could be performing these set of codes **at the same time**. Example set of operations below:
-
-````Java
-void aggregateFunction() {
-    operation1();
-    operation2();
-    operation3();
-}
-````
+        ````Java
+        void aggregateFunction() {
+            operation1();
+            operation2();
+            operation3();
+        }
+        ````
 
 <div align="center">
     <img src="Critical_Section.gif" width="700" alt="Threads multithreading."/>
@@ -75,26 +74,25 @@ void aggregateFunction() {
 1. **First** the Monitor way!
     - `synchronized` ensures that only **one thread** at a time can execute any synchronized method of that particular object instance (`method1()`, `method2()`, etc.). Other threads must wait until the monitor (lock) is released.
     - Only *one* **synchronized method** can be run at a time:
+        ````Java
+        ClassWithCriticalSections obj = new ClassWithCriticalSections();
 
-    ````Java
-    ClassWithCriticalSections obj = new ClassWithCriticalSections();
-
-    Thread t1 = new Thread(() -> obj.method1()); // This works.
-    Thread t2 = new Thread(() -> obj.method1()); // This wont works!
-    
-    t1.start(); // This works.
-    t2.start(); // This wont work!
-    ````
+        Thread t1 = new Thread(() -> obj.method1()); // This works.
+        Thread t2 = new Thread(() -> obj.method1()); // This wont works!
+        
+        t1.start(); // This works.
+        t2.start(); // This wont work!
+        ````
     - We could start `a.method1()` and `b.method1()` at the same time, since `synchronized` keyword **locks the object**, **not the class**! Example in below:
-    ````Java
-    ClassWithCriticalSections obj1 = new ClassWithCriticalSections();
-    ClassWithCriticalSections obj2 = new ClassWithCriticalSections();
+        ````Java
+        ClassWithCriticalSections obj1 = new ClassWithCriticalSections();
+        ClassWithCriticalSections obj2 = new ClassWithCriticalSections();
 
-    Thread t1 = new Thread(() -> obj1.method1()); // This works.
-    Thread t2 = new Thread(() -> obj2.method1()); // This works.
-    t1.start(); // This works.
-    t2.start(); // This works.
-    ````
+        Thread t1 = new Thread(() -> obj1.method1()); // This works.
+        Thread t2 = new Thread(() -> obj2.method1()); // This works.
+        t1.start(); // This works.
+        t2.start(); // This works.
+        ````
         
 <div align="center">
     <img src="Synchronized_Used_In_The_Block_Second.PNG" width="600" alt="Threads multithreading."/>
@@ -397,7 +395,7 @@ public class Main {
 <summary id="Thread progress
 " open="true"> <b>Question 01.</b> </summary>
 
-````yaml
+````Yaml
 Question 01:
 Which statement is correct?
 ````
@@ -448,7 +446,7 @@ public class Main {
 <summary id="Thread progress
 " open="true"> <b>Question 02.</b> </summary>
 
-````yaml
+````Yaml
 Question 02:
 Which one is true?
 ````
@@ -502,7 +500,7 @@ public class Main {
 <summary id="Thread progress
 " open="true"> <b>Question 03.</b> </summary>
 
-````yaml
+````Yaml
 Question 03:
 Which statement is correct?
 ````
@@ -554,7 +552,7 @@ public class Main {
 <summary id="Thread progress
 " open="true"> <b>Question 04.</b> </summary>
 
-````yaml
+````Yaml
 Question 04:
 Which statement is the most correct?
 ````
@@ -742,24 +740,23 @@ public class Main {
     - For the example **important operations**.
 
 - Example looking following code:
+    ````Java
+        public static class Metrics {
+            private long count = 0;
+            private double average = 0.0;
 
-````Java
-    public static class Metrics {
-        private long count = 0;
-        private double average = 0.0;
+            public void addSample(long sample) {
+                double currentSum = average * count;
+                count++;
+                average = (currentSum + sample) / count;
+            }
 
-        public void addSample(long sample) {
-            double currentSum = average * count;
-            count++;
-            average = (currentSum + sample) / count;
+            public double getAverage()
+            {
+                return average;
+            }
         }
-
-        public double getAverage()
-        {
-            return average;
-        }
-    }
-````
+    ````
 
 - We are analyzing and making this code as **atomic** as possible!
 
@@ -990,7 +987,7 @@ public class Main {
 
 # Quiz 07: Atomic Operations, Volatile & Metrics Practical Example.
 
-- explonations for second
+- Explanations for second
 
 temp = counter;
 temp = temp + 1;
@@ -1000,7 +997,7 @@ counter = temp;
 
 <summary id="Question_01" open="true"> <b>Question 01.</b> </summary>
 
-````yaml
+````Yaml
 Question 01:
 Why do we want to use multiple threads in an application?
 ````
@@ -1015,11 +1012,13 @@ Why do we want to use multiple threads in an application?
 
 </details>
 
+- todo add her
+
 <details>
 
 <summary id="Question_02" open="true"> <b>Question 02.</b> </summary>
 
-````yaml
+````Yaml
 Question 02:
 Which of the following operations are atomic and free of race conditions?
 ````
@@ -1327,7 +1326,7 @@ public class Main {
 <summary id="Thread progress
  " open="true"> <b>Question 01.</b> </summary>
 
-````yaml
+````Yaml
 Question 01:
 Why do we want to use multiple threads in an application?
 ````
@@ -1347,7 +1346,7 @@ Why do we want to use multiple threads in an application?
 <summary id="Thread progress
 " open="true"> <b>Question 02.</b> </summary>
 
-````yaml
+````Yaml
 Question 02:
 Multiple threads in a single process share
 ````
@@ -1373,7 +1372,7 @@ thread2 -> add(5, 6)
 <summary id="Thread progress
 " open="true"> <b>Question 03.</b> </summary>
 
-````yaml
+````Yaml
 Question 03:
 How does the Operating System decide what thread to schedule?
 ````
@@ -1642,25 +1641,24 @@ public class Main {
 
 1. We are changing locking order to be the same. It will have **no circular dependencies**!
 
-- Let's change lock the principle to be the same!
+- Let's change lock the principle to be the same! As following:
+    ````Java
 
-````Java
+            public void takeRoadB() {
+                synchronized (roadA) {
+                    System.out.println("Road A is locked by thread " + Thread.currentThread().getName());
 
-        public void takeRoadB() {
-            synchronized (roadA) {
-                System.out.println("Road A is locked by thread " + Thread.currentThread().getName());
+                    synchronized (roadB) {
+                        System.out.println("Train is passing through road B");
 
-                synchronized (roadB) {
-                    System.out.println("Train is passing through road B");
-
-                    try {
-                        Thread.sleep(1);
-                    } catch (InterruptedException e) {
+                        try {
+                            Thread.sleep(1);
+                        } catch (InterruptedException e) {
+                        }
                     }
                 }
             }
-        }
-````
+    ````
 
 - As one can see the locking order is the same as in the `public void takeRoadA()`.
 
@@ -1819,7 +1817,7 @@ public class Main {
 
 <summary id="Quiz_01" open="true"> <b>Question 01.</b> </summary>
 
-````yaml
+````Yaml
 Question 01:
 Is there a potential deadlock in this class?
 ````
@@ -1838,7 +1836,7 @@ Is there a potential deadlock in this class?
 
 <summary id="Quiz_02" open="true"> <b>Question 02.</b> </summary>
 
-````yaml
+````Yaml
 Question 02:
 What is the downside of this synchronization/locking design?
 ````
@@ -1857,7 +1855,7 @@ What is the downside of this synchronization/locking design?
 
 <summary id="Quiz_03" open="true"> <b>Question 03.</b> </summary>
 
-````yaml
+````Yaml
 Question 03:
 Are there any potential problems with this approach?
 ````

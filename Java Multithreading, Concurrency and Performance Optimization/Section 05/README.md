@@ -403,7 +403,7 @@ public class Example {
 
 - Next experiment will be having **two threads** and **both** have simple counting solution, as follows: 
 
-````
+````Java
 InventoryCounter inventoryCounter = new InventoryCounter();
         IncrementingThread incrementingThread = new IncrementingThread(inventoryCounter);
         DecrementingThread decrementingThread = new DecrementingThread(inventoryCounter);
@@ -502,14 +502,13 @@ public class Main {
 </details>
 
 - Next we will be experimenting with the **threads** with **non sequence execution**, with following changes:
+    ````Java 
+            incrementingThread.start();
+            decrementingThread.start();
 
-````Java 
-        incrementingThread.start();
-        decrementingThread.start();
-
-        decrementingThread.join();
-        incrementingThread.join();
-````
+            decrementingThread.join();
+            incrementingThread.join();
+    ````
 
 > [!CAUTION]
 > We can see the inconsistency in the logs, this is during different executions!
@@ -611,7 +610,7 @@ public class Main {
 </div>
 
 1. `InventoryCounter` is **shared object**, since it used with the `new` operation is used, and this will be allocated in the **heap**! The code below:
-    ````
+    ````Java
     InventoryCounter inventoryCounter = new InventoryCounter();
     IncrementingThread incrementingThread = new IncrementingThread(inventoryCounter);
     DecrementingThread decrementingThread = new DecrementingThread(inventoryCounter);

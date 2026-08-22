@@ -400,7 +400,7 @@ public class Main {
 <summary id="Thread progress
 " open="true"> <b>Question 01.</b> </summary>
 
-````yaml
+````Yaml
 Question 01:
 How does the Operating System decide what thread to schedule?
 ````
@@ -420,7 +420,7 @@ How does the Operating System decide what thread to schedule?
 <summary id="Thread progress
 " open="true"> <b>Question 02.</b> </summary>
 
-````yaml
+````Yaml
 Question 02:
 How does the Operating System decide what thread to schedule?
 ````

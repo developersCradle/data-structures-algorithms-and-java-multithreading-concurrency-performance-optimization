@@ -1074,15 +1074,15 @@ public class Main {
 
 - We can see here from the file, of the process how is the `isPrime(...)` getting compiled, with the `c2` compiler! 
 	- **Firstly** we can see `task_queued`, its being placed on the **queued**:
-	````xml
+	````Xml
 	<task_queued compile_id='207' method='org.java.se.PrimeNumbers isPrime (Ljava/lang/Integer;)Ljava/lang/Boolean;' bytes='35' count='171' backedge_count='3072' iicount='171' level='3' stamp='0.238' comment='tiered' hot_count='171'/>
 	````
 	- **Secondly**, the method `isPrime(...)` was **compiled** by `c1` at tier **level 3**:
-	````xml
+	````Xml
 	<method id='1411' holder='1394' name='isPrime' return='1335' arguments='1342' flags='2' bytes='35' compile_id='207' compiler='c1' level='3' iicount='1787'/>
 	````
 	- **Thirdly**, later the method was successfully **compiled** and installed into the **code cache** and usage of compiler `c2`:
-	````xml
+	````Xml
 	<nmethod compile_id='212' compile_kind='osr' compiler='c2' level='4' entry='0x000001a3496b59a0' size='1440' address='0x000001a3496b5810' relocation_offset='352' insts_offset='400' stub_offset='1208' scopes_data_offset='1256' scopes_pcs_offset='1320' dependencies_offset='1416' nul_chk_table_offset='1424' oops_offset='1232' metadata_offset='1240' method='org.java.se.PrimeNumbers isPrime (Ljava/lang/Integer;)Ljava/lang/Boolean;' bytes='35' count='2801' backedge_count='535393' iicount='2801' stamp='0.248'/>
 	````
 

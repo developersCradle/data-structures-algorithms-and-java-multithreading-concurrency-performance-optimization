@@ -474,7 +474,7 @@ AnimationTimer animationTimer = new AnimationTimer() {
 
 <summary id="Question_01" open="true"> <b>Question 01.</b> </summary>
 
-````yaml
+````Yaml
 Question 01:
 What is the potential danger with the current implementation?
 ````
@@ -493,7 +493,7 @@ What is the potential danger with the current implementation?
 
 <summary id="Question_02" open="true"> <b>Question 02.</b> </summary>
 
-````yaml
+````Yaml
 Question 02:
 Is this implementation safe?
 ````
@@ -645,10 +645,14 @@ Is this implementation safe?
             }
     ````
 
+
 - The individual pieces:
-    - `priceToCountMap.ceilingKey(lowerBound);` Call will *Gives me the next matching key at or above this value”*.
-    - `priceToCountMap.floorKey(upperBound);` *Finds the greatest key in priceToCountMap that is less than or equal to upperBound*.
-    - `NavigableMap<Integer, Integer> rangeOfPrices = priceToCountMap.subMap(fromKey, true, toKey, true);` Get **snapshot** of the given range.
+    - `priceToCountMap.ceilingKey(lowerBound);` 
+        - Call will *"Gives me the next matching key at or above this value”*!
+    - `priceToCountMap.floorKey(upperBound);`
+        - Call will *Finds the greatest key in priceToCountMap that is less than or equal to upperBound*!
+    - `NavigableMap<Integer, Integer> rangeOfPrices = priceToCountMap.subMap(fromKey, true, toKey, true);` 
+        - Get **snapshot** of the given range!
     - We will be adding the `sum`.
     ````Java
     int sum = 0;

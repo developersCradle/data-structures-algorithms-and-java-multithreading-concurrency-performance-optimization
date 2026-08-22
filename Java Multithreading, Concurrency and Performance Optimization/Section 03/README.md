@@ -633,7 +633,7 @@ $$
 
 - Calculating **thread** for given **factorial** number: 
 
-````
+````Java
         public BigInteger factorial(long n) {
             BigInteger tempResult = BigInteger.ONE;
 
@@ -763,7 +763,7 @@ for (int i = 0; i < inputNumbers.size(); i++) {
     - `join()` makes the **calling thread wait**!
     - Execution only continues after **all threads** have finished.
 
-````
+````Java
         for (Thread thread : threads) {
             thread.join();
         }
@@ -782,7 +782,7 @@ for (int i = 0; i < inputNumbers.size(); i++) {
 - We can give max seconds to the `.join()` to give grace time. 
     - `thread.join(2000);` → this makes the **two seconds** waiting! Example below of waiting:
 
-````
+````Java
         for (Thread thread : threads) {
             thread.join(2000); // This makes the thread wait for the two second, if its not finished it will exclude it out!
         }

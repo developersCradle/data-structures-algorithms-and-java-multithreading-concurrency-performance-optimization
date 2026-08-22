@@ -324,7 +324,7 @@ public class MaxVirtualThreads {
 
 <details>
 <summary id="Question_01" open="true"> <b>Question 01.</b> </summary>
-````yaml
+````Yaml
 Question 01:
 The question comes here!
 
@@ -337,4 +337,3 @@ The question comes here!
 1. Add here the answer!
 
 </details>
--->
