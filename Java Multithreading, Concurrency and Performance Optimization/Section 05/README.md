@@ -189,8 +189,9 @@ Object obj = new Object();
 
 <details>
 
-<summary id="Thread progress
-" open="true"> <b>Question 01.</b> </summary>
+<summary 
+id="Quiz_05_Question_01"
+open="true"> <b>Question 01.</b> </summary>
 
 ````Yaml
 Question 01:
@@ -232,8 +233,9 @@ public class Example {
 
 <details>
 
-<summary id="Thread progress
-" open="true"> <b>Question 02.</b> </summary>
+<summary 
+id="Quiz_05_Question_02"
+open="true"> <b>Question 02.</b> </summary>
 
 ````Yaml
 Question 02:
@@ -275,8 +277,9 @@ public class Example {
 
 <details>
 
-<summary id="Thread progress
-" open="true"> <b>Question 03.</b> </summary>
+<summary 
+id="Quiz_05_Question_03"
+open="true"> <b>Question 03.</b> </summary>
 
 ````Yaml
 Question 03:
@@ -318,8 +321,9 @@ public class Example {
 
 <details>
 
-<summary id="Thread progress
-" open="true"> <b>Question 04.</b> </summary>
+<summary 
+id="Quiz_05_Question_04"
+open="true"> <b>Question 04.</b> </summary>
 
 ````Yaml
 Question 04:
@@ -422,7 +426,9 @@ InventoryCounter inventoryCounter = new InventoryCounter();
 
 
 <details>
-<summary id="The factorial thread" open="true"> <b>Two different threads, with .join as working!</b> </summary>
+<summary 
+id="Two_Different_Threads_Join"
+open="true"> <b>Two different threads, with .join as working!</b> </summary>
 
 ````Java
 /*
@@ -514,13 +520,17 @@ public class Main {
 > We can see the inconsistency in the logs, this is during different executions!
 
 <div align="center">
-    <img src="Two_Threads_Running_Separately_As_Both_Mofying_The_Values.gif" width="900"/>
+    <img 
+    src="Two_Threads_Running_Separately_As_Both_Modifying_The_Values.gif"
+    width="900"/>
 </div>
 
 1. You can see that logs having `We currently have -83 items` or the `We currently have 610 items` these changing at every execution.
 
 <details>
-<summary id="The factorial thread" open="true"> <b>Two different threads, with .join not  working!</b> </summary>
+<summary 
+id="Two_Different_Threads_Join_Not_Working"
+open="true"> <b>Two different threads, with .join not  working!</b> </summary>
 
 ````Java 
 /*

@@ -116,11 +116,15 @@ You can see it's now fixed.
     - We are getting consistent results!
 
 <div align="center">
-    <img src="Using_Synchronized.gif" width="700" alt="Threads multithreading."/>
+    <img 
+    src="Using_Synchronized_Keyword.gif"
+    width="700" alt="Threads multithreading."/>
 </div>
 
 <details>
-<summary id="The_Synchronized_Keyword_In_Locking_Monitor_Way!" open="true"> <b>Usage of synchronized key word in where data is shared! The Locking Monitor way!</b> </summary>
+<summary 
+id="The_Synchronized_Keyword_In_Locking_Monitor_Way"
+open="true"> <b>Usage of synchronized key word in where data is shared! The Locking Monitor way!</b> </summary>
 
 ````Java 
 /*
@@ -271,12 +275,15 @@ public class Main {
     ````
 
 <div align="center">
-    <img src="Using_Synchronized_As_Lock_With_Multiple_Blocking_Objects_Code_Example.gif" width="700" alt="Threads multithreading."/>
+    <img 
+    src="Using_Synchronized_As_Lock_With_Multiple_Blocking_Objects_Code_Example.gif" width="700" 
+    alt="Threads multithreading."/>
 </div>
 
 1. We can see that we are having **consistent** results with the **blocking separate codes**.
 <details>
-<summary id="The_Synchronized_Block" open="true"> <b>We are using the synchronized for blocking the some parts of critical section!</b> </summary>
+<summary 
+id="The_Synchronized_Block" open="true"> <b>We are using the synchronized for blocking the some parts of critical section!</b> </summary>
 
 ````Java
 /*
@@ -392,8 +399,9 @@ public class Main {
 # Quiz 06: Critical Section & Synchronization.
 
 <details>
-<summary id="Thread progress
-" open="true"> <b>Question 01.</b> </summary>
+<summary 
+id="Quiz_06_Question_01"
+open="true"> <b>Question 01.</b> </summary>
 
 ````Yaml
 Question 01:
@@ -443,8 +451,9 @@ public class Main {
 
 <details>
 
-<summary id="Thread progress
-" open="true"> <b>Question 02.</b> </summary>
+<summary 
+id="Quiz_06_Question_02"
+open="true"> <b>Question 02.</b> </summary>
 
 ````Yaml
 Question 02:
@@ -497,8 +506,9 @@ public class Main {
 
 <details>
 
-<summary id="Thread progress
-" open="true"> <b>Question 03.</b> </summary>
+<summary 
+id="Quiz_06_Question_03"
+open="true"> <b>Question 03.</b> </summary>
 
 ````Yaml
 Question 03:
@@ -549,8 +559,9 @@ public class Main {
 
 <details>
 
-<summary id="Thread progress
-" open="true"> <b>Question 04.</b> </summary>
+<summary 
+id="Quiz_06_Question_04"
+open="true"> <b>Question 04.</b> </summary>
 
 ````Yaml
 Question 04:
@@ -875,8 +886,9 @@ System.out.println(count); // Often less than 2000!
 3. Atomic operations when making performant operation!
 
 <details>
-<summary id="Atomic_Operation_Measuring
-" open="true"> <b>Atomic operation measured code!</b> </summary>
+<summary 
+id="Atomic_Operation_Measuring"
+open="true"> <b>Atomic operation measured code!</b> </summary>
 
 ````Java
 /*
@@ -995,7 +1007,9 @@ counter = temp;
 
 <details>
 
-<summary id="Question_01" open="true"> <b>Question 01.</b> </summary>
+<summary 
+id="Quiz_07_Question_01"
+open="true"> <b>Question 01.</b> </summary>
 
 ````Yaml
 Question 01:
@@ -1016,7 +1030,9 @@ Why do we want to use multiple threads in an application?
 
 <details>
 
-<summary id="Question_02" open="true"> <b>Question 02.</b> </summary>
+<summary 
+id="Quiz_07_Question_02"
+open="true"> <b>Question 02.</b> </summary>
 
 ````Yaml
 Question 02:
@@ -1039,7 +1055,9 @@ Which of the following operations are atomic and free of race conditions?
 # Coding Exercise 03: Min - Max Metrics.
 
 <details>
-<summary id="coding_exercise_03_min_max_metrics" open="true"> <b>Coding Exercise 03: Min - Max Metrics! My Answer!</b> </summary>
+<summary 
+id="Coding_Exercise_03_Min_Max_Metrics"
+open="true"> <b>Coding Exercise 03: Min - Max Metrics! My Answer!</b> </summary>
 
 <div align="center">
     <img src="Min_Max_Matrix_Exercise.PNG"  alt="Coding exercise 03: min - max metrics!" width="600"/>
@@ -1092,7 +1110,9 @@ public class MinMaxMetrics {
 # Min - Max Metrics - Solution.
 
 <details>
-<summary id="coding_exercise_03_min_max_metrics_solution" open="true"> <b>Coding Exercise 03: Min - Max Metrics! My Teachers Solution!</b> </summary>
+<summary 
+id="Coding_Exercise_03_Min_Max_Metrics_Solution"
+open="true"> <b>Coding Exercise 03: Min - Max Metrics! My Teachers Solution!</b> </summary>
 
 <div align="center">
     <img src="Min_Max_Matrix_Exercise.PNG"  alt="Coding exercise 03: min - max metrics!" width="600"/>
@@ -1266,8 +1286,12 @@ public class MinMaxMetrics {
 1.
 2.
 
+- todo tämä
+
 <details>
-<summary id="Data_Race_Codes" open="true"> <b>Data Races code!</b> </summary>
+<summary 
+id="Data_Race_Codes"
+open="true"> <b>Data Races code!</b> </summary>
 
 ````Java
 /*
@@ -1323,8 +1347,9 @@ public class Main {
 
 <details>
 
-<summary id="Thread progress
- " open="true"> <b>Question 01.</b> </summary>
+<summary 
+id="Quiz_08_Question_01"
+open="true"> <b>Question 01.</b> </summary>
 
 ````Yaml
 Question 01:
@@ -1343,8 +1368,9 @@ Why do we want to use multiple threads in an application?
 
 <details>
 
-<summary id="Thread progress
-" open="true"> <b>Question 02.</b> </summary>
+<summary 
+id="Quiz_08_Question_02"
+open="true"> <b>Question 02.</b> </summary>
 
 ````Yaml
 Question 02:
@@ -1369,8 +1395,9 @@ thread2 -> add(5, 6)
 
 <details>
 
-<summary id="Thread progress
-" open="true"> <b>Question 03.</b> </summary>
+<summary 
+id="Quiz_08_Question_03"
+open="true"> <b>Question 03.</b> </summary>
 
 ````Yaml
 Question 03:
@@ -1481,13 +1508,19 @@ How does the Operating System decide what thread to schedule?
 5. This is how we get the **Deadlock** occurring!
 
 <div align="center">
-    <img src="We_Are_Implementing_The_Railwork_System.PNG" width="600" alt="Threads multithreading."/>
+    <img 
+    src="We_Are_Implementing_The_Railwork_System.PNG" 
+    width="600" 
+    alt="Threads multithreading."/>
 </div>
 
 1. We will be make working **Railroad Traffic Control** system!
 
 <div align="center">
-    <img src="Data_Lock_Illustration_Railroad.gif" width="600" alt="Threads multithreading."/>
+    <img 
+    src="Data_Lock_Illustration_Railroad.gif"
+    width="600" 
+    alt="Threads multithreading."/>
 </div>
 
 1. The **deadlock** example, the logs as below:
@@ -1497,7 +1530,9 @@ How does the Operating System decide what thread to schedule?
     ````
 
 <details>
-<summary id="Deadlock_Railroad_Traffic_Control_Example" open="true"> <b>Deadlock Railroad Traffic Control Example!</b> </summary>
+<summary
+id="Deadlock_Railroad_Traffic_Control_Example"
+open="true"> <b>Deadlock Railroad Traffic Control Example!</b> </summary>
 
 ````Java
 /*
@@ -1691,7 +1726,9 @@ public class Main {
 1. Every method must acquire them in the same order.
 
 <details>
-<summary id="Deadlock_Fixed_Railroad_Traffic_Control_Example" open="true"> <b>Deadlock Fixed In Railroad Traffic Control Example!</b> </summary>
+<summary
+id="Deadlock_Fixed_Railroad_Traffic_Control_Example"
+open="true"> <b>Deadlock Fixed In Railroad Traffic Control Example!</b> </summary>
 
 ````Java
 /*
@@ -1815,7 +1852,9 @@ public class Main {
 
 <details>
 
-<summary id="Quiz_01" open="true"> <b>Question 01.</b> </summary>
+<summary
+id="Quiz_09_Question_01"
+open="true"> <b>Question 01.</b> </summary>
 
 ````Yaml
 Question 01:
@@ -1834,7 +1873,8 @@ Is there a potential deadlock in this class?
 
 <details>
 
-<summary id="Quiz_02" open="true"> <b>Question 02.</b> </summary>
+<summary 
+id="Quiz_09_Question_02" open="true"> <b>Question 02.</b> </summary>
 
 ````Yaml
 Question 02:
@@ -1853,7 +1893,9 @@ What is the downside of this synchronization/locking design?
 
 <details>
 
-<summary id="Quiz_03" open="true"> <b>Question 03.</b> </summary>
+<summary 
+id="Quiz_09_Question_03"
+open="true"> <b>Question 03.</b> </summary>
 
 ````Yaml
 Question 03:

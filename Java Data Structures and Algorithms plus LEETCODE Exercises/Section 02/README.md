@@ -132,7 +132,9 @@ public class Main {
 # Coding Exercise 01 ↔ Big O: O(n).
 
 <details>
-<summary id="coding_exercise_01_big" open="true"> <b>Coding Exercise 01: Big O: O(n)!</b> </summary>
+<summary 
+id="Coding_Exercise_01_Big"
+open="true"> <b>Coding Exercise 01: Big O: O(n)!</b> </summary>
 
 <div align="center">
     <img src="Coding_Exercise_01_Big_O.PNG"  alt="Coding Exercise 01 Big O Exercise." width="500"/>
@@ -658,8 +660,9 @@ public class LogarithmicExample {
 # Quiz 01: Big O.
 
 <details>
-
-<summary id="Q1" open="true"> <b>Question 01.</b> </summary>
+<summary 
+id="Quiz_01_Question_01"
+open="true"> <b>Question 01.</b> </summary>
 
 ````Yaml
 Question 01:
@@ -678,7 +681,9 @@ What is the Big O time complexity when you have a loop within a loop (assuming e
 
 <details>
 
-<summary id="Q2" open="true"> <b>Question 02.</b> </summary>
+<summary 
+id="Quiz_01_Question_02"
+open="true"> <b>Question 02.</b> </summary>
 
 ````Yaml
 Question 02:
@@ -697,7 +702,9 @@ How would the following be written:  O(100n^2)?
 
 <details>
 
-<summary id="Q3"  open="true"> <b>Question 03.</b> </summary>
+<summary 
+id="Quiz_01_Question_03"
+open="true"> <b>Question 03.</b> </summary>
 
 ````Yaml
 Question 03:
@@ -717,7 +724,9 @@ What Big O is associated with Divide and Conquer?
 
 <details>
 
-<summary id="Q4" open="true"> <b>Question 04.</b> </summary>
+<summary 
+id="Quiz_01_Question_04"
+open="true"> <b>Question 04.</b> </summary>
 
 ````Yaml
 Question 04:
@@ -737,7 +746,9 @@ What is the correct way to write:  O(n^2 + n) ?
 
 <details>
 
-<summary id="Q5" open="true"> <b>Question 05.</b> </summary>
+<summary 
+id="Quiz_01_Question_05"
+open="true"> <b>Question 05.</b> </summary>
 
 ````Yaml
 Question 05:

@@ -76,7 +76,9 @@ public class ExploreVirtualThreads {
 1. Notice the `VirtualThread` name, not the `Thread`!
 
 <details>
-<summary id="Code_Virtaul_Threads" open="true"> <b>Code for the Virtual Threads!</b> </summary>
+<summary 
+id="Code_Virtaul_Threads"
+ open="true"> <b>Code for the Virtual Threads!</b> </summary>
  
  #### ExploreVirtualThreads.java
 
@@ -156,7 +158,7 @@ public class ExploreVirtualThreads {
 
 # Virtual Threads Scalability - Lets Launch 1 million threads.
 
-- Virtual Threads are more scalable than the platform threads!
+- **Virtual Threads** are more scalable than the **Platform Threads**!
     - We will be launching 1 million of threads!
 
 #### MaxVirtualThreads.java
@@ -220,13 +222,17 @@ public class MaxVirtualThreads {
     <img src="How_Virtaul_Threads_Work_Behind_Scenes.PNG"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
 </div>
 
-1. JVM has own **scheduler** to schedule the **Virtual Threads** to the **Carrier Threads**!
+1. **Virtual Threads** are managed by the **JVM**, **not** the **OS**!
+2. **JVM** has own **scheduler** to schedule the **Virtual Threads** to the **Carrier Threads**!
 
 <div align="center">
     <img src="Virtaul_Thread_Scheduler.PNG"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
 </div>
 
 1. **Virtual Thread A** is mapped into **Carrier Thread 1**!
+
+> [!NOTE]
+> Number of the **Platform Threads**/**Carrier Threads** is a number of cores!
 
 <div align="center">
     <img src="Virtaul_Threads_Mountin_And_Unmounting.gif"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
@@ -243,16 +249,59 @@ public class MaxVirtualThreads {
 </div>
 
 1. When we **make call** with the **HTTP Client**, the **Virtual Thread** is getting placed into **Carrier Thread**!
-2. When code executed, then **Virtual Thread** are allocated back out of **Carrier Threads**! 
+2. When code executed, then **Virtual Threads** are allocated back out of **Carrier Threads**! 
 3. As soon as the **SOCKET (IO)** is receiving the bytes! The **Virtual Threads** are mounted back to the **Carrier Threads**!
+    - With this one we can achieve these with only **couple platform threads**! 
+
+- Code for the HTTP call:
+
+````Java
+public Movie getMovieById() {
+    try {
+        var request = requestBuilder(MOVIE_BY_ID_URL);
+
+        HttpResponse<String> response =
+                httpClient.send(
+                        request,
+                        HttpResponse.BodyHandlers.ofString()
+                );
+
+        System.out.println("Status code: " + response.statusCode());
+        System.out.println("Headers: " + response.headers());
+
+        return objectMapper.readValue(response.body(), Movie.class);
+
+    } catch (IOException | InterruptedException e) {
+        System.err.println(e);
+        throw new RuntimeException(e);
+    }
+}
+````
 
 # Mounting and Unmounting threads in Action.
+
+- For **Platform Threads** the executing by one thread:
+    ````Bash
+    Platform Thread T1
+        |
+        v
+    doSomeWork()
+        |
+        v
+        blocks
+        |
+        X
+        |
+        unblocks
+        |
+        v
+    continues
+    ````
 
 - We will be exploring the **Unmounting** and **Mounting** of the thread! 
 
 ````Java
 package com.modernjava.virtualthreads;
-
 
 import com.modernjava.util.CommonUtil;
 
@@ -268,19 +317,19 @@ public class MaxVirtualThreads {
     public static void doSomeWork(int index) {
         log("started doSomeWork : " + index);
         // In this case, we are just blocking the thread by calling sleep.
-        //It could be any IO call such as HTTP or File IO call.
+        // It could be any IO call such as HTTP or File IO call.
         CommonUtil.sleep(5000); // blocking task
         log("finished doSomeWork : " + index);
     }
 
     public static void main(String[] args) {
 
-        //Demo1
+        // Demo1.
         int MAX_THREADS = 10; //10000, 100_000, 1000_000
         // For 1024 MB
 
        // int MAX_THREADS = 10;
-        //Demo 2- Blocking nature of Java Threads
+        // Demo 2- Blocking nature of Java Threads
         // Change the no of MAX_THREADS to 10
         // Enable the loggers
         IntStream.rangeClosed(1, MAX_THREADS)
@@ -309,12 +358,19 @@ public class MaxVirtualThreads {
 
 1. We can see that the `doSomeWork : 7`
     - We can see that both **mounting** and **unmounting** have been done by the different **worker thread**, or the **carrier thread**! 
-    - `[VirtualThread[#35]/runnable@ForkJoinPool-1-worker-6] - finished doSomeWork : 7`
-    - `[VirtualThread[#35]/runnable@ForkJoinPool-1-worker-5] - started doSomeWork : 7`.
+        - `[VirtualThread[#35]/runnable@ForkJoinPool-1-worker-6] - finished doSomeWork : 7`.
+        - `[VirtualThread[#35]/runnable@ForkJoinPool-1-worker-5] - started doSomeWork : 7`.
 
+<div align="center">
+    <img src="Number_Of_Cores_In_Machines.PNG"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+</div>
 
+1. Like we mentioned, we can have the **number of cores** as the **carrier thread**!
 
 # Virtual Threads - `yield()` and `run()` using Continuation API.
+
+- This chapter: Suspends and continue of the task, where it left of.
+
 
 # Pinned Virtual Threads.
 
@@ -322,8 +378,13 @@ public class MaxVirtualThreads {
 
 # Quiz 01: Platform Threads and Virtual Threads.
 
+- Todo continue here after the quiz
+
 <details>
-<summary id="Question_01" open="true"> <b>Question 01.</b> </summary>
+<summary 
+id="Quiz_01_Question_01"
+open="true"> <b>Question 01.</b> </summary>
+
 ````Yaml
 Question 01:
 The question comes here!

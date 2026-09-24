@@ -7,7 +7,9 @@
 # Coding Exercise 02: LL: Constructor.
 
 <details>
-<summary id="coding_exercise_02_ll_constructor" open="true"> <b>Coding Exercise 02: LL Constructor Exercise!</b> </summary>
+<summary 
+id="Coding_Exercise_02_LL_Constructor"
+open="true"> <b>Coding Exercise 02: LL Constructor Exercise!</b> </summary>
 
 <div align="center">
     <img src="Coding_Exercise_02_LL_Constructor.PNG"  alt="Coding Exercise 02 LL Constructor" width="500"/>
@@ -161,7 +163,8 @@ public class LinkedList {
 # Coding Exercise 03: LL: Append.
 
 <details>
-<summary id="coding_exercise_03_ll_append" open="true"> <b>Coding Exercise 03!</b> </summary>
+<summary 
+id="Coding_Exercise_03_LL_Append" open="true"> <b>Coding Exercise 03!</b> </summary>
 
 <div align="center">
     <img src="Coding_Exercise_03_LL_Append.PNG"  alt="Coding Exercise 02 LL Constructor" width="400"/>
@@ -255,7 +258,9 @@ public class LinkedList {
 # Coding Exercise 04: LL: Remove Last.
 
 <details>
-<summary id="coding_exercise_04_remove_last" open="true"> <b>Coding Exercise 04!</b> </summary>
+<summary 
+id="Coding_Exercise_04_Remove_Last"
+open="true"> <b>Coding Exercise 04!</b> </summary>
 
 <div align="center">
     <img src="Coding_Exercise_04_LL_Remove_Last.PNG"  alt="Coding Exercise 04 LL Remove Last" width="400"/>
@@ -277,10 +282,12 @@ public class LinkedList {
 # Coding Exercise 05: LL: Prepend.
 
 <details>
-<summary id="coding_exercise_05_prepend" open="true"> <b>Coding Exercise 05!</b> </summary>
+<summary 
+id="Coding_Exercise_05_Prepend"
+ open="true"> <b>Coding Exercise 05!</b> </summary>
 
 <div align="center">
-    <img src="Coding_Exercise_05_LL_Prepend.PNG"  alt="Coding Exercise 05 LL Prepend" width="400"/>
+    <img src="Coding_Exercise_05_LL_Prepend.PNG"  alt="Coding Exercise 05 LL Prepend!" width="400"/>
 </div>
 
 ````Java
@@ -299,7 +306,8 @@ public class LinkedList {
 # Coding Exercise 06: LL: Remove First.
 
 <details>
-<summary id="coding_exercise_06_" open="true"> <b>Coding Exercise 06!</b> </summary>
+<summary 
+id="Coding_Exercise_06" open="true"> <b>Coding Exercise 06!</b> </summary>
 
 <div align="center">
     <img src="Coding_Exercise_06_LL_Remove_First.PNG"  alt="Coding Exercise 06 LL Remove First" width="400"/>
@@ -321,7 +329,9 @@ public class LinkedList {
 # Coding Exercise 07: LL: Get.
 
 <details>
-<summary id="coding_exercise_07_" open="true"> <b>Coding Exercise 07!</b> </summary>
+<summary 
+id="Coding_Exercise_07"
+open="true"> <b>Coding Exercise 07!</b> </summary>
 
 <div align="center">
     <img src="Coding_Exercise_07_LL_Get.PNG"  alt="Coding Exercise 07 LL Get" width="400"/>
@@ -343,7 +353,9 @@ public class LinkedList {
 # Coding Exercise 08: LL: Set.
 
 <details>
-<summary id="coding_exercise_08_" open="true"> <b>Coding Exercise 08!</b> </summary>
+<summary
+id="Coding_Exercise_08"
+open="true"> <b>Coding Exercise 08!</b> </summary>
 
 <div align="center">
     <img src="Coding_Exercise_08_LL_Set.PNG"  alt="Coding Exercise 08 LL Set" width="400"/>
@@ -365,7 +377,9 @@ public class LinkedList {
 # Coding Exercise 09: LL: Insert.
 
 <details>
-<summary id="coding_exercise_09_" open="true"> <b>Coding Exercise 09!</b> </summary>
+<summary 
+id="Coding_Exercise_09"
+open="true"> <b>Coding Exercise 09!</b> </summary>
 
 <div align="center">
     <img src="Coding_Exercise_09_LL_Insert.PNG"  alt="Coding Exercise 09 LL Insert" width="400"/>
@@ -387,7 +401,9 @@ public class LinkedList {
 # Coding Exercise 10: LL: Remove.
 
 <details>
-<summary id="coding_exercise_010_" open="true"> <b>Coding Exercise 10!</b> </summary>
+<summary 
+id="Coding_Exercise_010"
+open="true"> <b>Coding Exercise 10!</b> </summary>
 
 <div align="center">
     <img src="Coding_Exercise_10_LL_Remove.PNG"  alt="Coding Exercise 02 LL Constructor" width="400"/>
@@ -411,7 +427,8 @@ public class LinkedList {
 
 
 <details>
-<summary id="coding_exercise_11_" open="true"> <b>Coding Exercise 11!</b> </summary>
+<summary 
+id="Coding_Exercise_11" open="true"> <b>Coding Exercise 11!</b> </summary>
 
 <div align="center">
     <img src="Coding_Exercise_11_LL_Reverse.PNG"  alt="Coding Exercise 11 LL Reverse" width="400"/>

@@ -72,7 +72,9 @@ Analyzing a heap dump.
 
 <details>
 
-<summary id="Memory_Leak_Not_Fixed" open="true"> <b>Memory leak not fixed. CustomerManager!</b> </summary>
+<summary 
+id="Memory_Leak_Not_Fixed" 
+open="true"> <b>Memory leak not fixed. CustomerManager!</b> </summary>
 
 
 ````Java

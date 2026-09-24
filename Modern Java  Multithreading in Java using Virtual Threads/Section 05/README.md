@@ -252,7 +252,9 @@ class ProductServiceUsingExecutorTest {
 2. There is no better way to combine data!
 
 <details>
-<summary id="Code_Future_API_And_ExecutorService" open="true"> <b>Code for the Future API and ExecutorService!</b> </summary>
+<summary 
+id="Code_Future_API_And_ExecutorService"
+open="true"> <b>Code for the Future API and ExecutorService!</b> </summary>
  
  #### ProductServiceUsingExecutor.java
 
@@ -573,7 +575,9 @@ class ProductServiceUsingCompletableFutureTest {
 1. There are multiple operations in the `CompatableFuture`, we will not go thought them all here! 
 
 <details>
-<summary id="Code_CompletableFuture" open="true"> <b>Code for the CompletableFuture!</b> </summary>
+<summary 
+id="Code_For_CompletableFuture"
+open="true"> <b>Code for the CompletableFuture!</b> </summary>
  
  #### ProductServiceUsingCompletableFuture.java
 

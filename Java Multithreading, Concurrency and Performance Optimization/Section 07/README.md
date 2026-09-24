@@ -469,10 +469,11 @@ AnimationTimer animationTimer = new AnimationTimer() {
 
 # Quiz 10: ReentrantLock.
 
-
 <details>
 
-<summary id="Question_01" open="true"> <b>Question 01.</b> </summary>
+<summary 
+id="Quiz_10_Question_01"
+open="true"> <b>Question 01.</b> </summary>
 
 ````Yaml
 Question 01:
@@ -491,7 +492,9 @@ What is the potential danger with the current implementation?
 
 <details>
 
-<summary id="Question_02" open="true"> <b>Question 02.</b> </summary>
+<summary 
+id="Quiz_09_Question_02"
+open="true"> <b>Question 02.</b> </summary>
 
 ````Yaml
 Question 02:

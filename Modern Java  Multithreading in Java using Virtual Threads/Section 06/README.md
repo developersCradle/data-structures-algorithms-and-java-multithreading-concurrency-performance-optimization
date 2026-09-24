@@ -33,7 +33,9 @@ Structured Concurrency using Virtual Threads (Preview Feature).
 1. This brings benefits for, **error handling**, **cancellations** and enchanted clarity/observation!
 
 <details>
-<summary id="Code_StructuredTaskScope" open="true"> <b>Code for StructuredTaskScope!</b> </summary>
+<summary 
+id="Code_For_StructuredTaskScope"
+open="true"> <b>Code for StructuredTaskScope!</b> </summary>
  
 #### StructuredTaskScope<T>.java
 
@@ -1541,7 +1543,9 @@ class ProductServiceStructuredConcurrencyTest {
 
 
 <details>
-<summary id="Code_ShutdownOnFailure" open="true"> <b>Code for with ShutdownOnFailure!</b> </summary>
+<summary 
+id="Code_For_ShutdownOnFailure"
+open="true"> <b>Code for with ShutdownOnFailure!</b> </summary>
  
 #### ProductServiceStructuredConcurrency.java
 
@@ -1736,7 +1740,9 @@ class ProductServiceStructuredConcurrencyTest {
 - We can see the expectation being throwing, if the service is failing!
 
 <details>
-<summary id="Code_Exceptions" open="true"> <b>Code for with Exceptions!</b> </summary>
+<summary 
+id="Code_For_Exceptions"
+open="true"> <b>Code for with Exceptions!</b> </summary>
  
 #### ProductServiceStructuredConcurrencyTest.java
 
@@ -2103,7 +2109,9 @@ java.lang.InterruptedException
 - We can see that the **deliveryDetails** are there!
 
 <details>
-<summary id="Code_StructuredTaskScope.ShutdownOnSuccess" open="true"> <b>Code for StructuredTaskScope.ShutdownOnSuccess()!</b> </summary>
+<summary 
+id="Code_StructuredTaskScope.ShutdownOnSuccess"
+open="true"> <b>Code for StructuredTaskScope.ShutdownOnSuccess()!</b> </summary>
  
 #### ProductInfoService.java
 
@@ -2411,7 +2419,9 @@ class ProductInfoServiceTest {
 - We can see that the **deliveryDetails** are there!
 
 <details>
-<summary id="Code_StructuredTaskScope" open="true"> <b>Code for with DeliveryService!</b> </summary>
+<summary 
+id="Code_For_DeliveryService"
+sopen="true"> <b>Code for with DeliveryService!</b> </summary>
  
 #### ProductServiceStructuredConcurrencyTest.java
 

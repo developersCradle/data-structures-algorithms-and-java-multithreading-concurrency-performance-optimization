@@ -68,11 +68,11 @@ Threading Fundamentals - Thread Coordination.
 ````Java
 - No logs here man! No patient to wait!
 ````
-
 <details>
 
-<summary id="Thread progress
-" open="true"> <b>The thread code, which will be waiting!</b> </summary>
+<summary
+id="Thread_Waiting"
+open="true"> <b>The thread code, which will be waiting!</b> </summary>
 
 ````Java
 /*
@@ -137,8 +137,9 @@ Process finished with exit code 0
 
 <details>
 
-<summary id="Thread progress
-" open="true"> <b>The thread code, that will throw interrupted task!</b> </summary>
+<summary 
+id="Thread_Throws_Interrupt"
+open="true"> <b>The thread code, that will throw interrupted task!</b> </summary>
 
 ````Java
 /*
@@ -188,8 +189,9 @@ $$
 $$
 
 <details>
-<summary id="Thread progress
-" open="true"> <b>The thread that takes lot of time when computing!</b> </summary>
+<summary 
+id="Thread_Takes_Alot_Of_Time"
+open="true"> <b>The thread that takes lot of time when computing!</b> </summary>
 
 ````Java
 /*
@@ -268,8 +270,9 @@ public class Main2 {
 1. Here is the **sweet spot** to add the check!
 
 <details>
-<summary id="Thread progress
-" open="true"> <b>The thread that takes lot of time when computing and with the interrupt!</b> </summary>
+<summary 
+id="Thread_Takes_Alot_Of_Time_With_Interrupt"
+open="true"> <b>The thread that takes lot of time when computing and with the interrupt!</b> </summary>
 
 ````Java
 /*
@@ -352,8 +355,9 @@ public class Main2 {
 </div>
 
 <details>
-<summary id="Thread progress
-" open="true"> <b>The thread that takes lot of time, exiting grasefully with .setDaemon(true)!</b> </summary>
+<summary
+id="Thread_Takes_Alot_Of_Time_And_Exit_Is_Graceful"
+open="true"> <b>The thread that takes lot of time, exiting grasefully with .setDaemon(true)!</b> </summary>
 
 ````Java
 /*
@@ -418,8 +422,9 @@ public class Main2 {
 
 <details>
 
-<summary id="Thread progress
-" open="true"> <b>Question 01.</b> </summary>
+<summary 
+id="Quiz_03_Question_01"
+open="true"> <b>Question 01.</b> </summary>
 
 ````yaml
 Question 01:
@@ -462,8 +467,9 @@ Please choose the correct statement.
 
 <details>
 
-<summary id="Thread progress
-" open="true"> <b>Question 02.</b> </summary>
+<summary
+id="Quiz_03_Question_02"
+open="true"> <b>Question 02.</b> </summary>
 
 ````yaml
 Question 02:
@@ -615,7 +621,9 @@ n! = \prod_{i=1}^{n} i
 $$
 
 <details>
-<summary id="The factorial formula" open="true"> <b>Factorial diagram!</b> </summary>
+<summary 
+id="The_Factorial_Formula"
+open="true"> <b>Factorial diagram!</b> </summary>
 
 <div align="center">
     <img src="Factorial_Formula.png"  alt="Java threads." width="600"/>
@@ -820,7 +828,9 @@ for (int i = 0; i < inputNumbers.size(); i++) {
 
 
 <details>
-<summary id="The factorial thread" open="true"> <b>Factorial Thread Full Java code!</b> </summary>
+<summary 
+id="The_Factorial_Thread_Code"
+ open="true"> <b>Factorial Thread Full Java code!</b> </summary>
 
 ````Java
 import java.math.BigInteger;
@@ -876,7 +886,9 @@ $$
 $$
 
 <details>
-<summary id="coding_exercise_02_multithreaded_calculation" open="true"> <b>Coding Exercise 02: Multithreaded Calculation! My Answer!</b> </summary>
+<summary 
+id="Coding_Exercise_02_Multithreaded_Calculation"
+open="true"> <b>Coding Exercise 02: Multithreaded Calculation! My Answer!</b> </summary>
 
 <div align="center">
     <img src="Multithreaded_Exercise_Coding_Exercise_02.PNG"  alt="Java threads." width="600"/>
@@ -1022,10 +1034,14 @@ $$
 $$
 
 <details>
-<summary id="coding_exercise_02_multithreaded_calculation_solution" open="true"> <b>Coding Exercise 02: Multithreaded Calculation! The Teachers Solution!</b> </summary>
+<summary 
+id="Coding_Exercise_02_Multithreaded_Calculation_Solution"
+open="true"> <b>Coding Exercise 02: Multithreaded Calculation! The Teachers Solution!</b> </summary>
 
 <div align="center">
-    <img src="Multithreaded_Exercise_Coding_Exercise_02_Solution.PNG"  alt="Java threads." width="600"/>
+    <img 
+    src="Multithreaded_Exercise_Coding_Exercise_02_Solution.PNG"
+    alt="Java threads." width="600"/>
 </div>
  
 ````Java

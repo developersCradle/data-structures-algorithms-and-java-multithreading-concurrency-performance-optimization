@@ -36,7 +36,9 @@ Build a Spring Boot Application using Virtual Threads.
     - [virtual-threads](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Modern%20Java%20%20Multithreading%20in%20Java%20using%20Virtual%20Threads/Section%2003/modern-java-concurrency/remote-service)!
 
 <details>
-<summary id="Code_Clientbootapp_Virtual_Threads" open="true"> <b>Code for the clientbootapp-virtual-threads!</b> </summary>
+<summary 
+id="Code_Clientbootapp_Virtual_Threads"
+open="true"> <b>Code for the clientbootapp-virtual-threads!</b> </summary>
  
 #### RemoteServiceClient.java
 

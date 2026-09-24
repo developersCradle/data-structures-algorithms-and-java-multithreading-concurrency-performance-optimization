@@ -244,7 +244,9 @@ Exception: java.lang.OutOfMemoryError thrown from the UncaughtExceptionHandler i
 
 <details>
 
-<summary id="Memoryleak_Not_Fixed" open="true"> <b>Memory leak not fixed. CustomerManager!</b> </summary>
+<summary 
+id="Memoryleak_Not_Fixed"
+open="true"> <b>Memory leak not fixed. CustomerManager!</b> </summary>
 
 ````Java
 import java.util.ArrayList;
@@ -329,8 +331,9 @@ public class CustomerManager {
 
 <details>
 
-<summary id="Thread_Progress_
-" open="true"> <b>Memory leak. CustomerManager!</b> </summary>
+<summary 
+id="Memory_Leak_Occurred"
+open="true"> <b>Memory leak. CustomerManager!</b> </summary>
 
 ````Java
 import java.util.ArrayList;
@@ -416,7 +419,9 @@ public class CustomerManager {
 
 <details>
 
-<summary id="Memory_Leak_Fixed" open="true"> <b>Memory leak fixed. CustomerManager!</b> </summary>
+<summary
+id="Memory_Leak_Fixed"
+open="true"> <b>Memory leak fixed. CustomerManager!</b> </summary>
 
 ````Java
 import java.util.ArrayList;

@@ -166,7 +166,9 @@ public class PrimeNumbers {
 
 
 <details>
-<summary id="JIT logs example one codes" open="true"> <b>Performance example one codes!</b> </summary>
+<summary 
+id="JIT_Logs_Example_One_Codes"
+open="true"> <b>Performance example one codes!</b> </summary>
 
 ## PrimeNumbers class.
 
@@ -265,8 +267,9 @@ public class Main {
 	- *Java HotSpot* **J***ust*-**I***n*-**T***ime* (**JIT**) *compiler* / *interpreter method profiling log*.
 
 <details>
-<summary id="profiling log
-" open="true"> HUGE - <b>Interpreter method profiling log!</b> </summary>
+<summary
+id="Profiling_Log"
+open="true"> HUGE - <b>Interpreter method profiling log!</b> </summary>
 
 ````Bash
 40    1       3       jdk.internal.util.ArraysSupport::signedHashCode (37 bytes)
@@ -536,7 +539,9 @@ public class Main {
 4. **Last part of the log**: The line of code, which is going to be compiled!
 	- So far all the compilation has been done on the **Java library codes**, not in our own code!
 <details>
-<summary id="JIT compilation levels" open="true"> <b>👀 JIT compilation levels, with the types! 👀</b> </summary>
+<summary 
+id="JIT_Compilation_Levels"
+open="true"> <b>👀 JIT compilation levels, with the types! 👀</b> </summary>
 
 | Level | Compiler              | Optimization / Purpose                                       | When Used                             |
 | ----- | --------------------- | ------------------------------------------------------------ | ------------------------------------- |
@@ -548,8 +553,9 @@ public class Main {
 </details>
 
 <details>
-<summary id="Thread progress
-" open="true"> <b>🔎 How to interpret the JIT logs! 🔎</b> </summary>
+<summary 
+id="Thread_Progress"
+open="true"> <b>🔎 How to interpret the JIT logs! 🔎</b> </summary>
 
 ````Java
 public void test() {
@@ -689,7 +695,9 @@ public class Main {
 
 
 <details>
-<summary id="JIT logs example second logs" open="true"> <b>Performance example second logs!</b> </summary>
+<summary '
+id="JIT_Logs_Example_Second_Logs"
+open="true"> <b>Performance example second logs!</b> </summary>
 
 ````Bash
 101    1       3       jdk.internal.util.ArraysSupport::signedHashCode (37 bytes)
@@ -965,7 +973,9 @@ Process finished with exit code 0
 </details>
 
 <details>
-<summary id="JIT logs example second codes" open="true"> <b>Performance example second codes!</b> </summary>
+<summary 
+id="JIT_Logs_Example_Second_Codes"
+open="true"> <b>Performance example second codes!</b> </summary>
 
 ## PrimeNumbers class.
 

@@ -317,8 +317,9 @@ Introduction.
 
 <details>
 
-<summary id="Thread progress
-" open="true"> <b>Question 01.</b> </summary>
+<summary 
+id="Quiz_01_Question_01" 
+open="true"> <b>Question 01.</b> </summary>
 
 ````Yaml
 Question 01:
@@ -337,8 +338,9 @@ Why do we want to use multiple threads in an application?
 
 <details>
 
-<summary id="Thread progress
-" open="true"> <b>Question 02.</b> </summary>
+<summary 
+id="Quiz_01_Question_02"
+open="true"> <b>Question 02.</b> </summary>
 
 ````Yaml
 Question 02:
@@ -363,8 +365,9 @@ thread2 -> add(5, 6)
 
 <details>
 
-<summary id="Thread progress
-" open="true"> <b>Question 03.</b> </summary>
+<summary 
+id="Quiz_01_Question_03"
+open="true"> <b>Question 03.</b> </summary>
 
 ````Yaml
 Question 03:

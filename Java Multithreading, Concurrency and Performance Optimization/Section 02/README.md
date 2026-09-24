@@ -397,8 +397,9 @@ public class Main {
 
 <details>
 
-<summary id="Thread progress
-" open="true"> <b>Question 01.</b> </summary>
+<summary 
+id="Quiz_02_Question_01"
+open="true"> <b>Question 01.</b> </summary>
 
 ````Yaml
 Question 01:
@@ -417,8 +418,9 @@ How does the Operating System decide what thread to schedule?
 
 <details>
 
-<summary id="Thread progress
-" open="true"> <b>Question 02.</b> </summary>
+<summary 
+id="Quiz_02_Question_02"
+open="true"> <b>Question 02.</b> </summary>
 
 ````Yaml
 Question 02:

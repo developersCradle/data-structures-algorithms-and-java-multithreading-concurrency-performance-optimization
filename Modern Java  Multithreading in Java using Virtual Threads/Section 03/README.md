@@ -172,7 +172,7 @@ public class HelloWorldThreads {
     <img src="Threads_Internal.PNG"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
 </div>
 
-1. There are is **Kerner Threads**!
+1. There are is **Kernel Threads**!
      - These are expensive!
 2. This is usually taken **care by the OS**, so as developers would not need to take care of these!
 3. **Java application** runs in top of this layer!
@@ -294,7 +294,9 @@ public class MaxThreads {
 - This is why there are **Virtual Threads**!
 
 <details>
-<summary id="Code_For_MaxThreads" open="true"> <b>Code for the MaxThreads!</b> </summary>
+<summary 
+id="Code_For_MaxThreads"
+ open="true"> <b>Code for the MaxThreads!</b> </summary>
  
  #### MaxThreads.java
 

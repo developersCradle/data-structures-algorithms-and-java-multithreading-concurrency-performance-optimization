@@ -134,7 +134,9 @@ public class CommonUtil {
 </div>
 
 <details>
-<summary id="Code_CompletableFuture" open="true"> <b>Code for the Simple WebServer, with test!</b> </summary>
+<summary 
+id="Code_Simple_WebServer"
+open="true"> <b>Code for the Simple WebServer, with test!</b> </summary>
  
 #### ProductInfoServiceTest.java
 

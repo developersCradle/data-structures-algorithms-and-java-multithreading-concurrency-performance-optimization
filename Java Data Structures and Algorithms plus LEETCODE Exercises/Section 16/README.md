@@ -180,7 +180,9 @@ public class Main {
 1. We can see there are **6** addresses on **empty** Hash Table!
 
 <details>
-<summary id="hashTable first" open="true"> <b>HashTable implementation, after this chapter.</b> </summary>
+<summary 
+id="HashTable_First"
+open="true"> <b>HashTable implementation, after this chapter.</b> </summary>
 
 ### HashTable.java
 
@@ -269,7 +271,9 @@ public class Main {
     - It makes this more random!
 
 <details>
-<summary id="hashTable second" open="true"> <b>HashTable implementation, after this chapter.</b> </summary>
+<summary
+id="hashTable_Second"
+open="true"> <b>HashTable implementation, after this chapter.</b> </summary>
 
 ### HashTable.java
 

@@ -23,7 +23,9 @@ Template for the questions:
 # Quiz 07: Atomic Operations, Volatile & Metrics Practical Example.
 
 <details>
-<summary id="Question_01" open="true"> <b>Question 01.</b> </summary>
+<summary 
+id="Quiz_01_Question_01"
+open="true"> <b>Question 01.</b> </summary>
 ````Yaml
 Question 01:
 The question comes here!
@@ -135,7 +137,9 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 <details>
 
-<summary id="Cleaning_Quiz" open="true"> <b>Cleaning process of the quizes and the exercices! </b></summary>
+<summary 
+id="Cleaning_Quiz" 
+open="true"> <b>Cleaning process of the quizes and the exercices! </b></summary>
 <br>
 
 - Cleaning the numbering from the exercise and quizes, they should be `01` rather than `1` chapter by chapter:
@@ -155,7 +159,9 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 <details>
 
-<summary id="Cleaning_Images" open="true"> <b>Cleaning process the images names! </b></summary>
+<summary 
+id="Cleaning_Images" 
+open="true"> <b>Cleaning process the images names! </b></summary>
 <br>
 
 - Cleaning the images in the format `Image_Next_Number`, this will be chapter by chapter:
@@ -175,7 +181,8 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 <details>
 
-<summary id="Cleaning_Images_Links" open="true"> <b>Cleaning the images with the link and right alt tag! </b></summary>
+<summary 
+id="Cleaning_Images_Links" open="true"> <b>Cleaning the images with the link and right alt tag! </b></summary>
 <br>
 
 - Bigger ink in the pictures, this will be chapter by chapter:
@@ -329,7 +336,9 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 <details>
 
-<summary id="Modern_Java_The_Progress" open="true"> <i>Course map for the </i><b> Modern Java Courses!</b> </summary>
+<summary 
+id="Modern_Java_The_Progress"
+open="true"> <i>Course map for the </i><b> Modern Java Courses!</b> </summary>
 
 <br>
 
@@ -595,7 +604,9 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 <details>
 
-<summary id="Sony_Interview_Questions" open="true"> <i>The requirements, which drove me to pursies this course, from <b>Sony!</b></summary>
+<summary 
+id="Sony_Interview_Questions" 
+open="true"> <i>The requirements, which drove me to pursies this course, from <b>Sony!</b></summary>
 
 <br>
 
@@ -990,7 +1001,9 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 <details>
 
-<summary id="Must_Know_Fundementals_For_Algorithms" open="true"> <b> Must know fundementals! </b> </summary>
+<summary 
+id="Must_Know_Fundementals_For_Algorithms"
+open="true"> <b> Must know fundementals! </b> </summary>
 
 <p align="center">
     <br>
