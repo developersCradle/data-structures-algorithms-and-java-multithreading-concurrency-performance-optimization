@@ -1,14 +1,14 @@
-# Chapter 02: Course Slides and Source Code.
+# Chapter 02: Course Slides and Source Code. ✅
 
 Course Slides and Source Code.
 
 # What I learned.
 
-# Course Slides.
+# Course Slides. ✅
 
-- Slides included here.
+- Slides included here. Men, buy the real course get access!
 
-# Source Code.
+# Source Code. ✅
 
 `modern-java-concurrency-start.zip` → This file is the codebase to start the course.
 

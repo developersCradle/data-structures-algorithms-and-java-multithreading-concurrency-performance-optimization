@@ -1,33 +1,45 @@
-# Chapter 06 - Structured Concurrency using Virtual Threads (Preview Feature).
+# Chapter 06 - Structured Concurrency using Virtual Threads (Preview Feature). ✅
 
 Structured Concurrency using Virtual Threads (Preview Feature).
 
 # What I learned.
 
-# Introduction to Structured Concurrency.
+# Introduction to Structured Concurrency. ✅
 
 <div align="center">
-    <img src="Structured_Concurrency.PNG"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+    <img 
+    src="Structured_Concurrency.PNG"
+    alt="Modern Java - Multithreading in Java using Virtual Threads!"
+    width="600"/>
 </div>
 
 1. The focus here is on the **business logic**!
 2. This is featured **under review**.
 
 <div align="center">
-    <img src="Structured_Concurrency_Second.PNG"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+    <img 
+    src="Structured_Concurrency_Second.PNG"
+    alt="Modern Java - Multithreading in Java using Virtual Threads!"
+    width="600"/>
 </div>
 
 1. When the child tasks are finished, after that the parent task is finished!
 
 <div align="center">
-    <img src="Structured_Concurrency_Interface.PNG"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+    <img 
+    src="Structured_Concurrency_Interface.PNG"
+    alt="Modern Java - Multithreading in Java using Virtual Threads!" 
+    width="600"/>
 </div>
 
 1. Shutdown policy at **Failure**! 
 2. Shutdown policy at **Success**! 
 
 <div align="center">
-    <img src="Structured_Concurrency_Benefits.PNG"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+    <img
+    src="Structured_Concurrency_Benefits.PNG"  
+    alt="Modern Java - Multithreading in Java using Virtual Threads!" 
+    width="600"/>
 </div>
 
 1. This brings benefits for, **error handling**, **cancellations** and enchanted clarity/observation!
@@ -1368,10 +1380,13 @@ public class StructuredTaskScope<T> implements AutoCloseable {
 
 </details>
 
-# ProductService using `StructuredTaskScope.ShutdownOnFailure()`.
+# ProductService using `StructuredTaskScope.ShutdownOnFailure()`. ✅
 
 <div align="center">
-    <img src="Shutdown_Policy_At_Failure.PNG"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+    <img 
+    src="Shutdown_Policy_At_Failure.PNG"
+    alt="Modern Java - Multithreading in Java using Virtual Threads!"
+    width="600"/>
 </div>
 
 1. When there is **error thrown** in exception, it prevents any other **new subtasks** from starting!
@@ -1379,7 +1394,10 @@ public class StructuredTaskScope<T> implements AutoCloseable {
 - As reminder, we have following business case:
 
 <div align="center">
-    <img src="Business_Case.PNG"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+    <img 
+    src="Business_Case.PNG"
+    alt="Modern Java - Multithreading in Java using Virtual Threads!"
+    width="600"/>
 </div>
 
 - We will be having for retrieving the information!
@@ -1534,13 +1552,13 @@ class ProductServiceStructuredConcurrencyTest {
 ````
 
 <div align="center">
-    <img src="Testing_The_Structured_Concurrency.gif"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+    <img 
+    src="Testing_The_Structured_Concurrency.gif"
+    alt="Modern Java - Multithreading in Java using Virtual Threads!"
+    width="600"/>
 </div>
 
 1. We can see logs for the service calls!
-
-
-
 
 <details>
 <summary 
@@ -1709,7 +1727,7 @@ class ProductServiceStructuredConcurrencyTest {
 ````
 </details>
 
-# JUnit test for ShutdownOnFailure policy during Exceptions.
+# JUnit test for ShutdownOnFailure policy during Exceptions. ✅
 
 - Lets make test for testing that an exception from **reviewService** eventually causes `retrieveProductDetails()` to throw. That's exactly a useful test for **ShutdownOnFailure**.
 
@@ -1734,7 +1752,10 @@ class ProductServiceStructuredConcurrencyTest {
 - We are testing the expectation throwing of the service:
 
 <div align="center">
-    <img src="Testing_The_Structured_Concurrency_Exception_Throwing.gif"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+    <img 
+    src="Testing_The_Structured_Concurrency_Exception_Throwing.gif"  
+    alt="Modern Java - Multithreading in Java using Virtual Threads!"
+    width="600"/>
 </div>
 
 - We can see the expectation being throwing, if the service is failing!
@@ -1946,10 +1967,13 @@ public class ProductServiceStructuredConcurrency {
 
 </details>
 
-# ProductInfoService using `StructuredTaskScope.ShutdownOnSuccess()`.
+# ProductInfoService using `StructuredTaskScope.ShutdownOnSuccess()`. ✅
 
 <div align="center">
-    <img src="Shutdown_Policy_At_Success.PNG"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+    <img 
+    src="Shutdown_Policy_At_Success.PNG"
+    alt="Modern Java - Multithreading in Java using Virtual Threads!"
+    width="600"/>
 </div>
 
 1. This policy if, there **same data** pulled from different source!
@@ -2017,11 +2041,13 @@ public class ProductServiceStructuredConcurrency {
 - The test case running:
 
 <div align="center">
-    <img src="Testing_The_Structured_Concurrency_ShutdownOnSuccess.gif"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+    <img 
+    src="Testing_The_Structured_Concurrency_ShutdownOnSuccess.gif"
+    alt="Modern Java - Multithreading in Java using Virtual Threads!"
+    width="600"/>
 </div>
 
 1. We can see the log from `retrieveProductInfo(...)` where the log `retrieveProductInfo after Delay`!
-
 
 - One function is the fastest:
 
@@ -2103,7 +2129,10 @@ java.lang.InterruptedException
 - We will be running test case:
 
 <div align="center">
-    <img src="Testing_The_Structured_Concurrency_ShutdownOnSuccess_RuntimeException.gif"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+    <img 
+    src="Testing_The_Structured_Concurrency_ShutdownOnSuccess_RuntimeException.gif"  
+    alt="Modern Java - Multithreading in Java using Virtual Threads!" 
+    width="600"/>
 </div>
 
 - We can see that the **deliveryDetails** are there!
@@ -2240,14 +2269,14 @@ class ProductInfoServiceTest {
 ````
 </details>
 
-
-
-# Add DeliveryService into the ProductService - New Business Requirement.
+# Add DeliveryService into the ProductService - New Business Requirement. ✅
 
 <div align="center">
-    <img src="Business_Case_New_Integration.PNG"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+    <img 
+    src="Business_Case_New_Integration.PNG"
+    alt="Modern Java - Multithreading in Java using Virtual Threads!"
+    width="600"/>
 </div>
-
 
 1. We need to return **Product**, with **delivery information**!
 
@@ -2413,7 +2442,9 @@ class ProductInfoServiceTest {
 - We are seeing the `productV2.deliveryDetails()` being there!
 
 <div align="center">
-    <img src="Testing_The_Structured_Concurrency_ShutdownOnSuccess_DeliveryService.retrieveDeliveryInfo.gif"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+    <img 
+    src="Testing_The_Structured_Concurrency_ShutdownOnSuccess_DeliveryService.retrieveDeliveryInfo.gif"  alt="Modern Java - Multithreading in Java using Virtual Threads!" 
+    width="600"/>
 </div>
 
 - We can see that the **deliveryDetails** are there!
@@ -2593,5 +2624,4 @@ public record ProductV2(String productId,
                         DeliveryDetails deliveryDetails) {
 }
 ````
-
 </details>

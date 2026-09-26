@@ -1,20 +1,26 @@
-# Chapter 03: Getting Started with Java Threads (Platform Threads). 
+# Chapter 03: Getting Started with Java Threads (Platform Threads). ✅
 
 Getting Started with Java Threads (Platform Threads).
 
 # What I learned.
 
-# What is a Platform Thread, Why do we need them?
+# What is a Platform Thread, Why do we need them? ✅
 
 <div align="center">
-    <img src="Why_We_Need_Virtual_Threads.PNG"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+    <img 
+    src="Why_We_Need_Virtual_Threads.PNG"
+    alt="Modern Java - Multithreading in Java using Virtual Threads!"
+    width="600"/>
 </div>
 
 1. Threads have been existed since **Java 1.0**.
 2. This will be executed from the *Main* **Thread**!
 
 <div align="center">
-    <img src="Why_We_Need_Virtaul_Threads_Second.PNG"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+    <img 
+    src="Why_We_Need_Virtaul_Threads_Second.PNG"
+    alt="Modern Java - Multithreading in Java using Virtual Threads!"
+    width="600"/>
 </div>
 
 1. There are two **main threads**:
@@ -22,7 +28,10 @@ Getting Started with Java Threads (Platform Threads).
     - Virtual Threads.
 
 <div align="center">
-    <img src="Executing_Java_Thread.PNG"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+    <img 
+    src="Executing_Java_Thread.PNG"  
+    alt="Modern Java - Multithreading in Java using Virtual Threads!" 
+    width="600"/>
 </div>
 
 1. There are multiple ways to create the **Threads**:
@@ -30,20 +39,23 @@ Getting Started with Java Threads (Platform Threads).
 2. From Java 21 the Java Threads are called **Platform Threads**!
 
 <div align="center">
-    <img src="Benefits_Of_An_Thread.PNG"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+    <img 
+    src="Benefits_Of_An_Thread.PNG"
+    alt="Modern Java - Multithreading in Java using Virtual Threads!"
+    width="600"/>
 </div>
 
 1. This helps to use cores with **Threads**! 
 
-# Java Installation.
+# Java Installation. ✅
 
 - We need **Java 21**, at least!
 
-# Base Project Setup in IntelliJ.
+# Base Project Setup in IntelliJ. ✅
 
 - Sets the base of the project!
 
-# Lets Create Platform Threads.
+# Lets Create Platform Threads. ✅
 
 - Some basic illustration of the **Platform Threads**!
 
@@ -82,7 +94,10 @@ public class ExploreThreads {
 - Lest illustrate the **Threads**!
 
 <div align="center">
-    <img src="Platform_Thread_Working.gif"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+    <img 
+    src="Platform_Thread_Working.gif"
+    alt="Modern Java - Multithreading in Java using Virtual Threads!"
+    width="600"/>
 </div>
 
 1. We can see the order is not fixed!
@@ -161,15 +176,21 @@ public class HelloWorldThreads {
 - We can see the returned result is being returned!
 
 <div align="center">
-    <img src="Get_Result_Out_Of_Threads.gif"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+    <img 
+    src="Get_Result_Out_Of_Threads.gif"  
+    alt="Modern Java - Multithreading in Java using Virtual Threads!" 
+    width="600"/>
 </div>
 
 1. We can see the result is `.join()` out of thread!
 
-# Thread Internals - How it works behind the scenes?
+# Thread Internals - How it works behind the scenes? ✅
 
 <div align="center">
-    <img src="Threads_Internal.PNG"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+    <img 
+    src="Threads_Internal.PNG"  
+    alt="Modern Java - Multithreading in Java using Virtual Threads!"
+    width="600"/>
 </div>
 
 1. There are is **Kernel Threads**!
@@ -180,7 +201,7 @@ public class HelloWorldThreads {
     - Once the task is finished!
         - The **Platform Thread** get eliminated!
 
-# Thread Scalability and Blocking nature of Java Threads - Drawbacks.
+# Thread Scalability and Blocking nature of Java Threads - Drawbacks. ✅
 
 - **First problem** with threads, is the maximum treads! 
     -  Example class of the `MaxThreads`! This is illustrated below:
@@ -223,7 +244,10 @@ public class MaxThreads {
 ````
 
 <div align="center">
-    <img src="Check_The_Memory_Settings_For_The_Program.PNG"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+    <img 
+    src="Check_The_Memory_Settings_For_The_Program.PNG"
+    alt="Modern Java - Multithreading in Java using Virtual Threads!"
+    width="600"/>
 </div>
 
 1. To check and make modifications for the JVM program! 
@@ -247,20 +271,29 @@ public class MaxThreads {
 - We can see that there is **HUGE** amount of threads!
 
 <div align="center">
-    <img src="Executing_Platform_Threads.gif"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+    <img 
+    src="Executing_Platform_Threads.gif"
+    alt="Modern Java - Multithreading in Java using Virtual Threads!"
+    width="600"/>
 </div>
 
 - We can see that, every request is making blocking class!
 
 <div align="center">
-    <img src="Thread_Will_Throw_The_Exception.PNG"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+    <img 
+    src="Thread_Will_Throw_The_Exception.PNG"
+    alt="Modern Java - Multithreading in Java using Virtual Threads!"
+    width="600"/>
 </div>
 
-1. When there is too much **threads** for the JVM to handle, it will throw exception!
+1. When there are too many **threads** for the JVM to handle, it will throw exception!
     - Thread is expensive resource!
 
 <div align="center">
-    <img src="Thread_Properties.PNG"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+    <img 
+    src="Thread_Properties.PNG"
+    alt="Modern Java - Multithreading in Java using Virtual Threads!"
+    width="600"/>
 </div>
 
 1. Thread is an expensive resource:
@@ -273,7 +306,10 @@ public class MaxThreads {
     - If we need to support millions of transactions, we cannot create millions of threads to handle them.
 
 <div align="center">
-    <img src="Blocking_Nature_Of_The_Threads.PNG"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+    <img 
+    src="Blocking_Nature_Of_The_Threads.PNG"
+    alt="Modern Java - Multithreading in Java using Virtual Threads!"
+    width="600"/>
 </div>
 
 1. By nature **Java Threads** is **blocked** and **tied** until its completes!
@@ -284,7 +320,10 @@ public class MaxThreads {
 - **Second problem** with threads, is the blocking nature of the threads! 
  
 <div align="center">
-    <img src="Thread_Being_Blocked.PNG"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+    <img 
+    src="Thread_Being_Blocked.PNG"
+    alt="Modern Java - Multithreading in Java using Virtual Threads!" 
+    width="600"/>
 </div>
 
 1. Thread that makes a call **is being blocked**, while its making call!
@@ -296,7 +335,7 @@ public class MaxThreads {
 <details>
 <summary 
 id="Code_For_MaxThreads"
- open="true"> <b>Code for the MaxThreads!</b> </summary>
+open="true"> <b>Code for the MaxThreads!</b> </summary>
  
  #### MaxThreads.java
 
@@ -340,10 +379,13 @@ public class MaxThreads {
 ````
 </details>
 
-# Effects of Threads in a Backend WebApplication.
+# Effects of Threads in a Backend WebApplication. ✅
 
 <div align="center">
-    <img src="Typical_Backend_Application_Architecture.gif"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+    <img 
+    src="Typical_Backend_Application_Architecture.gif"
+    alt="Modern Java - Multithreading in Java using Virtual Threads!"
+    width="600"/>
 </div>
 
 1. **Thread** is getting assigned from the **thread pool**! 
@@ -351,11 +393,13 @@ public class MaxThreads {
 2. When it returns, it will be making the database call!
 3. Response is **retuned to client**, the connection is released and **retuned to the thread pool**!
 
-
-- Let's figure the if external service gets blocked! 
+- Let's see when the external service gets blocked! 
 
 <div align="center">
-    <img src="Typical_Backend_Application_Architecture_When_Making_Multiple_Queries.gif"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+    <img
+    src="Typical_Backend_Application_Architecture_When_Making_Multiple_Queries.gif"
+    alt="Modern Java - Multithreading in Java using Virtual Threads!"
+    width="600"/>
 </div>
 
 1. We are making the call to **remove service** and this is not **responding very well**!
@@ -366,7 +410,10 @@ public class MaxThreads {
 - Details about the thread:
 
 <div align="center">
-    <img src="Typical_Backend_Application_Architecture_Second.PNG"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+    <img 
+    src="Typical_Backend_Application_Architecture_Second.PNG"
+    alt="Modern Java - Multithreading in Java using Virtual Threads!"
+    width="600"/>
 </div>
 
 1. Thread is expensive request!
@@ -374,13 +421,19 @@ public class MaxThreads {
 - There is reactive programming:
 
 <div align="center">
-    <img src="Reactive_Programming.PNG"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+    <img 
+    src="Reactive_Programming.PNG"
+    alt="Modern Java - Multithreading in Java using Virtual Threads!"
+    width="600"/>
 </div>
 
 - There is option to use **virtual threads**:
 
 <div align="center">
-    <img src="Virtaul_Threads_Possibility.PNG"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+    <img 
+    src="Virtaul_Threads_Possibility.PNG"
+    alt="Modern Java - Multithreading in Java using Virtual Threads!"
+    width="600"/>
 </div>
 
 1. For this there are virtual threads!

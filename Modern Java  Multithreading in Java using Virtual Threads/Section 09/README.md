@@ -1,34 +1,43 @@
-# Chapter 09 - Build a Spring Boot Application using Virtual Threads.
+# Chapter 09 - Build a Spring Boot Application using Virtual Threads. ✅
 
 Build a Spring Boot Application using Virtual Threads.
 
 # What I learned.
 
-# Using Virtual Threads with SpringBoot App.
+# Using Virtual Threads with SpringBoot App. ✅
 
 <div align="center">
-    <img src="Spring_MVC_Thread_Request_Architecture.PNG"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+    <img 
+    src="Spring_MVC_Thread_Request_Architecture.PNG"
+    alt="Modern Java - Multithreading in Java using Virtual Threads!"
+    width="600"/>
 </div>
 
 1. There is assigned **thread** from **thread pool**! This is for normal **platform thread**!
 
 <div align="center">
-    <img src="Spring_MVC_Thread_Request_Architecture_With_Virtual_Thread.PNG"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+    <img 
+    src="Spring_MVC_Thread_Request_Architecture_With_Virtual_Thread.PNG"
+    alt="Modern Java - Multithreading in Java using Virtual Threads!"
+    width="600"/>
 </div>
 
 1. **Virtual Thread** is made per **every request**!
 
-# Setup the Remote Service and Client Application.
+# Setup the Remote Service and Client Application. ✅
 
 <div align="center">
-    <img src="We_Will_Have_Following_App.PNG"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+    <img 
+    src="We_Will_Have_Following_App.PNG"
+    alt="Modern Java - Multithreading in Java using Virtual Threads!"
+    width="600"/>
 </div>
 
 - There two Spring boot app!
     - `clientbootapp-virtual-threads`!  Client app!
     - `remote-service`! Server app!
 
-# Configure the springboot app to use VirtualThreads.
+# Configure the springboot app to use VirtualThreads. ✅
 
 
 - We are just playing with the:
@@ -140,8 +149,6 @@ public class ClientBootVirtualThreadsApp {
     public static void main(String[] args) {
         SpringApplication.run(ClientBootVirtualThreadsApp.class, args);
         log.info("availableProcessors = {} ", Runtime.getRuntime().availableProcessors());
-
-
     }
 
     @EventListener(ApplicationReadyEvent.class)

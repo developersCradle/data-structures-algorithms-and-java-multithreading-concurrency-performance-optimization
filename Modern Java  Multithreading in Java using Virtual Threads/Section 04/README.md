@@ -1,21 +1,27 @@
-# Chapter 04 - Getting Started with Virtual Threads.
+# Chapter 04 - Getting Started with Virtual Threads. ✅
 
 Getting Started with Virtual Threads.
 
 # What I learned.
 
-# Introduction to Virtual Threads.
+# Introduction to Virtual Threads. ✅
 
 <div align="center">
-    <img src="Virtual_Threads.PNG"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+    <img 
+    src="Virtual_Threads.PNG"
+    alt="Modern Java - Multithreading in Java using Virtual Threads!"
+    width="600"/>
 </div>
 
 1. From Java 21!
 2. These qualities of the **Virtual Threads**
-    - They are cheap!
+    - They are cheap to create and maintain!
 
 <div align="center">
-    <img src="Virtual_Thread_Comparison.PNG"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+    <img 
+    src="Virtual_Thread_Comparison.PNG"
+    alt="Modern Java - Multithreading in Java using Virtual Threads!" 
+    width="600"/>
 </div>
 
 1. The **Platform Thread** is **1-to-1** to the **Kernel Threads**!
@@ -64,13 +70,19 @@ public class ExploreVirtualThreads {
 - We can see the **Virtual Threads** in action!
 
 <div align="center">
-    <img src="Ammount_Of_Huge_Threads_Executed.gif"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+    <img 
+    src="Ammount_Of_Huge_Threads_Executed.gif"
+    alt="Modern Java - Multithreading in Java using Virtual Threads!"
+    width="600"/>
 </div>
 
 - We can see the name of the **Virtual Threads**:
 
 <div align="center">
-    <img src="Virtual_Thread_Logging.PNG"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+    <img 
+    src="Virtual_Thread_Logging.PNG"  
+    alt="Modern Java - Multithreading in Java using Virtual Threads!"
+    width="600"/>
 </div>
 
 1. Notice the `VirtualThread` name, not the `Thread`!
@@ -156,7 +168,7 @@ public class ExploreVirtualThreads {
 
 </details>
 
-# Virtual Threads Scalability - Lets Launch 1 million threads.
+# Virtual Threads Scalability - Lets Launch 1 million threads. ✅
 
 - **Virtual Threads** are more scalable than the **Platform Threads**!
     - We will be launching 1 million of threads!
@@ -213,20 +225,29 @@ public class MaxVirtualThreads {
     - I/O-bound applications.
 
 <div align="center">
-    <img src="Virtaul_Threads_Running.gif"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+    <img 
+    src="Virtaul_Threads_Running.gif"
+    alt="Modern Java - Multithreading in Java using Virtual Threads!"
+    width="600"/>
 </div>
 
-# How VirtualThreads works under the hood? - Mounting / Unmounting Virtual Threads.
+# How VirtualThreads works under the hood? - Mounting / Unmounting Virtual Threads. ✅
 
 <div align="center">
-    <img src="How_Virtaul_Threads_Work_Behind_Scenes.PNG"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+    <img 
+    src="How_Virtaul_Threads_Work_Behind_Scenes.PNG"
+    alt="Modern Java - Multithreading in Java using Virtual Threads!"
+    width="600"/>
 </div>
 
 1. **Virtual Threads** are managed by the **JVM**, **not** the **OS**!
 2. **JVM** has own **scheduler** to schedule the **Virtual Threads** to the **Carrier Threads**!
 
 <div align="center">
-    <img src="Virtaul_Thread_Scheduler.PNG"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+    <img 
+    src="Virtaul_Thread_Scheduler.PNG"  
+    alt="Modern Java - Multithreading in Java using Virtual Threads!"
+    width="600"/>
 </div>
 
 1. **Virtual Thread A** is mapped into **Carrier Thread 1**!
@@ -235,7 +256,10 @@ public class MaxVirtualThreads {
 > Number of the **Platform Threads**/**Carrier Threads** is a number of cores!
 
 <div align="center">
-    <img src="Virtaul_Threads_Mountin_And_Unmounting.gif"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+    <img 
+    src="Virtaul_Threads_Mountin_And_Unmounting.gif"  
+    alt="Modern Java - Multithreading in Java using Virtual Threads!" 
+    width="600"/>
 </div>
 
 1. We will be having **4** different **Virtual Threads**!
@@ -245,7 +269,10 @@ public class MaxVirtualThreads {
     - This is called **unmounting**!
 
 <div align="center">
-    <img src="Virtaul_Threads_Mountin_And_Unmounting_In_HTTP_Call.gif"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+    <img 
+    src="Virtaul_Threads_Mountin_And_Unmounting_In_HTTP_Call.gif" 
+    alt="Modern Java - Multithreading in Java using Virtual Threads!" 
+    width="600"/>
 </div>
 
 1. When we **make call** with the **HTTP Client**, the **Virtual Thread** is getting placed into **Carrier Thread**!
@@ -278,7 +305,7 @@ public Movie getMovieById() {
 }
 ````
 
-# Mounting and Unmounting threads in Action.
+# Mounting and Unmounting threads in Action. ✅
 
 - For **Platform Threads** the executing by one thread:
     ````Bash
@@ -347,13 +374,19 @@ public class MaxVirtualThreads {
 - We are calling the **Virtual Thread**, we can see the naming strategy:
 
 <div align="center">
-    <img src="Virtaul_Threads_Mounting_And_Unmounting_In_Virtaul_Thread.gif"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+    <img
+    src="Virtaul_Threads_Mounting_And_Unmounting_In_Virtaul_Thread.gif"  
+    alt="Modern Java - Multithreading in Java using Virtual Threads!"
+    width="600"/>
 </div>
 
 - We can see that, the threads are having different name: 
 
 <div align="center">
-    <img src="Unmounting_And_Mounting_For_The_Virtual_Thread.PNG"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+    <img 
+    src="Unmounting_And_Mounting_For_The_Virtual_Thread.PNG"
+    alt="Modern Java - Multithreading in Java using Virtual Threads!"
+    width="600"/>
 </div>
 
 1. We can see that the `doSomeWork : 7`
@@ -362,21 +395,53 @@ public class MaxVirtualThreads {
         - `[VirtualThread[#35]/runnable@ForkJoinPool-1-worker-5] - started doSomeWork : 7`.
 
 <div align="center">
-    <img src="Number_Of_Cores_In_Machines.PNG"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+    <img 
+    src="Number_Of_Cores_In_Machines.PNG"
+    alt="Modern Java - Multithreading in Java using Virtual Threads!"
+    width="600"/>
 </div>
 
-1. Like we mentioned, we can have the **number of cores** as the **carrier thread**!
+1. Like we mentioned, we can have the **number of cores** as the in **carrier threads**!
+    - **12** cores, therefore **12** carrier threads!
 
-# Virtual Threads - `yield()` and `run()` using Continuation API.
+# Virtual Threads - `yield()` and `run()` using Continuation API. ✅
 
-- This chapter: Suspends and continue of the task, where it left of.
+- This chapter: **Suspends** and **continues the task**, where it left of.
 
+<div align="center">
+    <img 
+    src="Continuation_API_Is_Storing_The_Information.JPG"
+    alt="Modern Java - Multithreading in Java using Virtual Threads!"
+    width="600"/>
+</div>
 
-# Pinned Virtual Threads.
+1. When the thread is going into **sleep**, it needs to store the threads' context information.
+    - That's where the **Continuation API** comes in!
 
-# Important Facts about VirtualThreads.
+<div align="center">
+    <img 
+    src="yield_And_run_operations.JPG"
+    alt="Modern Java - Multithreading in Java using Virtual Threads!"
+    width="600"/>
+</div>
 
-# Quiz 01: Platform Threads and Virtual Threads.
+1. The **Continuation API** is way of **stopping** and **continuing** the program on specific place! 
+2.  **Continuation API** stores different information about the programs situation!
+
+<div align="center">
+    <img 
+    src="Virtaul_Thread_Continuatation_Flow_Chart.JPG"
+    alt="Modern Java - Multithreading in Java using Virtual Threads!"
+    width="600"/>
+</div>
+
+- **Continuation API** is handling the inner mechanics of the handling the virtual threads!
+        - 
+# Pinned Virtual Threads. ✅
+
+# Important Facts about VirtualThreads. ✅
+
+# Quiz 01: Platform Threads and Virtual Threads. ✅
 
 - Todo continue here after the quiz
 

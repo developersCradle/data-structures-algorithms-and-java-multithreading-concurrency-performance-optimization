@@ -1,13 +1,16 @@
-# Chapter 05 - Future and CompletableFuture.
+# Chapter 05 - Future and CompletableFuture. ✅
 
 Future and CompletableFuture.
 
 # What I learned.
 
-# Evolution of Concurrency APIs in Java.
+# Evolution of Concurrency APIs in Java. ✅
 
 <div align="center">
-    <img src="Evolution_Of_Concurrency_APIs.PNG"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+    <img 
+    src="Evolution_Of_Concurrency_APIs.PNG"
+    alt="Modern Java - Multithreading in Java using Virtual Threads!"
+    width="600"/>
 </div>
 
 1. **Threads** were introduced in **Java 1** in 1996!
@@ -16,17 +19,22 @@ Future and CompletableFuture.
 4. **Java 8** functional programming world in 2014!
 5. **Java 21** introduced the **Virtual Threads** in 2023!
 
-# Parallelism VS Concurrency.
+# Parallelism VS Concurrency. ✅
 
 <div align="center">
-    <img src="Concurrency.PNG"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+    <img
+    src="Concurrency.PNG"
+    alt="Modern Java - Multithreading in Java using Virtual Threads!"
+    width="600"/>
 </div>
-
 
 1. **Concurrency** is the ability of a system to make progress on two or more **independent** tasks during the same period of time
 
 <div align="center">
-    <img src="Concurrency_Example.PNG"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+    <img 
+    src="Concurrency_Example.PNG"  
+    alt="Modern Java - Multithreading in Java using Virtual Threads!" 
+    width="600"/>
 </div>
 
 1. We will be having **two threads**!
@@ -36,7 +44,10 @@ Future and CompletableFuture.
 5. The **Shared Object** is root of all evil!
 
 <div align="center">
-    <img src="Parallelism.PNG"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+    <img 
+    src="Parallelism.PNG"  
+    alt="Modern Java - Multithreading in Java using Virtual Threads!" 
+    width="600"/>
 </div>
 
 0. **Parallelism** is the simultaneous execution of two or more tasks or subtasks on multiple processors or CPU cores.
@@ -46,17 +57,23 @@ Future and CompletableFuture.
 3. We will be **.join(...)**!
 
 <div align="center">
-    <img src="Parallelism_Example.PNG"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+    <img 
+    src="Parallelism_Example.PNG"  
+    alt="Modern Java - Multithreading in Java using Virtual Threads!" 
+    width="600"/>
 </div>
 
 1. We will be having the **parallelism** example using the **transformation** operation!
 
 <div align="center">
-    <img src="Parallelism_Java_Code.PNG"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+    <img 
+    src="Parallelism_Java_Code.PNG"  
+    alt="Modern Java - Multithreading in Java using Virtual Threads!" 
+    width="600"/>
 </div>
 
 1. `.parallelStream()` splits a large task into **smaller subtasks**, processes them in **parallel** using multiple threads, and then **joins** the results!
-2. [Multithreading,Parallel & Asynchronous Coding in Modern Java](https://www.udemy.com/course/parallel-and-asynchronous-programming-in-modern-java/)!
+2. [Multithreading, Parallel & Asynchronous Coding in Modern Java](https://www.udemy.com/course/parallel-and-asynchronous-programming-in-modern-java/)!
 
 <div align="center">
     <img src="Concurrency_Vs_Parallism.PNG"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
@@ -72,16 +89,22 @@ Future and CompletableFuture.
     - Core 2: **Task B** ███████
     - **Task A** and **Task B** run simultaneously!
 
-# Introduction to Future.
+# Introduction to Future. ✅
 
 <div align="center">
-    <img src="Future_And_Executor_Service.PNG"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+    <img 
+    src="Future_And_Executor_Service.PNG"
+    alt="Modern Java - Multithreading in Java using Virtual Threads!"
+    width="600"/>
 </div>
 
 1. **Future API's** is to retrieve the result of an asynchronous task. This made it easier to return values from **Threads**!
 
 <div align="center">
-    <img src="Product_Service.PNG"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+    <img
+    src="Product_Service.PNG"
+    alt="Modern Java - Multithreading in Java using Virtual Threads!"
+    width="600"/>
 </div>
 
 1. We will be having the **product service**!
@@ -107,7 +130,10 @@ Future and CompletableFuture.
 >        ````
 
 <div align="center">
-    <img src="Future_And_Executor_Service_In_Code.PNG"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+    <img 
+    src="Future_And_Executor_Service_In_Code.PNG"  
+    alt="Modern Java - Multithreading in Java using Virtual Threads!" 
+    width="600"/>
 </div>
 
 1. Create pool of **6 worker** threads.
@@ -115,7 +141,7 @@ Future and CompletableFuture.
 3. These are **blocking** calls!
 4. Collect are return **Product**!
 
-# ProductService using Future API and ExecutorService.
+# ProductService using Future API and ExecutorService. ✅
 
 #### ProductServiceUsingExecutor.java
 
@@ -239,13 +265,19 @@ class ProductServiceUsingExecutorTest {
 - Test running:
 
 <div align="center">
-    <img src="Running_Tests_To_See_The_ExecutorService_Working.gif"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+    <img 
+    src="Running_Tests_To_See_The_ExecutorService_Working.gif"
+    alt="Modern Java - Multithreading in Java using Virtual Threads!"
+    width="600"/>
 </div>
 
 - Limitation of limitations of **ExecutorService** and **Future API**. 
 
 <div align="center">
-    <img src="Limitations_Of_ExecutorService_And_Future_API.PNG"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+    <img 
+    src="Limitations_Of_ExecutorService_And_Future_API.PNG"  
+    alt="Modern Java - Multithreading in Java using Virtual Threads!" 
+    width="600"/>
 </div>
 
 1. To get data, we need to call `.get()`. This is blocking task!
@@ -355,8 +387,6 @@ public class ProductInfoService {
         return new ProductInfo(productId, productOptions);
     }
 
-
-
     public ProductInfo retrieveProductInfoV2(String productId) {
         CommonUtil.sleep(2000);
         List<ProductOption> productOptions = List.of(new ProductOption("64GB", "Black", 699.99),
@@ -392,7 +422,6 @@ public class ProductInfoService {
 
 ````Java
 package com.modernjava.future;
-
 
 import com.modernjava.service.ProductInfoService;
 import com.modernjava.service.ReviewService;
@@ -441,7 +470,7 @@ class ProductServiceUsingExecutorTest {
 ````
 </details>
 
-# CompletableFuture API - ProductService using CompletableFuture API.
+# CompletableFuture API - ProductService using CompletableFuture API. ✅
 
 <div align="center">
     <img src="CompletableFuture.PNG"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
@@ -558,7 +587,10 @@ class ProductServiceUsingCompletableFutureTest {
 - We will be running the test:
 
 <div align="center">
-    <img src="CompletableFuture_Working.gif"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+    <img 
+    src="CompletableFuture_Working.gif"  
+    alt="Modern Java - Multithreading in Java using Virtual Threads!" 
+    width="600"/>
 </div>
 
 - We can see the logs:
@@ -569,7 +601,10 @@ class ProductServiceUsingCompletableFutureTest {
 ````
 
 <div align="center">
-    <img src="CompletableFuture_List_Of_Operations.PNG"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+    <img 
+    src="CompletableFuture_List_Of_Operations.PNG"  
+    alt="Modern Java - Multithreading in Java using Virtual Threads!"
+    width="600"/>
 </div>
 
 1. There are multiple operations in the `CompatableFuture`, we will not go thought them all here! 
@@ -583,7 +618,6 @@ open="true"> <b>Code for the CompletableFuture!</b> </summary>
 
 ````Java
 package com.modernjava.completablefuture;
-
 
 import com.modernjava.domain.Product;
 import com.modernjava.domain.ProductInfo;

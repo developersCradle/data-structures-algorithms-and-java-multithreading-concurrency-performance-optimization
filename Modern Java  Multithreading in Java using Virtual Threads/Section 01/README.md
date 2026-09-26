@@ -1,29 +1,41 @@
-# Chapter 01: Getting Started With the Course. 
+# Chapter 01: Getting Started With the Course. ✅
 
 Getting Started With the Course.
 
 # What I learned.
 
-# Course Introduction.
+# Course Introduction. ✅
 
 <div align="center">
-    <img src="Intro_To_Course.PNG"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+    <img 
+    src="Intro_To_Course.PNG"
+    alt="Modern Java - Multithreading in Java using Virtual Threads!"
+    width="600"/>
 </div>
 
 1. Hi Dilip!
 
 <div align="center">
-    <img src="What_Covered_In_This_Course.PNG"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+    <img 
+    src="What_Covered_In_This_Course.PNG"
+    alt="Modern Java - Multithreading in Java using Virtual Threads!"
+    width="600"/>
 </div>
 
 - Who should enroll into this:
 
 <div align="center">
-    <img src="Target_Audiance.PNG"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+    <img
+    src="Target_Audiance.PNG"
+    alt="Modern Java - Multithreading in Java using Virtual Threads!"
+    width="600"/>
 </div>
 
-# Pre-requestites.
+# Pre-requestites. ✅
 
 <div align="center">
-    <img src="Prerequisites.PNG"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+    <img 
+    src="Prerequisites.PNG"  
+    alt="Modern Java - Multithreading in Java using Virtual Threads!"
+    width="600"/>
 </div>

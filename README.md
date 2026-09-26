@@ -1,20 +1,27 @@
+
+
+<!-- TODO teeh enterin painalluksent, kts ala -->
+
 <!-- 
 
 We are using following structure:
 
-<p align="center">
+<p 
+align="center">
     <img
      src="Jackson_Quick_Start_JSON_Serialization_With_Java_Made_Easy_Caption.png"
     alt="Jackson quick start json serialization with java made easy caption!"
-    style="width:1600px;height:120px;"/>gt
+    style="width:1600px;height:120px;"
+    />
 </p> 
-<p align="center">
+<p 
+align="center">
     <img
     id="Jackson_Quick_Start_JSON_Serialization_With_Java_Made_Easy_Description?trk=public_profile_see-credential" src="Jackson_Quick_Start_JSON_Serialization_With_Java_Made_Easy_Description.png"
     alt="Jackson quick start json serialization with java made easy description!"
-    style="width:590px; height:160px;" />
+    style="width:590px; height:160px;"
+    />
 </p>
-
 -->
 
 <!--
@@ -32,8 +39,12 @@ The question comes here!
 
 - My answer:
 
-<div align="center">
-    <img src="Quiz 07/Q1.PNG" width="600"/>
+<div
+align="center">
+    <img
+    src="Quiz 07/Q1.PNG" 
+    width="600"
+    />
 </div>
 
 1. Add here the answer!
@@ -46,8 +57,13 @@ Template for the task/exercies:
  
 # Lab Exercise - Mapping Collections of Value Types.
 
-<div align="center">
-    <img src="add here the exercise!" alt="Hibernate Java Persistence!" width=" 500"/>
+<div 
+align="center">
+    <img 
+    src="add here the exercise!" 
+    alt="Hibernate Java Persistence!" 
+    width=" 500"
+    />
 </div>
 
 1. **Question 1:** add here the question from the test!
@@ -55,12 +71,20 @@ Template for the task/exercies:
  -->
 
 <p align="center">
-    <img id="Algorithms_And_Data_Structures_With_Some_Optimization_Courses_Caption" src="Algorithms_And_Data_Structures_With_Some_Optimization_Courses_Caption.png" style="width:900px;height:140px;">
+    <img 
+    id="Algorithms_And_Data_Structures_With_Some_Optimization_Courses_Caption" src="Algorithms_And_Data_Structures_With_Some_Optimization_Courses_Caption.png"
+    style="width:900px;height:140px;"
+    />
     <text>Attempt to study <b>Data Structures</b>, <b>Optimization</b> and <b>Algorithms</b> related topics!</text>
 </p>
 
 <p align="center">
-   <img src="Java_Monolith_Optimization_Repostiory_Graphic.gif" alt="Java Monolith Optimization Repostiory Graphic" width="500" height="350"/>
+   <img 
+    src="Java_Monolith_Optimization_Repostiory_Graphic.gif"
+    alt="Java Monolith Optimization Repostiory Graphic" 
+    width="500" 
+    height="350"
+    />
 </p>
 
 - For these courses one should configure **GIT** for handle projects.
@@ -68,18 +92,25 @@ Template for the task/exercies:
     - `git config --global core.longpaths true`.
 
 <p align="center">
-    <img src="Java_Multithreading_Concurrency_And_Performance_Optimization_Caption.png" alt="Java multithreading concurrency and performance optimization caption" style="width:1600px;height:120px;"/>
+    <img 
+    src="Java_Multithreading_Concurrency_And_Performance_Optimization_Caption.png" 
+    alt="Java multithreading concurrency and performance optimization caption" 
+    style="width:1600px;height:120px;"
+    />
 </p>
 
 <p align="center">
-    <img id="Java_Multithreading_Concurrency_And_Performance_Optimization_Description" src="Java_Multithreading_Concurrency_And_Performance_Optimization_Description.PNG" style=" width: 680px;">
+    <img
+    id="Java_Multithreading_Concurrency_And_Performance_Optimization_Description" src="Java_Multithreading_Concurrency_And_Performance_Optimization_Description.PNG" 
+    style="width: 680px;"
+    />
 </p>
 
 All course material from *Java Multithreading, Concurrency & Performance Optimization* by **Michael Pogrebinsky** and **Top Developer Academy LLC**.
 
-> While working in the 🏛️**Nordea**🏛️, we were working with an old legacy system that was making **two concurrent** calls to a shared resource, causing inconsistent results that only appeared sometimes. The issue was subtle and difficult to reproduce, making it even harder to diagnose. What made it even harder was not runnable on our local environment! 
+> While working in the 🏛️**Nordea**🏛️, we were working with an old legacy system that was making **two concurrent** calls to a shared resource, causing inconsistent results that only appeared sometimes. The issue was subtle and difficult to reproduce, making it even harder to diagnose. What made it even harder was not runnable on our local environment! 🐟 
 >
-> A recent course I had taken on *Java Multithreading Concurrency And Performance Optimization* proved invaluable. It helped me identify the race condition and apply the `synchronized` keyword correctly to control access to the critical section. With proper thread coordination in place, the system stabilized without requiring a major rewrite of the legacy code. <br><br>
+> A recent course I had taken on *Java Multithreading Concurrency And Performance Optimization* proved invaluable. It helped me identify the race condition and apply the `synchronized` keyword correctly to control access to the critical section. With proper thread coordination in place, the system stabilized without requiring a major rewrite of the legacy code. 🐟 <br><br>
 ~ *DevelopersCradle*
 
 Contains my own with my own visual notes ✍️ with some course material to enforce learning experience.
@@ -97,9 +128,19 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 ?trk=public_profile_see-credential 
 -->
 
-<p id="Logo_Combination" align="center">
-    <img src="I_Have_Same_Smile_Finish.gif" alt="course intros" style="width:490px;height:210px;"/>
-    <img src="Dummy_Cert.png" alt="course intros" style="width:490px;height:310px;"/>
+<p 
+id="Logo_Combination" 
+align="center">
+    <img 
+    src="I_Have_Same_Smile_Finish.gif" 
+    alt="course intros" 
+    style="width:490px;height:210px;"
+    />
+    <img 
+    src="Dummy_Cert.png" 
+    alt="course intros" 
+    style="width:490px;height:310px;"
+    />
 </p>
 
 **Note: The material provided in this repository is only for helping those who may get stuck at any point of time in the course. It is very advised that no one should just copy the solutions(violation of Honor Code) presented here.**
@@ -263,20 +304,27 @@ id="Cleaning_Images_Links" open="true"> <b>Cleaning the images with the link and
     * *Coding Exercise*:
         * [Some here](#).
 
-<p align="center">
-    <img src="Multithreading_Comma_Parallel_And_Asynchronous_Coding_In_Modern_Java_Caption.png" alt="Multithreading, Pparallel and asynchronous coding in modern java caption!" style="width:990px;height:110px;"/>
+<p 
+align="center">
+    <img src="Multithreading_Comma_Parallel_And_Asynchronous_Coding_In_Modern_Java_Caption.png" 
+    alt="Multithreading, Pparallel and asynchronous coding in modern java caption!" style="width:990px;height:110px;"
+    />
 </p>
 
-<p align="center">
-    <img src="Multithreading_Comma_Parallel_And_Asynchronous_Coding_In_Modern_Java_Description.PNG" alt="Multithreading, parallel and asynchronous coding in modern java description!" style="width:690px" />
+<p 
+align="center">
+    <img src="Multithreading_Comma_Parallel_And_Asynchronous_Coding_In_Modern_Java_Description.PNG"
+    alt="Multithreading, parallel and asynchronous coding in modern java description!" 
+    style="width:690px"
+    />
 </p>
 
 All course material from *Multithreading, Parallel & Asynchronous Coding in Modern Java* by **Pragmatic Code School**.
 
-> During a live technical demonstration at **Evitec Solutions**, I was asked to solve a puzzle involving a Java problem that required clean data processing logic. Under normal circumstances, it was a problem perfectly suited for **Java Streams**, but the pressure of the live session caused me to overlook that approach.
+> During a live technical demonstration at **Evitec Solutions**, I was asked to solve a puzzle involving a Java problem that required clean data processing logic. Under normal circumstances, it was a problem perfectly suited for **Java Streams**, but the pressure of the live session caused me to overlook that approach. 🐟
 >
->That moment became a turning point. It pushed me to deeply pursue a course on *Modern Java*, where I strengthened my understanding of streams, functional patterns, and expressive problem-solving techniques. The experience helped me regain confidence and sharpen my ability to apply the right abstractions even in high-pressure situations. <br><br>
-~ *DevelopersCradle*
+> That moment became a turning point. It pushed me to deeply pursue a course on *Modern Java*, where I strengthened my understanding of streams, functional patterns, and expressive problem-solving techniques. The experience helped me regain confidence and sharpen my ability to apply the right abstractions even in high-pressure situations. 🐟 <br><br>
+> ~ *DevelopersCradle*
 
 Contains my own with my own visual notes ✍️ with some course material to enforce learning experience.
 
@@ -343,7 +391,11 @@ open="true"> <i>Course map for the </i><b> Modern Java Courses!</b> </summary>
 <br>
 
 <p align="center">
-    <img src="courseMap.png" alt="Course roadmap to enroll in the Modern Java Courses." width="400"/>
+    <img
+    src="courseMap.png"
+    alt="Course roadmap to enroll in the Modern Java Courses." 
+    width="400"
+    />
 </p>
 
 1. You can take this course first: [Modern Java - Learn Java 8 features by coding it](https://www.udemy.com/course/modern-java-learn-java-8-features-by-coding-it/).
@@ -352,19 +404,26 @@ open="true"> <i>Course map for the </i><b> Modern Java Courses!</b> </summary>
 </details>
 
 <p align="center">
-    <img src="Modern_Java_Multithreading_In_Java_Using_Virtual_Threads_Caption.PNG" alt="Modern java multithreading in java using virtual threads caption!" style="width:990px;height:110px;"/>
+    <img 
+    src="Modern_Java_Multithreading_In_Java_Using_Virtual_Threads_Caption.PNG"
+    alt="Modern java multithreading in java using virtual threads caption!" 
+    style="width:990px;height:110px;"
+    />
 </p>
 
 <p align="center">
-    <img src="Modern_Java_Multithreading_In_Java_Using_Virtual_Threads_Description.PNG" alt="Modern java multithreading in java using virtual threads description!" style="width:690px" />
+    <img
+    src="Modern_Java_Multithreading_In_Java_Using_Virtual_Threads_Description.PNG" 
+    alt="Modern java multithreading in java using virtual threads description!"
+    style="width:690px"
+    />
 </p> 
 
 All course material from *Modern Java - Multithreading in Java using Virtual Threads* by **Pragmatic Code School**.
 
-> Once in a lifetime, i interviewed with 🔴**Polar**🔴 for an Advanced Java role, and on part of the technical discussion immediately dove into multithreading, concurrency, and performance optimization. They asked about thread pools, synchronization strategies, deadlocks, optimizing CPU-bound versus IO-bound operations, and even Virtual Threads in Java. The questions were challenging and required more than just textbook knowledge — they wanted practical understanding of real-world thread behavior.
+> Once in a lifetime, i interviewed with 🔴**Polar**🔴 for an Advanced Java role, and on part of the technical discussion immediately dove into multithreading, concurrency, and performance optimization. They asked about thread pools, synchronization strategies, deadlocks, optimizing CPU-bound versus IO-bound operations, and even Virtual Threads in Java. The questions were challenging and required more than just textbook knowledge — they wanted practical understanding of real-world thread behavior. 🐟
 >
-> Thanks to a recent course on *Modern Java - Multithreading in Java using Virtual Threads*, I could confidently discuss thread-safe collections, locks, executor frameworks, and the advantages of Virtual Threads for scalable, lightweight concurrency. Even though I was **not chosen** for the position, the interview **drove me** to deeply pursue these concepts, strengthening my skills and confidence for future challenges.
->
+> Thanks to a recent course on *Modern Java - Multithreading in Java using Virtual Threads*, I could confidently discuss thread-safe collections, locks, executor frameworks, and the advantages of Virtual Threads for scalable, lightweight concurrency. Even though I was **not chosen** for the position, the interview **drove me** to deeply pursue these concepts, strengthening my skills and confidence for future challenges. 🐟 <br><br>
 > ~ DevelopersCradle
 
 Contains my own with my own visual notes ✍️ with some course material to enforce learning experience.
@@ -384,9 +443,16 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 ?trk=public_profile_see-credential 
 -->
 
-<div align="center">
-    <img id="Modern_Java_Multithreading_In_Java_Using_Virtual_Threads_Certificate?trk=public_profile_see-credential" src="Modern_Java_Multithreading_In_Java_Using_Virtual_Threads_Certificate.jpg" alt="Modern java multithreading in java using virtual threads certificate!" width="600"/>
-</div>
+<p 
+id="Logo_Combination" 
+align="center">
+    <img 
+    src="Me_At_Polar.png" 
+    alt="I had hard time in Polar interview, but was rejected. Now i have masterd the things, which they were asking for! Difficulties makes you stronger!" 
+    style="width:590px;height:440px;"/>
+    <img id="Modern_Java_Multithreading_In_Java_Using_Virtual_Threads_Certificate?trk=public_profile_see-credential" src="Modern_Java_Multithreading_In_Java_Using_Virtual_Threads_Certificate.jpg" alt="Modern java multithreading in java using virtual threads certificate!" width="600"
+    />
+</p>
 
 **Note: The material provided in this repository is only for helping those who may get stuck at any point of time in the course. It is very advised that no one should just copy the solutions(violation of Honor Code) presented here.**
 
@@ -413,21 +479,21 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
     * *Quiz*:
         * [Quiz 01: Platform Threads and Virtual Threads](#).
 
-
 <p align="center">
-    <img src="Java_Application_Performance_Tuning_And_Memory_Management_Caption.gif" alt="Java Application Performance Tuning and Memory Management!" style="width:1000px;height:120px;"/>
+    <img 
+    src="Java_Application_Performance_Tuning_And_Memory_Management_Caption.gif" alt="Java Application Performance Tuning and Memory Management!" style="width:1000px;height:120px;"
+    />
 </p>
 
 <p align="center">
-    <img src="Java_Application_Performance_Tuning_And_Memory_Management_Description.PNG" alt="Java Application Performance Tuning and Memory Management description!" style="width:660px" />
+    <img 
+    src="Java_Application_Performance_Tuning_And_Memory_Management_Description.PNG" alt="Java Application Performance Tuning and Memory Management description!" style="width:660px" 
+    />
 </p> 
 
 All course material from *Java Application Performance Tuning and Memory Management* by from **Matt Greencroft** ... Sir **Matt Greencroft** and **Virtual Pair Programmers**.
 
-> I interviewed with 🔴**Polar**🔴 for an Advanced Java role, and the technical discussion immediately dove into multithreading, concurrency, and performance optimization. They asked about thread pools, synchronization strategies, deadlocks, optimizing CPU-bound versus IO-bound operations, and even Virtual Threads in Java. The questions were challenging and required more than just textbook knowledge — they wanted practical understanding of real-world thread behavior.
->
-> Thanks to a recent course on *Java Multithreading, Concurrency & Performance Optimization*, I could confidently discuss thread-safe collections, locks, executor frameworks, and the advantages of Virtual Threads for scalable, lightweight concurrency. Even though I was **not chosen** for the position, the interview **drove me** to deeply pursue these concepts, strengthening my skills and confidence for future challenges. <br><br>
-~ *DevelopersCradle*
+> Add here story.🐟 <br><br>
 
 Contains my own with my own visual notes ✍️ with some course material to enforce learning experience.
 
@@ -498,9 +564,11 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
     * *Example*:
         * [Performance example one codes](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Application%20Performance%20Tuning%20and%20Memory%20Management/Section%2002/README.md#JIT%20logs%20example%20one%20codes).
         * [Performance example second codes](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Application%20Performance%20Tuning%20and%20Memory%20Management/Section%2002/README.md#JIT%20logs%20example%20second%20codes).
+        - FIx the links
     * *Logs*:
         * [Performance example second logs](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Application%20Performance%20Tuning%20and%20Memory%20Management/Section%2002/README.md#JIT%20logs%20example%20second%20logs).
         * [Performance logs from the logCompilation](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Application%20Performance%20Tuning%20and%20Memory%20Management/Section%2002/hotspot_pid11876.log).
+        - Fix the links
 
 
 <p align="center">
@@ -518,8 +586,8 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 All course material from *Solving Memory Leaks in the JVM* by **Kirk Pepperdine**!
 
-> Add story here <br><br>
-~ *DevelopersCradle*
+> Add story here. 🐟 <br><br>
+> ~ *DevelopersCradle*
 
 Contains my own with my own visual notes ✍️ with some course material to enforce learning experience.
 
@@ -543,7 +611,7 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 #### Progress/Curriculum.
 
-- [x] [Section 01](#) - . ⚠️ In progress! ⚠️
+- [x] [Section 01](#) - ⚠️ In progress! ⚠️
 
 #### Additional stuff.
 
@@ -559,11 +627,11 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 All course material from A Comprehensive Introduction to Java Virtual Machine (JVM) by **Dheeru Mundluru**.
 
-> Once I saw one 👓<b>requirement</b>👓 in the job posting, this lead me get more comfortable at the JVM internals.
+> Once I saw one 👓<b>requirement</b>👓 in the job posting, this lead me get more comfortable at the JVM internals. 🐟 
 >
->*"How you would tune the JVM for Garbage Collection (GC) overhead in latency-sensitive applications?"*
+> *"How you would tune the JVM for Garbage Collection (GC) overhead in latency-sensitive applications?"* 🐟
 >
-> Sony evaluates candidates on real-world scalability, debugging under pressure, and system performance rather than just "textbook answers". <br><br>
+> Sony evaluates candidates on real-world scalability, debugging under pressure, and system performance rather than just "textbook answers". 🐟 <br><br>
 > ~ *DevelopersCradle*
 
 Contains my own with my own visual notes ✍️ with some course material to enforce learning experience.
@@ -722,7 +790,7 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 todo this desc.
 
 >
-> add here the story
+> add here the. 🐟 <br><br>
 >
 
 Contains my own with my own visual notes ✍️ with some course material to enforce learning experience.
@@ -826,9 +894,8 @@ All course material from *Data Structures and Algorithms: Deep Dive Using Java* 
 
 > I once interviewed with 🌤️**Vaisala**🌤️ for the *Observation Network Manager NM10* role, where the technical discussion went deep into data structures and their operations. The interview challenged my understanding of trees, graphs, and time–space trade-offs in ways I hadn’t fully experienced before. [Project](https://www.vaisala.com/en/products/weather-environmental-sensors/observation-network-manager-nm10).
 >
-> Although I **wasn’t** selected for the position, the experience became a turning point. It drove me to truly internalize the concepts through a deep dive into *Data Structures and Algorithms using Java*, strengthening both my problem-solving approach and technical confidence for future challenges.
-<br><br>
-~ *DevelopersCradle*
+> Although I **wasn’t** selected for the position, the experience became a turning point. It drove me to truly internalize the concepts through a deep dive into *Data Structures and Algorithms using Java*, strengthening both my problem-solving approach and technical confidence for future challenges. 🐟 <br><br>
+> ~ *DevelopersCradle*
 
 Contains my own with my own visual notes ✍️ with some course material to enforce learning experience.
 
@@ -885,21 +952,24 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 <p align="center">
     <img 
     id="Java_Data_Structures_And_Algorithms_Plus_Leetcode_Exercises_Caption"
-    src="Java_Data_Structures_And_Algorithms_Plus_LEETCODE_Exercises_Caption.png" alt="Java Data Structures And Algorithms Plus LEETCODE Exercises Caption" style="width:990px;height:110px;"/>
+    src="Java_Data_Structures_And_Algorithms_Plus_LEETCODE_Exercises_Caption.png" alt="Java Data Structures And Algorithms Plus LEETCODE Exercises Caption" style="width:990px;height:110px;"
+    />
 </p>
 
 <p align="center">
-    <img src="Java_Data_Structures_And_Algorithms_Plus_LEETCODE_Excervice_Description.PNG" alt="Java Data Structures And Algorithms Plus LEETCODE Excervice Description" style="width:690px" />
+    <img src="Java_Data_Structures_And_Algorithms_Plus_LEETCODE_Excervice_Description.PNG" 
+    alt="Java Data Structures And Algorithms Plus LEETCODE Excervice Description!" style="width:690px" 
+    />
 </p>
 
 All course material from *Java Data Structures & Algorithms + LEETCODE Exercises* by **Scott Barrett**.
 
 > Once I saw one 👀<b>requirement</b>👀 in the job posting, I realized that my *LeetCode* practice wasn’t just for fun—it directly built the skills the role demanded.
 >
->*"Can you design a system that efficiently handles millions of inserts, deletes, and queries per second?"*
+> *"Can you design a system that efficiently handles millions of inserts, deletes, and queries per second?"*
 >
-> Companies like Facebook evaluate candidates on their ability to apply data structures in both coding challenges and real-world system design—showing that mastering arrays, trees, and hash maps isn’t just academic, it’s practical. <br><br>
-~ DevelopersCradle
+> Companies like Facebook evaluate candidates on their ability to apply data structures in both coding challenges and real-world system design—showing that mastering arrays, trees, and hash maps isn’t just academic, it’s practical. 🐟 <br><br>
+> ~ DevelopersCradle
 
 Contains my own with my own visual notes ✍️ with some course material to enforce learning experience.
 
@@ -988,12 +1058,19 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 - Whenever there is new **data structure** learned → Check the cheat sheet, in reflection!
     - [Check the cheat sheet](https://www.bigocheatsheet.com/).
 
-<p align="center">
-    <img id="Performance_Optimization" src="How_I_Got_Good_At_Algorithms_And_Data_Structures_Caption.png" style=" width: 900px; height: 100px">
+<p 
+align="center"
+>
+    <img
+    id="Performance_Optimization" src="How_I_Got_Good_At_Algorithms_And_Data_Structures_Caption.png"
+    style="width: 900px; height: 100px"
+    >
 </p>
 
 <p align="center">
-    <img id="How_To_Get_Good_At_l33t_Code_By_Nich_White_Learning_Path_Description" src="How_To_Get_Good_At_l33t_Code_By_Nich_White_Learning_Path_Description.jpg" style=" width: 400px;">
+    <img 
+    id="How_To_Get_Good_At_l33t_Code_By_Nich_White_Learning_Path_Description" src="How_To_Get_Good_At_l33t_Code_By_Nich_White_Learning_Path_Description.jpg" style=" width: 400px;"
+    >
 </p>
 
 > [!IMPORTANT]  
@@ -1023,8 +1100,8 @@ open="true"> <b> Must know fundementals! </b> </summary>
 
 All course material from *Introduction to Algorithms* by **Prof. Srini Devadas** and **Prof. Erik Demaine**.
 
-> Add here some story <br><br>
-~ *DevelopersCradle*
+> Add here some story. 🐟 <br><br>
+> ~ *DevelopersCradle*
 
 Contains my own with my own visual notes ✍️ with some course material to enforce learning experience.
 
@@ -1065,13 +1142,15 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 </p> -->
 
 <p align="center">
-    <img src="Data_Structures_And_Algorithms_Specialization_Description.PNG" alt="introduction to algorithms caption" style="width:690px" />
+    <img 
+    src="Data_Structures_And_Algorithms_Specialization_Description.PNG" alt="Data structures and algorithms specialization description!" 
+    style="width:690px" />
 </p>
 
 <!-- All course material from *Introduction to Algorithms* by **Prof. Srini Devadas** and **Prof. Erik Demaine**. -->
 
-> Add here some story <br><br>
-~ *DevelopersCradle*
+> Add here some story. 🐟 <br><br>
+> ~ *DevelopersCradle*
 
 Contains my own with my own visual notes ✍️ with some course material to enforce learning experience.
 
@@ -1127,4 +1206,6 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 </p>
 
 - [Add this](https://www.coursera.org/learn/data-structures-optimizing-performance?utm_source=chatgpt.com#outcomes).
+
+
 

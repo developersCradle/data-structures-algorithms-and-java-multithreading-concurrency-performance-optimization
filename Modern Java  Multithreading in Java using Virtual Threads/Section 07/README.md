@@ -4,10 +4,13 @@ HTTP calls using Virtual Threads.
 
 # What I learned.
 
-# Set Up Simple WebServer.
+# Set Up Simple WebServer. ✅
 
 <div align="center">
-    <img src="Simple_Web_Server.PNG"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+    <img 
+    src="Simple_Web_Server.PNG"  
+    alt="Modern Java - Multithreading in Java using Virtual Threads!" 
+    width="600"/>
 </div>
 
 1. This is **Simple Web Server** from **Java 18**
@@ -19,13 +22,17 @@ HTTP calls using Virtual Threads.
 - We will be making **Simple Web Server** to return the **JSON**.
   - The project folder `modern-java-concurrency`, where we will be running the `jwebserver` in this folder.
   <div align="center">
-        <img src="Running_The_Simple_Web_Server.gif"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+        <img 
+        src="Running_The_Simple_Web_Server.gif"
+        alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
     </div>
 
     - We will start the server running with the `jwebserver`.
     
     <div align="center">
-        <img src="Simple_Web_Server_Working.PNG"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+        <img 
+        src="Simple_Web_Server_Working.PNG"
+        alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
     </div>
     1. We will be returning this:
 
@@ -48,7 +55,7 @@ HTTP calls using Virtual Threads.
 
 - We can test endpoint was with **Simple Web Server**!
 
-# Build the HttpClient for ProductInfo service.
+# Build the HttpClient for ProductInfo service. ✅
 
 - **Java** and **Spring** provides some popular **HTTP web client** options:
 
@@ -130,7 +137,10 @@ public class CommonUtil {
 - We will be testing this with the previous test: 
 
 <div align="center">
-    <img src="Testing_The_Simple_Web_Server.gif"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+    <img 
+    src="Testing_The_Simple_Web_Server.gif"
+    alt="Modern Java - Multithreading in Java using Virtual Threads!"
+    width="600"/>
 </div>
 
 <details>
@@ -253,9 +263,7 @@ public class ProductInfoService {
 
 </details>
 
-
-# Lets make real HTTP calls in ProductService using VirtualThreads.
-
+# Lets make real HTTP calls in ProductService using VirtualThreads. ✅
 
 - Test case with the HTTP calls!
 
@@ -301,13 +309,18 @@ public ProductV2 retrieveProductDetailsHttp(String productId) {
 ````
 
 <div align="center">
-    <img src="Testing_The_Structured_Concurrency_Virtual_Threads_With_The_Real_HTTP_Call.gif"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+    <img 
+    src="Testing_The_Structured_Concurrency_Virtual_Threads_With_The_Real_HTTP_Call.gif"
+    alt="Modern Java - Multithreading in Java using Virtual Threads!" 
+    width="600"/>
 </div>
 
 - We can see the real HTTP calls is being made!
 
 <details>
-<summary id="Code_CompletableFuture" open="true"> <b>Code for the Simple WebServer, with test!</b> </summary>
+<summary
+id="Code_CompletableFuture" 
+open="true"> <b>Code for the Simple WebServer, with test!</b> </summary>
  
 #### ProductServiceStructuredConcurrency.java
 
@@ -507,5 +520,4 @@ class ProductServiceStructuredConcurrencyTest {
 
 }
 ````
-
 </details>

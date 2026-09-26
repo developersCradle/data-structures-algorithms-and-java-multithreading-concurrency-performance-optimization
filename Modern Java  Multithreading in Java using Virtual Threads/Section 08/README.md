@@ -1,13 +1,16 @@
-# Chapter 08 - Using Futures with Virtual Threads.
+ # Chapter 08 - Using Futures with Virtual Threads. ✅
 
 Using Futures with Virtual Threads.
 
 # What I learned.
 
-# Virtual Threads + Future & ExecutorService.
+# Virtual Threads + Future & ExecutorService. ✅
 
 <div align="center">
-    <img src="Virtual_Threads_And_Future_And_ExecutorService.PNG"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+    <img 
+    src="Virtual_Threads_And_Future_And_ExecutorService.PNG"
+    alt="Modern Java - Multithreading in Java using Virtual Threads!"
+     width="600"/>
 </div>
 
 1. We can use **Future and ExecutorService**, with the **Virtual Threads**
@@ -99,7 +102,9 @@ public class ProductServiceUsingExecutorVirtualThreads {
 - Lets run the test:
 
 <div align="center">
-    <img src="Testing_Virtual_Threads_With_The_Future_And_ExecutorService.gif"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+    <img 
+    src="Testing_Virtual_Threads_With_The_Future_And_ExecutorService.gif"  alt="Modern Java - Multithreading in Java using Virtual Threads!"
+    width="600"/>
 </div>
 
 - We can see the **Virtual Threads**!
