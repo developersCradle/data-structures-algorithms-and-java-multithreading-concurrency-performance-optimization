@@ -10,7 +10,8 @@ Getting Started With the Course.
     <img 
     src="Intro_To_Course.PNG"
     alt="Modern Java - Multithreading in Java using Virtual Threads!"
-    width="600"/>
+    width="600"
+    />
 </div>
 
 1. Hi Dilip!
@@ -19,7 +20,8 @@ Getting Started With the Course.
     <img 
     src="What_Covered_In_This_Course.PNG"
     alt="Modern Java - Multithreading in Java using Virtual Threads!"
-    width="600"/>
+    width="600"
+    />
 </div>
 
 - Who should enroll into this:
@@ -28,7 +30,8 @@ Getting Started With the Course.
     <img
     src="Target_Audiance.PNG"
     alt="Modern Java - Multithreading in Java using Virtual Threads!"
-    width="600"/>
+    width="600"
+    />
 </div>
 
 # Pre-requestites. ✅
@@ -37,5 +40,6 @@ Getting Started With the Course.
     <img 
     src="Prerequisites.PNG"  
     alt="Modern Java - Multithreading in Java using Virtual Threads!"
-    width="600"/>
+    width="600"
+    />
 </div>

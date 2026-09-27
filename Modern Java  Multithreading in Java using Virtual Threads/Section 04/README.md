@@ -418,48 +418,103 @@ public class MaxVirtualThreads {
 1. When the thread is going into **sleep**, it needs to store the threads' context information.
     - That's where the **Continuation API** comes in!
 
-<div align="center">
+<div 
+align="center">
     <img 
-    src="yield_And_run_operations.JPG"
+    src="Virtual_Thread_Operations_yield_And_run.JPG"
     alt="Modern Java - Multithreading in Java using Virtual Threads!"
     width="600"/>
 </div>
 
 1. The **Continuation API** is way of **stopping** and **continuing** the program on specific place! 
-2.  **Continuation API** stores different information about the programs situation!
+2.  **Continuation API** stores different information about the programs currents situation!
 
-<div align="center">
+<div 
+align="center">
     <img 
     src="Virtaul_Thread_Continuatation_Flow_Chart.JPG"
     alt="Modern Java - Multithreading in Java using Virtual Threads!"
-    width="600"/>
+    width="600"
+    />
 </div>
 
 - **Continuation API** is handling the inner mechanics of the handling the virtual threads!
         - 
 # Pinned Virtual Threads. ✅
 
+- This is **important concept**, if one introduced **virtual concept** to the old legacy system code base, where there is `synchronized` blocks! 
+
+<div 
+align="center">
+    <img 
+    src="Pinned_Thread.JPG"
+    alt="Modern Java - Multithreading in Java using Virtual Threads!"
+    width="600"
+    />
+</div>
+
+1. **Pinned Thread** are not unmounted from the **carrier threads**, even if there is **blocking operation**!
+2. This usually happens when there is `synchorinzed` block, where the blocking operation happens!
+
+
+- Todo Pinned Virtaul Threads concept!
+
 # Important Facts about VirtualThreads. ✅
+
+<div 
+align="center">
+    <img 
+    src="Important_Facts_About_Virtaul_Threads.JPG"
+    alt="Modern Java - Multithreading in Java using Virtual Threads!"
+    width="600"
+    />
+</div>
+
+1. **Virtual Threads** makes sure, the threads are used **efficiently**!
+2. If there is **I/O** operation, It's recommended to use **Virtual Threads**!
+3. Pooling is for **expensive threads**, do not pool **virtual threads**!
 
 # Quiz 01: Platform Threads and Virtual Threads. ✅
 
-- Todo continue here after the quiz
 
 <details>
 <summary 
 id="Quiz_01_Question_01"
 open="true"> <b>Question 01.</b> </summary>
 
-````Yaml
-Question 01:
-The question comes here!
+<div align="center">
+    <img src="Quiz 01/Q1_Question.PNG" width="600"/>
+</div>
 
 - My answer:
 
 <div align="center">
-    <img src="Quiz 07/Q1.PNG" width="600"/>
+    <img src="Quiz 01/Q1_Answer.PNG" width="600"/>
 </div>
 
-1. Add here the answer!
+1. Virtual threads → lightweight concurrency → many more concurrent tasks with much lower thread-memory overhead.
 
 </details>
+
+<details>
+<summary 
+id="Quiz_01_Question_02"
+open="true"> <b>Question 02.</b> </summary>
+
+
+<div align="center">
+    <img src="Quiz 01/Q2_Question.PNG" width="600"/>
+</div>
+
+- My answer:
+
+<div align="center">
+    <img src="Quiz 01/Q2_Answer.PNG" width="600"/>
+</div>
+
+1. These virtual threads are good for high concurrency and I/O- intensive operation! 
+
+</details>
+
+
+

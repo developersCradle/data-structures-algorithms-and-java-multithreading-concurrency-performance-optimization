@@ -29,11 +29,13 @@ Load Test using `ab` – Apache HTTP server benchmarking tool.
     - `-n 10` → **10 requests total**!
     - `-c 10` → **10 requests at the same time**!
 
-<div align="center">
+<div 
+align="center">
     <img 
     src="First_Ab.gif"  
     alt="Modern Java - Multithreading in Java using Virtual Threads!" 
-    width="600"/>
+    width="600"
+    />
 </div>
 
 - We get following log:
@@ -88,11 +90,13 @@ Load Test using `ab` – Apache HTTP server benchmarking tool.
     - 20 **total requests**.
     - 10 **concurrent requests at a time**.
 
-<div align="center">
+<div 
+align="center">
     <img 
     src="Second_Ab.gif"  
     alt="Modern Java - Multithreading in Java using Virtual Threads!" 
-    width="600"/>
+    width="600"
+    />
 </div>
 
 - We get following log:
@@ -153,11 +157,13 @@ Load Test using `ab` – Apache HTTP server benchmarking tool.
     - `n 60` **— make 60 total requests**!
     - `c 20` **— allow 20 requests concurrently**!
 
-<div align="center">
+<div 
+align="center">
     <img
     src="Third_Ab.gif"
     alt="Modern Java - Multithreading in Java using Virtual Threads!"
-    width="600"/>
+    width="600"
+    />
 </div>
 
 - We get following log:
@@ -208,11 +214,13 @@ Load Test using `ab` – Apache HTTP server benchmarking tool.
 - As we can see the `Time taken for tests:   14.139 seconds`!
     -  We can see taking more time when there is **max tomcat threads**!
 
-<div align="center">
+<div 
+align="center">
     <img 
     src="Using_The_Virtual_Threads.PNG"
     alt="Modern Java - Multithreading in Java using Virtual Threads!"
-    width="1200"/>
+    width="1200"
+    />
 </div>
 
 - Next, we will be using the **Virtual Threads**!!
@@ -232,11 +240,13 @@ Load Test using `ab` – Apache HTTP server benchmarking tool.
     - `-n 10` → **10 requests total**!
     - `-c 10` → **10 requests at the same time**!
 
-<div align="center">
+<div 
+align="center">
     <img 
     src="Comparing_The_Virtaul_Thread_And_The_Platform_Thread_First.PNG"
     alt="Modern Java - Multithreading in Java using Virtual Threads!" 
-    width="600"/>
+    width="600"
+    />
 </div>
 
 1. We can compare both time of threads execution time!
@@ -245,8 +255,13 @@ Load Test using `ab` – Apache HTTP server benchmarking tool.
 
 - There is no big difference it this batch!
 
-<div align="center">
-    <img src="Virtual_Thread_Ab.gif"  alt="Modern Java - Multithreading in Java using Virtual Threads!" width="600"/>
+<div 
+align="center">
+    <img 
+    src="Virtual_Thread_Ab.gif"  
+    alt="Modern Java - Multithreading in Java using Virtual Threads!" 
+    width="600"
+    />
 </div>
 
 - We get following log:
