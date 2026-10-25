@@ -517,9 +517,10 @@ align="center">
 
 * **Section 04**:
     * *Quiz*:
-        * [Quiz 01: Platform Threads and Virtual Threads](#). ✅
+        * [Quiz 01: Platform Threads and Virtual Threads](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Modern%20Java%20%20Multithreading%20in%20Java%20using%20Virtual%20Threads/Section%2004#quiz-01-platform-threads-and-virtual-threads-). ✅
 
-<p align="center">
+<p 
+align="center">
     <img 
     src="Java_Application_Performance_Tuning_And_Memory_Management_Caption.gif"
     alt="Java Application Performance Tuning and Memory Management!" 
@@ -527,11 +528,12 @@ align="center">
     />
 </p>
 
-<p align="center">
+<p 
+align="center">
     <img 
     src="Java_Application_Performance_Tuning_And_Memory_Management_Description.PNG"
     alt="Java Application Performance Tuning and Memory Management description!"
-     style="width:660px" 
+    style="width:660px" 
     />
 </p> 
 
@@ -727,7 +729,7 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 id="Logo_Combination" 
 align="center">
     <img 
-    src="add here" 
+    src="Dummy_Cert.png" 
     alt="change this!" 
     style="width:590px;height:440px;"
     />
