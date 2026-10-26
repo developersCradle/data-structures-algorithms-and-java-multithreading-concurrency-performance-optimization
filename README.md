@@ -745,7 +745,7 @@ align="center">
 
 #### Progress/Curriculum.
 
-- [ ] [Section 01](#) - Background ~ A High-level Overview on JVM. ⚠️ In progress! ⚠️
+- [x] [Section 01](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/A%20Comprehensive%20Introduction%20to%20Java%20Virtual%20Machine%20(JVM)/Section%2001#chapter-01---background--a-high-level-overview-on-jvm-) - Background ~ A High-level Overview on JVM. ✅
 - [ ] [Section 02](#) - Lifetime of a Type.
 - [ ] [Section 03](#) - Reflection.
 - [ ] [Section 04](#) - JVM Memory, Garbage Collection, and Bytecode Instructions.

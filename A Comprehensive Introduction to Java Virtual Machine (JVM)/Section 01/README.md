@@ -70,7 +70,7 @@ align="center">
     />
 </div>
 
-1. The speed comes from the byte code that is optimized! 
+1. The speed comes from the bytecode that is optimized! 
 2. **JIT** is also providing the speed for the combination!
 
 # Java Virtual Machine ~ A High-level Overview.
@@ -96,7 +96,7 @@ align="center">
 </div>
 
 1. JVM is cornerstone of the Java platform!
-    - The speed comes from the byte code that is optimized! 
+    - The speed comes from the bytecode that is optimized! 
 
 <div 
 align="center">
@@ -160,10 +160,48 @@ align="center">
     />
 </div>
 
-1.
+1. When running form the **bytecode** it much more efficient than, directly **interpreting** the code!
 2. **JVM defects** and **measures** the most frequent codes!
     - These are called *hot spots*, these spots are converted by the **JIT** to machine code!
         - This may be cached!
     - The `dynamic compilation` done by the vendors to be implemented!  
 
-# UI Controls for Site Navigation & Copyright Details.
+<div 
+align="center">
+    <img 
+    src="JIT_Compilation_Example.PNG"  
+    alt="Java JVM course!" width="500"
+    />
+</div>
+
+1. This **normal Java code** will be run as many times, as let say **1000** times in the `2.`!
+    - This code is **interpretended**!
+        - This is done through the **Java interpretender**!
+
+3. If this **block of code** is **executed multiple** times, there is way to **optimize** this code of block, with the **JIT Compiler**!
+    - This will be compiled to the **machine code**!
+
+- Let's see what happens when the `Hello.java` will be **combiled**!
+
+<div 
+align="center">
+    <img 
+    src="JVM_Architecture.PNG"  
+    alt="Java JVM course!" 
+    width="500"
+    />
+</div>
+
+1. Class loader from **JVM**
+    - Loads corresponding **bytecode** into the **memory**!
+2. After loading, the bytecode is verified by the **Byte Code Verifier** to verify bytecode is **structurally valid** and satisfies **JVM verification rules**.
+    - This can prevent **malicious JVM** to be run the bytecode!
+3. After, which it can be executed by the **Execution Engine**!
+4. **Garbage Collector** is performing the cleaning ups!
+5. **Security Manger** can be used to run **un-checked bytecode** as long it does not do any, **unauthorized actions** regards to the **JVM** specifications!
+    - This can be used to be run in the **sandbox environment**!
+6. Every the **Java bytecode** is run, there will be specific memory are, which is allocated!
+
+# UI Controls for Site Navigation & Copyright Details. ✅
+
+- Sorry Dude i don't learn if i dont make notes.
