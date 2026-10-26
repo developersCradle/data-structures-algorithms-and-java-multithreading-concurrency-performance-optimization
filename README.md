@@ -369,7 +369,7 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 id="Logo_Combination" 
 align="center">
     <img 
-    src="add here" 
+    src="Dummy_Cert.png" 
     alt="change this!" 
     style="width:590px;height:440px;"/>
     <img
@@ -562,7 +562,7 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 id="Logo_Combination" 
 align="center">
     <img 
-    src="add here" 
+    src="Dummy_Cert.png" 
     alt="change this!" 
     style="width:590px;height:440px;"/>
     <img
@@ -662,11 +662,13 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 ?trk=public_profile_see-credential 
 -->
 
+
+
 <p 
 id="Logo_Combination" 
 align="center">
     <img 
-    src="add here" 
+    src="Dummy_Cert.png" 
     alt="change this!" 
     style="width:590px;height:440px;"/>
     <img
@@ -701,7 +703,7 @@ align="center">
     />
 </p>
 
-All course material from A Comprehensive Introduction to Java Virtual Machine (JVM) by **Dheeru Mundluru**.
+All course material from *A Comprehensive Introduction to Java Virtual Machine (JVM)* by **Dheeru Mundluru**.
 
 > Once I saw one 👓<b>requirement</b>👓 in the job posting, this lead me get more comfortable at the JVM internals. 🐟 
 >
@@ -714,7 +716,7 @@ Contains my own with my own visual notes ✍️ with some course material to enf
 
 This repository is made with [![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?logo=intellij-idea&logoColor=white)](#) with [![Eclipse](https://img.shields.io/badge/Eclipse-FE7A16.svg?logo=Eclipse&logoColor=white)](#) hotkeys, therefore it will include configuration files which are related to this IDE this approach will be favored for now. ⚙️
 
-[The course at Udemy](https://www.udemy.com/course/a-comprehensive-introduction-to-java-virtual-machine-jvm/?couponCode=CP250105G1). 
+[The course at Udemy](https://www.udemy.com/course/a-comprehensive-introduction-to-java-virtual-machine-jvm). 
 
 [Website of maker](https://www.semanticsquare.com/).
 
