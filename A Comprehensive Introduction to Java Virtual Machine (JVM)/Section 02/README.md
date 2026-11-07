@@ -256,6 +256,9 @@ align="center">
     - `Class[] getInterfaces();` – Returns the **interfaces implemented by the class**.
     - `ClassLoader getClassLoader();` – Returns **the class loader** that **loaded the class**.
 
+
+- todo finish this
+
 # Linking.
 
 # Short Note on Resolution Step for Better Clarity.

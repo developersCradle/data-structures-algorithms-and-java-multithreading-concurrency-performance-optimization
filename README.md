@@ -269,27 +269,27 @@ id="Cleaning_Images_Links" open="true"> <b>Cleaning the images with the link and
 
 #### The Quizzes and Labs.
 
-* **Section 01**:
+* **Section 01** - Introduction.
     * *Quiz*:
         * [Quiz 01: Threading and Operating Systems Fundamentals](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading%2C%20Concurrency%20and%20Performance%20Optimization/Section%2001#quiz-01-threading-and-operating-systems-fundamentals-quiz).
-* **Section 02**:
+* **Section 02** - Threading Fundamentals - Thread Creation.
     * *Quiz*:
         * [Quiz 02: Thread Creation](#).
      * *Coding Exercise*:
         * [Coding Exercise 02: Multithreaded Calculation](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading%2C%20Concurrency%20and%20Performance%20Optimization/Section%2003#coding-exercise-02-multithreaded-calculation).
-* **Section 03**:
+* **Section 03** - Threading Fundamentals - Thread Coordination.
     * *Quiz*:
         * [Quiz 03: Thread Termination & Daemon Threads](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading,%20Concurrency%20and%20Performance%20Optimization/Section%2003#quiz-03-thread-termination--daemon-threads).
     * *Coding Exercise*:
         * [Coding Exercise 02: Multithreaded Calculation](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading,%20Concurrency%20and%20Performance%20Optimization/Section%2003#coding-exercise-02-multithreaded-calculation).
         * [Coding Exercise 02: Multithreaded Calculation - Solution](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading,%20Concurrency%20and%20Performance%20Optimization/Section%2003#coding-exercise-02-multithreaded-calculation---solution).
-* **Section 04**:
+* **Section 04** - Performance Optimization.
     * *Quiz*:
         * [Quiz 04: Performance Optimization](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading%2C%20Concurrency%20and%20Performance%20Optimization/Section%2004#quiz-04-performance-optimization).
-* **Section 05**:
+* **Section 05** - Data Sharing Between Threads.
     * *Quiz*:
         * [Quiz 05: Stack & Heap Memory Regions](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Multithreading,%20Concurrency%20and%20Performance%20Optimization/Section%2005#quiz-05-stack--heap-memory-regions).
-* **Section 06**:
+* **Section 06** - The Concurrency Challenges & Solutions.
     * *Quiz*:
         * [Quiz 06: Critical Section & Synchronization](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Multithreading,%20Concurrency%20and%20Performance%20Optimization/Section%2006/README.md#quiz-06-critical-section--synchronization).
         * [Quiz 07: Atomic Operations, Volatile & Metrics practical example](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Multithreading,%20Concurrency%20and%20Performance%20Optimization/Section%2006/README.md#quiz-07-atomic-operations-volatile--metrics-practical-example).
@@ -297,32 +297,32 @@ id="Cleaning_Images_Links" open="true"> <b>Cleaning the images with the link and
         * [Quiz 09: Locking Strategies & Deadlocks](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Multithreading,%20Concurrency%20and%20Performance%20Optimization/Section%2006/README.md#quiz-09-locking-strategies--deadlocks).
     * *Coding Exercise*:
         * [Coding Exercise 03: Min - Max Metrics](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Multithreading,%20Concurrency%20and%20Performance%20Optimization/Section%2006/README.md#coding-exercise-03-min---max-metrics).
-* **Section 07**:
+* **Section 07** - Advanced Locking.
     * *Quiz*:
         * [Some here](#).
     * *Coding Exercise*:
         * [Some here](#).
-* **Section 08**:
+* **Section 08** - Inter-Thread Communication.
     * *Quiz*:
         * [Some here](#).
     * *Coding Exercise*:
         * [Some here](#).
-* **Section 09**:
+* **Section 09** - Lock-Free Algorithms, Data-Structures & Techniques.
     * *Quiz*:
         * [Some here](#).
     * *Coding Exercise*:
         * [Some here](#).
-* **Section 10**:
+* **Section 10** - Threading Models for High Performance IO.
     * *Quiz*:
         * [Some here](#).
     * *Coding Exercise*:
         * [Some here](#).
-* **Section 11**:
+* **Section 11** - Virtual Threads and High-Performance IO.
     * *Quiz*:
         * [Some here](#).
     * *Coding Exercise*:
         * [Some here](#).
-* **Section 12**:
+* **Section 12** - Beyond Multithreading - Final Lecture.
     * *Quiz*:
         * [Some here](#).
     * *Coding Exercise*:
@@ -518,6 +518,70 @@ align="center">
 * **Section 04**:
     * *Quiz*:
         * [Quiz 01: Platform Threads and Virtual Threads](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Modern%20Java%20%20Multithreading%20in%20Java%20using%20Virtual%20Threads/Section%2004#quiz-01-platform-threads-and-virtual-threads-). ✅
+
+# Java 26: Virtual Threads, Concurrency Masterclass [Hands-On].
+
+<p 
+align="center">
+    <img
+    src="Java_26_Virtual_Threads_Concurrency_Masterclass_Hands-On_Description.PNG" 
+    alt="Modern java multithreading in java using virtual threads description!"
+    style="width:690px"
+    />
+</p> 
+
+All course material from *Java 26: Virtual Threads, Concurrency Masterclass [Hands-On]* by **Vinoth Selvaraj**.
+
+> . 🐟 <br><br>
+> ~ DevelopersCradle
+
+Contains my own with my own visual notes ✍️ with some course material to enforce learning experience.
+
+This repository is made with [![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?logo=intellij-idea&logoColor=white)](#) with [![Eclipse](https://img.shields.io/badge/Eclipse-FE7A16.svg?logo=Eclipse&logoColor=white)](#) hotkeys, therefore it will include configuration files which are related to this IDE this approach will be favored for now. ⚙️
+
+We are using [![Java 21](https://img.shields.io/badge/Java%2021-%23ED8B00.svg?logo=openjdk&logoColor=white)](#). Instead, the which are recommended!
+
+[Udemy course](https://www.udemy.com/course/java-virtual-thread/).
+
+[Homepage of maker](#).
+
+If the content sparked :fire: your interest, please consider buying the course and start learning :book:.
+
+<!-- 
+Linkedin puts this shit front, when clicking from private mode x(. Need to put this to make jump working every case
+?trk=public_profile_see-credential 
+-->
+
+<p 
+id="Logo_Combination" 
+align="center">
+    <img 
+    src="#" 
+    alt="I had hard time in Polar interview, but was rejected. Now i have masterd the things, which they were asking for! Difficulties makes you stronger!" 
+    style="width:590px;height:440px;"/>
+    <img id="Modern_Java_Multithreading_In_Java_Using_Virtual_Threads_Certificate?trk=public_profile_see-credential"
+    src="#" 
+    alt="Modern java multithreading in java using virtual threads certificate!" 
+    width="600"
+    />
+</p>
+
+**Note: The material provided in this repository is only for helping those who may get stuck at any point of time in the course. It is very advised that no one should just copy the solutions(violation of Honor Code) presented here.**
+
+#### Progress/Curriculum.
+
+- [x] [Section 01](#) - todo
+
+#### Additional stuff.
+
+- Todo(#).
+
+#### The Quizzes and Labs.
+
+* **Section 00**:
+    * *Quiz*:
+        * [Quiz 00: Platform Threads and Virtual Threads](#).
+
 
 <p 
 align="center">
@@ -778,24 +842,25 @@ align="center">
 
 </details>
 
+<!-- 
+todo finish these ones
+* **Section 02** - Lifetime of a Type.
+    -->
+
 #### The Quizzes and Labs.
 
-* **Section 02**:
+* **Section 02** - Lifetime of a Type.
     * *Quiz*:
         * [Quiz 01: Chapter Quiz](#).
-* **Section 03**:
+* **Section 03** - Reflection.
     * *Coding Exercise*:
         * [Coding Exercise 01: Simulate a Basic Unit Testing Framework ~ Putting reflection into action](#)!
-* **Section 04**:
+* **Section 04** - JVM Memory, Garbage Collection, and Bytecode Instructions.
     * *Quiz*:
         * [Quiz 02: Chapter Quiz](#).
-* **Section 05**:
+* **Section 05** - Strings & JVM.
     * *Quiz*:
         * [Quiz 03: Chapter Quiz](#).
-
-
-
-
 
 <p 
 align="center">

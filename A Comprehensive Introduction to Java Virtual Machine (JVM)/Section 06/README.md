@@ -1,4 +1,4 @@
-# Chapter 06 - Bonus Chapter.
+# Chapter 06 - Bonus Chapter. ✅
 
 Bonus Chapter.
 

@@ -1,4 +1,4 @@
-# Chapter 05 - Strings & JVM.
+# Chapter 05 - Strings & JVM. ✅
 
 Strings & JVM.
 

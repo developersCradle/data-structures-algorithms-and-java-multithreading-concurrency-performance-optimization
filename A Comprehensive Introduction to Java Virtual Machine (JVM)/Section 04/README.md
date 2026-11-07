@@ -1,4 +1,4 @@
-# Chapter 04 - JVM Memory, Garbage Collection, and Bytecode Instructions.
+# Chapter 04 - JVM Memory, Garbage Collection, and Bytecode Instructions. ✅
 
 JVM Memory, Garbage Collection, and Bytecode Instructions.
 
