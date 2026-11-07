@@ -780,11 +780,22 @@ align="center">
 
 #### The Quizzes and Labs.
 
-* **Section 01**:
+* **Section 02**:
     * *Quiz*:
-        * [Some here](#).
+        * [Quiz 01: Chapter Quiz](#).
+* **Section 03**:
     * *Coding Exercise*:
-        * [Some here](#).
+        * [Coding Exercise 01: Simulate a Basic Unit Testing Framework ~ Putting reflection into action](#)!
+* **Section 04**:
+    * *Quiz*:
+        * [Quiz 02: Chapter Quiz](#).
+* **Section 05**:
+    * *Quiz*:
+        * [Quiz 03: Chapter Quiz](#).
+
+
+
+
 
 <p 
 align="center">

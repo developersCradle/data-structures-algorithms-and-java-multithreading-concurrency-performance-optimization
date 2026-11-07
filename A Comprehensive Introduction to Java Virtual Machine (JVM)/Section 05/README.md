@@ -1,5 +1,11 @@
-# Chapter 01 - Introduction.
+# Chapter 05 - Strings & JVM.
 
-Introduction.
+Strings & JVM.
 
 # What I learned.
+
+# String Pool & Interning + Demo.
+
+# Beware of String Concatenation.
+ 
+# Quiz 03: Chapter Quiz.

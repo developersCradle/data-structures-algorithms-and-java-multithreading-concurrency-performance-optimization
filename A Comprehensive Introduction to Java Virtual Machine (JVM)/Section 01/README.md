@@ -192,7 +192,7 @@ align="center">
     />
 </div>
 
-1. Class loader from **JVM**
+1. Class loader from **JVM**!
     - Loads corresponding **bytecode** into the **memory**!
 2. After loading, the bytecode is verified by the **Byte Code Verifier** to verify bytecode is **structurally valid** and satisfies **JVM verification rules**.
     - This can prevent **malicious JVM** to be run the bytecode!
@@ -204,4 +204,11 @@ align="center">
 
 # UI Controls for Site Navigation & Copyright Details. ✅
 
-- Sorry Dude i don't learn if i dont make notes.
+<div 
+align="center">
+    <img 
+    src="I_Braking_Bit_Copyright_But_I_Need_To_Learn_But_I_Buy_You_Cofee.png"
+    alt="Java JVM course!"
+    width="500"
+    />
+</div>
