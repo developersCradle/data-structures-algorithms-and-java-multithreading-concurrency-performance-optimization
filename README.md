@@ -812,11 +812,11 @@ align="center">
 #### Progress/Curriculum.
 
 - [x] [Section 01](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/A%20Comprehensive%20Introduction%20to%20Java%20Virtual%20Machine%20(JVM)/Section%2001#chapter-01---background--a-high-level-overview-on-jvm-) - Background ~ A High-level Overview on JVM. ✅
-- [ ] [Section 02](#) - Lifetime of a Type.
-- [ ] [Section 03](#) - Reflection.
-- [ ] [Section 04](#) - JVM Memory, Garbage Collection, and Bytecode Instructions.
-- [ ] [Section 05](#) - Strings & JVM.
-- [ ] [Section 06](#) - Bonus Chapter.
+- [ ] [Section 02](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/A%20Comprehensive%20Introduction%20to%20Java%20Virtual%20Machine%20(JVM)/Section%2002/README.md#chapter-02---introduction-) - Lifetime of a Type.
+- [ ] [Section 03](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/A%20Comprehensive%20Introduction%20to%20Java%20Virtual%20Machine%20(JVM)/Section%2003/README.md#chapter-03---reflection-) - Reflection.
+- [ ] [Section 04](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/A%20Comprehensive%20Introduction%20to%20Java%20Virtual%20Machine%20(JVM)/Section%2004#chapter-04---jvm-memory-garbage-collection-and-bytecode-instructions-) - JVM Memory, Garbage Collection, and Bytecode Instructions.
+- [ ] [Section 05](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/A%20Comprehensive%20Introduction%20to%20Java%20Virtual%20Machine%20(JVM)/Section%2005#chapter-05---strings--jvm-) - Strings & JVM.
+- [ ] [Section 06](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/A%20Comprehensive%20Introduction%20to%20Java%20Virtual%20Machine%20(JVM)/Section%2006#chapter-06---bonus-chapter-) - Bonus Chapter.
 
 #### Additional stuff.
 
