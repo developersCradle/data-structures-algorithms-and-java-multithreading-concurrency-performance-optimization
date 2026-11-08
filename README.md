@@ -795,8 +795,8 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 id="Logo_Combination" 
 align="center">
     <img 
-    src="Dummy_Cert.png" 
-    alt="change this!" 
+    src="A_Comprehensive_Introduction_To_Java_Virtual_Machine_JVM_Certification.jpg" 
+    alt="A_Comprehensive_Introduction_To_Java_Virtual_Machine_JVM_Certification?trk=public_profile_see-credential" 
     style="width:590px;height:440px;"
     />
     <img
@@ -812,16 +812,15 @@ align="center">
 #### Progress/Curriculum.
 
 - [x] [Section 01](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/A%20Comprehensive%20Introduction%20to%20Java%20Virtual%20Machine%20(JVM)/Section%2001#chapter-01---background--a-high-level-overview-on-jvm-) - Background ~ A High-level Overview on JVM. ✅
-- [ ] [Section 02](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/A%20Comprehensive%20Introduction%20to%20Java%20Virtual%20Machine%20(JVM)/Section%2002/README.md#chapter-02---introduction-) - Lifetime of a Type.
-- [ ] [Section 03](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/A%20Comprehensive%20Introduction%20to%20Java%20Virtual%20Machine%20(JVM)/Section%2003/README.md#chapter-03---reflection-) - Reflection.
-- [ ] [Section 04](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/A%20Comprehensive%20Introduction%20to%20Java%20Virtual%20Machine%20(JVM)/Section%2004#chapter-04---jvm-memory-garbage-collection-and-bytecode-instructions-) - JVM Memory, Garbage Collection, and Bytecode Instructions.
-- [ ] [Section 05](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/A%20Comprehensive%20Introduction%20to%20Java%20Virtual%20Machine%20(JVM)/Section%2005#chapter-05---strings--jvm-) - Strings & JVM.
-- [ ] [Section 06](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/A%20Comprehensive%20Introduction%20to%20Java%20Virtual%20Machine%20(JVM)/Section%2006#chapter-06---bonus-chapter-) - Bonus Chapter.
+- [x] [Section 02](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/A%20Comprehensive%20Introduction%20to%20Java%20Virtual%20Machine%20(JVM)/Section%2002/README.md#chapter-02---introduction-) - Lifetime of a Type. ✅
+- [x] [Section 03](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/A%20Comprehensive%20Introduction%20to%20Java%20Virtual%20Machine%20(JVM)/Section%2003/README.md#chapter-03---reflection-) - Reflection. ✅
+- [x] [Section 04](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/A%20Comprehensive%20Introduction%20to%20Java%20Virtual%20Machine%20(JVM)/Section%2004#chapter-04---jvm-memory-garbage-collection-and-bytecode-instructions-) - JVM Memory, Garbage Collection, and Bytecode Instructions. ✅
+- [x] [Section 05](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/A%20Comprehensive%20Introduction%20to%20Java%20Virtual%20Machine%20(JVM)/Section%2005#chapter-05---strings--jvm-) - Strings & JVM. ✅
+- [x] [Section 06](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/A%20Comprehensive%20Introduction%20to%20Java%20Virtual%20Machine%20(JVM)/Section%2006#chapter-06---bonus-chapter-) - Bonus Chapter. ✅
 
 #### Additional stuff.
 
 - [ ] After this answer, the questions from Sony!
-- [ ] After this check the blog [JVM Anatomy Quarks](https://shipilev.net/jvm/anatomy-quarks/)!
 
 <details>
 
@@ -862,11 +861,70 @@ todo finish these ones
     * *Quiz*:
         * [Quiz 03: Chapter Quiz](#).
 
+
+<!-- 
+<p 
+align="center">
+    <img 
+    src="A_Comprehensive_Introduction_To_Java_Virtual_Machine_(JVM)_Caption.png"
+    alt="course intros"
+    style="width:990px;height:110px;"
+    />
+</p> -->
+
+# JVM ANATOMY QUARKS.
+
+<p align="center">
+    <img
+    src="JVM_Anatomy Quarks_Book.jpg"
+    alt="JVM anatomy quarks book!" 
+    style="width:990px;height:310px;"
+    />
+</p>
+
+Contains my own with my own visual notes ✍️ with some course material to enforce learning experience.
+
+[Anatomy Quarks](https://shipilev.net/jvm/anatomy-quarks/).
+
+#### Progress/Curriculum.
+
+- [ ] [Section 01](#) - Lock Coarsening and Loops.
+- [ ] [Section 02](#) - Transparent Huge Pages.
+- [ ] [Section 03](#) - GC Design and Pauses.
+- [ ] [Section 04](#) - TLAB Allocation.
+- [ ] [Section 05](#) - TLABs and Heap Parsability.
+- [ ] [Section 06](#) - New Object Stages.
+- [ ] [Section 07](#) - Object Initialization Costs.
+- [ ] [Section 08](#) - Local Variable Reachability.
+- [ ] [Section 09](#) - JNI Critical and GC Locker.
+- [ ] [Section 10](#) - String.intern().
+- [ ] [Section 11](#) - Moving GC and Locality.
+- [ ] [Section 12](#) - Native Memory Tracking.
+- [ ] [Section 13](#) - Intergenerational Barriers.
+- [ ] [Section 14](#) - Constant Variables.
+- [ ] [Section 15](#) - Just-In-Time Constants.
+- [ ] [Section 16](#) - Megamorphic Virtual Calls.
+- [ ] [Section 17](#) - Trust Non-Static Final Fields.
+- [ ] [Section 18](#) - Scalar Replacement.
+- [ ] [Section 19](#) - Lock Elision.
+- [ ] [Section 20](#) - FPU Spills.
+- [ ] [Section 21](#) - Heap Uncommit.
+- [ ] [Section 22](#) - Safepoint Polls.
+- [ ] [Section 23](#) - Compressed References.
+- [ ] [Section 24](#) - Object Alignment.
+- [ ] [Section 25](#) - Implicit Null Checks.
+- [ ] [Section 26](#) - Identity Hash Code.
+- [ ] [Section 27](#) - Compiler Blackholes.
+- [ ] [Section 28](#) - Frequency-Based Code Layout.
+- [ ] [Section 29](#) - Uncommon Traps.
+- [ ] [Section 30](#) - Conditional Moves.
+
+
 <p 
 align="center">
     <img 
     src="Data_Structures_And_Algorithms_With_Visualizations_With_Java_Caption.png" alt="Data_Structures_And_Algorithms_With_Visualizations_With_Java_Caption.png"
-    style="width:950px;height:130px;"
+    style="width:950px;height:120px;"
     />
 </p>
 

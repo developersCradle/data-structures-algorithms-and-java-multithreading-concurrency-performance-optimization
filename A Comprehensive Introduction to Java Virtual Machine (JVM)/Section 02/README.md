@@ -337,17 +337,32 @@ align="center">
         width="400"
         />
     </div>
-    1. Space is allocated for the static fields! The `OutOfMemoryError` is thrown if there is no space!
-    2. Only after the <b>static</b> todo
+    1. Space is allocated for the static fields! The <b>OutOfMemoryError</b> is thrown if there is no space!<br>
+    2. Only after the <b>static</b> fields are initialzied, then comes the <b>instance fields</b>! 
 3. Resolution!
 <div 
     align="center">
         <img 
-        src="Linking_Verification_Step.PNG"  
+        src="Resolution_Step.PNG"  
         alt="Java JVM course!" 
         width="400"
         />
-    </div>
+</div>
+1. This step is the <b>optional</b>. <br> The <b>JVM</b> finds the actual class, method, or field referred to by a symbolic <b>reference</b>.
+<div 
+    align="center">
+        <img 
+        src="Resolution_Symbolic_References.PNG"  
+        alt="Java JVM course!" 
+        width="400"
+        />
+</div>
+1. The <b>symbolic references</b> are stored <b>costant pool</b>! <br> These include: <br>
+<b>Compile-time constants</b>.<br>
+<b>String literals</b>. <br>
+<b>Logical (symbolic) references</b>. <br>
+These references are <b>replaced</b> in <b>resolution step</b>, with the <b>direct references</b>! <br>
+2. This was checked the method binding lesson constant pool! <b>javap</b> is cmd tool for <b>java class dissembler</b>!
 
 
 # Short Note on Resolution Step for Better Clarity.
