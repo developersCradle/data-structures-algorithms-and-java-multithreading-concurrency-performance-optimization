@@ -484,7 +484,8 @@ align="center">
     <img 
     src="Me_At_Polar.png" 
     alt="I had hard time in Polar interview, but was rejected. Now i have masterd the things, which they were asking for! Difficulties makes you stronger!" 
-    style="width:590px;height:440px;"/>
+    style="width:590px;height:440px;"
+    />
     <img id="Modern_Java_Multithreading_In_Java_Using_Virtual_Threads_Certificate?trk=public_profile_see-credential" src="Modern_Java_Multithreading_In_Java_Using_Virtual_Threads_Certificate.jpg" alt="Modern java multithreading in java using virtual threads certificate!" width="600"
     />
 </p>
@@ -769,7 +770,9 @@ align="center">
 
 All course material from *A Comprehensive Introduction to Java Virtual Machine (JVM)* by **Dheeru Mundluru**.
 
-> Once I saw one 👓<b>requirement</b>👓 in the job posting, this lead me get more comfortable at the JVM internals. 🐟 
+> Sorry Linux for extra abstraction.
+>
+> Once I saw Sony's 👓<b>requirements</b>👓 in the job posting, I became more motivated to deepen my understanding of JVM internals. 🐟
 >
 > *"How you would tune the JVM for Garbage Collection (GC) overhead in latency-sensitive applications?"* 🐟
 >
@@ -796,7 +799,8 @@ id="Logo_Combination"
 align="center">
     <img 
     src="A_Comprehensive_Introduction_To_Java_Virtual_Machine_JVM_Certification.jpg" 
-    alt="A_Comprehensive_Introduction_To_Java_Virtual_Machine_JVM_Certification?trk=public_profile_see-credential" 
+    alt="A_Comprehensive_Introduction_To_Java_Virtual_Machine_JVM_Certification" 
+    id="add here?trk=public_profile_see-credential"
     style="width:590px;height:440px;"
     />
     <img
