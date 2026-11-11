@@ -797,17 +797,16 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 <p 
 id="Logo_Combination" 
 align="center">
+    <img
+    src="Me_Conquering_Sonys_Requirements_With_Babes.jpg" 
+    alt="Me conquering sonys requirements with babes!" 
+    style="width:590px;height:450px;"
+    />
     <img 
     src="A_Comprehensive_Introduction_To_Java_Virtual_Machine_JVM_Certification.jpg" 
     alt="A_Comprehensive_Introduction_To_Java_Virtual_Machine_JVM_Certification" 
     id="add here?trk=public_profile_see-credential"
     style="width:590px;height:440px;"
-    />
-    <img
-    id="add here?trk=public_profile_see-credential"
-    src="add her" 
-    alt="add here!" 
-    width="600"
     />
 </p>
 
