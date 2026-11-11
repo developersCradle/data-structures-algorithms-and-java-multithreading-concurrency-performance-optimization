@@ -4,7 +4,7 @@ JVM Memory, Garbage Collection, and Bytecode Instructions.
 
 # What I learned.
 
-# Garbage Collection: Introduction.
+# Garbage Collection: Introduction. ✅
 
 <div align="center">
     <img src="Chapter_Garbage_Collection.PNG"  alt="Java JVM." width="500"/>
@@ -28,28 +28,28 @@ Two Divergent Paths:
     Program crash: This is the result of management failure.
 
 
-# Introduction to Runtime Data Areas of JVM.
+# Introduction to Runtime Data Areas of JVM. ✅
 
-# Method Area & Heap.
+# Method Area & Heap. ✅
 
-# Method Table ~ Achieving Dynamic Method Dispatching.
+# Method Table ~ Achieving Dynamic Method Dispatching. ✅
 
-# Garbage Collection: Introduction.
+# Garbage Collection: Introduction. ✅
 
-# JVM's Garbage Collection Algorithms.
+# JVM's Garbage Collection Algorithms. ✅
 
-# GC: Generational Collections.
+# GC: Generational Collections. ✅
 
-# Demo: Tuning JVM Heap & Analyzing GC Cycles.
+# Demo: Tuning JVM Heap & Analyzing GC Cycles. ✅
 
-# Item 06: Eliminate Obsolete Object References.
+# Item 06: Eliminate Obsolete Object References. ✅
 
-# Stack.
+# Stack. ✅
 
-# Stack Frame.
+# Stack Frame. ✅
 
-# Instruction Set: invokespecial & invokevirtual + Demo.
+# Instruction Set: invokespecial & invokevirtual + Demo. ✅
 
-# Quiz 02: Chapter Quiz.
+# Quiz 02: Chapter Quiz. ✅
 
-# Important Q&A Discussions!  
+# Important Q&A Discussions! ✅ 

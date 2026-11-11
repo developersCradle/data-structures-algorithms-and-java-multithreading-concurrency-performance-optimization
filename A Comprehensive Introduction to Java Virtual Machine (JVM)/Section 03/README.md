@@ -2,12 +2,12 @@
 
 Reflection.
 
-# What I learned.
+# What I learned. ✅
 
-# Introduction to Reflection.
+# Introduction to Reflection. ✅
 
-# Accessing Class Object.
+# Accessing Class Object. ✅
 
-# Demo: Reflection.
+# Demo: Reflection. ✅
 
-# Coding Exercise 01: Simulate a Basic Unit Testing Framework ~ Putting reflection into action!
+# Coding Exercise 01: Simulate a Basic Unit Testing Framework ~ Putting reflection into action! ✅

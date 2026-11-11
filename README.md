@@ -800,7 +800,7 @@ align="center">
     <img
     src="Me_Conquering_Sonys_Requirements_With_Babes.jpg" 
     alt="Me conquering sonys requirements with babes!" 
-    style="width:590px;height:450px;"
+    style="width:590px;height:520px;"
     />
     <img 
     src="A_Comprehensive_Introduction_To_Java_Virtual_Machine_JVM_Certification.jpg" 
@@ -1366,14 +1366,15 @@ align="center">
     />
 </p>
 
+<details>
+
 > [!IMPORTANT]  
 > ⚠️ Comfortable requirements, one can open text editor and write data structure like **Linked List**. ⚠️
-
-<details>
+>
 
 <summary 
 id="Must_Know_Fundementals_For_Algorithms"
-open="true"> <b> Must know fundementals! </b> </summary>
+open="true"> <b> Must know fundementals, check here before! </b> </summary>
 
 <p 
 align="center">
@@ -1415,9 +1416,11 @@ Contains my own with my own visual notes ✍️ with some course material to enf
 
 This repository is made with [![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?logo=intellij-idea&logoColor=white)](#) with [![Eclipse](https://img.shields.io/badge/Eclipse-FE7A16.svg?logo=Eclipse&logoColor=white)](#) hotkeys, therefore it will include configuration files which are related to this IDE this approach will be favored for now. ⚙️
 
+[The course at MIT OpenCourseWare](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/).
+
 [Video playlist](https://www.youtube.com/playlist?list=PLe8LZCtW06l8z1RmbNIGA2Jg_ULeXyw46).
 
-[Source page](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/).
+
 
 If the content sparked :fire: your interest, please consider buying the course and start learning :book:.
 
@@ -1442,16 +1445,19 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 <hr>
 
-# Data Structures and Algorithms Specialization.
-
-<!-- <p align="center">
-    <img src="Introduction_To_Algorithms_Caption.png" alt="introduction to algorithms caption" style="width:1600px;height:120px;"/>
-</p> -->
+<p 
+align="center">
+    <img src="Data_Structures_And_Algorithms_Specialization_Caption.png"
+    alt="Data structures and algorithms specialization caption" 
+    style="width:1600px;height:120px;"
+    />
+</p> 
 
 <p 
 align="center">
     <img 
-    src="Data_Structures_And_Algorithms_Specialization_Description.PNG" alt="Data structures and algorithms specialization description!" 
+    src="Data_Structures_And_Algorithms_Specialization_Description.PNG" 
+    alt="Data structures and algorithms specialization description!" 
     style="width:690px" 
     />
 </p>
@@ -1465,10 +1471,7 @@ Contains my own with my own visual notes ✍️ with some course material to enf
 
 This repository is made with [![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?logo=intellij-idea&logoColor=white)](#) with [![Eclipse](https://img.shields.io/badge/Eclipse-FE7A16.svg?logo=Eclipse&logoColor=white)](#) hotkeys, therefore it will include configuration files which are related to this IDE this approach will be favored for now. ⚙️
 
-<!-- [Video playlist](https://www.youtube.com/playlist?list=PLe8LZCtW06l8z1RmbNIGA2Jg_ULeXyw46).
-
-[Source page](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/). -->
-
+[The course at Coursera](https://www.coursera.org/specializations/data-structures-algorithms).
 
 If the content sparked :fire: your interest, please consider buying the course and start learning :book:.
 
@@ -1477,9 +1480,20 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 ?trk=public_profile_see-credential 
 -->
 
-<div align="center">
-    Insert certificate here when completed
-</div>
+<p 
+id="Logo_Combination" 
+align="center">
+    <img 
+    src="#" 
+    alt="course intros" 
+    style="width:490px;height:210px;"
+    />
+    <img 
+    src="Dummy_Cert.png" 
+    alt="course intros" 
+    style="width:490px;height:310px;"
+    />
+</p>
 
 **Note: The material provided in this repository is only for helping those who may get stuck at any point of time in the course. It is very advised that no one should just copy the solutions(violation of Honor Code) presented here.**
 
@@ -1487,14 +1501,104 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 - [ ] [Section 01](#) - Add here.
 
+
+- Todo make this to end.
+
 #### Additional stuff.
 
 - [ ] Don't get stuck of the proofs.
 - [ ] [Data Structures and Algorithms Specialization Review]( https://www.youtube.com/watch?v=qcKn3PZT20I
 ), is this worth it.
+
+
+#### The Quizzes and Labs.
+
+* **Section 03** - Reflection.
+    * *Coding Exercise*:
+        * [Coding Exercise 01: Simulate a Basic Unit Testing Framework ~ Putting reflection into action](#)!
+    * *Quiz*:
+        * [Quiz 02:](#).
+
 <hr>
 
-- Can take this one [Algorithms Specialization](https://www.coursera.org/specializations/algorithmss).
+
+# Algorithms Specialization.
+
+<!-- 
+<p align="center">
+    <img 
+    src="Data_Structures_And_Performance_Specialization_Caption.png" 
+    alt="Data structures and performance specialization caption caption!" 
+    style="width:1600px;height:120px;"
+    />
+</p>  -->
+
+<p 
+align="center">
+    <img 
+    src="Algorithms_Specialization_Description.PNG" 
+    alt="Algorithms Specialization description!" 
+    style="width:690px" 
+    />
+</p>
+
+<!-- All course material from *Introduction to Algorithms* by **Prof. Srini Devadas** and **Prof. Erik Demaine**. -->
+
+> Add here some story. 🐟 <br><br>
+> ~ *DevelopersCradle*
+
+Contains my own with my own visual notes ✍️ with some course material to enforce learning experience.
+
+This repository is made with [![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?logo=intellij-idea&logoColor=white)](#) with [![Eclipse](https://img.shields.io/badge/Eclipse-FE7A16.svg?logo=Eclipse&logoColor=white)](#) hotkeys, therefore it will include configuration files which are related to this IDE this approach will be favored for now. ⚙️
+
+[The specialization at Coursera](https://www.coursera.org/specializations/algorithms).
+
+If the content sparked :fire: your interest, please consider buying the course and start learning :book:.
+
+<!-- 
+Linkedin puts this shit front, when clicking from private mode x(. Need to put this to make jump working every case
+?trk=public_profile_see-credential 
+-->
+
+<p 
+id="Logo_Combination" 
+align="center">
+    <img 
+    src="#" 
+    alt="course intros" 
+    style="width:490px;height:210px;"
+    />
+    <img 
+    src="Dummy_Cert.png" 
+    alt="course intros" 
+    style="width:490px;heqight:310px;"
+    />
+</p>
+
+
+**Note: The material provided in this repository is only for helping those who may get stuck at any point of time in the course. It is very advised that no one should just copy the solutions(violation of Honor Code) presented here.**
+
+#### Progress/Curriculum.
+
+- [ ] [Module 01](#): TOdo.
+
+#### Additional stuff.
+
+- [ ] add here!
+
+#### The Quizzes and Labs.
+
+* **Section 01** - todo.
+    * *Coding Exercise*:
+        * [Coding Exercise 01:](#)!
+    * *Quiz*:
+        * [Quiz 02:](#).
+
+
+
+
+
+- Can take this one [Algorithms Specialization](https://www.coursera.org/specializations/algorithms).
     - Don't get stuck of the proofs, detail heavy.
 
 - [Source](https://www.youtube.com/watch?v=9-ubSA9GA3o).
@@ -1509,12 +1613,76 @@ Linkedin puts this shit front, when clicking from private mode x(. Need to put t
 
 <hr>
 
-#
 <p align="center">
-    <img src="Data_Structures_And_Performance_Course_Specialization.PNG" alt="Data structures and performance course specialization caption" style="width:690px" />
+    <img 
+    src="Data_Structures_And_Performance_Specialization_Caption.png" 
+    alt="Data structures and performance specialization caption caption!" 
+    style="width:1600px;height:120px;"
+    />
+</p> 
+
+<p 
+align="center">
+    <img 
+    src="Data_Structures_And_Performance_Course_Specialization_Description.PNG" 
+    alt="Data structures and algorithms specialization description!" 
+    style="width:690px" 
+    />
 </p>
 
-- [Add this](https://www.coursera.org/learn/data-structures-optimizing-performance?utm_source=chatgpt.com#outcomes).
+<!-- All course material from *Introduction to Algorithms* by **Prof. Srini Devadas** and **Prof. Erik Demaine**. -->
+
+> Add here some story. 🐟 <br><br>
+> ~ *DevelopersCradle*
+
+Contains my own with my own visual notes ✍️ with some course material to enforce learning experience.
+
+This repository is made with [![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?logo=intellij-idea&logoColor=white)](#) with [![Eclipse](https://img.shields.io/badge/Eclipse-FE7A16.svg?logo=Eclipse&logoColor=white)](#) hotkeys, therefore it will include configuration files which are related to this IDE this approach will be favored for now. ⚙️
+
+[The course at Coursera](https://www.coursera.org/learn/data-structures-optimizing-performance).
+
+If the content sparked :fire: your interest, please consider buying the course and start learning :book:.
+
+<!-- 
+Linkedin puts this shit front, when clicking from private mode x(. Need to put this to make jump working every case
+?trk=public_profile_see-credential 
+-->
+
+<p 
+id="Logo_Combination" 
+align="center">
+    <img 
+    src="#" 
+    alt="course intros" 
+    style="width:490px;height:210px;"
+    />
+    <img 
+    src="Dummy_Cert.png" 
+    alt="course intros" 
+    style="width:490px;heqight:310px;"
+    />
+</p>
 
 
+**Note: The material provided in this repository is only for helping those who may get stuck at any point of time in the course. It is very advised that no one should just copy the solutions(violation of Honor Code) presented here.**
 
+#### Progress/Curriculum.
+
+- [ ] [Module 01](#): Introduction to the Course.
+- [ ] [Module 02](#): Working with Strings.
+- [ ] [Module 03](#): Efficiency Analysis and Benchmarking.
+- [ ] [Module 04](#): Interfaces, Linked Lists vs. Arrays, and Correctness.
+- [ ] [Module 05](#): Trees! (Including Binary Search Trees and Tries).
+- [ ] [Module 06](#): Hash Maps and Edit Distance.
+
+#### Additional stuff.
+
+- [ ] add here!
+
+#### The Quizzes and Labs.
+
+* **Section 03** - Reflection.
+    * *Coding Exercise*:
+        * [Coding Exercise 01: Simulate a Basic Unit Testing Framework ~ Putting reflection into action](#)!
+    * *Quiz*:
+        * [Quiz 02:](#).

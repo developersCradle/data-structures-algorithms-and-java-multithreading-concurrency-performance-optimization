@@ -136,7 +136,7 @@ align="center">
 
 - todo check this one, for different interfaces checks.
 
-# Class Loading.
+# Class Loading. ✅
 
 <div 
 align="center">
@@ -362,13 +362,15 @@ align="center">
 <b>String literals</b>. <br>
 <b>Logical (symbolic) references</b>. <br>
 These references are <b>replaced</b> in <b>resolution step</b>, with the <b>direct references</b>! <br>
-2. This was checked the method binding lesson constant pool! <b>javap</b> is cmd tool for <b>java class dissembler</b>!
+2. This was checked the method binding lesson constant pool! <b>javap</b> is cmd tool for <b>Java class dissembler</b>! 
+
+- Check it [here](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/A%20Comprehensive%20Introduction%20to%20Java%20Virtual%20Machine%20(JVM)/Section%2006#chapter-06---bonus-chapter-)!
 
 
-# Short Note on Resolution Step for Better Clarity.
+# Short Note on Resolution Step for Better Clarity. ✅
 
-# Demo: Lifetime of a Type.
+# Demo: Lifetime of a Type. ✅
 
-# Quiz 01: Chapter Quiz.
+# Quiz 01: Chapter Quiz. ✅
 
-# Important Q&A Discussions!
+# Important Q&A Discussions! ✅

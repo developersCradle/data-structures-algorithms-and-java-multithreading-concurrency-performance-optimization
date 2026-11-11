@@ -4,8 +4,8 @@ Strings & JVM.
 
 # What I learned.
 
-# String Pool & Interning + Demo.
+# String Pool & Interning + Demo. ✅
 
-# Beware of String Concatenation.
+# Beware of String Concatenation. ✅
  
-# Quiz 03: Chapter Quiz.
+# Quiz 03: Chapter Quiz. ✅
