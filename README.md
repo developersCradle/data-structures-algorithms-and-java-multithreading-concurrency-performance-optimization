@@ -118,7 +118,7 @@ Contains my own with my own visual notes ✍️ with some course material to enf
 
 This repository is made with [![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?logo=intellij-idea&logoColor=white)](#) with [![Eclipse](https://img.shields.io/badge/Eclipse-FE7A16.svg?logo=Eclipse&logoColor=white)](#) hotkeys, therefore it will include configuration files which are related to this IDE this approach will be favored for now. ⚙️
 
-[The course at Udemy](https://www.udemy.com/course/java-multithreading-concurrency-performance-optimization/). 
+[Course at Udemy](https://www.udemy.com/course/java-multithreading-concurrency-performance-optimization/). 
 
 [Website of maker](https://topdeveloperacademy.com/).
 
@@ -354,7 +354,7 @@ Contains my own with my own visual notes ✍️ with some course material to enf
 
 This repository is made with [![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?logo=intellij-idea&logoColor=white)](#) with [![Eclipse](https://img.shields.io/badge/Eclipse-FE7A16.svg?logo=Eclipse&logoColor=white)](#) hotkeys, therefore it will include configuration files which are related to this IDE this approach will be favored for now. ⚙️
 
-[The course at Udemy](https://www.udemy.com/course/parallel-and-asynchronous-programming-in-modern-java). 
+[Course at Udemy](https://www.udemy.com/course/parallel-and-asynchronous-programming-in-modern-java). 
 
 [Website of maker](https://topdeveloperacademy.com/).
 
@@ -371,7 +371,8 @@ align="center">
     <img 
     src="Dummy_Cert.png" 
     alt="change this!" 
-    style="width:590px;height:440px;"/>
+    style="width:590px;height:440px;"
+    />
     <img
      id="add here?trk=public_profile_see-credential" src="add her" alt="add here!" width="600"
     />
@@ -458,8 +459,7 @@ All course material from *Modern Java - Multithreading in Java using Virtual Thr
 
 > Once in a lifetime, I was interviewed with the 🔴**Polar**🔴 personnel for an **Advanced Java** role, and on part of the technical discussion immediately dove into multithreading, concurrency, and performance optimization. They asked about thread pools, synchronization strategies, deadlocks, optimizing CPU-bound versus IO-bound operations, and even Virtual Threads in Java. The questions were challenging and required more than just textbook knowledge — they wanted practical understanding of real-world thread behavior. 🐟
 >
-> Thanks to a recent course on *Modern Java - Multithreading in Java using Virtual Threads*, I could confidently discuss thread-safe collections, locks, executor frameworks, and the advantages of Virtual Threads for scalable, lightweight concurrency. Even though I was **not chosen** for the position, the interview **drove me** to deeply pursue these concepts, strengthening my skills and confidence for future challenges. 🐟 <br><br>
-> ~ DevelopersCradle
+> Thanks to a recent course on *Modern Java - Multithreading in Java using Virtual Threads*, I could confidently discuss thread-safe collections, locks, executor frameworks, and the advantages of Virtual Threads for scalable, lightweight concurrency. Even though I was **not chosen** for the position, the interview **drove me** to deeply pursue these concepts, strengthening my skills and confidence for future challenges. 🐟 <br><br> ~ DevelopersCradle
 
 Contains my own with my own visual notes ✍️ with some course material to enforce learning experience.
 
@@ -582,345 +582,6 @@ align="center">
 * **Section 00**:
     * *Quiz*:
         * [Quiz 00: Platform Threads and Virtual Threads](#).
-
-
-<p 
-align="center">
-    <img 
-    src="Java_Application_Performance_Tuning_And_Memory_Management_Caption.gif"
-    alt="Java Application Performance Tuning and Memory Management!" 
-    style="width:1000px;height:120px;"
-    />
-</p>
-
-<p 
-align="center">
-    <img 
-    src="Java_Application_Performance_Tuning_And_Memory_Management_Description.PNG"
-    alt="Java Application Performance Tuning and Memory Management description!"
-    style="width:660px" 
-    />
-</p> 
-
-All course material from *Java Application Performance Tuning and Memory Management* by from **Matt Greencroft** ... Sir **Matt Greencroft** and **Virtual Pair Programmers**.
-
-> Add here story.🐟 <br><br>
-
-Contains my own with my own visual notes ✍️ with some course material to enforce learning experience.
-
-This repository is made with [![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?logo=intellij-idea&logoColor=white)](#) with [![Eclipse](https://img.shields.io/badge/Eclipse-FE7A16.svg?logo=Eclipse&logoColor=white)](#) hotkeys, therefore it will include configuration files which are related to this IDE this approach will be favored for now. ⚙️
-
-We are using [![Java 21](https://img.shields.io/badge/Java%2021-%23ED8B00.svg?logo=openjdk&logoColor=white)](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Application%20Performance%20Tuning%20and%20Memory%20Management/Section%2001#example-code-provided-with-this-course). Instead, the which are recommended!
-
-[Udemy course](https://www.udemy.com/course/java-application-performance-and-memory-management).
-
-[Homepage of maker](https://www.virtualpairprogrammers.com/).
-
-If the content sparked :fire: your interest, please consider starting the course and start learning :book:.
-
-<!-- 
-Linkedin puts this shit front, when clicking from private mode x(. Need to put this to make jump working every case
-?trk=public_profile_see-credential 
--->
-
-<p 
-id="Logo_Combination" 
-align="center">
-    <img 
-    src="Dummy_Cert.png" 
-    alt="change this!" 
-    style="width:590px;height:440px;"/>
-    <img
-     id="add here?trk=public_profile_see-credential" src="add her" alt="add here!" width="600"
-    />
-</p>
-
-**Note: The material provided in this repository is only for helping those who may get stuck at any point of time in the course. It is very advised that no one should just copy the solutions(violation of Honor Code) presented here.**
-
-#### Progress/Curriculum.
-
-- [x] [Chapter 01](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Application%20Performance%20Tuning%20and%20Memory%20Management/Section%2001#chapter-01---introduction) - Introduction. ✅
-- [ ] [Chapter 02](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Application%20Performance%20Tuning%20and%20Memory%20Management/Section%2002/README.md#section-02-just-in-time-compilation-and-the-code-cache) - Just In Time Compilation and the Code Cache. ⚠️ In progress! ⚠️
-- [ ] [Chapter 03](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Application%20Performance%20Tuning%20and%20Memory%20Management/Section%2003#chapter-03-selecting-the-jvm) - Selecting the JVM.
-- [ ] [Chapter 04](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Application%20Performance%20Tuning%20and%20Memory%20Management/Section%2004/README.md#chapter-04-how-memory-works-the-stack-and-the-heap) - How memory works: the stack and the heap.
-- [ ] [Chapter 05](#) - Passing objects between methods.
-- [ ] [Chapter 06](#) - Memory exercise.
-- [ ] [Chapter 07](#) - Escaping References.
-- [ ] [Chapter 08](#) - Memory Exercise.
-- [ ] [Chapter 09](#) - The Metaspace and internal JVM memory optimisations.
-- [ ] [Chapter 10](#) - Tuning the JVM’s Memory Settings.
-- [ ] [Chapter 11](#) - Introducing Garbage Collection.
-- [x] [Chapter 12](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Application%20Performance%20Tuning%20and%20Memory%20Management/Section%2012#chapter-12---monitoring-the-heap) - Monitoring the Heap. ✅
-- [x] [Chapter 13](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Application%20Performance%20Tuning%20and%20Memory%20Management/Section%2013#chapter-13---analyzing-a-heap-dump) - Analyzing a heap dump. ✅
-- [ ] [Chapter 14](#) - Generational Garbage Collection.
-- [ ] [Chapter 15](#) - Garbage Collector tuning & selection.
-- [ ] [Chapter 16](#) - Using a profiler to analyse application performance.
-- [ ] [Chapter 17](#) - Assessing Performance.
-- [ ] [Chapter 18](#) - Benchmarking with JMH.
-- [ ] [Chapter 19](#) - Performance and Benchmarking Exercise.
-- [ ] [Chapter 20](#) - How Lists Work.
-- [ ] [Chapter 21](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/Java%20Application%20Performance%20Tuning%20and%20Memory%20Management/Section%2021#chapter-21---how-maps-work) - How Maps Work. ⚠️ In progress! ⚠️
-
-#### Additional stuff.
-
-- Remove the `Codes` folder after course is finished!
-- [ ] Check the content from other student, if there is missing or broken material. [Link](https://github.com/tommic81/udemy-java-memory-management/tree/master).
-- [ ] Heap Dump Analysis Using Eclipse MAT. [Link](Heap Dump Analysis Using Eclipse MAT).
-- Do the chapters `The structure of this course`.
-- Finish this after this course is finished `Solving Memory Leaks in the JVM`. (add here the link)
-- [ ] Read thought. [Link](https://www.baeldung.com/java-memory-leaks).
-- [ ] Check this memory leak course after this course. [Link](https://www.linkedin.com/learning/java-memory-management-garbage-collection-jvm-tuning-and-spotting-memory-leaks).
-- [ ] Check second this memory leak course after this course. [Link](https://www.oreilly.com/live-events/memory-efficient-java/0636920457060/).
-- [ ] Check third this memory leak course after this course. [Link](https://www.pluralsight.com/courses/java-understanding-solving-memory-problems?utm_source=chatgpt.com).
-- [ ] Check Java Memory Leaks by Victor Rentea. [Link](https://www.youtube.com/watch?v=-0vkHxlGlOU).
-- [ ] Check. [Link](https://www.youtube.com/watch?v=W4SvLYU9H1I&list=PLQh1c87p_Wlp7GgRQEf3907LnxxsrbX3R).
-
-#### The Quizzes and Labs.
-
-* **Section 01**:
-    - check this one.
-* **Section 02**:
-    * *Example*:
-        * [Performance example one codes](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Application%20Performance%20Tuning%20and%20Memory%20Management/Section%2002/README.md#JIT%20logs%20example%20one%20codes).
-        * [Performance example second codes](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Application%20Performance%20Tuning%20and%20Memory%20Management/Section%2002/README.md#JIT%20logs%20example%20second%20codes).
-        - FIx the links
-    * *Logs*:
-        * [Performance example second logs](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Application%20Performance%20Tuning%20and%20Memory%20Management/Section%2002/README.md#JIT%20logs%20example%20second%20logs).
-        * [Performance logs from the logCompilation](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/Java%20Application%20Performance%20Tuning%20and%20Memory%20Management/Section%2002/hotspot_pid11876.log).
-        - Fix the links
-
-
-<p 
-align="center">
-    <img
-     src="Solving_Memory_Leaks_In_The_JVM_Caption.png"
-    alt="Solving Memory Leaks In The JVM Caption"
-    style="width:1600px;height:110px;"
-    />
-</p> 
-
-<p 
-align="center">
-    <img
-    src="Java_Memory_Leak_Description.PNG"
-    alt="Java Memory Leak Description"
-    style="width:690px"
-    />
-</p>
-
-All course material from *Solving Memory Leaks in the JVM* by **Kirk Pepperdine**!
-
-> Add story here. 🐟 <br><br>
-> ~ *DevelopersCradle*
-
-Contains my own with my own visual notes ✍️ with some course material to enforce learning experience.
-
-<!-- add this comment later 
-This repository is made with [![Eclipse](https://img.shields.io/badge/Eclipse-FE7A16.svg?logo=Eclipse&logoColor=white)](#), therefore it will include configuration files which are related to this IDE this approach will be favored for now. ⚙️ -->
-
-[The series at YouTube](https://www.youtube.com/watch?v=_gineh_HcoQ). 
-
-If the content sparked :fire: your interest, please consider buying the course and start learning :book:.
-
-<!-- 
-Linkedin puts this shit front, when clicking from private mode x(. Need to put this to make jump working every case
-?trk=public_profile_see-credential 
--->
-
-
-
-<p 
-id="Logo_Combination" 
-align="center">
-    <img 
-    src="Dummy_Cert.png" 
-    alt="change this!" 
-    style="width:590px;height:440px;"/>
-    <img
-     id="add here?trk=public_profile_see-credential" src="add her" alt="add here!" width="600"
-    />
-</p>
-
-**Note: The material provided in this repository is only for helping those who may get stuck at any point of time in the course. It is very advised that no one should just copy the solutions(violation of Honor Code) presented here.**
-
-#### Progress/Curriculum.
-
-- [x] [Section 01](#) - ⚠️ In progress! ⚠️
-
-#### Additional stuff.
-
-- [ ] Todo.
-    
-<p 
-align="center">
-    <img 
-    src="A_Comprehensive_Introduction_To_Java_Virtual_Machine_(JVM)_Caption.png"
-    alt="course intros"
-    style="width:990px;height:110px;"
-    />
-</p>
-
-<p align="center">
-    <img
-    src="A_Comprehensive_Introduction_To_Java_Virtual_Machine_(JVM)_Description.PNG"
-    alt="Course Intros" 
-    style="width:690px" 
-    />
-</p>
-
-All course material from *A Comprehensive Introduction to Java Virtual Machine (JVM)* by **Dheeru Mundluru**.
-
-> Sorry Linux for extra abstraction.
->
-> Once I saw Sony's 👓<b>requirements</b>👓 in the job posting, I became more motivated to deepen my understanding of JVM internals. 🐟
->
-> *"How you would tune the JVM for Garbage Collection (GC) overhead in latency-sensitive applications?"* 🐟
->
-> Sony evaluates candidates on real-world scalability, debugging under pressure, and system performance rather than just "textbook answers". 🐟 <br><br>
-> ~ *DevelopersCradle*
-
-Contains my own with my own visual notes ✍️ with some course material to enforce learning experience.
-
-This repository is made with [![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?logo=intellij-idea&logoColor=white)](#) with [![Eclipse](https://img.shields.io/badge/Eclipse-FE7A16.svg?logo=Eclipse&logoColor=white)](#) hotkeys, therefore it will include configuration files which are related to this IDE this approach will be favored for now. ⚙️
-
-[The course at Udemy](https://www.udemy.com/course/a-comprehensive-introduction-to-java-virtual-machine-jvm). 
-
-[Website of maker](https://www.semanticsquare.com/).
-
-If the content sparked :fire: your interest, please consider buying the course and start learning :book:.
-
-<!-- 
-Linkedin puts this shit front, when clicking from private mode x(. Need to put this to make jump working every case
-?trk=public_profile_see-credential 
--->
-
-<p 
-id="Logo_Combination" 
-align="center">
-    <img
-    src="Me_Conquering_Sonys_Requirements_With_Babes.jpg" 
-    alt="Me conquering sonys requirements with babes!" 
-    style="width:590px;height:520px;"
-    />
-    <img 
-    src="A_Comprehensive_Introduction_To_Java_Virtual_Machine_JVM_Certification.jpg" 
-    alt="A_Comprehensive_Introduction_To_Java_Virtual_Machine_JVM_Certification" 
-    id="add here?trk=public_profile_see-credential"
-    style="width:590px;height:440px;"
-    />
-</p>
-
-**Note: The material provided in this repository is only for helping those who may get stuck at any point of time in the course. It is very advised that no one should just copy the solutions(violation of Honor Code) presented here.**
-
-#### Progress/Curriculum.
-
-- [x] [Section 01](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/A%20Comprehensive%20Introduction%20to%20Java%20Virtual%20Machine%20(JVM)/Section%2001#chapter-01---background--a-high-level-overview-on-jvm-) - Background ~ A High-level Overview on JVM. ✅
-- [x] [Section 02](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/A%20Comprehensive%20Introduction%20to%20Java%20Virtual%20Machine%20(JVM)/Section%2002/README.md#chapter-02---introduction-) - Lifetime of a Type. ✅
-- [x] [Section 03](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/blob/main/A%20Comprehensive%20Introduction%20to%20Java%20Virtual%20Machine%20(JVM)/Section%2003/README.md#chapter-03---reflection-) - Reflection. ✅
-- [x] [Section 04](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/A%20Comprehensive%20Introduction%20to%20Java%20Virtual%20Machine%20(JVM)/Section%2004#chapter-04---jvm-memory-garbage-collection-and-bytecode-instructions-) - JVM Memory, Garbage Collection, and Bytecode Instructions. ✅
-- [x] [Section 05](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/A%20Comprehensive%20Introduction%20to%20Java%20Virtual%20Machine%20(JVM)/Section%2005#chapter-05---strings--jvm-) - Strings & JVM. ✅
-- [x] [Section 06](https://github.com/developersCradle/data-structures-algorithms-and-java-multithreading-concurrency-performance-optimization/tree/main/A%20Comprehensive%20Introduction%20to%20Java%20Virtual%20Machine%20(JVM)/Section%2006#chapter-06---bonus-chapter-) - Bonus Chapter. ✅
-
-#### Additional stuff.
-
-- [ ] After this answer, the questions from Sony!
-
-<details>
-
-<summary 
-id="Sony_Interview_Questions" 
-open="true"> <i>The requirements, which drove me to pursies this course, from <b>Sony!</b></summary>
-
-<br>
-
-<p 
-align="center">
-    <img 
-    src="Sony_Interview_Questions.PNG" 
-    alt="Sony questions." 
-    width="400"
-    />
-</p>
-
-</details>
-
-<!-- 
-todo finish these ones
-* **Section 02** - Lifetime of a Type.
-    -->
-
-#### The Quizzes and Labs.
-
-* **Section 02** - Lifetime of a Type.
-    * *Quiz*:
-        * [Quiz 01: Chapter Quiz](#).
-* **Section 03** - Reflection.
-    * *Coding Exercise*:
-        * [Coding Exercise 01: Simulate a Basic Unit Testing Framework ~ Putting reflection into action](#)!
-* **Section 04** - JVM Memory, Garbage Collection, and Bytecode Instructions.
-    * *Quiz*:
-        * [Quiz 02: Chapter Quiz](#).
-* **Section 05** - Strings & JVM.
-    * *Quiz*:
-        * [Quiz 03: Chapter Quiz](#).
-
-
-<!-- 
-<p 
-align="center">
-    <img 
-    src="A_Comprehensive_Introduction_To_Java_Virtual_Machine_(JVM)_Caption.png"
-    alt="course intros"
-    style="width:990px;height:110px;"
-    />
-</p> -->
-
-# JVM ANATOMY QUARKS.
-
-<p align="center">
-    <img
-    src="JVM_Anatomy Quarks_Book.jpg"
-    alt="JVM anatomy quarks book!" 
-    style="width:990px;height:310px;"
-    />
-</p>
-
-Contains my own with my own visual notes ✍️ with some course material to enforce learning experience.
-
-[Anatomy Quarks](https://shipilev.net/jvm/anatomy-quarks/).
-
-#### Progress/Curriculum.
-
-- [ ] [Section 01](#) - Lock Coarsening and Loops.
-- [ ] [Section 02](#) - Transparent Huge Pages.
-- [ ] [Section 03](#) - GC Design and Pauses.
-- [ ] [Section 04](#) - TLAB Allocation.
-- [ ] [Section 05](#) - TLABs and Heap Parsability.
-- [ ] [Section 06](#) - New Object Stages.
-- [ ] [Section 07](#) - Object Initialization Costs.
-- [ ] [Section 08](#) - Local Variable Reachability.
-- [ ] [Section 09](#) - JNI Critical and GC Locker.
-- [ ] [Section 10](#) - String.intern().
-- [ ] [Section 11](#) - Moving GC and Locality.
-- [ ] [Section 12](#) - Native Memory Tracking.
-- [ ] [Section 13](#) - Intergenerational Barriers.
-- [ ] [Section 14](#) - Constant Variables.
-- [ ] [Section 15](#) - Just-In-Time Constants.
-- [ ] [Section 16](#) - Megamorphic Virtual Calls.
-- [ ] [Section 17](#) - Trust Non-Static Final Fields.
-- [ ] [Section 18](#) - Scalar Replacement.
-- [ ] [Section 19](#) - Lock Elision.
-- [ ] [Section 20](#) - FPU Spills.
-- [ ] [Section 21](#) - Heap Uncommit.
-- [ ] [Section 22](#) - Safepoint Polls.
-- [ ] [Section 23](#) - Compressed References.
-- [ ] [Section 24](#) - Object Alignment.
-- [ ] [Section 25](#) - Implicit Null Checks.
-- [ ] [Section 26](#) - Identity Hash Code.
-- [ ] [Section 27](#) - Compiler Blackholes.
-- [ ] [Section 28](#) - Frequency-Based Code Layout.
-- [ ] [Section 29](#) - Uncommon Traps.
-- [ ] [Section 30](#) - Conditional Moves.
 
 
 <p 
@@ -1152,7 +813,7 @@ align="center">
 <p 
 align="center">
     <img 
-    id="Data_Structures_And_Algorithms_Deep_Dive_Using_Java_Caption" src="Data_Structures_And_Algorithms_Deep_Dive_Using_Java_Caption.png" 
+     id="Data_Structures_And_Algorithms_Deep_Dive_Using_Java_Caption" src="Data_Structures_And_Algorithms_Deep_Dive_Using_Java_Caption.png" 
     style="width:1200px;height:130px;"
     />
 </p>
@@ -1167,16 +828,13 @@ align="center">
 
 All course material from *Data Structures and Algorithms: Deep Dive Using Java* by **Goran Lochert**, **Tim Buchalka** and **Tim Buchalka's Learn Programming Academy**.
 
-> I once interviewed with 🌤️**Vaisala**🌤️ for the *Observation Network Manager NM10* role, where the technical discussion went deep into data structures and their operations. The interview challenged my understanding of trees, graphs, and time–space trade-offs in ways I hadn’t fully experienced before. [Project](https://www.vaisala.com/en/products/weather-environmental-sensors/observation-network-manager-nm10).
->
-> Although I **wasn’t** selected for the position, the experience became a turning point. It drove me to truly internalize the concepts through a deep dive into *Data Structures and Algorithms using Java*, strengthening both my problem-solving approach and technical confidence for future challenges. 🐟 <br><br>
-> ~ *DevelopersCradle*
+> 🐟 <br><br> ~ *DevelopersCradle*
 
 Contains my own with my own visual notes ✍️ with some course material to enforce learning experience.
 
 This repository is made with [![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?logo=intellij-idea&logoColor=white)](#) with [![Eclipse](https://img.shields.io/badge/Eclipse-FE7A16.svg?logo=Eclipse&logoColor=white)](#) hotkeys. This is why it will include configuration files which are related to this IDE this approach will be favored for now. ⚙️
 
-[The course at Udemy](https://www.udemy.com/course/data-structures-and-algorithms-deep-dive-using-java). 
+[Course at Udemy](https://www.udemy.com/course/data-structures-and-algorithms-deep-dive-using-java). 
 
 [Website of maker 01](https://www.timbuchalka.com/).
 
@@ -1266,7 +924,7 @@ Contains my own with my own visual notes ✍️ with some course material to enf
 
 This repository is made with [![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?logo=intellij-idea&logoColor=white)](#) with [![Eclipse](https://img.shields.io/badge/Eclipse-FE7A16.svg?logo=Eclipse&logoColor=white)](#) hotkeys, therefore it will include configuration files which are related to this IDE this approach will be favored for now. ⚙️
 
-[The course at Udemy](https://www.udemy.com/course/data-structures-and-algorithms-java). 
+[Course at Udemy](https://www.udemy.com/course/data-structures-and-algorithms-java). 
 
 [Website of maker](https://scottbarrett.com/).
 
@@ -1366,11 +1024,12 @@ align="center">
     />
 </p>
 
-<details>
-
 > [!IMPORTANT]  
 > ⚠️ Comfortable requirements, one can open text editor and write data structure like **Linked List**. ⚠️
 >
+
+<details>
+
 
 <summary 
 id="Must_Know_Fundementals_For_Algorithms"
@@ -1416,7 +1075,7 @@ Contains my own with my own visual notes ✍️ with some course material to enf
 
 This repository is made with [![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?logo=intellij-idea&logoColor=white)](#) with [![Eclipse](https://img.shields.io/badge/Eclipse-FE7A16.svg?logo=Eclipse&logoColor=white)](#) hotkeys, therefore it will include configuration files which are related to this IDE this approach will be favored for now. ⚙️
 
-[The course at MIT OpenCourseWare](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/).
+[Course at MIT OpenCourseWare](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/).
 
 [Video playlist](https://www.youtube.com/playlist?list=PLe8LZCtW06l8z1RmbNIGA2Jg_ULeXyw46).
 
@@ -1471,7 +1130,7 @@ Contains my own with my own visual notes ✍️ with some course material to enf
 
 This repository is made with [![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?logo=intellij-idea&logoColor=white)](#) with [![Eclipse](https://img.shields.io/badge/Eclipse-FE7A16.svg?logo=Eclipse&logoColor=white)](#) hotkeys, therefore it will include configuration files which are related to this IDE this approach will be favored for now. ⚙️
 
-[The course at Coursera](https://www.coursera.org/specializations/data-structures-algorithms).
+[Course at Coursera](https://www.coursera.org/specializations/data-structures-algorithms).
 
 If the content sparked :fire: your interest, please consider buying the course and start learning :book:.
 
@@ -1551,7 +1210,7 @@ Contains my own with my own visual notes ✍️ with some course material to enf
 
 This repository is made with [![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?logo=intellij-idea&logoColor=white)](#) with [![Eclipse](https://img.shields.io/badge/Eclipse-FE7A16.svg?logo=Eclipse&logoColor=white)](#) hotkeys, therefore it will include configuration files which are related to this IDE this approach will be favored for now. ⚙️
 
-[The specialization at Coursera](https://www.coursera.org/specializations/algorithms).
+[Specialization at Coursera](https://www.coursera.org/specializations/algorithms).
 
 If the content sparked :fire: your interest, please consider buying the course and start learning :book:.
 
@@ -1639,7 +1298,7 @@ Contains my own with my own visual notes ✍️ with some course material to enf
 
 This repository is made with [![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?logo=intellij-idea&logoColor=white)](#) with [![Eclipse](https://img.shields.io/badge/Eclipse-FE7A16.svg?logo=Eclipse&logoColor=white)](#) hotkeys, therefore it will include configuration files which are related to this IDE this approach will be favored for now. ⚙️
 
-[The course at Coursera](https://www.coursera.org/learn/data-structures-optimizing-performance).
+[Course at Coursera](https://www.coursera.org/learn/data-structures-optimizing-performance).
 
 If the content sparked :fire: your interest, please consider buying the course and start learning :book:.
 
